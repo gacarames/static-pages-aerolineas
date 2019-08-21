@@ -1,0 +1,84 @@
+﻿/* CSS Document */
+/***** COMBO *****/
+#div_flotante2 {
+	width: 100px;
+	height: 20px;
+	position: absolute;
+	top:34px;
+	left:865px;
+	z-index:1;
+	padding:5px; background-color:#FFF; border:solid 1px #999;
+}
+
+.ciudadDestino
+{
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 153px;
+    width: 169px;
+}
+
+.ciudadDestino ul {color: #6b6b6b;}
+
+.ciudadDestino li:hover
+{
+    background-color:#3fa1d2;
+    color:#ffffff;
+    cursor:pointer;
+}
+
+.box_top
+{
+	display:none;
+	width:350px;
+	border-top:1px solid #0081c6;
+	margin-top:6px;
+}
+
+.mpointer {cursor:pointer;}
+
+.box_origenViaje 
+{
+	border-right:1px dashed #A0A1A5;
+	width:150px;
+	height:200px;
+	float:left;
+	margin-top:10px;
+}
+
+.box_buscaPor {margin-bottom:10px;}
+
+.celeste {color:#0081c6;}
+/***** FIN COMBO *****/
+
+/***** COMBO jQuery UI *****/
+    .ui-tooltip 
+    {
+        font-size:10px;
+    }
+    .ui-autocomplete
+    {
+	    font-size:14px;
+    }
+    .ui-combobox {
+        position: relative;
+        display: inline-block;
+        font-size:80%;
+    }
+    .ui-combobox-toggle {
+        position: absolute;
+        left:108px;
+        top: 0;
+        bottom: 0;
+        margin-left: -1px;
+        padding: 0;
+        /* adjust styles for IE 6/7 */
+        *height: 1.7em;
+        *top: 0.1em;
+    }
+    .ui-combobox-input {
+        margin: 0;
+        padding: 0.3em;
+        width:100px;
+    }
+/***** FIN COMBO jQuery UI *****/

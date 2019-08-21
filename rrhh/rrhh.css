@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+body { padding: 10px; background: #fff !important; margin: 0px !important; }
+.wrapper h3 { width: 100% !important; color: #0584C7 !important; }
+.inputText2, .inputSelect2 { -moz-box-sizing: border-box; background-image: none !important; height: 20px; margin: 0; padding: 0; }
+
+
+
+.btn {
+    background-color: #0584C7 !important;
+	background-image: none !important;
+    color: white;
+	text-shadow: none;
+}
+
+.btn:hover {
+    background-color: #006ba3;
+	background-image: none !important;
+	background-position: 0px 0px;
+	color: white;
+	text-shadow: none;
+}
+
+.modal-header h3 {
+    line-height: 30px;
+    margin: 0;
+	color: #0584C7;
+}
+.text-error {
+    color: #0584C7;
+}
+
+#tabs { width: 940px; background: #fff; margin: 0px auto !important; }
+.ctrlGroup {  width: 885px !important; }
+#tabs textarea { height: 80px; width: 690px; border: 1px solid #0584C7; background: #fff; }
+#tabs input, #tabs select { background-image: none; background-color: #fff; border: 1px solid #0584C7;  height: 20px; }
+#tabs .ctrlSubmit { border: 0 solid black; clear: left; padding: 11px 0 3px; text-align: center; }
+
+/* header */
+#rrhh-header { width: 945px; margin: 0px auto; }
+#rrhh-header span.bottom-header { background: url(img/bg-header.jpg) no-repeat center center; width: 943px; height: 27px; display: block; float: left; }
+#rrhh-header a img { border: none; }
+#rrhh-header .lg-acom, #rrhh-header .lg-tar { float: left; }
+#rrhh-header .lg-acom { margin: 31px 28px 10px 20px; }
+#rrhh-header .lg-tar { margin-top: 10px; }
+#rrhh-header .lg-aer { float: right; margin: 28px 20px 0px 0px;  }

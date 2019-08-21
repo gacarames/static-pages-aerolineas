@@ -1,0 +1,2138 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+
+
+        <title>Aerolineas Argentinas</title>
+        <meta http-equiv="title" content="Aerolineas Argentinas">
+
+        <meta name="Description" content="Todo tu viaje en un s&#243;lo lugar aerolineas.com, vuelos baratos.">
+
+    <link href="Images/condor_chico.gif" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+
+   
+    
+    <link href="Content/themes/DarkSite/css/screen.css" rel="stylesheet"/>
+<link href="Content/themes/DarkSite/css/estilo.css" rel="stylesheet"/>
+<link href="Content/themes/DarkSite/css/form_argentina.css" rel="stylesheet"/>
+<link href="Content/themes/DarkSite/css/form_argentina_home.css" rel="stylesheet"/>
+<link href="Content/themes/DarkSite/css/Extras.css" rel="stylesheet"/>
+
+    <link href="Content/themes/DarkSite/Error.css" rel="stylesheet"/>
+
+    <link href="Content/themes/DarkSite/jquery-ui-timepicker-addon.css" rel="stylesheet"/>
+<link href="Content/themes/DarkSite/jquery.ui.core.css" rel="stylesheet"/>
+<link href="Content/themes/DarkSite/jquery.ui.resizable.css" rel="stylesheet"/>
+<link href="Content/themes/DarkSite/jquery.ui.selectable.css" rel="stylesheet"/>
+<link href="Content/themes/DarkSite/jquery.ui.accordion.css" rel="stylesheet"/>
+<link href="Content/themes/DarkSite/jquery.ui.autocomplete.css" rel="stylesheet"/>
+<link href="Content/themes/DarkSite/jquery.ui.button.css" rel="stylesheet"/>
+<link href="Content/themes/DarkSite/jquery.ui.dialog.css" rel="stylesheet"/>
+<link href="Content/themes/DarkSite/jquery.ui.slider.css" rel="stylesheet"/>
+<link href="Content/themes/DarkSite/jquery.ui.tabs.css" rel="stylesheet"/>
+<link href="Content/themes/DarkSite/jquery.ui.datepicker.css" rel="stylesheet"/>
+<link href="Content/themes/DarkSite/jquery.ui.progressbar.css" rel="stylesheet"/>
+<link href="Content/themes/DarkSite/jquery.ui.theme.css" rel="stylesheet"/>
+
+    
+    <script src="Scripts/jquery-1.8.3.js"></script>
+
+    <script src="Scripts/jquery-ui-1.9.2.js"></script>
+
+    <script src="Scripts/jquery.unobtrusive-ajax.js"></script>
+<script src="Scripts/jquery.validate.js"></script>
+
+    
+    <script src="Scripts/modernizr-2.5.3.js"></script>
+
+    <script src="Scripts/funcionesVarias.js"></script>
+
+    <script src="Scripts/jquery.watermark.js"></script>
+
+    
+</head>
+<body>
+    <!-- CONTENEDOR -->
+    <div id="contenedor_home">
+        <header>
+            <div id="fecha" align="right">
+                <table width="1002px">
+                    <tr>
+                        <td align="left">
+                            <!--Localizacion-->
+                            <div id="Country">
+                                
+                                
+                            </div>
+                            <!--fin de Localizacion-->
+                        </td>
+                        <td align="right">
+                            <!--fecha-->
+                            <div id="fecha2">
+                                
+                                <div class="counrty_today_partials">
+    jueves, 18 de abril de 2013
+</div>
+                            </div>
+                            <!--fin de fecha-->
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <br clear="all" />
+
+            
+            
+
+            <!--HEADER-->
+            <div id="header" />
+            <div class=" header_borde">
+                
+            </div>
+            <div id="header-left">
+                <a href="#" target="_self">
+                    <a href="/" title="Logo Aerolineas Argentinas"><img alt="Logo Aerolineas Argentinas" border="0" height="44px" hspace="0" src="Content/themes/darksite/img/common/logo_Aerolineas.gif" vspace="0" width="252px" /></a>
+                </a>
+                <span class="screen-reader-text">
+                    Aerolineas.com</span>
+            </div>
+                <div class="fleft">
+                    <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=228%26idIdioma=es" title=""><img alt="" src="Content/themes/darksite/img/buttons/Sello.png" /></a>
+                </div>
+            <div align="right" id="logo-header">
+                <div class=" width300   fleft  mleft100 mtop5">
+                    <a href="/" title="Logo Aerolineas Argentinas"><img alt="Logo Aerolineas Argentinas" border="0" height="42px" hspace="0" src="Content/themes/darksite/img/common/aerolineas_argentinasST.jpg" vspace="0" width="100px" /></a>
+                    <a href="http://www.skyteam.com//es" target="blank" title=""><img alt="" src="Content/themes/darksite/img/common/skyteam.jpg" /></a>
+                </div>
+                <div class=" fleft mtop10 ">
+                    <!--select paises-->
+                    <div id="CultureContainer"> 
+                        
+                        <select class="INPUTBuscador" id="culture" name="culture" onChange="onCultureChanged()" style="width: 150px; margin-left: 10px;"><option selected="selected" value="es-AR">Argentina (Espa&#241;ol)</option>
+<option value="en-AR">Argentina (Ingl&#233;s)</option>
+<option value="en-AU">Australia</option>
+<option value="es-BO">Bolivia</option>
+<option value="pt-BR">Brasil</option>
+<option value="en-CA">Canad&#225;</option>
+<option value="es-CO">Colombia</option>
+<option value="es-CL">Chile</option>
+<option value="es-EU">Europa (Espa&#241;ol)</option>
+<option value="it-EU">Europa (Italiano)</option>
+<option value="en-EU">Europa (English)</option>
+<option value="es-MX">M&#233;xico</option>
+<option value="en-NZ">New Zeland</option>
+<option value="es-PA">Paraguay</option>
+<option value="es-PE">Per&#250; (Espa&#241;ol)</option>
+<option value="es-UY">Uruguay</option>
+<option value="es-US">United States (Espa&#241;ol)</option>
+<option value="en-US">United States (English)</option>
+<option value="es-VE">Venezuela</option>
+<option value="es-US">Otros pa&#237;ses (Espa&#241;ol)</option>
+<option value="en-US">Other Countries (English)</option>
+</select>
+                    </div>
+                    <!--fin de select paises-->
+                </div>
+                <div class="width400 mtop25 clearing">
+                    <p>
+                         <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=58%26idIdioma=es">Cont&#225;ctanos</a>
+                        <img src="Content/themes/darksite/img/buttons/mail.gif" alt="Cont&#225;ctanos" border="0" class="imgCont" />
+                        
+        <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=7&amp;idIdioma=es">0800-000-0000                                                                                                                                                                                           </a>
+
+
+                    </p>
+                </div>
+            </div>
+        
+            <!-- /HEADER -->
+            <br clear="all" />
+            <a name="startcontent" id="startcontent"></a>
+            <!-- NAVBAR -->
+            <div id="navbar">
+                <div id="botonera">
+                    
+                    
+    <div class="boton  width_6">
+        <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=164%26idIdioma=es">La Empresa</a>
+        <div class="transparent">
+            <ul>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=2%26idIdioma=es">Conocenos</a></li>
+                <li><a href="SkyTeamAcercaDe.htm">Alianza SkyTeam</a></li>
+				<li><a href="SkyTeamSkyPriority.htm">SkyPriority</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=239%26idIdioma=es">Aerol&#237;neas Hoy</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=82%26idIdioma=es">Recursos Humanos</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=68%26idIdioma=es">Prensa</a></li>
+                <li><a href="http://blog.aerolineas.com.ar/blog/" target="_blank">Blog de Noticias</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=152%26idIdioma=es">Proveedores</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="boton">
+        <img alt="" src="Content/themes/darksite/img/backgrounds/line.jpg" />
+    </div>
+    <div class="boton width_1">
+        <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=163%26idIdioma=es">Reservas y Servicios</a>
+        <div class="transparent">
+            <ul>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=110%26idIdioma=es">Compr&#225; tu pasaje</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=29%26idIdioma=es">Horario de vuelos programados</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=111%26idIdioma=es">Estado actual de tu vuelo</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=168%26idIdioma=es">Cheque&#225; tu reserva</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=113%26idIdioma=es">Hac&#233; tu Web Check-in</a></li>
+                    <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=176%26idIdioma=es%26tipo=V">Paquetes Aerol&#237;neas Vacaciones</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/bodies/reservas/htmls/autos.asp?idIdioma=es" target="_blank">Alquiler de Auto</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=163%26idIdioma=es">Alojamiento</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=144%26idIdioma=es">Constancia de cr&#233;dito fiscal</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/bodies/popup_reembolsoBillete.asp?idSitio=AR%26idIdioma=es" target="_blank">Devoluci&#243;n de pasajes</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="boton">
+        <img alt="" src="Content/themes/darksite/img/backgrounds/line.jpg" />
+    </div>
+    <div class="boton width_1">
+        <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=163%26idIdioma=es">Info para tu viaje</a>
+        <div class="transparent">
+            <ul>
+                <li><a href="MapaDestinos.htm">A d&#243;nde viajar</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=50%26idIdioma=es">Equipaje</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=43%26idIdioma=es">Documentaci&#243;n para tu viaje</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=22%26idIdioma=es">Info de servicios especiales</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=44%26idIdioma=es">Embarque de Menores, Embarazadas y Mascotas</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=4%26idIdioma=es">Nuestros aviones y servicios a bordo</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=27%26idIdioma=es">Mapa y datos de Aeropuertos</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=7%26idIdioma=es">Sucursales</a></li>
+                
+            </ul>
+        </div>
+    </div>
+    <div class="boton ">
+        <img alt="" src="Content/themes/darksite/img/backgrounds/line.jpg" />
+    </div>
+    <div class="boton width_2 ">
+        <a href="VuelosBaratosModulos.htm">Vuelos baratos</a>
+        <div class="transparent">
+            <ul>
+                <li><a href="MapaDestinos.htm">Mapa de destinos</a></li>
+                    <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=228%26idIdioma=es">Tarifa m&#225;s baja garantizada</a></li>
+                <li><a href="CuponesDescuentosHome.htm">Cupones de descuento</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=169%26idIdioma=es">Compr&#225; en aerolineas.com</a></li>
+                <li><a href="VisiteArgentina.htm">Visite Argentina</a></li>
+                <li><a href="SouthAmericanPass.htm">South American Pass</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="boton">
+        <img alt="" src="Content/themes/darksite/img/backgrounds/line.jpg" />
+    </div>
+    <div class=" boton width_1">
+        <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=15%26idIdioma=es">Aerol&#237;neas Plus</a>
+        <div class="transparent">
+            <ul>
+                    <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=245%26idIdioma=es">Nuevo Aerol&#237;neas Plus</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=15%26idIdioma=es">Acerca de Aerol&#237;neas Plus</a></li>
+                <li><a href="javascript:openFormInscripcionPlus()">Registrate</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=77%26idIdioma=es">Mi cuenta Plus</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=216%26idIdioma=es">Nueva tabla de millas</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=223%26idIdioma=es">Ganar millas</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=225%26idIdioma=es">Utilizar millas</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=227%26idIdioma=es">Compra de millas</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=234%26idIdioma=es">Upgrade en Canje de Millas</a></li>
+                <li><a href="CuponesDescuentos.htm">Beneficios</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=192%26idIdioma=es">Socios Elite</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=18%26idIdioma=es">Informaci&#243;n de Inter&#233;s</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=56%26idIdioma=es">Empresas Asociadas</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=103%26idIdioma=es">Preguntas Frecuentes</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=14%26idIdioma=es">Condiciones de Uso</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="boton">
+        <img alt="" src="Content/themes/darksite/img/backgrounds/line.jpg" />
+    </div>
+    <div class="boton width_6">
+        <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=167%26idIdioma=es">Corporativos</a>
+        <div class="transparent">
+            <ul>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=33%26idIdioma=es">Acuerdos Corporativos</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=36%26idIdioma=es">Ferias y Congresos</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=60%26idIdioma=es">Club Secretarias</a></li>
+            </ul>
+        </div>
+    </div>
+    
+
+
+
+    <script type="text/javascript">
+
+        function openFormInscripcionPlus() {
+            document.getElementById('ifrInscripcion').src = 'https://ftarplus.aerolineas.com.ar/plus/PlusRealNewDic/index.php?secc=11&idi=es&idSitio=AR';
+            document.getElementById('pop2').style.display = 'block';
+            document.getElementById('fondo-negro').style.display = 'block';
+        }
+        function closeFormInscripcionPlus() {
+            document.getElementById('ifrInscripcion').src = '';
+            document.getElementById('pop2').style.display = 'none';
+            document.getElementById('fondo-negro').style.display = 'none';
+        }
+
+
+    </script> 
+
+     
+    <div id="fondo-negro"></div>
+    <div id="pop2" style="height:880px;">
+	        <p>
+                <a href="javascript:closeFormInscripcionPlus()">
+                    <img src="Content/themes/darksite/img/buttons/x_btn.jpg" class="fright mright5" alt="Cerrar" />
+                </a>
+            </p> 
+	<h1 class="tituloplus_linea" style="padding-bottom:10px;">INSCRIPCIÓN <span class="gris2">ONLINE</span></h1>
+	<p>Para inscribirte en el Programa de Pasajeros Frecuentes Aerol&iacute;neas Argentinas Plus, complet&aacute; el formulario a continuaci&oacute;n y conocé las Condiciones<br>Generales del Programa antes de hacer click en  <strong>ACEPTAR</strong>.</p>
+	<iframe width="800" id="ifrInscripcion" height="800" src="" frameborder="0"></iframe>
+    </div>
+
+
+   
+
+
+                </div>
+            </div>
+            <!-- / NAVBAR -->
+            <div style="background-color:#FFF;height:50px;position:relative;">
+                <!-- LOGIN AR PLUS -->
+                
+<script type="text/javascript">
+    var url_loginARPlus = 'https://ftarplus.aerolineas.com.ar/plus/PlusRealNewDic/aplicaciones/ajax/login_step1.php?callback=?';
+    var url_loginOk = '/LoginARPlus/LoginOk?Nombre=_NOMBRE_&amp;Socio=_SOCIO_';
+    /*function submitLoginARPlus(isOk) {
+        if (isOk == 'ok') {
+            $.getJSON(url_loginARPlus, { nrosocio: $("#NroSocio").val(), clave: $("#Clave").val() }, function (data) {
+                if (parseInt(data.isOk, 10)) {
+                    var url = url_loginOk.replace("_NOMBRE_", data.nombre).replace("_SOCIO_", data.socio).replace("&amp;", "&");
+                    $.get(url, null, function (response) {
+                        //$(".buscador_plus").val(response);
+                        //$("#loginPlus").css("display", "none");
+                        window.location = 'http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=77&idIdioma=es';
+                    });
+                }
+            });
+        }
+    }*/
+
+    $(function () {
+        $('#frmLoginARPlus').validate({
+            rules: {
+                NroSocio: 'required',
+                Clave: 'required'
+            },
+            messages: {
+                NroSocio: 'Debe ingresar el campo "Número Socio"',
+                Clave: 'Debe ingresar el campo "Clave"'
+            },
+            onkeyup: false,
+            onfocusout: false,
+            onclick: false,
+            showErrors: function (errMap, errList) {
+                if (errList.length) { alert(errList[0].message); }
+            },
+            submitHandler: function (form) {
+                $.getJSON(url_loginARPlus, { nrosocio: $("#NroSocio").val(), clave: $("#Clave").val() }, function (data) {
+                    if (parseInt(data.isOk, 10)) {
+                        url_loginOk = url_loginOk.replace("_NOMBRE_", data.nombre).replace("_SOCIO_", data.socio).replace("&amp;", "&");
+                        $.get(url_loginOk, null, function (response) {
+                            window.location = 'http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=77&idIdioma=es';
+                        });
+                    }
+                });
+            }
+        });
+    });
+</script>
+
+
+
+
+<div id="buscador_principal" style="text-align:center;">
+    <div>
+        <input class="buscador_plus" type="button" value="Ingres&#225; a tu cuenta Aerol&#237;neas Plus" onclick="mostrarElemento('loginPlus');return false;" style="cursor:pointer;" />
+    </div>
+</div>
+
+
+<form action="/LoginARPlus/Submitted" id="frmLoginARPlus" method="post" name="frmLoginARPlus" onsubmit="return false;">    <div id="loginPlus" class="pop-form-arplus" style="display:none;padding:0;top:20px;">
+        <div style="margin:37px auto 0 auto;width:375px;">
+            <p class="mleft10 azul" style="height:16px;">
+                <strong class="fleft">Ingresar a mi cuenta</strong> 
+                <img src="Content/themes/darksite/img/common/ico_cerrar.png" onclick="mostrarElemento('loginPlus');" class="fright mright4" style="cursor:pointer;" />
+            </p>
+            <div class="mleft10">
+                <input class="width170 redondeado" id="NroSocio" name="NroSocio" type="text" value="" />
+                <input class="width160 redondeado mleft10" id="Clave" name="Clave" type="password" />
+            </div>
+            <div class="mleft10 fleft width170">
+                <ul>                    
+                    <li><a class="gris11" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=77%26idIdioma=es%26olvidastetuclave=1">No puedo ingresar en mi cuenta</a></li>
+                    <li><a class="gris11" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=77%26idIdioma=es%26olvidastetunrosocio=1">Olvidaste tu N&#186; de Socio?</a></li>
+                </ul>
+            </div>
+            <div class="mleft17 fleft width170">
+                <ul>
+                    <li><a class="gris11" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=77%26idIdioma=es%26primeravez=1">Primera vez que ingreso</a></li>
+                </ul>
+            </div>
+            <div class="fright">
+                <input type="submit" value="OK" class="boton_ok redondeado btnLoginARPlus mright8" />
+            </div>
+        </div>
+    </div>
+</form>
+                <!-- / LOGIN AR PLUS -->
+
+                
+                
+        <div style="float: left; width: 700px; margin-left: 10px; margin-top: 10px">
+                    <span class="gris12"><a href='http://www.aerolineas.com.ar' target='' class='link'>Importante! Presentaci&#243;n en Aeropuertos: Vuelos Nacionales 2 hs antes. Vuelos Internacionales 3 hs antes</a></span>
+        </div>
+
+
+
+
+
+            </div>
+        </header>
+        <div>
+            
+    
+
+    <div style="height:630px; width:982px; padding:0 10px 0 10px">
+      <!--columna 1-->
+      <div class="fleft" style="width:326px; margin-right:12px">
+        <!--MOTOR DE BUSQUEDA-->
+        <div id="contenedor_form_home" class="borde-redondeado">
+            
+<script type="text/javascript">
+    var vec_solapas = ['vuelos', 'webcheckin', 'misviajes', 'alojamientos'];
+    function fnSolapas(solapa, solapas) 
+    {
+        for (var i = 0; i < solapas.length; i++) 
+        {
+            if (solapa != solapas[i]) 
+            {                
+                document.getElementById(solapas[i]).style.display = "none";
+                document.getElementById(solapas[i] + 'Menu').className = "texto_botonera";
+                document.getElementById(solapas[i] + 'Img').className = solapas[i] + '-off';
+            }
+        }
+        document.getElementById(solapa).style.display = "";
+        document.getElementById(solapa + 'Menu').className = "texto_botonera_select";
+        document.getElementById(solapa + 'Img').className = solapa + '-on';
+    }
+</script>
+
+<!--botonera-->
+<div style="height:65px">
+    <div align="left" class="bot1">
+        <a id="alojamientosMenu" class="texto_botonera" href="javascript:fnSolapas('alojamientos',vec_solapas)"><!--ALOJAMIENTOS --> 
+            <span id="alojamientosImg" class="alojamientos-off"></span>
+            Alojamientos
+        </a>
+    </div>         
+    <div align="right" class="bot2">
+        <a href="#"><!--AUTOS -->
+            <span class="autos-off"></span>
+            <a class="texto_botonera" href="http://www.aerolineas.com.ar/arg//bodies/reservas/htmls/autos.asp?idSitio=AR%26idIdioma=es" target="_blank">Autos</a>
+        </a>
+    </div>
+    <div class="bot3 ">
+        <a id="webcheckinMenu" class="texto_botonera" href="javascript:fnSolapas('webcheckin',vec_solapas)"><!--WEB CHECK-IN -->
+            <span id="webcheckinImg" class="webcheckin-off"></span>
+            Web Check-In
+        </a>
+    </div>
+    <div class="bot4">
+        <a id="misviajesMenu" class="texto_botonera" href="javascript:fnSolapas('misviajes',vec_solapas)"><!--MIS VIAJES -->
+            <span id="misviajesImg" class="misviajes-off"></span>
+            Mis viajes
+        </a>
+    </div>
+    <div class="bot5">
+        <a id="vuelosMenu" class="texto_botonera_select" href="javascript:fnSolapas('vuelos',vec_solapas)"><!--VUELOS -->
+            <span id="vuelosImg" class="vuelos-on"></span>
+            Vuelos
+        </a>
+    </div>
+</div>
+
+
+
+
+<div id="webcheckin" style="display:none;">
+
+<link href="Content/themes/V2/_validate_Helpers.css" rel="stylesheet"/>
+
+
+<script type="text/javascript">
+$(function () {
+    $('#Nombre').watermark('Nombre');
+    $('#Apellido').watermark('Apellido');
+    $('#NroVuelo').watermark('Número de vuelo AR');
+    $('#CodigoReserva').watermark('Código de Reserva');
+    $('#Email').watermark('Recibir en mi email');
+});
+</script>
+
+	<script type="text/javascript">
+	    function convertir_letra(cadena, letra, letra_reemplazo) {
+	        var txt_cadena = cadena;
+	        var lng_cadena = cadena.length;
+	        var cta = 0;
+	        var txt_cadena_aux = '';
+	        var var_letra = '';
+	        while (cta <= lng_cadena - 1) {
+	            var_letra = txt_cadena.substring(cta + 1, cta);
+	            letra_mayuscula = var_letra.toUpperCase();
+	            if (letra_mayuscula == letra.toUpperCase()) {
+	                if (var_letra.toUpperCase() == var_letra)
+	                    var_letra = letra_reemplazo.toUpperCase();
+	                else
+	                    var_letra = letra_reemplazo.toLowerCase();
+	            }
+	            txt_cadena_aux = txt_cadena_aux + var_letra;
+	            cta++;
+	        }
+	        return txt_cadena_aux;
+	    }
+
+        function campoindividual_convertir(campo) {
+	        var txtAuxiliar = campo;
+		    txtAuxiliar = convertir_letra(txtAuxiliar, 'ñ', 'n');
+		    txtAuxiliar = convertir_letra(txtAuxiliar, 'ã', 'a');
+		    txtAuxiliar = convertir_letra(txtAuxiliar, 'â', 'a');
+		    txtAuxiliar = convertir_letra(txtAuxiliar, 'à', 'a');
+		    txtAuxiliar = convertir_letra(txtAuxiliar, 'Ã', 'A');
+		    txtAuxiliar = convertir_letra(txtAuxiliar, 'Â', 'A');
+		    txtAuxiliar = convertir_letra(txtAuxiliar, 'ê', 'e');
+		    txtAuxiliar = convertir_letra(txtAuxiliar, 'è', 'e');
+		    txtAuxiliar = convertir_letra(txtAuxiliar, 'î', 'i');
+		    txtAuxiliar = convertir_letra(txtAuxiliar, 'õ', 'o');
+		    txtAuxiliar = convertir_letra(txtAuxiliar, 'ô', 'o');
+		    txtAuxiliar = convertir_letra(txtAuxiliar, 'ò', 'o');
+		    txtAuxiliar = convertir_letra(txtAuxiliar, 'Õ', 'O');
+		    txtAuxiliar = convertir_letra(txtAuxiliar, 'Ô', 'O');
+		    txtAuxiliar = convertir_letra(txtAuxiliar, 'û', 'u');
+		    txtAuxiliar = convertir_letra(txtAuxiliar, 'ù', 'u');
+		    txtAuxiliar = convertir_letra(txtAuxiliar, 'ç', 'c');
+		    txtAuxiliar = convertir_letra(txtAuxiliar, 'ä', 'a');
+		    txtAuxiliar = convertir_letra(txtAuxiliar, 'ë', 'e');
+		    txtAuxiliar = convertir_letra(txtAuxiliar, 'ï', 'i');
+		    txtAuxiliar = convertir_letra(txtAuxiliar, 'ö', 'o');
+		    txtAuxiliar = convertir_letra(txtAuxiliar, 'ü', 'u');
+		    txtAuxiliar = convertir_letra(txtAuxiliar, 'á', 'a');
+		    txtAuxiliar = convertir_letra(txtAuxiliar, 'é', 'e');
+		    txtAuxiliar = convertir_letra(txtAuxiliar, 'í', 'i');
+		    txtAuxiliar = convertir_letra(txtAuxiliar, 'ó', 'o');
+		    txtAuxiliar = convertir_letra(txtAuxiliar, 'ú', 'u');
+		    txtAuxiliar = convertir_letra(txtAuxiliar, 'Á', 'A');
+		    txtAuxiliar = convertir_letra(txtAuxiliar, 'É', 'E');
+		    txtAuxiliar = convertir_letra(txtAuxiliar, 'Í', 'I');
+		    txtAuxiliar = convertir_letra(txtAuxiliar, 'Ó', 'O');
+		    txtAuxiliar = convertir_letra(txtAuxiliar, 'Ú', 'U');
+		    return txtAuxiliar;
+	    }
+
+	    function validarWebCheckin() {
+        
+	        mailValido = false;
+
+	        // los tres primeros parametros son obligatorios.
+	        var nombre = document.frmWebCheckIn.Nombre.value;
+	        var apellido = document.frmWebCheckIn.Apellido.value;
+
+	        if (apellido == '') {
+	            alert('Debe ingresar el campo "Apellido".');
+	            document.frmWebCheckIn.Apellido.focus();
+	            return (false);
+	        }
+	        else {
+	            var tamanoApellido = apellido.length;
+	            if (tamanoApellido > 29) {
+	                alert('El apellido es demasiado largo (hasta 29 caracteres)');
+	                document.frmWebCheckIn.Apellido.focus();
+	                return (false);
+	            }
+	        }
+	        if (nombre == '') {
+	            alert('Debe ingresar el campo "Nombre".');
+	            document.frmWebCheckIn.Nombre.focus();
+	            return (false);
+	        }
+	        else {
+	            var tamanoNombre = nombre.length;
+	            if (tamanoNombre > 29) {
+	                alert('El nombre es demasiado largo (hasta 29 caracteres)');
+	                document.frmWebCheckIn.Nombre.focus();
+	                return (false);
+	            }
+	        }
+	        if (document.frmWebCheckIn.Origen.value == '') {
+	            alert('Seleccione el aeropuerto de salida.');
+	            document.frmWebCheckIn.Origen.focus();
+	            return (false);
+	        }
+
+
+
+	        // compruebo que se halla ingresado el código de reserva
+	        // y/o el número de vuelo
+	        var FlightNumber = document.frmWebCheckIn.NroVuelo.value;
+	        var RecordLocator = document.frmWebCheckIn.CodigoReserva.value;
+	        var TamanoFlightNumber = FlightNumber.length;
+	        var TamanoRecordLocator = RecordLocator.length;
+	        if ((TamanoFlightNumber == 0) && (TamanoRecordLocator == 0)) {  // ||
+	            alert('Debe ingresar el "Código de Reserva" ó "Nº de Vuelo".');
+	            document.frmWebCheckIn.NroVuelo.focus();
+	            return (false);
+	        }
+	        // si se ingreso el numero de vuelo,
+	        // compruebo que sea númerico y 
+	        // no mayor a cuatro caracteres.
+	        if (FlightNumber != '') {
+	            var valorFlightNumber = parseFloat(FlightNumber);
+	            if (document.frmWebCheckIn.NroVuelo.value != valorFlightNumber) {
+	                alert('El número de vuelo no es numérico.');
+	                document.frmWebCheckIn.NroVuelo.focus();
+	                return (false);
+	            }
+	            else {
+	                var tamanoFlightNumber = FlightNumber.length;
+	                if (tamanoFlightNumber > 4) {
+	                    alert('El número de vuelo es demasiado largo (hasta 4 números)');
+	                    document.frmWebCheckIn.NroVuelo.focus();
+	                    return (false);
+	                }
+	            }
+	        }
+	        // si se ingreso el código de la reserva,
+	        // compruebo que su tamaño no sea mayor a 6 caracteres.
+	        if (RecordLocator != '') {
+	            var tamanoRecordLocator = RecordLocator.length;
+	            if (tamanoRecordLocator > 6) {
+	                alert('El código de la reserva es demasiado largo (hasta 6 caracteres)');
+	                document.frmWebCheckIn.CodigoReserva.focus();
+	                return (false);
+	            }
+	        }
+	        //expresion regular para validacion de emails
+	        var re = new RegExp(/^(\w+([\.-]?\w)+@{1}\w+([\.-]?\w)+){1}(\.\w{2,3})+$/);
+
+	        mailValido = false;
+	        if(document.getElementById("Encuesta").checked || document.getElementById("Newsletter").checked){		
+	            if (document.frmWebCheckIn.Email.value == "" || document.frmWebCheckIn.Email.value.search(re)) {
+	                alert("Debe ingresar una dirección de email.");
+	                document.frmWebCheckIn.Email.focus();
+	                return (false);
+	            }
+	            else {
+	                mailValido = true;
+	            }
+	        } else {
+	            mailValido = true;
+	        }
+	        if (document.getElementById("Condiciones").checked) {
+	            document.frmWebCheckIn.Nombre.value = campoindividual_convertir(document.frmWebCheckIn.Nombre.value);
+	            document.frmWebCheckIn.Apellido.value = campoindividual_convertir(document.frmWebCheckIn.Apellido.value);
+	            document.frmWebCheckIn.CodigoReserva.value = campoindividual_convertir(document.frmWebCheckIn.CodigoReserva.value);
+	        }
+	        else {
+	            alert('Debe aceptar las condiciones para continuar.');
+	            return false;
+	        }
+
+	        //VALIDO QUE EL NRO. DE VUELO (FlightNumber) NO ESTÉ EN AR_WEB_FiltrarCheckIn
+
+	        if (FlightNumber != "") {
+	            filtrarVuelo = document.frmWebCheckIn.filtrarWebCheckIn.value;
+	            filtrarVuelo = filtrarVuelo.replace(/^\s*|\s*$/g, "");
+	            filtrarVuelo = filtrarVuelo.split(",")
+
+	            for (i = 0; i < filtrarVuelo.length; i++) {
+	                var vuelo = filtrarVuelo[i];
+	                if (FlightNumber == vuelo) {
+	                    alert('El Web Check In no está habilitado para esta ruta.');
+	                    return false;
+	                }
+	            }
+	        }
+
+	        if (mailValido && document.getElementById("Condiciones").checked) {
+	            document.frmWebCheckIn.submit();
+	        }
+	    }
+</script>
+
+
+
+     <div class="box_form_home">        
+        <div class="alojamientos">        	
+
+<form action="/Botonera/WebCheckin" method="post" name="frmWebCheckIn" target="_blank"><input id="filtrarWebCheckIn" name="filtrarWebCheckIn" type="hidden" value="" />            <p class="azul10  fleft mbot0">Vuelos nacionales 2hs antes/ internacionales 3hs antes.</p>
+        	<div class="mtop5 fleft">
+                <input class="text3 redondeadas sombra_interior width140 fleft" data-val="true" data-val-required="Debe ingresar el campo &#39;Nombre&#39;." id="Nombre" name="Nombre" style="margin-right:0" type="text" value="" />                                                                    
+                <input class="text3 redondeadas mleft20 sombra_interior width140 fleft" data-val="true" data-val-required="Debe ingresar el campo &#39;Apellido&#39;." id="Apellido" name="Apellido" style="margin-right:0" type="text" value="" />                                                   
+            </div>
+            <div class="fleft mtop5">
+                <label class="azul11 fleft width70">Origen:</label>   
+                <select class="width230 mleft7 redondeadas text3" id="Origen" name="Origen"><option value="AEP">Aeroparque</option>
+<option value="BOG">Bogot&#225;</option>
+<option value="COR">C&#243;rdoba</option>
+<option value="EZE">Ezeiza</option>
+</select>
+            </div>
+            <div class="fleft mtop5">
+            	<span class="azul11">Para</span>
+                <input checked="checked" class="mleft53" id="hoy_Maniana" name="hoy_Maniana" type="radio" value="Hoy" />
+                <span class="azul11">Hoy</span>            
+                <input id="hoy_Maniana" name="hoy_Maniana" type="radio" value="Maniana" />
+                <span class="azul11" >Mañana / 36hs.</span> 
+            </div>
+            <div class="clearing"></div>
+            <div class="mtop5 fleft">
+                <input class="text3 redondeadas sombra_interior width136 fleft" id="NroVuelo" name="NroVuelo" style="margin-right:0" type="text" value="" />
+                <span class="azul11 fleft mtop5 mleft12">&#243;</span>
+                <input class="text3 redondeadas mleft10 sombra_interior width136 fleft" id="CodigoReserva" name="CodigoReserva" style="margin-right:0" type="text" value="" />                            
+                <span class="azul11 ptop5 fleft"><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=29%26idIdioma=es" target="_blank">Consulte n&#250;mero de vuelo</a></span>
+            </div>
+            <div class="fleft mtop5">
+            	<input class="mtop2" data-val="true" data-val-required="El campo Condiciones es obligatorio." id="Condiciones" name="Condiciones" type="checkbox" value="true" /><input name="Condiciones" type="hidden" value="false" />
+                <span class="azul11">
+                <a href="http://www.aerolineas.com.ar/arg/bodies/popup_elementospeligrosos.asp?idioma=es" target="_blank">He le&#237;do y acepto las condiciones</a> 
+                </span>
+            </div>
+            <div class="clearing"></div>
+            <div class="width123 fleft mright15 mtop10">
+                <input class="text3 redondeadas sombra_interior width123 fleft" id="Email" name="Email" style="margin-right:0" type="text" value="" />
+            </div>
+            <div class="fleft mtop10 width160 mleft14">
+            	<input class="mtop2" data-val="true" data-val-required="El campo Encuesta es obligatorio." id="Encuesta" name="Encuesta" type="checkbox" value="true" /><input name="Encuesta" type="hidden" value="false" />
+                <span class="azul11">Encuesta posterior al vuelo</span><br />
+            	<input class="mtop2" data-val="true" data-val-required="El campo Newsletter es obligatorio." id="Newsletter" name="Newsletter" type="checkbox" value="true" /><input name="Newsletter" type="hidden" value="false" />
+                <span class="azul11">Newsletter con novedades</span>
+            </div>
+            <div class="btn_it mtop5 fright mright4" style="border:0;">
+                    <a href="#" onclick="javascript:validarWebCheckin();return false;" class="blanco2">Aceptar</a>
+             </div>
+</form>         </div>
+    </div>
+        <!-- modulo -->
+    
+    
+
+</div>
+<div id="misviajes" style="display:none;">
+     <script type="text/javascript">
+
+         function validarViajes() {
+             name = document.getElementById("ApellidoMV").value;
+             pnr = document.getElementById("CodigoReservaMV").value;
+
+             if (name == '') {
+                 alert("Debe ingresar el Apellido");
+                 return false;
+             }
+             if (pnr == '') {
+                 alert("Debe ingresar el Código de Reserva");
+                 return false;
+             }
+             if (pnr.length != 6) {
+                 alert("Debe ingresar el Código de Reserva");
+                 return false;
+             }
+             var cad = /^[A-Za-z\_\-\.\s\xF1\xD1]+$/;
+             if (cad.test(pnr)) {
+             } else {
+                 alert("En el campo Código de Reserva sólo puede ingresar letras")
+                 return false;
+             }
+             document.frmMisViajes.submit();
+         }
+
+        
+    </script> 
+
+
+
+    <div class="box_form_home">        
+        <div class="misviajes">
+        	<div class="box_border mtop15 mbot10">
+            	<p class="azul12">Ingres&#225; a tu reserva</p>
+            </div>
+
+<form action="/Botonera/MisViajes" method="post" name="frmMisViajes" target="_blank">                <p>Ingres&#225; tus datos para ver el itinerario de tu viaje y obten&#233; informaci&#243;n de tu destino:</p>
+        	    <div class="mtop10 fleft">
+                    <label class="azul12 fleft width110 mtop2" for="ApellidoMV">Apellido:</label>
+                    <input class="text3 redondeadas mleft10 sombra_interior width180 fleft" id="ApellidoMV" name="ApellidoMV" type="text" value="" />
+                </div>
+                <div class="mtop10 fleft">
+                    <label class="azul12 fleft width110 mtop2" for="CodigoReservaMV">C&#243;digo de Reserva (6 letras):</label>
+                    <input class="text3 redondeadas mleft10 sombra_interior width180 fleft" data-val="true" data-val-length="El campo Código de Reserva (6 letras): debe ser una cadena con una longitud máxima de 6." data-val-length-max="6" id="CodigoReservaMV" maxlength="6" name="CodigoReservaMV" type="text" value="" />
+                </div>        
+                <div class="btn_it mtop10 fright" border="0" style="margin-right:10px;">
+                    <a href="#" onclick="javascript:validarViajes()" class="blanco2">Buscar</a>
+                </div>
+</form>        </div>
+   </div>
+    
+}
+
+	
+
+</div>
+<div id="alojamientos" style="display:none;">
+
+<style type="text/css">
+    .watermark
+    {
+        color: #999;
+    }
+    .watermarkRojo
+    {
+        color: #E80C4D;
+    }
+</style>
+<script type="text/javascript">    
+    var msgCombobox = { error1: '', tooltip: '' }
+</script>
+<script src="Scripts/combobox.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+    function capitalize(text) {
+        return text.charAt(0).toUpperCase() + text.slice(1).toLowerCase();
+    }
+
+        formatoFecha = "dd/mm/yy"; 	
+        dia = "domingo,lunes,martes,miércoles,jueves,viernes,sábado".split(",");
+        nomDia = "dom,lun,mar,mié,jue,vie,sáb".split(",");
+        mesCorto = "ene,feb,mar,abr,may,jun,jul,ago,sep,oct,nov,dic,".split(",");
+        nomMes = "enero,febrero,marzo,abril,mayo,junio,julio,agosto,septiembre,octubre,noviembre,diciembre,".split(",");
+        todayText = "Hoy";
+        for (var i = 0; i < dia.length; i++) {
+            dia[i]=capitalize(dia[i]);
+        }
+        for (var i = 0; i < nomDia.length; i++) {
+            nomDia[i] = capitalize(nomDia[i]);
+        }
+        for (var i = 0; i < mesCorto.length; i++) {
+            mesCorto[i] = capitalize(mesCorto[i]);
+        }
+        for (var i = 0; i < nomMes.length; i++) {
+            nomMes[i] = capitalize(nomMes[i]);
+        }
+        $(function () {
+
+        $("#fecha_llegada").datepicker({
+            closeText: "X",
+            currentText: todayText,
+            showButtonPanel: true,
+            buttonImageOnly: true,
+            showAnim: "clip", 		//animacion de como aparece y desaparece
+            dateFormat: formatoFecha, //formato fecha
+            minDate: 0, 				//muestra fechas desde hoy
+            maxDate: "+11M", 		//muestra fechas hasta 11 meses
+            showOtherMonths: true,      //muestra los dias del mes anterior
+            selectOtherMonths: true, //muestra los dias del mes posterior
+            //changeMonth: true,		//muestra el combo con los meses
+            //changeYear: true,			//muestra el combo con los años
+            numberOfMonths: 2, 		//muestra dos meses
+            dayNames: dia, 			//nombre de los dias        
+            dayNamesMin: nomDia, 	//nombre de los dias
+            monthNamesShort: mesCorto, //nombre de los meses
+            autoSize: true, //
+            monthNames: nomMes			//nombre de los meses
+
+        });
+
+        $("#fecha_partida").datepicker({
+            closeText: "X",
+            currentText: todayText,
+            showButtonPanel: true,
+            showAnim: "clip", 		//animacion de como aparece y desaparece
+            dateFormat: formatoFecha, //formato fecha
+            minDate: 0, 				//muestra fechas desde hoy
+            maxDate: "+11M", 		//muestra fechas hasta 11 meses
+            showOtherMonths: true,      //muestra los dias del mes anterior
+            selectOtherMonths: true, //muestra los dias del mes posterior
+            //changeMonth: true,		//muestra el combo con los meses
+            //changeYear: true,			//muestra el combo con los años
+            numberOfMonths: 2, 		//muestra dos meses
+            dayNames: dia, 			//nombre de los dias
+            dayNamesMin: nomDia, 	//nombre de los dias        
+            monthNamesShort: mesCorto, //nombre de los meses
+            monthNames: nomMes			//nombre de los meses
+        });
+
+        $('#fecha_llegada').watermark('Fecha de Llegada');
+        $('#fecha_partida').watermark('Fecha de Partida');
+
+
+    });
+
+
+
+    function validarAlojamientos() {
+        pais = document.getElementById("cmbPais2").value;
+        provincia = document.getElementById("provincia").value;
+        fecha_partida = document.getElementById("fecha_partida").value;
+        fecha_llegada = document.getElementById("fecha_llegada").value;
+        if (pais == '' || pais == '0') {
+            alert("Debe ingresar el 'Pais'");
+            return false;
+        }
+        if (provincia == '' || provincia == '0') {
+            alert("Debe ingresar la 'provincia/estado'");
+            return false;
+        }
+        if (fecha_partida == '') {
+            alert("Debe ingresar la fecha de 'Partida'.");
+            return false;
+        }
+        if (fecha_llegada == '') {
+            alert("Debe ingresar la fecha de 'LLegada'.");
+            return false;
+        }
+        document.frmAlojamientos.submit();
+    }
+</script>
+
+    <div class="box_form_home">
+        <div class="alojamientos">            
+
+<form action="/Botonera/Alojamientos" method="post" name="frmAlojamientos" target="_blank">            <div class="mtop10">
+                <label class="azul11 fleft width72">País:</label>
+<select class="width220 mleft10 redondeadas text3" id="cmbPais2" name="cmbPais2"><option value="0">Seleccion&#225; tu pa&#237;s de residencia</option>
+<option value="57">Alemania</option>
+<option value="12">Argentina</option>
+<option value="16">Aruba</option>
+<option value="14">Austria</option>
+<option value="32">Bahamas</option>
+<option value="30">Bolivia</option>
+<option value="31">Brasil</option>
+<option value="24">Bulgaria</option>
+<option value="38">Canada</option>
+<option value="46">Chile</option>
+<option value="49">Colombia</option>
+<option value="50">Costa Rica</option>
+<option value="52">Cuba</option>
+<option value="59">Dinamarca</option>
+<option value="61">Dominican Republic</option>
+<option value="63">Ecuador</option>
+<option value="229">EEUU</option>
+<option value="68">Espa&#241;a</option>
+<option value="64">Estonia</option>
+<option value="70">Finlandia</option>
+<option value="75">Francia</option>
+<option value="89">Grecia</option>
+<option value="162">Holanda</option>
+<option value="100">Hungria</option>
+<option value="108">Iceland</option>
+<option value="102">Ireland</option>
+<option value="109">Italia</option>
+<option value="110">Jamaica</option>
+<option value="133">Latvia</option>
+<option value="131">Lithuania</option>
+<option value="132">Luxembourg</option>
+<option value="153">Mexico</option>
+<option value="136">Monaco</option>
+<option value="163">Norway</option>
+<option value="182">Paraguay</option>
+<option value="170">Per&#250;</option>
+<option value="175">Polonia</option>
+<option value="180">Portugal</option>
+<option value="56">Republica Checa</option>
+<option value="185">Rumania</option>
+<option value="186">Rusia</option>
+<option value="51">Serbia</option>
+<option value="197">Slovakia</option>
+<option value="195">Slovenia</option>
+<option value="192">Suecia</option>
+<option value="43">Suiza</option>
+<option value="227">United Kingdom</option>
+<option value="230">Uruguay</option>
+</select>            </div>
+            <div class="mtop10">
+                <label class="azul11 fleft width72">Provincia y Estado:</label>
+<div><select class="width220 mleft10 redondeadas text3" id="provincia" name="provincia"><option selected="selected" value="">Seleccion&#225; tu provincia/estado de residencia</option>
+</select><script type="text/javascript">
+            <!--
+                  // Inicialización
+
+                  $(document).ready(function() {        
+                    $('#cmbPais2').change(function() {
+                      cambiaElementos_cmbPais2_provincia($('#cmbPais2').val());
+                    });
+                    cambiaElementos_cmbPais2_provincia($('#cmbPais2').val());
+                  });
+
+                  // Carga el desplegable de elementos en función
+                  // de la categoría que le llega como parámetro.
+
+                  function cambiaElementos_cmbPais2_provincia(param) {
+       
+                    var dd = document.getElementById('provincia');
+                    dd.options.length = 0;
+                    dd.options[0] = new Option('Espere...', '');
+                    dd.selectedIndex = 0;
+                    dd.disabled = true;
+
+                    // Control de errores
+
+                    $('provincia').ajaxError(function(event, request, settings) {
+                      dd.options[0] = new Option('Error al invocar la carga del combo', '');
+                    });
+
+                    // Obtenemos los datos...
+
+                    $.getJSON(
+                        '/Botonera/LoadProvincias',                // URL a la acción
+                        { cmbPais2: param },     // Objeto JSON con parámetros
+                        function(data) {                        // Función de retorno exitoso
+                          dd.options[0] = new Option('[No hay Datos]', '');
+                          if (data != null) {
+                            $.each(data, function(i, item) {
+                                if ('' == item.Value)
+                                {
+                                    // El elemento esta seleccionado
+                                    dd.options[i] = new Option(item.Text, item.Value, true, true);
+                                }
+                                else
+                                {
+                                    // El elemento NO esta seleccionado
+                                    dd.options[i] = new Option(item.Text, item.Value);                                    
+                                }
+                            });
+                          }
+                          dd.disabled = false;
+                        })
+                        .error(function(event, request, settings) 
+                        { 
+                            dd.options[0] = new Option('Error al invocar la carga del combo', '');
+                        });
+                    }
+
+            -->
+            </script></div>            </div>
+            <div class="box_border mtop15 mbot5"></div>
+            <div >
+                <div class="mbot5 mtop5 fleft" style="width:155px;">
+                    <label class="azul12">Fecha de Llegada:</label>                
+                </div>                                
+                <div class="mbot5 mtop5 fleft" style="width:155px;">
+                    <label class="azul12">Fecha de Partida:</label>                
+                </div>  
+                               
+                <br style="clear:left;">
+
+                <div class="mbot5 mtop5 fleft" style="width:155px;">
+                    <input class="input_calendar_home redondeadas" id="fecha_llegada" name="fecha_llegada" style="width:145px;" type="text" value="" />
+                </div>
+                <div class="mbot5 mtop5 fleft" style="width:155px;">
+                    <input class="input_calendar_home redondeadas" id="fecha_partida" name="fecha_partida" style="width:145px;" type="text" value="" />
+                </div>                   
+            </div>
+            <div class="mbot10 mtop20 width100 fleft">
+                <label class="azul12">Cantidad de pasajeros:</label>
+                <select id="cantidadCuartos" name="cantidadCuartos" class="width50 redondeadas text3">
+                    <option value="01" >01</option>
+                    <option value="02" >02</option>
+                    <option value="03" >03</option>
+                    <option value="04" >04</option>
+                    <option value="05" >05</option>
+                </select>
+            </div>
+            <div style="margin-right: 4px; *margin-right: -20px;">
+                <input class="btn_it mtop10 fright" style="height:23px;" onclick="javascript:validarAlojamientos();return false;" type="submit" value="Buscar" />                
+            </div>
+            <div class="fleft width300">
+                <p class="nopadding nomargin">
+                    También podés reservar tu <a class="azul12" href="http://www.aerolineas.com.ar/arg/bodies/reservas/htmls/hostels.asp?idSitio=AR%26idIdioma=es" target="_blank">Hostel</a> 
+                </p>
+            </div>
+</form>
+        </div>
+    </div>
+
+</div>
+<div id="vuelos" >
+
+<link href="Content/themes/V2/_validate_Helpers.css" rel="stylesheet"/>
+
+<link href="Content/themes/darksite/css/MapaDestinos.css" rel="stylesheet"/>
+
+<link href="Content/themes/darksite/cupertino/jquery-ui-1.9.1.custom.min.css" rel="stylesheet"/>
+
+<link href="Content/themes/darksite/css/comboMapa.css" rel="stylesheet"/>
+
+<!--[if IE 7]><link href="Content/themes/darksite/css/comboMapa_ie7.css" rel="stylesheet"/>
+<![endif]-->
+
+
+
+<style type="text/css">
+    #ui-datepicker-div{font-size: 70%;}
+</style>
+
+<script type="text/javascript">var msgCombobox = { error1: 'error1', tooltip: 'tooltip' }</script>
+<script type="text/javascript" src="Scripts/combobox.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+
+        $('#origen').watermark('Origen');
+        $('#destino').watermark('Destino');
+        $('#fecha_ida').watermark('Ida');
+        $('#fecha_vuelta').watermark('Vuelta');
+        $('#codigo_reserva').watermark('Código de reserva');
+
+        $('input[name=ida_vuelta_multiplesDestinos]').click(function () {
+            if ($(this).val() == 'M') {
+                restoreRadio();
+                window.location = 'http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=129&idIdioma=es';
+            }
+            else if ($(this).val() == 'VARG') {
+                restoreRadio();
+                window.location = '/VuelosBaratos/VisiteArgentina';
+            }
+            else if ($(this).val() == 'SAP') {
+                restoreRadio();
+                window.location = '/VuelosBaratos/SouthAmericanPass';
+            }
+
+        });
+
+        function restoreRadio() {
+            // Vuelvo el radio button a la posicion válida
+            var radio = $('input[name=ida_vuelta_multiplesDestinos]');
+            radio[0].checked = true;
+            //radio.button("refresh");
+        }
+
+        function capitalize(text) {
+            return text.charAt(0).toUpperCase() + text.slice(1).toLowerCase();
+        }
+
+        formatoFecha = "dd/mm/yy";
+        dia = "domingo,lunes,martes,miércoles,jueves,viernes,sábado".split(",");
+        nomDia = "dom,lun,mar,mié,jue,vie,sáb".split(",");
+        mesCorto = "ene,feb,mar,abr,may,jun,jul,ago,sep,oct,nov,dic,".split(",");
+        nomMes = "enero,febrero,marzo,abril,mayo,junio,julio,agosto,septiembre,octubre,noviembre,diciembre,".split(",");
+        todayText = "Hoy";
+
+        for (var i = 0; i < dia.length; i++) {
+            dia[i] = capitalize(dia[i]);
+        }
+        for (var i = 0; i < nomDia.length; i++) {
+            nomDia[i] = capitalize(nomDia[i]);
+        }
+        for (var i = 0; i < mesCorto.length; i++) {
+            mesCorto[i] = capitalize(mesCorto[i]);
+        }
+        for (var i = 0; i < nomMes.length; i++) {
+            nomMes[i] = capitalize(nomMes[i]);
+        }
+
+        $("#fecha_ida").datepicker({
+            closeText: "X",
+            currentText: todayText,
+            showButtonPanel: true,
+            buttonImageOnly: true,
+            showAnim: "clip", 		    //animacion de como aparece y desaparece
+            dateFormat: formatoFecha,   //formato fecha
+            minDate: 1, 				//muestra fechas desde hoy
+            maxDate: "+11M", 		    //muestra fechas hasta 11 meses
+            showOtherMonths: true,      //muestra los dias del mes anterior
+            selectOtherMonths: true,    //muestra los dias del mes posterior
+            //changeMonth: true,		//muestra el combo con los meses
+            //changeYear: true,			//muestra el combo con los años
+            numberOfMonths: 2,          //muestra dos meses
+            dayNames: dia, 			    //nombre de los dias        
+            dayNamesMin: nomDia, 	    //nombre de los dias
+            monthNamesShort: mesCorto,  //nombre de los meses
+            autoSize: true,             //
+            monthNames: nomMes		    //nombre de los meses
+        });
+
+        $('#fecha_ida').datepicker("setDate", '19/04/2013');
+
+        $("#fecha_vuelta").datepicker({
+            closeText: "X",
+            currentText: todayText,
+            showButtonPanel: true,
+            showAnim: "clip", 		    //animacion de como aparece y desaparece
+            dateFormat: formatoFecha,   //formato fecha
+            minDate: 1, 				//muestra fechas desde hoy
+            maxDate: "+11M", 		    //muestra fechas hasta 11 meses
+            showOtherMonths: true,      //muestra los dias del mes anterior
+            selectOtherMonths: true,    //muestra los dias del mes posterior
+            //changeMonth: true,		//muestra el combo con los meses
+            //changeYear: true,			//muestra el combo con los años
+            numberOfMonths: 2, 		    //muestra dos meses
+            dayNames: dia, 			    //nombre de los dias
+            dayNamesMin: nomDia, 	    //nombre de los dias        
+            monthNamesShort: mesCorto,  //nombre de los meses
+            monthNames: nomMes			//nombre de los meses
+        });
+
+        $('#fecha_vuelta').datepicker("setDate", '19/04/2013');
+
+        var urlMarkers = '/MapaDestinos/GoogleDestinations';
+        var paises = [];
+        var destinos = []; destinos['Todos'] = new Object();
+        var j = 0;
+        var valoresAutocompletar = [];
+
+        $.getJSON(urlMarkers, function (data1) {
+
+            $.each(data1, function (i, data) {
+                //DESTINOS
+                destinos['Todos'][data.cod_dest] = { destino: data.address, flex: data.flex };
+                if (destinos[data.cod_pais] == undefined) { destinos[data.cod_pais] = new Object(); }
+                destinos[data.cod_pais][data.cod_dest] = { destino: data.address, flex: data.flex };
+
+                //PAISES
+                if (!$.grep(paises, function (n) { return n.value == data.cod_pais; }).length) {
+                    paises[j] = { label: data.country, value: data.cod_pais };
+                    j++;
+                }
+
+                //INPUT AUTOCOMPLETE
+                valoresAutocompletar[i] = data.address + ' (' + data.cod_dest + ')';
+            });
+
+            //SORT paises
+            paises.sort(function (a, b) {
+                if (a.label < b.label)
+                    return -1;
+                if (a.label > b.label)
+                    return 1;
+                return 0;
+            });
+
+            cargarPaises(paises);
+            cargarDestinos(destinos['Todos']);
+
+        }).error(function (jqXHR, textStatus, errorThrown) {
+            console.log(jqXHR.responseText);
+            console.log(textStatus);
+            console.log(errorThrown);
+        });
+
+        $("#pais").combobox();
+
+        $('#pais').combobox({
+            selected: function (event, ui) {
+                cargarDestinos(destinos[ui.item.value]);
+            }
+        });
+
+        $("#origen").autocomplete({ source: valoresAutocompletar });
+        $("#destino").autocomplete({ source: valoresAutocompletar });
+
+
+        /***** ADD NEW RULES *****/
+        //codCiudad: verifica que el codigo de ciudad coincida con la que se ingresa en el input.
+        $.validator.addMethod('codCiudad', function (val) {
+
+            val = val.split('(');
+            var isOk = false;
+
+            if (val.length == 2) {
+                val = val[1].substring(0, 3);
+                $.each(destinos['Todos'], function (cod) {
+                    if (cod == val) {
+                        isOk = true;
+                        return false;
+                    }
+                });
+            }
+
+            return isOk;
+        });
+        //fecha: verifica que la fecha de salida sea < que la de regreso.
+        $.validator.addMethod('fecha', function (val) {
+
+            var isOk = true;
+            var ida_vuelta_isChecked = $('input[name=ida_vuelta_multiplesDestinos]:checked').val() == 'returntravel' ? true : false;
+            var fechaIda = $.trim(val);
+            var fechaVuelta = $.trim($('#fecha_vuelta').val());
+
+            //console.log('ida_vuelta_isChecked: ' + ida_vuelta_isChecked);
+            //console.log(fechaIda + ' > ' + fechaVuelta);
+            //console.log($('#ida_vuelta').attr('checked'));
+
+            if (ida_vuelta_isChecked && fechaIda.length && fechaVuelta.length) {
+                var cc = 'es-AR'.split('-');
+                fechaIda = fechaIda.split('/');
+                fechaVuelta = fechaVuelta.split('/');
+
+                if (cc[0] == 'en') {
+                    fechaIda = fechaIda[2] + fechaIda[0] + fechaIda[1];
+                    fechaVuelta = fechaVuelta[2] + fechaVuelta[0] + fechaVuelta[1];
+                } else {
+                    fechaIda = fechaIda[2] + fechaIda[1] + fechaIda[0];
+                    fechaVuelta = fechaVuelta[2] + fechaVuelta[1] + fechaVuelta[0];
+                }
+
+                if (fechaIda > fechaVuelta) { isOk = false; }
+            }
+
+            return isOk;
+        });
+        //venezuela: verificación del origen para el "sitio de Venezuela"
+        //obligando al usuario elegir como origen alguna ciudad de Venezuela
+        $.validator.addMethod('venezuela', function (val) {
+
+            var cc = 'es-AR'.split('-');
+            var arrOrigen = ['CCS', 'PMV', 'MAR', 'STD', 'BNS', 'VIG'];
+            var isOk = true;
+
+            if (cc[1] == 'VE') {
+
+                isOk = false;
+
+                val = val.split('(');
+
+                if (val.length == 2) {
+                    val = val[1].substring(0, 3);
+                    $.each(arrOrigen, function (i, cod) {
+                        if (cod == val) {
+                            isOk = true;
+                            return false;
+                        }
+                    });
+                }
+            }
+
+            return isOk;
+        });
+        //lima: verificación origen y destino cuando el valor es Lima
+        //en ese caso tiene que hacer la reserva con 3 dias de anticipación
+        $.validator.addMethod('lima', function (orig) {
+
+            var dest = $.trim($('#destino').val());
+            orig = $.trim(orig);
+            var fechaIda = $.trim($('#fecha_ida').val());
+            var isOk = true;
+
+            if (fechaIda.length && orig.length && dest.length) {
+
+                dest = dest.split('(');
+                orig = orig.split('(');
+
+                dest = dest[1].substring(0, 3);
+                orig = orig[1].substring(0, 3);
+
+                if (orig == 'LIM' || dest == 'LIM') {
+
+                    var cc = 'es-AR'.split('-');
+                    var hoy = '20130418';
+
+                    fechaIda = fechaIda.split('/');
+
+                    if (cc[0] == 'en') { fechaIda = fechaIda[2] + fechaIda[0] + fechaIda[1]; }
+                    else { fechaIda = fechaIda[2] + fechaIda[1] + fechaIda[0]; }
+
+                    var dif = fechaIda - hoy;
+
+                    if (dif <= 3) { isOk = false; }
+                }
+            }
+            return isOk;
+        });
+        //neuquen: verificación origen y destino cuando el valor es Neuquen
+        $.validator.addMethod('neuquen', function (orig) {
+            var dest = $.trim($('#destino').val());
+            orig = $.trim(orig);
+            var fechaIda = $.trim($('#fecha_ida').val());
+            var fechaVuelta = $.trim($('#fecha_vuelta').val());
+            var isOk = true;
+
+            if (fechaIda.length && fechaVuelta.length && orig.length && dest.length) {
+
+                dest = dest.split('(');
+                orig = orig.split('(');
+
+                dest = dest[1].substring(0, 3);
+                orig = orig[1].substring(0, 3);
+
+                if (orig == 'NQN' || dest == 'NQN') {
+
+                    var cc = 'es-AR'.split('-');
+                    var hoy = '20130418';
+
+                    fechaIda = fechaIda.split('/');
+                    fechaVuelta = fechaVuelta.split('/');
+
+                    if (cc[0] == 'en') {
+                        fechaIda = fechaIda[2] + fechaIda[0] + fechaIda[1];
+                        fechaVuelta = fechaVuelta[2] + fechaVuelta[0] + fechaVuelta[1];
+                    } else {
+                        fechaIda = fechaIda[2] + fechaIda[1] + fechaIda[0];
+                        fechaVuelta = fechaVuelta[2] + fechaVuelta[1] + fechaVuelta[0];
+                    }
+
+                    //console.log(fechaIda + ' >= 20130107 && ' + fechaIda + ' <= 20130224');
+                    //console.log(fechaVuelta + ' >= 20130107 && ' + fechaVuelta + ' <= 20130224');
+                    if ((fechaIda >= 20130107 && fechaIda <= 20130224) || (fechaVuelta >= 20130107 && fechaVuelta <= 20130224)) {
+                        isOk = false;
+                    }
+                }
+            }
+            return isOk;
+        });
+        //trelew: da una notificación solamente.
+        $.validator.addMethod('trelew', function (orig) {
+            var dest = $.trim($('#destino').val());
+            orig = $.trim(orig);
+
+            if (orig.length && dest.length) {
+
+                dest = dest.split('(');
+                orig = orig.split('(');
+
+                dest = dest[1].substring(0, 3);
+                orig = orig[1].substring(0, 3);
+
+                if (orig == 'REL' || dest == 'REL') {
+                    alert('Puerto Madryn a 70 Km conexión vía terrestre a cargo del pasajero.');
+                }
+            }
+            return true;
+        });
+        //bogota: abre un popup.
+        $.validator.addMethod('bogota', function (orig) {
+            var dest = $.trim($('#destino').val());
+            orig = $.trim(orig);
+            var fechaIda = $.trim($('#fecha_ida').val());
+            var isOk = true;
+
+            if (fechaIda.length && orig.length && dest.length) {
+
+                dest = dest.split('(');
+                orig = orig.split('(');
+
+                dest = dest[1].substring(0, 3);
+                orig = orig[1].substring(0, 3);
+
+                if (orig == 'BOG' || dest == 'BOG') {
+
+                    var cc = 'es-AR'.split('-');
+                    var hoy = '20130418';
+
+                    fechaIda = fechaIda.split('/');
+
+                    if (cc[0] == 'en') { fechaIda = fechaIda[2] + fechaIda[0] + fechaIda[1]; }
+                    else { fechaIda = fechaIda[2] + fechaIda[1] + fechaIda[0]; }
+
+                    var dif = fechaIda - hoy;
+
+                    if (dif <= 2) { isOk = false; }
+                }
+            }
+            if (isOk && orig.length && dest.length) {
+
+                dest = dest.split('(');
+                orig = orig.split('(');
+
+                dest = dest[1].substring(0, 3);
+                orig = orig[1].substring(0, 3);
+
+                if (orig == 'BOG' || dest == 'BOG') {
+                    var cc = 'es-AR'.split('-');
+                    //window.open('bodies/popup_bogota.asp?idIdioma='+cc[0], '', 'height=230,width=673,toolbar=no,directories=no,status=no,linemenubar=no,scrollbars=yes,resizable=no,modal=yes,left=30,top=15');
+                    window.open('http://www.aerolineas.com.ar/arg/bodies/popup_bogota.asp?idIdioma=es', '', 'height=230,width=673,toolbar=no,directories=no,status=no,linemenubar=no,scrollbars=yes,resizable=no,modal=yes,left=30,top=15');
+                }
+            }
+            return isOk;
+        });
+        //bebes y adultos.
+        $.validator.addMethod('bebesAdultos', function (cantBebes) {
+            var cantAdultos = $.trim($('#cantidadAdultos').val());
+            var isOk = true;
+
+            if (cantBebes > cantAdultos) {
+                isOk = false;
+            }
+            return isOk;
+        });
+        //fecha_vuelta: valida esta fecha unicamente si es ida y vuelta en el radio button
+        $.validator.addMethod('fechaVuelta', function (fechaVuelta) {
+            var isOk = true;
+            if ($('input[name=ida_vuelta_multiplesDestinos]:checked').val() == 'returntravel') {
+                if (!$.trim(fechaVuelta)) { isOk = false; }
+            }
+            return isOk;
+        });
+        /***** END ADD NEW RULES *****/
+
+        //VALIDATE HANDLER
+        $('#frmVuelos').validate({
+            rules: {
+                origen: {
+                    required: true,
+                    codCiudad: true,
+                    venezuela: true,
+                    lima: true,
+                    neuquen: true,
+                    trelew: true,
+                    bogota: true
+                },
+                destino: {
+                    required: true,
+                    codCiudad: true
+                },
+                fecha_ida: {
+                    required: true,
+                    fecha: true
+                },
+                fecha_vuelta: 'fechaVuelta',
+                cantidadBebes: 'bebesAdultos'
+            },
+            messages: {
+                origen: {
+                    required: 'Primero debe especificar el Origen de partida del vuelo',
+                    codCiudad: 'Debe seleccionar un origen válido',
+                    venezuela: 'Para poder realizar la reserva, su viaje debe comenzar en Venezuela.',
+                    lima: 'Se informa que las reservas hacia/desde LIMA sólo se pueden abonar por la web si el comienzo del viaje es posterior a los 3 días corridos.',
+                    bogota: 'Se informa que las reservas hacia/desde BOGOTÁ sólo se pueden abonar por la web si el comienzo del viaje es posterior a los 2 días corridos.',
+                    neuquen: 'Informamos que el  Aeropuerto de Neuquén permanecerá cerrado por reparaciones del 07/01/2013 al 24/02/2013 inclusive.'
+                },
+                destino: {
+                    required: 'Primero debe especificar el Destino de arribo del vuelo',
+                    codCiudad: 'Debe seleccionar un destino válido'
+                },
+                fecha_ida: {
+                    required: 'Debe ingresar la fecha de "Ida".',
+                    fecha: 'La fecha de salida debe ser menor a la de regreso'
+                },
+                fecha_vuelta: 'Debe ingresar la fecha de "Vuelta".',
+                cantidadBebes: 'La cantidad de bebs no puede ser mayor a la de adultos.'
+            },
+            onkeyup: false,
+            onfocusout: false,
+            onclick: false,
+            showErrors: function (errMap, errList) {
+                if (errList.length) { alert(errList[0].message); }
+            }
+        });
+        //END VALIDATE HANDLER
+
+        $('#fecha_ida').change(function () {
+
+            var ida = this.value;
+            var vuelta = $("#fecha_vuelta").val();
+
+            var nuevaFechaIda = ida.split('/');
+            var ida1 = nuevaFechaIda[2] + nuevaFechaIda[1] + nuevaFechaIda[0];
+            var nuevaFechaVuelta = vuelta.split('/');
+            var vuelta1 = nuevaFechaVuelta[2] + nuevaFechaVuelta[1] + nuevaFechaVuelta[0];
+
+            if (vuelta1 < ida1) { $("#fecha_vuelta").val(ida); }
+        });
+    });    
+</script>
+<!-- 
+    Nota! Se separo en 2 tags <script> porque en ie7 lanza un error 
+    en el primer bloque de <script> se encuentra el ready de jquery,
+    en el segundo bloque de <script> se encuentran las variables y funciones que no necesitan del ready de jquery.
+-->
+<script type="text/javascript">
+var tipoGlobal = "";
+
+function open1(param, idSpan, titulo, tipo) {
+    
+    document.getElementById(param).style.display = 'block';
+    document.getElementById(idSpan).innerHTML = titulo;
+    tipoGlobal = tipo;
+
+    if (tipo == 'D') { $('#div_flotante2').css('top', '60px'); }
+    else {$('#div_flotante2').css('top', '27px');}
+    
+    //FIX para ie7
+    //sirve para ocultar los elementos que aparecen por encima del div flotante que contiene los destinos a seleccionar
+    $('#popups2Container').css('visibility', 'hidden');
+    $('#img_question').css('visibility', 'hidden');
+    //END FIX para ie7
+}
+
+function close1(param) {
+    
+    document.getElementById(param).style.display = 'none';
+    
+    //FIX para ie7
+    //sirve para ocultar los elementos que aparecen por encima del div flotante que contiene los destinos a seleccionar
+    $('#popups2Container').css('visibility', 'visible');
+    $('#img_question').css('visibility', 'visible');
+    //END FIX para ie7
+}
+
+function cargarPaises(paises) {
+    $.each(paises, function (i, obj) {
+        $('<option/>', {
+            text: obj.label,
+            value: obj.value
+        }).appendTo('#pais');
+    })
+}
+
+function cargarDestinos(destinos) {
+    $('.ciudadDestino ul').empty();
+    $.each(destinos, function (cod, obj) {
+        $('<li/>', {
+            text: obj.destino,
+            click: function () {
+                if (tipoGlobal == "O") {
+                    $('#origen').val(obj.destino + " (" + cod + ")"); close1('div_flotante2');
+                } else {
+                    $('#destino').val(obj.destino + " (" + cod + ")"); close1('div_flotante2');
+                }
+            }
+        }).appendTo('.ciudadDestino ul').attr('class', !obj.flex ? 'fbold' : '');
+    });
+}
+
+function cambiarCombos() {
+    $('#origen').val('');
+    $('#destino').val('');
+}
+</script>
+
+
+<form action="/Botonera/Vuelos" id="frmVuelos" method="post" name="frmVuelos">    <div class="box_form_home">
+        <div class="text1">
+            Última búsqueda:
+            <span onclick="cambiarCombos();" style="cursor:pointer;"> - </span>
+        </div>
+            <div style="height: 10px; width: 268px;"></div>  
+        <div class="box_border">
+            <input checked="checked" class=" mtop5" id="ida_vuelta_multiplesDestinos" name="ida_vuelta_multiplesDestinos" style="width: 15px" type="radio" value="returntravel" />
+            <span class="text2">Ida y vuelta</span>
+            <input class=" mtop5" id="ida_vuelta_multiplesDestinos" name="ida_vuelta_multiplesDestinos" style="width: 15px" type="radio" value="onewaytravel" />
+            <span class="text2">Ida</span>
+            <input class=" mtop5" id="ida_vuelta_multiplesDestinos" name="ida_vuelta_multiplesDestinos" style="width: 15px" type="radio" value="M" />
+            <span class="text2">Múltiples Destinos</span>
+            <br />
+            <input class=" mtop5" id="ida_vuelta_multiplesDestinos" name="ida_vuelta_multiplesDestinos" style="width: 15px" type="radio" value="VARG" />
+            <span class="text2">Visite Argentina</span>
+            <input class=" mtop5" id="ida_vuelta_multiplesDestinos" name="ida_vuelta_multiplesDestinos" style="width: 15px" type="radio" value="SAP" />
+            <span class="text2">South American Pass</span>
+            <br style="margin-bottom: 5px;" />
+            <div id="divOrigen" class="redondeadas" style="width: 298px; margin-bottom: 7px; position: relative;">
+                <span class="redondeadas" style="width: 298px; margin-bottom: 7px;">
+                    <input class="error_orig_dest" id="origen" name="origen" style="border:1px solid #fff;" type="text" value="" />
+                </span>
+                <a href="javascript:open1('div_flotante2','box_title','Origen','O');"><img  src="Content/themes/darksite/img/buttons/search.gif" alt="" style="padding-top:3px; margin-left:12px;border:0;"/></a>
+                <div id="div_flotante2" class="redondeado" style="width: 357px; height: 235px; top: 27px; left: -25px; display: none; font-size:12px;">
+                    <span id="box_title" class="mleft10 celeste fbold fleft_ie7"></span>
+                    <img onclick="close1('div_flotante2')" id="box_btn" src="Content/themes/darksite/img/buttons/x_btn.jpg" alt="" class="mleft10 mpointer fright" />
+                    <div id="buscadorTarifas" class="box_top mleft10" style="display: block;">
+                        <div class="box_origenViaje">
+                            <div class="box_buscaPor" style="font-size: 11px;">Buscá por país</div>
+                            <select id="pais" style="width: 130px; font-size: 11px;">
+                                <option value="Todos">Todos</option>
+                            </select>
+                        </div>
+                        <div id="divOrigenCab" style="float: left; margin-left: 10px; margin-top: 10px;">
+                            <div style="color: #0081c6; margin: 0px; padding: 0; margin-bottom: 10px; font-size: 11px">Buscá por destino</div>
+                            <div class="ciudadDestino">
+                                <ul></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="divDestino" class="redondeadas" style="width: 298px;margin-bottom:7px;">
+                <input class="error_orig_dest" id="destino" name="destino" style="border:1px solid #fff;" type="text" value="" />
+                <a href="javascript:open1('div_flotante2','box_title','Destino','D')">
+                    <img src="Content/themes/darksite/img/buttons/search.gif" alt="" style="width:21px;height:19px;padding-top:3px; margin-left:12px;border:0;" />
+                </a>
+            </div>
+            <!--<input alt="" 
+ type="text"  name="#2" value="Destino" class=" input_lupa_home redondeadas" /> -->
+            
+            <input class="input_calendar_home redondeadas" id="fecha_ida" name="fecha_ida" type="text" value="" />
+            <input class="input_calendar_home redondeadas" id="fecha_vuelta" name="fecha_vuelta" type="text" value="" />
+        </div>
+        <div id="popups2Container" style="clear:both;">
+            <div id="popup2" class="text1 mleft120 fleft">
+            <a href="#">adultos
+            <span class="sombra_exterior callout2 border-callout2 topADT">Mayor de 12 años.  <b class="border-notch2 notch2"></b>
+            <b class="notch2"></b></span></a>
+            <b class="border-notch2 notch2"></b>
+            <b class="notch2"></b>
+            </div>
+
+            <div id="popup2" class="text1 mleft45 fleft">
+            <a href="#">niños
+            <span class="sombra_exterior callout2 border-callout2  topCHD">Menor entre 2 y 12 años de edad sin cumplir a la fecha de inicio del viaje.  <b class="border-notch2 notch2"></b>
+            <b class="notch2"></b></span></a>
+            <b class="border-notch2 notch2"></b>
+            <b class="notch2"></b>
+            </div>
+
+            <div id="popup2" class="text1 mleft35 fleft">
+            <a href="#">bebes
+            <span class="sombra_exterior callout2 border-callout2  topINF">Menor de 2 años de edad sin cumplir a la fecha de inicio del viaje para vuelos Cabotaje/Regional/Internacional.  <b class="border-notch2 notch2"></b>
+            <b class="notch2"></b></span></a>
+            <b class="border-notch2 notch2"></b>
+            <b class="notch2"></b>
+            </div>
+        </div>
+
+        
+         <div style="clear:both;">
+            <select class="buscador3 mmtop3 mright5 redondeadas width2 text3" name="classService"
+                id="classService">
+                <option value="CoachClass">Economy</option>
+                <option value="BusinessClass">Club Cóndor</option>
+            </select>
+            <select class="buscador2 redondeadas text3" name="cantidadAdultos" id="cantidadAdultos">
+                <option value="1">01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+                <option value="4">04</option>
+                <option value="5">05</option>
+                <option value="6">06</option>
+                <option value="7">07</option>
+            </select>
+            <select class="buscador2 redondeadas text3" name="cantidadChicos" id="cantidadChicos">
+                <option value="0">00</option>
+                <option value="1">01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+                <option value="4">04</option>
+                <option value="5">05</option>
+                <option value="6">06</option>
+                <option value="7">07</option>
+            </select>
+            <select class="buscador2 redondeadas text3" name="cantidadBebes" id="cantidadBebes">
+                <option value="0">00</option>
+                <option value="1">01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+                <option value="4">04</option>
+                <option value="5">05</option>
+                <option value="6">06</option>
+                <option value="7">07</option>
+            </select>
+        </div>
+        <div class="" style="margin-bottom:10px;">
+            <div class="text2 color2 mtop15 fleft">Cup&#243;n de Descuento</div> 
+            
+            
+            <div class="fleft" style="margin:0px 5px 0 35px; width:131px; text-align:left;">
+                <input type="submit" value="Buscar" class="btn2_it mtop10 fright pointer" onclick="_gaq.push(['_trackEvent', 'BtnReservarHome', 'es-AR']);"  />
+            </div>
+            <div class="fleft mtop15 ">
+                <a href="http://www.aerolineas.com.ar/arg/bodies/popup_reserva_condiciones.asp?pais=AR&idi=es" target="_blank"><img src="Content/themes/darksite/img/common/question.gif" alt="" style="border:0;" /></a>
+            </div>        
+        </div>
+    </div>                  
+</form>
+</div>
+
+
+        </div>
+        
+        <div>
+
+<img alt="Pagar dark" border="0" src="Images/Banners/banner_4_darksite_20130201050540.jpg" style="margin-top:6px" />
+        </div>
+        
+        <div style="margin-top:7px">
+
+<img alt="" height="60" src="Images/Banners/banner_5_20121218111759.jpg" width="325" />
+        </div>
+        
+    <div style="margin-top:7px">
+        <div id="content">
+            <div id="slider2">
+                <ul>
+
+                        <li>
+                        <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=77&idIdioma=es" target="_blank" >
+                        <img alt="" height="177" src="Images/Banners/slide.plus_v2_20121218111519.gif" width="325" />
+                        </a>
+                        </li>
+                        <li>
+                        
+                        <img alt="" height="177" src="Images/Banners/slider_chico_20121218113427.jpg" width="325" />
+                        
+                        </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+      </div>
+      <!--columna 2-->
+      <div class="fleft" style="width:390px; height:374px; margin-right:12px;">
+
+
+    <div align="center" style="background-image:url(Content/themes/darksite/img/backgrounds/darksite.jpg); width:387px; height:374px;">
+        <div style=" font:normal 16px Tahoma, Geneva, sans-serif; color:#666;  padding:100px 20px 20px 20px">Para obtener información de los sucesos de público conocimiento comuníquese al 0-800-333-1515 o haga click <a href="/Comunicados" class="azul">aquí</a> <br /><br />Desde el exterior +54 11 4943 9380</div>
+    </div>
+        
+       <div style="margin-top:7px">
+
+<img alt="" height="60" src="Images/Banners/banner_5_20121218112437.jpg" width="390" />
+    </div>
+
+        
+
+  
+        
+
+
+
+        <div style=" margin-top:10px">
+          <div class="fleft" style=" margin-right:7px">
+        <div style="" >
+            
+            <img alt="" height="177" src="Images/Banners/banner_3_20121218112338.jpg" width="191px" />
+            
+        </div>
+
+          </div>
+          <div class="fleft">
+        <div style="" >
+            
+            <img alt="" height="85" src="Images/Banners/banner_8_20121218112224.jpg" width="191px" />
+            
+        </div>
+        <div style="margin-top:3px" >
+            
+            <img alt="" height="85" src="Images/Banners/banner_7_20121218112302.jpg" width="191px" />
+            
+        </div>
+
+          </div>
+        </div><!--Fin de banner doble-->
+            
+            
+
+      </div>
+      <!--columna 3-->
+      <div class="fleft" style=" width:242px">
+          
+
+
+          <div id="oferta" style="width:242px; height:93px;  ">
+              <div class="fleft" style="width:235px; margin-left:5px">
+                <a class="destino" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=110%26idIdioma=es%26origen=BUE%26destino=MVD">Oferta Montevideo - San Pablo</a>
+              </div>
+              <div class="fleft" style="width:140px; margin-left:5px">
+                <span class="moneda">Desde $ 744</span><br />
+                <span class="cuotas">12 Cuotas de $ 62</span>
+              </div>
+          <div class="fleft mtop19" style="margin-left:45px;font-weight: bold;">
+                 <a class=" azul10" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=110%26idIdioma=es%26origen=BUE%26destino=MVD">Comprar</a> 
+          </div>
+          <div  style=
+          "font: normal 10px Tahoma, Geneva, sans-serif;  margin-top:13px; width:100px; float:left; margin-left:10px">
+          <span style="font-weight: bold;" class="colorPuntosOfertas">8000 millas </span>
+          </div>
+         </div>
+          <div id="oferta2" style="width:242px; height:93px; margin-top:7px ">
+              <div class="fleft" style="width:235px; margin-left:5px">
+                <a class="destino" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=110%26idIdioma=es%26origen=BUE%26destino=SCL">Santiago de Chile</a>
+              </div>
+              <div class="fleft" style="width:140px; margin-left:5px">
+                <span class="moneda">Desde $ 910</span><br />
+                <span class="cuotas">12 Cuotas de $ 76</span>
+              </div>
+          <div class="fleft mtop19" style="margin-left:45px;font-weight: bold;">
+                 <a class=" azul10" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=110%26idIdioma=es%26origen=BUE%26destino=SCL">Comprar</a> 
+          </div>
+          <div  style=
+          "font: normal 10px Tahoma, Geneva, sans-serif;  margin-top:13px; width:100px; float:left; margin-left:10px">
+          <span style="font-weight: bold;" class="colorPuntosOfertas">14000 millas</span>
+          </div>
+         </div>
+          <div id="oferta3" style="width:242px; height:93px; margin-top:7px ">
+              <div class="fleft" style="width:235px; margin-left:5px">
+                <a class="destino" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=110%26idIdioma=es%26origen=BUE%26destino=RIO">Oferta R&#237;o de Janeiro</a>
+              </div>
+              <div class="fleft" style="width:140px; margin-left:5px">
+                <span class="moneda">Desde $ 1.674</span><br />
+                <span class="cuotas">12 Cuotas de $ 139 </span>
+              </div>
+          <div class="fleft mtop19" style="margin-left:45px;font-weight: bold;">
+                 <a class=" azul10" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=110%26idIdioma=es%26origen=BUE%26destino=RIO">Comprar</a> 
+          </div>
+          <div  style=
+          "font: normal 10px Tahoma, Geneva, sans-serif;  margin-top:13px; width:100px; float:left; margin-left:10px">
+          <span style="font-weight: bold;" class="colorPuntosOfertas">20000 millas</span>
+          </div>
+         </div>
+          <div id="oferta" style="width:242px; height:93px; margin-top:7px ">
+              <div class="fleft" style="width:235px; margin-left:5px">
+                <a class="destino" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=110%26idIdioma=es%26origen=BUE%26destino=SLA">Oferta Salta</a>
+              </div>
+              <div class="fleft" style="width:140px; margin-left:5px">
+                <span class="moneda">Desde $ 1.999</span><br />
+                <span class="cuotas">12 cuotas de $ 100</span>
+              </div>
+          <div class="fleft mtop19" style="margin-left:45px;font-weight: bold;">
+                 <a class=" azul10" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=110%26idIdioma=es%26origen=BUE%26destino=SLA">Comprar</a> 
+          </div>
+          <div  style=
+          "font: normal 10px Tahoma, Geneva, sans-serif;  margin-top:13px; width:100px; float:left; margin-left:10px">
+          <span style="font-weight: bold;" class="colorPuntosOfertas">12000 millas</span>
+          </div>
+         </div>
+          <div id="oferta2" style="width:242px; height:93px; margin-top:7px ">
+              <div class="fleft" style="width:235px; margin-left:5px">
+                <a class="destino" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=110%26idIdioma=es%26origen=BUE%26destino=BRC">Oferta Bariloche</a>
+              </div>
+              <div class="fleft" style="width:140px; margin-left:5px">
+                <span class="moneda">Desde $ 1.355</span><br />
+                <span class="cuotas">12 Cuotas de $ 113</span>
+              </div>
+          <div class="fleft mtop19" style="margin-left:45px;font-weight: bold;">
+                 <a class=" azul10" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=110%26idIdioma=es%26origen=BUE%26destino=BRC">Comprar</a> 
+          </div>
+          <div  style=
+          "font: normal 10px Tahoma, Geneva, sans-serif;  margin-top:13px; width:100px; float:left; margin-left:10px">
+          <span style="font-weight: bold;" class="colorPuntosOfertas">16000 millas</span>
+          </div>
+         </div>
+ 
+        <div>
+          <p class="azul space3 mtop7">
+            <a href="/VuelosBaratosModulos">Conoc&#233; m&#225;s ofertas</a>
+          </p>
+          <p class="space3 mtop7">
+            <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=80%26idIdioma=es">Recib&#237; ofertas y novedades</a> 
+          </p>
+        </div>
+      </div>
+    </div>
+
+    
+
+            
+            <section>
+                    
+<script src="Scripts/easySlider1.7.js"></script>
+
+
+<ol class="round">
+</ol>
+
+
+
+            </section>
+        </div>
+        <footer>
+            <!--pie-->
+            
+     <script type="text/javascript">
+
+        function abrirAustral() {
+          window.open('http://www.austral.com.ar/index.asp?idSitio=AR&idIdioma=es','Austral', 'scrollbars=yes, resizable=1,width=1020,height=805');
+        }
+     
+      function popup_condiciones_transporte() {
+          var winC = window.open('http://www.aerolineas.com.ar/arg/bodies/CondicionesGrales_contratoTransporte.asp?idSitio=AR&idIdioma=es', 'wContr', 'scrollbars=yes, resizable=1,width=800,height=600');
+          winC.moveTo(0, 0);
+      }
+
+
+     </script> 
+               <div id="pie">
+                <div class="ml10  mtop15">
+                    
+                    
+        <div class="azul fleft mtop20">
+                    <a href='http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=143&amp;idIdioma=es                       ' target='_blank' class='link'>Clima                                                                                               </a> <span> | </span>
+                    <a href='http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=111&amp;idIdioma=es                       ' target='' class='link'>Conoc&#233; el estado de tu vuelo                                                                        </a> <span> | </span>
+                    <a href='http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=103&amp;idIdioma=es                       ' target='' class='link'>Preguntas frecuentes                                                                                </a> <span> | </span>
+                    <a href='http://www.aerolineas.com.ar/Arg/bodies/popup_reembolsoBillete.asp?idSitio=AR&amp;idIdioma=es           ' target='_blank' class='link'>Devoluci&#243;n de ticket                                                                                </a> <span> | </span>
+        </div>
+                    <div class=" fright mright15 mtop15">
+                        <div id="fb-root"></div>
+                        <script language="javascript" type="text/javascript">
+                            (function (d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0];
+                                if (d.getElementById(id)) return;
+                                js = d.createElement(s); js.id = id;
+                                js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1";
+                                fjs.parentNode.insertBefore(js, fjs);
+                            } (document, 'script', 'facebook-jssdk'));
+                        </script>
+                        <div class="fb-like mbot5" data-href="http://www.facebook.com/aerolineas.argentinas" data-send="false" data-layout="button_count" data-width="77" data-show-faces="false" data-font="arial"></div>
+                        <a href="https://www.facebook.com/Aerolineas.argentinas" target="_blank">
+                            <img src="Content/themes/darksite/img/common/ic-facebook.gif" alt="Facebook" width="22" height="22" border="0" /></a>
+                        <a href="http://twitter.com/Aerolineas_AR/" target="_blank">
+                            <img src="Content/themes/darksite/img/common/ic-Twitter.jpg" alt="Twitter" width="22" height="22" border="0" /></a>
+                        <a href="https://plus.google.com/106198199507305429358/posts" target="_blank">
+                            <img src="Content/themes/darksite/img/common/ic-gplus.gif" alt="Facebook" width="22" height="22" border="0" /></a>
+                        
+                        <a href="http://www.youtube.com/user/AerolineasAR" target="_blank">
+                            <img src="Content/themes/darksite/img/common/ic-YouTube.gif" alt="Youtube" width="22" height="22" border="0" /></a>
+                        <a href="http://www.Aerolineas.com.ar/arg/rss.asp?idSitio=AR&amp;idIdioma=es" target="_blank">
+                            <img src="Content/themes/darksite/img/common/ic-RSS.gif" alt="Rss" width="22" height="22" border="0" /></a></div>
+                    <br clear="all" />
+                </div>
+                <div class="div">
+                </div>
+                <div class="div_pie">
+                    <div class="div_links">
+
+                    
+
+                        <div class="div_partner">
+                            <img src="Content/themes/darksite/img/common/footer-logoAustral.gif" alt="Logo Austral" onclick="abrirAustral();" style="cursor:pointer;" />
+                        </div>
+                        <div class="div_partner">
+                            <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=81%26idIdioma=es" title=""><img alt="@MainFooterResource.JetPaq_Logo" src="Content/themes/darksite/img/common/footer-logoJetPaq.gif" /></a>
+                        </div>
+                        <div class="div_partner">
+                            <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=9%26idIdioma=es" title=""><img alt="@MainFooterResource.Aerohandling_Logo" src="Content/themes/darksite/img/common/footer-logoAerohandling.gif" /></a>
+                        </div>
+                        <div class="div_partner">
+                            <a href="http://www.optar.com/" target="_blank">
+                                <img src="Content/themes/darksite/img/common/footer-logoOptar.gif" alt="Logo Optar" border="0"/>
+                            </a>
+                        </div>
+                       <div class="div_partner mtop7 mleft20"><img src="Content/themes/darksite/img/common/logo_arg.jpg" alt="Logo Aerol&#237;neas Argentinas" width="47" height="30" />
+                       </div>
+                       <div class="div_partner mtop14 mleft25"><img src="Content/themes/darksite/img/common/argentina_paisbuenagente.gif" alt="Logo Aerol&#237;neas Argentinas - Un pa&#237;s con buena gente" />
+                       </div>
+                  </div>
+                    <br clear="all" />
+                    <div class="codigo-qr">
+                        <a href="https://servicios1.afip.gov.ar/clavefiscal/qr/mobilePublicInfo.aspx?req=e1ttZXRob2Q9Z2V0UHVibGljSW5mb11bcGVyc29uYT0zMDY0MTQwNTU1NF1bdGlwb2RvbWljaWxpbz0wXVtzZWN1ZW5jaWE9MF1bdXJsPWh0dHA6Ly93d3cuYWVyb2xpbmVhcy5jb20uYXJdfQ==" target="_F960AFIPInfo">
+                            <img src="Content/themes/darksite/img/common/qr_code.gif" alt="QR-Code" />
+                        </a>
+                    </div>
+                    <div class="pie_texto">
+                        <span>aerolineas.com Sitio Oficial de Aerolineas Argentinas. &#169; 1996 - 2013 Aerol&#237;neas Argentinas S.A.<br />
+                            <a class="pie" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=72%26idIdioma=es">Legales</a> |
+                            <a class="pie" href="#" onclick="popup_condiciones_transporte();"> Condiciones Generales de Transporte </a>|
+                            <a class="pie" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=94%26idIdioma=es">Mapa del Sitio</a> |
+                            <a class="pie" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=84%26idIdioma=es">Ud. est&#225; en un SITIO SEGURO</a> 
+                        </span>
+                    </div>
+                </div>
+                <div class="div_borde">
+                    <img src="Content/themes/darksite/img/backgrounds/footer-right.gif" alt="" />
+                </div>
+            </div>
+
+
+            <!--fin de pie-->
+        </footer>
+    </div>
+    
+    
+    
+
+    <!--sliders-->
+    <script type="text/javascript">
+        // Configuro SLIDERS
+
+        $(document).ready(function () {
+            if ($("#slider") != null) {
+                $("#slider").easySlider({
+                    auto: true,
+                    continuous: true,
+                    numeric: true,
+                    speed: 1500,
+                    pause: 5000,
+                    numericId: 'controls',
+                    playstop: true,
+                    playstopId: 'playstop',
+                    playId: 'play',
+                    stopId: 'stop'
+                });
+            }
+        });
+
+        $(document).ready(function () {
+            if ($("#slider2") != null) {
+                $("#slider2").easySlider({
+                    auto: true,
+                    continuous: true,
+                    numeric: true,
+                    speed: 800,
+                    pause: 16000,
+                    numericId: 'controls3',
+                    playstop: true,
+                    playstopId: 'playstop2',
+                    playId: 'play2',
+                    stopId: 'stop2'
+
+                });
+            }
+        });
+	</script> 
+
+
+
+
+    <script type="text/javascript">
+        function onCultureChanged() {
+            var cultureName = $("#culture").val();
+            GlobalCultureName = cultureName;
+
+            var ruta = '/Culture/ChangeCulture';
+            ruta = '/Culture/ChangeCulture';
+            //var redirectUrl = '/_culture_';
+            var redirectUrl = '/_culture_';
+
+            $.ajax({
+                url: ruta,
+                type: "post",
+                dataType: "json",
+                traditional: true,
+                async: false,
+                data: { 'selectedCultureName': cultureName },
+                success: function (result, responseText) {
+                    
+                    // // translateUrlAndRedirect(GlobalCultureName);
+
+                    //alert('Cultura cambiada exitosamente por: ' + result);
+
+                    // Redirecciono
+                    redirectUrl = redirectUrl.replace("_culture_", GlobalCultureName);
+                    window.location.replace(redirectUrl);
+
+                    //  // Recargo la página
+                    //window.location.reload();
+                },
+                error: function () {
+                    alert('Error al intentar cambiar la cultura');
+                }
+            });
+
+        }
+        
+    </script>
+
+    <!--************GOOGLE ANALYTICS*******************-->
+    
+    <!--************GOOGLE ANALYTICS*******************-->
+
+</body>
+</html>

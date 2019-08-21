@@ -1,0 +1,38 @@
+﻿body
+{
+}
+
+hgroup.error h1
+{
+    color: #e80c4d;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+hgroup.error h2
+{
+    color: #e80c4d;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.error-local-info
+{
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid #333;
+}
+
+.error-local-info h3
+{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: Blue;
+}
+
+.error-local-info h4
+{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: Black;
+}

@@ -1,0 +1,166 @@
+<!doctype html>
+<html ⚡>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="canonical" href="hello-world.html">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both
+        }
+
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+
+        /*    custom css    */
+
+        @media only screen and (max-width: 768px) {
+
+            /*      basic layout      */
+            body {
+                font-family: "Open Sans", Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                color: #656566;
+                background-color: #fff;
+            }
+
+            .container {
+                margin-right: auto;
+                margin-left: auto;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .row {
+                padding: 15px 0px;
+                margin-right: -15px;
+                margin-left: -15px;
+            }
+
+            div[class*="col"] {
+                padding: 15px;
+            }
+
+            .col-1 {
+                width: 100%;
+            }
+
+            .col-2 {
+                width: calc(100%/2);
+            }
+
+            .col-3 {
+                width: calc(100%/3);
+            }
+
+            .col-4 {
+                width: calc(100%/4);
+            }
+
+            /*      header-slider      */
+            .promo-slider .amp-carousel-slide>.i-amphtml-replaced-content {
+                -o-object-fit: contain;
+                object-fit: cover;
+                object-position: 50% 50%;
+            }
+
+            .promo-slider .amp-carousel-button {
+                background-color: rgba(0, 0, 0, 0.05);
+                background-size: 18px;
+                opacity: 0.75;
+                border-radius: 0px;
+            }
+
+            .promo-slider .amp-carousel-button:hover,
+            .promo-slider .amp-carousel-button:focus {
+                background-color: rgba(0, 0, 0, 0.3);
+                outline: none;
+            }
+
+            .promo-slider .amp-carousel-button-next {
+                right: -0px;
+                background-image: url(/img/header-slider/right-chevron.svg);
+            }
+
+            .promo-slider .amp-carousel-button-prev {
+                left: -0px;
+                background-image: url(/img/header-slider/left-chevron.svg);
+            }
+        }
+
+    </style>
+
+    <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    
+</head>
+
+<body>
+    <header>
+        <amp-carousel width="400" height="300" loop autoplay delay="50" layout="responsive" type="slides" class="promo-slider">
+            <amp-img src="/img/header-slider/slide1.jpg" width="1920" height="565" layout="responsive" alt="sample image"></amp-img>
+            <amp-img src="/img/header-slider/slide2.jpg" width="1920" height="565" layout="responsive" alt="sample image"></amp-img>
+            <amp-img src="/img/header-slider/slide3.jpg" width="1920" height="565" layout="responsive" alt="sample image"></amp-img>
+        </amp-carousel>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint nobis aliquid vel voluptates consequuntur. Laborum beatae illo sint magnam, expedita dolorem, eius culpa cupiditate sunt hic libero pariatur quas labore.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>

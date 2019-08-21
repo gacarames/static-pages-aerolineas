@@ -1,0 +1,7 @@
+@charset "utf-8";
+/* CSS Document */
+
+.borde-redondeado {
+    border-radius:10px;
+    behavior: url(border-radius.htc);
+	}

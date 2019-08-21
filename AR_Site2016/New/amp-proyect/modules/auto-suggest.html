@@ -1,0 +1,235 @@
+<!doctype html>
+<html ⚡>
+
+<head>
+    <meta charset="utf-8">
+    <title>AMP autosuggest Demo</title>
+    <link rel="canonical" href="amps.html">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet" type="text/css">
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both
+        }
+
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+
+    </style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+    <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+    <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+    <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.1.js"></script>
+
+    <style amp-custom>
+        body {
+            padding: 10px;
+        }
+
+        .search-container {
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .search-box,
+        .search-submit,
+        .select-option {
+            font-size: 1.25em;
+        }
+
+        .autosuggest-box {
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, .3);
+        }
+
+        .search-box {
+            flex: 4 0 0;
+            padding: 5px;
+            border-radius: 4px 0 0 4px;
+            border: 2px solid lightgray;
+            border-right: 0;
+        }
+
+        .search-submit {
+            flex: 1 0 0;
+            padding: 5px;
+            border-radius: 0 4px 4px 0;
+            border: 2px solid #4b68ff;
+            background: #4b68ff;
+            color: #fff;
+        }
+
+        .select-option {
+            display: block;
+            box-sizing: border-box;
+            height: 30px;
+            line-height: 30px;
+            padding-left: 10px;
+            background: #ddd;
+        }
+
+        amp-selector .select-option.no-outline.no-outline[option] {
+            outline: none;
+        }
+
+        .select-option:focus {
+            box-shadow: inset rgb(94, 158, 215) 0px 0px 45px;
+        }
+
+        .select-option:focus {
+            background: #fff;
+        }
+
+        .select-option:nth-child(2n) {
+            background: #eee;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Programming language search</h1>
+    <form method="post" action-xhr="/form/autosuggest/search" target="_blank" id="search-form" on="submit:autosuggest-list.hide;submit-success:results.show" autocomplete="off">
+        <div class="search-container">
+            <input id="query" name="query" type="text" class="search-box" on="input-debounced:AMP.setState({
+            query: event.value,
+            autosuggest: event.value
+          }),
+          autosuggest-list.show,
+          results.hide" [value]="query || ''" />
+            <button class="search-submit" type="submit">Search</button>
+        </div>
+        <amp-list class="autosuggest-box" layout="fixed-height" height="120" src="https://ampbyexample.com/json/cart.json" [src]="https://ampbyexample.com/json/cart.json" id="autosuggest-list" hidden>
+            <template type="amp-mustache">
+        <amp-selector
+          keyboard-select-mode="focus"
+          layout="container"
+          on="select:AMP.setState({
+              query: event.targetOption
+            }),
+            autosuggest-list.hide,
+            results.hide"
+        >
+          {{#cart_items}}
+            <div
+              class="select-option no-outline"
+              role="option"
+              tabindex="0"
+              on="tap:autosuggest-list.hide"
+              option="{{name}}"
+            >{{name}}</div>
+          {{/cart_items}}
+          {{^cart_items.3}}<div class="select-option"></div>{{/cart_items.3}}
+          {{^cart_items.2}}<div class="select-option"></div>{{/cart_items.2}}
+          {{^cart_items.1}}<div class="select-option"></div>{{/cart_items.1}}
+          {{^cart_items.0}}<div class="select-option"></div>{{/cart_items.0}}
+        </amp-selector>
+      </template>
+        </amp-list>
+        <div submit-success id="results">
+            <template type="amp-mustache">
+        <p>Here are the results for the search "{{query}}":</p>
+        <ul>
+            {{#cart_items}}<li>{{name}}</li>{{/cart_items}}
+        </ul>
+      </template>
+        </div>
+    </form>
+
+
+
+
+    <amp-list width="auto" height="100" layout="fixed-height" src="https://ampbyexample.com/json/cart.json">
+        <template type="amp-mustache">
+        {{fullname}} ({{phonenumber}})
+      </template>
+    </amp-list>
+
+    <amp-list src="https://ampbyexample.com/json/cart.json" layout="fixed-height" height="100">
+        <template type="amp-mustache">
+        <div class="cart">
+            <ul>
+                {{#cart_items}}
+                    <li>{{quantity}}</li>
+                {{/cart_items}}
+            </ul>
+        </div>
+           <div class="address">
+            <ul>
+                {{#address}}
+                    <li>{{city}}</li>
+                {{/address}}
+            </ul>
+        </div>
+      </template>
+    </amp-list>
+
+    <amp-list src="https://www.tollbrothers.com/omnisearch?loclimit=3&statelimit=3&commlimit=3&masterlimit=3&incRent=false&callback=jQuery1124009150097684099778_1515595187882&search=&_=1515595187884&__amp_source_origin=http%3A%2F%2F127.0.0.1%3A63524" layout="fixed-height" height="56">
+        <template type="amp-mustache">
+        <ul>{{#locations}} <li>{{city}}</li> {{/locations}}</ul>
+      </template>
+    </amp-list>
+
+    <amp-list src="https://ampbyexample.com/json/cart.json" layout="fixed-height" height="56">
+        <template type="amp-mustache">
+    {{#phonenumber}} The registered phone number is {{phonenumber}} {{/phonenumber}}
+  </template>
+    </amp-list>
+
+    <amp-list src="https://ampbyexample.com/json/cart.json" layout="fixed-height" height="56">
+        <template type="amp-mustache">
+    {{^twitter}} There is no registered twitter account for this profile {{/twitter}}
+  </template>
+    </amp-list>
+
+
+</body>
+
+</html>

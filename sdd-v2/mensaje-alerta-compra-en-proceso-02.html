@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title></title>
+    <script type="text/javascript" src="js/jquery-1.10.2.min-ver-628072E7212DB1E8CDACB22B21752CDA.js"></script>
+    <script type="text/javascript" src="js/wicket-event-jquery.min-ver-708C94775B2E1A1A39180619EFAE9145.js"></script>
+    <script type="text/javascript" src="js/wicket-ajax-jquery.min-ver-0D95C654A2A183A4FB6EAF9C6F22FE6F.js"></script>
+    <script type="text/javascript" src="js/modal.min-ver-35033EE4AE3F9C9CF951E390E49D8FB0.js"></script>
+    <script type="text/javascript" id="wicket-ajax-base-url">
+        /*<![CDATA[*/
+        Wicket.Ajax.baseUrl = "buscar?pdv=a0&amp;UI_LOCALE=es_AR";
+        /*]]>*/
+
+    </script>
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    
+
+<!--    <link rel="stylesheet" href="css/modal.min-ver-78F168E51786694AF792949CE008D5D1.css" />-->
+<!--    <link rel="stylesheet" href="css/Common2-ver-F7CE317F3EB4782AFDE3CD31993510B1.css" />-->
+    <link rel="stylesheet" href="css/mpol-common.css" />
+    <link rel="stylesheet" href="css/tooltipster.bundle.min.css" />
+    <!-- <wicket:link><link rel="stylesheet" type="text/css" href="inc/interface/fisheye.css"/></wicket:link> -->
+    <link rel="stylesheet" href="css/style-chat.css" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="js/iutil-mw-ver-646745B3C27426AE550533F0A1338D1D.js"></script>
+    <script type="text/javascript" src="js/fisheye-ver-A7EB9B4574E830071B85B2B0CD54027D.js"></script>
+    <script type="text/javascript" src="js/jquery.tooltipster.min-ver-FF2F685494B400EA2098C79332759A8F.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="css/jquery-ui.theme.css" />
+
+    <!-- COUNTDOWN -->
+    <script src="js/jquery.lwtCountdown-1.0.js"></script>
+    <!-- COUNTDOWN -->
+    <script src="js/jquery.countdown.min.js"></script>
+
+
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            /* display: none; <- Crashes Chrome on hover */
+            -webkit-appearance: none;
+            margin: 0;
+            /* <-- Apparently some margin are still there even though it's hidden */
+        }
+
+    </style>
+
+    <script type="text/javascript">
+        /*<![CDATA[*/
+
+        //<![CDATA[
+        function logoEnPaso(p) {
+            for (var i = 1; i < 4; i++) {
+                var png = document.getElementById('paso' + i + 'png');
+                if (i === p) {
+                    png.src = png.src.replace(i + 'g.png', i + 'c.png');
+                } else {
+                    png.src = png.src.replace(i + 'c.png', i + 'g.png');
+                }
+                var txt = document.getElementById('paso' + i + 'txt');
+                if (i === p) {
+                    txt.className = 'textoPasoa';
+                } else {
+                    txt.className = 'textoPasop';
+                }
+            }
+        }
+        //]]>
+
+        /*]]>*/
+
+    </script>
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        Wicket.Event.add(window, "domready", function(event) {
+            Wicket.Ajax.ajax({
+                "c": "idc",
+                "ad": true,
+                "u": "./mpol?1-1.IBehaviorListener.0-base-paso0-codigo&pdv=a0&UI_LOCALE=es_AR",
+                "e": "change",
+                "m": "POST"
+            });;
+            Wicket.Ajax.ajax({
+                "c": "idd",
+                "ad": true,
+                "u": "./mpol?1-1.IBehaviorListener.0-base-paso0-pasajero&pdv=a0&UI_LOCALE=es_AR",
+                "e": "change",
+                "m": "POST"
+            });;
+            Wicket.Ajax.ajax({
+                "c": "ide",
+                "u": "./mpol?1-1.IBehaviorListener.0-base-paso0-btnBuscar&pdv=a0&UI_LOCALE=es_AR",
+                "e": "click",
+                "i": "velo"
+            });;;
+        });
+        /*]]>*/
+
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#my-tooltip').tooltipster({
+                content: $('<span><img src="img/codDeSeg_RESTO.jpg" /></span>')
+            });
+
+            $('#my-tooltip2').tooltipster({
+                content: $('<span><img src="img/codDeSeg_RESTO2.jpg" /></span>')
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <!-- <div id="lhc_status_container"><a id="online-icon" class="status-icon" href="#" onclick="return lh_inst.lh_openchatWindow()">Soporte en linea...</a></div> -->
+    <div class="wrapper">
+        <div id="velo" class="semiTransparent2">
+            <div class="arsaWait"></div>
+        </div>
+        <div id="idf" class="hidden"> </div>
+        <div class="inner-wrapper">
+            <header class="header clearfix">
+                <div class="pull-left logo-header">
+                    <a href="http://www.aerolineas.com.ar">
+                        <img alt="logo-aerolineas" src="img/common/logo-aerolineas.gif" /></a>
+                </div>
+                <div class="pull-right logo-header-right">
+                    <img alt="" src="img/common/aerolineas_argentinas_skyteam.jpg" />
+                </div>
+            </header>
+            <!-- 
+            <div class="steps">
+                <div class="icon">
+                    <img id="carritopng" src="img/compra-ver-2A8EA70F383FE1E1C8240C12F0F74D60.png" alt="" />
+                </div>
+                <div class="text">
+                    <span id="id13">Comprá tu pasaje</span></div>
+                <div class="bar"></div>
+            </div> -->
+            <!-- -->
+            <div class="container-fluid">
+                <div class="cuadroPrincipal">
+                    <!-- Paso 1 -->
+                    <div class="step1">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <h1 class="step-title">¡Hemos recibido tu solicitud correctamente!</h1>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="bajada">
+									<img style="float: left; margin: 0px 15px 15px 0px;" src="img/icon/clock_in_process.png" alt="Pago en proceso">
+                                    <p>(NOMBRE CLIENTE), te informamos que hemos iniciado la verificación del medio de pago elegido para tu reserva.<br><br>
+
+<strong>Este proceso puede demorar hasta 72hs y será concluido al menos 7hs antes de la partida de tu primer vuelo.</strong><br><br>
+
+Dentro de ese plazo, serás contactado vía correo electrónico para solicitarte más información o bien informarte el estado de tu transacción.</p>
+                                 
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+
+
+
+
+            <!-- / End Confirmación de compra -->
+            <footer id="footer-sdd" role="contentinfo" class="no-slider">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 col-sm-offset-8">
+                            <div class="social-links">
+                                <ul class="nav-justified list-unstyled ">
+                                    <li><a target="_blank" href="https://www.facebook.com/Aerolineas.argentinas"><i class="fa fa-facebook"></i><span class="sr-only">Facebook</span></a></li>
+                                    <li><a target="_blank" href="http://twitter.com/Aerolineas_AR/"><i class="fa fa-twitter"></i><span class="sr-only">Twitter</span></a></li>
+                                    <li><a target="_blank" href="https://www.instagram.com/aerolineas_argentinas/"><i class="fa fa-instagram"></i><span class="sr-only">Instagram</span></a></li>
+                                    <li><a target="_blank" href="http://www.linkedin.com/company/aerolineas-argentinas"><i class="fa fa-linkedin"></i><span class="sr-only">Linkedin</span></a></li>
+                                    <li><a target="_blank" href="https://plus.google.com/106198199507305429358/posts"><i class="fa fa-google-plus"></i><span class="sr-only">GooglePlus</span></a></li>
+                                    <li><a target="_blank" href="http://www.youtube.com/user/AerolineasAR"><i class="fa fa-youtube"></i><span class="sr-only">Youtube</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="clearfix">
+                        <div class="row">
+                            <div class="col-sm-7 col-md-6">
+                                <ul class="list-unstyled list-inline pull-left">
+                                    <li class="codigo-qr">
+                                        <a href="https://servicios1.afip.gov.ar/clavefiscal/qr/mobilePublicInfo.aspx?req=e1ttZXRob2Q9Z2V0UHVibGljSW5mb11bcGVyc29uYT0zMDY0MTQwNTU1NF1bdGlwb2RvbWljaWxpbz0wXVtzZWN1ZW5jaWE9MF1bdXJsPWh0dHA6Ly93d3cuYWVyb2xpbmVhcy5jb20uYXJdfQ==" target="_F960AFIPInfo"><img src="img/common/qr_code.gif" alt="QR-Code" /></a>
+                                    </li>
+                                    <li class="pie_texto">
+                                        <span>aerolineas.com Sitio Oficial de Aerolineas Argentinas. <br>
+                                    <span class="number"><span class="text">Contáctenos </span><span class="sr-only">Contáctenos </span> <i class="fa fa-phone" aria-hidden="true"></i><a href="tel:0810-222-86527">0810-222-86527</a></span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-5 col-md-6">
+                                <ul class="list-unstyled list-inline pull-right logos-footer">
+                                    <li class="hidden-xs">
+                                        <a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=9&amp;idIdioma=es"><img src="img/common/footer-aerohandling.jpg"></a>
+                                    </li>
+                                    <li class="hidden-xs">
+                                        <a href="http://www.jetpaq.com.ar/es-ar" target="_blank"><img src="img/common/footer-jetpaq.jpg" alt="Logo JetPaq"></a>
+                                    </li>
+                                    <li class="hidden-xs">
+                                        <a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=9&amp;idIdioma=es"><img src="img/common/footer-optar.jpg" alt="Logo Optar"></a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.austral.com.ar/index.asp" target="_blank"><img src="img/common/footer-austral.jpg" alt="Logo Austral"></a>
+                                    </li>
+                                    <li><img src="img/common/footer-aa.jpg" alt="Logo Aerolíneas Argentinas"></li>
+                                    <li>
+                                        <a href="http://www.skyteam.com/" target="_blank"><img src="img/common/footer-skyteam.jpg" alt="Logo Aerolíneas Argentinas"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- // inner-wrapper-->
+    </div>
+    <!-- // wrapper-->
+    <!--************GOOGLE ANALYTICS*******************-->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-7304952-1']);
+        _gaq.push(['_setDomainName', '.aerolineas.com.ar']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_setAllowHash', false]);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+    <!--************GOOGLE ANALYTICS*******************-->
+    <script type="text/javascript">
+        /*<![CDATA[*/
+
+        //<![CDATA[
+        function ajustarVelo() {
+            jQuery("#velo").height(jQuery(window).height());
+            jQuery("#velo").width(jQuery(window).width());
+            jQuery("#velo").css('left', jQuery(window).scrollLeft() + 'px');
+            jQuery("#velo").css('top', jQuery(window).scrollTop() + 'px');
+            try {
+                if (jQuery(window).scrollTop() > 47) {
+                    jQuery(".rdrd72").css({
+                        'width': '250px',
+                        'top': '72px',
+                        'position': 'fixed'
+                    });
+                } else {
+                    jQuery(".rdrd72").css({
+                        'width': '',
+                        'top': '',
+                        'position': ''
+                    });
+                }
+            } catch (e) {}
+        }
+
+        function defaultBeforeAjax() {
+            ajustarVelo();
+        }
+
+        function defaultAfterAjax() {}
+        jQuery(window).resize(function() {
+            ajustarVelo();
+        });
+        jQuery(window).scroll(function() {
+            ajustarVelo();
+        });
+        jQuery(document).ready(function() {
+            ajustarVelo();
+        });
+        try {
+            ajustarValidacionesMw();
+        } catch (e) {}
+        try {
+            datosPagoConBinInit();
+        } catch (e) {}
+        try {
+            JSMaskedTextFieldInit();
+        } catch (e) {}
+        //]]>
+        /*]]>*/
+
+    </script>
+    <script type="text/javascript">
+        var LHCChatOptions = {};
+        LHCChatOptions.opt = {
+            widget_height: 340,
+            widget_width: 300,
+            popup_height: 520,
+            popup_width: 500
+        };
+        LHCChatOptions.attr = new Array();
+        LHCChatOptions.attr.push({
+            "name": "Codigo de Reserva",
+            "value": "",
+            "type": "text",
+            "size": 6,
+            "minlength": 6,
+            "maxlength": 6,
+            "pattern": "[A-Za-z]{6}"
+        });
+        (function() {
+            var po = document.createElement('script');
+            po.type = 'text/javascript';
+            po.async = true;
+            var refferer = (document.referrer) ? encodeURIComponent(document.referrer.substr(document.referrer.indexOf('://') + 1)) : '';
+            var location = (document.location) ? encodeURIComponent(window.location.href.substring(window.location.protocol.length)) : '';
+            po.src = '//portalar.aerolineas.com.ar/chat/ar/chat/getstatus/(click)/internal/(position)/middle_right/(ma)/br/(top)/0/(units)/pixels/(leaveamessage)/false/(department)/1/(disable_pro_active)/true/(theme)/1?r=' + refferer + '&l=' + location;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(po, s);
+        })();
+
+    </script>
+    <script>
+        $(document).ready(function() {
+            $(".limitNumber").keyup(function(e) {
+                txtVal = $(this).val();
+                if (isNumber(txtVal) && txtVal.length > 6)
+                    $(this).val(txtVal.substring(0, 6))
+            });
+
+
+        });
+
+        function isNumber(o) {
+            return !isNaN(o - 0);
+        }
+
+    </script>
+    <!-- Modal Text -->
+    <div id="modalText" class="modal fade modal-text" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Lorem Ipsum</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- / Modal Text -->
+</body>
+
+
+
+</html>

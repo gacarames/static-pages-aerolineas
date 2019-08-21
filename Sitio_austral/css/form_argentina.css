@@ -1,0 +1,348 @@
+@charset "utf-8";
+/* CSS Document */
+
+#contenedor_form { width:282px; height:318px}
+.boton_alojamiento { 
+	  	  font: normal  "Neo_sans", Tahoma, Geneva, sans-serif; 
+		  padding-top:4px; 
+		  padding-left:39px; 
+		  width:103px; 
+		  height:19px; 
+		  float:left; 
+		  background-image:url(../img/reservas/alojamientos.gif)
+		  }
+		  
+		  
+		    .boton_autos {
+		  padding-top:5px; 
+		  padding-right:31px; 
+		  width:108px; 
+		  height:18px; 
+		  float:left; 
+		  background-image:url(../img/reservas/autos.gif)
+		  }
+		  
+		  .boton_check_in {
+		  padding-top:0.188em; 
+		  padding-left:2.188em; 
+		  width:6.688em; 
+		  height:20px; 
+		  float:left; 
+		  background-image:url(../img/reservas/check_in.gif)
+		  }
+		  .boton_check_in_ar {
+		  padding-top:4px; 
+		  padding-left:101px; 
+		  width:180px; 
+		  height:19px; 
+		  float:left; 
+		  background-image: url(../img/reservas/check_in_br.gif)
+		  }
+		  .boton_alojamiento_ar {
+		  padding-top:4px; 
+		  padding-left:101px; 
+		  width:180px; 
+		  height:19px; 
+		  float:left; 
+		  background-image: url(../img/reservas/alojamientos_grande.gif)
+		  }
+		  
+		  .boton_mis_viajes {
+		  padding-top:4px; 
+		  padding-left:36px; 
+		  width:103px; 
+		  height:20px; 
+		  float:left; 
+		  background-image:url(../img/reservas/mis_viajes.gif)
+		  }
+		  
+		   .boton_mis_viajes_grande {
+		   padding-top:4px; 
+		  padding-left:111px; 
+		  width:170px; 
+		  height:19px; 
+		  float:left; 
+		  background-image: url(../img/reservas/mis_viajes_grande.gif)
+		  }
+		  
+		  .boton_vuelos_ar {
+		  padding-top:3px; 
+		  padding-left:56px; 
+		  width:86px; 
+		  height:21px; 
+		  float:left; 
+		  background-image:url(../img/reservas/vuelos_br.gif)
+		  }
+		  
+		  	.box_form { margin-top:0; 
+		 padding:6px 3px 5px 4px; 
+		 height:235px; 
+		 width:272px; 
+		 background-color:#EDEEEE; 
+		 border: solid 1px #0081c6;
+		 border-radius:0 0 5px 5px; -webkit-border-radius: 0 0 5px 5px; -moz-border-radius: 0 0 5px 5px;
+		 }
+		 
+		 .box_border { border-top: solid 1px #0081c6; border-bottom:solid 1px #0081c6;  padding-top:4px}
+		 .box_border2 { border-top: solid 1px #0081c6;   padding-top:4px}
+		 
+		 
+		 .btn_br {text-align:center; 
+	float:right;  
+	width:7.335em; 
+	height:19px; 
+	background-image:url(../img/buttons/buscar.gif); 
+	padding-top:4px;   
+	font: normal 12px Tahoma, Geneva, sans-serif; margin-left:20px; margin-top:20px; 
+	text-decoration:none; color:#FFF;
+	border:0; }
+		 
+
+/*margen*/
+.mtop3 { margin-top:3px}
+.mtop5 { margin-top:5px}
+.mtop10 { margin-top:10px}
+.mtop15 { margin-top:15px}
+.ml4 { margin-left:4px}
+.ml10 { margin-left:10px}
+.ml13 {margin-left:13px}
+.ml33 { margin-left:33px}
+.ml60 { margin-left:60px}
+.ml115 {margin-left:115px}
+.ml14 {margin-left:14px}
+.mr130 { margin-right:130px}
+.height20 { height:20px}
+
+/*align*/
+.fleft { float:left}
+
+/*textos*/
+
+p { margin:4px}
+
+.texto_botonera { 
+font: normal 12px  "Neo_san", Tahoma, Geneva, sans-serif;
+margin-right:1.000em; 
+text-decoration:none; 
+color:#525252;
+}
+
+.text1 {
+font: normal 11px Tahoma, Geneva, sans-serif; 
+}
+		  
+.text2 {
+font: normal 10px Tahoma, Geneva, sans-serif; 
+}
+
+.text3 {font: normal 14px  "Neo_san", Tahoma, Geneva, sans-serif;
+margin-right:1.000em; 
+text-decoration:none; 
+color:#FFF;
+}
+
+.textsize1 {}
+.textsize2 {}
+.textsize3 { font-size:9px}
+
+		  
+.color1 {color:#0081c6}
+.color2 { color:#666}
+		  
+/*boxes*/
+
+.width1 { width:45px}
+.width2 { width:95px}
+.width4 { width:125px}
+.width5  { width:127px}
+.width3 { width:145px}
+.width6 { width:115px}
+.width7 { width:43px}
+.width8 { width:201px}
+.width9 { width:57px}
+.width10 { width:156px}
+.width11{ width:47px}
+
+
+		  .search1 {
+	width:90px;
+	height:18px;
+	font-size:11px;
+	color: #666;
+	position:absolute;
+	margin-left:5px;
+	left: 13px;
+	top: 88px;
+}
+		  
+		 .redondeadas {  background-color: #fff;
+
+border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px;}
+		  
+.sombra_interior {  background-color:#fff;
+
+
+        -moz-box-shadow: inset 2px 1px 1px rgba(68,68,68,0.6);
+        -webkit-box-shadow: inset 2px 1px 1px rgba(68,68,68,0.6);
+        box-shadow: inset 2px 1px 1px rgba(68,68,68,0.6);
+		  }
+
+
+
+
+.sombra_exterior {
+-moz-box-shadow: 0px 0px 5px #333;
+-webkit-box-shadow: 0px 0px 5px #333;
+box-shadow: 0px 0px 5px #333; }
+
+.sombra_interior .content {
+        position: relative; /* This protects the inner element from being blurred */
+        padding: 100px;
+        background-color: #DDD;
+}
+
+/* ie7 exception */ *+html .sombra_interior { border-top: solid 1px #999; border-left: solid 1px #999  ; }
+
+
+.input
+{
+    
+    border: 1px solid #FFF; height:20px;
+    font-size:11px;
+    color: #666; padding-left:5px; background-color:#FFF;
+       
+}
+
+.input_arrow
+{
+    background: url(../img/buttons/arrow.gif)   no-repeat scroll 0 0 transparent ;  background-position: 200px 1px;
+    border: 1px solid #FFF;
+    color: #666; font-size:11px; padding-left:5px; background-color:#FFF; height:20px; width:218px;
+  } 
+ 
+ .input_arrow_flecha
+{
+    background: url(../img/buttons/arrow.gif)   no-repeat scroll 0 0 transparent ;  
+    border: 1px solid #FFF;
+    color: #666; font-size:11px; padding-left:5px; background-color:#FFF; height:20px; 
+}   
+
+   .arrow_position1 {background-position: 185px 1px;}
+   .arrow_position2 {background-position: 25px 1px;}
+   .arrow_position3 {background-position: 95px 1px;}
+   .arrow_position4 {background-position: 40px 1px;}
+   
+   
+
+
+.input_arrow_chico
+{
+    background: url(../img/buttons/arrow.gif)   no-repeat scroll 0 0 transparent ;  background-position: 25px 1px;
+    border: 1px solid #FFF;
+    font-size:11px;
+    color: #666; padding-left:2px; background-color:#FFF;
+       
+}
+
+.input_lupa
+{
+    background: url(../img/buttons/search.gif)   no-repeat scroll 0 0 transparent ; width:236px; height:23px;  background-position: 245px 3px;
+    border: 1px solid #fff; margin-bottom:4px; font-size:11px;
+    color: #666; padding-left:2px; background-color:#FFF;
+	
+       
+}
+
+.input_calendar
+{
+    background: url(../img/buttons/calendar.gif)   no-repeat scroll 0 0 transparent ; width:127px; height:23px;  background-position: 105px 3px;
+    border: 1px solid #fff; margin-bottom:10px; 
+    font-size:11px;
+    color: #666; padding-left:2px; background-color:#FFF;
+       
+}
+
+/*po up*/
+
+/*hoverpopups type 1*/
+
+#popup { color: #000; width:20px;   }
+
+#popup a, #popup a:visited {
+	position: relative;
+	display: block;
+	text-align: right;
+	margin: 0;
+	border: none;
+	text-decoration: none;
+	font: normal 11px Arial, Helvetica, sans-serif;
+	
+}
+
+#popup a span {display: none;}
+
+#popup a:hover { background-color: #e9e9e2;  }
+
+/* the IE correction rule */
+#popup a:hover	{
+ background-color: #e9e9e2;
+text-indent: 0; /* added the default value */
+}
+
+#popup a:hover span{
+display: block;
+position: absolute;
+top: -60px;
+left: -110px;
+width: 265px;
+margin: 0px;
+padding: 10px 5px 10px 5px;
+color: #666;
+font-weight: normal;
+background: #fff;
+text-align: left;
+border: 1px solid #0081c6;
+border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; 
+
+}
+
+
+
+.callout {
+    position: relative;
+    margin: 18px 0;
+	width: 265px;
+    padding: 18px 20px;
+    background-color: #eef4f9;
+    /* easy rounded corners for modern browsers */
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+	font: normal 11px Arial, Helvetica, sans-serif;
+	
+}
+.callout .notch {
+    position: absolute;
+    bottom: -10px;
+    left: 105px;
+    margin: 0;
+    border-top: 10px solid #eef4f9;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+    /* ie6 height fix */
+    font-size: 0;
+    line-height: 0;
+     /* ie6 transparent fix */
+    _border-right-color: pink;
+    _border-left-color: pink;
+    _filter: chroma(color=pink);
+}
+
+.border-callout { border: 1px solid #0081c6; padding: 17px 19px; }
+.border-callout .border-notch { border-top-color: #0081c6; bottom: -11px; }
+
+

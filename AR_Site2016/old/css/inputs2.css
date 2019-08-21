@@ -1,0 +1,109 @@
+.INPUTText {
+    BORDER-RIGHT: #d2d2d2 1px solid;
+    BORDER-TOP: #d2d2d2 1px solid;
+    BORDER-LEFT: #d2d2d2 1px solid;
+    BORDER-BOTTOM: #d2d2d2 1px solid;
+    FONT-SIZE: 11px;
+    BACKGROUND: #F3F3F3;
+    COLOR: #4d4d4d;
+    FONT-FAMILY: Tahoma, Arial;
+    HEIGHT: 18px;
+    TEXT-ALIGN: left;
+}
+
+.INPUTText_rojo {
+    BORDER-RIGHT: #bbbdbf 1px solid;
+    BORDER-TOP: #bbbdbf 1px solid;
+    BORDER-LEFT: #bbbdbf 1px solid;
+    BORDER-BOTTOM: #bbbdbf 1px solid;
+    FONT-SIZE: 10px;
+    BACKGROUND: #F1F4F5;
+    COLOR: #D82118;
+    FONT-FAMILY: Tahoma, Arial;
+    HEIGHT: 15px;
+    TEXT-ALIGN: left;
+}
+
+.INPUTTextNumerico {
+    BORDER-RIGHT: #bbbdbf 1px solid;
+    BORDER-TOP: #bbbdbf 1px solid;
+    FONT-SIZE: 10px;
+    BACKGROUND: #ffffff;
+    BORDER-LEFT: #bbbdbf 1px solid;
+    COLOR: #525256;
+    BORDER-BOTTOM: #bbbdbf 1px solid;
+    FONT-FAMILY: Tahoma, Arial;
+    HEIGHT: 15px;
+    TEXT-ALIGN: right;
+}
+
+.INPUTSubmit {
+    BORDER-RIGHT: #bbbdbf 1px solid;
+    BORDER-TOP: #bbbdbf 1px solid;
+    FONT-SIZE: 10px;
+	BACKGROUND: #ffffff;
+    BORDER-LEFT: #bbbdbf 1px solid;
+    COLOR: #525256;
+    BORDER-BOTTOM: #bbbdbf 1px solid;
+    FONT-FAMILY: Tahoma, Arial;
+    HEIGHT: 15px;
+	TEXT-ALIGN: center;
+    TEXT-DECORATION: none;
+	cursor: pointer;
+}
+
+.INPUTCombo {
+    background-color: #f3f3f3;
+    color: #5D5D5D;
+    font-size: 12px;
+    height: 30px;
+    padding: 4px 2px;
+    width: 100% !important;
+    border: none;
+}
+
+.INPUTCheckBox {
+    FONT-SIZE: 10px;
+    FONT-FAMILY: Tahoma, Arial;
+    HEIGHT: 15px;
+    BORDER-STYLE: NONE;
+    TEXT-ALIGN: left;
+}
+
+.INPUTTextArea {
+    BORDER-RIGHT: #BBBFA0 1px solid;
+    BORDER-TOP: #BBBFA0 1px solid;
+	BORDER-LEFT: #BBBFA0 1px solid;
+	BORDER-BOTTOM: #BBBFA0 1px solid;
+	BACKGROUND: #F1F4F5;
+    COLOR: #525256;
+	FONT-SIZE: 10px;
+    FONT-FAMILY: Tahoma, Arial;
+}
+
+.INPUTTextAreaError {
+    BORDER-RIGHT: #BBBFA0 1px solid;
+    BORDER-TOP: #BBBFA0 1px solid;
+	BORDER-LEFT: #BBBFA0 1px solid;
+	BORDER-BOTTOM: #BBBFA0 1px solid;
+	BACKGROUND: #DCE9D2;
+    COLOR: #525256;
+	FONT-SIZE: 10px;
+    FONT-FAMILY: Tahoma, Arial;
+}
+
+.TxtAzul12 {
+	font-family:Tahoma, Verdana;
+	font-size:12px;
+	color:#0C2577;
+	text-decoration:none;
+}
+.inputFecha{ 
+	vertical-align:middle;
+    background-color: #f3f3f3;
+    color: #5D5D5D;
+    font-size: 12px;
+    height: 30px;
+    padding: 4px 2px;
+    border: none;
+}

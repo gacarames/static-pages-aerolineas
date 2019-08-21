@@ -1,0 +1,558 @@
+body {background-color:#A6AAAD; 
+        font-family: Tahoma, Geneva, sans-serif;
+       font-size: 10px;
+       margin-left: 0px;
+       margin-right: 0px;
+       margin-bottom: 0px;
+       margin-top: 0px;
+       padding: 0px;
+   }
+a {text-decoration:none;}
+
+.tablas-cont {padding-left:9px; padding-right:9px; background-color:#FFF;}
+.bordesGris {
+	border: 1px solid #C7C7C7;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+}
+.fdoLog {
+	background-image: url(../img/fdoLog.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 30px;
+	padding-left: 20px;
+}
+.txtGirs {color:#808084;font-size:11px;}
+.txtGirsClaro {color:#CCC;font-size:11px;}
+.txtAzul {color:#0081C6;font-size:11px;}
+.txtAzul12 {color:#0081C6; font-size:12px; font-weight:bold;}
+.txtAzul14 {color:#0081C6; font-size:14px; font-weight:bold;}
+.txtAmarillo {color:#FFD200;font-size:11px;}
+.txtBlancoBold {color:#FFF; font-weight:bold;font-size:11px;}
+.txtBlanco {color:#FFF;font-size:11px;}
+.txtBlancoOn {color:#FFF; font-size:11px;font-weight:bold; text-decoration:underline;}
+.txtGirs10 {color:#808084;font-size:10px;}
+.txtGirsOscuroBold{	color:#525354;	font-weight:bold;font-size:11px;}
+.txtGirsfoote {color:#808084; font-family:Tahoma, Geneva, sans-serif; font-size:9px; line-height:14px;}
+.imputFechas {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333;
+	background-color: #F1F1F1;
+	width: 65px;
+	border: 1px solid #D3D4CC;
+}
+.imputNroDoc {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333;
+	background-color: #F1F1F1;
+	width: 85px;
+	border: 1px solid #D3D4CC;
+}
+.puntos {
+	background-image: url(../img/puntos.gif);
+	background-repeat: repeat-x;
+	background-position: left center;
+}
+.fondoGeneral {
+    background-color: #FFFFFF;
+    /*
+    background-image: url(../img/Fondo1.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    */
+}
+.imputDestinoOrigen {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333;
+	background-color: #F1F1F1;
+	width: 220px;
+	border: 1px solid #D3D4CC;
+}
+.imputTelefon {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333;
+	background-color: #FFFFFF;
+	width: 40px;
+	border: 1px solid #D3D4CC;
+}
+.imputTelefonC95 {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333;
+	background-color: #FFFFFF;
+	width: 95px;
+	border: 1px solid #D3D4CC;
+}
+.imputmail {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333;
+	background-color: #FFFFFF;
+	width: 185px;
+	border: 1px solid #D3D4CC;
+}
+.imputDiaMes {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333;
+	background-color: #F1F1F1;
+	width: 40px;
+	border: 1px solid #D3D4CC;
+}
+.imputMes {
+ 	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333;
+	background-color: #F1F1F1;
+	width: 65px;
+	border: 1px solid #D3D4CC;
+}
+.lineLeftGris {
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #F0F0F0;
+}
+.imputNombreAp {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333;
+	background-color: #F1F1F1;
+	width: 150px;
+	border: 1px solid #D3D4CC;
+}
+.txtAzulBold {color:#0081C6; font-weight:bold;font-size:11px;}
+.txtAzulOscuroBold {color:#313767; font-weight:bold;font-size:11px;}
+.txtAzulOscuro2Bold {color:#005582; font-weight:bold;font-size:11px;}
+.txtAzulunderline {color:#0081C6; text-decoration:underline;font-size:11px;}
+.puntosDark {
+	background-image: url(../img/puntosDark.gif);
+	background-repeat: repeat-x;
+	background-position: left center;
+}
+.txtNaranja {color:#ff9804; font-weight:bold; font-size:14px;}
+.txtDiaElegido{color:#FFF; font-weight:bold;font-size:11px;background-color:#0284C5;width:90px;height:24px;}
+.txtDiaComun{color:#FFF; font-weight:bold;font-size:11px;background-color:#BABABA;}
+.textoRojo {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        font-weight: bold;
+        color: red;
+}
+.botonAtras {background-color: #FFFFFF;
+        background-image: url(../img/bt-atras.jpg);
+        font-weight: 600;
+        font-family:  Tahoma, Geneva, sans-serif;
+        font-size:  xx-small;
+        border: none;
+        width: 92px;
+        height: 31px;
+        cursor: pointer; }
+.botonContinuar {background-color: #FFFFFF;
+        background-image: url(../img/bt-continuar.jpg);
+        font-weight: 600;
+        font-family:  Tahoma, Geneva, sans-serif;
+        font-size:  xx-small;
+        border: none;
+        width: 104px;
+        height: 31px;
+        cursor: pointer;}
+.botonSi {background-color: #FFFFFF;
+        background-image: url(../img/bt-si.jpg);
+        font-weight: 600;
+        font-family:  Tahoma, Geneva, sans-serif;
+        font-size:  xx-small;
+        border: none;
+        width: 59px;
+        height: 31px;
+        cursor: pointer;}
+.botonInicio {background-color: #FFFFFF;
+        background-image: url(../img/bt-empezar.jpg);
+        font-weight: 600;
+        font-family:  Tahoma, Geneva, sans-serif;
+        font-size:  xx-small;
+        border: none;
+        width: 130px;
+        height: 31px;
+        cursor: pointer;}
+.botonVolver{background-color: #FFFFFF;
+        background-image: url(../img/bt-cancelar.jpg);
+        font-weight: 600;
+        font-family:  Tahoma, Geneva, sans-serif;
+        font-size:  xx-small;
+        border: none;
+        width: 86px;
+        height: 31px;
+        cursor: pointer;}
+
+.botonReservar{background-color: #FFFFFF;
+        background-image: url(../img/bt-reservar.jpg);
+        font-weight: 600;
+        font-family:  Tahoma, Geneva, sans-serif;
+        font-size:  xx-small;
+        border: none;
+        width: 106px;
+        height: 31px;
+        cursor: pointer;}
+.botonReservarPagar{background-color: #FFFFFF;
+        background-image: url(../img/bt-reservarPagar.jpg);
+        font-weight: 600;
+        font-family:  Tahoma, Geneva, sans-serif;
+        font-size:  xx-small;
+        border: none;
+        width: 131px;
+        height: 31px;
+        cursor: pointer;}
+.botonFin{background-color: #FFFFFF;
+        background-image: url(../img/bt-finalizar.jpg);
+        font-weight: 600;
+        font-family:  Tahoma, Geneva, sans-serif;
+        font-size:  xx-small;
+        border: none;
+        width: 96px;
+        height: 31px;
+        cursor: pointer;}
+.botonImprimir{background-color: #FFFFFF;
+        background-image: url(../img/bt-imprimir.jpg);
+        font-weight: 600;
+        font-family:  Tahoma, Geneva, sans-serif;
+        font-size:  xx-small;
+        border: none;
+        width: 97px;
+        height: 31px;
+        cursor: pointer;}
+.botonNuevaReserva{background-color: #FFFFFF;
+        background-image: url(../img/bt-nuevareserva.jpg);
+        font-weight: 600;
+        font-family:  Tahoma, Geneva, sans-serif;
+        font-size:  xx-small;
+        border: none;
+        width: 128px;
+        height: 31px;
+        cursor: pointer;}
+.botonCerrar{background-color: #FFFFFF;
+        background-image: url(../img/bt-cerrar.jpg);
+        font-weight: 600;
+        font-family:  Tahoma, Geneva, sans-serif;
+        font-size:  xx-small;
+        border: none;
+        width: 86px;
+        height: 31px;
+        cursor: pointer;}
+.botonNo{background-color: #FFFFFF;
+        background-image: url(../img/bt-no.jpg);
+        font-weight: 600;
+        font-family:  Tahoma, Geneva, sans-serif;
+        font-size:  xx-small;
+        border: none;
+        width: 59px;
+        height: 31px;
+        cursor: pointer;}
+.botonVolverCuentaPlus{background-color: #FFFFFF;
+        background-image: url(../img/bt-volver.jpg);
+        font-weight: 600;
+        font-family:  Tahoma, Geneva, sans-serif;
+        font-size:  xx-small;
+        border: none;
+        width: 160px;
+        height: 31px;
+        cursor: pointer;}
+.botonBuscar{background-color: #FFFFFF;
+        background-image: url(../img/bt-buscar.jpg);
+        font-weight: 600;
+        font-family:  Tahoma, Geneva, sans-serif;
+        font-size:  xx-small;
+        border: none;
+        width: 84px;
+        height: 33px;
+        cursor: pointer;}
+.boton{background-color: #CCCCCC; 
+        background-image: url(../img/botonback.jpg);
+        font-weight: 600;
+        font-family:  Tahoma, Geneva, sans-serif;
+        font-size:  xx-small;
+        border: none;
+        cursor: pointer; }
+.botonOver{background-color: #B0CFEF;
+        font-weight: 600;
+        font-family: Tahoma, Geneva, sans-serif;
+        font-size:  xx-small;
+        border: none;
+        cursor: pointer; }
+.estiloImparVuelo{background-color: #F5F5F5;}
+.estiloParVuelo{background-color: #FAFAFA;}
+.estiloImparClaseTurista{background-color: #80C0E3;}
+.estiloParClaseTurista{background-color: #CCE6F3;}
+.celdaTextoCalendario{
+        font-family: Tahoma, Geneva, sans-serif;
+        font-size:  xx-small;
+        color: #000000; 
+}
+.textoMensaje{
+        font-family: Tahoma, Geneva, sans-serif;
+        font-size: 14px;
+        font-weight:700;
+        color: #0081C6;
+}
+.textoChicoMensaje{
+        font-family: Tahoma, Geneva, sans-serif;
+        font-size: 10px;
+        font-weight:700;
+        color: #0081C6;
+}
+.txtGirs12 {
+	color:#808084;
+	font-size: 12px;
+	font-weight: bold;
+}
+/*
+Copyright (c) 2009, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.8.0r4
+*/
+.yui-skin-sam .yui-ac{
+        position:relative;
+        font-family:arial;
+        font-size:100%;
+    }
+
+.yui-skin-sam .yui-ac-input{
+        position:absolute;
+        width:100%;
+    }
+
+.yui-skin-sam .yui-ac-container{
+        position:absolute;
+        top:1.6em;
+        width:100%;
+    }
+
+.yui-skin-sam .yui-ac-content{
+        position:absolute;
+        width:100%;
+        border:1px solid #808080;
+        background:#fff;
+        overflow:hidden;
+        z-index:9050;}
+
+.yui-skin-sam .yui-ac-shadow{
+        position:absolute;
+        margin:.3em;
+        width:100%;
+        background:#000;
+        -moz-opacity:0.10;
+        opacity:0.10;
+        filter:alpha(opacity=10);
+        z-index:9049;
+        }
+.yui-skin-sam .yui-ac iframe{
+        opacity:0;
+        filter:alpha(opacity=0);
+        padding-right:.3em;
+        padding-bottom:.3em;
+        }
+.yui-skin-sam .yui-ac-content ul{
+        margin:0;
+        padding:0;
+        width:100%;
+    }
+.yui-skin-sam .yui-ac-content li{
+        margin:0;
+        padding:2px 5px;
+        cursor:default;
+        white-space:nowrap;
+        list-style:none;
+        zoom:1;
+    }
+.yui-skin-sam .yui-ac-content li.yui-ac-prehighlight{
+        background:#B3D4FF;
+    }
+.yui-skin-sam .yui-ac-content li.yui-ac-highlight{
+        background:#426FD9;
+        color:#FFF;
+    }
+
+.botonRdo {
+	border-spacing: 0;
+	padding: 0;
+}
+.botonRdo_i {
+	width: 3px;
+	height: 26px;
+	background-image: url(../img/boton_i.png);
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+.botonRdo_c {
+	height: 26px;
+	background-image: url(../img/boton_c.png);
+	background-position: center center;
+	background-repeat: repeat-x;
+	text-align: center;
+	font: bold 12px verdana;
+	vertical-align: middle;
+}
+.botonRdo_c a {
+	color: white;
+	text-decoration: none;
+	outline: none;
+}
+.botonRdo_d {
+	width: 3px;
+	height: 26px;
+	background-image: url(../img/boton_d.png);
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+.cuadroRedondo {
+	border-spacing: 0;
+	padding: 0;
+}
+.cuadroPrincipal {
+	border-spacing: 0;
+	padding: 0;
+	margin: auto;
+	background: white;
+                -moz-border-radius: 15px; /* Firefox */
+                -webkit-border-radius: 15px; /* Safari and Chrome */
+                border-radius: 15px; /* Opera 10.5+, future browsers, and now also Internet Explorer 6+ using IE-CSS3 */
+                -moz-box-shadow: 10px 10px 20px #000; /* Firefox */
+                -webkit-box-shadow: 10px 10px 20px #000; /* Safari and Chrome */
+}
+.lateralAzuli {
+	width: 4px;
+	background-image: url(../img/old/lateral_i.png);
+	background-position: right;
+	background-repeat: repeat-y;
+	padding: 0;
+}
+.lateralAzuld {
+	width: 4px;
+	background-image: url(../img/old/lateral_d.png);
+	background-position: right;
+	background-repeat: repeat-y;
+	padding: 0;
+}
+.centralAzul {
+	padding: 0;
+	width: 978px;
+}
+.topeAzul {
+	padding: 0;
+	width: 985px;
+	height: 53px;
+	background-image: url(../img/old/topeAzul.png);
+	background-repeat: no-repeat;
+}
+.baseAzul {
+	padding: 0;
+	width: 985px;
+	height: 40px;
+	background-image: url(../img/old/baseAzul.png);
+	background-repeat: no-repeat;
+}
+.textoPasoa {
+	color: #0081C6;
+	font: bold 10px verdana;
+	text-align: center;
+	position:absolute;
+	top: 22px;
+	width: 76px;
+}
+.textoPasop {
+	color: grey;
+	font: bold 10px verdana;
+	text-align: center;
+	position:absolute;
+	top: 22px;
+	width: 76px;
+}
+.subtitPaso {
+	color: black;
+	font: bold 18px tahoma;
+	text-align: left;
+	position:absolute;
+	top: 22px;
+	left: 24px;
+}
+
+.semiTransparent2 {
+    background: url(../img/semi-transparent-2.png) top left;
+}
+.arsaWait {
+    background: url(../img/arsa-wait.gif) center no-repeat;
+    width: 326px;
+	height: 241px;
+    background-position: center center;
+	background-repeat: no-repeat;
+}
+.calendarioImagen{
+    border-spacing: 0;
+	padding: 0;
+        width: 110px;
+        height: 17px;
+        background-position: right top;
+        background-repeat: no-repeat;
+    }
+.botonRdo {
+	border-spacing: 0;
+	padding: 0;
+}
+.botonRdo_i {
+	width: 3px;
+	height: 26px;
+	background-image: url(../img/boton_i.png);
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+.botonRdo_c {
+	height: 26px;
+	background-image: url(../img/boton_c.png);
+	background-position: center center;
+	background-repeat: repeat-x;
+	text-align: center;
+	font: bold 12px verdana;
+	vertical-align: middle;
+}
+.botonRdo_c a {
+	color: white;
+	text-decoration: none;
+	outline: none;
+}
+.botonRdo_d {
+	width: 3px;
+	height: 26px;
+	background-image: url(../img/boton_d.png);
+	background-position: right center;
+	background-repeat: no-repeat;
+}    
+.txtAzul20{
+    font-family: Tahoma, Geneva, sans-serif;
+    color:#0081C6; 
+    font-size:20px; 
+   
+}
+
+.grisLeftTop {
+	background-image: url(../img/old/shadowup.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+    background-color: #FFFFFF;
+}

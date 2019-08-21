@@ -1,0 +1,23 @@
+﻿body 
+{
+    background: #A6AAAD; 
+}
+
+.divAlertParent
+{
+    background: #A6AAAD;
+}
+
+.divAlert 
+{
+    text-align: center;
+    vertical-align: middle;
+    background: transparent;
+    border: 1px solid black;
+    background-color:Yellow;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+}

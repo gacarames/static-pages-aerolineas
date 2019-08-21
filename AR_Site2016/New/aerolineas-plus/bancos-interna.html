@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Aerolineas Argentinas</title>
+    <meta http-equiv="title" content="Aerolineas Argentinas">
+    <meta name="Description" content="Todo tu viaje en un solo lugar aerolineas.com, vuelos baratos.">
+    <link href="../Images/condor_chico.gif" rel="shortcut icon" type="image/x-icon" />
+    <link href="http://www.aerolineas.com.ar/es-ar" rel="canonical" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.touchSwipe.min.js"></script>
+    <script src="../js/carousel-hero.js"></script>
+
+    <script src="../js/slick.min.js"></script>
+    <!-- Script footer menu carousel -->
+
+    <script src="../js/jquery.matchHeight-min.js"></script>
+    <!--  Match Height Cols -->
+    <script>
+        // matchHeight blocks content
+        $(document).ready(function() {
+            $('.col-desc').matchHeight();
+            $('.col-desc .title').matchHeight();
+            $('.tabs a').matchHeight();
+        });
+
+    </script>
+
+    <script src="../js/locales/es-AR.min.js"></script>
+    <!-- //datapicker form -->
+    <script src="../js/datepicker.min.js"></script>
+    <!-- //datapicker form -->
+    <script src="../js/form-home.js"></script>
+    <!-- //datapicker form home -->
+
+    <link rel="stylesheet" href="../css/selectize.css" />
+    <!-- //selects form CSS -->
+    <script src="../js/selectize.js"></script>
+    <!-- //selects form -->
+    <script>
+        //selectize
+        $(document).ready(function() {
+            $('.selectSearch').selectize({
+                sortField: 'text'
+            });
+        });
+
+    </script>
+
+    <script src="../js/chat.js"></script>
+    <!-- //chat -->
+    <script src="../js/form-search.js"></script>
+    <!-- //datapicker form search -->
+
+
+    <!-- <msdropdown> -->
+    <link rel="stylesheet" href="../css/msdropdown/dd.css" />
+    <script src="../js/msdropdown/jquery.dd.min.js"></script>
+    <link rel="stylesheet" href="../css/msdropdown/skin2.css" />
+    <link rel="stylesheet" href="../css/msdropdown/flags.css" />
+    <!-- </msdropdown> -->
+
+    <script src="../js/jquery.html5-placeholder-shim.js"></script>
+
+    <script src="../js/scripts.js"></script>
+    <!-- general scripts -->
+
+    <style>
+        /*    Regla de estilo para agregar en archivo style.css (adapta estetica de boton en nuevo formulario "Solicitá tu tajeta")    */
+
+        /*
+        .form-solicitar-tarjeta .btn-block {
+            height: 40px;
+            margin: 23px 0!important;
+        }
+*/
+
+    </style>
+</head>
+
+<body>
+    <!-- CONTENEDOR -->
+    <div id="main-content" class="bancos">
+        <header role="banner">
+            <a href="#utilityNav" class="firstFocus"></a>
+            <ul id="utilityNav" class="list-unstyled" accesskey="a">
+                <li><a href="#main-nav" class="">Skip to main navigation</a></li>
+                <li><a href="#wrapper" class="">Skip to main content</a></li>
+                <li><a href="#footer" class="">Skip to footer</a></li>
+            </ul>
+            <div id="header" class="clearfix">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div id="header-top" class="header-top clearfix">
+                        <div id="logo-header" class="pull-left">
+                            <a href="../index.html" accesskey="h"><img alt="Aerolineas.com" src="../img/common/logo_Aerolineas.gif" /></a>
+                        </div>
+                        <div id="access-top" class="pull-right">
+                            <div id="CultureContainer" class="hidden-xs hidden-sm">
+                                <select class="INPUTBuscador" id="culture" name="culture" title="Culture">
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag ar" selected="selected" value="es-ar" data-title="Argentina (Español)">Argentina (Español)</option>
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag ar" value="en-ar" data-title="Argentina (Inglés)">Argentina (Inglés)</option>
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag au" value="en-au" data-title="Australia">Australia</option>
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag bo" value="es-bo" data-title="Bolivia">Bolivia</option>
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag br" value="pt-br" data-title="Brasil">Brasil</option>
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag co" value="es-co" data-title="Colombia">Colombia</option>
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag cl" value="es-cl" data-title="Chile">Chile</option>
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag es" value="es-eu" data-title="España">España</option>
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag fr" value="fr-fr" data-title="Francia">Francia</option>
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag it" value="it-eu" data-title="Italia">Italia</option>
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag mx" value="es-mx" data-title="México">México</option>
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag nz" value="en-nz" data-title="New Zealand">New Zealand</option>
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag pa" value="es-pa" data-title="Paraguay">Paraguay</option>
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag pe" value="es-pe" data-title="Perú">Perú </option>
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag en" value="en-eu" data-title="Rest of Europe">Rest of Europe</option>
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag uy" value="es-uy" data-title="Uruguay">Uruguay</option>
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag us" value="es-us" data-title="United States (Español)">United States (Español)</option>
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag us" value="en-us" data-title="United States (English)">United States (English)</option>
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag es" value="es-us" data-title="Otros países (Español)">Otros países (Español)</option>
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag us" value="en-us" data-title="Other Countries (English)">Other Countries (English)</option>
+                                </select>
+                            </div>
+
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-header-collapse" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                    </div>
+                    <!-- NAVBAR -->
+                    <nav id="main-nav" class="navbar navbar-default" role="navigation" aria-label="Menú principal">
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="navbar-header-collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="menu-item hidden-md hidden-lg">
+                                    <div id="CultureContainer_m">
+                                        <select class="INPUTBuscador_m" id="culture_m" name="culture_m" title="culture_m">
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag ar" selected="selected" value="es-ar" data-title="Argentina (Español)">Argentina (Español)</option>
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag ar" value="en-ar" data-title="Argentina (Inglés)">Argentina (Inglés)</option>
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag au" value="en-au" data-title="Australia">Australia</option>
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag bo" value="es-bo" data-title="Bolivia">Bolivia</option>
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag br" value="pt-br" data-title="Brasil">Brasil</option>
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag co" value="es-co" data-title="Colombia">Colombia</option>
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag cl" value="es-cl" data-title="Chile">Chile</option>
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag es" value="es-eu" data-title="España">España</option>
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag fr" value="fr-fr" data-title="Francia">Francia</option>
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag it" value="it-eu" data-title="Italia">Italia</option>
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag mx" value="es-mx" data-title="México">México</option>
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag nz" value="en-nz" data-title="New Zealand">New Zealand</option>
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag pa" value="es-pa" data-title="Paraguay">Paraguay</option>
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag pe" value="es-pe" data-title="Perú">Perú </option>
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag en" value="en-eu" data-title="Rest of Europe">Rest of Europe</option>
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag uy" value="es-uy" data-title="Uruguay">Uruguay</option>
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag us" value="es-us" data-title="United States (Español)">United States (Español)</option>
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag us" value="en-us" data-title="United States (English)">United States (English)</option>
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag es" value="es-us" data-title="Otros países (Español)">Otros países (Español)</option>
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag us" value="en-us" data-title="Other Countries (English)">Other Countries (English)</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="productos-opcionales.html">
+                                   Productos opcionales<span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="arplus.html">Viajeros Frecuentes</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="servicios.html">Servicios al cliente</a>
+                                </li>
+                                <li><a class="hidden-md hidden-lg" href="#"><span><img src="../img/common/ico_plane.png" alt="Vuelos" role="presentation"></span> Reservá tu vuelo</a></li>
+                                <li><a class="hidden-md hidden-lg" role="button" data-toggle="collapse" href="#collapseChatMobile" aria-expanded="false" aria-controls="collapseChatMobile"><span><img src="../img/common/ico_chat.png" alt="chat" role="presentation"></span> ¿Necesitas ayuda?</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </nav>
+                    <!-- /NAVBAR -->
+                    <!-- Breadcrumb -->
+                    <ol class="breadcrumb hidden-xs">
+                        <li><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> <span class="sr-only">Home</span></a></li>
+                        <li><a href="#">Nivel 1</a></li>
+                        <li class="active">Programa de Viajeros Frecuentes</li>
+                    </ol>
+                    <!-- /Breadcrumb -->
+                </div>
+                <!-- /.container -->
+            </div>
+        </header>
+
+        <!-- CONTENEDOR WRAPPER -->
+        <div id="wrapper" role="main">
+            <!-- #hero-form -->
+            <div id="hero-form" class="hero-form hero-form-slider hero-form-slider-interna">
+                <!-- Carousel -->
+                <div id="myCarousel" class="carousel slide bancos" data-ride="carousel" data-interval="false">
+                    <!-- Indicators -->
+                    <div class="container hidden-xs hidden-sm">
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                        </ol>
+                    </div>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active" onclick="window.location.href='index.html';" role="option">
+                            <div class="container">
+                                <div class="carousel-caption">
+                                    <h2 class="title">Sumá Millas</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item item2" role="option">
+                            <div class="container">
+                                <div class="carousel-caption">
+                                    <h2 class="title">Another example headline.</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <div class="controls visible-xs-inline-block">
+                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <!-- Controls -->
+                </div>
+                <!-- /.carousel -->
+                <div class="container">
+                    <!-- form-slider -->
+                    <div class="form-slider">
+                        <div id="contenedor_form-slider" class="clearfix">
+                            <h3 class="title"><i class="fa fa-user" aria-hidden="true"></i> Ingresar a mi cuenta</h3>
+                            <form id="reservationFlightSearchForm" class="form " method="post" name="reservationFlightSearchForm">
+                                <div class="content">
+                                    <fieldset>
+                                        <legend class="sr-only">Ingresar a mi cuenta</legend>
+                                        <div class="form-group">
+                                            <label class="sr-only" for="NroSocio">Número de Socio</label>
+                                            <input type="text" class="form-control" id="NroSocio" placeholder="Número de Socio" name="NroSocio">
+                                            <i class="fa fa-user" aria-hidden="true"></i>
+                                            <a class="small" href="/es-ar/aerolineas_plus/mi_cuenta_plus/olvidastetunrosocio">Olvidaste tu Nº de Socio?</a>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="sr-only" for="Clave">Password</label>
+                                            <input type="password" class="form-control" id="Clave" placeholder="Password" name="Clave">
+                                            <i class="fa fa-lock" aria-hidden="true"></i>
+                                            <a class="small" href="/es-ar/aerolineas_plus/mi_cuenta_plus/olvidastetuclave1">Olvidaste tu Clave?</a>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="sr-only" for="input2">Label <span class="sr-only">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit</span></label>
+                                            <div class="promocod has-tooltip">
+                                                <i class="fa fa-question-circle more-info-tooltip" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit"></i>
+                                                <input type="text" class="form-control" id="input2" placeholder="..." name="input2"></div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <a class="small underline btn_ingreso" href="/es-ar/aerolineas_plus/mi_cuenta_plus/primeravez">Primera vez que ingreso</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group btn-block">
+                                                    <input type="submit" value="Aceptar" class="btn btn-primary btn-block" />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </fieldset>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- /form-slider -->
+                </div>
+            </div>
+            <!-- /#hero-form -->
+            <section id="empresas">
+                <div class="container">
+                    <h1 class="sr-only">Sumá Millas</h1>
+                    <div class="wrapper-tabs">
+                        <div class="ancla">
+                            <a name="info" id="info"></a>
+                        </div>
+                        <div class="tabs-container">
+                            <h1 class="title hidden-md hidden-lg h2">Bancos</h1>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-tabs" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <nav role='navigation' class="tabs navbar-tabs">
+                                <div class="collapse navbar-collapse" id="collapse-tabs">
+                                    <ul class="nav nav-tabs nav-justified nav-tabs-inner">
+                                        <li id="ganarMillas" role="presentation"><a href="ganar-millas.html#info">Sumá Millas</a></li>
+                                        <li id="tablaMillas" role="presentation"><a href="tabla-de-millas-gana.html#info">Tabla de millas</a></li>
+                                        <li id="informacionInteres" role="presentation"><a href="empresas-asociadas.html#info">Empresas Asociadas</a></li>
+                                        <li id="asociate" role="presentation" class="active"><a href="bancos.html#info">Bancos</a></li>
+                                        <li id="condiciones" role="presentation"><a href="comprar.html#info">Comprar Millas</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-7 col-md-9">
+                                    <h2>Promoción Banco Nación</h2>
+                                </div>
+                                <div class="col-xs-12 col-sm-5 col-md-3 logo-empresa">
+                                    <img class="img-auto pull-right" src="../img/bancos/Banco_Nacion.jpg" alt="Banco Nación">
+                                </div>
+
+                                <div class="col-xs-12">
+                                    <hr>
+                                    <p>PROMOCIÓN VIGENTE DESDE EL 10/07/16 AL 15/09/16 ABONANDO EN 3, 6, 12 Y 18 CUOTAS SIN INTERÉS, VÁLIDO PARA LAS TARJETAS DE CRÉDITO NATIVA, MASTERCARD (EN SUS VERSIONES REGIONAL, INTERNACIONAL, GOLD, PLATINUM Y CORPORATE REGIONAL) Y VISA ( EN SUS VERSIONES CLASSIC, GOLD Y PLATINUM) EMITIDAS POR EL BANCO NACIÓN. NO INCLUYE TARJETAS BUSINESS. LA PROMOCIÓN DE 18 CUOTAS SIN INTERÉS TIENE UN COSTO FINANCIERO TOTAL DEL 3,58% TEA (TASA EFECTIVA ANUAL) DEBIDO AL COSTO DEL SEGURO DE VIDA SOBRE LAS CUOTAS ADEUDADAS. TASA NOMINAL ANUAL 0,00%. TASA EFECTIVA ANUAL 0,00%.</p>
+
+
+                                    <div class="row">
+                                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                            <div class="panel panel-default no-border">
+                                                <div class="panel-heading" role="tab" id="headingTwo">
+                                                    <h4 class="panel-title">
+                                                        <a id="collapseA" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSolicitar" aria-expanded="false" aria-controls="collapseSolicitar">
+                                                      Solicitá tu tarjeta
+                                                    </a>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapseSolicitar" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                                    <div class="panel-body">
+                                                        <form class="form-solicitar-tarjeta">
+                                                            <div class="datosEmpresa">
+                                                                <h4 class="text-blue">Datos personales</h4>
+                                                                <div class="row row-small">
+                                                                    <div class="col-sm-6 col-md-3">
+                                                                        <div class="form-group">
+                                                                            <div class="hidden-xs label invisible">Apellido</div>
+                                                                            <label for="apellido" class="sr-only">Apellido</label>
+                                                                            <input type="text" class="form-control" id="apellido" placeholder="Apellido" name="apellido">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-6 col-md-3">
+                                                                        <div class="form-group">
+                                                                            <div class="hidden-xs label invisible">Nombre</div>
+
+                                                                            <label for="nombre" class="sr-only">Nombre</label>
+                                                                            <input type="text" class="form-control" id="nombre" placeholder="Nombre" name="nombre">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-6 col-md-3">
+                                                                        <div class="form-group">
+                                                                            <label for="tipo-documento" class="hidden-xs hidden-sm invisible">Documento</label>
+                                                                            <select name="cmbTipoDocu" id="cmbTipoDocu" class="form-control">
+                                                                                <option value="">Tipo de Documento</option>
+                                                                                <option value="DNI">DNI</option>
+                                                                                <option value="PAS">Pasaporte</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-6 col-md-3">
+                                                                        <div class="form-group">
+                                                                            <label class="hidden-xs hidden-sm invisible" for="tipo-documento">Documento</label>
+                                                                            <label for="numero" class="sr-only">Número</label>
+                                                                            <input type="text" class="form-control" id="numero" placeholder="Número" name="numero">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="row row-small">
+
+                                                                    <div class="col-sm-6 col-md-3">
+                                                                        <div class="form-group">
+                                                                            <label for="email" class="sr-only">Email</label>
+                                                                            <label for="email" class="sr-only">Email</label>
+                                                                            <input type="text" class="form-control" id="email" placeholder="Email" name="email">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-6 col-md-3">
+                                                                        <div class="form-group">
+                                                                            <label class="hidden-xs sr-only" for="tipo-documento">Reconfirmar Email</label>
+                                                                            <label for="ReconEmail" class="sr-only">Reconfirmar Email</label>
+                                                                            <input type="text" class="form-control" id="ReconEmail" placeholder="Reconfirmar Email" name="ReconEmail">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                                                        <div class="form-group">
+                                                                            <label class="hidden-xs sr-only" for="tipo-documento">solicitar</label>
+                                                                            <button type="submit" class="btn btn-primary btn-block">Solicitar</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="row row-small">
+                                                                </div>
+
+                                                                <div class="row row-small">
+                                                                    <div class="col-md-12">
+                                                                        <p class="small text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lacus velit, mollis a nulla et, tempor volutpat nulla. Ut lorem est, bibendum et enim et, fringilla blandit velit. Sed vulputate porta vehicula. Duis at sem dolor. Integer nec enim dolor. Quisque et tempus lorem. Sed aliquet quis tortor ac consectetur. Donec pulvinar, magna id malesuada porttitor, turpis ligula volutpat ligula, at tincidunt lorem lacus consequat velit. In facilisis fringilla lacus, sed eleifend arcu varius et. Nullam hendrerit euismod pellentesque. Sed viverra congue lobortis.</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="panel panel-default no-border">
+                                                <div class="panel-heading" role="tab" id="headingOne">
+                                                    <h4 class="panel-title">
+                                                        <a id="collapseB" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseAsociate" aria-expanded="false" aria-controls="collapseAsociate">
+                                                      Asociate
+                                                    </a>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapseAsociate" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                                    <div class="panel-body">
+                                                        <form class="form-acuerdo-corporativo">
+                                                            <div class="datosEmpresa">
+                                                                <h4 class="text-blue">Datos personales</h4>
+                                                                <div class="row row-small">
+                                                                    <div class="col-md-3">
+                                                                        <div class="form-group">
+                                                                            <div class="hidden-xs label invisible">Apellido</div>
+                                                                            <label for="apellido" class="sr-only">Apellido</label>
+                                                                            <input type="text" class="form-control" id="apellido" placeholder="Apellido" name="apellido">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                        <div class="form-group">
+                                                                            <div class="hidden-xs hidden-sm label invisible">Nombre</div>
+                                                                            <label for="nombre" class="sr-only">Nombre</label>
+                                                                            <input type="text" class="form-control" id="nombre" placeholder="Nombre" name="nombre">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <label for="Adults">Fecha de Nacimiento</label>
+                                                                        <div class="row row-small">
+                                                                            <div class="col-xs-4">
+                                                                                <div class="form-group">
+                                                                                    <select name="cmbDay" id="cmbDay" class="form-control">
+                                                                                    <option value="">Día</option><option value="01">01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option><option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option>
+                                                                                </select>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-xs-4">
+                                                                                <div class="form-group">
+                                                                                    <select name="cmbMonth" id="cmbMonth" class="form-control" onchange="validarFecha(this.value, document.getElementById('cmbYear').value)">
+                                                                                    <option value="">Mes</option>
+                                                                                    <option value="Enero">Enero</option>
+                                                                                    <option value="Febrero">Febrero</option>
+                                                                                    <option value="Marzo">Marzo</option>
+                                                                                    <option value="Abril">Abril</option>
+                                                                                    <option value="Mayo">Mayo</option>
+                                                                                    <option value="Junio">Junio</option>
+                                                                                    <option value="Julio">Julio</option>
+                                                                                    <option value="Agosto">Agosto</option>
+                                                                                    <option value="Septiembre">Septiembre</option>
+                                                                                    <option value="Octubre">Octubre</option>
+                                                                                    <option value="Noviembre">Noviembre</option>
+                                                                                    <option value="Diciembre">Diciembre</option>
+                                                                                </select>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-xs-4">
+                                                                                <div class="form-group">
+                                                                                    <select name="cmbYear" id="cmbYear" class="form-control" onchange="validarFecha(document.getElementById('cmbMonth').value, this.value)">
+                                                                                    <option value="">Año</option><option value="1916">1916</option><option value="1917">1917</option><option value="1918">1918</option><option value="1919">1919</option><option value="1920">1920</option><option value="1921">1921</option><option value="1922">1922</option><option value="1923">1923</option><option value="1924">1924</option><option value="1925">1925</option><option value="1926">1926</option><option value="1927">1927</option><option value="1928">1928</option><option value="1929">1929</option><option value="1930">1930</option><option value="1931">1931</option><option value="1932">1932</option><option value="1933">1933</option><option value="1934">1934</option><option value="1935">1935</option><option value="1936">1936</option><option value="1937">1937</option><option value="1938">1938</option><option value="1939">1939</option><option value="1940">1940</option><option value="1941">1941</option><option value="1942">1942</option><option value="1943">1943</option><option value="1944">1944</option><option value="1945">1945</option><option value="1946">1946</option><option value="1947">1947</option><option value="1948">1948</option><option value="1949">1949</option><option value="1950">1950</option><option value="1951">1951</option><option value="1952">1952</option><option value="1953">1953</option><option value="1954">1954</option><option value="1955">1955</option><option value="1956">1956</option><option value="1957">1957</option><option value="1958">1958</option><option value="1959">1959</option><option value="1960">1960</option><option value="1961">1961</option><option value="1962">1962</option><option value="1963">1963</option><option value="1964">1964</option><option value="1965">1965</option><option value="1966">1966</option><option value="1967">1967</option><option value="1968">1968</option><option value="1969">1969</option><option value="1970">1970</option><option value="1971">1971</option><option value="1972">1972</option><option value="1973">1973</option><option value="1974">1974</option><option value="1975">1975</option><option value="1976">1976</option><option value="1977">1977</option><option value="1978">1978</option><option value="1979">1979</option><option value="1980">1980</option><option value="1981">1981</option><option value="1982">1982</option><option value="1983">1983</option><option value="1984">1984</option><option value="1985">1985</option><option value="1986">1986</option><option value="1987">1987</option><option value="1988">1988</option><option value="1989">1989</option><option value="1990">1990</option><option value="1991">1991</option><option value="1992">1992</option><option value="1993">1993</option><option value="1994">1994</option><option value="1995">1995</option><option value="1996">1996</option><option value="1997">1997</option><option value="1998">1998</option><option value="1999">1999</option><option value="2000">2000</option><option value="2001">2001</option><option value="2002">2002</option><option value="2003">2003</option><option value="2004">2004</option><option value="2005">2005</option><option value="2006">2006</option><option value="2007">2007</option><option value="2008">2008</option><option value="2009">2009</option><option value="2010">2010</option><option value="2011">2011</option><option value="2012">2012</option><option value="2013">2013</option><option value="2014">2014</option><option value="2015">2015</option><option value="2016">2016</option>
+                                                                                </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-2">
+                                                                        <div class="form-group">
+                                                                            <label for="genero" class="hidden-xs hidden-sm label invisible">Género</label>
+                                                                            <select name="genero" id="genero" class="form-control">
+                                                                            <option value="">Género</option>
+                                                                            <option value="masculino">Masculino</option>
+                                                                            <option value="femenino">Femenino</option>
+                                                                        </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="row row-small">
+                                                                    <div class="col-md-3">
+                                                                        <div class="form-group">
+                                                                            <label for="nacionalidad" class="sr-only">Nacionalidad</label>
+                                                                            <input type="text" class="form-control" id="nacionalidad" placeholder="Nacionalidad" name="nacionalidad">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                        <div class="form-group">
+                                                                            <select name="cmbTipoDocu" id="cmbTipoDocu" class="form-control">
+                                                                                <option value="">Tipo de Documento</option>
+                                                                                <option value="DNI">DNI</option>
+                                                                                <option value="PAS">Pasaporte</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                        <div class="form-group">
+                                                                            <label for="numero" class="sr-only">Número</label>
+                                                                            <input type="text" class="form-control" id="numero" placeholder="Número" name="numero">
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-md-3">
+                                                                        <div class="form-group">
+                                                                            <label for="cmbResidencia" class="sr-only">País de residencia</label>
+                                                                            <select name="cmbResidencia" id="cmbResidencia" class="form-control">
+                                                                                <option value="">País de residencia</option>
+                                                                                <option value="AF">AFGANISTAN</option>
+                                                                                <option value="AL">ALBANIA</option>
+                                                                                <option value="DE">ALEMANIA</option>
+                                                                                <option value="AD">ANDORRA</option>
+                                                                                <option value="AO">ANGOLA</option>
+                                                                                <option value="LL">ANGUILLA</option>
+                                                                                <option value="AQ">ANTARTICA</option>
+                                                                                <option value="AG">ANTIGUA</option>
+                                                                                <option value="CW">ANTILLAS HOLAND</option>
+                                                                                <option value="SA">ARABIA SAUDITA</option>
+                                                                                <option value="DZ">ARGELIA</option>
+                                                                                <option value="AR">ARGENTINA</option>
+                                                                                <option value="AW">ARUBA</option>
+                                                                                <option value="AU">AUSTRALIA</option>
+                                                                                <option value="AT">AUSTRIA</option>
+                                                                                <option value="BI">B. W. INDIES (C</option>
+                                                                                <option value="BS">BAHAMAS</option>
+                                                                                <option value="BH">BAHARAIN</option>
+                                                                                <option value="BD">BANGLADESH</option>
+                                                                                <option value="BB">BARBADOS</option>
+                                                                                <option value="BE">BELGICA</option>
+                                                                                <option value="BZ">BELICE</option>
+                                                                                <option value="BJ">BENIN</option>
+                                                                                <option value="BM">BERMUDAS</option>
+                                                                                <option value="BY">BIELORUSIA</option>
+                                                                                <option value="BO">BOLIVIA</option>
+                                                                                <option value="BW">BOTSWANA</option>
+                                                                                <option value="BR">BRASIL</option>
+                                                                                <option value="BN">BRUNEI</option>
+                                                                                <option value="BG">BULGARIA</option>
+                                                                                <option value="BF">BURKINA FASO</option>
+                                                                                <option value="BT">BUTAN</option>
+                                                                                <option value="CV">CABO VERDE</option>
+                                                                                <option value="KH">CAMBOYA</option>
+                                                                                <option value="CM">CAMERUN</option>
+                                                                                <option value="CA">CANADA</option>
+                                                                                <option value="TD">CHAD</option>
+                                                                                <option value="CL">CHILE</option>
+                                                                                <option value="CN">CHINA</option>
+                                                                                <option value="CY">CHIPRE</option>
+                                                                                <option value="CO">COLOMBIA</option>
+                                                                                <option value="CG">CONGO</option>
+                                                                                <option value="KP">COREA DEL NORTE</option>
+                                                                                <option value="KR">COREA DEL SUR</option>
+                                                                                <option value="CI">COSTA DE MARFIL</option>
+                                                                                <option value="CR">COSTA RICA</option>
+                                                                                <option value="HR">CROACIA</option>
+                                                                                <option value="CU">CUBA</option>
+                                                                                <option value="CW">CURAZAO</option>
+                                                                                <option value="DK">DINAMARCA</option>
+                                                                                <option value="EC">ECUADOR</option>
+                                                                                <option value="US">EE. UU.</option>
+                                                                                <option value="EG">EGIPTO</option>
+                                                                                <option value="SV">EL SALVADOR</option>
+                                                                                <option value="AE">EMIRATOS ARABES</option>
+                                                                                <option value="SK">ESLOVAQUIA</option>
+                                                                                <option value="SI">ESLOVENIA</option>
+                                                                                <option value="ES">ESPANIA</option>
+                                                                                <option value="EE">ESTONIA</option>
+                                                                                <option value="ET">ETIOPIA</option>
+                                                                                <option value="FJ">FIJI</option>
+                                                                                <option value="PH">FILIPINAS</option>
+                                                                                <option value="FI">FINLANDIA</option>
+                                                                                <option value="FR">FRANCIA</option>
+                                                                                <option value="GA">GABON</option>
+                                                                                <option value="GM">GAMBIA</option>
+                                                                                <option value="GE">GEORGIA</option>
+                                                                                <option value="GH">GHANA</option>
+                                                                                <option value="GB">GRAN BRETANIA</option>
+                                                                                <option value="GR">GRECIA</option>
+                                                                                <option value="GT">GUATEMALA</option>
+                                                                                <option value="GY">GUAYANA</option>
+                                                                                <option value="GF">GUAYANA FRANCES</option>
+                                                                                <option value="GN">GUINEA</option>
+                                                                                <option value="GQ">GUINEA ECUATORI</option>
+                                                                                <option value="HT">HAITI</option>
+                                                                                <option value="NL">HOLANDA</option>
+                                                                                <option value="HN">HONDURAS</option>
+                                                                                <option value="HK">HONG KONG</option>
+                                                                                <option value="HU">HUNGRIA</option>
+                                                                                <option value="IN">INDIA</option>
+                                                                                <option value="ID">INDONESIA</option>
+                                                                                <option value="IR">IRAN</option>
+                                                                                <option value="IQ">IRAQ</option>
+                                                                                <option value="IE">IRLANDA</option>
+                                                                                <option value="MU">ISLA MAURICIO</option>
+                                                                                <option value="IS">ISLANDIA</option>
+                                                                                <option value="BV">ISLAS BOUVET</option>
+                                                                                <option value="KY">ISLAS CAIMAN</option>
+                                                                                <option value="SB">ISLAS SALOMON B</option>
+                                                                                <option value="VG">ISLAS VIRGENES</option>
+                                                                                <option value="IL">ISRAEL</option>
+                                                                                <option value="IT">ITALIA</option>
+                                                                                <option value="JM">JAMAICA</option>
+                                                                                <option value="JP">JAPON</option>
+                                                                                <option value="JO">JORDANIA</option>
+                                                                                <option value="KZ">KAZAJISTAN</option>
+                                                                                <option value="KE">KENIA</option>
+                                                                                <option value="KW">KUWAIT</option>
+                                                                                <option value="LA">LAOS</option>
+                                                                                <option value="LV">LATVIA</option>
+                                                                                <option value="LB">LIBANO</option>
+                                                                                <option value="LY">LIBIA</option>
+                                                                                <option value="LI">LICHTENSTEIN</option>
+                                                                                <option value="LT">LITHUANIA</option>
+                                                                                <option value="LU">LUXEMBURGO</option>
+                                                                                <option value="MO">MACAO</option>
+                                                                                <option value="MK">MACEDONIA</option>
+                                                                                <option value="MG">MADAGASCAR</option>
+                                                                                <option value="MY">MALASIA</option>
+                                                                                <option value="MW">MALAWI</option>
+                                                                                <option value="ML">MALI</option>
+                                                                                <option value="MT">MALTA</option>
+                                                                                <option value="MA">MARRUECOS</option>
+                                                                                <option value="MR">MAURITANIA</option>
+                                                                                <option value="MX">MEXICO</option>
+                                                                                <option value="MC">MONACO</option>
+                                                                                <option value="MN">MONGOLIA</option>
+                                                                                <option value="MZ">MOZAMBIQUE</option>
+                                                                                <option value="NA">NAMBIA</option>
+                                                                                <option value="NP">NEPAL</option>
+                                                                                <option value="NI">NICARAGUA</option>
+                                                                                <option value="NG">NIGERIA</option>
+                                                                                <option value="NO">NORUEGA</option>
+                                                                                <option value="NC">NUEVA CALEDONIA</option>
+                                                                                <option value="NZ">NUEVA ZELANDA</option>
+                                                                                <option value="PK">PAKISTAN</option>
+                                                                                <option value="PS">PALESTINA</option>
+                                                                                <option value="PA">PANAMA</option>
+                                                                                <option value="PY">PARAGUAY</option>
+                                                                                <option value="PE">PERU</option>
+                                                                                <option value="PF">POLINESIA FRANC</option>
+                                                                                <option value="PL">POLONIA</option>
+                                                                                <option value="PT">PORTUGAL</option>
+                                                                                <option value="PR">PUERTO RICO</option>
+                                                                                <option value="QA">QATAR</option>
+                                                                                <option value="CF">REP. CENTROAFRI</option>
+                                                                                <option value="DO">REP. DOMINICANA</option>
+                                                                                <option value="CZ">REPUBLICA CHECA</option>
+                                                                                <option value="RW">RUANDA</option>
+                                                                                <option value="RO">RUMANIA</option>
+                                                                                <option value="RU">RUSIA</option>
+                                                                                <option value="AS">SAMOA AMERICANA</option>
+                                                                                <option value="SM">SAN MARINO</option>
+                                                                                <option value="SN">SENEGAL</option>
+                                                                                <option value="SC">SEYCHELLES</option>
+                                                                                <option value="SL">SIERRA LEONA</option>
+                                                                                <option value="SG">SINGAPUR</option>
+                                                                                <option value="SY">SIRIA</option>
+                                                                                <option value="SO">SOMALIA</option>
+                                                                                <option value="LK">SRI LANKA</option>
+                                                                                <option value="ZA">SUDAFRICA</option>
+                                                                                <option value="SD">SUDAN</option>
+                                                                                <option value="SE">SUECIA</option>
+                                                                                <option value="CH">SUIZA</option>
+                                                                                <option value="TW">TAIWAN</option>
+                                                                                <option value="TZ">TANZANIA</option>
+                                                                                <option value="TH">THAILANDIA</option>
+                                                                                <option value="TT">TRINIDAD Y TOBA</option>
+                                                                                <option value="TN">TUNEZ</option>
+                                                                                <option value="TR">TURQUIA</option>
+                                                                                <option value="UA">UCRANIA</option>
+                                                                                <option value="UG">UGANDA</option>
+                                                                                <option value="UY">URUGUAY</option>
+                                                                                <option value="VA">VATICANO</option>
+                                                                                <option value="VE">VENEZUELA</option>
+                                                                                <option value="VN">VIETNAM</option>
+                                                                                <option value="YE">YEMEN</option>
+                                                                                <option value="YU">YUGOSLAVIA</option>
+                                                                                <option value="CD">ZAIRE</option>
+                                                                                <option value="ZM">ZAMBIA</option>
+                                                                                <option value="ZW">ZIMBAWE</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                    <!-- </div>
+                                                            
+                                                                <div class="row row-small"> -->
+                                                                    <div class="col-md-3">
+                                                                        <div class="form-group">
+                                                                            <label for="cmbProvincia" class="sr-only">Provincia</label>
+                                                                            <select name="cmbProvincia" id="cmbProvincia" class="form-control">
+                                                                                <option value="">Provincia</option>
+                                                                                <option value="">Buenos Aires</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-md-4">
+                                                                        <div class="form-group">
+                                                                            <label for="calle" class="sr-only">Calle</label>
+                                                                            <input type="text" class="form-control" id="calle" placeholder="Calle" name="calle">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                        <div class="form-group">
+                                                                            <label for="numero" class="sr-only">Número</label>
+                                                                            <input type="text" class="form-control" id="numero" placeholder="Número" name="numero">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-2">
+                                                                        <div class="form-group">
+                                                                            <label for="piso" class="sr-only">Piso</label>
+                                                                            <input type="text" class="form-control" id="piso" placeholder="Piso" name="piso">
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-md-2">
+                                                                        <div class="form-group">
+                                                                            <div class="hidden-xs hidden-sm label invisible">Código postal</div>
+                                                                            <label for="codigo_postal" class="sr-only">Código postal</label>
+                                                                            <input type="text" class="form-control" id="codigo_postal" placeholder="Código postal" name="codigo_postal">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-2">
+                                                                        <div class="form-group">
+                                                                            <div class="hidden-xs hidden-sm label invisible">Localidad</div>
+                                                                            <label for="localidad" class="sr-only">Localidad</label>
+                                                                            <input type="text" class="form-control" id="codigo_postal" placeholder="Localidad" name="localidad">
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- </div>
+                                                                <div class="row row-small"> -->
+                                                                    <div class="col-md-4">
+                                                                        <label for="Teléfono">Teléfono</label>
+                                                                        <div class="row row-small">
+                                                                            <div class="col-xs-3">
+                                                                                <div class="form-group">
+                                                                                    <input type="text" class="form-control" id="CodPais" placeholder="C. país" name="CodPais">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-xs-3">
+                                                                                <div class="form-group">
+                                                                                    <input type="text" class="form-control" id="CodArea" placeholder="C. área" name="CodArea">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-xs-6">
+                                                                                <div class="form-group">
+                                                                                    <input type="text" class="form-control" id="numero" placeholder="Número" name="numero">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <div class="form-group">
+                                                                            <div class="hidden-xs hidden-sm label invisible">Email</div>
+                                                                            <label for="email" class="sr-only">Email</label>
+                                                                            <input type="text" class="form-control" id="email" placeholder="Email" name="email">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <div class="form-group">
+                                                                            <label for="ReconEmail" class="sr-only">Reconfirmar Email</label>
+                                                                            <input type="text" class="form-control" id="ReconEmail" placeholder="Reconfirmar Email" name="ReconEmail">
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-xs-12 col-sm-6">
+                                                                        <div class="form-group">
+                                                                            <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="chkSolicitarTarjeta" name="chkSolicitarTarjeta" class="INPUTCheckBox"> Solicitar tarjeta de crédito de bancos asociados al programa Aerolíneas Plus
+                                                                        </label>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-xs-12 col-sm-6 col-md-12">
+                                                                        <p class="small text-justify">El programa enviará en forma periódica el Extracto de millas por correo electrónico a la dirección de email registrada.</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <hr>
+
+                                                            <div class="datosClave">
+                                                                <h4 class="text-blue">Clave para la consulta de saldo de millas</h4>
+                                                                <div class="row row-small">
+                                                                    <div class="col-sm-12">
+                                                                        <p>Por favor, escribí una clave que utilizarás para ingresar en la consulta online de millas de Aerolíneas Argentinas Plus. La clave debe estar compuesta por 6 a 8 caracteres alfanuméricos (letras y/o números).</p>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label for="clave" class="sr-only">Clave</label>
+                                                                            <input type="text" class="form-control" id="clave" placeholder="Clave" name="clave">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group">
+                                                                            <label for="reconfirmarClave" class="sr-only">Reconfirmar Clave</label>
+                                                                            <input type="text" class="form-control" id="reconfirmarClave" placeholder="Reconfirmar Clave" name="reconfirmarClave">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-sm-12">
+                                                                        <p>Ingrese el texto mostrado en la imágen</p>
+                                                                    </div>
+
+                                                                    <div class="col-xs-6 col-sm-2">
+                                                                        <div class="form-group">
+                                                                            <img src="../img/common/captcha-v2.jpg" width="100%">
+                                                                            <a class="small underline btn_ingreso" href="">Refrescar</a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-xs-12 col-sm-4">
+                                                                        <div class="form-group ">
+                                                                            <input type="text" class="form-control" id="input2" placeholder="Ingrese el código informado" name="input2">
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-sm-6">
+                                                                        <div class="form-group">
+                                                                            <label class="checkbox-inline">
+                                                                            <input type="checkbox" id="chkCondUso" name="chkCondUso" class="INPUTCheckBox"> Conozco y acepto las <a href="condiciones-uso.html" target="_blank">Condiciones Generales del Programa.</a>
+                                                                        </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-sm-6">
+                                                                        <button type="submit" class="btn btn-primary btn-block">Borrar</button>
+                                                                    </div>
+                                                                    <div class="col-sm-6">
+                                                                        <button type="submit" class="btn btn-primary btn-block">Aceptar</button>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="row">
+                                                                <div class="col-sm-12">
+                                                                    <p class="small text-justify">Mediante el presente dejo constancia que he sido debidamente informado respecto de la finalidad para la cual han sido recabados mis datos personales y quiénes pueden ser sus destinatarios, como así también del derecho que me asiste a tener acceso a los mismos, como así a peticionar su rectificación y/o supresión, todo ello conforme a lo normado en la Ley Nacional N° 25326 (Protección de Datos Personales) y su Decreto Reglamentario N° 1558/01</p>
+                                                                </div>
+                                                            </div>
+
+                                                        </form>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+        <!-- /CONTENEDOR WRAPPER -->
+
+        <footer id="footer" role="contentinfo" class="no-slider">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="nav-footer-content">
+                            <div class="nav-footer">
+                                <div><a id="slick-slide00" href="http://ww1.aerolineas.com.ar/arg/main.asp?idsitio=ar&idpagina=164&ididioma=es">La Empresa</a></div>
+                                <div><a id="slick-slide01" href="http://www.aerolineas.com.ar/es-ar/prensa/comunicado">Prensa</a></div>
+                                <div><a id="slick-slide02" href="http://www.skyteam.com/" target="_blank">Alianza Skyteam</a></div>
+                                <div><a id="slick-slide03" href="http://www.aerolineas.com.ar/es-ar/cefepra/acercade" target="_blank" class="link">Cefepra</a></div>
+                                <div><a id="slick-slide04" href="http://cargo.aerolineas.com.ar/es-ar" target="_blank" class="link">Cargas</a></div>
+                                <div><a id="slick-slide05" href="http://www.jetpaq.com.ar/es-ar" target="_blank">Jetpaq</a></div>
+                                <div><a id="slick-slide06" href="http://www.aerolineas.com.ar/es-ar/la_empresa/recursos_humanos" target="" class="link">RRHH</a></div>
+                                <div><a id="slick-slide07" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=152&amp;idIdioma=es" target="_blank" class="link">Proveedores</a></div>
+                                <div><a id="slick-slide08" href="">Otro</a></div>
+                                <div><a id="slick-slide09" href="">Otro</a></div>
+                                <div><a id="slick-slide010" href="">Otro</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="social-links">
+                            <ul class="nav-justified list-unstyled ">
+                                <li><a target="_blank" href="https://www.facebook.com/Aerolineas.argentinas"><i class="fa fa-facebook"></i><span class="sr-only">Facebook</span></a></li>
+                                <li><a target="_blank" href="http://twitter.com/Aerolineas_AR/"><i class="fa fa-twitter"></i><span class="sr-only">Twitter</span></a></li>
+                                <li><a target="_blank" href="https://www.instagram.com/aerolineas_argentinas/"><i class="fa fa-instagram"></i><span class="sr-only">Instagram</span></a></li>
+                                <li><a target="_blank" href="http://www.linkedin.com/company/aerolineas-argentinas"><i class="fa fa-linkedin"></i><span class="sr-only">Linkedin</span></a></li>
+                                <li><a target="_blank" href="https://plus.google.com/106198199507305429358/posts"><i class="fa fa-google-plus"></i><span class="sr-only">GooglePlus</span></a></li>
+                                <li><a target="_blank" href="http://www.youtube.com/user/AerolineasAR"><i class="fa fa-youtube"></i><span class="sr-only">Youtube</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="clearfix">
+                    <div class="row">
+                        <div class="col-sm-7 col-md-6">
+                            <ul class="list-unstyled list-inline pull-left">
+                                <li class="codigo-qr">
+                                    <a href="https://servicios1.afip.gov.ar/clavefiscal/qr/mobilePublicInfo.aspx?req=e1ttZXRob2Q9Z2V0UHVibGljSW5mb11bcGVyc29uYT0zMDY0MTQwNTU1NF1bdGlwb2RvbWljaWxpbz0wXVtzZWN1ZW5jaWE9MF1bdXJsPWh0dHA6Ly93d3cuYWVyb2xpbmVhcy5jb20uYXJdfQ==" target="_F960AFIPInfo"><img src="../img/common/qr_code.gif" alt="QR-Code" /></a>
+                                </li>
+                                <li class="pie_texto">
+                                    <span>aerolineas.com Sitio Oficial de Aerolineas Argentinas. <br>
+                                <span class="number"><i class="fa fa-phone" aria-hidden="true"></i> <span class="text">SAC: </span><span class="sr-only">Llamanos al </span> <a href="tel:0800-761-0254">0800-761-0254</a></span>
+                                    <span class="number"><span class="text"> | Central</span> de Vendas: <a href="tel:0800-761-0254">0800-761-0254</a></span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-5 col-md-6">
+                            <ul class="list-unstyled list-inline pull-right logos-footer">
+                                <li class="hidden-xs">
+                                    <a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=9&amp;idIdioma=es"><img src="../img/common/footer-aerohandling.jpg"></a>
+                                </li>
+                                <li class="hidden-xs">
+                                    <a href="http://www.jetpaq.com.ar/es-ar" target="_blank"><img src="../img/common/footer-jetpaq.jpg" alt="Logo JetPaq"></a>
+                                </li>
+                                <li class="hidden-xs">
+                                    <a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=9&amp;idIdioma=es"><img src="../img/common/footer-optar.jpg" alt="Logo Optar"></a>
+                                </li>
+                                <li>
+                                    <a href="http://www.austral.com.ar/index.asp" target="_blank"><img src="../img/common/footer-austral.jpg" alt="Logo Austral"></a>
+                                </li>
+                                <li><img src="../img/common/footer-aa.jpg" alt="Logo Aerolíneas Argentinas"></li>
+                                <li>
+                                    <a href="http://www.skyteam.com/" target="_blank"><img src="../img/common/footer-skyteam.jpg" alt="Logo Aerolíneas Argentinas"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <div class="container">
+                    <a class="pie" href="/es-bo/legales/terminoscondiciones">Legales</a> | © 1996 - 2016 Aerolíneas Argentinas S.A.
+                    <a href="#" class="scrollToTop"><span class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span><span class="sr-only">Scroll To Top</span></a>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+    </div>
+</body>
+
+</html>

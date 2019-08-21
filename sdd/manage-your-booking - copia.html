@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Ver itinerario Aerolíneas Argentinas in batch 32 (FlowType.SINGLE_PAGES)</title>
+    <script type="text/javascript" src="js/jquery-1.10.2.min-ver-628072E7212DB1E8CDACB22B21752CDA.js"></script>
+    <script type="text/javascript" src="js/wicket-event-jquery.min-ver-708C94775B2E1A1A39180619EFAE9145.js"></script>
+    <script type="text/javascript" src="js/wicket-ajax-jquery.min-ver-0D95C654A2A183A4FB6EAF9C6F22FE6F.js"></script>
+    <script type="text/javascript" src="js/modal.min-ver-35033EE4AE3F9C9CF951E390E49D8FB0.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/Common2-ver-F7CE317F3EB4782AFDE3CD31993510B1.css" />
+    <link rel="stylesheet" href="css/mpol-ver-23756BC2D8F3AA3EC861AA1704C52341.css" />
+
+    <link rel="stylesheet" href="css/acc.css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="js/iutil-mw-ver-646745B3C27426AE550533F0A1338D1D.js"></script>
+    <script type="text/javascript" src="js/fisheye-ver-A7EB9B4574E830071B85B2B0CD54027D.js"></script>
+    <script type="text/javascript" src="js/jquery.tooltipster.min-ver-FF2F685494B400EA2098C79332759A8F.js"></script>
+    <style>
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        /* display: none; <- Crashes Chrome on hover */
+        -webkit-appearance: none;
+        margin: 0;
+        /* <-- Apparently some margin are still there even though it's hidden */
+    }
+    </style>
+</head>
+
+<body>
+    
+    <!-- /.modal -->
+    <div id="acceptConditions" class="modal fade wicket-modal" tabindex="-1" role="dialog" aria-labelledby="conditionsLabel" aria-hidden="true" aria-describedby="conditionsDesc">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h3 class="modal-title w_captionText" id="conditionsLabel">Change and refund conditions</h3>
+                </div>
+                <div class="modal-body" id="conditionsDesc">
+                    <h4>Conditions:</h4>
+                    <p>Minimum of 3 (three) and maximum of 12 (twelve) flight coupons.
+                        <br> Once issued the purchase of additional coupons is not allowed (even if maximum of 12 coupons has not been reached).
+                        <br> Maximum stay of 90 days from the date of the first Visit Argentina flight.
+                        <br> Booking and issuing must be done with a minimal anticipation of 21 days prior to the date of the first flight.
+                        <br> All taxes and additional charges will be collected at time of issue.</p>
+                    <h4>Ticketing deadlines:</h4>
+                    <p>Bookings made with more than 30 (thirty) days in advance can be issued up to 30 (thirty) days before departure of the first flight.
+                        <br> Bookings made within 30 (thirty) to 22 (twenty two) days before departure of the first flight must be issued between 24 hours after the reservation has been made.</p>
+                    <h4>Refunds:</h4>
+                    <p>Before departure of first flight booked original amount will be refund, less a cancellation fee of USD50.
+                        <br> After departure of first flight booked: Refund is not allowed.
+                        <br> Penalty for no-show: Charge of USD75 will apply.
+                        <br> Date changes: USD50 per transaction, any time, within allowed maximum stay.
+                        <br> Change of routing: USD50 per transaction, any time, subject to availability of seats in the same fare basis.
+                        <br> In case fare is higher, difference will be charged, in case fare is lower, difference will not be refunded.</p>
+                    <h4>AR PLUS</h4>
+                    <p>VARG flights will accrue miles at promotional class level.
+                        <br> Luggage allowance and excess charges
+                        <br> Luggage allowance for Visit Argentina flights is 1 (one) piece of baggage of 23kgs (50,7 pounds).
+                        <br> Standard baggage rates will apply to the exceeding weight of this allowance.</p>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <div class="wrapper reservas">
+        <div class="inner-wrapper">
+            <header class="header clearfix" role="banner">
+                <div class="pull-left logo-header">
+                    <a href="http://www.aerolineas.com.ar">
+                        <img alt="logo-aerolineas" src="img/common/logo-aerolineas.gif" /></a>
+                </div>
+                <div class="pull-right logo-header-right">
+                    <img alt="aerolineas argentinas skyteam" src="img/common/aerolineas_argentinas_skyteam.jpg" />
+                </div>
+                <ul class="pull-right list-unstyled list-inline phone-dates">
+                    <li><a href="http://www.aerolineas.com.ar/es-ar/reservasservicios/puntosdecontacto" id="contacto" target="blank">Contacto y Preguntas frecuentes</a></li>
+                    <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=7&amp;idIdioma=es" id="callcenter" target="blank">0810-222-86527</a></li>
+                </ul>
+            </header>  
+
+            <section class="container" role="main" aria-labelledby="reservasLabel">
+                
+                <article class="booking" role="article">
+                    <div class="booking-content">
+                    <h1 class="step-title" id="reservasLabel">Ingrese a su reserva</h1>
+                    <p>Revise sus vuelos, haga cambios y devoluciones.</p>
+                        <div class="module">
+                            <div class="item">
+                                <div class="form">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                        <div class="well">
+                                        
+                                            <h2 class="title bg-blue2">Busque con su perfil Aerolíneas Plus</h2>
+                                            <div class="form-group has-error">
+                                                
+                                                <label for="" class="control-label">Número de socio</label>
+                                                    <input id="" name="" type="text" value="" class="form-control" autocomplete="off" >
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="" class="control-label">Clave de mi cuenta Plus</label>
+                                                <div class="form-group">
+                                                    <input id="" name="" type="text" value="" class="form-control" autocomplete="off" >
+                                                </div>
+                                            </div>
+                                            <hr>
+                                             <a href="" class="btn btn-default btn-block btnContinue">Buscar reserva</a>
+
+                                            <div class="TxtError clearfix" role="alert">
+                                                <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>
+                                                <p>Please verify the informed number has some invalid character on it.</p>
+                                            </div>
+                                        </div>
+
+                                        </div>
+                                        <div class="col-md-6">
+                                        <div class="well">
+                                            <h2 class="title bg-blue2">Busque con código de reserva y apellido</h2>
+                                            
+                                            <div class="form-group">
+                                                <label for="" class="control-label">Código de reserva</label>
+                                                <div class="form-group">
+                                                    <input id="" name="" type="text" value="" class="form-control" autocomplete="off" >
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="" class="control-label">Apellido</label>
+                                                <div class="form-group">
+                                                    <input id="" name="" type="text" value="" class="form-control" autocomplete="off" >
+                                                </div>
+                                            </div>
+                                            <hr>
+                                             <a href="" class="btn btn-default btn-block btnContinue">Buscar reserva</a>
+
+                                            <div class="TxtError clearfix" role="alert">
+                                                <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>
+                                                <p>Please verify the informed number has some invalid character on it.</p>
+                                            </div>
+                                        </div>
+                                            
+                                        </div>
+                                        <div class="col-md-1">&nbsp;</div>
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!--CONFIRMACIÓN-->
+                <article class="booking" role="article">
+                    <div class="booking-content">
+                    <h1 class="step-title" id="reservasLabel">¡Su reserva está confirmada!</h1>
+                    <p>¡Lo esperamos a bordo! Gracias por comprar en aerolineas.com.</p>
+                        <div class="module">
+                            <div class="item">
+                                <div class="form">
+                                    <div class="table-amount table-codigo-reserva">
+                                        <div class="row">
+                                            <div class="col-xs-6 bg-blue">
+                                                <div class="text-center">
+                                                    Código de reserva <span class="code">QBBERZ</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 bg-blue2">
+                                                <span class="info">Autogestione sus reservas realizadas en aerolineas.com desde esta página.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="title bg-blue">Realice sus cambios y devoluciones on line</h2>
+                                
+                                <div class="group-bts">
+                                    <a href="#" class="btn btn-default btn-cambio btn-bluealt"><span class="icon"><img class="pull-left" src="img/common/ico-refresh.png" alt="Cambio" role="presentation"></span> <span class="text">Cambio</span> </a>
+                                </div>
+
+                                <div class="group-bts">
+                                    <a href="#" class="btn btn-default btn-cambio btn-bluealt"><span class="icon"><img class="pull-left" src="img/common/ico-refresh.png" alt="Cambio" role="presentation"></span> <span class="text">Cambio</span> </a>
+
+                                    <a href="#" class="btn btn-default btn-devo btn-bluealt"><span class="icon"><img class="pull-left" src="img/common/ico-devo.png" alt="Devolución" role="presentation"> </span><span class="text">Devolución</span></a>
+                                </div>
+
+                                <h2 class="title bg-blue">Vuelos</h2>
+                                    <table class="table table-vuelos">
+                                        <thead>
+                                            <tr>
+                                                <th colspan="4">AR 1132:Buenos Aires (Ezeiza) (EZE) > Madrid (MAD)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="name">
+                                                <th colspan="4"><span class="name blue">Pedro Perez caucho</span></th>
+                                            </tr>
+                                            <tr class="head">
+                                                <th>Salida</th>
+                                                <th>Llegada</th>
+                                                <th>Duración</th>
+                                                <th>Asiento</th>
+                                            </tr>
+                                            <tr class="txt-blue">
+                                                <td>20 sep | 13:55</td>
+                                                <td>20 sep | 16:50</td>
+                                                <td>2hs 55min</td>
+                                                <td>---</td>
+                                            </tr>
+                                            <tr class="head">
+                                                <th>Cabina</th>
+                                                <th>Equipo</th>
+                                                <th>* Operado por</th>
+                                                <th>N° de viajero frecuente</th>
+                                            </tr>
+                                            <tr class="txt-blue">
+                                                <td>Económica</td>
+                                                <td>Airbus A330</td>
+                                                <td>Aerolineas Argentinas</td>
+                                                <td>1406693</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="table table-vuelos">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="4">AR 1133:Madrid (MAD)>Buenos Aires (Ezeiza) (EZE)</th>
+                                                </tr>
+
+                                            </thead>
+                                            <tbody>
+                                                <tr class="name">
+                                                    <th colspan="4"><span class="name blue">Pedro Perez caucho</span></th>
+                                                </tr>
+                                                <tr class="head">
+                                                    <th>Salida</th>
+                                                    <th>Llegada</th>
+                                                    <th>Duración</th>
+                                                    <th>Asiento</th>
+                                                </tr>
+                                                <tr class="txt-blue">
+                                                    <td>20 sep | 13:55</td>
+                                                    <td>20 sep | 16:50</td>
+                                                    <td>2hs 55min</td>
+                                                    <td>---</td>
+                                                </tr>
+                                                <tr class="head">
+                                                    <th>Cabina</th>
+                                                    <th>Equipo</th>
+                                                    <th>* Operado por</th>
+                                                    <th>N° de viajero frecuente</th>
+                                                </tr>
+                                                <tr class="txt-blue">
+                                                    <td>Económica</td>
+                                                    <td>Airbus A330</td>
+                                                    <td>Aerolineas Argentinas</td>
+                                                    <td>1406693</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                <hr>
+                                <div class="resumen-reserva">
+                                    <h3 class="title bg-blue">Resumen de la reserva</h3>
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-xs-8"><span class="txt-blue">Tarifa</span></div>
+                                            <div class="col-xs-4"><span class="txt-blue">USD 236.00</span></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-8"><span>1. Adulto Pasajero:</span> </div>
+                                            <div class="col-xs-4"><span>USD 236.00</span></div>
+                                        </div>
+                                        <div class="row divider">
+                                            <div class="col-xs-8"><span class="txt-blue">Tasas e impuestos</span> </div>
+                                            <div class="col-xs-4"><span class="txt-blue">USD 625.50</span></div>
+                                        </div> 
+                                        <div class="row ">
+                                            <div class="col-xs-8"><span>1. Adulto Pasajero:</span> </div>
+                                            <div class="col-xs-4"><span>USD 625.50</span></div>
+                                        </div>
+                                        <div class="collapse small divider" id="collapseExample">
+                                            <div class="row">
+                                                <div class="col-xs-8"><span>Ticket Tax Argentina</span> </div>
+                                                <div class="col-xs-4"><span>USD 35.90</span></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-8"><span>Security Tax Spain and Canary Islands</span> </div>
+                                                <div class="col-xs-4"><span>USD 4.20</span></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-8"><span>Tax.XR1</span> </div>
+                                                <div class="col-xs-4"><span>USD 57.00 </span></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-8"><span>Airport Tax</span> </div>
+                                                <div class="col-xs-4"><span>USD 0.70 </span></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-8"><span>Departure Charge Spain and Canary Islands</span> </div>
+                                                <div class="col-xs-4"><span>USD 25.70 </span></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-8"><span>Airport Tax</span> </div>
+                                                <div class="col-xs-4"><span>USD 10.00</span></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-8"><span>Airport Tax</span> </div>
+                                                <div class="col-xs-4"><span>USD 10.00</span></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-8"><span>Airport Tax</span> </div>
+                                                <div class="col-xs-4"><span>USD 482.00</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="row divider strong txt-blue">
+                                            <div class="col-xs-8"><span>Tarifa</span> </div>
+                                            <div class="col-xs-4"><span>USD 236.00</span></div>
+                                        </div>
+                                        <div class="row strong txt-blue">
+                                            <div class="col-xs-8"><span>Tasas e impuestos</span> </div>
+                                            <div class="col-xs-4"><span>USD 625.50</span></div>
+                                        </div>
+                                        <div class="row divider txt-blue">
+                                            <div class="col-xs-8"><span>Total:</span> </div>
+                                            <div class="col-xs-4"><span>USD 861.50</span></div>
+                                        </div>
+                                        
+                                    </div>
+                                    
+
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="booking" role="article">
+                    <div class="booking-content">
+                        <h1 class="step-title" id="reservasLabel">¿Quiere modificar su viaje?</h1>
+                        <p>Elija el vuelo que quiere modificar para comenzar con el proceso de cambio.</p>
+                        <div class="module">
+                            <div class="item">
+                                <table class="table">
+                                    <tbody>
+                                        <thead>
+                                            <tr><th colspan="2">Pasajeros</th></tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Adultos: </td>
+                                                <td>Pedro Perez Caucho</td>
+                                            </tr>
+                                        </tbody>
+                                    </tbody>
+                                </table>
+                                <h2 class="title bg-blue">Seleccioná los vuelos a modificar</h2>
+                                <table class="table text-center">
+                                    <tbody>
+                                        <thead>
+                                            <tr>
+                                                <th>Seleccionar</th>
+                                                <th>Vuelo</th>
+                                                <th>Operado por</th>
+                                                <th>Salida</th>
+                                                <th>Llegada</th>
+                                                <th>Duración</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                <div>
+                                                    <label for="itinerary-part-0" class="sr-only">Intercambio</label>
+                                                      <input id="itinerary-part-0" type="checkbox" value="0" name="itineraryPartRef" class="yui-dt-checkbox">
+                                                  </div>
+                                                 </td>
+                                                <td>1132</td>
+                                                <td>Aerolineas Argentinas</td>
+                                                <td>EZE - Dom, 2 Oct | 23:55</td>
+                                                <td>MAD - Lun, 3 Oct | 17:10</td>
+                                                <td>12 hora 15 min</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                <div >
+                                                    <label for="itinerary-part-0" class="sr-only">Intercambio</label>
+                                                      <input id="itinerary-part-0" type="checkbox" value="0" name="itineraryPartRef" class="yui-dt-checkbox">
+                                                  </div>
+                                                 </td>
+                                                <td>1132</td>
+                                                <td>Aerolineas Argentinas</td>
+                                                <td>EZE - Dom, 2 Oct | 23:55</td>
+                                                <td>MAD - Lun, 3 Oct | 17:10</td>
+                                                <td>12 hora 15 min</td>
+                                            </tr>
+                                        </tbody>
+                                    </tbody>
+                                </table>
+                                <div class="actions">
+                                    <a href="#" class="btn btn-back nuevoBotonGris"><span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span> Back</a>
+                                    <a href="" class="btn btn-default btnContinue pull-right">Continue<span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="booking" role="article">
+                    <div class="booking-content">
+                        <h1 class="step-title" id="reservasLabel">¿Para cuando quiere cambiar su vuelo?</h1>
+                        <p>Elja la fecha para la cual quiere modificar su viaje.</p>
+                        <div class="module">
+                            <div class="item">
+                             <h2 class="title bg-blue">Seleccione la nueva fecha</h2>
+
+                             <div class="form">
+                                 <div class="row row-flights">
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label for="" class="control-label">Origen</label>
+                                                <div class="form-group">
+                                                    <select class="imputDestinoOrigen form-control" name="" id="">
+                                                        <option value="0">Select</option>
+                                                        <option value="1">Bahía Blanca, Argentina (BHI)</option>
+                                                        <option value="2">Bariloche, Argentina (BRC)</option>
+                                                        <option selected="selected" value="3">Buenos Aires, Argentina (BUE)</option>
+                                                        <option value="4">Catamarca, Argentina (CTC)</option>
+                                                        <option value="5">Comodoro Rivadavia, Argentina (CRD)</option>
+                                                        <option value="6">Corrientes, Argentina (CNQ)</option>
+                                                        <option value="7">Córdoba, Argentina (COR)</option>
+                                                        <option value="8">El Calafate, Argentina (FTE)</option>
+                                                        <option value="9">Esquel, Argentina (EQS)</option>
+                                                        <option value="10">Formosa, Argentina (FMA)</option>
+                                                        <option value="11">Iguazú, Argentina (IGR)</option>
+                                                        <option value="12">Jujuy, Argentina (JUJ)</option>
+                                                        <option value="13">La Rioja, Argentina (IRJ)</option>
+                                                        <option value="14">Mar del Plata, Argentina (MDQ)</option>
+                                                        <option value="15">Mendoza, Argentina (MDZ)</option>
+                                                        <option value="16">Neuquén, Argentina (NQN)</option>
+                                                        <option value="17">Parana, Argentina (PRA)</option>
+                                                        <option value="18">Posadas, Argentina (PSS)</option>
+                                                        <option value="19">Resistencia, Argentina (RES)</option>
+                                                        <option value="20">Rio Cuarto, Argentina (RCU)</option>
+                                                        <option value="21">Rio Hondo, Argentina (RHD)</option>
+                                                        <option value="22">Rosario, Argentina (ROS)</option>
+                                                        <option value="23">Río Gallegos, Argentina (RGL)</option>
+                                                        <option value="24">Río Grande, Argentina (RGA)</option>
+                                                        <option value="25">Salta, Argentina (SLA)</option>
+                                                        <option value="26">San Juan, Argentina (UAQ)</option>
+                                                        <option value="27">San Luis, Argentina (LUQ)</option>
+                                                        <option value="28">San Martín De Los An, Argentina (CPC)</option>
+                                                        <option value="29">San Rafael, Argentina (AFA)</option>
+                                                        <option value="30">Santa Fe, Argentina (SFN)</option>
+                                                        <option value="31">Santa Rosa, Argentina (RSA)</option>
+                                                        <option value="32">Santiago Del Estero, Argentina (SDE)</option>
+                                                        <option value="33">Trelew, Argentina (REL)</option>
+                                                        <option value="34">Tucumán, Argentina (TUC)</option>
+                                                        <option value="35">Ushuaia, Argentina (USH)</option>
+                                                        <option value="36">Viedma, Argentina (VDM)</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label for="" class="control-label">Destino</label>
+                                                <div class="form-group">
+                                                    <select size="1" class="imputDestinoOrigen form-control" name="" id="">
+                                                        <option value="0">Select</option>
+                                                        <option value="1" selected="selected" >Bahía Blanca, Argentina (BHI)</option>
+                                                        <option value="2">Bariloche, Argentina (BRC)</option>
+                                                        <option value="3">Catamarca, Argentina (CTC)</option>
+                                                        <option value="4">Comodoro Rivadavia, Argentina (CRD)</option>
+                                                        <option value="5">Corrientes, Argentina (CNQ)</option>
+                                                        <option value="6">Córdoba, Argentina (COR)</option>
+                                                        <option value="7">El Calafate, Argentina (FTE)</option>
+                                                        <option value="8">Esquel, Argentina (EQS)</option>
+                                                        <option value="9">Formosa, Argentina (FMA)</option>
+                                                        <option value="10">Iguazú, Argentina (IGR)</option>
+                                                        <option value="11">Jujuy, Argentina (JUJ)</option>
+                                                        <option value="12">La Rioja, Argentina (IRJ)</option>
+                                                        <option value="13">Mar del Plata, Argentina (MDQ)</option>
+                                                        <option value="14">Mendoza, Argentina (MDZ)</option>
+                                                        <option value="15">Neuquén, Argentina (NQN)</option>
+                                                        <option value="16">Parana, Argentina (PRA)</option>
+                                                        <option value="17">Posadas, Argentina (PSS)</option>
+                                                        <option value="18">Resistencia, Argentina (RES)</option>
+                                                        <option value="19">Rio Cuarto, Argentina (RCU)</option>
+                                                        <option value="20">Rio Hondo, Argentina (RHD)</option>
+                                                        <option value="21">Rosario, Argentina (ROS)</option>
+                                                        <option value="22">Río Gallegos, Argentina (RGL)</option>
+                                                        <option value="23">Río Grande, Argentina (RGA)</option>
+                                                        <option value="24">Salta, Argentina (SLA)</option>
+                                                        <option value="25">San Juan, Argentina (UAQ)</option>
+                                                        <option value="26">San Luis, Argentina (LUQ)</option>
+                                                        <option value="27">San Martín De Los An, Argentina (CPC)</option>
+                                                        <option value="28">San Rafael, Argentina (AFA)</option>
+                                                        <option value="29">Santa Fe, Argentina (SFN)</option>
+                                                        <option value="30">Santa Rosa, Argentina (RSA)</option>
+                                                        <option value="31">Santiago Del Estero, Argentina (SDE)</option>
+                                                        <option value="32">Trelew, Argentina (REL)</option>
+                                                        <option value="33">Tucumán, Argentina (TUC)</option>
+                                                        <option value="34">Ushuaia, Argentina (USH)</option>
+                                                        <option value="35">Viedma, Argentina (VDM)</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label for="" class="control-label">Fecha de salida</label>
+                                                <div id="" class="row">
+                                                    <input class="hidden" type="text" data-template="D MM YYYY" data-format="DD/MM/YYYY" id="" name="" value="">
+                                                    <div class="combodate">
+                                                        <select class="day form-control">
+                                                            <option value="">Día</option>
+                                                            <option value="1">1</option>
+                                                            <option value="31">31</option>
+                                                        </select>&nbsp;
+                                                        <select class="month form-control">
+                                                            <option value="">Mes</option>
+                                                            <option value="0">01</option>
+                                                            <option value="11">12</option>
+                                                        </select>&nbsp;
+                                                        <select class="year form-control">
+                                                            <option value="">Año</option>
+                                                            <option value="2016">2016</option>
+                                                            <option value="1906">1906</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                             </div>
+
+                             <h2 class="title bg-gray">Este vuelo se mantiene sin cambios</h2>
+
+                             <table class="table text-center table-gray">
+                                    <tbody>
+                                        <thead>
+                                            <tr>
+                                                <th>Vuelo</th>
+                                                <th>Operado por</th>
+                                                <th>Salida</th>
+                                                <th>Llegada</th>
+                                                <th>Duración</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1132</td>
+                                                <td>Aerolineas Argentinas</td>
+                                                <td>EZE - Dom, 2 Oct | 23:55</td>
+                                                <td>MAD - Lun, 3 Oct | 17:10</td>
+                                                <td>12 hora 15 min</td>
+                                            </tr>
+                                            <tr>
+                                                
+                                                <td>1132</td>
+                                                <td>Aerolineas Argentinas</td>
+                                                <td>EZE - Dom, 2 Oct | 23:55</td>
+                                                <td>MAD - Lun, 3 Oct | 17:10</td>
+                                                <td>12 hora 15 min</td>
+                                            </tr>
+                                        </tbody>
+                                    </tbody>
+                                </table>  
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </section>
+
+            <footer class="footer" id="footer" role="contentinfo">
+                <div class="content-footer">
+                    <input type="hidden" id="hostId" value="JE2RNCJXLAA3LIL3FEPY7J7SYA" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-8 pull-right">
+                            <div class="links">
+                                <ul class="list-unstyled list-inline clearfix">
+                                    <li class="logoAR"><img src="img/common/footer-logoAA.gif" alt="Aerolineas Argentinas" /></li>
+                                    <li class="logoAustral"><img src="img/common/footer-logoAustral.gif" alt="Austral" /></li>
+                                    <li class="logoJetPaq"><img src="img/common/footer-logoJetPaq.gif" alt="JetPaq" /></li>
+                                    <li class="logoAerohandling"><img src="img/common/footer-logoAerohandling.gif" alt="Aerohandling" /></li>
+                                    <li class="logoOptar"><img src="img/common/footer-logoOptar.gif" alt="Optar" /></li>
+                                </ul>
+                            </div>
+                            <div class="copyright">
+                                <p class="txtGirsfoote">Website Oficial de Aerol&iacute;neas Argentinas. &copy; 1996 - 2016 Aerol&iacute;neas Argentinas S.A.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/content-footer -->
+            </footer>
+        </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

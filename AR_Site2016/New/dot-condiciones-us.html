@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Aerolineas Argentinas</title>
+    <meta http-equiv="title" content="Aerolineas Argentinas">
+    <meta name="Description" content="Todo tu viaje en un solo lugar aerolineas.com, vuelos baratos.">
+    <link href="Images/condor_chico.gif" rel="shortcut icon" type="image/x-icon" />
+    <link href="http://www.aerolineas.com.ar/es-ar" rel="canonical"></link>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.touchSwipe.min.js"></script>
+    <script src="js/carousel-hero.js"></script>
+    
+    <script src="js/slick.min.js"></script><!-- Script footer menu carousel -->
+
+    <script src="js/jquery.matchHeight-min.js"></script><!--  Match Height Cols -->
+    <script>// matchHeight blocks content
+        $(document).ready(function() {
+            $('.col-desc').matchHeight();
+            $('.col-desc .title').matchHeight();
+            $('.tabs a').matchHeight();
+        });
+    </script>
+      
+    <script src="js/locales/es-AR.min.js"></script><!-- //datapicker form -->
+
+
+    <link rel="stylesheet" href="css/selectize.css" /><!-- //selects form CSS -->
+    <script src="js/selectize.js"></script> <!-- //selects form -->
+    <script>//selectize
+        $(document).ready(function() {
+            $('.selectSearch').selectize({
+                sortField: 'text'
+            });
+        });
+    </script>
+
+
+    <!-- <msdropdown> -->
+    <link rel="stylesheet" href="css/msdropdown/dd.css" />
+    <script src="js/msdropdown/jquery.dd.min.js"></script>
+    <link rel="stylesheet" href="css/msdropdown/skin2.css" />
+    <link rel="stylesheet" href="css/msdropdown/flags.css" />
+    <!-- </msdropdown> -->
+
+    <!-- tabs to dropdown -->
+    <!--  <link rel="stylesheet" href="css/tabs-to-dropdown.css" />
+    <script src="js/tabs.js"></script> -->
+    <!-- / tabs to dropdown -->
+    
+
+    <script src="js/jquery.html5-placeholder-shim.js"></script>
+    
+    <script src="js/scripts.js"></script><!-- general scripts -->
+
+
+</head>
+<body>
+<!-- CONTENEDOR -->
+<div id="main-content">
+    <header role="banner">
+            <a href="" class="firstFocus"></a>
+            <ul id="utilityNav" class="list-unstyled" accesskey="a">
+                <li><a href="#main-nav" class="">Skip to main navigation</a></li>
+                <li><a href="#wrapper" class="">Skip to main content</a></li>
+                <li><a href="#footer" class="">Skip to footer</a></li>
+            </ul>
+            <div id="header" class="clearfix">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div id="header-top" class="header-top clearfix">
+                        <div id="logo-header" class="pull-left">
+                            <a href="index.html" accesskey="h"><img alt="Aerolineas.com" src="img/common/logo_Aerolineas.gif" /></a>
+                        </div>
+                        <div id="access-top" class="pull-right">
+                            <div id="CultureContainer" class="hidden-xs hidden-sm">
+                                <select class="INPUTBuscador" id="culture" name="culture" title="Culture">
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag ar" selected="selected" value="es-ar" data-title="Argentina (Español)">Argentina (Español)</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag ar" value="en-ar" data-title="Argentina (Inglés)">Argentina (Inglés)</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag au" value="en-au" data-title="Australia">Australia</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag bo" value="es-bo" data-title="Bolivia">Bolivia</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag br" value="pt-br" data-title="Brasil">Brasil</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag co" value="es-co" data-title="Colombia">Colombia</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag cl" value="es-cl" data-title="Chile">Chile</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag es" value="es-eu" data-title="España">España</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag fr" value="fr-fr" data-title="Francia">Francia</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag it" value="it-eu" data-title="Italia">Italia</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag mx" value="es-mx" data-title="México">México</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag nz" value="en-nz" data-title="New Zealand">New Zealand</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag pa" value="es-pa" data-title="Paraguay">Paraguay</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag pe" value="es-pe" data-title="Perú">Perú </option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag en" value="en-eu" data-title="Rest of Europe">Rest of Europe</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag uy" value="es-uy" data-title="Uruguay">Uruguay</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag us" value="es-us" data-title="United States (Español)">United States (Español)</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag us" value="en-us" data-title="United States (English)">United States (English)</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag es" value="es-us" data-title="Otros países (Español)">Otros países (Español)</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag us" value="en-us" data-title="Other Countries (English)">Other Countries (English)</option>
+                                </select>
+                            </div>
+                            <!--  
+                            <div id="user-arplus">
+                                <span class="name text-blue"><i class="fa fa-user" aria-hidden="true"></i> <span>Maximiliano Ballesteros</span></span>
+                                <a id="logout" href="" class="underline">Cerrar sesión</a>
+                            </div> 
+                            -->
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-header-collapse" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- NAVBAR -->
+                    <nav id="main-nav" class="navbar navbar-default" role="navigation" aria-label="Menú principal">
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="navbar-header-collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="menu-item">
+                                    <a href="http://www.aerolineas.com.ar/es-us/reservasservicios/reclamoequipajeus">
+                                   Contáctenos</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="http://www.aerolineas.com.ar/es-us/sucursales">Sucursales</a>
+                                </li>
+                                <li><a href="skype:1-800-333-0276?call" tabindex="0">1-800-333-0276</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </nav>
+                    <!-- /NAVBAR -->
+                    
+                </div>
+                <!-- /.container -->
+            </div>
+    </header>
+        <!-- CONTENEDOR WRAPPER -->
+        <div id="wrapper" role="main">
+            <div class="container">
+                <h1>PASSENGERS WITH DISABILITIES</h1>
+
+
+                <p>Accommodating the special needs of passengers with disabilities is a top priority for Aerolineas Argentinas. We offer a variety of special services to such passengers (please put a mark in the square alongside of each described service you may need) including:</p>
+                <ul>
+                    <li>Pre-reserved seats. The adjacent seats under certain circumstances when customer with disabilities must travel with a companion for assistance.</li>
+                    <li>Accommodate carry-on assistive devices like canes, crutches, and walkers small enough to be located in the cabin and the overhead compartment.</li>
+                    <li>Approved and authorized electronic medical assistive devices, such as respirators, ventilators, etc., that uses non-spillable batteries maybe accepted in the cabin on an individual basis provided they meet certain safety testing standards.</li>
+                    <li>Wheelchairs. Motorized and non-motorized assisted devices for transport.</li>
+                    <li>Boarding Assistance</li>
+                    <li>Medical Oxygen. Customers requiring in-flight medical oxygen may use only FAA-approved portable oxygen concentrators during all phases of the flight. A forty-eight hour advance notice is required to complete medical paperwork. Please contact reservations at 1-800-333-0276 to arrange for assistance.</li>
+                    <li>Transportation to, from, and between gates either by wheelchair or in several locations electric carts.</li>
+                    <li>Enplaning and Deplaning Assistance. </li>
+                    <li>Assistance with visual, auditory, cognitive, or mobility impairments while in the airport and on the aircraft.</li>
+                    <li>Dietary needs, with proper notice by calling 1-800-333-0276</li>
+                    <li>Consideration of your needs during extended tarmac delays.</li>
+                </ul>
+
+                <p>Please specify any other needs that you may have while traveling and Aerolineas Argentinas will do its best to accommodate those needs you may have. <br>
+                We have employees at the airports who are trained as compliant resolution officials (CROs) and are available during operating hours. You may request a CRO by containing an Aerolineas Argentinas agent at the airport. <br>
+                Consumers flying to or from the United States can obtain copies of the regulations regarding non-discrimination on the basis of disability in air travel in an accessible format from the United States Department of Transportation by the following means:</p>
+                <ul>
+                    <li>Toll-free Hotline for air travelers with disabilities at 1-800-778-4838 or 1-800-455-9880.</li>
+                    <li>By telephone to the Aviation Consumer Protection Division at 202-366-2220 (voice) or (202) 366-0511 (TTY). </li>
+                    <li>By mail to the Air Consumer Protection Division, C-75, U.S. Department of Transportation, 1200 New Jersey Avenue, SE, West Building, Room W-96-432, Washington, DC 2059 and on the Aviation Consumer Protection Division’s website (http:airconsumer.ost.dot.gov). Again if you need disability services, please place a mark alongside of the described services above.</li>
+                </ul>
+                
+                Also, provide your contact information as follows:</p>
+                <ul>
+                    <li>Name</li>
+                    <li>Address</li>
+                    <li>Home Phone</li>
+                    <li>Office Phone</li>
+                    <li>Cellular Phone</li>
+                    <li>Email address</li>
+                </ul>
+                
+            </div>
+        </div>
+        <!-- /CONTENEDOR WRAPPER -->
+        <footer id="footer" role="contentinfo" class="no-slider">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="nav-footer-content">
+                            <div class="nav-footer">
+                                <div><a id="slick-slide00" href="http://ww1.aerolineas.com.ar/arg/main.asp?idsitio=ar&idpagina=164&ididioma=es">La Empresa</a></div>
+                                <div><a id="slick-slide01" href="http://www.aerolineas.com.ar/es-ar/prensa/comunicado">Prensa</a></div>
+                                <div><a id="slick-slide02" href="http://www.skyteam.com/" target="_blank">Alianza Skyteam</a></div>
+                                <div><a id="slick-slide03" href="http://www.aerolineas.com.ar/es-ar/cefepra/acercade" target="_blank" class="link">Cefepra</a></div>
+                                <div><a id="slick-slide04" href="http://cargo.aerolineas.com.ar/es-ar" target="_blank" class="link">Cargas</a></div>
+                                <div><a id="slick-slide05" href="http://www.jetpaq.com.ar/es-ar" target="_blank">Jetpaq</a></div>
+                                <div><a id="slick-slide06" href="http://www.aerolineas.com.ar/es-ar/la_empresa/recursos_humanos" target="" class="link">RRHH</a></div>
+                                <div><a id="slick-slide07" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=152&amp;idIdioma=es" target="_blank" class="link">Proveedores</a></div>
+                                <div><a id="slick-slide08" href="">Otro</a></div>
+                                <div><a id="slick-slide09" href="">Otro</a></div>
+                                <div><a id="slick-slide010" href="">Otro</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="social-links">
+                            <ul class="nav-justified list-unstyled ">
+                                <li><a target="_blank" href="https://www.facebook.com/Aerolineas.argentinas"><i class="fa fa-facebook"></i><span class="sr-only">Facebook</span></a></li>
+                                <li><a target="_blank" href="http://twitter.com/Aerolineas_AR/"><i class="fa fa-twitter"></i><span class="sr-only">Twitter</span></a></li>
+                                <li><a target="_blank" href="https://www.instagram.com/aerolineas_argentinas/"><i class="fa fa-instagram"></i><span class="sr-only">Instagram</span></a></li>
+                                <li><a target="_blank" href="http://www.linkedin.com/company/aerolineas-argentinas"><i class="fa fa-linkedin"></i><span class="sr-only">Linkedin</span></a></li>
+                                <li><a target="_blank" href="https://plus.google.com/106198199507305429358/posts"><i class="fa fa-google-plus"></i><span class="sr-only">GooglePlus</span></a></li>
+                                <li><a target="_blank" href="http://www.youtube.com/user/AerolineasAR"><i class="fa fa-youtube"></i><span class="sr-only">Youtube</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="clearfix">
+                    <div class="row">
+                        <div class="col-sm-7 col-md-6">
+                            <ul class="list-unstyled list-inline pull-left">
+                                <li class="codigo-qr">
+                                    <a href="https://servicios1.afip.gov.ar/clavefiscal/qr/mobilePublicInfo.aspx?req=e1ttZXRob2Q9Z2V0UHVibGljSW5mb11bcGVyc29uYT0zMDY0MTQwNTU1NF1bdGlwb2RvbWljaWxpbz0wXVtzZWN1ZW5jaWE9MF1bdXJsPWh0dHA6Ly93d3cuYWVyb2xpbmVhcy5jb20uYXJdfQ==" target="_F960AFIPInfo"><img src="img/common/qr_code.gif" alt="QR-Code" /></a>
+                                </li>
+                                <li class="pie_texto">
+                                    <span>aerolineas.com Sitio Oficial de Aerolineas Argentinas. <br>
+                                <span class="number"><i class="fa fa-phone" aria-hidden="true"></i> <span class="text">SAC: </span><span class="sr-only">Llamanos al </span> <a href="tel:0800-761-0254">0800-761-0254</a></span>
+                                    <span class="number"><span class="text"> | Central</span> de Vendas: <a href="tel:0800-761-0254">0800-761-0254</a></span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-5 col-md-6">
+                            <ul class="list-unstyled list-inline pull-right logos-footer">
+                                <li class="hidden-xs">
+                                    <a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=9&amp;idIdioma=es"><img src="img/common/footer-aerohandling.jpg"></a>
+                                </li>
+                                <li class="hidden-xs">
+                                    <a href="http://www.jetpaq.com.ar/es-ar" target="_blank"><img src="img/common/footer-jetpaq.jpg" alt="Logo JetPaq"></a>
+                                </li>
+                                <li class="hidden-xs">
+                                    <a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=9&amp;idIdioma=es"><img src="img/common/footer-optar.jpg" alt="Logo Optar"></a>
+                                </li>
+                                <li>
+                                    <a href="http://www.austral.com.ar/index.asp" target="_blank"><img src="img/common/footer-austral.jpg" alt="Logo Austral"></a>
+                                </li>
+                                <li><img src="img/common/footer-aa.jpg" alt="Logo Aerolíneas Argentinas"></li>
+                                <li>
+                                    <a href="http://www.skyteam.com/" target="_blank"><img src="img/common/footer-skyteam.jpg" alt="Logo Aerolíneas Argentinas"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <div class="container">
+                    <a class="pie" href="/es-bo/legales/terminoscondiciones">Legales</a> | © 1996 - 2016 Aerolíneas Argentinas S.A.
+                    <a href="#" class="scrollToTop"><span class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span><span class="sr-only">Scroll To Top</span></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal Articles Not Allowed -->
+    <div id="modalArticlesNotAllowed" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="articlesNotAllowedLabel">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header blue">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h2 id="articlesNotAllowedLabel" class="modal-title"><span class="glyphicon glyphicon-alert" aria-hidden="true"></span> Dangerous Items</h2>
+          </div>
+          <div class="modal-body modal-text">
+            <h3 class="title"><span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span> 
+            We remind you of the objects you can't carry with yourself or in your luggage:</h3>
+            <div class="row">
+              <div class="col-sm-3">
+                <ul>
+                  <li>Scissors</li>
+                  <li>Pliers</li>
+                  <li>Knives</li>
+                  <li>Cutter</li>
+                  <li>Limes</li>
+                </ul>
+              </div>
+              <div class="col-sm-3">
+                <ul>
+                  <li>Knitting needles</li>
+                  <li>Punch</li>
+                  <li>Screwdriver</li>
+                  <li>Cutting or piercing items in general</li>
+                </ul>
+              </div>
+              <div class="col-sm-6 text-center">
+                <img src="img/common/articlesnotallowed.jpg" alt="Elementos Peligrosos" class="img-responsive" role="presentation">
+              </div>
+            </div>
+            <hr>
+            <h3 class="title"><span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span> And what elements you can't carry on board or in your checked baggage:</h3>
+            <div class="row">
+              <div class="col-sm-6">
+                <ul>
+              <li><p><strong>Explosives:</strong> Signal flares, Firecrackers, Spalklers, etc.</p></li>
+              
+              <li><p><strong>Flamables:</strong> Fuel, Paints, Solvents, Lighter fluid, matches, etc.</p></li>
+              <li><p><strong>Weapons:</strong> Loaded Firearms, Ammunition, Gun Powder, Pepper Spray or Tear Gas (Unloaded firearms must only be accepted as checked baggage by airport police or proper authority), etc.</p></li>
+            </ul>
+              </div>
+              <div class="col-sm-6">
+               <ul>
+               <li><p><strong>Corrosive:</strong> Battery leakage, Lavandin, ammonia, oven cleaners, multipurpose cleaners, etc.</p></li>
+
+                <li><p><strong>Other dangerous materials:</strong> Gasoline-Powered tools, Camping equipment with fuel, radioactive materials (including radio pharmaceuticals), Oxidizers, Corrosives, Poisons, Infections substances, etc.</p></li>
+                </ul>
+                
+              </div>
+            </div>
+            <img src="img/common/dangerarticlesnotallowed.png" alt="Elementos Peligrosos" class="img-responsive" role="presentation">
+          </div>
+        </div>
+      </div>
+    </div><!-- /Modal Articles Not Allowed -->
+
+    <!-- Modal Charges for changes (FEE) -->
+    <div id="modalFee" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="chargesFeeLabel">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header blue">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h2 id="chargesFeeLabel" class="modal-title">Applicable charges for changes (FEE)</h2>
+          </div>
+          <div class="modal-body modal-text">
+            <div class="table-responsive">
+              <table class="table table-striped table-hover table-bordered text-center">
+                <thead>
+                  <tr>
+                    <th colspan="2">Applicable charges for changes (FEE) in USD*</th></tr>
+                  <tr>
+                    <th>Destination</th>
+                    <th>Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Domestic</td>
+                    <td>USD 20 (VAT included)</td>
+                  </tr>
+                  <tr>
+                    <td>Regional (neigboring, Peru, Colombia)</td>
+                    <td>USD 50 (VAT included)</td>
+                  </tr>
+                  <tr>
+                    <td>International (rest of the routes)</td>
+                    <td>USD 100 (VAT included)</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>*For payments in angentinian pesos will be used the exchange of the day of issue.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / Modal Charges for changes (FEE) -->
+
+    <!-- See additional charges for purchases -->
+    <div id="modalAdditionalCharges" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="additionalChargesLabel">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header blue">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h2 id="additionalChargesLabel" class="modal-title">Additional charges for purchases made in United Kindom</h2>
+          </div>
+          <div class="modal-body modal-text">
+          <p>Argentina | Germany | Australia | Bolivia | Chile | Colombia | Spain | Italy | France | U.K. | Switzerland | Israel | Mexico | Paraguay | Peru | Portugal | Belgium | Czech Republic | Slovakia | Uruguay | USA | Canada</p>
+
+          <h3>FEE charges for issuance and revalidation</h3> 
+
+          <div class="table-responsive">
+              <table class="table table-striped table-bordered table-condensed text-center small">
+                <thead>
+                  <tr>
+                    <th rowspan="2">Place of issue</th>
+                    <th rowspan="2">Ticket destination</th>
+                    <th rowspan="2">Issue charge</th>
+                    <th colspan="2">Changes (Revalids & Reissues)</th>
+                    <th rowspan="2">Children</th>
+                    <th rowspan="2">Infants</th>
+                  </tr>
+                  <tr>
+                    <th>Argentina</th>
+                    <th>Out of Argentina</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td rowspan="3">Angentina and foreign countries <br> (Except Paraguay, Colombia, Venezuela)</td>
+                    <td>Domestic</td>
+                    <td>U$D 20</td>
+                    <td>U$D 20</td>
+                    <td>U$D 20</td>
+                    <td>100%</td>
+                    <td>N/A</td>
+                  </tr>
+                  <tr>
+                    <td>Regional & Peru</td>
+                    <td>U$D 30</td>
+                    <td>U$D 50</td>
+                    <td>U$D 30</td>
+                    <td>100%</td>
+                    <td>N/A</td>
+                  </tr>
+                  <tr>
+                    <td>International</td>
+                    <td>U$D 50</td>
+                    <td>U$D 100</td>
+                    <td>U$D 50</td>
+                    <td>100%</td>
+                    <td>N/A</td>
+                  </tr>
+
+                  <!-- Row Paraguay -->
+                  <tr>
+                    <td rowspan="3">Paraguay</td>
+                    <td>Domestic</td>
+                    <td>U$D 10</td>
+                    <td></td>
+                    <td>U$D 10</td>
+                    <td>100%</td>
+                    <td>N/A</td>
+                  </tr>
+                  <tr>
+                    <td>Regional & Peru</td>
+                    <td>U$D 10</td>
+                    <td></td>
+                    <td>U$D 10</td>
+                    <td>100%</td>
+                    <td>N/A</td>
+                  </tr>
+                  <tr>
+                    <td>International</td>
+                    <td>U$D 10</td>
+                    <td></td>
+                    <td>U$D 10</td>
+                    <td>100%</td>
+                    <td>N/A</td>
+                  </tr>
+
+                  <!-- Row Colombia -->
+                  <tr>
+                    <td rowspan="5">Colombia</td>
+                    <td>Value of ticket</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>0 - 354(U$D)</td>
+                    <td>U$D 17</td>
+                    <td></td>
+                    <td>N/A</td>
+                    <td>100%</td>
+                    <td>N/A</td>
+                  </tr>
+                  <tr>
+                    <td>355 - 590(U$D)</td>
+                    <td>U$D 32</td>
+                    <td></td>
+                    <td>N/A</td>
+                    <td>100%</td>
+                    <td>N/A</td>
+                  </tr>
+                  <tr>
+                    <td>591 - 944(U$D)</td>
+                    <td>U$D 53</td>
+                    <td></td>
+                    <td>N/A</td>
+                    <td>100%</td>
+                    <td>N/A</td>
+                  </tr>
+                  <tr>
+                    <td>More than 944(U$D)</td>
+                    <td>USD 110</td>
+                    <td></td>
+                    <td>N/A</td>
+                    <td>100%</td>
+                    <td>N/A</td>
+                  </tr>
+
+                  <!-- Row Venezuela -->
+
+                  <tr>
+                    <td rowspan="3">Venezuela</td>
+                    <td>Domestic</td>
+                    <td>U$D 100</td>
+                    <td></td>
+                    <td>U$D 100</td>
+                    <td>100%</td>
+                    <td>N/A</td>
+                  </tr>
+                  <tr>
+                    <td>Regional & Peru</td>
+                    <td>U$D 100</td>
+                    <td></td>
+                    <td>USD 100</td>
+                    <td>100%</td>
+                    <td>N/A</td>
+                  </tr>
+                  <tr>
+                    <td>International</td>
+                    <td>U$D 100</td>
+                    <td></td>
+                    <td>U$D 100</td>
+                    <td>100%</td>
+                    <td>N/A</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / See additional charges for purchases-->
+
+    <!-- Limitaciones de responsabilidad -->
+    <div id="modalLiabilityLimitations" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="liabilityLimitationsLabel">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header blue">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h2 id="liabilityLimitationsLabel" class="modal-title">Liability Limitations</h2>
+          </div>
+          <div class="modal-body modal-text">
+            <p>The information regarding services offered under this web site includes data originated internally or externally, which has been included in good faith.</p>
+            <p>However, Aerolíneas Argentinas S.A. and Austral Líneas Aéreas do not guarantee the accuracy of the information, since there could be errors, it could be incomplete or it could have undergone changes. It is advisable to verify or ratify the information communicating with us or our representatives. Aerolíneas Argentinas S.A. and Austral Líneas Aéreas reserve the right to modify the contents of this web site in whole or in part, with no prior notification.</p>
+            <p>Aerolíneas Argentinas S.A. y Austral Líneas Aéreas do not assume any responsibility for the contents of web sites of third parties accessible through its site; it also accepts no liability that may arise from the fraudulent use that could be made in any way by a third party of the web site of Aerolíneas Argentinas S.A. and Austral Líneas Aéreas.</p>
+            <p>Multiple reservations for one or more destinations on the same date or different dates are forbidden; therefore Aerolíneas Argentinas S.A. and Austral Líneas Aéreas reserve the right to cancel said reservations even when they are confirmed without obligation of notice to the passenger or whoever had made said reservations.</p>
+            <p>The transportation of passengers, baggage and cargo is subject to Air Transportation Terms applicable to the carrier. For Aerolíneas Argentinas S.A. and Austral Líneas Aéreas, the Terms can be obtained from any of their offices.</p>
+            <p>The material posted on this web site is property of Aerolíneas Argentinas S.A. and Austral Líneas Aéreas and therefore its reproduction and/or distribution without its express consent is forbidden.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / Limitaciones de responsabilidad -->
+
+    <!-- Modal Charges for changes (FEE) -->
+    <div id="modalSecurityConditions" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="securityConditionsLabel">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header blue">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h2 id="securityConditionsLabel" class="modal-title">Security Conditions</h2>
+          </div>
+          <div class="modal-body modal-text">
+            <p>We know that security in sending personal information is a major concern for customers who use the Internet. Although Aerolíneas Argentinas S.A and Austral Líneas Aéreas request your credit card information only when you make a reservation, we wish to inform you that we have worked together with Amadeus to ensure that information cannot be accessed by a third party.</p>
+            <p>Security offered in this medium is provided through SLL(Secure Socket Label) technology, which is based on encoding communications produced between your personal computer and our server, thus preventing their interception.</p>
+            <p>Do not worry about not receiving any notice telling you that you are entering a "secure" mode, since this is because the design of the site uses frames that enable screen division into areas that can be independently updated.</p>
+            <p>If you want to verify that this is indeed a secure site, while on the RESERVAS (Reservations) page you can right click on the "Consultar" (Ask) image or "Ingresar" (Enter) and select "Abrir vínculo en una ventana nueva" (Open Link on a New Window). This will create a new window where only the reservation pages will be loaded and where you can see the lock and the correct URL with the prefix "https" on the upper address (secure mode). </p>            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / Modal Charges for changes (FEE) -->
+
+
+
+</body>
+
+</html>

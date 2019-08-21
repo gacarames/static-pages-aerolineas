@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aerolineas Argentinas :: Contact :: Baggage Claim</title>
+    <meta name="Description" content="All your trip in one place aerolineas.com, fligth cheap.">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/typeahead.css">
+    <link rel="stylesheet" type="text/css" href="js/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="js/prettify/prettify.css">
+
+    <!--[if IE 7]> 
+    <link rel="stylesheet" media="all" href="css/ie.css"></link>
+    <![endif]-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body class="contact">
+    <div class="main-content">
+        <header id="header">
+            <a href="#wrapper" class="sr-only">Skip</a>
+            <div id="fecha" class="fecha">
+                <div class="counrty_today_partials">
+                    Monday,
+                    <time datetime="2015-10-19">October 19, 2015</time>
+                </div>
+            </div>
+            <div class="header-content">
+                <div class="logo-header pull-left">
+                <a id="logo-header" href="home.html" title="Aerolineas Argentinas" tabindex="1" accesskey="h"><img alt="Aerolineas Argentinas" src="images/common/logo_Aerolineas.gif"><span class="sr-only">Aerolineas.com</span></a>
+                </div>
+                <div class="pull-right logo-header-right">
+                    <div class="logos-right pull-left">
+                        <a class="logo-ar" href="/en-us" ><img alt="Aerolineas Argentinas ST" src="images/common/aerolineas_argentinasST.jpg"></a>
+                        <a class="logo-team" href="/en-us/asppage/open?link=http%3A%2F%2Fwww.skyteam.com%2F%2Fen" target="blank">
+                            <img alt="skyteam.com" src="images/common/skyteam.jpg"></a>
+                    </div>
+                    <div id="CultureContainer" class="pull-left CultureContainer">
+                        <label for="inputCulture" class="sr-only">Culture</label>
+                        <select class="inputCulture" id="inputCulture" name="inputCulture" onchange="onCultureChanged()">
+                            <option value="es-ar">Argentina (Español)</option>
+                            <option value="en-ar">Argentina (Inglés)</option>
+                            <option value="en-au">Australia</option>
+                            <option value="es-bo">Bolivia</option>
+                            <option value="pt-br">Brasil</option>
+                            <option value="en-ca">Canadá</option>
+                            <option value="es-co">Colombia</option>
+                            <option value="es-cl">Chile</option>
+                            <option value="es-eu">España</option>
+                            <option value="fr-fr">Francia</option>
+                            <option value="it-eu">Italia</option>
+                            <option value="es-mx">México</option>
+                            <option value="en-nz">New Zealand</option>
+                            <option value="es-pa">Paraguay</option>
+                            <option value="es-pe">Perú </option>
+                            <option value="en-eu">Rest of Europe</option>
+                            <option value="es-uy">Uruguay</option>
+                            <option value="es-us">United States (Español)</option>
+                            <option selected="selected" value="en-us">United States (English)</option>
+                            <option value="es-ve">Venezuela</option>
+                            <option value="es-us">Otros países (Español)</option>
+                            <option value="en-us">Other Countries (English)</option>
+                        </select>
+                    </div>
+                </div>
+                <nav id="navbar"> 
+                    <ul id="nav-menu" class="nav-menu">
+                        <!-- <li class="menu-item"><a href="sales-offices.html" id="salesoffices" tabindex="2" accesskey="s">Sales Offices</a></li> -->
+                        <li class="menu-item"><a href="contact.html" id="contact" tabindex="3" accesskey="c">Contact</a></li>
+                        <li class="menu-item"><span class="phone">1-800-333-0276</span></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="Carousel" class="hero-image">
+            <div id="carousel-hero-image" class="carousel slide" data-ride="carousel">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img alt="Aerolíneas Argentinas flies nonstop everyday from New York to Buenos Aires" src="images/slider/image.jpg">
+                        <div class="carousel-caption">
+                            <h2 class="caption">
+                                Aerolíneas Argentinas flies nonstop everyday from New York to <span>Buenos Aires</span>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img alt="VisitArgentina - Irresistible prices to get to know Argentina" src="images/slider/image2.jpg">
+                        <div class="carousel-caption">
+                            <h2 class="caption"><span>VisitArgentina</span> - Irresistible prices to get to know Argentina</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-hero-image" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-hero-image" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+        <section id="wrapper">
+        <h2 class="title sr-only">Baggage Claim - Comments/Suggestion Form</h2>
+            <nav class="desk-nav">
+                <ul class="nav nav-tabs">
+                    <li class="contact-customer-service-center"><a href="contact-customer-service-center.html" target="_blank"><span>Customer Service Center</span></a></li>
+                    <li class="active contact-baggage-claim"><a href="contact-baggage-claim.html"><span>Baggage Claim</span></a></li>
+                </ul>
+            </nav>
+            <nav class="mobile-nav">
+                <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseNav" aria-expanded="false" aria-controls="collapseNav"> Baggage Claim  <span class="caret"></span> </a>
+                <ul class="collapse list-unstyled" id="collapseNav">
+                    <li class="contact-customer-service-center"><a href="contact-customer-service-center.html"><span>Customer Service Center</span></a></li>
+                    <li class="contact-ar-plus"><a href="contact-ar-plus.html"><span>AR Plus</span></a></li>
+                    <li class="contact-booking-and-purchase"><a href="contact-booking-and-purchase.html"><span>Booking and Purchase</span></a></li>
+                    <li class="contact-jetpaq"><a href="contact-jetpaq.html"><span>JetPaq</span></a></li>
+                    <li class="contact-ar-cargo"><a href="contact-ar-cargo.html"><span>Aerolineas Cargo</span></a></li>
+                </ul>
+            </nav>
+            <div id="content" class="content-tabs">
+                <h1 class="title">Baggage Claim</h1>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <form id="contactForm" class="form" novalidate="novalidate">
+                            <h2 class="small">Personal data</h2>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <fieldset class="form-group">
+                                        <legend class="sr-only">Surmane</legend>
+                                        <label for="inputLastName" class="control-label sr-only">Surmane</label>
+                                        <input id="inputLastName" type="text" value="" placeholder="Surmane*" name="inputLastName" class="form-control">
+                                    </fieldset>
+                                </div>
+                                <div class="col-sm-3">
+                                    <fieldset class="form-group">
+                                    <legend class="sr-only">Name</legend>
+                                        <label for="inputName" class="control-label sr-only">Name</label>
+                                        <input id="inputName" type="text" value="" placeholder="Name*" name="inputName" class="form-control">
+                                    </fieldset>
+                                </div>
+                                <div class="col-sm-3">
+                                    <fieldset class="form-group">
+                                    <legend class="sr-only">Email</legend>
+                                        <label for="inputEmail" class="control-label sr-only">Email</label>
+                                        <input data-val="true" data-val-required="Debe ingresar una dirección de E-Mail" id="inputEmail" name="inputEmail" placeholder="E-mail*" type="text" value="" class="form-control">
+                                    </fieldset>
+                                </div>
+                                <div class="col-sm-3">
+                                    <fieldset class="form-group">
+                                    <legend class="sr-only">Telephone</legend>
+                                        <label for="inputPhone" class="control-label sr-only">Telephone</label>
+                                        <input id="inputPhone" name="inputPhone" placeholder="Telephone" type="text" value="" class="form-control">
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <h2 class="small">Flight</h2>
+                            <!-- cambios 11 Dic -->
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <fieldset class="form-group">
+                                    <legend class="control-label">Flight Number</legend>
+                                        <label for="inputFlightNum" class="control-label sr-only">Flight Number</label>
+                                        <input type="text" value="" placeholder="Flight Number *" name="inputFlightNum" id="inputFlightNum" maxlength="13" class="form-control">
+                                    </fieldset>
+                                </div>
+
+                                <div class="col-sm-3">
+                                    <fieldset class="form-group">
+                                       <legend class="control-label">Date of flight</legend> 
+
+                                        <div class="form-group-date ">
+                                         <label for="month" class="sr-only">Month</label>
+                                            <select name="month" id="month" class="form-control">
+                                            <option value="">Month</option> 
+                                            <option value="January">January</option> 
+                                            <option value="February">February</option>
+                                            <option value="March">March</option>
+                                            <option value="April">April</option>
+                                            <option value="May"> May </option>
+                                            <option value="June">June </option>
+                                            <option value="July">July </option>
+                                            <option value="August">August </option>
+                                            <option value="September">September </option>
+                                            <option value="October">October </option>
+                                            <option value="November"> November </option>
+                                            <option value="December">  December</option>
+                                        </select>
+                                        </div>
+
+                                        <div class="form-group-date ">
+                                         <label for="day" class="sr-only">Day</label>
+                                            <select name="day" id="day" class="form-control">
+                                            <option value="">Day</option>
+                                            <option value="">01</option> 
+                                            <option value="02">02</option> 
+                                            <option value="03">03</option>
+                                            <option value="04">04</option>
+                                            <option value="05">05</option>
+                                            <option value="06">06</option>
+                                            <option value="07">07</option>
+                                            <option value="08">08</option>
+                                            <option value="09">09</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                        </select>
+                                        </div>
+
+                                        <div class="form-group-date ">
+                                         <label for="year" class="sr-only">Year</label>
+                                            <select name="day" id="day" class="form-control">
+                                            <option value="">Year</option>
+                                            <option value="">2015</option> 
+                                            <option value="">2016</option>
+                                            <option value="">2017</option>
+                                        </select>
+                                        </div>
+
+                                    </fieldset>
+                                </div>
+                                <div class="col-sm-3">
+                                    <fieldset class="form-group">
+                                        <legend class="sr-only">Flight origin </legend>
+                                        <label for="inputOrigin" class="control-label">Origin</label>
+                                        <a href="#"  data-toggle="modal" data-target="#modalSearch" tabindex="0">
+                                            <div class="form-group-icon">
+                                               <input id="inputOrigin" name="inputOrigin" type="search" value="" placeholder="Origin" class="form-control" autocomplete="off" tabindex="-1">
+                                                <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                                            </div>
+                                        </a>
+                                    </fieldset>
+                                </div>
+                                
+                                <div class="col-sm-3">
+                                    <fieldset class="form-group">
+                                        <legend class="sr-only">Flight destination</legend>
+                                        <label for="inputDestination" class="control-label">Destination</label>
+                                        <a href="#"  data-toggle="modal" data-target="#modalSearch" tabindex="0">
+                                           <div class="form-group-icon">
+                                                <input id="inputDestination" name="inputDestination" type="search" value="" placeholder="Destination" class="form-control" autocomplete="off" tabindex="-1">
+                                                <span class="glyphicon glyphicon-map-marker" aria-hidden="true" ></span>
+                                            </div> 
+                                        </a>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <!-- / cambios 11 Dic -->
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <fieldset class="form-group">
+                                        <legend class="sr-only">Comments</legend>
+                                        <label for="inputTextareaComments" class="control-label">Comments / suggestions*</label>
+                                        <textarea name="inputTextareaComments" id="inputTextareaComments" class="form-control" rows="3"></textarea>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="checkbox">
+                                 <label for="inputCheck">
+                                    <input type="checkbox" id="inputCheck" value="" checked> I agree to receive newsletters in my e-mail.
+                                </label>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <span class="pull-left small">(*) Required data</span>
+                                <div class="col-sm-4 pull-right col-btn">
+                                    <input class="btn btn-default " type="submit" value="Send">
+                                </div>
+                            </div>
+                            <hr>
+                            <a href="https://www.thawte.com/products/index.html" class="small underline" target="_blank">About SSL Cerfificates</a>
+                            <div class="legal small">
+                                By the present, I hereby attest that I have been fully informed about the purpose of getting my personal data and who can be their addressee, as well as about the right I have to have access to them and to ask for their rectification and/or suppression, all these ruled according to the National Law Number 25326 of the Argentine Republic (Personal Data Protection) and its Regulatory Decree Number 1558/01
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="content-footer">
+                <div class="row">
+                    <div class="col-md-4">
+                        <nav class="social-menu">
+                            <ul class="list-unstyled list-inline">
+                                <li>
+                                    <a href="https://www.facebook.com/Aerolineas.argentinas" target="_blank"><img src="images/common/ic-facebook.gif" alt="Facebook"></a>
+                                </li>
+                                <li>
+                                    <a href="http://twitter.com/Aerolineas_AR/" target="_blank"><img src="images/common/ic-Twitter.jpg" alt="Twitter"></a>
+                                </li>
+                                <li>
+                                    <a href="http://www.linkedin.com/company/aerolineas-argentinas" target="_blank"><img src="images/common/ic-linkedin.jpg" alt="Linkedin"></a>
+                                </li>
+                                <li>
+                                    <a href="https://plus.google.com/106198199507305429358/posts" target="_blank"><img src="images/common/ic-gplus.gif" alt="Google Plus"></a>
+                                </li>
+                                <li>
+                                    <a href="http://www.youtube.com/user/AerolineasAR" target="_blank"><img src="images/common/ic-YouTube.gif" alt="Youtube"></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-8">
+                        <nav class="links">
+                            <ul class="list-unstyled list-inline clearfix">
+                                <li class="partner"><img src="images/common/footer-logoAustral.gif" alt="austral.com.ar"></li>
+                                <li class="partner"><img src="images/common/footer-logoJetPaq.gif" alt="jetpaq.com.ar"></li>
+                                <li class="partner"><img alt="Aerohandling" src="images/common/footer-logoAerohandling.gif"></li>
+                                <li class="partner"><img src="images/common/footer-logoOptar.gif" alt="Optar"></li>
+                                <li class="partner"><img src="images/common/logo_arg.jpg" alt="Aerolineas Argentinas"></li>
+                                <li class="partner"><img src="images/common/argentina_tumundob.jpg" alt="Aerolíneas Argentinas"></li>
+                            </ul>
+                        </nav>
+                        <nav class="copyright">
+                            <p>aerolineas.com Official Site of Aerolineas Argentinas. © 1996 - 2015 Aerolíneas Argentinas S.A.</p>
+                            <ul class="list-unstyled list-inline">
+                                <li><a class="pie" href="terms-and-conditions.html">Legal</a> </li>
+                                <li><a class="pie" href="conditions-of-carriage.html">Conditions of Carriage</a></li>
+                                <li><a class="pie" href="sitemap.html">Sitemap</a> </li>
+                                <li><a class="pie" href="privacy-policy.html">You are on a secure site</a> </li>
+                            </ul>
+                        </nav>
+                        <div class="validation-logos  clearfix ">
+                            <ul class="list-unstyled list-inline">
+                            <li><a href="http://www.w3.org/WAI/WCAG2AA-Conformance" title="Explanation of WCAG 2.0 Level Double-A Conformance" target="_blank"><img src="http://www.w3.org/WAI/wcag2AA" alt="Level Double-A conformance, W3C WAI Web Content Accessibility Guidelines 2.0"></a></li>
+                             <li><a href="http://validator.w3.org/check?uri=referer" target="_blank"><img src="images/common/valid-html401-blue.png" alt="3WC Valid HTML 401"></a></li>
+                             <li><a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank"> 
+                             <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="¡CSS Válido!" /> 
+                             </a></li>
+                         </ul> 
+                        </div>
+
+                        
+                    </div>
+                </div>              
+            </div>
+            <!--/content-footer -->
+        </footer>
+    </div>
+    <!-- /.modal-search -->
+    <div class="modal modal-search modal-info fade" tabindex="-1" role="dialog" id="modalSearch">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Search By:</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="row pricesSearch">
+                        <div class="col-xs-6">
+                            <div class="form-group">
+                                <label for="countrySearch" class="box_Search_by">Search by country</label>
+                                <select id="countrySearch" multiple >
+                                    <option value="All">All</option>
+                                    <option value="AL">Albania</option>
+                                    <option value="DE">Alemania</option>
+                                    <option value="AR">Argentina</option>
+                                    <option value="AU">Australia</option>
+                                    <option value="AT">Austria</option>
+                                    <option value="BE">Belgica</option>
+                                    <option value="BO">Bolivia</option>
+                                    <option value="BR">Brasil</option>
+                                    <option value="BG">Bulgaria</option>
+                                    <option value="CA">Canada</option>
+                                    <option value="CL">Chile</option>
+                                    <option value="CO">Colombia</option>
+                                    <option value="HR">Croacia</option>
+                                    <option value="CU">Cuba</option>
+                                    <option value="US">EEUU</option>
+                                    <option value="EC">Ecuador</option>
+                                    <option value="EG">Egipto</option>
+                                    <option value="ES">España</option>
+                                    <option value="FI">Finlandia</option>
+                                    <option value="FR">Francia</option>
+                                    <option value="GB">Gran Bretaña</option>
+                                    <option value="GR">Grecia</option>
+                                    <option value="NL">Holanda</option>
+                                    <option value="HU">Hungria</option>
+                                    <option value="IL">Israel</option>
+                                    <option value="IT">Italia</option>
+                                    <option value="KR">Korea (South)</option>
+                                    <option value="MT">Malta</option>
+                                    <option value="MA">Marruecos</option>
+                                    <option value="MX">Mexico</option>
+                                    <option value="NZ">Nueva Zelanda</option>
+                                    <option value="PY">Paraguay</option>
+                                    <option value="PE">Perú</option>
+                                    <option value="PL">Polonia</option>
+                                    <option value="PT">Portugal</option>
+                                    <option value="CZ">Republica Checa</option>
+                                    <option value="DO">Republica Dominicana</option>
+                                    <option value="RO">Rumania</option>
+                                    <option value="RU">Rusia</option>
+                                    <option value="RS">Serbia</option>
+                                    <option value="CH">Suiza</option>
+                                    <option value="TN">Tunisia</option>
+                                    <option value="TR">Turquía</option>
+                                    <option value="UA">Ucrania</option>
+                                    <option value="UY">Uruguay</option>
+                                    <option value="VE">Venezuela</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="form-group">
+                                <label for="destinySearch" class="">Search by destiny</label>
+                                <select name="destinySearch" id="destinySearch" multiple >
+                                    <option value="">Alghero</option>
+                                    <option value="">Amsterdam</option>
+                                    <option value="">Antofagasta</option>
+                                    <option value="">Aracajú</option>
+                                    <option value="">Arica</option>
+                                    <option value="">Armenia</option>
+                                    <option value="">Asturias-Oviedo</option>
+                                    <option value="">Asunción</option>
+                                    <option value="">Atenas</option>
+                                    <option value="">Atlanta</option>
+                                    <option value="">Auckland</option>
+                                    <option value="">Bahia Blanca</option>
+                                    <option value="">Balmaceda</option>
+                                    <option value="">Baltimore</option>
+                                    <option value="">Barcelona</option>
+                                    <option value="">Bari</option>
+                                    <option value="">Bariloche</option>
+                                    <option value="">Barrancabermeja</option>
+                                    <option value="">Barranquilla</option>
+                                    <option value="">Belem</option>
+                                    <option value="">Belgrado</option>
+                                    <option value="">Belo Horizonte</option>
+                                    <option value="">Berlín</option>
+                                    <option value="">Bilbao</option>
+                                    <option value="">Bogotá</option>
+                                    <option value="">Bologna</option>
+                                    <option value="">Bordeaux</option>
+                                    <option value="">Boston</option>
+                                    <option value="">Brasilia</option>
+                                    <option value="">Brindisi</option>
+                                    <option value="">Bruselas</option>
+                                    <option value="">Bucaramanga</option>
+                                    <option value="">Bucarest</option>
+                                    <option value="">Budapest</option>
+                                    <option value="">Buenos Aires</option>
+                                    <option value="">Buffalo</option>
+                                    <option value="">Cagliari</option>
+                                    <option value="">Calama</option>
+                                    <option value="">Cali</option>
+                                    <option value="">Campo Grande</option>
+                                    <option value="">Cancún</option>
+                                    <option value="">Caracas</option>
+                                    <option value="">Cartagena</option>
+                                    <option value="">Casablanca</option>
+                                    <option value="">Catamarca</option>
+                                    <option value="">Catania</option>
+                                    <option value="">Charleston</option>
+                                    <option value="">Charlotte</option>
+                                    <option value="">Chicago</option>
+                                    <option value="">Cincinnati</option>
+                                    <option value="">Cleveland</option>
+                                    <option value="">Cochabamba</option>
+                                    <option value="">Columbus</option>
+                                    <option value="">...</option>
+                                    <option value="">Dallas</option>
+                                    <option value="">...</option>
+                                    <option value="">El Cairo</option>
+                                    <option value="">...</option>
+                                    <option value="">...</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Search</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+      <!-- /.modal-search -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="js/typeahead.js"></script>
+    <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="js/prettify/prettify.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+
+</html>

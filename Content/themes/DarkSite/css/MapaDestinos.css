@@ -1,0 +1,109 @@
+﻿div.wrap_ie {
+	text-align:center;
+	color:#007FC6;
+	font-family:"Neo_san";
+	font-size:12px;
+	margin-top:20px;
+	}
+	
+div.wrap {
+	margin:auto; 
+	width:1002px;
+	text-align:left;
+	background-color:#FFFFFF;
+	padding: 0px 0 20px 0;
+	position:relative;
+	}
+	
+#map {
+	width:960px;
+	height:600px;
+	margin-left:20px;
+	}
+
+/*** INFOWINDOW ***/
+.infoWindow, .infoWindow div {
+	float:left; 
+	}
+	
+.infoWindow {
+	border:0px solid black;
+	width:340px;
+	height:170px;
+	}
+	
+	/* Wrapper */
+	.infoWindow .wrap1, .wrap1 div  {
+		width:230px; 
+		}		
+	.infoWindow .wrap1  {
+		margin-left:5px;
+		}
+		
+	/*	HR */
+	.infoWindow .hr  {
+		width:340px;
+		height:2px;
+		color:#0081C5;
+		background-color:#0081C5;
+		font-size:0;
+		margin:5px 0 5px 0;
+		}
+	
+	/* Buttons */
+	.infoWindow .buttons { 
+		width:336px;
+		text-align:right; 
+		}	
+		.buttons .img1 {
+		margin-right:5px; 
+		}
+	
+	/* Texts */
+	.wrap1 .address  {
+		font-size:18px;
+		font-weight:bold;
+		}
+		
+		.wrap1 .fares {
+		font-size:26px;
+		font-weight:bold;
+		}
+		
+		.wrap1 .nofares {
+		font-size:14px;
+		font-weight:normal;
+		}
+		
+	.wrap1 .text1 { font-size:10px; 
+		height: 65px;
+		color:#848484;
+		}
+	.wrap1 .address {color:#55ABDA; font-family: "Neo_san";}
+	.wrap1 .fares {color:#007FC6;font-family: "Neo_san";}
+	
+	.btnDestino, .btnComprar {
+	    text-align:center;
+	    padding-top:3px;
+	    float:right;
+	    color:#FFFFFF;
+	    display:block;
+	    }
+	
+	.btnDestino {
+	    background: url(../img/buttons/btnDestino2.gif) no-repeat;
+	    width:116px;
+	    height:23px;
+	    margin-left:10px;
+        }
+	
+	.btnComprar {
+        background: url(../img/buttons/btnComprar2.gif) no-repeat;
+	    width:63px;
+	    height:23px;
+        }
+	
+	.infobubble {
+        
+      }
+/*** ENDINFOWINDOW ***/

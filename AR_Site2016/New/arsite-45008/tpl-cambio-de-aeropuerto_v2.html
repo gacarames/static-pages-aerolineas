@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cambio de Aeropuerto</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- So that mobile will display zoomed in -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- enable media queries for windows phone 8 -->
+    <meta name="format-detection" content="telephone=no">
+    <!-- disable auto telephone linking in iOS -->
+    <style>
+    /*    responsive    */
+    
+    body {
+        max-width: 700px;
+        margin: auto
+    }
+    
+    table {
+        width: 100%
+    }
+    
+    tr .flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: flex-start
+    }
+    
+    tr .flex td,
+    tr .flex th {
+        flex-grow: 1;
+        padding: 0 15px;
+    }
+    
+    @media (max-width:600px) {
+        body {
+            text-align: center
+        }
+        tr .flex {
+            justify-content: space-between;
+            flex-wrap: wrap
+        }
+        tr .flex td,
+        tr .flex th {
+            width: 100%
+        }
+    }
+    
+    .scrollable-table {
+        overflow-x: auto;
+        padding: 10px 5px;
+        margin: 10px 0
+    }
+    
+    .scrollable-table .table {
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 100%
+    }
+    
+    .scrollable-table .table tr {
+        padding: 0
+    }
+    
+    .scrollable-table .table td,
+    .scrollable-table .table th {
+        text-align: center;
+        padding: .25em;
+        min-width: 75px;
+        border: 1px solid #fff
+    }
+    
+    .call-center {
+        margin: 5px 0!important
+    }
+    
+    .call-center td,
+    .call-center th {
+        border-left: 5px solid #fff!important;
+        border-right: 5px solid #fff!important
+    }
+    /*    style    */
+    
+    body {
+        color: #333;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: lighter
+    }
+    
+    .small,
+    blockquote {
+        font-size: 14px
+    }
+    
+    .bold,
+    .medium {
+        font-weight: 700
+    }
+    
+    tr {
+        padding: 10px 0
+    }
+    
+    p {
+        text-align: left;
+        margin: 10px 0
+    }
+    
+    blockquote {
+        margin: 0 15px 0 45px
+    }
+    
+    .center {
+        text-align: center
+    }
+		
+	.left {
+        text-align: left
+    }
+    
+    .primary-text {
+        color: #0074c8
+    }
+    
+    .light-text {
+        color: #fff
+    }
+    
+    .medium {
+        font-size: 18px
+    }
+    
+    .big {
+        font-size: 20px
+    }
+    
+    .italic {
+        font-style: italic
+    }
+    
+    .upper {
+        text-transform: uppercase
+    }
+    
+    .link {
+        font-size: 18px;
+        color: #0074c8;
+        font-weight: 400
+    }
+    
+    .primary-back {
+        background-color: #0074c8
+    }
+    
+    .grey-back {
+        background-color: #eee
+    }
+    
+    .striped {
+        background-color: #fafafa
+    }
+    
+    .dark-back {
+        background-color: #8e8e8e
+    }
+    
+    .list {
+        padding-left: 0;
+        list-style: none
+    }
+    
+    .inline-item {
+        display: inline-block;
+        list-style: none;
+        padding: 0 8px
+    }
+    
+    .wrapper {
+        padding: 15px
+    }
+    
+    .jumbotron {
+        padding: 30px 0
+    }
+    
+    @media (max-width:600px) {
+        p {
+            text-align: center
+        }
+        blockquote {
+            margin: 0 15px
+        }
+        .jumbotron {
+            padding: 15px 0
+        }
+    }
+    
+    .v-center {
+        align-items: center!important
+    }
+    
+    .s-row {
+        padding: 0
+    }
+    
+    .collapsed-row {
+        padding: 0;
+        margin: 0
+    }
+    
+    .left-block {
+        float: left
+    }
+    
+    .right-block {
+        float: right
+    }
+    
+    @media (max-width:600px) {
+        .left-block,
+        .right-block {
+            float: none!important
+        }
+    }
+    
+    .responsive {
+        width: 100%;
+        height: auto
+    }
+    
+    .center-block {
+        display: block;
+        margin: auto
+    }
+    
+    .flight-ico {
+        margin: 10px 0
+    }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <table class="header primary-back">
+                    <tr class="flex">
+                        <td class="section">
+                            <img class="left-block" src="images/logo-aerolineas-argentinas.png" alt="Aerol&iacute;neas Argentinas" width="240" height="auto" border="0" />
+                        </td>
+                        <td>
+                            <ul class="list right-block">
+                                <li class="inline-item"><img src="images/facebook-logo.png" alt="Facebook"></li>
+                                <li class="inline-item"><img src="images/instagram-symbol.png" alt="Instagram"></li>
+                                <li class="inline-item"><img src="images/twitter-black-shape.png" alt="Twitter"></li>
+                                <li class="inline-item"><img src="images/youtube-logo.png" alt="Youtube"></li>
+                                <li class="inline-item"><img src="images/linkedin-letters.png" alt="Linkedin"></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                <table class="subject">
+                    <tr class="flex">
+                        <td>
+                            <h4 class="medium primary-text ">Estimado pasajero:</h4>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="reserve">
+                    <tr class="flex grey-back">
+                        <td>
+                            <blockquote class="small bold">
+                                Te informamos que tu vuelo <span class="upper">ar2701</span>, originalmente programado para partir de Rosario, Argentina <span class="upper">(ros)</span> el día 29 de noviembre de 2017 a las 08:20 hs., ha sido cancelado/modificado.
+                            </blockquote>
+                            <br>
+                            <blockquote>
+                                Si en este mail recibís un itinerario de viaje, por favor revisá los cambios en los aeropuertos de salida y llegada. Ejemplo: <span class="upper">aep</span> por <span class="upper">eze</span>.
+                            </blockquote>
+                        </td>
+                    </tr>
+
+                    <tr class="flex">
+                        <td>
+                            <p>Si tenes comprado un producto opcional como "equipaje adicional", "mascota en cabina" u otros, por favor comunicate con nuestro <a href="" class="link">Contact Center</a> para que vinculen el servicio a tu nuevo vuelo.</p>
+                        </td>
+                    </tr>
+
+                <table class="reserve">
+                    <tr class="flex reserve primary-back">
+                        <td style="width: 65px">
+                            <p class="big light-text left">Código de reserva:</p>
+                        </td>
+                        <td>
+                            <p class="big light-text left upper">sshgwk</p>
+                        </td>
+						<td>
+                            <p class="big light-text left upper"></p>
+                        </td>
+						<td>
+                            <p class="big light-text left upper"></p>
+                        </td>
+                    </tr>
+                </table>
+					
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <div class="scrollable-table small">
+        <table class="table grey-back">
+            <tr class="light-text dark-back">
+                <th>Fecha</th>
+                <th>Salida</th>
+                <th>Llegada</th>
+                <th>Número de vuelo</th>
+                <th>Ruta</th>
+                <th>Pasajeros</th>
+                <th>Asientos</th>
+                <th>Terminal</th>
+            </tr>
+            <tr>
+                <td>Sáb, dic 30</td>
+                <td>07:22</td>
+                <td>08:18</td>
+                <td>AR2404 Operado por AU</td>
+                <td class="upper">aep-mdq</td>
+                <td>Gonzalo Arias <br> Nancy Lucia Duarte <br> Emma Jazmin Arias </td>
+                <td>3</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Lun, ene 1</td>
+                <td>17:30</td>
+                <td>18:30</td>
+                <td>AR2404 Operado por AU</td>
+                <td class="upper">mdq-aep</td>
+                <td>Gonzalo Arias <br> Nancy Lucia Duarte <br> Emma Jazmin Arias </td>
+                <td>3</td>
+                <td>10</td>
+            </tr>
+        </table>
+    </div>
+
+    <table>
+        <tr>
+            <td>
+                <table>
+                    <tr class="flex">
+                        <td>
+                            <h4 class="medium primary-text">Contact Center</h4>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <div class="scrollable-table small call-center">
+        <table class="table grey-back">
+            <tr class="light-text primary-back">
+                <th>ARGENTINA</th>
+                <th>ALEMANIA</th>
+                <th>AUSTRALIA</th>
+                <th>BOLIVIA</th>
+                <th>BRASIL</th>
+
+            </tr>
+            <tr class="light-text dark-back bold">
+                <td>0810-222-86527</td>
+                <td>0800-1844-747</td>
+                <td>1-800-278-250</td>
+                <td>800-100-242</td>
+                <td>0800-761-0254</td>
+          
+            </tr>
+            <tr class="primary-text">
+                <td>Todos los días,<br>las 24 hs.</td>
+                <td>Todos los días,<br>13 a 21 hs.</td>
+                <td>Todos los días,<br>14 a 20 hs.<br>(hora SYD).</td>
+                <td>Todos los días,<br>9 a 19 hs.</td>
+                <td>Lunes a viernes,<br>9 a 18 hs.</td>
+               
+            </tr>
+        </table>
+    </div>
+	<div class="scrollable-table small call-center">
+        <table class="table grey-back">
+            <tr class="light-text primary-back">
+                <th>CANADÁ</th>
+                <th>CHILE</th>
+				<th>COLOMBIA</th>
+				<th>ECUADOR</th>
+   				<th>ESTADOS UNIDOS</th>
+            </tr>
+            <tr class="light-text dark-back bold">
+                <td>1-800-688-0008</td>
+                <td>800-610-200<br>Cel.: +562-2210-9312<br>o 22210-9312</td>
+				<td>01-800-700-0200</td>
+				<td>1800-000-374</td>
+    			<td>1-800-333-0276</td>
+            </tr>
+            <tr class="primary-text">
+                <td>Todos los días,<br>9 a 19 hs.<br>(hora del este).</td>
+                <td>Todos los días,<br>9 a 19 hs.</td>
+				<td>Todos los días,<br>9 a 18 hs.</td>
+				<td>Todos los días,<br>9 a 19 hs.</td>
+                <td>Todos los días,<br>9 a 19 hs.<br>(hora del este)</td>
+            </tr>
+        </table>
+    </div>
+    <div class="scrollable-table small call-center">
+
+        <table class="table grey-back">
+            <tr class="light-text primary-back">
+
+              	<th>ESPAÑA</th>
+				<th>FRANCIA</th>
+                <th>ITALIA</th>
+                <th>MÉXICO</th>
+                <th>NUEVA ZELANDA</th>
+               
+
+            </tr>
+            <tr class="light-text dark-back bold">
+
+                <td>900-955-747</td>
+				<td>0800-907-747</td>
+                <td>06-6595-25647</td>
+                <td>01-800-123-8588</td>
+                <td>0800-441840</td>
+
+                
+            </tr>
+            <tr class="primary-text">
+
+    			<td>Todos los días,<br>9 a 21 hs.</td>
+				<td>Todos los días,<br>
+			    13 a 21 hs.</td>
+                <td>Todos los días,<br>15 a 18:30 hs.</td>
+                <td>Todos los días,<br>9 a 18 hs.</td>
+                <td>Todos los días,<br>16 a 22 hs.<br>(hora AKL).</td>
+               
+                
+            </tr>
+        </table>
+    </div>
+	<div class="scrollable-table small call-center">
+
+        <table class="table grey-back">
+            <tr class="light-text primary-back">
+
+              	<th>PARAGUAY</th>
+				<th>PERÚ</th>
+				<th>REINO UNIDO</th>
+				<th>SUECIA</th>
+                <th>SUIZA</th>
+                
+            </tr>
+            <tr class="light-text dark-back bold">
+                <td>009-800-5420-000</td>
+                <td>0-800-52-200</td>
+				<td>0800-0969-747</td>
+                <td>020-795-747</td>
+            	<td>0800-561-747</td>
+                
+            </tr>
+            <tr class="primary-text">
+   			
+                <td>Todos los días,<br>9 a 19 hs.</td>
+				<td>Todos los días,<br>9 a 18 hs.</td>
+				<td>Todos los días,<br>12 a 21 hs.</td>
+				<td>Todos los días,<br>13 a 21 hs.</td>
+                <td>Todos los días,<br>13 a 21 hs.</td>
+                
+                
+            </tr>
+        </table>
+    </div>
+    <div class="scrollable-table small call-center">
+        <table class="table grey-back">
+            <tr class="light-text primary-back">
+                
+                
+                
+                <th>URUGUAY</th>
+                <th>VENEZUELA</th>
+            </tr>
+            <tr class="light-text dark-back bold">
+                
+
+                
+                <td>000-4054-86527</td>
+                <td>0800-100-5655</td>
+            </tr>
+            <tr class="primary-text">
+                
+
+                
+				<td>Todos los días, 9 a 19 hs.</td>
+                <td>Todos los días, 9 a 18 hs.</td>
+            </tr>
+        </table>
+    </div>
+    <table>
+        <tr>
+            <td>
+                <table>
+                    <tr class="flex s-row">
+                        <td>
+                            <p>Para mayor información sobre el estado de tu vuelo hacé <a href="" class="link">click acá</a>.</p>
+                        </td>
+                    </tr>
+                    <tr class="flex">
+                        <td>
+                            <a href="" class="link">Conocé las condiciones generales de transporte.</a>
+                        </td>                        
+                    </tr>
+                </table>
+                <table>
+                    <tr class="flex footer primary-back">
+                        <td>
+                            <p class="light-text small center">Encontrá más información en  <strong>aerolineas.com.ar</strong></p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

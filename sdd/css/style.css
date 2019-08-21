@@ -1,0 +1,67 @@
+@import url(style-common.css);
+
+.fdoLog {background-image: url(../img/fdoLog.jpg);}
+
+.puntos {background-image: url(../img/puntos.gif);}
+
+/* .fondoGeneral {background-image: url(../img/Fondo1.jpg);} */
+
+.puntosDark {background-image: url(../img/puntosDark.gif);}
+
+.botonAtras {background-image: url(../img/bt-atras.jpg); width: 92px; height: 31px;}
+
+
+
+.botonSi {background-image: url(../img/bt-si.jpg); width: 59px; height: 31px;}
+
+.botonInicio {background-image: url(../img/bt-empezar.jpg); width: 130px; height: 31px;}
+
+.botonVolver{background-image: url(../img/bt-cancelar.jpg); width: 86px; height: 31px;}
+
+.botonReservar{background-image: url(../img/bt-reservar.jpg); width: 106px; height: 31px;}
+
+.botonReservarPagar{background-image: url(../img/bt-reservarPagar.jpg); width: 131px; height: 31px;}
+
+.botonFin{background-image: url(../img/bt-finalizar.jpg); width: 96px; height: 31px;}
+
+.botonImprimir{background-image: url(../img/bt-imprimir.jpg); width: 97px; height: 31px;}
+
+.botonNuevaReserva{background-image: url(../img/bt-nuevareserva.jpg); width: 128px; height: 31px;}
+
+.botonCerrar{background-image: url(../img/bt-cerrar.jpg); width: 86px; height: 31px;}
+
+.botonNo{background-image: url(../img/bt-no.jpg); width: 59px; height: 31px;}
+
+.botonVolverCuentaPlus{background-image: url(../img/bt-volver.jpg); width: 160px; height: 31px; border: none;
+        cursor: pointer;}
+
+.botonBuscar{background-image: url(../img/bt-buscar.jpg); width: 84px; height: 33px;}
+
+.boton{background-image: url(../img/botonback.jpg);}
+.thDosSemana {
+    color: white;
+    white-space:nowrap;
+    width: 100px;
+}
+.tdDosSemana {
+    /*background-color: #F6F6F6;*/
+    white-space:nowrap;
+    /*border-left: 1px grey solid;*/
+}
+.tdDosSemana span {
+    vertical-align: middle;
+}
+.tdDosSemana input {
+    vertical-align: middle;
+}
+.thDosSemanaSel {
+    background-color: #0081C5;
+    white-space:nowrap;
+    width: 100px;
+}
+.tdDosSemanaSel {
+    white-space:nowrap;
+    background-color: #ECF2FE;
+
+    /*border-left: 1px grey solid;*/
+}

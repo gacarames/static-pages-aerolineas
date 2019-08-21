@@ -1,0 +1,75 @@
+jQuery1124009150097684099778_1515595187882({
+    "locations": [{
+        "zip": "56972",
+        "city": "Washington",
+        "state": "DC"
+    }, {
+        "zip": "77299",
+        "city": "Houston",
+        "state": "TX"
+    }, {
+        "zip": "10292",
+        "city": "New York",
+        "state": "NY"
+    }],
+    "masterCommunities": [{
+        "zip": "98033",
+        "thumbnail": "https://cloudflare.tollbrothers.com/communities/masters/739/20160401_tb_pcr_097_CC_220.jpg",
+        "city": "Kirkland",
+        "link": "https://www.tollbrothers.com/luxury-homes-for-sale/Washington/Rosehaven-at-Bradford-Place",
+        "masterCommunityName": "Rosehaven at Bradford Place",
+        "masterCommunityId": 739,
+        "state": "WA"
+    }, {
+        "zip": "98074",
+        "thumbnail": "https://cloudflare.tollbrothers.com/communities/masters/727/20160627_tb_pih_072_220.jpg",
+        "city": "Sammamish",
+        "link": "https://www.tollbrothers.com/luxury-homes-for-sale/Washington/Pinnacle-at-Inglewood-Hill",
+        "masterCommunityName": "Pinnacle at Inglewood Hill",
+        "masterCommunityId": 727,
+        "state": "WA"
+    }, {
+        "zip": "75035",
+        "thumbnail": "https://cloudflare.tollbrothers.com/communities/masters/732/122618867_CC_220.jpg",
+        "city": "Frisco",
+        "link": "https://www.tollbrothers.com/luxury-homes-for-sale/Texas/Lexington-Country",
+        "masterCommunityName": "Lexington Country",
+        "masterCommunityId": 732,
+        "state": "TX"
+    }],
+    "communities": [{
+        "zip": "32259",
+        "thumbnail": "https://cloudflare.tollbrothers.com/communities/12762/images/044_Toll_2_24_16_Julington_220.jpg",
+        "city": "St. Johns",
+        "link": "https://www.tollbrothers.com/luxury-homes-for-sale/Florida/Julington-Lakes-Ambassador-Collection",
+        "communityName": "Julington Lakes - Ambassador Collection",
+        "state": "FL",
+        "communityId": 12762
+    }, {
+        "zip": "80516",
+        "thumbnail": "https://cloudflare.tollbrothers.com/communities/12864/images/Toll-Brothers_Flatirons-Meadows_Kitchen_220.jpg",
+        "city": "Erie",
+        "link": "https://www.tollbrothers.com/luxury-homes-for-sale/Colorado/Toll-Brothers-at-Flatiron-Meadows-The-Vistas",
+        "communityName": "Toll Brothers at Flatiron Meadows - The Vistas",
+        "state": "CO",
+        "communityId": 12864
+    }, {
+        "zip": "77354",
+        "thumbnail": "https://cloudflare.tollbrothers.com/communities/12752/images/NG_Vanguard-Exterior_220.jpg",
+        "city": "Magnolia",
+        "link": "https://www.tollbrothers.com/luxury-homes-for-sale/Texas/NorthGrove-at-Spring-Creek-Estate-Collection",
+        "communityName": "NorthGrove at Spring Creek - Estate Collection",
+        "state": "TX",
+        "communityId": 12752
+    }],
+    "states": [{
+        "name": "Delaware",
+        "abbrev": "DE"
+    }, {
+        "name": "Minnesota",
+        "abbrev": "MN"
+    }, {
+        "name": "Illinois",
+        "abbrev": "IL"
+    }]
+})

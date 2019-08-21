@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)http://cargo.aerolineas.com.ar/es-ar/etracking/search -->
+<html lang="es" class=" js no-flexbox flexbox-legacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Aerolineas Cargo</title>
+<meta http-equiv="title" content="Aerolineas Cargo">
+<meta name="Description" content="Todo tu viaje en un sólo lugar aerolineas.com, vuelos baratos.">
+<link href="http://cargo.aerolineas.com.ar/Content/themes/default/img/buttons/condor_chico.gif" rel="shortcut icon" type="image/x-icon">
+<meta name="viewport" content="width=device-width">
+<link href="css/estilo-cargo.css" rel="stylesheet">
+<link href="http://cargo.aerolineas.com.ar/Content/themes/default/css/Extras/CssExtras?v=en7vmSNA4C11dkKa6zuWLUS2Xp6ycMu1PxLBPQPJDFI1" rel="stylesheet">
+<script type="text/javascript" async src="./05_09_14_aerolineas_cargo_search_files/dc.js"></script><script src="./05_09_14_aerolineas_cargo_search_files/jquery"></script>
+<script src="./05_09_14_aerolineas_cargo_search_files/jqueryui"></script>
+<script src="./05_09_14_aerolineas_cargo_search_files/jqueryval"></script>
+<style type="text/css"></style>
+<script src="./05_09_14_aerolineas_cargo_search_files/modernizr"></script>
+<script src="./05_09_14_aerolineas_cargo_search_files/funcionesVarias"></script>
+<script src="./05_09_14_aerolineas_cargo_search_files/watermark"></script>
+</head>
+
+<body id="internas" data-pinterest-extension-installed="cr1.3.4" cz-shortcut-listen="true">
+<div id="wrap">
+  <div id="wrapper"> 
+    <!-- HEADER -->
+    <div id="header">
+      <div class="sombra-gr-top"> </div>
+      <div class="main-head">
+        <div class="borde-izq"> </div>
+        <div class="header-content">
+          <h1><a class="logo-aerolineas" href="http://cargo.aerolineas.com.ar/es-ar">Aerolineas Cargo</a></h1>
+          <div class="ul-content">
+            <ul class="ul-der-uno">
+              <li>
+                <select class="select-pais" id="culture" name="culture" onchange="onCultureChanged();">
+                  <option selected="selected" value="es-ar">Argentina (Español)</option>
+                </select>
+              </li>
+            </ul>
+            <script type="text/javascript">
+    function onCultureChanged() {
+        var cultureName = $("#culture").val();
+        GlobalCultureName = cultureName;
+
+        var ruta = '/es-ar/culture/changeculture';
+        var redirectUrl = '/_culture_';
+
+        $.ajax({
+            url: ruta,
+            type: "post",
+            dataType: "json",
+            traditional: true,
+            async: false,
+            data: { 'selectedCultureName': cultureName },
+            success: function (result, responseText) {
+
+                // // translateUrlAndRedirect(GlobalCultureName);
+
+                //alert('Cultura cambiada exitosamente por: ' + result);
+
+                // Redirecciono
+                redirectUrl = redirectUrl.replace("_culture_", GlobalCultureName);
+                window.location.replace(redirectUrl);
+
+                //  // Recargo la página
+                //window.location.reload();
+            },
+            error: function () {
+                alert('Error al intentar cambiar la cultura');
+            }
+        });
+
+    }
+        
+</script>
+            <ul class="ul-der-dos">
+              <li> <span> | </span> <a href="http://cargo.aerolineas.com.ar/es-AR/newsletter" target="" class="link">Newsletter</a> </li>
+              <li> <span> | </span> <a href="http://cargo.aerolineas.com.ar/es-AR/contactenos/" target="" class="link">Contáctenos</a> </li>
+              <li> <a href="http://cargo.aerolineas.com.ar/es-AR/preguntas_frecuentes/" target="" class="link">Preguntas Frecuentes</a> </li>
+            </ul>
+          </div>
+          
+          <!-- menu -->
+          <div class="main-nav">
+            <ul>
+              <li><a href="http://cargo.aerolineas.com.ar/es-ar/centro_de_atencion">Centros de Atención</a></li>
+              <li><a href="http://cargo.aerolineas.com.ar/es-AR/productos/express">Productos</a>
+                <ul class="sec-nav">
+                  <li><a href="http://cargo.aerolineas.com.ar/es-AR/productos/Equation">Equation</a></li>
+                  <li><a href="http://cargo.aerolineas.com.ar/es-AR/productos/Choesion">Cohesion</a></li>
+                  <li><a href="http://cargo.aerolineas.com.ar/es-AR/productos/Variation">Variation</a></li>
+                  <li><a href="http://cargo.aerolineas.com.ar/es-AR/productos/Dimension">Dimension</a></li>
+                </ul>
+              </li>
+              <li><a href="http://cargo.aerolineas.com.ar/es-ar/rutas_y_horarios">Rutas y Horarios</a></li>
+              <li><a href="http://cargo.aerolineas.com.ar/es-AR/envios_personales/mascotas">Envíos Personales</a>
+                <ul class="sec-nav">
+                  <li><a href="http://cargo.aerolineas.com.ar/es-AR/envios_personales/Animales">Mascotas</a></li>
+                  <li><a href="http://cargo.aerolineas.com.ar/es-AR/envios_personales/mudanzas">Mudanzas</a></li>
+                </ul>
+              </li>
+              <li><a href="http://cargo.aerolineas.com.ar/es-AR/informacion/drop_off_times">Información</a>
+                <ul class="sec-nav">
+                  <li><a href="http://cargo.aerolineas.com.ar/es-AR/informacion/drop_off_times">Drop-off times</a></li>
+                  <li><a href="http://cargo.aerolineas.com.ar/es-AR/informacion/UDLs">UDLs</a></li>
+                  <li><a href="http://cargo.aerolineas.com.ar/es-AR/informacion/calculoscargueros">Cálculos cargueros</a></li>
+                  <li><a href="http://cargo.aerolineas.com.ar/es-AR/informacion/hora_y_clima">Hora y Clima</a></li>
+                </ul>
+              </li>
+              <li><a href="http://cargo.aerolineas.com.ar/es-AR/envios_especiales/obras_de_arte_cuadros">Envíos Especiales</a>
+                <ul class="sec-nav">
+                  <li><a href="http://cargo.aerolineas.com.ar/es-AR/envios_especiales/obras-arte">Obras de arte - Cuadros</a></li>
+                  <li><a href="http://cargo.aerolineas.com.ar/es-AR/envios_especiales/feretros">Féretros</a></li>
+                  <li><a href="http://cargo.aerolineas.com.ar/es-AR/envios_especiales/Cenizas-Humanas">Cenizas Humanas</a></li>
+                  <li><a href="http://cargo.aerolineas.com.ar/es-AR/envios_especiales/Litio">Baterías de Litio</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- /menu --> 
+          
+        </div>
+        <div class="borde-der"> </div>
+      </div>
+      <div class="sombra-gr-bottom"> </div>
+    </div>
+    <!-- HEADER --> 
+    
+    <!-- CONTENT -->
+    <div class="content-top"></div>
+    <div class="content">
+      <div class="cont-gde etracking">
+        <div class="borde-top"> </div>
+        <div class="detalle-contenido">
+          <h3> E-Tracking </h3>
+          <div class="tracking">
+            <table>
+            	<tbody>
+                  <tr>
+                    <th>AWB Number: 044-41158084</th>
+                    <th>Origen: EZE</th>
+                    <th>Destino: EZE</th>
+                    <th>Bultos: 4</th>
+                    <th>Peso: 3927.0</th>
+                    <th>Volúmen: 7.55</th>
+                  </tr>
+                </tbody>
+            </table><br>
+            <!--TABLA DE ROUTING-->
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tbody>
+                <tr>
+                  <td class="destaque"> Origen </td>
+                  <td class="destaque"> Destino </td>
+                  <td class="destaque"> Nº Vuelo </td>
+                  <td class="destaque"> Fecha Salida </td>
+                  <td class="destaque"> Fecha Arribo</td>
+                  <td class="destaque"> Estado </td>
+                </tr>
+                <tr>
+                  <td> MIA </td>
+                  <td> EZE </td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td> Received From Shipper </td>
+                </tr>
+                <tr>
+                  <td> MIA </td>
+                  <td> EZE </td>
+                  <td> AR1305 </td>
+                  <td> 21JUL14 </td>
+                  <td>&nbsp;</td>
+                  <td> Booked </td>
+                </tr>
+                <tr>
+                  <td> MIA </td>
+                  <td> EZE </td>
+                  <td>AR1305</td>
+                  <td>21JUL14</td>
+                  <td>&nbsp;</td>
+                  <td> Pre-Manifested on Flight</td>
+                </tr>
+                <tr>
+                  <td> MIA </td>
+                  <td> EZE </td>
+                  <td> AR1305 </td>
+                  <td> 21JUL14 </td>
+                  <td>&nbsp;</td>
+                  <td> Manifested on Flight </td>
+                </tr>
+                <tr>
+                  <td> MIA </td>
+                  <td> EZE </td>
+                  <td> AR1305 </td>
+                  <td> 21JUL14 </td>
+                  <td>&nbsp;</td>
+                  <td> Manifested on Flight </td>
+                </tr>
+                <tr>
+                  <td> MIA </td>
+                  <td> EZE </td>
+                  <td> AR1305 </td>
+                  <td> 21JUL14 </td>
+                  <td>&nbsp;</td>
+                  <td>Departed on Flight</td>
+                </tr>
+                <tr>
+                  <td> MIA </td>
+                  <td> EZE </td>
+                  <td> AR1305 </td>
+                  <td> 21JUL14 </td>
+                  <td>&nbsp;</td>
+                  <td> Departed </td>
+                </tr>
+                <tr>
+                  <td> MIA </td>
+                  <td> EZE </td>
+                  <td> AR1305 </td>
+                  <td> 21JUL14 </td>
+                  <td>21JUL14</td>
+                  <td> Departed </td>
+                </tr>
+              </tbody>
+            </table><br>
+            <!--/TABLA DE ROUTING-->
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tbody>
+                <tr>
+                  <td class="destaque"> Origen </td>
+                  <td class="destaque"> Destino </td>
+                  <td class="destaque"> Vuelo </td>
+                  <td class="destaque"> Fecha Vuelo </td>
+                  <td class="destaque"> Fecha Arribo</td>
+                  <td class="destaque"> Hora Arribo</td>
+                  <td class="destaque"> Bultos </td>
+                  <td class="destaque"> Peso </td>
+                  <td class="destaque"> Volumen</td>
+                  <td class="destaque"> Estado </td>
+                  <td class="destaque"> Fecha GMT</td>
+                  <td class="destaque"> Hora GMT</td>
+                </tr>
+                <tr>
+                  <td> MIA </td>
+                  <td> EZE </td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td> 4 </td>
+                  <td> 3927.0 </td>
+                  <td> 7.55 </td>
+                  <td> Received From Shipper </td>
+                  <td> 21-Jul-14 </td>
+                  <td> 13:42 </td>
+                </tr>
+                <tr>
+                  <td> MIA </td>
+                  <td> EZE </td>
+                  <td> AR1305 </td>
+                  <td> 21JUL14 </td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td> 4 </td>
+                  <td> 3927.0 </td>
+                  <td> 5.66 </td>
+                  <td> Booked </td>
+                  <td> 21-Jul-14 </td>
+                  <td> 16:38 </td>
+                </tr>
+                <tr>
+                  <td> MIA </td>
+                  <td> EZE </td>
+                  <td>AR1305</td>
+                  <td>21JUL14</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td> 4 </td>
+                  <td> 3926.0 </td>
+                  <td> 5.66 </td>
+                  <td> Pre-Manifested on Flight</td>
+                  <td> 21-Jul-14 </td>
+                  <td> 15:40 </td>
+                </tr>
+                <tr>
+                  <td> MIA </td>
+                  <td> EZE </td>
+                  <td> AR1305 </td>
+                  <td> 21JUL14 </td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td> 2 </td>
+                  <td> 1728.0 </td>
+                  <td> 2.83 </td>
+                  <td> Manifested on Flight </td>
+                  <td> 21-Jul-14 </td>
+                  <td> 15:46 </td>
+                </tr>
+                <tr>
+                  <td> MIA </td>
+                  <td> EZE </td>
+                  <td> AR1305 </td>
+                  <td> 21JUL14 </td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td> 2 </td>
+                  <td> 2198.0 </td>
+                  <td> 2.83</td>
+                  <td> Manifested on Flight </td>
+                  <td> 21-Jul-14 </td>
+                  <td> 19:41 </td>
+                </tr>
+                <tr>
+                  <td> MIA </td>
+                  <td> EZE </td>
+                  <td> AR1305 </td>
+                  <td> 21JUL14 </td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td> 4 </td>
+                  <td> 3926.0 </td>
+                  <td> 2.83 </td>
+                  <td>Departed on Flight</td>
+                  <td> 21-Jul-14 </td>
+                  <td> 19:41 </td>
+                </tr>
+                <tr>
+                  <td> MIA </td>
+                  <td> EZE </td>
+                  <td> AR1305 </td>
+                  <td> 21JUL14 </td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td> 4 </td>
+                  <td> 3927.0 </td>
+                  <td> 5.66 </td>
+                  <td> Departed </td>
+                  <td> 21-Jul-14 </td>
+                  <td> 19:41 </td>
+                </tr>
+                <tr>
+                  <td> MIA </td>
+                  <td> EZE </td>
+                  <td> AR1305 </td>
+                  <td> 21JUL14 </td>
+                  <td>21JUL14</td>
+                  <td> 05:33</td>
+                  <td> 4 </td>
+                  <td> 3964.0 </td>
+                  <td> 0.0 </td>
+                  <td> Departed </td>
+                  <td> 23-Jul-14 </td>
+                  <td> 17:07 </td>
+                </tr>
+              </tbody>
+            </table>
+            <div style="font-size: 0.750em; color: #838384; padding-top:10px;">(*) Si los tags DepartureDate no viene informado, entonces mostrar FlightDate y los tags que se muestran en esta linea.</div>
+          </div>
+        </div>
+        <div class="borde-bottom"> </div>
+      </div>
+    </div>
+    <div class="content-bottom"></div>
+    <!-- CONTENT --> 
+    
+    <!-- FOOTER -->
+    <div id="footer">
+      <div class="sombra-gr-top"> </div>
+      <div class="footer-content">
+        <ul class="ul-izq-uno">
+          <li> <a href="http://www.aerolineas.com.ar/" target="_blank" class="link">aerolineas.com</a> </li>
+        </ul>
+        <ul class="ul-der-tres">
+          <li> <img alt="Logo Austral" border="0" src="./05_09_14_aerolineas_cargo_search_files/footer-logoAustral.gif" style="cursor:pointer;"> </li>
+          <li> <a href="http://cargo.aerolineas.com.ar/es-ar/asppage/open?link=http%3A%2F%2Faerolineascargonet%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D81%26ididioma%3Des" title="Logo JetPaq"><img alt="Logo JetPaq" border="0" src="./05_09_14_aerolineas_cargo_search_files/footer-logoJetPaq.gif"></a> </li>
+          <li> <a href="http://cargo.aerolineas.com.ar/es-ar/asppage/open?link=http%3A%2F%2Faerolineascargonet%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D9%26ididioma%3Des" title="Logo Aerohandling"><img alt="Logo Aerohandling" border="0" src="./05_09_14_aerolineas_cargo_search_files/footer-logoAerohandling.gif"></a> </li>
+          <li> <a target="_blank" href="http://www.optar.com/"> <img border="0" alt="Logo Optar" src="./05_09_14_aerolineas_cargo_search_files/footer-logoOptar.gif"> </a> </li>
+          <li> <a target="_blank" href="http://www.aerolineas.com.ar/"> <img border="0" alt="Logo Aerolíneas Argentinas" src="./05_09_14_aerolineas_cargo_search_files/footer-logoAASkyTeam.gif"> </a> </li>
+        </ul>
+        <ul class="legales">
+          <li class="text">Sitio Oficial de Aerolineas Argentinas, © 1996 - 2012 Aerolíneas Argentinas S.A.</li>
+          <br>
+          <li><a href="http://cargo.aerolineas.com.ar/es-ar/legales/terminos_condiciones">Legales</a> | </li>
+          <li><a href="http://cargo.aerolineas.com.ar/es-ar/legales/condiciones_transporte">Condiciones Generales de Transporte</a> | </li>
+          <li><a href="http://cargo.aerolineas.com.ar/es-ar/legales/mapa_del_sitio">Mapa del Sitio</a> | </li>
+          <li><a href="http://cargo.aerolineas.com.ar/es-ar/legales/politicas_privacidad">Ud. está en un SITIO SEGURO</a> | </li>
+        </ul>
+      </div>
+      <div class="sombra-gr-bottom"></div>
+    </div>
+    <!-- FOOTER --> 
+    
+  </div>
+</div>
+
+<!--************GOOGLE ANALYTICS*******************--> 
+<script type="text/javascript">var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-7304952-8']);
+_gaq.push(['_setDomainName', 'aerolineas.com.ar']);
+_gaq.push(['_setAllowLinker', 'true']);
+_gaq.push(['_setAllowHash', 'false']);
+_gaq.push(['_trackPageview']);
+
+	            (function() {
+		            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+		            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	            })();
+            </script> 
+<!--************GOOGLE ANALYTICS*******************--> 
+
+<span style="height: 20px; width: 40px; min-height: 20px; min-width: 40px; position: absolute; opacity: 0.85; z-index: 8675309; display: none; cursor: pointer; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAADU0lEQVR42s2WXUhTYRjHz0VEVPRFUGmtVEaFUZFhHxBhsotCU5JwBWEf1EWEEVHQx4UfFWYkFa2biPJiXbUta33OXFtuUXMzJ4bK3Nqay7m5NeZq6h/tPQ+xU20zugjOxR/+7/O8539+5znnwMtNTExwJtMb3L/fiLv3botCSmUjeCaejTOb39AiFothfHxcFIrHY8RksZjBsckJcOIRMfFsHD/SsbExUYpnI8DR0dGUGjSb0byhEJp5Uqg5CTSzc2CQleJbMEj9/ywBcGRkJEk9DQqouEVQT1sK444yWI9UonmTjGqauVLEIlHa9x8lAMbj8SSpp0rwKGMVvg8P46vbg0C7na8z8JsMcgHe7jlEa+edRhiLy8n/TUMfu6EvLElk+U0WtGwrTrdfAGQf5J8iiK4LVzDU28t8JtMSocf8E+l68myaNFXm/6rXslLK7ay5TOunuRvZWpJuvwAYjUaTpOIWoquuAZ219RTaxKYp9BbjycoN5FvL9qH9TBX5rvoGdJythvXYSTxdtRnWylO/ZdqrLsGwszzhWQ593z2KlAwCYCQSSZJ6ehZ0W7bD9VBLgN0NCqr3qR7R2rBrL3pu3Sb/7nDlz2uy6cG0OXk0GTbZXzNp8trsPAQdTj6frlWzN2DcXZGKQQAMh8NJ6rpyHe+PnkCr/CAFdZyvpfpjuvkifLF9wIt1Wwlo0OHie1RvWrKa93RjzfzliTzPKz3ltB0/Tevmwp14wGUgHAzSOoUEwFAolFaaBSuhnslPRkJexUJtZ6v5HtUeLswl33n1BgEY5fvhs9sJ3FAiT+QYyyvoAQJuD0KBAFRTJNAuz5/s3gJgMBhMJwrVFRThM5tY5zUF/A4X1f2fvQTRLCuBreoim0YmAbqNJryvPEXeeq46kaNdkQ/1HCncbJKPs9ZSv2VHGfWsZ2hfkhKAfr8/pdxWKx4wwD69PmVfNSOL+lr2w+gYqHpWDtXt1xQ8AMlWU0e1lqLd/APRHoP8AJqWrQG9gYxcPMsvSJUvAA4MDKTUJ7MZLaVy8v+qT21tcDx/OemePr0RTkNrur4A6PP5xCgBsL+/X4wiQDpuuVxOeL1eMYmYeDY6sOp0z+B0OuHxeEQhxkJMFosJiSO/UinOI/8Pc+l7KKArAT8AAAAASUVORK5CYII=);"></span>
+</body>
+</html>

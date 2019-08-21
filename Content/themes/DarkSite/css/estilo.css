@@ -1,0 +1,2054 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+/*tipos*/
+
+
+
+
+ @font-face {  
+/* Para Internet Explorer */
+	
+	src: url('../font/NeoSan.eot');
+	src: url("../font/neosanmed-webfont.eot") format("embedded-opentype");
+ 
+ /*  Para el resto de navegadores */
+    font-family: "Neo_san"; 
+    src: url('../font/NeoSan.ttf')  format("truetype");  
+    }  
+
+
+ @font-face {  
+/* Para Internet Explorer */
+	src: url('../font/neosanmed-webfont.eot');
+	src: url("../font/neosanbol-webfont.eot") format("embedded-opentype");
+ 
+ /*  Para el resto de navegadores */
+
+    font-family: "Neo_sans"; 
+    src: url('../font/Neo_Sans_Medium.ttf')  format("truetype");  
+    }  
+	
+	  @font-face {  
+	  /* Para Internet Explorer */
+	 src: url('../font/neosanbol-webfont.eot');
+	 src: url("../font/Platform-Medium.eot?#iefix") format("embedded-opentype");
+	  
+    font-family: "Neo_sans_bold"; 
+    src: url('../font/neosanbol-webfont.ttf') format("truetype");  
+      
+	 
+	  font-family: "NeoSanLig"; 
+    src: url('../font/NeoSanLig.ttf ') format("truetype");  
+    }  
+
+
+	 
+/*general*/
+body  {
+	margin: 0;  
+	padding: 0; 
+	background: #A6AAAD; 
+	font-family: arial, helvetica, sans-serif;
+	}
+	
+	 .clearing{
+      clear:both;
+   }
+	
+.screen-reader-text {
+  position: absolute !important;
+  clip: rect(.01em, .01em, .01em, .01em);
+  padding: 0 !important;
+  border: 0 !important;
+  height: .01em !important; 
+  width: .01em !important; 
+  overflow: hidden;
+}	
+	
+ul
+{
+    list-style-type: none; margin: 0;
+padding: 0;
+}
+
+
+
+ a { color:#000}
+a { text-decoration:none}
+a:hover { text-decoration: underline; }
+	
+a.pie { 
+  text-decoration:none; 
+  color:#000
+  }
+  
+  
+ p { font: normal 12px Tahoma, Geneva, sans-serif; 
+ color:#838384
+ }
+ 
+p.space {line-height: 150%} 
+p.space2 {line-height: 50%} 
+p.space3 {line-height: 90%} 
+ul.space {line-height: 150%}
+li.space {line-height: 150%} 
+
+ul  .condor
+{
+list-style-image:url("../img/buttons/condor_chico.gif");
+
+}
+h2 { font-family:"NeoSanLig"; font-size:25px;  color: #535754; margin: 0 0 5px; letter-spacing: -2px}
+h4 {font-family: "Neo_sans";  color: #535754;}
+h6 {font-family: normal "Neo_sans"; font-size:12px; letter-spacing: 0px;  color: #535754; margin-top:10px; margin-bottom:15px}
+
+.center { text-align:center}
+
+.mtop0 { margin-top:0}
+.mtop2{ margin-top:2px}
+.mtop4 { margin-top:4px}
+.mtop5 { margin-top:5px}
+.mtop7 { margin-top:7px;}
+.mtop10 { margin-top:10px}
+.mtop14 { margin-top:14px}
+.mtop15 { margin-top:15px}
+.mtop16 { margin-top:16px}
+.mtop20 { margin-top:20px}
+.mtop25 { margin-top:25px}
+.mtop26 { margin-top:26px}
+.mtop30 { margin-top:30px}
+.mtop33 { margin-top:33px}
+.mtop35 { margin-top:35px}
+.mtop39 { margin-top:39px}
+.mtop19 { margin-top:19px}
+.mtop42 { margin-top:42px}
+.mtop45 { margin-top:45px}
+.mtop50 { margin-top:50px}
+.mtop55 { margin-top:55px}
+.mtop61 { margin-top:61px}
+.mtop65 { margin-top:65px}
+.mtop70 { margin-top:70px}
+.mtop80 { margin-top:80px}
+.mtop100 { margin-top:100px}
+.mtop120 { margin-top:155px}
+
+.mleft1 { margin-left:1px}
+.mleft2 { margin-left:2px}
+.mleft5 { margin-left:5px}
+.mleft15 { margin-left:15px}
+.mleft35 { margin-left:35px}
+.mleft10 { margin-left:10px}
+.mleft15 { margin-left:15px}
+.mleft20 { margin-left:20px}
+.mleft25 { margin-left:25px}
+.mleft30 { margin-left:30px}
+.mleft35 { margin-left:35px}
+.mleft40 { margin-left:40px}
+.mleft45 { margin-left:45px}
+.mleft50 { margin-left:50px}
+.mleft55 { margin-left:55px}
+.mleft60 { margin-left:60px}
+.mleft65 { margin-left:65px}
+.mleft70 { margin-left:70px}
+.mleft90 { margin-left:90px}
+.mleft100 { margin-left:100px}
+.mleft110 { margin-left:110px}
+.mleft120 { margin-left:120px}
+.mleft125 { margin-left:125px}
+.mleft130 { margin-left:130px}
+.mleft140 { margin-left:140px}
+.mleft150 { margin-left:150px}
+.mleft155 { margin-left:155px}
+.mleft160 { margin-left:160px}
+.mleft170 { margin-left:170px}
+.mleft190 { margin-left:190px}
+.mleft200 { margin-left:200px}
+.mleft210 { margin-left:210px}
+.mleft220 { margin-left:220px}
+.mleft225 { margin-left:225px}
+.mleft325 { margin-left:325px}
+.mleft390 { margin-left:390px}
+.mleft510 { margin-left:510px}
+
+.mright4 { margin-right:4px}
+.mright5 { margin-right:5px}
+.mright8 { margin-right:8px}
+.mright15 { margin-right:15px}
+.mright35 { margin-right:35px}
+.mbot0 { margin-bottom:0px}
+.mbot5 { margin-bottom:5px}
+.mbot6 { margin-bottom:6px}
+.mbot10 { margin-bottom:10px}
+.mbot25 { margin-bottom:25px}
+.mbot50 { margin-bottom:50px}
+.mbot200 { margin-bottom:200px}
+.fleft { float:left}
+.fright { float:right}
+.padding5 { padding:5px}
+.padding10 { padding:10px}
+.pleft5 { padding-left:5px}
+.pleft10 { padding-left:10px}
+.ptop7 { padding-top:7px}
+.pleft15 { padding-left:15px}
+.pright5 { padding-right:5px}
+.pright10 { padding-right:10px}
+.pright15 { padding-right:15px}
+.pright25 { padding-right:25px}
+.pleft85 {padding-left:85px; }
+.pright30 { padding-right:30px}
+.ptop3 { padding-top:3px}
+.ptop5 { padding-top:5px}
+.ptop10 {padding-top:10px}
+.pbot3 { padding-bottom:2px}
+.pbot5 { padding-bottom:5px}
+
+ 
+.width35 { width:35px}
+.width45 { width:45px}
+.width50 { width:50px}
+.width55 { width:55px}
+.width60 { width:60px}
+.width72 { width:72px}
+.width80 { width:80px}
+.width90 { width:90px}
+.width91 { width:91px}
+.width94 { width:94px}
+.width95 { width:95px}
+.width99 { width:99px}
+.width105 {width:105px}
+.width108 { width:108px}
+.width110 {width:110px}
+.width123 { width:123px}
+.width128 { width:128px}
+.width136 { width:136px}
+.width140 { width:140px}
+.width143 { width:143px}
+.width150 { width:150px}
+.width160 { width:160px}
+.width170 { width:170px}
+.width176 { width:176px}
+.width180 { width:180px}
+.width185 { width:185px}
+.width186 { width:186px}
+.width190 { width:190px}
+.width195 { width:195px}
+.width196 { width:196px}
+.width200 { width:200px}
+.width210 { width:210px}
+.width220 { width:220px}
+.width230 { width:230px}
+.width240 { width:240px}
+.width245 { width:245px}
+.width250 { width:250px}
+.width257 {width:257px;}
+.width260 { width:260px}
+.width262 {width:262px}
+.width268 {width:268px}
+.width290 { width:290px}
+.width295 { width:295px}
+.width300 { width:300px}
+.width310 { width:310px}
+.width320 { width:320px}
+.width350 { width:350px}
+.width400 { width:400px}
+.width500 { width:500px}
+.width550 { width:550px}
+.width590 { width:590px}
+.width600 { width:600px}
+.width650 { width:650px}
+.width758 {width:758px}
+	
+	
+ .height9 { height:9px}
+ .height15 { height:15px}
+ .height20 { height:20px}
+ .height25 { height:25px}
+ .height30 { height:30px}
+ .height35 { height:35px}
+  .height40 { height:40px}
+ .height50 { height:50px}
+ .height60 { height:60px}
+ .height70 { height:70px}
+ .height80 { height:80px}
+ .height90 { height:90px}
+ .height150 { height:150px}
+ .height139 { height:139px}
+.height700 { height:700px}
+.height_auto { height:auto}
+
+
+ /*fecha*/
+
+#fecha {
+	 width:1002px; 
+	 height:8px; 
+	 font-size:11px; 
+	 padding:7px 0 7px 0; 
+	 background: #A6AAAD; float: right;
+	 
+	 }
+	 
+.contacto {
+	text-decoration:none; 
+	font:11px Tahoma, Geneva, sans-serif; 
+	color:#858585}
+
+	
+	/*tipos*/
+ .grey { color:#838384}
+ .gris { color:#555; font-size:12px;}
+ .gris9 {color:#555; font-size:9px;}
+ .gris10 { color:#555; font-size:10px;}
+ .gris11 { font: normal 11px Tahoma, Geneva, sans-serif; color:#838384}
+ .gris12 { font: normal 12px Tahoma, Geneva, sans-serif; color:#838384}
+ .gris2 {font-family: "Neo_sans";  color:#969697;}
+ .gris3 {font: normal 12px "Neo_sans";  color:#969697;}
+ .negro8 {color:#000000; font-size:8px;}
+ .negro10 {font: normal 10px Tahoma, Geneva, sans-serif; color:#000000}
+ .negro11 {font: normal 11px Tahoma, Geneva, sans-serif; color:#000000}
+  .negro12 {font: normal 12px Tahoma, Geneva, sans-serif; color:#000000}
+ .azul {font: normal 12px  Tahoma, Geneva, sans-serif; color:#0081c6}
+ .azul9 { color:#0081c6; font-size:9px;}
+ .azul10 { color:#000; font-size:10px;}
+ .azul11 { color:#0081c6; font-size:11px;}
+ .azul12 { color:#0081c6; font-size:12px;}
+ .blanco {font-family: "Neo_sans";  color:#FFF;}
+ .blanco_1 {font-family: "Neo_san";  color:#FFF;}
+  .blanco2 { color:#FFF; font-size:11px}
+ .link { text-decoration:none}
+ .skiplink {display:none}
+ .bold { font: bold;}
+ .font_neo1 {font-family: "Neo_san";  }
+.font_neo2 {font-family: "Neo_sans";  }
+.font_size1 { font-size:10px}
+.font_size2 { font-size:11px}
+.font_size3 { font-size:12px}
+.font_size4 { font-size:14px}
+
+
+
+.colorPuntosOfertas {color:black;}
+
+
+/*NUEVA HOME*/
+
+#contenido_home {
+		width:/*61.500em;*/ 984px;
+		height: auto ; 
+		
+		padding-left:7px; 
+		padding-right:7px; 
+		background-color: #fff;
+		
+		}
+		
+#contenedor_home {
+		width: 1002px;
+		height:auto;
+		margin:  auto; 
+		background: #fff;
+		}		
+		
+		#slider { 
+	  height:374px; 
+	  width:390px; border: solid 0px #999; z-index:100;   
+	  background-color:#; overflow:hidden;}
+		
+		
+#columna2 { float:left}		
+/*FIN DE NUEVA HOME*/
+
+
+ /*contenedor*/
+	#contenedor {
+		width: 62.625em; /*1002px*/
+		height:auto;
+		margin:  auto; 
+		background: #fff;
+		}
+		
+		#contenedor_sky {
+		width: 62.625em; /*1002px*/
+		position: relative ;
+		height:auto;
+		margin:  auto; 
+		background: #fff;
+		}
+		
+		
+		#contenedor_preguntas {
+		width: 61.625em; /*1002px*/
+		position: relative ;
+		height:auto;
+		margin:  auto; 
+		background: #fff;
+		}
+		
+	#contenido {
+		width:/*61.500em;*/ 984px;
+		height: auto ; 
+		padding-bottom:3px;
+		padding-left:7px; 
+		padding-right:7px; 
+		background-color: #fff;
+		
+		} 
+		
+		.contenedor {width: 62.625em; 
+		height:auto;
+		margin: 0 auto; 
+		background: #fff;
+		}
+
+/*header*/
+	#header {background: #fff;}
+.header_borde {width:1002px; height:9px; background-image: url(../img/backgrounds/top.gif)}
+	
+	#header-left { 
+		float: left; 
+		margin: 18px 0 13px 12px; 
+		width: 30%;
+		}
+	#logo-header {
+		float: right; 
+		margin-left:2px; 
+		margin-right:12px; 
+		margin-top:2px;
+		
+		}
+.no_border {border:0}	
+
+	#principal {
+		background: #fff; 
+		display: table;
+		}
+		
+	.logo_header { float:right; 
+	margin-left:12px; margin-bottom:4px;
+	}
+	
+	a img { border:none; }
+	.logo_social {padding: 5px 0 0 0}
+ 
+/*buscador*/  
+	.INPUTBuscador {
+		background-image: url("../img/backgrounds/fdo-buscador.jpg");
+		background-repeat: repeat-x;
+		border-color: #D9D9D9;
+		border-style: solid;
+		border-width: 1px;
+		color: #808084;
+		font-family: Arial,Helvetica,sans-serif;
+		font-size: 11px;
+		height: 18px;
+		line-height: normal;
+		width: 100px;
+	}
+
+.INPUTBuscador2 {
+background-image: url("../img/backgrounds/fdo-ingreso.gif");}
+
+
+/*DESARROLLO DEL MENU	*/
+	#navbar {
+		position: relative;
+		width: 981px;
+		margin: 0 auto;
+		z-index:2;
+		}
+	
+		#botonera {
+		font: normal 16px "Neo_san", Tahoma, Geneva, sans-serif;
+		width: 100%;
+		height: 30px;
+		margin: 0px 0;
+		background-image:url("../img/backgrounds/home_nav2.png")}
+		
+
+
+	.boton {
+		width: auto; 
+		height: 30px;
+		float: left;
+		text-align: center; 
+		/*border-left:solid 1px #FFF;*/
+		font-weight: normal;
+		font-size: 72%;
+		line-height: 30px; color:#FFF; 
+		
+		}
+	
+	
+	.boton:hover  {background-color:#666; }
+	
+	.select_boton  {background-color:#186796; }
+
+	.boton a {
+		color: white;
+		text-decoration: none;
+		display: block; 
+		}
+		
+	.boton  a:hover { color: white; }
+
+
+/*	Desarrollo de los menu desplegables	*/
+	
+	/* desplegable de dos columnas*/
+	#boton_2col_a {
+		float:left; 
+		height:170px; 
+		background:none; 
+		radius:0;-moz-border-radius: 0px; 
+		-webkit-border-radius : 0px;  
+		width: auto; 
+		border-right: dashed thin; 
+		color:#FFF; margin-right:20px; 
+		font: normal 12px "Neo_san", Tahoma, Geneva, sans-serif;
+		}
+	#boton_2col_b {
+		float:left; 
+	width:145px; 
+	background:none; 
+	font: normal 12px "Neo_san", Tahoma, Geneva, sans-serif;
+	}
+	
+	#div_2 {height:170px; width:350px;  }
+
+		
+		.width_1 { width:160px}
+		.width_2 { width:200px}
+		.width_3 { width:300px}
+		.width_4 { width:180px}
+		.width_5 { width:175px}
+		.width_6 { width:120px}
+		
+.boton div {
+		position: relative ;
+		z-index:-1;
+		margin-top:-10px;
+		width: 125%;
+		background-color: #666;
+		font-size: 100%;
+		visibility: hidden;
+		text-align: left;
+		padding: 10px 2px 10px 10px;
+		font: normal 100% arial; 
+		radius:7px;-moz-border-radius: 7px; 
+		-webkit-border-radius : 7px;
+		-ms-border-radius: 10px;
+		}
+		
+ 
+	.boton:hover div { 
+	visibility: visible; 
+	}
+ 
+ 
+	.boton ul {
+		font: normal 12px "Neo_san", Tahoma, Geneva, sans-serif;
+		margin: 0 10px;
+		padding: 0;
+		list-style: outside; 
+		color:#FFF }
+		
+	.boton li a {
+		color: white;
+		text-decoration: none;
+		padding: 3px; }
+		
+		.boton li a:hover { 
+		color: #ccc; 
+		}
+	
+
+
+.transparent {
+        zoom: 1; 
+		height:auto;
+        opacity:0.9;
+		border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px;
+filter:alpha(opacity=90); /* For IE8 and earlier */
+}
+
+
+.redondeado {border-radius:7px;-moz-border-radius: 7px; 
+		-webkit-border-radius : 7px;
+		-ms-border-radius: 7px;
+		}
+		
+/* POP UP AEROLINEAS PLUS HEADER */
+.pop-form-arplus { background: url(../img/backgrounds/bg_pop_arsite-login.png) no-repeat scroll left top transparent; height: 145px; position: absolute; right: -2px; top: 156px; width: 406px; z-index: 100; padding-top: 20px; *padding-top: 33px; }
+.pop-form-arplus #caja_plus  { left: 12px; }
+.pop-form-arplus a.ico-cerrar { float: right; width: 10px; height: 16px; display: block; margin-top: -4px; *margin-top: -17px;}
+/* POP UP AEROLINEAS PLUS HEADER */			
+		
+		
+/*DIV Central*/
+
+#bloque {width: 100%;
+margin: 0 auto;
+}
+#caja1, #caja2, #caja3 {
+margin-left: 2px;
+float: left;
+}
+#caja1 {background-color: #fff; width: 30%;margin-top:5px; margin-bottom:10px;
+margin-left: 10px!important;
+margin-left: 1px;
+}
+#caja2 {background-color: #fff;width: 21%; margin-left:20px; margin-top:3px;}
+#caja3 {background-color: #fff;width: 18%; margin-left:60px; margin-top:5px;}
+.salto {clear: both;}
+
+
+
+ /*slider centro
+	 .titulo_slide_centro { 
+		 font:bold 16px Tahoma, Geneva, sans-serif; 
+		 margin:10px 0 0 10px; 
+		 color:#5c656a;
+		 }
+	 .itinerario_slide_centro {
+		 font:normal 24px Tahoma, Geneva, sans-serif; 
+		 margin:5px 0 0 13px; 
+		 color:#009fd6;
+		 }
+	 .precio_dolar {
+		 font:normal 26px Tahoma, Geneva, sans-serif; 
+		 margin: 0 0 0 10px; 
+		 color:#0081c5;
+		 }
+	 .precio_slide_centro {
+		 font:normal 46px Tahoma, Geneva, sans-serif; 
+		 color:#0081c5;
+		 }
+	 .precio_final {
+		 font:normal 11px Tahoma, Geneva, sans-serif; 
+		 color:#0081c5;
+		 }*/
+ 
+
+  /*slider medio*/
+  #slider_botonera { 
+	  border:none; 
+	  margin-left:5px; 
+	  margin-bottom:40px; 
+	  width:290px; 
+	  height:24px
+	  }
+  
+  
+	  
+	
+	  
+	#menu_izquierdo { 
+		 padding:0px 5px 5px 5px; 
+		 margin:5px; 
+		 height:248px; 
+		 width:269px; 
+		 background-color:#EDEEEE; 
+		 border: solid 1px #0081c6
+		 }
+	  
+	  .boton_slider { float:left}
+	  
+	  .boton_slider_alojamiento { 
+	  	  font: normal  "Neo_san", Tahoma, Geneva, sans-serif;
+		  padding-top:3px; 
+		  width:143px; 
+		  height:20px; 
+		  float:left; 
+		  background-image:url(../img/reservas/alojamientos.gif)
+		  }
+	  
+	  .boton_slider_autos {
+		  padding-top:3px; 
+		  padding-right:20px; 
+		  width:118px; 
+		  height:20px; 
+		  float:left; 
+		  background-image:url(../img/reservas/autos.gif)
+		  }
+		  
+	  .boton_slider_check_in {
+		  padding-top:0.188em; 
+		  padding-left:2.188em; 
+		  width:6.688em; 
+		  height:1.313em; 
+		  float:left; 
+		  background-image:url(../img/reservas/check_in.gif)
+		  }
+		  
+	  .boton_slider_mis_viajes {
+		  padding-top:0.188em; 
+		  padding-left:2.125em; 
+		  width:6.563em; 
+		  height:1.313em; 
+		  float:left; 
+		  background-image:url(../img/reservas/mis_viajes.gif)
+		  }
+		  
+	  .boton_slider_vuelos {
+		  padding-top:4px; 
+		  padding-left:7.5em; 
+		  width:10.063em; 
+		  height:1.113em; 
+		  float:left; 
+		  background-image:url(../img/reservas/vuelos.gif)
+		  }
+		  .boton_slider_vuelos2 { margin-top:10px;
+			  
+			 
+		  padding-top:0.188em; 
+		  padding-left:7.5em; 
+		  width:10.063em; 
+		  height:1.313em; 
+		  float:left; 
+		  background-image:url(../img/reservas/vuelos2.gif)
+		  }
+	  .texto_botonera { 
+	  font: normal 12px  "Neo_san", Tahoma, Geneva, sans-serif;
+		  margin-right:1.000em; 
+		  text-decoration:none; 
+		  color:#666;
+		  }
+		  
+		    .texto_botonera_on { 
+	  font: normal 12px  "Neo_san", Tahoma, Geneva, sans-serif;
+		  margin-right:1.000em; 
+		  text-decoration:none; 
+		  color:#fff;
+		  }
+	  
+	  .text_slider {
+		  font: normal 11px Tahoma, Geneva, sans-serif; 
+		  color:#0081c6
+		  ;}
+		  
+		   .text_slider2 {
+		  font: normal 10px Tahoma, Geneva, sans-serif; 
+		  color:#0081c6
+		  ;}
+		  
+	
+   
+ /*pie*/
+	#pie  {
+		background: ; 
+		width:62.625em;
+		clear: both;
+		}
+		
+	.pie_texto { 
+		text-align:center; 
+		padding-top:0.9em; 
+		font: normal 10px Tahoma, Geneva, sans-serif; 
+		text-decoration:none; 
+		color:#838384;
+		float: right;
+		}
+	
+	.div { 
+		float:left; 
+		width:20.813em; 
+		height:6.250em; 
+		background-image:url(../img/backgrounds/footer-left.jpg) 
+		}
+	
+	.div_borde { float:left; height:20px}
+	
+	.div_pie { 
+		background-color:#FFF; 
+		width:41.188em; height:6.188em; 
+		float:left; border-top: solid 1px #CCC;
+		}
+	
+	.div_links { 
+		border:none; 
+		padding: 0px; 
+		}
+		
+		
+	.div_partner { float:left; padding: 0.313em 0.750em 0 0}
+	.div_fb { float:left; padding: 0.313em 0.250em 0 0}
+	.codigo-qr { float: right;  margin: 0 65px 0 45px; }
+
+	
+/*   columnas */
+	#primero {background: #fff; 
+		float: right; 
+		width: 15.125em; 
+		padding-left:0.625em ; 
+		
+		}
+	
+	#segundo {background: #fff; 
+		float: right; width: 27.188em; 
+		display: block;
+		}
+	
+	#tercero {background: #fff; 
+		float: right; 
+		width: 17.625em; 
+		display: block;
+		}
+
+/*texto ofertas columna derecha*/
+#oferta { 
+	background-image:url(../img/backgrounds/tarifa_1.gif); 
+
+
+	}
+
+#oferta2 { 
+	background-image:url(../img/backgrounds/tarifa_2.gif); 
+	
+	}
+
+#oferta3 { 
+	background-image:url(../img/backgrounds/tarifa_3.gif); 
+	
+	}
+	
+	#oferta3_2 { 
+	background-image:url(../img/backgrounds/tarifa_3.gif); 
+	width:15.125em; 
+	height:5.813em; 
+	margin-top:0.438em; 
+	
+	}
+/*MENU OFERTAS A DONDE VIAJAR*/
+.contenido { float: left; height: 103px; width: 176px; }
+.contenido ul { margin: 0.088em 0 0 0.625em; }
+.contenido ul, .contenido ul li { width: 100%; }
+.contenido ul li { float: left; font-family: "Neo_sans", Tahoma, Geneva, sans-serif; color: white; }
+.contenido ul li.dato1 { font-size: 14px; margin: 1px; height: 15px; }
+.contenido ul li.dato2 { font-size: 11px; height: 28px; }
+.contenido ul li.dato2 span.moneda { font-size: 15px; font-weight: bold; }
+.contenido ul li.dato3 { font-size: 11px; height: 24px; }
+.contenido ul li.dato4 { height: 15px;  color:#0081c6; font-size:9px; }
+.contenido ul li.dato5 { height: 23px; color:#0081c6; font-size:10px; text-align: right; }
+.contenido ul li.dato5 a { margin: 6px 15px; display: block; }
+	
+.contenido ul li.dato2 span.precio { 
+	font-size: 23px;
+	font-weight: bold;
+	}
+
+/*MENU OFERTAS HOME*/
+.contenido2 { float: left; height: 103px; width: 200px; }
+.contenido2 ul { margin: 0.088em 0 0 0.625em; }
+.contenido2 ul, .contenido ul li { width: 100%; }
+.contenido2 ul li { float: left; font-family: "Neo_sans", Tahoma, Geneva, sans-serif; color: white; }
+.contenido2 ul li.dato1 { font-size: 14px; margin: 1px; height: 15px; }
+.contenido2 ul li.dato2 { font-size: 11px; height: 28px; }
+.contenido2 ul li.dato2 span.moneda { font-size: 15px; font-weight: bold; }
+.contenido2 ul li.dato3 { font-size: 11px; height: 24px; }
+.contenido2 ul li.dato4 { height: 15px;  color:#0081c6; font-size:9px; }
+.contenido2 ul li.dato5 { height: 23px; color:#0081c6; font-size:10px; text-align: right; }
+.contenido2 ul li.dato5 a { margin: 6px 15px; display: block; }
+	
+.contenido ul li.dato2 span.precio { 
+	font-size: 23px;
+	font-weight: bold;
+	}
+
+
+
+.destino {
+	font: normal 14px "Neo_sans", Tahoma, Geneva, sans-serif; margin:0; 
+	color:#FFF
+	}
+	
+.desde {
+	font: normal 11px  "Neo_sans", Tahoma, Geneva, sans-serif; 
+	color:#FFF
+	}
+	
+.moneda {
+	font: bold 16px "Neo_sans", Tahoma, Geneva, sans-serif; 
+	color:#FFF
+	}
+	
+.precio { 
+	font: bold 26px "Neo_sans", Tahoma, Geneva, sans-serif;  
+	color:#FFF
+	}
+
+.cuotas {
+	font: normal 11px Tahoma, Geneva, sans-serif; 
+	color:#FFF
+	}
+	
+
+
+
+.plus { 
+	float:left; 
+	margin:4px 0.125em 0.188em 0.938em; 
+	font: normal 10px Tahoma, Geneva, sans-serif; 
+	color:#00669D; width:176px; height:20px; display:inline;
+	}
+	
+	.plus2 { 
+	float:left; 
+	
+	font: normal 10px Tahoma, Geneva, sans-serif; 
+	color:#00669D; width:176px;  display:inline;
+	}
+
+.plus_comprar {
+	float: left; margin-top:-24px; margin-left:3px;
+	width:2.500em; 
+	font: normal 10px Tahoma, Geneva, sans-serif; 
+	color:#0081c6;  
+	text-decoration:none; 
+	}
+	
+	.plus_comprar_derecha { 
+ 	
+		float: left; margin-top:10px; margin-left:130px;
+	width:2.500em;  
+	font: normal 10px Tahoma, Geneva, sans-serif; 
+	color:#0081c6;  
+	text-decoration:none; 
+	}
+	
+/*texto ofertas columna central*/
+
+/*banner central*/
+	#banner_1 { 
+		width:390px; 
+		height:60px; margin-top:7px; 
+		background: #333 url(../img/home/banner_6.jpg)
+		}
+
+	.banner_1 {
+		 
+		font: normal 18px "Neo_sans", Tahoma, Geneva, sans-serif; margin-left:5px; 
+		color:#0081c6 
+		}
+		
+	.titulo_a_donde { 
+		margin:0.188em 2.813em 0 0; 
+		width:16.250em; 
+		font: italic 22px Tahoma, Geneva, sans-serif; 
+		color:#0081c6
+		}
+
+/*banner central cuadrado*/
+	#banner { 
+		width:188px; 
+		height:177px; 
+		background: #333 url(../img/home/banner_3.jpg);
+		}
+		
+	#banner_2 { 
+		width:191px; 
+		height:85px; 
+		background: #333 url(../img/home/banner_1.jpg);
+		}	
+		
+	#banner_3 { 
+		width:191px; 
+		height:85px; 
+		background: #333 url(../img/home/banner_2.jpg);
+		}		
+		
+	
+	#banner2 { 
+		margin:0.625em 0.688em 0.313em 0; 
+		width:13.250em; 
+		height:11.063em; 
+		float:left; 
+		background-image:url(../img/banners/banner_cupondesc_02_V2.gif); 
+		}
+	
+	.destino2 { 
+		font: bold 16px Tahoma, Geneva, sans-serif; 
+		color:#FFF;
+		}
+	
+	.precio2 {
+		font: bold 26px Tahoma, Geneva, sans-serif; 
+		color:#0081c6;
+		}
+	
+	.hotel { 
+		font: normal  13px  Tahoma, Geneva, sans-serif;  
+		color:#FFF;
+		}
+	
+	.dias {
+		font: normal 10px Tahoma, Geneva, sans-serif; 
+		color:#5d656a;
+		}
+	.boton_paq { 
+		margin-top:0.7em; 
+		width:100px; 
+		height:0.938em; 
+		font: normal 10px Tahoma, Geneva, sans-serif; 
+		color:#0081c6;
+		}
+	
+	.link_cupones { 
+		
+		text-decoration:none;
+		font: normal 10px Tahoma, Geneva, sans-serif; 
+		color:#0081c6;
+		}
+	
+	.link_cupones:hover { text-decoration: underline; }
+	
+	.titulo_banner2 { 
+		margin:-2px 45px 0 10px; 
+		width:260px; height:50px; 
+		font:  22px "Neo_sans", Tahoma, Geneva, sans-serif; 
+		color:#0081c6;
+		}
+	
+	.titulo_banner {
+		width:9.375em; 
+		margin-top:3.750em; 
+		margin-right:0.625em; 
+		}
+
+/*banner banco*/
+#banner_banco { 
+	width:27.188em; 
+	height:5.000em; 
+	padding-top:0.438em; 
+	background-image: url(../img/banners/banco.gif); 
+	background-repeat:no-repeat; 
+	border:solid 1px #999;
+	}
+
+.titulo_banner3 { 
+	margin-left:5.625em; 
+	font: normal 24px Tahoma, Geneva, sans-serif; 
+	color:#00a0d6
+	}
+
+.subtitulo_banner3 {
+	margin-left:11.875em; 
+	font: normal 18px Tahoma, Geneva, sans-serif; 
+	color:#00a0d6;
+	}
+
+/*banners columna izquierda*/
+
+	
+.boton_buscar { 
+	text-align:center; 
+	float:left;  
+	width:7.335em; 
+	height:1.750em; 
+	background-image:url(../img/buttons/buscar.gif); 
+	padding-top:0.188em;  
+	font: normal 12px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF;
+	border:0;
+	}
+	
+	.boton_buscar_it {text-align:center; 
+	float:right;  
+	width:7.335em; 
+	height:1.750em; 
+	background-image:url(../img/buttons/buscar.gif); 
+	padding-top:0.188em;  
+	font: normal 12px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF;
+	border:0; }
+	
+.align_btn1 {margin-top:1.8em; margin-bottom:0.25em; 
+	margin-left:1.875em;}
+	
+	
+#buscador_principal  {  
+	font: normal 16px "Neo_sans" Tahoma, Geneva, sans-serif; float:right; 
+	
+	width:14.500em;
+	border:solid 1px #999; 
+	background-color:#FFF; 
+	border-radius: 5px; 
+	-moz-border-radius:0.375em; 
+	background-image: url("../img/backgrounds/fdo-ingreso.gif");
+	-webkit-border-radius:0.625em; 
+	height:20px;margin: 10px 10px 0 0;
+	padding:;  
+	}
+	
+	#buscador_principal_login  {  
+	
+	
+	width:4em;
+	border:solid 1px #999; 
+	background-color:#FFF; 
+	border-radius: 5px; 
+	-moz-border-radius:5px; 
+	background-image: url("../img/backgrounds/fdo-ingreso.gif");
+	-webkit-border-radius:5px; 
+	height:18px; margin-left:3px;
+	padding:0.125em;  
+	}
+	
+#buscador_volver  {  
+	font: normal 16px "Neo_sans" Tahoma, Geneva, sans-serif; float:right; 
+	width:4em; text-align:center;
+	border:solid 1px #999; 
+	background-color:#FFF; 
+	border-radius: 5px; 
+	-moz-border-radius:0.375em; 
+	background-image: url("../img/backgrounds/fdo-ingreso.gif");
+	-webkit-border-radius:0.625em; 
+	height:18px;margin: 10px 10px 0 0;
+	  
+	}	
+	
+	#searchField{
+    width: 290px;
+    height: 20px;
+    padding-right: 0px; /* puts padding on the right side, so text doesn't go under the button. NOTE: TOTAL WIDTH IS 240 + 25 = 265px */
+    float: left; /* some browsers display correctly without this, but better to leave it for cross browser compatibility */
+    border: 1px solid #999; /* sets new color for border of the field */
+	
+	
+}
+
+
+#searchSubmit{
+  background: transparent  url("../img/buttons/search2.gif") no-repeat;
+    width: 30px;
+    height: 22px;
+    border: none; /* removes default button borders */
+    cursor: pointer; /* when your mouse is over the button, cursor changes into a pointer */
+	margin-left: -31px; /* image is 20x20px, so leave little extra */
+    margin-top: 1px; /* leave some space from the top, so button looks in the middle */
+	-moz-border-radius:0 0.375em  0.375em  0 ; 
+}
+
+.buscador_general { margin-top:7px;  
+	width:13.438em;  
+	border: solid 1px #999; 
+	font: normal 11px Tahoma, Geneva, sans-serif; 
+	-moz-border-radius:0.300em;
+	-webkit-border-radius:0.325em; 
+		}
+
+#buscador {
+	width:16.063em;
+	border:none; 
+	background-color:#FFF;
+	-moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em; 
+	height:18px;margin:0.625em 0 0 0; 
+	padding:0.188em 0.188em 0.188em 0.313em; 
+	}
+	
+.buscador {  
+	width:12.500em;  
+	border:none; 
+	font: normal 11px Tahoma, Geneva, sans-serif; 
+		}
+		
+.buscador_plus {  
+	width:15.5em; 
+	margin-left:10px; margin-top:1px; 
+	border:none; 
+	font: normal 11px Tahoma, Geneva, sans-serif; 
+	background:none; 
+	
+	}
+	
+.div_buscador2 { 
+	float:left
+	}	
+
+#buscador2 {
+	width:7.750em;
+	border:none; 
+	background-color:#FFF;
+	-moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em; 
+	height:1.250em; margin:5px 0.313em 0.625em 0; 
+	padding:0.188em 0 0 0.313em; 
+	}
+	
+.buscador2 {  
+	width:90px;  
+	border:none; 
+	font: normal 11px Tahoma, Geneva, sans-serif; 
+		}
+
+#buscador3 {
+	float:left; 
+	text-align:center;
+	width:3.5em;
+	border:none; 
+	background-color:#FFF;
+	-moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em; 
+	height:1.850em;
+	margin:0.425em 0.563em 0.313em 0.313em; 
+	padding:0.000em; 
+	}
+	
+.buscador3 { 
+	float:left;  
+	width:1.2em;  
+	border:none; 
+	font: normal 11px Tahoma, Geneva, sans-serif; 
+		}
+		
+		
+	.div_buscador3 { 
+	padding:0.125em 0 0 0; 
+	margin:0.625em 0 0.313em 0; 
+	width:16.750em; 
+	height:7.838em; 
+	border-top:solid 1px #1693d0; 
+	border-bottom:solid 1px #1693d0;
+	}
+		
+		#buscador4 {
+	float:left;  
+	text-align:center;
+	width:88px
+	border:none; 
+	background-color:#FFF;
+	-moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em; 
+	height:19px;
+	margin:20px 0.563em 0.313em 0.313em; 
+	padding:2px 0 0 2px ; 
+	}
+	
+.buscador4 { 
+	float:left;  
+	width:1.2em;  
+	border:none; 
+	font: normal 11px Tahoma, Geneva, sans-serif; 
+		}
+		
+
+
+.buscador3_vuelos {
+	float:left; 
+	width:50px; 
+	margin:3px auto; 
+	text-align:center;
+	font: normal 11px Tahoma, Geneva, sans-serif; 
+	color:#0081c6;
+	}
+
+.div_buscador_pie {
+	margin:25px 0px 5px 0px; 
+	width:16.875em; 
+	height:32.750em;
+	}		
+
+
+		
+		
+/*PAGINA A DONDE VIAJAR*/
+.columna_izquierda {float:left; background-color:#FFF; width:284px; height:880px; padding-left:10px}
+.columna_centro {float:left; background-color:#FFF; padding-right:4px; width:500px; padding-left:10px; height: auto }
+.columna_derecha {float:left; background-color:#FFF; width:187px; padding-right:0.438em; height:880px; margin-top:25px} /*962 total*/
+.fb-comments { height:40px}
+.comentarios { width:480px; height:220px; background-color:#ECEBEB; font:normal 12px Tahoma, Geneva, sans-serif; color:#000; padding:5px }
+.comentarios_box { width:300px; height:15px}
+.boton_buscar_donde { 
+	text-align:center; 
+	float:left;  
+	width:85px; 
+	height:18px; 
+	background-image:url(../img/buttons/buscar2.gif); 
+	padding-top:0.188em;  
+	font: normal 12px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF;
+	border:0;
+	}
+
+
+.btn_vuelos { width:277px; padding:5px 0 2px 5px; height:18px; background-color:#1793D1; }
+.menu_vuelos { width:279px; margin-top:0px;  height: 280px; background-color:#EDEEEE; border:solid 1px #1793D1;}
+#oferta_adonde {width:187px; height:105px; margin-bottom:6px }
+	.oferta_adonde1 {background-image:url(../img/backgrounds/tarifa_1_adonde.gif); }
+	.oferta_adonde2 {background-image:url(../img/backgrounds/tarifa_2_adonde.gif); }
+	.oferta_adonde3 {background-image:url(../img/backgrounds/tarifa_3_adonde.gif); }
+	
+#lista {font: normal 14px "Neo_san";  text-decoration:none; margin:4px 0 4px 0   }
+a.lista { text-decoration:none;  }
+a.lista:hover { text-decoration:underline}
+	#clima { border:solid 1px #CCC; padding:5px;  height:72px; width:272px; background-image:url(../img/backgrounds/a_donde_viajar_clima.jpg); background-repeat:  repeat: x; -moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em;   }
+	.clima { float:left; padding:3px 2px 3px 0;}
+	
+	
+
+#cupon { width:187px; margin-top:20px; border-top:dashed 1px #CCC;}
+.cupon_img { float:right; background-image:url(../img/common/cupon_tijera.gif); width:27px; height:13px; }
+.cupon {border-bottom:dashed 1px #CCC; padding:5px 0 5px 0}
+
+.titulo {	font:  16px "Neo_sans", Tahoma, Geneva, sans-serif; color:#0081c6; line-height: 100%; margin:0px}
+.titulo2 {	font:  15px "Neo_sans", Tahoma, Geneva, sans-serif; color:#0081c6; line-height: 100%; margin:0px}
+.titulo-promo { 
+		margin:0px;
+		 
+		font:  14px "Neo_sans", Tahoma, Geneva, sans-serif; 
+		color:#0081c6;
+		}
+		
+		.descuento {font: 40px "Neo_sans", Tahoma, Geneva, sans-serif; 
+		color:#EA6B26; }
+		
+.descuento2 {font: 24px "Neo_sans", Tahoma, Geneva, sans-serif; 
+		color:#EA6B26; }
+		
+		
+		
+/*	Desarrollo de la galeria de imagenes	*/
+
+.galeria {width:500px; margin-top:25px;}
+#image{ float:left; padding-top:5px; margin-bottom:10px;
+height:222px;
+width:429px;}
+
+.thumb{
+float:left;
+margin-right:10px;
+margin-top:5px;}
+
+/*PAGINA ALOJAMIENTO*/
+
+.columna_izquierda_hotel{ border-right: solid 1px #8B8B8B; width:284px; padding-right:3px; float:left; background-color:#FFF;  height:900px; padding-left:10px}
+.columna_centro_hotel {float:left; background-color:#FFF; width:694px; padding-left:0.600em; height: auto }
+.columna_derecha_hotel {float:left; background-color:#FFF; width:290px; padding-right:0.438em; height:900px; }
+.btn_select { width:283px; height:24px; color:#FFF; padding-top:3px; padding-left:5px;  background-image:url(../img/backgrounds/a_donde_viajar_hoteles_select.gif)}
+#box_cupon { width:654px; height:72px; padding:5px 0 0 20px; margin-bottom:10px;  border:solid 1px #C6C6C7; background-image:url(../img/backgrounds/a_donde_viajar_hoteles_box.jpg); background-repeat:  repeat: x; -moz-border-radius:0.500em;border-radius: 5px;
+	-webkit-border-radius:0.625em;  }
+	
+
+
+
+.select { width:144px; float:left}
+
+
+.align_btn2 {margin-top:0.5em; 
+	margin-left:37.475em;}	
+
+#hoteles_1 { width:674px; border-top: solid 1px #8B8B8B }
+#hoteles2 { width:674px;}
+#hoteles { width:490px; height: auto;   }
+
+	.descuento_hotel {font: 30px "Neo_sans", Tahoma, Geneva, sans-serif; 
+		color:#EA6B26; }
+		.descuento_hotel2 {font: 18px "Neo_sans", Tahoma, Geneva, sans-serif; 
+		color:#EA6B26; }
+		
+.btn_voucher { background-image:url(../img/buttons/a_donde_viajar_hoteles_voucher.gif);  width:106px; height: 20px; font: normal 12px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF; padding-left:39px; padding-top:4px}
+	
+	.btn_ubicacion { padding-left:39px;padding-top:5px;  background-image:url(../img/buttons/a_donde_viajar_hoteles_ubicacion.gif); width:83px; height:22px}
+	
+	.bgn_con { background-color:#F4F4F4; padding:5px; }
+	.bgn_con_arplus { padding:5px; border-bottom: solid 1px #999; border-top:solid 1px #999;}
+	
+	.degradado {
+    height: 100px;
+    /*background-color: #FFF ;  Navegadores sin CSS3 *
+    background-image: url(images/linear_bg_2.png); /* Navegadores sin CSS3 */
+    background-image: -moz-linear-gradient(100% 100% 90deg, #E6E6E6, #fff); /* Firefox */
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#E6E6E6), to(#fff)); /* Webkit: Chrome, Opera,... */
+    background-image: linear-gradient(top , #E6E6E6, #fff ); /* CSS3 puro */
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#E6E6E6', EndColorStr='#ffffff');  
+ 
+}
+
+
+
+
+	
+	
+	.voucher { width:490px; height:190px; border-bottom:dashed 1px #CCC;}
+	.paginas { text-align:center; margin-top:20px;}
+		
+a.paginas { text-decoration:none; color:#999}
+a.paginas:hover { text-decoration: underline; }
+a.link {text-decoration:none;}	
+a.link:hover { text-decoration: underline; }
+		
+/*PAGINA BENEFICIOS*/	
+.columna_centro_beneficios {float:left; background-color:#FFF; width:682px; padding-left:0.500em; height:900px }
+.bgn_a_donde { padding-top:0.188em; padding-left:0.5em; width:284px; height:33px;  float:left; background-image: url(../img/backgrounds/a_donde_viajar.jpg); }
+#conten_ben { width:1001px; height:360px; background-color:#FFF}
+.col_height	 {height: 350px;}
+#box_cupon_ben { width:284px; height:309px; padding:10px 5px 5px 5px;   border:solid 1px #C6C6C7; background-image:url(../img/backgrounds/a_donde_viajar_beneficios.jpg); background-repeat:  repeat: x; -moz-border-radius:0.500em; -webkit-border-radius:0.625em; border-radius: 5px   }
+#box_cupon_2 { width:653px; height:111px; padding:5px 0 0 5px;  border:solid 1px #C6C6C7; background-image:url(../img/backgrounds/a_donde_viajar_ben_box.jpg); background-repeat:  repeat: x; -moz-border-radius:0.500em; 
+	-webkit-border-radius:0.625em; border-radius: 5px  }
+#cupon_ben { width:150px;   padding-top:5px; border-top:dashed 1px #CCC}
+.btn_info { background-color:#1693D0;  margin-top:10px; width:79px; height: 16px; font: normal 12px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF; padding-left:15px; padding-top:2px; margin-left:85px; -moz-border-radius:0.500em; -webkit-border-radius:0.625em; }
+	.align_btn3 {margin-top:2em; 
+	margin-left:35.9em;}	
+	
+	.img_tijera {  width:69px;   margin-top:10px;}
+	
+/*PAGINA GOOGLEMAP*/
+
+
+	
+	#pop{padding-left:5px; padding-bottom:20px;
+ border:solid 1px #CCC;
+ background:#FFF;
+ width:600px;
+ height:408px;
+ left:40%;
+ top:40%;
+ margin-left:-100px;
+ margin-top:-100px;
+ position:fixed;
+ display:none;
+ box-shadow: 2px 2px 2px #ffc;
+   -webkit-box-shadow: 2px 2px 2px #999;
+   -moz-box-shadow: 2px 2px 2px #999; z-index:3;
+}
+#fondo-blanco{
+ background:#fff;
+ width:100%;
+ height:100%;
+ position:fixed;
+ top:0;
+ left:0;
+ opacity:0.6; filter: alpha(opacity = 50);
+ display:none; z-index:2;
+ 
+}
+
+
+#pop2{padding-left:5px; padding-bottom:20px;
+ border:solid 1px #CCC;
+ background:#FFF;
+ width:800px;
+ height:840px;
+ left:30%;
+ top:15%;
+ margin-left:-100px;
+ margin-top:-100px;
+ position: absolute;
+ display:none;
+ box-shadow: 2px 2px 2px #ffc;
+   -webkit-box-shadow: 2px 2px 2px #999;
+   -moz-box-shadow: 2px 2px 2px #999; z-index:3;
+}
+
+
+
+#fondo-negro{
+ background:#000;
+ width:100%;
+ height:100%;
+ position:fixed;
+ top:0;
+ left:0;
+ opacity:0.6; filter: alpha(opacity = 50);
+ display:none; z-index:2;
+ 
+}
+
+.btn_volver { background-color:#1693D0;    font: normal 12px Tahoma, Geneva, sans-serif;  
+	text-decoration:none; color:#FFF;  padding:0px;  -moz-border-radius:0.500em; -webkit-border-radius:0.625em; }
+
+
+/*columnas general*/
+.columna_izq {float:left; background-color:#FFF; width:183px; height:480px; }
+.columna_cent{float:left;  background-color:#FFF; background-image: url(../img/backgrounds/arplus_fondo.jpg);  width:558px;  height:495px; padding:45px 20px 0 20px }
+.columna_cent2{float:left;  background-color:#FFF; background-image:url(../img/backgrounds/ar20plus_fondo2.jpg);  width:558px;  height:500px; padding:45px 20px 0 20px }
+
+.columna_der{float:left; background-color:#FFF;  width:210px; height:500px; } /*962 total*/
+#ingreso_plus { 
+	font: normal 16px "Neo_sans"; Tahoma, Geneva, sans-serif; 
+	float:right; 
+	width:12.563em;
+	border:none; 
+	background-color:#FFF;
+	-moz-border-radius:0.375em; 
+	background-image: url("../img/backgrounds/fdo-ingreso.gif");
+	-webkit-border-radius:0.625em; 
+	height:18px;margin:0.188em; 
+	padding:0.125em;  
+	}
+.ingreso_plus {  
+	width:20.5em; 
+	margin-left:0.625em; margin-top:1px; 
+	border:none; 
+	font: normal 11px Tahoma, Geneva, sans-serif; 
+	background:none; 
+	color:#0081c6;
+	}
+
+
+.tituloplus {	font:  15px "Neo_san", Tahoma, Geneva, sans-serif; color:#666; line-height: 100%; }
+.tituloplus5 {	font:  16px "Neo_san", Tahoma, Geneva, sans-serif; color:#0081c6; line-height: 100%; }
+.tituloplus4 {	font:  16px "Neo_sans", Tahoma, Geneva, sans-serif; color:#666; line-height: 100%; }
+.tituloplus_chico {	font:  14px "Neo_san", Tahoma, Geneva, sans-serif; color:#0081c6; line-height: 100%; margin:0px}
+.tituloplus_linea {	font:  16px "Neo_sans", Tahoma, Geneva, sans-serif; color:#0081c6; line-height: 100%; margin:0px; padding-bottom:3px;  border-bottom:solid 1px #0081C6}
+.tituloplus2 {	font:  14px "Neo_san", Tahoma, Geneva, sans-serif; color:#0081c6; line-height: 100%; padding:20px 0 0 16px}
+.tituloplus3 {	font:  14px "Neo_san", Tahoma, Geneva, sans-serif; color:#0081c6; line-height: 100%; padding:10px 0 0 16px}
+#listaplus {font: normal 12px "Neo_san";  text-decoration:none; margin:5px 0 5px 0   }
+.listaplus_select {font: normal 12px "Neo_san"; color:#666; text-decoration:none; margin:5px 0 5px 0}
+.columna_plus { width:203px; height:245px; background-image:url(..img/backgrounds/arplus_columna.jpg)}
+#fecha_plus { font: normal 11px Tahoma, Geneva, sans-serif; color:#9c9ca0; float:right}
+.align_btn4 {margin-top:0.5em; 
+	margin-left:20.475em;}	
+	
+	
+.btn_inscribite { margin-left:280px;
+ margin-top:10px; 
+ position: relative;}	
+	
+p input {
+  float: left; 
+  height: 1em;
+  margin: 0px 5px 55px 0;
+  padding-bottom:40px}
+  
+  .boton_aceptar { background-color:#1492CF;  
+	text-align:center; 
+	width:7em; 
+	height:1.750em; 
+	font: normal 12px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF;
+	border:0;
+	-moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em; 
+	}
+	
+	 .boton_aceptar2 { background-color:#1492CF;  
+  
+	text-align:center; 
+	float:left;  
+	width:10.335em; 
+	height:1.750em; 
+	padding-top:0.188em;  
+	font: normal 11px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF;
+	border:0;
+	-moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em; 
+	}
+	
+	.boton_aceptar3 { background-color:#1492CF;  
+  
+	text-align:center; 
+	float:left;  
+	width:11.335em; 
+	height:1.450em; 
+	padding-top:0.188em;  
+	font: normal 12px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF;
+	border:0; border-radius: 5px;
+	-moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em; 
+	}
+	
+	.boton_aceptar4 {background-color:#1492CF;  
+  
+	text-align:center; 
+	float:left;  
+	width:8.335em; 
+	height:1.750em; 
+	padding-top:0.188em;  
+	font: normal 11px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF;
+	border:0; border-radius: 5px;
+	-moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em;}
+	
+	.boton_elite { background-color:#1492CF;  
+  
+	text-align:left; 
+	float:left;   
+	width:26.335em; 
+	padding-left: 20px;
+	height:1.350em; 
+	padding-top:0.188em;  
+	font: normal 12px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF;
+	border:0;border-radius: 5px;
+	-moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em; 
+	}
+	
+	.boton_elite1 { background-color:#1492CF;  
+  
+	text-align:left; 
+	float:left;   
+	width:25.335em; 
+	padding-left: 20px;
+	height:1.350em; 
+	padding-top:0.188em;  
+	font: normal 12px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF;
+	border:0;border-radius: 5px;
+	-moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em; 
+	}
+	
+	.boton_elite2 { background-color:#1492CF;  
+  
+	text-align:left; 
+	float:left;  
+	width:30.5em; 
+	height:1.350em; 
+	padding-left: 20px;
+	padding-top:0.188em;  
+	font: normal 12px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF;
+	border:0; border-radius: 5px;
+	-moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em; 
+	}
+	
+	
+	
+	.INPUT {
+		background-image: url(../img/backgrounds/fdo-buscador.jpg);
+		background-repeat: repeat-x;
+		border-color: #D9D9D9;
+		border-style: solid;
+		border-width: 1px;
+		color: #808084;
+		font-family: Arial,Helvetica,sans-serif;
+		font-size: 11px;
+		height: 14px;
+		line-height: normal;
+		
+	}
+	
+	#celda {  padding:2px; font:normal 10px Tahoma, Geneva, sans-serif; color:#000}
+	.celda1 {background-color:#76ccf7; height:21px }
+	.celda2 { background-color:#EDE9EA; margin-right:1px; padding:4px 2px 2px 2px; height:19px}
+	
+	/*po up*/
+
+/*hoverpopups type 1*/
+
+#popup { color: #000; width:20px;   }
+
+#popup a, #popup a:visited {
+	position: relative;
+	display: block;
+	text-align: right;
+	margin: 0;
+	border: none;
+	text-decoration: none;
+	font: normal 11px Arial, Helvetica, sans-serif;
+	
+}
+
+#popup a span {display: none;}
+
+#popup a:hover { background-color: #e9e9e2;  }
+
+/* the IE correction rule */
+#popup a:hover	{
+ background-color: #e9e9e2;
+text-indent: 0; /* added the default value */
+}
+
+#popup a:hover span{
+display: block;
+position: absolute;
+top: -100px;
+left: 10px;
+width: 465px;
+margin: 0px;
+padding: 10px 5px 10px 5px;
+color: #666;
+font-weight: normal;
+background: #fff;
+text-align: left;
+border: 1px solid #0081c6;
+border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; 
+
+}
+
+
+
+.callout {
+    position: relative;
+    margin: 18px 0;
+	width: 265px;
+    padding: 18px 20px;
+    background-color: #eef4f9;
+    /* easy rounded corners for modern browsers */
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+	font: normal 11px Arial, Helvetica, sans-serif;
+	
+}
+.callout .notch {
+    position: absolute;
+    bottom: -10px;
+    left: 105px;
+    margin: 0;
+    border-top: 10px solid #eef4f9;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+    /* ie6 height fix */
+    font-size: 0;
+    line-height: 0;
+     /* ie6 transparent fix */
+    _border-right-color: pink;
+    _border-left-color: pink;
+    _filter: chroma(color=pink);
+}
+
+.border-callout { border: 1px solid #0081c6; padding: 17px 19px; }
+.border-callout .border-notch { border-top-color: #0081c6; bottom: -11px; }
+
+
+#popup2 { color: #000; width:20px;   }
+
+#popup2 a, #popup a:visited {
+	position: relative;
+	display: block;
+	text-align: right;
+	margin: 0;
+	border: none;
+	text-decoration: none;
+	font: normal 11px Arial, Helvetica, sans-serif;
+	
+}
+
+#popup2 a span {display: none;}
+
+#popup2 a:hover { background-color: #e9e9e2;  }
+
+/* the IE correction rule */
+#popup2 a:hover	{
+ background-color: #e9e9e2;
+text-indent: 0; /* added the default value */
+}
+
+#popup2 a:hover span{
+display: block;
+position: absolute;
+top: -65px;
+left: -100px;
+width: 190px;
+margin: 0px;
+padding: 10px 5px 10px 5px;
+color: #666;
+font-weight: normal;
+background: #fff;
+text-align: left;
+border: 1px solid #0081c6;
+border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; 
+
+}
+
+.callout2 {
+    position: relative;
+    margin: 18px 0;
+	width: 265px;
+    padding: 18px 20px;
+    background-color: #eef4f9;
+    /* easy rounded corners for modern browsers */
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+	font: normal 11px Arial, Helvetica, sans-serif;
+	
+}
+.callout2 .notch2 {
+    position: absolute;
+    bottom: -10px;
+    left: 100px;
+    margin: 0;
+    border-top: 10px solid #eef4f9;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+    /* ie6 height fix */
+    font-size: 0;
+    line-height: 0;
+     /* ie6 transparent fix */
+    _border-right-color: pink;
+    _border-left-color: pink;
+    _filter: chroma(color=pink);
+}
+
+.border-callout2 { border: 1px solid #0081c6; padding: 17px 19px; }
+.border-callout2 .border-notch2 { border-top-color: #0081c6; bottom: -11px; }
+
+.boton_ok { background-color:#1492CF;  
+  
+	text-align:center; 
+	float:left;  
+	width:2.25em; 
+	height:1.750em; 
+	padding-top:0.188em;  
+	font: normal 10px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF;
+	border:0;
+	-moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em; 
+	}
+
+
+
+
+/*PAGINA MAPA*/
+#div_flotante2 {
+	width: 100px;
+	height: 20px;
+	position: relative;
+	top:-596px;
+	left:865px;
+	z-index:1;
+	padding:5px; background-color:#FFF; border:solid 1px #999;
+}
+
+#pop3{padding-left:5px; padding-bottom:20px;
+ border:solid 1px #CCC;
+ background:#FFF;
+ width:383px;
+ height:232px; top:0px;
+ left:-275px;
+ position: absolute;
+ display:none;
+ box-shadow: 2px 2px 2px #ffc;
+   -webkit-box-shadow: 2px 2px 2px #999;
+   -moz-box-shadow: 2px 2px 2px #999; z-index:3;
+}
+
+div#enlace a{
+   float:left;
+    width:64px;
+    height:14px;
+	    background-image: url(../img/common/mas.gif);
+	    background-repeat: no-repeat; background-position:right; 
+	}
+	div#enlace a:focus{
+    background-image: url(../img/common/menos.gif);
+    background-repeat: no-repeat;
+	}
+	
+
+.borde_right { border-right:dashed 1px #CCC; margin-right:10px}
+
+
+/*reclamo pop up*/
+.input_calendar
+{
+    background: url(../img/buttons/calendar.gif)   no-repeat scroll 0 0 transparent ;  height:22px;  background-position: 105px 3px;
+    border: 1px solid #BCBCBC; margin-bottom:10px; 
+    font-size:11px;
+    color: #666; padding-left:2px; background-color:#FFF;
+       }
+	   
+. {  background-color:
+
+#fff;-moz-box-shadow: inset 1px 0  1px #999;   }
+
+	 .redondeadas {  background-color: #fff;
+
+border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px;}
+
+
+.rounded{
+border-radius:7px;
+-moz-border-radius:7px; /*Firefox*/
+-webkit-border-radius:7px; /*Safari y navegadores que usen WebKit*/
+}
+
+.rounded2{
+border-radius:7px;
+-moz-border-radius:7px; /*Firefox*/
+-webkit-border-radius:7px; /*Safari y navegadores que usen WebKit*/
+ 
+text-shadow: #fff 0px 1px 1px;
+box-shadow: 1px 1px 2px rgba(0,0,0,.5);
+-webkit-box-shadow: 1px 1px 2px rgba(0,0,0,.5);/*Safari y navegadores que usen WebKit*/
+-moz-box-shadow: 1px 1px 2px rgba(0,0,0,.5);
+ 
+background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#D7E9F3));
+background: -moz-linear-gradient(top,  #ffffff ,  #D7E9F3);
+filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff ', endColorstr='#D7E9F3');
+}
+
+/*Alojamiento Vouchers*/
+
+.voucher {width:650px; height:140px; overflow:auto;}
+
+
+/*DARKSITE*/
+
+.div_noticia {border-bottom:dotted 1px #666; margin-bottom:10px; padding-bottom:10px}
+.div_index {
+position: absolute;
+top: 65%; 
+left: 55%; 
+width: 600 px; 
+height: 400px; 
+margin-top: -200px; 
+margin-left: -300px; 
+}
+
+.btnLoginARPlus 
+{
+    width:40px;
+    height:23px;
+    cursor:pointer;    
+}
+
+
+
+/* visite argentina - varg y vargoa */
+#contenedor_arplus_varg { width: 100%; background: url(../img/backgrounds/bg_visite-argentina-varg.jpg) no-repeat top right; margin:  auto; }	
+.width740 {width:740px; }
+#contenedor_arplus_sap { width: 100%; background: url(../img/backgrounds/bg_visite-argentina-sap.jpg) no-repeat top right; margin:  auto; }	
+.width740 {width:740px; }
+#box_varg { width:590px; height:24px; padding:15px 0 15px 0px; margin: 25px 90px; background: url(../img/backgrounds/bg-box-varg.jpg) no-repeat top center;}
+#box_varg .select_millas { width: 185px; }
+#box_varg .select_millas2 { margin-top: 7px; width: 360px; margin-left: 15px; }
+#box_varg a.pago-reserva { background: url(../img/buttons/btn-gris-grande.jpg) no-repeat top left; color: #555555; display: block; float: left; font-size: 12px; font-weight: normal; height: 18px; padding: 3px 25px; width: 253px; margin-top: 25px; font-family:Tahoma, Geneva, sans-serif; }
+#box_varg a.pago-reserva:hover { text-decoration: none; }
+.varg .millas_borde { width: 362px; }
+table.varg-tabla { background: #ece9e9; color: #6e6e6e; margin: 10px 0; }
+table.varg-tabla td { padding: 10px; }
+table.varg-tabla td.cabecera { color: black; font-weight: bold; text-align: center; }
+table.varg-tabla td.blanco { background: #fff; }
+table.varg-tabla td.celeste { color: white; background: #6dc9f6; font-size: 11px; text-align: center; height: 28px; padding: 0px; }
+table.varg-tabla td.borde-right-blanco { border-right: solid 1px white; }
+table.varg-tabla td.borde-left-blanco { border-left: solid 1px white; }
+table.varg-tabla td.borde-bottom-blanco { border-bottom: solid 1px white; }
+.btn_varg2 { width:200px; height:45px; background-image: url(../img/buttons/arplus_vuelos_sky2.gif); padding:20px 0 0 20px}
+.btn_varg2_on { width:200px; height:45px; background-image: url(../img/buttons/arplus_vuelos_sky2b.gif); padding:20px 0 0 20px}
+.btn_varg{ width:190px; height:45px; background-image: url(../img/buttons/arplus_ganar_millas.gif); padding:20px 0 0 20px}
+.btn_varg_off { background-image: url(../img/buttons/arplus_ganar_millas_off.gif); height: 45px; padding: 20px 0 0 20px; width: 190px; }
+
+/*FORM Concurso*/
+.titulo_azul { 	font:  18px "Neo_san", Tahoma, Geneva, sans-serif; color:#0081c6; line-height: 100%; margin:0px }
+.titulo_gris { 	font:  18px "Neo_san", Tahoma, Geneva, sans-serif; color:#666; line-height: 100%; margin:0px }
+.boton_form { background-color:#1492CF;  
+  
+	text-align:center; 
+	float:left;  
+	width:75px; 
+	height:1.750em; 
+	padding-top:0.188em;  
+	font: normal 11px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF;
+	border:0;
+	-moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em; 
+	}
+/*FORM Concurso*/
+
+#newcont {
+	    width: 994px;
+    margin: 0 0 25px 8px;
+    position: relative;
+}
+
+#newcont .col-izq {
+    width: 200px;
+    float: left;
+}
+
+#newcont .col-der {
+    width: 784px;
+    float: left;
+    margin-left: 10px;
+    background: url(../img/backgrounds/colder-promos-top.jpg) no-repeat top center;
+    min-height: 100px;
+}
+#bannerRelacionadoLateral .caption-mensaje {
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    background-color: #6e6e6e;
+    padding: 20px;
+    height: 446px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#bannerRelacionadoLateral .caption-mensaje p, #bannerRelacionadoLateral .caption-mensaje a {
+    color: #FFF;
+}
+
+.nuevo-form .separador { border-bottom: 1px solid #535754 !important; margin-top: 0px!important; margin-bottom: 10px !important; }
+.nuevo-form fieldset { border: none; padding: 0px; margin: 0px; margin-bottom:12px; }
+.nuevo-form fieldset.unico, .nuevo-form fieldset.tercio, .nuevo-form fieldset.quinto, .nuevo-form fieldset.septimo, .nuevo-form fieldset.dostercios { height: 23px; float: left; }
+.nuevo-form fieldset.unico { width: 700px; }
+.nuevo-form fieldset.tercio { width: 223px; }
+.nuevo-form fieldset.dostercios { width: 461px; }
+.nuevo-form fieldset.quinto { width: 128px; } 
+.nuevo-form fieldset.septimo { width: 80px; }
+.nuevo-form .mright15 { margin-right: 15px !important; }
+.nuevo-form fieldset.links { height: auto !important; }
+
+/*.nuevo-form input:not(.ui-combobox-input), .nuevo-form select, .nuevo-form textarea, .nuevo-form .cont-c-ico { background: #ffffff; border: 1px solid #535754; color: #5D5D5D; font-size: 12px; height: 20px; *padding-top: 3px; *height: 16px; }*/
+.nuevo-form input, .nuevo-form select, .nuevo-form textarea, .nuevo-form .cont-c-ico { background: #ffffff; border: 1px solid #535754; color: #5D5D5D; font-size: 12px; height: 20px; *padding-top: 3px; *height: 16px; }
+/*.nuevo-form input:not(.ui-combobox-input), .nuevo-form .cont-c-ico { padding-left: 6px; width: 96%;  *padding-left: 3px; padding-top: 4px\0/; height: 17px\0/; }*/
+.nuevo-form input, .nuevo-form .cont-c-ico { padding-left: 6px; width: 96%;  *padding-left: 3px; /*padding-top: 4px\0/; height: 17px\0/;*/ }
+.nuevo-form .cont-c-ico { height: 21px; *height: 19px ;height: 22px\0/; *padding-top:0px; padding-top:0px \0/; }
+.nuevo-form .cont-c-ico input {border: medium none !important;float: left; height: 17px;height: 15px\0/;*height: 15px;width: 80%;*width: 89%;width: 89%\0/;padding-left: 0px;}
+/*.nuevo-form .cont-c-ico input { border: medium none !important; float: left; height: 17px; height: 15px\0/; *height: 15px; width: 90%; *width: 89%; width: 89%\0/; padding-left: 0px; }*/
+/*.nuevo-form .cont-c-ico input:not(.ui-combobox-input) { border: medium none !important; float: left; height: 17px; height: 15px\0/; *height: 15px; width: 90%; *width: 89%; width: 89%\0/; padding-left: 0px; }*/
+.nuevo-form textarea { padding-left: 6px; width: 98.7%;  *padding-left: 3px; padding-top: 4px\0/; height: 70px; float: left; }
+.nuevo-form select { width: 99.8%; height:23px; margin-top: 1px\0/; padding-top: -10px\0/; padding-left: 4px\0/; }
+/* ie7 */.nuevo-form input, .nuevo-form .cont-c-ico { *border-top: solid 2px #696969 !important; *border-left: solid 2px #696969 !important;  *border-bottom: solid 2px #e3e3e3!important; *border-right: solid 2px #e3e3e3!important;  }
+@media screen and (-webkit-min-device-pixel-ratio:0) { .nuevo-form select {  padding-left: 1px; } }
+:root .nuevo-form select {  margin-top: 0px \0/IE9; }
+/*.nuevo-form fieldset.tercio select { width: 223px;  width: 100%;height: 23px; padding: 3px; width: 99.9%; width: 100%\0/; *width: 100.5%; }*/
+.nuevo-form a { font-size: 11px; text-decoration: underline; }
+/*.nuevo-form a:not(.ui-button) { font-size: 11px; text-decoration: underline; }*/
+.nuevo-form input[type='submit'] { background: #535754; font-size: 12px; font-weight: bold; color: white; height:24px; width: 100%; *width: 100%; width: 100%\0/; }
+.nuevo-form input[type='submit'] {*border: none !important; cursor:pointer; }
+.nuevo-form input[type='checkbox'] { width: auto; float: left; height: auto; margin-right: 10px; padding: 0px; border: none; margin-top: 4px; *border: none; }
+.nuevo-form input[type="button"] {
+    background: none repeat scroll 0 0 #535754;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    height: 24px;
+    width: 100%;
+}
+.nuevo-form input.inpfecha { background: url("../img/common/datepicker_promo.jpg") no-repeat scroll 200px center white; }
+.nuevo-form .buscar { background: url("../img/common/search-ico.png") no-repeat scroll center center white; display:block; width: 21px; height: 21px; *height: 19px; text-indent: -1000; float: right;  }
+.nuevo-form .rojo-error { /*border: solid 1px red !important;*/ color: red !important; }
+/*.nuevo-form fieldset a:not(.ui-button,.buscar) { height: 14px; }*/
+.nuevo-form fieldset a { height: 14px; }
+.nuevo-form label.coment { display: block; margin-bottom: 5px; text-align: center !important; }
+
+
+.bg-form-corto { background: url(../img/backgrounds/bg_promo_form-corto.jpg) repeat-x left bottom; float: left; margin-top: 10px; min-height: 60px; width: 720px; }
+.bg-form form, .bg-form-corto form { margin: 5px 10px 13px; width: 700px; }
+#newcont .col-der .separador,
+#newcont .col-der .separador-azul { margin: 15px 0px; width: 100%; clear: both;}
+
+#newcont .col-der .cont-padding {
+    float: left;
+    margin: 40px 32px 0px 32px;
+    min-height: 100px;
+    width: 719px;
+}

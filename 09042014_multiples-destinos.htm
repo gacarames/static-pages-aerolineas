@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>aerolineas.com</title>
+	<meta http-equiv="title" content="SkyPriority en Aerol&#237;neas Argentinas - aerolineas.com">
+	<meta name="Description" content="SkyPriority conjunto de beneficios que le permitir&#225;n tener una experiencia en los aeropuertos m&#225;s &#225;gil y placentera">
+    <link href="Images/condor_chico.gif" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />    
+    <link href="Content/themes/V2/css/screen.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/css/estilo.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/css/form_argentina.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/css/form_argentina_home.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/css/Extras.css" rel="stylesheet"/>
+    <link href="Content/themes/V2/Error.css" rel="stylesheet"/>
+    <link href="Content/themes/V2/jquery-ui-timepicker-addon.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.core.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.resizable.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.selectable.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.accordion.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.autocomplete.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.button.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.dialog.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.slider.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.tabs.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.datepicker.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.progressbar.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.theme.css" rel="stylesheet"/>
+    
+    <script src="Scripts/jquery-1.8.3.js"></script>
+    <script src="Scripts/jquery-ui-1.9.2.js"></script>
+    <script src="Scripts/jquery.unobtrusive-ajax.js"></script>
+	<script src="Scripts/jquery.validate.js"></script>
+    <script src="Scripts/modernizr-2.5.3.js"></script>
+    <script src="Scripts/funcionesVarias.js"></script>
+    <script src="Scripts/jquery.watermark.js"></script>
+</head>
+<body>
+    <!-- CONTENEDOR -->
+  <div id="contenedor_home">
+    <header>
+        <div id="fecha" align="right">
+            <table width="1002px">
+                <tr>
+                    <td align="left">
+                        <!--Localizacion-->
+                        <div id="Country">
+                        </div>
+                        <!--fin de Localizacion-->
+                    </td>
+                    <td align="right">
+                        <!--fecha-->
+                        <div id="fecha2">
+                            <div class="counrty_today_partials">jueves, 18 de abril de 2013</div>
+                        </div>
+                        <!--fin de fecha-->
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br clear="all" />
+        <!--HEADER-->
+        <div id="header" />
+        <div class=" header_borde">
+        </div>
+        <div id="header-left">
+            <a href="#" target="_self">
+                <a href="" title="Logo Aerolineas Argentinas"><img alt="Logo Aerolineas Argentinas" border="0" height="44px" hspace="0" src="Content/themes/V2/img/common/logo_Aerolineas.gif" vspace="0" width="252px" /></a>
+            </a>
+            <span class="screen-reader-text">
+                Aerolineas.com</span>
+        </div>
+            <div class="fleft">
+                <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=228%26idIdioma=es" title=""><img alt="" src="Content/themes/V2/img/buttons/Sello.png" /></a>
+            </div>
+        <div align="right" id="logo-header">
+            <div class=" width300   fleft  mleft100 mtop5">
+                <a href="" title="Logo Aerolineas Argentinas"><img alt="Logo Aerolineas Argentinas" border="0" height="42px" hspace="0" src="Content/themes/V2/img/common/aerolineas_argentinasST.jpg" vspace="0" width="100px" /></a>
+                <a href="http://www.skyteam.com//es" target="blank" title=""><img alt="" src="Content/themes/V2/img/common/skyteam.jpg" /></a>
+            </div>
+            <div class=" fleft mtop10 ">
+                <!--select paises-->
+                <div id="CultureContainer">
+                    <select class="INPUTBuscador" id="culture" name="culture" onChange="onCultureChanged()" style="width: 150px; margin-left: 10px;"><option selected="selected" value="es-AR">Argentina (Espa&#241;ol)</option>
+    <option value="en-AR">Argentina (Ingl&#233;s)</option>
+    <option value="en-AU">Australia</option>
+    <option value="es-BO">Bolivia</option>
+    <option value="pt-BR">Brasil</option>
+    <option value="en-CA">Canad&#225;</option>
+    <option value="es-CO">Colombia</option>
+    <option value="es-CL">Chile</option>
+    <option value="es-EU">Europa (Espa&#241;ol)</option>
+    <option value="it-EU">Europa (Italiano)</option>
+    <option value="en-EU">Europa (English)</option>
+    <option value="es-MX">M&#233;xico</option>
+    <option value="en-NZ">New Zeland</option>
+    <option value="es-PA">Paraguay</option>
+    <option value="es-PE">Per&#250; (Espa&#241;ol)</option>
+    <option value="es-UY">Uruguay</option>
+    <option value="es-US">United States (Espa&#241;ol)</option>
+    <option value="en-US">United States (English)</option>
+    <option value="es-VE">Venezuela</option>
+    <option value="es-US">Otros pa&#237;ses (Espa&#241;ol)</option>
+    <option value="en-US">Other Countries (English)</option>
+    </select>
+                </div>
+                <!--fin de select paises-->
+            </div>
+            <div class="width400 mtop25 clearing">
+                <p>
+                     <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=58%26idIdioma=es">Cont&#225;ctanos</a>
+                    <img src="Content/themes/V2/img/buttons/mail.gif" alt="Cont&#225;ctanos" border="0" class="imgCont" />
+                    <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=7&idIdioma=es">0800-000-0000</a>
+                </p>
+            </div>
+        </div>
+        <!-- /HEADER -->
+        <br clear="all" />
+        <a name="startcontent" id="startcontent"></a>
+        <!-- NAVBAR -->
+        <div id="navbar">
+            <div id="botonera">
+    <div class="boton  width_6">
+    <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=164%26idIdioma=es">La Empresa</a>
+    <div class="transparent">
+        <ul>
+            <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=2%26idIdioma=es">Conocenos</a></li>
+            <li><a href="SkyTeamAcercaDe.htm">Alianza SkyTeam</a></li>
+            <li><a href="SkyTeamSkyPriority.htm">SkyPriority</a></li>
+            <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=239%26idIdioma=es">Aerol&#237;neas Hoy</a></li>
+            <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=82%26idIdioma=es">Recursos Humanos</a></li>
+            <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=68%26idIdioma=es">Prensa</a></li>
+                <li><a href="http://blog.aerolineas.com.ar/blog/" target="_blank">Blog de Noticias</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=152%26idIdioma=es">Proveedores</a></li>
+        </ul>
+    </div>
+    </div>
+    <div class="boton">
+    <img alt="" src="Content/themes/V2/img/backgrounds/line.jpg" />
+    </div>
+    <div class="boton width_1">
+    <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=163%26idIdioma=es">Reservas y Servicios</a>
+    <div class="transparent">
+        <ul>
+            <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=110%26idIdioma=es">Compr&#225; tu pasaje</a></li>
+            <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=29%26idIdioma=es">Horario de vuelos programados</a></li>
+            <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=111%26idIdioma=es">Estado actual de tu vuelo</a></li>
+            <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=168%26idIdioma=es">Cheque&#225; tu reserva</a></li>
+            <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=113%26idIdioma=es">Hac&#233; tu Web Check-in</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=176%26idIdioma=es%26tipo=V">Paquetes Aerol&#237;neas Vacaciones</a></li>
+            <li><a href="http://www.aerolineas.com.ar/arg/bodies/reservas/htmls/autos.asp?idIdioma=es" target="_blank">Alquiler de Auto</a></li>
+            <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=163%26idIdioma=es">Alojamiento</a></li>
+            <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=144%26idIdioma=es">Constancia de cr&#233;dito fiscal</a></li>
+            <li><a href="http://www.aerolineas.com.ar/arg/bodies/popup_reembolsoBillete.asp?idSitio=AR%26idIdioma=es" target="_blank">Devoluci&#243;n de pasajes</a></li>
+        </ul>
+    </div>
+    </div>
+    <div class="boton">
+    <img alt="" src="Content/themes/V2/img/backgrounds/line.jpg" />
+    </div>
+    <div class="boton width_1">
+    <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=163%26idIdioma=es">Info para tu viaje</a>
+    <div class="transparent">
+        <ul>
+            <li><a href="MapaDestinos.htm">A d&#243;nde viajar</a></li>
+            <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=50%26idIdioma=es">Equipaje</a></li>
+            <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=43%26idIdioma=es">Documentaci&#243;n para tu viaje</a></li>
+            <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=22%26idIdioma=es">Info de servicios especiales</a></li>
+            <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=44%26idIdioma=es">Embarque de Menores, Embarazadas y Mascotas</a></li>
+            <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=4%26idIdioma=es">Nuestros aviones y servicios a bordo</a></li>
+            <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=27%26idIdioma=es">Mapa y datos de Aeropuertos</a></li>
+            <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=7%26idIdioma=es">Sucursales</a></li>
+        </ul>
+    </div>
+    </div>
+    <div class="boton ">
+    <img alt="" src="Content/themes/V2/img/backgrounds/line.jpg" />
+    </div>
+    <div class="boton width_2 ">
+    <a href="VuelosBaratosModulos">Vuelos baratos</a>
+    <div class="transparent">
+        <ul>
+            <li><a href="MapaDestinos.htm">Mapa de destinos</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=228%26idIdioma=es">Tarifa m&#225;s baja garantizada</a></li>
+            <li><a href="CuponesDescuentosHome.htm">Cupones de descuento</a></li>
+            <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=169%26idIdioma=es">Compr&#225; en aerolineas.com</a></li>
+            <li><a href="VisiteArgentina.htm">Visite Argentina</a></li>
+            <li><a href="SouthAmericanPass.htm">South American Pass</a></li>
+        </ul>
+    </div>
+    </div>
+    <div class="boton">
+    <img alt="" src="Content/themes/V2/img/backgrounds/line.jpg" />
+    </div>
+    <div class=" boton width_1">
+    <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=15%26idIdioma=es">Aerol&#237;neas Plus</a>
+    <div class="transparent">
+        <ul>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=245%26idIdioma=es">Nuevo Aerol&#237;neas Plus</a></li>
+            <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=15%26idIdioma=es">Acerca de Aerol&#237;neas Plus</a></li>
+            <li><a href="javascript:openFormInscripcionPlus()">Registrate</a></li>
+            <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=77%26idIdioma=es">Mi cuenta Plus</a></li>
+            <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=216%26idIdioma=es">Nueva tabla de millas</a></li>
+            <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=223%26idIdioma=es">Ganar millas</a></li>
+            <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=225%26idIdioma=es">Utilizar millas</a></li>
+            <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=227%26idIdioma=es">Compra de millas</a></li>
+            <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=234%26idIdioma=es">Upgrade en Canje de Millas</a></li>
+            <li><a href="CuponesDescuentosHome.htm">Beneficios</a></li>
+            <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=192%26idIdioma=es">Socios Elite</a></li>
+            <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=18%26idIdioma=es">Informaci&#243;n de Inter&#233;s</a></li>
+            <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=56%26idIdioma=es">Empresas Asociadas</a></li>
+            <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=103%26idIdioma=es">Preguntas Frecuentes</a></li>
+            <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=14%26idIdioma=es">Condiciones de Uso</a></li>
+        </ul>
+    </div>
+    </div>
+    <div class="boton">
+    <img alt="" src="Content/themes/V2/img/backgrounds/line.jpg" />
+    </div>
+    <div class="boton width_6">
+    <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=167%26idIdioma=es">Corporativos</a>
+    <div class="transparent">
+        <ul>
+            <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=33%26idIdioma=es">Acuerdos Corporativos</a></li>
+            <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=36%26idIdioma=es">Ferias y Congresos</a></li>
+            <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=60%26idIdioma=es">Club Secretarias</a></li>
+        </ul>
+    </div>
+    </div>
+    
+    <script type="text/javascript">
+    function openFormInscripcionPlus() {
+        document.getElementById('ifrInscripcion').src = 'https://ftarplus.aerolineas.com.ar/plus/PlusRealNewDic/index.php?secc=11&idi=es&idSitio=AR';
+        document.getElementById('pop2').style.display = 'block';
+        document.getElementById('fondo-negro').style.display = 'block';
+    }
+    function closeFormInscripcionPlus() {
+        document.getElementById('ifrInscripcion').src = '';
+        document.getElementById('pop2').style.display = 'none';
+        document.getElementById('fondo-negro').style.display = 'none';
+    }
+    </script> 
+    <div id="fondo-negro"></div>
+    <div id="pop2" style="height:880px;">
+        <p>
+            <a href="javascript:closeFormInscripcionPlus()">
+                <img src="Content/themes/V2/img/buttons/x_btn.jpg" class="fright mright5" alt="Cerrar" />
+            </a>
+        </p> 
+    <h3 class="tituloplus_linea" style="padding-bottom:10px;">INSCRIPCIÓN <span class="gris2">ONLINE</span></h3>
+    <p>Para inscribirte en el Programa de Pasajeros Frecuentes Aerol&iacute;neas Argentinas Plus, complet&aacute; el formulario a continuaci&oacute;n y conocé las Condiciones<br>Generales del Programa antes de hacer click en  <strong>ACEPTAR</strong>.</p>
+    <iframe width="800" id="ifrInscripcion" height="800" src="" frameborder="0"></iframe>
+    </div>
+            </div>
+        </div>
+        <!-- / NAVBAR -->
+        <div style="background-color:#FFF;height:50px;position:relative;">
+            <!-- LOGIN AR PLUS -->
+    <script type="text/javascript">
+    var url_loginARPlus = 'https://ftarplus.aerolineas.com.ar/plus/PlusRealNewDic/aplicaciones/ajax/login_step1.php?callback=?';
+    var url_loginOk = '/es-AR/LoginARPlus/LoginOk?Nombre=_NOMBRE_&Socio=_SOCIO_';
+     $(function () {
+    $('#frmLoginARPlus').validate({
+        rules: {
+            NroSocio: 'required',
+            Clave: 'required'
+        },
+        messages: {
+            NroSocio: 'Debe ingresar el campo "Número Socio"',
+            Clave: 'Debe ingresar el campo "Clave"'
+        },
+        onkeyup: false,
+        onfocusout: false,
+        onclick: false,
+        showErrors: function (errMap, errList) {
+            if (errList.length) { alert(errList[0].message); }
+        },
+        submitHandler: function (form) {
+            $.getJSON(url_loginARPlus, { nrosocio: $("#NroSocio").val(), clave: $("#Clave").val() }, function (data) {
+                if (parseInt(data.isOk, 10)) {
+                    url_loginOk = url_loginOk.replace("_NOMBRE_", data.nombre).replace("_SOCIO_", data.socio).replace("&", "&");
+                    $.get(url_loginOk, null, function (response) {
+                        window.location = 'http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=77&idIdioma=es';
+                    });
+                }
+            });
+        }
+    });
+    });
+    </script>
+    <div id="buscador_principal" style="text-align:center;">
+    <div>
+    <input class="buscador_plus" type="button" value="Ingres&#225; a tu cuenta Aerol&#237;neas Plus" onclick="mostrarElemento('loginPlus');return false;" style="cursor:pointer;" />
+    </div>
+    </div>
+    <form action="/es-AR/LoginARPlus/Submitted" id="frmLoginARPlus" method="post" name="frmLoginARPlus" onsubmit="return false;">    <div id="loginPlus" class="pop-form-arplus" style="display:none;padding:0;top:20px;">
+    <div style="margin:37px auto 0 auto;width:375px;">
+        <p class="mleft10 azul" style="height:16px;">
+            <strong class="fleft">Ingresar a mi cuenta</strong> 
+            <img src="Content/themes/V2/img/common/ico_cerrar.png" onclick="mostrarElemento('loginPlus');" class="fright mright4" style="cursor:pointer;" />
+        </p>
+        <div class="mleft10">
+            <input class="width170 redondeado" id="NroSocio" name="NroSocio" type="text" value="" />
+            <input class="width160 redondeado mleft10" id="Clave" name="Clave" type="password" />
+        </div>
+        <div class="mleft10 fleft width170">
+            <ul>                    
+                <li><a class="gris11" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=77%26idIdioma=es%26olvidastetuclave=1">No puedo ingresar en mi cuenta</a></li>
+                <li><a class="gris11" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=77%26idIdioma=es%26olvidastetunrosocio=1">Olvidaste tu N&#186; de Socio?</a></li>
+            </ul>
+        </div>
+        <div class="mleft17 fleft width170">
+            <ul>
+                <li><a class="gris11" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=77%26idIdioma=es%26primeravez=1">Primera vez que ingreso</a></li>
+            </ul>
+        </div>
+        <div class="fright">
+            <input type="submit" value="OK" class="boton_ok redondeado btnLoginARPlus mright8" />
+        </div>
+    </div>
+    </div>
+    </form>
+            <!-- / LOGIN AR PLUS -->            
+    <div style="float: left; width: 700px; margin-left: 10px; margin-top: 10px">
+                <span class="gris12"><a href='http://www.aerolineas.com.ar' target='' class='link'>Importante! Presentaci&#243;n en Aeropuertos: Vuelos Nacionales 2 hs antes. Vuelos Internacionales 3 hs antes</a></span>
+    </div>
+        </div>
+    </header>
+  <div>
+   <section>
+      <div class="salto"></div>
+      <div id="newcont" class="fleft">
+      	  <p class="breadcrumb">Reservas y Servicios > Múltiples Destinos</p> 	
+		  <h1>Múltiples Destinos</h1>
+          <div class="col-izq">
+            <img src="Content/themes/V2/img/backgrounds/colizq-vuelos.jpg" width="200" height="652">
+          </div>
+          <div class="col-der">
+                <div class="cont-padding">
+                    <h2 class="tit">Múltiples Destinos</h2>
+                    <p>Disfrutá las tarifas más baratas que ofrece Aerolíneas Argentinas y  conocé el destino nacional o internacional que vos quieras.<br>Descubrí algunos de los increíbles destinos de Argetnina como Bariloche, Córdoba, El Calafate, Mendoza, Iguazú, Ushuaia, Mar del Plata y alguno de nuestros destinos internacionales como Barcelona, Roma, Río de Janeiro, Santiago de Chile, Miami, Nueva York. ¡Elegítu destino, tu vuelo y Aerolíneas Argentinas te lleva!</p>
+                    <div class="bg-form">
+                    	<form class="nuevo-form">
+                        	<div class="msj-error">
+                                <p>Por favor , completa los campos correctamente.</p>
+                            </div>
+                            
+                            <fieldset class="tercio mright15">&nbsp;</fieldset>
+                           <fieldset class="tercio mright15">
+                                    	<select name="">
+                                        	<option>País de Residencia</option>
+                                            <option>opcion</option>
+                                        </select>
+                                    </fieldset>
+                            <fieldset class="tercio">&nbsp; </fieldset>
+                          <div class="separador"></div>
+                          
+                          
+                          
+                            
+                            <fieldset class="tercio mright15">
+                                <div class="cont-c-ico">
+                                    <input class="rojo-error" type="text" value="Origen" name="">
+                                    <a class="buscar" href="#"></a>
+                                </div>
+                            </fieldset>
+                            <fieldset class="tercio mright15">
+                                <div class="cont-c-ico">
+                                    <input type="text" value="Destino" name="">
+                                    <a class="buscar" href="#"></a>
+                                </div>
+                            </fieldset>
+                            <fieldset class="tercio">
+                              <input type="text" value="ida" name="" class="inpfecha">
+                          </fieldset>
+                          
+                          <fieldset class="tercio mright15">
+                                <div class="cont-c-ico">
+                                    <input type="text" value="Origen" name="">
+                                    <a class="buscar" href="#"></a>
+                                </div>
+                            </fieldset>
+                            <fieldset class="tercio mright15">
+                                <div class="cont-c-ico">
+                                    <input type="text" value="Destino" name="">
+                                    <a class="buscar" href="#"></a>
+                                </div>
+                            </fieldset>
+                            <fieldset class="tercio">
+                              <input type="text" value="ida" name="" class="inpfecha">
+                          </fieldset>
+                          
+                           <fieldset class="tercio mright15">
+                                <div class="cont-c-ico">
+                                    <input type="text" value="Origen" name="">
+                                    <a class="buscar" href="#"></a>
+                                </div>
+                            </fieldset>
+                            <fieldset class="tercio mright15">
+                                <div class="cont-c-ico">
+                                    <input type="text" value="Destino" name="">
+                                    <a class="buscar" href="#"></a>
+                                </div>
+                            </fieldset>
+                            <fieldset class="tercio">
+                              <input type="text" value="ida" name="" class="inpfecha">
+                          </fieldset>
+                          
+                           <fieldset class="tercio mright15">
+                                <div class="cont-c-ico">
+                                    <input type="text" value="Origen" name="">
+                                    <a class="buscar" href="#"></a>
+                                </div>
+                            </fieldset>
+                            <fieldset class="tercio mright15">
+                                <div class="cont-c-ico">
+                                    <input type="text" value="Destino" name="">
+                                    <a class="buscar" href="#"></a>
+                                </div>
+                            </fieldset>
+                            <fieldset class="tercio">
+                              <input type="text" value="ida" name="" class="inpfecha">
+                          </fieldset>
+                          
+                           <fieldset class="tercio mright15">
+                                <div class="cont-c-ico">
+                                    <input type="text" value="Origen" name="">
+                                    <a class="buscar" href="#"></a>
+                                </div>
+                            </fieldset>
+                            <fieldset class="tercio mright15">
+                                <div class="cont-c-ico">
+                                    <input type="text" value="Destino" name="">
+                                    <a class="buscar" href="#"></a>
+                                </div>
+                            </fieldset>
+                            <fieldset class="tercio">
+                              <input type="text" value="ida" name="" class="inpfecha">
+                          </fieldset>
+                          
+                           <fieldset class="tercio mright15">
+                                <div class="cont-c-ico">
+                                    <input type="text" value="Origen" name="">
+                                    <a class="buscar" href="#"></a>
+                                </div>
+                            </fieldset>
+                            <fieldset class="tercio mright15">
+                                <div class="cont-c-ico">
+                                    <input type="text" value="Destino" name="">
+                                    <a class="buscar" href="#"></a>
+                                </div>
+                            </fieldset>
+                            <fieldset class="tercio">
+                              <input type="text" value="ida" name="" class="inpfecha">
+                          </fieldset>
+                          
+                           <fieldset class="tercio mright15">
+                                <div class="cont-c-ico">
+                                    <input type="text" value="Origen" name="">
+                                    <a class="buscar" href="#"></a>
+                                </div>
+                            </fieldset>
+                            <fieldset class="tercio mright15">
+                                <div class="cont-c-ico">
+                                    <input type="text" value="Destino" name="">
+                                    <a class="buscar" href="#"></a>
+                                </div>
+                            </fieldset>
+                            <fieldset class="tercio">
+                              <input type="text" value="ida" name="" class="inpfecha">
+                          </fieldset>
+                          
+                           <fieldset class="tercio mright15">
+                                <div class="cont-c-ico">
+                                    <input type="text" value="Origen" name="">
+                                    <a class="buscar" href="#"></a>
+                                </div>
+                            </fieldset>
+                            <fieldset class="tercio mright15">
+                                <div class="cont-c-ico">
+                                    <input type="text" value="Destino" name="">
+                                    <a class="buscar" href="#"></a>
+                                </div>
+                            </fieldset>
+                            <fieldset class="tercio">
+                              <input type="text" value="ida" name="" class="inpfecha">
+                          </fieldset>
+                          
+                           <fieldset class="tercio mright15">
+                                <div class="cont-c-ico">
+                                    <input type="text" value="Origen" name="">
+                                    <a class="buscar" href="#"></a>
+                                </div>
+                            </fieldset>
+                            <fieldset class="tercio mright15">
+                                <div class="cont-c-ico">
+                                    <input type="text" value="Destino" name="">
+                                    <a class="buscar" href="#"></a>
+                                </div>
+                            </fieldset>
+                            <fieldset class="tercio">
+                              <input type="text" value="ida" name="" class="inpfecha">
+                          </fieldset>
+                          
+                           <fieldset class="tercio mright15">
+                                <div class="cont-c-ico">
+                                    <input type="text" value="Origen" name="">
+                                    <a class="buscar" href="#"></a>
+                                </div>
+                            </fieldset>
+                            <fieldset class="tercio mright15">
+                                <div class="cont-c-ico">
+                                    <input type="text" value="Destino" name="">
+                                    <a class="buscar" href="#"></a>
+                                </div>
+                            </fieldset>
+                            <fieldset class="tercio">
+                              <input type="text" value="ida" name="" class="inpfecha">
+                          </fieldset>
+                          
+                           <fieldset class="tercio mright15">
+                                <div class="cont-c-ico">
+                                    <input type="text" value="Origen" name="">
+                                    <a class="buscar" href="#"></a>
+                                </div>
+                            </fieldset>
+                            <fieldset class="tercio mright15">
+                                <div class="cont-c-ico">
+                                    <input type="text" value="Destino" name="">
+                                    <a class="buscar" href="#"></a>
+                                </div>
+                            </fieldset>
+                            <fieldset class="tercio">
+                              <input type="text" value="ida" name="" class="inpfecha">
+                          </fieldset>
+                          
+                           <fieldset class="tercio mright15">
+                                <div class="cont-c-ico">
+                                    <input type="text" value="Origen" name="">
+                                    <a class="buscar" href="#"></a>
+                                </div>
+                            </fieldset>
+                            <fieldset class="tercio mright15">
+                                <div class="cont-c-ico">
+                                    <input type="text" value="Destino" name="">
+                                    <a class="buscar" href="#"></a>
+                                </div>
+                            </fieldset>
+                            <fieldset class="tercio">
+                              <input type="text" value="ida" name="" class="inpfecha">
+                          </fieldset>
+                          
+                           <fieldset class="tercio mright15">
+                                <div class="cont-c-ico">
+                                    <input type="text" value="Origen" name="">
+                                    <a class="buscar" href="#"></a>
+                                </div>
+                            </fieldset>
+                            <fieldset class="tercio mright15">
+                                <div class="cont-c-ico">
+                                    <input type="text" value="Destino" name="">
+                                    <a class="buscar" href="#"></a>
+                                </div>
+                            </fieldset>
+                            <fieldset class="tercio">
+                              <input type="text" value="ida" name="" class="inpfecha">
+                          </fieldset>
+                          
+                           <fieldset class="tercio mright15">
+                                <div class="cont-c-ico">
+                                    <input type="text" value="Origen" name="">
+                                    <a class="buscar" href="#"></a>
+                                </div>
+                            </fieldset>
+                            <fieldset class="tercio mright15">
+                                <div class="cont-c-ico">
+                                    <input type="text" value="Destino" name="">
+                                    <a class="buscar" href="#"></a>
+                                </div>
+                            </fieldset>
+                            <fieldset class="tercio">
+                              <input type="text" value="ida" name="" class="inpfecha">
+                          </fieldset>
+                          
+                           <fieldset class="tercio mright15">
+                                <div class="cont-c-ico">
+                                    <input type="text" value="Origen" name="">
+                                    <a class="buscar" href="#"></a>
+                                </div>
+                            </fieldset>
+                            <fieldset class="tercio mright15">
+                                <div class="cont-c-ico">
+                                    <input type="text" value="Destino" name="">
+                                    <a class="buscar" href="#"></a>
+                                </div>
+                            </fieldset>
+                            <fieldset class="tercio">
+                              <input type="text" value="ida" name="" class="inpfecha">
+                          </fieldset>
+                          
+                           <fieldset class="tercio mright15">
+                                <div class="cont-c-ico">
+                                    <input type="text" value="Origen" name="">
+                                    <a class="buscar" href="#"></a>
+                                </div>
+                            </fieldset>
+                            <fieldset class="tercio mright15">
+                                <div class="cont-c-ico">
+                                    <input type="text" value="Destino" name="">
+                                    <a class="buscar" href="#"></a>
+                                </div>
+                            </fieldset>
+                            <fieldset class="tercio">
+                              <input type="text" value="ida" name="" class="inpfecha">
+                          </fieldset>
+                          
+                          <div class="separador"></div>
+                          
+                          <fieldset class="tercio mright15">
+                            </fieldset>
+                            <fieldset class="tercio mright15">
+                                <select name="">
+                                    <option>Economy</option>
+                                    <option>opcion</option>
+                                </select>
+                            </fieldset>
+                            <fieldset class="tercio">
+                            </fieldset>
+                            
+                            <fieldset class="tercio mright15">
+                                <select name="">
+                                    <option>1 Adulto</option>
+                                    <option>Opcion</option>
+                                </select>
+                            </fieldset>
+                            <fieldset class="tercio mright15">
+                                <select name="">
+                                    <option>1 niño (entre 2 y 11 años)</option>
+                                    <option>Opcion</option>
+                                </select>
+                            </fieldset>
+                            <fieldset class="tercio">
+                                <select name="">
+                                    <option>1 niño (entre 2 y 11 años)</option>
+                                    <option>Opcion</option>
+                                </select>
+                            </fieldset>
+                            
+                            <div class="separador"></div>
+                            
+                            <fieldset class="tercio links mright15">
+                            	<a class="azul11" href="#">Condiciones Generales</a>
+                            </fieldset>
+                            <fieldset class="tercio mright15">
+                            </fieldset>
+                            <fieldset class="tercio">
+                                <input type="button" name="" value="Aceptar">
+                            </fieldset>  
+                        </form>
+                    </div>                                        
+            </div>
+         	<div class="bottom-col"></div>
+          </div>
+          <div id="relacionados">              
+              <div class="mod2rel">
+                  <a href="#" class="mod2rel1"><img width="480" height="70" src="Content/themes/V2/img/relacionados/mod2_01.jpg"></a>
+                  <a href="#" class="mod2rel2"><img width="480" height="70" src="Content/themes/V2/img/relacionados/mod2_02.jpg"></a>
+              </div>             
+          </div>  
+      </div>
+  </section>
+  </div>
+  <footer>
+      <!--pie-->
+      
+  <script type="text/javascript">
+  
+  function abrirAustral() {
+    window.open('http://www.austral.com.ar/index.asp?idSitio=AR&idIdioma=es','Austral', 'scrollbars=yes, resizable=1,width=1020,height=805');
+  }
+  
+  function popup_condiciones_transporte() {
+    var winC = window.open('http://www.aerolineas.com.ar/arg/bodies/CondicionesGrales_contratoTransporte.asp?idSitio=AR&idIdioma=es', 'wContr', 'scrollbars=yes, resizable=1,width=800,height=600');
+    winC.moveTo(0, 0);
+  }
+  
+  
+  </script> 
+         <div id="pie">
+          <div class="ml10  mtop15">
+              
+              
+  <div class="azul fleft mtop20">
+              <a href='http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=143&idIdioma=es                       ' target='_blank' class='link'>Clima                                                                                               </a> <span> | </span>
+              <a href='http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=111&idIdioma=es                       ' target='' class='link'>Conoc&#233; el estado de tu vuelo                                                                        </a> <span> | </span>
+              <a href='http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=103&idIdioma=es                       ' target='' class='link'>Preguntas frecuentes                                                                                </a> <span> | </span>
+              <a href='http://www.aerolineas.com.ar/Arg/bodies/popup_reembolsoBillete.asp?idSitio=AR&idIdioma=es           ' target='_blank' class='link'>Devoluci&#243;n de ticket                                                                                </a> <span> | </span>
+  </div>
+              <div class=" fright mright15 mtop15">
+                  <div id="fb-root"></div>
+                  <script language="javascript" type="text/javascript">
+                      (function (d, s, id) {
+                          var js, fjs = d.getElementsByTagName(s)[0];
+                          if (d.getElementById(id)) return;
+                          js = d.createElement(s); js.id = id;
+                          js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1";
+                          fjs.parentNode.insertBefore(js, fjs);
+                      } (document, 'script', 'facebook-jssdk'));
+                  </script>
+                  <div class="fb-like mbot5" data-href="http://www.facebook.com/aerolineas.argentinas" data-send="false" data-layout="button_count" data-width="77" data-show-faces="false" data-font="arial"></div>
+                  <a href="https://www.facebook.com/Aerolineas.argentinas" target="_blank">
+                      <img src="Content/themes/V2/img/common/ic-facebook.gif" alt="Facebook" width="22" height="22" border="0" /></a>
+                  <a href="http://twitter.com/Aerolineas_AR/" target="_blank">
+                      <img src="Content/themes/V2/img/common/ic-Twitter.jpg" alt="Twitter" width="22" height="22" border="0" /></a>
+                  <a href="https://plus.google.com/106198199507305429358/posts" target="_blank">
+                      <img src="Content/themes/V2/img/common/ic-gplus.gif" alt="Facebook" width="22" height="22" border="0" /></a>
+                  
+                  <a href="http://www.youtube.com/user/AerolineasAR" target="_blank">
+                      <img src="Content/themes/V2/img/common/ic-YouTube.gif" alt="Youtube" width="22" height="22" border="0" /></a>
+                  <a href="http://www.Aerolineas.com.ar/arg/rss.asp?idSitio=AR&idIdioma=es" target="_blank">
+                      <img src="Content/themes/V2/img/common/ic-RSS.gif" alt="Rss" width="22" height="22" border="0" /></a></div>
+              <br clear="all" />
+          </div>
+          <div class="div">
+          </div>
+          <div class="div_pie">
+              <div class="div_links">
+  
+              
+  
+                  <div class="div_partner">
+                      <img src="Content/themes/V2/img/common/footer-logoAustral.gif" alt="Logo Austral" onclick="abrirAustral();" style="cursor:pointer;" />
+                  </div>
+                  <div class="div_partner">
+                      <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=81%26idIdioma=es" title=""><img alt="@MainFooterResource.JetPaq_Logo" src="Content/themes/V2/img/common/footer-logoJetPaq.gif" /></a>
+                  </div>
+                  <div class="div_partner">
+                      <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=9%26idIdioma=es" title=""><img alt="@MainFooterResource.Aerohandling_Logo" src="Content/themes/V2/img/common/footer-logoAerohandling.gif" /></a>
+                  </div>
+                  <div class="div_partner">
+                      <a href="http://www.optar.com/" target="_blank">
+                          <img src="Content/themes/V2/img/common/footer-logoOptar.gif" alt="Logo Optar" border="0"/>
+                      </a>
+                  </div>
+                 <div class="div_partner mtop7 mleft20"><img src="Content/themes/V2/img/common/logo_arg.jpg" alt="Logo Aerol&#237;neas Argentinas" width="47" height="30" />
+                 </div>
+                 <div class="div_partner mtop14 mleft25"><img src="Content/themes/V2/img/common/argentina_paisbuenagente.gif" alt="Logo Aerol&#237;neas Argentinas - Un pa&#237;s con buena gente" />
+                 </div>
+            </div>
+              <br clear="all" />
+              <div class="codigo-qr">
+                  <a href="https://servicios1.afip.gov.ar/clavefiscal/qr/mobilePublicInfo.aspx?req=e1ttZXRob2Q9Z2V0UHVibGljSW5mb11bcGVyc29uYT0zMDY0MTQwNTU1NF1bdGlwb2RvbWljaWxpbz0wXVtzZWN1ZW5jaWE9MF1bdXJsPWh0dHA6Ly93d3cuYWVyb2xpbmVhcy5jb20uYXJdfQ==" target="_F960AFIPInfo">
+                      <img src="Content/themes/V2/img/common/qr_code.gif" alt="QR-Code" />
+                  </a>
+              </div>
+              <div class="pie_texto">
+                  <span>aerolineas.com Sitio Oficial de Aerolineas Argentinas. &#169; 1996 - 2013 Aerol&#237;neas Argentinas S.A.<br />
+                      <a class="pie" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=72%26idIdioma=es">Legales</a> |
+                      <a class="pie" href="#" onclick="popup_condiciones_transporte();"> Condiciones Generales de Transporte </a>|
+                      <a class="pie" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=94%26idIdioma=es">Mapa del Sitio</a> |
+                      <a class="pie" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=84%26idIdioma=es">Ud. est&#225; en un SITIO SEGURO</a> 
+                  </span>
+              </div>
+          </div>
+          <div class="div_borde">
+              <img src="Content/themes/V2/img/backgrounds/footer-right.gif" alt="" />
+          </div>
+      </div>
+  
+  
+      <!--fin de pie-->
+  </footer>
+  </div>
+    
+    
+
+
+    <script type="text/javascript">
+        function onCultureChanged() {
+            var cultureName = $("#culture").val();
+            GlobalCultureName = cultureName;
+
+            var ruta = '/es-AR/Culture/ChangeCulture';
+            ruta = '/es-AR/Culture/ChangeCulture';
+            //var redirectUrl = '/_culture_/SkyTeam/SkyPriority';
+            var redirectUrl = '/_culture_';
+
+            $.ajax({
+                url: ruta,
+                type: "post",
+                dataType: "json",
+                traditional: true,
+                async: false,
+                data: { 'selectedCultureName': cultureName },
+                success: function (result, responseText) {
+                    
+                    // // translateUrlAndRedirect(GlobalCultureName);
+
+                    //alert('Cultura cambiada exitosamente por: ' + result);
+
+                    // Redirecciono
+                    redirectUrl = redirectUrl.replace("_culture_", GlobalCultureName);
+                    window.location.replace(redirectUrl);
+
+                    //  // Recargo la página
+                    //window.location.reload();
+                },
+                error: function () {
+                    alert('Error al intentar cambiar la cultura');
+                }
+            });
+
+        }
+        
+    </script>
+
+    <!--************GOOGLE ANALYTICS*******************-->
+    
+    <!--************GOOGLE ANALYTICS*******************-->
+
+</body>
+</html>

@@ -1,0 +1,1023 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0077)http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=174&idIdioma=es -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7">
+<link rel="stylesheet" type="text/css" href="Content/themes/V2/css/estilo.css">
+<!--<link rel="stylesheet" type="text/css" href="../css/estilo.css" />-->
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="css/estilo_ie7.css" />
+<![endif]--> 
+<!-- * diccionario * -->
+
+	<!--********  Direccion de PRODUCCION  -->
+	
+
+<meta name="Robots" content="all">
+<meta http-equiv="Content-Language" content="es"> 
+<!--RSS-->
+<link rel="alternate" title="aerolineas.com - Novedades y Promociones" href="http://ww1.aerolineas.com.ar/arg/preRss.asp?idIdioma=es&idSitio=AR" type="application/rss+xml">
+<!--RSS-->
+
+
+<link rel="SHORTCUT ICON" href="http://ww1.aerolineas.com.ar/arg/images/favicon.ico" type="image/x-icon">
+<link href="Content/themes/V2/css/common2.css" rel="stylesheet" type="text/css">
+<link href="Content/themes/V2/css/inputs2.css" rel="stylesheet" type="text/css">
+<link href="Content/themes/V2/css/nuevoSite.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" async="" src="Scripts/dc.js"></script><script type="text/javascript" src="Scripts/swfObject.js"></script>
+<script type="text/javascript" src="Scripts/jquery.js"></script>
+<!-- * Conectividad * -->
+
+<!-- * Conectividad * -->
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-7304952-1']);
+	_gaq.push(['_setDomainName', 'aerolineas.com.ar']);
+	_gaq.push(['_setAllowLinker', true]);
+	_gaq.push(['_setAllowHash', false]);	
+	/*
+	_gaq.push(['_addIgnoredRef', 'aerolineas.com.ar']); 
+	_gaq.push(['_addIgnoredRef', 'www.aerolineas.com.ar']);
+	*/
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		//ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script><script type="text/javascript">
+function cmbPais_Change(cmbPais){
+	var urlDestino = cmbPais.value;
+	var idSitio = urlDestino.split("=");
+	es = idSitio[2];
+	location.href = "http://www.aerolineas.com.ar/" + cmbPais.value;
+}
+
+$(function(){
+	$(".image").click(function() {
+		var image = $(this).attr("rel");
+		$('#image').hide();
+		$('#image').fadeIn('slow');
+		$('#image').html('<img src="' + image + '"/>');
+		return false;
+	});
+});
+</script><link rel="stylesheet" type="text/css" href="../../../main.asp_files/home2.css"><script type="text/javascript">
+	function borrarContBuscador(valor) {
+		if(valor == 'Buscador') {
+			valor=document.getElementById("q").value = '';
+		}
+	}
+	function ContBuscador(valor) {
+		if(valor == '') {
+			valor=document.getElementById("q").value = 'Buscador';
+		}
+	}
+	function validarBuscador() {
+		valor = document.getElementById("q");
+		if(valor.value=='Buscador' || valor.value == '') {
+			alert("Debe ingresar el texto a buscar");
+			valor.focus();
+			return false;
+		}
+	}
+	function showUl(id) {
+		document.getElementById(id).style.display = 'block';
+	}
+	function hiddeUl(id) {
+		document.getElementById(id).style.display = 'none';
+		
+	}
+	function showMenu(obj) {
+		if(obj.style.display == 'none' || obj.style.display == '') {
+			obj.style.display = 'block';
+		} else {
+			obj.style.display = 'none';
+		}
+	}
+</script><script type="text/javascript" src="../../../main.asp_files/jquery-1.4.2.min.js"></script></head>
+
+<!--************GOOGLE ANALYTICS*******************-->
+
+<!--************GOOGLE ANALYTICS*******************-->
+
+<!--[if lte IE 6]> <link rel="stylesheet" type="text/css" href="css/home_ie6.css" /> <![endif]-->
+
+<!--[if lt IE 7]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
+<![endif]-->
+
+
+<!--[if lt IE 8]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+<![endif]-->
+
+
+<!--[if lt IE 9]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+<![endif]-->
+
+
+
+
+
+	
+
+ 
+<body><div id="contenedor_home">
+<div align="right" id="fecha">
+	<table width="1002px">
+		<tbody><tr>
+			<td align="left">
+			</td>
+			<td align="right">
+				<div id="fecha2">
+					<div class="counrty_today_partials">
+						<script languaje="JavaScript">
+							var mydate=new Date()
+							var year=mydate.getYear()
+							if (year < 1000)
+								year+=1900
+							var day=mydate.getDay()
+							var month=mydate.getMonth()
+							var daym=mydate.getDate()
+							if (daym<10)
+								daym="0"+daym
+							var dayarray=new Array("Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado")
+							var montharray=new Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre")
+							document.write(dayarray[day]+" "+daym+" de "+montharray[month]+" de "+year)
+						</script>Lunes 15 de Septiembre de 2014
+					</div>
+				</div>
+			</td>
+		</tr></tbody>
+	</table>
+</div>
+
+<br clear="all">
+<div id="header">
+	<div class=" header_borde "></div>
+	<div id="header-left">
+		<a href="http://www.aerolineas.com.ar/es-AR"><img alt="Logo Aerolineas Argentinas" border="0" height="44px" hspace="0" src="Content/themes/V2/img/common/logo_aerolineas.gif" vspace="0" width="252px"></a>
+		<h1 class="screen-reader-text">aerolíneas.com</h1>
+	</div>
+	
+		<div class="fleft">
+			 <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=228%26idIdioma=es" title=""><img alt="" src="Content/themes/V2/img/buttons/Sello.png" /></a>
+		</div>
+	
+	<div align="right" id="logo-header">
+		<div class=" width300   fleft  mleft100 mtop5">
+
+			<a href="http://www.aerolineas.com.ar/es-AR"><img alt="Logo Aerolineas Argentinas" border="0" height="42px" hspace="0" src="Content/themes/V2/img/common/aerolineas_argentinasST.jpg" vspace="0" width="100px" /></a>
+			<a href="http://www.skyteam.com/es/" target="_blank">
+				<img alt="" src="Content/themes/V2/img/common/skyteam.jpg" />
+			</a>
+		</div>
+		<div class=" fleft mtop10 ">
+<select name="cmbPais" id="cmbPais" onchange="cmbPais_Change(this);" class="INPUTBuscador" style="width: 150px; margin-left: 10px;">
+	<option value="es-AR" selected="">Argentina (Español)</option><option value="en-AR">Argentina (Inglés)</option><option value="en-AU">Australia</option><option value="es-BO">Bolivia</option><option value="pt-BR">Brasil</option><option value="en-CA">Canadá</option><option value="es-CL">Chile</option><option value="es-CO">Colombia</option><option value="es-EU">España</option><option value="it-EU">Italia</option><option value="es-MX">México</option><option value="en-NZ">New Zealand</option><option value="en-OC">Other Countries (English)</option><option value="es-OC">Otros países (Español)</option><option value="es-PA">Paraguay</option><option value="es-PE">Perú </option><option value="en-EU">Reino Unido</option><option value="en-US">United States (English)</option><option value="es-US">United States (Español)</option><option value="es-UY">Uruguay</option><option value="es-VE">Venezuela</option>
+</select>
+
+<!--
+<option value="main.asp?idSitio=AR&idPagina=1&idIdioma=es" selected>Argentina (Español)</option>
+<option value="main.asp?idSitio=AR&idPagina=1&idIdioma=en" >Argentina (ingl&eacute;s)</option>
+<option value="main.asp?idSitio=AU&idPagina=1&idIdioma=en" >Australia</option>
+<option value="main.asp?idSitio=BO&idPagina=1&idIdioma=es" >Bolivia</option>
+<option value="main.asp?idSitio=BR&idPagina=1&idIdioma=po" >Brasil</option>
+<option value="main.asp?idSitio=CA&idPagina=1&idIdioma=en" >Canada</option>
+<option value="main.asp?idSitio=CO&idPagina=1&idIdioma=es" >Colombia</option>
+<option value="main.asp?idSitio=CL&idPagina=1&idIdioma=es" >Chile</option>
+<option value="main.asp?idSitio=EU&idPagina=1&idIdioma=es" >Europa (Español)</option>
+<option value="main.asp?idSitio=EU&idPagina=1&idIdioma=it" >Europa (Italiano)</option>
+<option value="main.asp?idSitio=EU&idPagina=1&idIdioma=en" >Europa (English)</option>
+<option value="main.asp?idSitio=MX&idPagina=1&idIdioma=es" >M&eacute;xico</option>
+<option value="main.asp?idSitio=NZ&idPagina=1&idIdioma=en" >New Zealand</option>
+<option value="main.asp?idSitio=PA&idPagina=1&idIdioma=es" >Paraguay</option>
+<option value="main.asp?idSitio=PE&idPagina=1&idIdioma=es" >Per&uacute;</option>
+<option value="main.asp?idSitio=UY&idPagina=1&idIdioma=es" >Uruguay</option>				
+<option value="main.asp?idSitio=US&idPagina=1&idIdioma=es" >United States (Español)</option>
+<option value="main.asp?idSitio=US&idPagina=1&idIdioma=en" >United States (English)</option>
+<option value="main.asp?idSitio=VE&idPagina=1&idIdioma=es" >Venezuela</option>
+<option value="main.asp?idSitio=US&idPagina=1&idIdioma=es" >Otros pa&iacute;ses (Español)</option>
+<option value="main.asp?idSitio=US&idPagina=1&idIdioma=en" >Other countries (English)</option>
+-->
+		</div>
+		<div class="width400 mtop55 clearing">
+			<p>
+				
+				<span class="contacto"><a href="http://www.aerolineas.com.ar/es-AR/reservasservicios/preguntasfrecuentes">Contactanos</a></span> 
+				
+					<img src="Content/themes/V2/img/buttons/mail.gif" alt="Cont&#225;ctanos" border="0" class="imgCont" />&nbsp;&nbsp;<a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=7&idIdioma=es">0810-222-VOLAR(86527)</a>
+				
+			</p>
+		</div>
+	</div>
+</div>
+<br clear="all">
+<a name="startcontent" id="startcontent"></a> 
+<div id="navbar">
+                <div id="botonera">
+                    
+                    
+    <div class="boton  width_6">
+        <a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=164&idIdioma=es">La empresa</a>
+        <div class="transparent">
+            <ul>
+                <li><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=2&idIdioma=es">Conocenos</a></li>
+				<li><a href="http://www.aerolineas.com.ar/es-AR/SkyTeam/AcercaDe">Alianza SkyTeam</a></li>
+                <li><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=239&idIdioma=es">Aerolíneas hoy</a></li>
+				
+					<li><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=82&idIdioma=es">Recursos humanos</a></li>
+				
+				<li><a href="http://www.aerolineas.com.ar/es-AR/Prensa/Comunicado">Prensa</a></li>
+                <!--<li><a href="main.asp?idSitio=AR&idPagina=68&idIdioma=es">Prensa</a></li>-->
+				
+					<li><a href="http://blog.aerolineas.com.ar/blog/" target="_blank">Blog de noticias</a></li>
+				
+					<li><a href="http://www.aerolineas.com.ar/es-AR/cefepra/acercade">CEFEPRA</a></li>
+				
+					<li><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=152&idIdioma=es">Proveedores</a></li>
+				
+            </ul>
+        </div>
+    </div>
+    <div class="boton">
+        <img alt="" src="Content/themes/V2/img/backgrounds/line.jpg" />
+    </div>
+    <div class="boton width_1">
+        <a href="http://www.aerolineas.com.ar/es-AR/reservasservicios/vuelos">Reservas y servicios</a>
+        <div class="transparent">
+            <ul>
+                <li><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=110&idIdioma=es">Comprá tu pasaje</a></li>
+                <li><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=29&idIdioma=es">Horarios de vuelos programados</a></li>
+                <li><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=111&idIdioma=es">Estado actual de tu vuelo</a></li>
+                <li><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=168&idIdioma=es">Chequeá tu reserva</a></li>
+                <li><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=113&idIdioma=es">Web Check-in</a></li>
+				
+					<li><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=176&idIdioma=es&tipo=V">Paquetes Aerolíneas Vacaciones</a></li>
+				
+                <li><a target="_blank" href="http://ww1.aerolineas.com.ar/arg/bodies/reservas/htmls/autos.asp?idIdioma=es">Alquiler de auto</a></li>
+                <li><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=112&idIdioma=es">Alojamiento</a></li>
+																					
+                <li><a target="_blank" href="http://www.aerolineas.com.ar/es-AR/reservasservicios/devolucion">Devolución de pasajes</a></li>
+ 				
+					<li><a href="http://www.aerolineas.com.ar/es-AR/aerolineas_movil">Aerolíneas Móvil</a></li>
+					<li><a href="http://www.aerolineas.com.ar/es-AR/reservasservicios/ProgramaMembershipRewards">Membership Rewards</a></li>
+ 				
+          </ul>
+        </div>
+    </div>
+    <div class="boton">
+        <img alt="" src="Content/themes/V2/img/backgrounds/line.jpg" />
+    </div>
+    <div class="boton width_1">
+        <a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=43&idIdioma=es">Info para tu viaje</a>
+        <div class="transparent">
+            <ul>
+                <li><a href="http://www.aerolineas.com.ar/es-AR/MapaDestinos/Destinos">A dónde viajar</a></li>
+                <li><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=50&idIdioma=es">Equipaje</a></li>
+                <li><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=43&idIdioma=es">Consejos para viajeros</a></li>
+                <li><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=22&idIdioma=es">Info de servicios especiales</a></li>
+                <li><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=44&idIdioma=es">Embarque de menores, embarazadas y mascotas</a></li>
+                <li><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=3&idIdioma=es">Nuestros aviones y servicios a bordo</a></li>
+                <li><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=27&idIdioma=es">Mapa y datos de aeropuertos</a></li>
+				<li><a href="http://www.aerolineas.com.ar/es-AR/ReservasServicios/SalonCondor">Salón Cóndor</a></li>
+				<li><a href="http://www.aerolineas.com.ar/es-AR/SkyTeam/SkyPriority">SkyPriority</a></li>
+                <li><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=143&idIdioma=es">Clima</a></li>
+                <li><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=7&idIdioma=es">Sucursales</a></li>
+                
+            </ul>
+        </div>
+    </div>
+    <div class="boton ">
+        <img alt="" src="Content/themes/V2/img/backgrounds/line.jpg" />
+    </div>
+    <div class="boton width_2 ">
+        <a href="http://www.aerolineas.com.ar/es-AR/VuelosBaratosModulos">Vuelos Baratos</a>
+        <div class="transparent">
+            <ul>
+                <li><a href="http://www.aerolineas.com.ar/es-AR/VuelosBaratosModulos">Vuelos baratos</a></li>
+                <li><a href="http://www.aerolineas.com.ar/es-AR/MapaDestinos/Destinos">Mapa de destinos</a></li>
+                
+					<li><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=228&idIdioma=es">Tarifa más baja garantizada</a></li>
+                
+                <li><a href="http://www.aerolineas.com.ar/es-AR/CuponesDescuentos">Cupones de descuento</a></li>
+                <li><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=169&idIdioma=es">Comprá en aerolineas.com</a></li>
+                <li><a href="http://www.aerolineas.com.ar/es-AR/VuelosBaratos/VisiteArgentina">Visite Argentina</a></li>
+                <li><a href="http://www.aerolineas.com.ar/es-AR/VuelosBaratos/SouthAmericanPass">South American Pass</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="boton">
+        <img alt="" src="Content/themes/V2/img/backgrounds/line.jpg" />
+    </div>
+    <div class=" boton width_1">
+        <a href="http://www.aerolineas.com.ar/es-AR/AerolineasPlus/Nuevo">Aerolíneas Plus</a>
+        <div class="transparent">
+            <ul>
+				
+					<li><a href="http://www.aerolineas.com.ar/es-AR/AerolineasPlus/Nuevo">Aerolíneas Plus</a></li>
+					
+                <li><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=15&idIdioma=es">Conocé Aerolineas Plus</a></li>
+                <li><a href="javascript:openFormInscripcionPlus();" border="0">Registrate</a></li>
+                <li><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=77&idIdioma=es">Mi cuenta Plus</a></li>
+                <li><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=216&idIdioma=es">Tabla de millas</a></li>
+                <li><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=223&idIdioma=es">Ganar millas</a></li>
+                <li><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=225&idIdioma=es">Utilizar millas</a></li>
+																
+					<li><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=227&idIdioma=es">Compra de millas</a></li>
+					<!--li><a href="main.asp?idSitio=AR&idPagina=77&idIdioma=es">millas+pesos</a></li-->
+				
+                <li><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=234&idIdioma=es">Upgrade en canje de millas</a></li>
+																
+					<!--li><a href="http://www.aerolineas.com.ar/es-AR/CuponesDescuentos">Beneficios</a></li-->
+				
+                <li><a href="http://www.aerolineas.com.ar/es-AR/AerolineasPlus/SociosElite/">Socios Elite</a></li>
+                <li><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=18&idIdioma=es">Información de interés</a></li>
+                <li><a href="http://www.aerolineas.com.ar/es-AR/aerolineasplus/empresasasociadas">Empresas asociadas</a></li>
+                <li><a href="http://www.aerolineas.com.ar/es-AR/AerolineasPlus/PreguntasFrecuentes/">FAQs y videos explicativos</a></li>
+				
+					<li><a href="http://www.aerolineas.com.ar/es-AR/cuponesdescuentos/detalles/ar/buenos-aires/3127_super-promo-millas--pesos-en-argentina">Millas + Pesos Argentina url </a></li>
+					<li><a href="http://www.aerolineas.com.ar/es-AR/ar/buenos-aires/3124_super-promo-millas--pesos-otono">Millas + Pesos Internac.</a></li>
+				
+                <li><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=14&idIdioma=es">Condiciones de uso</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="boton">
+        <img alt="" src="Content/themes/V2/img/backgrounds/line.jpg" />
+    </div>
+    <div class="boton width_6">
+        <a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=167&idIdioma=es">Corporativo</a>
+        <div class="transparent">
+            <ul>
+												
+					<li><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=33&idIdioma=es">Acuerdos corporativos</a></li>
+					
+                <li><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=36&idIdioma=es">Ferias y congresos</a></li>
+												
+					<li><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=60&idIdioma=es">Club secretarias</a></li>
+				
+            </ul>
+        </div>
+    </div>
+
+	</div>
+</div>
+<div style="background-color: #FFF; height:50px">&nbsp;</div>
+
+<div id="fondo-negro"></div>
+
+
+
+<!--AR PLUS REGISTRATE pop up -->
+ <script type="text/javascript">
+function openFormInscripcionPlus() {
+	document.getElementById('ifrInscripcion').src='https://ftarplus.aerolineas.com.ar/plus/PlusRealNewDic/index.php?secc=11&idi=es&idSitio=AR';
+	document.getElementById('pop2').style.display='block';
+	document.getElementById('fondo-negro').style.display='block';
+}
+function closeFormInscripcionPlus(){
+	document.getElementById('ifrInscripcion').src='';
+	document.getElementById('pop2').style.display='none';
+	document.getElementById('fondo-negro').style.display='none';
+}
+</script>
+ <!--AR PLUS REGISTRATE   pop up -->
+
+<!--POP UP-->
+<div id="pop2" style="height:880px;">
+	<p><a href="javascript:closeFormInscripcionPlus()"><img class="fright mright5" src="Images/reservas/x_btn.jpg"></a></p> 
+	<h1 class="tituloplus_linea" style="padding-bottom:10px;">INSCRIPCIÓN <span class="gris2">ONLINE</span></h1>
+	<p>Para inscribirte en el Programa de Pasajeros Frecuentes Aerolíneas Argentinas Plus, completá el formulario a continuación y conocé las Condiciones<br>Generales del Programa antes de hacer click en  <strong>ACEPTAR</strong>.</p>
+	<iframe width="800" id="ifrInscripcion" height="800" src="" frameborder="0"></iframe>
+</div>
+<!--FIN POP UP-->
+<!-- * Conectividad * -->
+
+<!-- * Conectividad * -->
+
+
+<!-- * Dimensionamientos, GETs y POSTs * -->
+
+<script>
+	function cambiarFechaVuelta(fecha){
+		var ida = document.getElementById("calendarioIda").value;
+		var vuelta = document.getElementById("calendarioVuelta").value;
+		
+		var nuevaFechaIda = ida.split('/');
+		var ida1 = nuevaFechaIda[2]+nuevaFechaIda[1]+nuevaFechaIda[0];
+		var nuevaFechaVuelta = vuelta.split('/');
+		var vuelta1 = nuevaFechaVuelta[2]+nuevaFechaVuelta[1]+nuevaFechaVuelta[0];
+		
+		if (vuelta1 < ida1){
+			document.getElementById("calendarioVuelta").value = fecha.value;
+		}
+	}
+</script>
+
+<script src="../../../main.asp_files/Funciones.js" type="text/javascript"></script>
+<!-- calendar stylesheet -->
+<link rel="stylesheet" type="text/css" media="all" href="../../../main.asp_files/aerolineas.css">
+<!-- main calendar program -->
+<script type="text/javascript" src="../../../main.asp_files/calendar.js"></script>
+<!-- language for the calendar -->
+<script type="text/javascript" src="../../../main.asp_files/calendar-es.js"></script>
+<!-- the following script defines the Calendar.setup helper function, which makes adding a calendar a matter of 1 or 2 lines of code. -->
+<script type="text/javascript" src="../../../main.asp_files/calendar-setup.js"></script>
+
+<script>
+	function cambiarFechaVuelta(fecha){
+		var ida = document.getElementById("calendarioIda").value;
+		var vuelta = document.getElementById("calendarioVuelta").value;
+		
+		var nuevaFechaIda = ida.split('/');
+		var ida1 = nuevaFechaIda[2]+nuevaFechaIda[1]+nuevaFechaIda[0];
+		var nuevaFechaVuelta = vuelta.split('/');
+		var vuelta1 = nuevaFechaVuelta[2]+nuevaFechaVuelta[1]+nuevaFechaVuelta[0];
+		
+		if (vuelta1 < ida1){
+			document.getElementById("calendarioVuelta").value = fecha.value;
+		}
+	}
+</script>
+
+<script>
+function cmbCongreso_change() {
+   window.location = 'main.asp?idSitio=AR&idPagina=161&idIdioma=es'+'&congresoID='+document.frmReservas.cmbCongreso.value;
+}
+function cambiar_pagina(){
+	window.location = 'main.asp?idSitio=AR&idPagina=129&idIdioma=es';
+}
+</script>
+
+<table width="1002" height="528" cellpadding="0" cellspacing="0" style="background-image: url(Images/reservas/bkReserveyCompre.gif); background-repeat: no-repeat; background-position: top; clear:both;" bgcolor="#ffffff" align="center">
+	<tbody><tr>
+		<td width="220"><img src="../../../main.asp_files/0.gif" width="1" height="1">
+			<form name="frmReservas" id="frmReservas" action="http://ww1.aerolineas.com.ar/arg/bodies/reservas/procesarParametrosSABRE.asp?idIdioma=es&idSitio=AR&TipoReserva=EMPRESA" method="POST">
+		</form></td>
+		<td width="564" align="left" valign="top">
+			<table width="564" height="80" cellpadding="0" cellspacing="0" border="0">
+				<tbody><tr>
+					<td><img src="../../../main.asp_files/0.gif" width="1" height="1"></td>
+				</tr>
+			</tbody></table>
+			<table width="564" cellpadding="0" cellspacing="0" border="0">
+				<tbody><tr>
+					<td class="TxtGris11" valign="top">                
+						<img src="Images/reservas/titReserveyCompreEmp_es.gif" alt="RESERVA DE VUELOS" title="RESERVA DE VUELOS">                
+					</td>
+				</tr>
+				<tr>
+					<td class="txtAzulNuevoImg14" valign="top">Empresa Test</td>
+				</tr>
+			</tbody></table>
+		
+			<table width="564" cellpadding="0" cellspacing="0" border="0">
+				<tbody><tr>
+					<td width="44"><img src="../../../main.asp_files/0.gif" width="1" height="1"></td>
+					<td align="left" valign="top">
+				
+						<table width="520" height="10" cellpadding="0" cellspacing="0" border="0">
+							<tbody><tr>
+								<td><img src="../../../main.asp_files/0.gif" width="1" height="1"></td>
+							</tr>
+                        </tbody></table>
+						<table width="350" height="26" cellpadding="0" cellspacing="0" border="0">
+                            <tbody><tr>
+								<td width="20" valign="middle" align="center"><input name="idaVuelta" id="idaVuelta" type="radio" value="returntravel" class="INPUTCheckBox" checked=""></td>
+								<td width="63" class="TxtGris10" valign="middle" align="left">Ida y Vuelta</td>
+								<td width="20" valign="middle" align="center"><input name="idaVuelta" id="idaVuelta" type="radio" value="onewaytravel" class="INPUTCheckBox"></td>
+								<td width="32" class="TxtGris10" valign="middle" align="left">Ida</td>
+								<td width="12" class="TxtGris10" valign="middle" align="left"><input name="ida_vuelta_multiplesDestinos" id="ida_vuelta_multiplesDestinos" type="radio" value="onewaytravel" class="INPUTCheckBox"></td>
+                                <td width="63" class="TxtGris10" valign="middle" align="left">Múltiples Destinos</td>
+							</tr>
+						</tbody></table>
+						<table width="520" height="20" cellpadding="0" cellspacing="0" border="0">
+							<tbody><tr>
+								<td><img src="../../../main.asp_files/0.gif" width="1" height="1"></td>
+							</tr>
+						</tbody></table>
+						<table width="520" cellpadding="0" cellspacing="0" border="0">
+							<tbody><tr>
+								<td width="50" class="TxtGris10" valign="middle" align="left">Origen</td>
+								<td valign="middle" align="left">
+									<select name="idIATAOrigen" id="idIATAOrigen" class="INPUTCombo" style="width:160px;" onchange="infantes_display()">
+										<option value="0" selected="">Seleccione</option><optgroup label="Internacional"></optgroup><optgroup label="--------------------------------"></optgroup><optgroup label="Argentina"><option value="BHI">Bahia Blanca</option><option value="BRC">Bariloche</option><option value="BUE">Buenos Aires</option><option value="CTC">Catamarca</option><option value="CRD">Comodoro Rivadavia</option><option value="COR">Córdoba</option><option value="CNQ">Corrientes</option><option value="FTE">El Calafate</option><option value="EQS">Esquel</option><option value="FMA">Formosa</option><option value="IGR">Iguazú</option><option value="JUJ">Jujuy</option><option value="IRJ">La Rioja</option><option value="MDQ">Mar del Plata</option><option value="MDZ">Mendoza</option><option value="NQN">Neuquén</option><option value="PRA">Paraná</option><option value="PSS">Posadas</option><option value="RES">Resistencia</option><option value="RGL">Río Gallegos</option><option value="RGA">Río Grande</option><option value="RHD">Río Hondo</option><option value="ROS">Rosario</option><option value="SLA">Salta</option><option value="UAQ">San Juan</option><option value="LUQ">San Luis</option><option value="CPC">San Martín de los Andes</option><option value="AFA">San Rafael</option><option value="SFN">Santa Fe</option><option value="RSA">Santa Rosa</option><option value="SDE">Santiago del Estero</option><option value="REL">Trelew</option><option value="TUC">Tucumán</option><option value="USH">Ushuaia</option><option value="VDM">Viedma</option><option value="ADL">Adelaida</option><option value="AMS">Amsterdam</option><option value="ANF">Antofagasta</option><option value="AJU">Aracajú</option><option value="AXM">Armenia</option><option value="OVD">Asturias-Oviedo</option><option value="ASU">Asunción</option><option value="ATH">Atenas</option><option value="ATL">Atlanta</option><option value="AKL">Auckland</option><option value="BBA">Balmaceda</option><option value="BWI">Baltimore</option><option value="BCN">Barcelona</option><option value="BRI">Bari</option><option value="EJA">Barrancabermeja</option><option value="BAQ">Barranquilla</option><option value="BEL">Belem</option><option value="BEG">Belgrado</option><option value="BHZ">Belo Horizonte</option><option value="TXL">Berlín</option><option value="BIO">Bilbao</option><option value="BOG">Bogotá</option><option value="BLQ">Bologna</option><option value="BOD">Bordeaux</option><option value="BOS">Boston</option><option value="BSB">Brasilia</option><option value="BDS">Brindisi</option><option value="BNE">Brisbane</option><option value="BRU">Bruselas</option><option value="BGA">Bucaramanga</option><option value="BUH">Bucarest</option><option value="BUD">Budapest</option><option value="BUF">Buffalo</option><option value="CNS">Cairns</option><option value="CJC">Calama</option><option value="CLO">Cali</option><option value="CGR">Campo Grande</option><option value="CBR">Canberra</option><option value="CUN">Cancun</option><option value="CCS">Caracas</option><option value="CTG">Cartagena</option><option value="CTA">Catania</option><option value="CHS">Charleston</option><option value="CLT">Charlotte</option><option value="CHI">Chicago</option><option value="CHC">Christchurch</option><option value="CVG">Cincinnati</option><option value="CLE">Cleveland</option><option value="CFS">Coffs Harbour</option><option value="CMH">Columbus</option><option value="CCP">Concepción</option><option value="CPO">Copiapo</option><option value="CUC">Cúcuta</option><option value="CGB">Cuiaba</option><option value="CWB">Curitiba</option><option value="DFW">Dallas</option><option value="DEN">Denver</option><option value="DTT">Detroit</option><option value="DBV">Dubrovnik</option><option value="DUS">Dusseldorf</option><option value="CAI">El Cairo</option><option value="VIG">El Vigía</option><option value="IST">Estambul</option><option value="PHL">Filadelfia</option><option value="FLR">Florencia</option><option value="FLN">Florianópolis</option><option value="FOR">Fortaleza</option><option value="IGU">Foz de Iguazu</option><option value="FRA">Frankfurt</option><option value="FUE">Fuerteventura</option><option value="GOA">Genova</option><option value="GVA">Ginebra</option><option value="GYN">Goiania</option><option value="OOL">Gold Coast</option><option value="LPA">Gran Canaria</option><option value="HAM">Hamburgo</option><option value="HTI">Hamilton Island</option><option value="HAJ">Hannover</option><option value="HVB">Hervey Bay</option><option value="HBA">Hobart</option><option value="IAH">Houston</option><option value="IBE">Ibagué</option><option value="IBZ">Ibiza</option><option value="IOS">Ilheus</option><option value="IND">Indianapolis</option><option value="IQQ">Iquique</option><option value="JPA">Joao Pessoa</option><option value="IEV">Kiev</option><option value="SUF">Lamezia Terme</option><option value="ACE">Lanzarote</option><option value="LAS">Las Vegas</option><option value="LST">Launceston</option><option value="LIM">Lima</option><option value="LIS">Lisboa</option><option value="LON">Londres</option><option value="LDB">Londrina</option><option value="LAX">Los Angeles</option><option value="LYS">Lyon</option><option value="MCZ">Maceió</option><option value="MKY">Mackay</option><option value="MAD">Madrid</option><option value="MLA">Malta</option><option value="MAO">Manaos</option><option value="MZL">Manizales</option><option value="MAR">Maracaibo</option><option value="MGF">Maringa</option><option value="MRS">Marsella</option><option value="MDE">Medellín</option><option value="MEL">Melbourne</option><option value="MEM">Memphis</option><option value="MAH">Menorca</option><option value="MIA">Miami</option><option value="MIL">Milan</option><option value="MSP">Mineápolis</option><option value="MTR">Montería</option><option value="MVD">Montevideo</option><option value="MOW">Moscú</option><option value="MUC">Munich</option><option value="NAP">Napoles</option><option value="NAT">Natal</option><option value="NVA">Neiva</option><option value="NCE">Niza</option><option value="NYC">Nueva York</option><option value="OPO">Oporto</option><option value="PMO">Palermo</option><option value="PMI">Palma de Mallorca</option><option value="PAR">París</option><option value="PEI">Pereira</option><option value="PER">Perth</option><option value="PIT">Pittsburgh</option><option value="PPN">Popayán</option><option value="PMV">Porlamar</option><option value="POA">Porto Alegre</option><option value="BPS">Porto Seguro</option><option value="PRG">Praga</option><option value="PMC">Puerto Montt</option><option value="PUQ">Punta Arenas</option><option value="PDP">Punta del Este</option><option value="REC">Recife</option><option value="REG">Reggio Calabria</option><option value="RIC">Richmond</option><option value="RIO">Río de Janeiro</option><option value="RCH">Riohacha</option><option value="ROK">Rockhampton</option><option value="ROM">Roma / Rome</option><option value="STL">Saint Louis</option><option value="SLC">Salt Lake City</option><option value="ADZ">San Andrés</option><option value="SAN">San Diego</option><option value="SFO">San Francisco</option><option value="SAO">San Pablo</option><option value="LED">San Petersburgo</option><option value="SSA">San Salvador de Bahía</option><option value="VVI">Santa Cruz de la Sierra</option><option value="SMR">Santa Marta</option><option value="SCL">Santiago de Chile</option><option value="STD">Santo Domingo</option><option value="SLZ">Sao Luis</option><option value="SEA">Seattle</option><option value="SOF">Sofia</option><option value="SPU">Split</option><option value="STR">Stuttgart</option><option value="MCY">Sunshine Coast</option><option value="SYD">Sydney</option><option value="TLV">Tel Aviv</option><option value="ZCO">Temuco</option><option value="TFN">Tenerife</option><option value="THE">Teresina</option><option value="SKG">Thessaloniki</option><option value="TIA">Tirana</option><option value="TRN">Torino</option><option value="TLS">Toulouse</option><option value="TSV">Townsville</option><option value="TRS">Trieste</option><option value="VLC">Valencia</option><option value="VUP">Valledupar</option><option value="WAW">Varsovia</option><option value="VCE">Venecia</option><option value="VRN">Verona</option><option value="VIX">Victoria</option><option value="VIE">Viena</option><option value="VGO">Vigo</option><option value="WAS">Washington</option><option value="WLG">Wellington</option><option value="ZAG">Zagreb</option><option value="ZRH">Zurich
+									</option></optgroup></select>
+								</td>
+								<td width="20"><img src="../../../main.asp_files/0.gif" width="1" height="1"></td>
+								<td width="50" class="TxtGris10" valign="middle" align="left">Destino</td>
+								<td valign="middle" align="left">
+								<select name="idIATADestino" id="idIATADestino" class="INPUTCombo" style="width:160px;" onchange="infantes_display()"><option value="0" selected="">Seleccione</option><optgroup label="Internacional"></optgroup><optgroup label="--------------------------------"></optgroup><optgroup label="Argentina"><option value="BHI">Bahia Blanca</option><option value="BRC">Bariloche</option><option value="BUE">Buenos Aires</option><option value="CTC">Catamarca</option><option value="CRD">Comodoro Rivadavia</option><option value="COR">Córdoba</option><option value="CNQ">Corrientes</option><option value="FTE">El Calafate</option><option value="EQS">Esquel</option><option value="FMA">Formosa</option><option value="IGR">Iguazú</option><option value="JUJ">Jujuy</option><option value="IRJ">La Rioja</option><option value="MDQ">Mar del Plata</option><option value="MDZ">Mendoza</option><option value="NQN">Neuquén</option><option value="PRA">Paraná</option><option value="PSS">Posadas</option><option value="RES">Resistencia</option><option value="RGL">Río Gallegos</option><option value="RGA">Río Grande</option><option value="RHD">Río Hondo</option><option value="ROS">Rosario</option><option value="SLA">Salta</option><option value="UAQ">San Juan</option><option value="LUQ">San Luis</option><option value="CPC">San Martín de los Andes</option><option value="AFA">San Rafael</option><option value="SFN">Santa Fe</option><option value="RSA">Santa Rosa</option><option value="SDE">Santiago del Estero</option><option value="REL">Trelew</option><option value="TUC">Tucumán</option><option value="USH">Ushuaia</option><option value="VDM">Viedma</option><option value="ADL">Adelaida</option><option value="AMS">Amsterdam</option><option value="ANF">Antofagasta</option><option value="AJU">Aracajú</option><option value="AXM">Armenia</option><option value="OVD">Asturias-Oviedo</option><option value="ASU">Asunción</option><option value="ATH">Atenas</option><option value="ATL">Atlanta</option><option value="AKL">Auckland</option><option value="BBA">Balmaceda</option><option value="BWI">Baltimore</option><option value="BCN">Barcelona</option><option value="BRI">Bari</option><option value="EJA">Barrancabermeja</option><option value="BAQ">Barranquilla</option><option value="BEL">Belem</option><option value="BEG">Belgrado</option><option value="BHZ">Belo Horizonte</option><option value="TXL">Berlín</option><option value="BIO">Bilbao</option><option value="BOG">Bogotá</option><option value="BLQ">Bologna</option><option value="BOD">Bordeaux</option><option value="BOS">Boston</option><option value="BSB">Brasilia</option><option value="BDS">Brindisi</option><option value="BNE">Brisbane</option><option value="BRU">Bruselas</option><option value="BGA">Bucaramanga</option><option value="BUH">Bucarest</option><option value="BUD">Budapest</option><option value="BUF">Buffalo</option><option value="CNS">Cairns</option><option value="CJC">Calama</option><option value="CLO">Cali</option><option value="CGR">Campo Grande</option><option value="CBR">Canberra</option><option value="CUN">Cancun</option><option value="CCS">Caracas</option><option value="CTG">Cartagena</option><option value="CTA">Catania</option><option value="CHS">Charleston</option><option value="CLT">Charlotte</option><option value="CHI">Chicago</option><option value="CHC">Christchurch</option><option value="CVG">Cincinnati</option><option value="CLE">Cleveland</option><option value="CFS">Coffs Harbour</option><option value="CMH">Columbus</option><option value="CCP">Concepción</option><option value="CPO">Copiapo</option><option value="CUC">Cúcuta</option><option value="CGB">Cuiaba</option><option value="CWB">Curitiba</option><option value="DFW">Dallas</option><option value="DEN">Denver</option><option value="DTT">Detroit</option><option value="DBV">Dubrovnik</option><option value="DUS">Dusseldorf</option><option value="CAI">El Cairo</option><option value="VIG">El Vigía</option><option value="IST">Estambul</option><option value="PHL">Filadelfia</option><option value="FLR">Florencia</option><option value="FLN">Florianópolis</option><option value="FOR">Fortaleza</option><option value="IGU">Foz de Iguazu</option><option value="FRA">Frankfurt</option><option value="FUE">Fuerteventura</option><option value="GOA">Genova</option><option value="GVA">Ginebra</option><option value="GYN">Goiania</option><option value="OOL">Gold Coast</option><option value="LPA">Gran Canaria</option><option value="HAM">Hamburgo</option><option value="HTI">Hamilton Island</option><option value="HAJ">Hannover</option><option value="HVB">Hervey Bay</option><option value="HBA">Hobart</option><option value="IAH">Houston</option><option value="IBE">Ibagué</option><option value="IBZ">Ibiza</option><option value="IOS">Ilheus</option><option value="IND">Indianapolis</option><option value="IQQ">Iquique</option><option value="JPA">Joao Pessoa</option><option value="IEV">Kiev</option><option value="SUF">Lamezia Terme</option><option value="ACE">Lanzarote</option><option value="LAS">Las Vegas</option><option value="LST">Launceston</option><option value="LIM">Lima</option><option value="LIS">Lisboa</option><option value="LON">Londres</option><option value="LDB">Londrina</option><option value="LAX">Los Angeles</option><option value="LYS">Lyon</option><option value="MCZ">Maceió</option><option value="MKY">Mackay</option><option value="MAD">Madrid</option><option value="MLA">Malta</option><option value="MAO">Manaos</option><option value="MZL">Manizales</option><option value="MAR">Maracaibo</option><option value="MGF">Maringa</option><option value="MRS">Marsella</option><option value="MDE">Medellín</option><option value="MEL">Melbourne</option><option value="MEM">Memphis</option><option value="MAH">Menorca</option><option value="MIA">Miami</option><option value="MIL">Milan</option><option value="MSP">Mineápolis</option><option value="MTR">Montería</option><option value="MVD">Montevideo</option><option value="MOW">Moscú</option><option value="MUC">Munich</option><option value="NAP">Napoles</option><option value="NAT">Natal</option><option value="NVA">Neiva</option><option value="NCE">Niza</option><option value="NYC">Nueva York</option><option value="OPO">Oporto</option><option value="PMO">Palermo</option><option value="PMI">Palma de Mallorca</option><option value="PAR">París</option><option value="PEI">Pereira</option><option value="PER">Perth</option><option value="PIT">Pittsburgh</option><option value="PPN">Popayán</option><option value="PMV">Porlamar</option><option value="POA">Porto Alegre</option><option value="BPS">Porto Seguro</option><option value="PRG">Praga</option><option value="PMC">Puerto Montt</option><option value="PUQ">Punta Arenas</option><option value="PDP">Punta del Este</option><option value="REC">Recife</option><option value="REG">Reggio Calabria</option><option value="RIC">Richmond</option><option value="RIO">Río de Janeiro</option><option value="RCH">Riohacha</option><option value="ROK">Rockhampton</option><option value="ROM">Roma / Rome</option><option value="STL">Saint Louis</option><option value="SLC">Salt Lake City</option><option value="ADZ">San Andrés</option><option value="SAN">San Diego</option><option value="SFO">San Francisco</option><option value="SAO">San Pablo</option><option value="LED">San Petersburgo</option><option value="SSA">San Salvador de Bahía</option><option value="VVI">Santa Cruz de la Sierra</option><option value="SMR">Santa Marta</option><option value="SCL">Santiago de Chile</option><option value="STD">Santo Domingo</option><option value="SLZ">Sao Luis</option><option value="SEA">Seattle</option><option value="SOF">Sofia</option><option value="SPU">Split</option><option value="STR">Stuttgart</option><option value="MCY">Sunshine Coast</option><option value="SYD">Sydney</option><option value="TLV">Tel Aviv</option><option value="ZCO">Temuco</option><option value="TFN">Tenerife</option><option value="THE">Teresina</option><option value="SKG">Thessaloniki</option><option value="TIA">Tirana</option><option value="TRN">Torino</option><option value="TLS">Toulouse</option><option value="TSV">Townsville</option><option value="TRS">Trieste</option><option value="VLC">Valencia</option><option value="VUP">Valledupar</option><option value="WAW">Varsovia</option><option value="VCE">Venecia</option><option value="VRN">Verona</option><option value="VIX">Victoria</option><option value="VIE">Viena</option><option value="VGO">Vigo</option><option value="WAS">Washington</option><option value="WLG">Wellington</option><option value="ZAG">Zagreb</option><option value="ZRH">Zurich</option></optgroup></select>
+								</td>
+							</tr>
+						</tbody></table>
+						<table width="520" height="20" cellpadding="0" cellspacing="0" border="0">
+							<tbody><tr>
+								<td><img src="../../../main.asp_files/0.gif" width="1" height="1"></td>
+							</tr>
+						</tbody></table>
+						<table width="520" cellpadding="0" cellspacing="0" border="0">
+							<tbody><tr>
+								<td width="50" class="TxtGris10" valign="middle" align="right">IDA&nbsp;&nbsp;&nbsp;</td>
+								<td width="170" align="left" valign="middle">
+									<style>
+									.inputFecha{ 
+										width:60px;
+										BORDER-RIGHT: #d2d2d2 1px solid;
+										BORDER-TOP: #d2d2d2 1px solid;
+										BORDER-LEFT: #d2d2d2 1px solid;
+										BORDER-BOTTOM: #d2d2d2 1px solid;
+										BACKGROUND: #F3F3F3;
+										COLOR: #4d4d4d;
+										FONT-FAMILY: Tahoma, Arial;
+										FONT-SIZE: 11px;
+										TEXT-ALIGN: center;
+										vertical-align:middle;
+									}
+									</style>
+									<table cellpadding="0" cellspacing="0" border="0">
+										<tbody><tr>
+											<td width="75" valign="middle" align="left"><input type="text" id="calendarioIda" readonly="readonly" name="calendarioIda" class="inputFecha" value="15/09/2014"></td>
+											<td width="30" valign="middle" align="right"><img src="Images/reservas/icoCalendario.gif" id="imgCalendarioIda" name="imgCalendarioIda" border="0" style="cursor:pointer;"></td>
+										</tr>
+									</tbody></table>
+								</td>
+								<td width="50"><img src="../../../main.asp_files/0.gif" width="1" height="1"></td>
+								<td width="50" class="TxtGris10" valign="middle" align="left">VUELTA</td>
+								<td width="200" align="left" valign="middle">
+									<table cellpadding="0" cellspacing="0" border="0">
+										<tbody><tr>
+											<td width="75" valign="middle" align="left"><input type="text" id="calendarioVuelta" readonly="readonly" name="calendarioVuelta" class="inputFecha" value="15/09/2014"></td>
+											<td width="30" valign="middle" align="right"><img src="Images/reservas/icoCalendario.gif" id="imgCalendarioVuelta" name="imgCalendarioVuelta" border="0" style="cursor:pointer;"></td>
+										</tr>
+									</tbody></table>
+								</td>
+							</tr>
+							<tr>
+								<td height="15"><img src="../../../main.asp_files/0.gif" width="1" height="10"></td>
+							</tr>
+						</tbody></table>
+						<table width="520" height="35" cellpadding="0" cellspacing="0" border="0">
+							<tbody><tr>
+								<td align="center" valign="middle"><img src="Images/reservas/separador3.gif"></td>
+							</tr>
+						</tbody></table>
+						<table cellpadding="0" cellspacing="0" border="0">
+							<tbody><tr>
+								<td class="TxtGris10" valign="middle" align="left">Clase</td>
+								<td width="10"><img src="../../../main.asp_files/0.gif" width="1" height="1"></td>
+								<td width="120" valign="middle" align="left">
+									<select name="classService" id="classService" value="" class="INPUTCombo" style="width:86px;">
+										<option value="CoachClass">Economy</option>
+										<option value="BusinessClass">Club Condor</option>
+									</select>
+								</td>
+								<td class="TxtGris10" valign="middle" align="left" style="padding-right:4px;text-decoration:underline;CURSOR: pointer;"><span id="lbl_adultos" onclick="fnt_adultos()">Adultos</span></td>
+								<td width="10"><img src="../../../main.asp_files/0.gif" width="1" height="1"></td>
+								<td width="50" valign="middle" align="left">
+									<select name="cantidadAdultos" id="cantidadAdultos" class="INPUTCombo" style="width:37px;" onchange="javascript:ValidaCantidadPasajeros(this,cantidadChicos);">
+									
+										<option value="1">01</option>
+									
+										<option value="2">02</option>
+									
+										<option value="3">03</option>
+									
+										<option value="4">04</option>
+									
+										<option value="5">05</option>
+									
+										<option value="6">06</option>
+									
+										<option value="7">07</option>
+									
+									</select>
+								</td>
+								<td class="TxtGris10" valign="middle" align="left" style="padding-right:4px;text-decoration:underline;CURSOR: pointer;"><span id="lbl_ninos" onclick="fnt_ninos()">Niños</span></td>
+								<td width="10"><img src="../../../main.asp_files/0.gif" width="1" height="1"></td>
+								<td width="50" valign="middle" align="left">
+									<select name="cantidadChicos" id="cantidadChicos" class="INPUTCombo" style="width:37px;" onchange="javascript:ValidaCantidadPasajeros(this,cantidadAdultos);">
+									
+										<option value="0">00</option>
+									
+										<option value="1">01</option>
+									
+										<option value="2">02</option>
+									
+										<option value="3">03</option>
+									
+										<option value="4">04</option>
+									
+										<option value="5">05</option>
+									
+										<option value="6">06</option>
+									
+										<option value="7">07</option>
+									
+									</select>
+								</td>
+								<td class="TxtGris10" valign="middle" align="left"><span id="lbl_bebes" onclick="fnt_bebes()" style="text-decoration:underline;CURSOR: pointer;display:yes">Bebés</span></td>
+								<td width="10"><img src="../../../main.asp_files/0.gif" width="1" height="1"></td>
+								<td width="50" valign="middle" align="left">
+									<select name="cantidadBebes" id="cantidadBebes" class="INPUTCombo" style="width:37px;" onchange="javascript:ValidaCantidadPasajeros(this,cantidadAdultos);">
+									
+										<option value="0">00</option>
+									
+										<option value="1">01</option>
+									
+										<option value="2">02</option>
+									
+										<option value="3">03</option>
+									
+										<option value="4">04</option>
+									
+										<option value="5">05</option>
+									
+										<option value="6">06</option>
+									
+										<option value="7">07</option>
+									
+									</select>
+								</td>
+							</tr>
+						</tbody></table>
+						<table width="520" height="20" cellpadding="0" cellspacing="0" border="0">
+							<tbody><tr>
+								<td><img src="../../../main.asp_files/0.gif" width="1" height="1"></td>
+							</tr>
+						</tbody></table> 
+						<table width="500" cellpadding="0" cellspacing="0" border="0">
+							<tbody><tr>
+								<td valign="middle" align="right"><a href="javascript:;" onclick="javascript:FnValidarReservas();"><img src="Images/reservas/btnAceptar_es.gif" border="0"></a></td>
+							</tr>
+						</tbody></table>
+						<table width="520" height="2" cellpadding="0" cellspacing="0" border="0">
+							<tbody><tr>
+								<td><img src="../../../main.asp_files/0.gif" width="1" height="1"></td>
+							</tr>
+						</tbody></table>   
+						<table width="500" cellpadding="0" cellspacing="0" border="0">
+							<tbody><tr>
+								<td align="right" valign="top">
+									<table cellpadding="0" cellspacing="0" border="0">
+										<tbody><tr>
+											<td align="left"><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=174&idIdioma=es#" onclick="window.open(&#39;bodies/popup_reserva_condiciones.asp?pais=AR&amp;idi=es&#39;, &#39;&#39;, &#39;height=650,width=620,toolbar=no,directories=no,status=no,linemenubar=no,scrollbars=yes,resizable=yes,modal=yes,left=30,top=15&#39;)" class="TxtGris10" style="text-decoration:underline;">Condiciones</a></td>
+											<td width="20"><img src="../../../main.asp_files/0.gif" width="1" height="1"></td>
+											<!--<td align="left"><a href="#" onclick="window.open('bodies/FlexPricer/InstructivoFlexPricer_cabotaje.asp?idi=es&p_pais=AR', '', 'height=650,width=620,toolbar=no,directories=no,status=no,linemenubar=no,scrollbars=yes,resizable=yes,modal=yes,left=30,top=15')" class="TxtGris10" style="text-decoration:underline;">
+											C&oacute;mo hacer tu reserva y pago on-line</a>
+											</td>-->
+										</tr>
+									</tbody></table> 
+								</td>
+							</tr>
+						</tbody></table>
+				
+					</td>
+				</tr>
+			</tbody></table>    
+		</td>
+		<td width="213"><img src="../../../main.asp_files/0.gif" width="1" height="1">
+			<input type="hidden" name="promoCode" id="promoCode">
+			<input type="hidden" name="couponNo" id="couponNo">
+			<input type="hidden" name="nCliente" id="nCliente">
+			<input type="hidden" name="nUsuario" id="nUsuario">
+		</td>
+	</tr>
+	
+</tbody></table>
+
+
+
+<script style="text/javascript">
+//FUNCTION fnControlFechas
+function fnCambiaFechaIda() {
+	var eFechIda = document.getElementById('calendarioIda');
+	var eFechVta = document.getElementById('calendarioVuelta');
+	
+	aFechIda = eFechIda.value.split('/');
+	aFechVta = eFechVta.value.split('/');
+	
+	var iFechIda = parseInt(aFechIda[2]+aFechIda[1]+aFechIda[0], 10);
+	var iFechVta = parseInt(aFechVta[2]+aFechVta[1]+aFechVta[0], 10);
+	
+	if(iFechIda > iFechVta) {
+		eFechVta.value = eFechIda.value;
+	}
+	
+	calendar.hide();
+}
+//FIN FUNCTION fnControlFechas
+
+//FUNCTION FnValidarReservas
+function FnValidarReservas() {
+
+	/*Validacion origen o destino = pais*/
+	if('AR' == 'VE') {
+		var origen = getObjectById('idIATAOrigen');
+		var destino= getObjectById('idIATADestino');
+		if(origen.value == 'CCS' || destino.value == 'CCS') {
+			/*alert(origen.value+' '+destino.value);
+			return true;*/
+		} else {
+			alert("Para poder realizar la reserva, su viaje debe comenzar o finalizar en Caracas.");
+			return false;
+		}
+	}
+	
+	if('AR' == 'UK') {
+		var origen = getObjectById('idIATAOrigen');
+		var destino= getObjectById('idIATADestino');
+		if(origen.value == 'LGW' || destino.value == 'LGW') {
+			alert("In order to book flights from / to London please call our Call Center at 0800-0969-747 or in person at our office 22 Conduit Street 1st. floor, London (phone 7290-7887 - ext 1)");
+			return false;
+		}
+	}
+	
+	/* Validaciones comunes a OneWay y RoundTrip */
+	var objeto = getObjectById('idIATAOrigen');
+	if(objeto.value=='') {
+		alert('');
+		objeto.focus();
+		return false;
+	}
+	
+	/* En el caso de viaje de ida y vuelta */
+	objeto = getObjectById('idaVuelta'); 
+	if(objeto.value=='R') {
+		objeto = getObjectById('idIATADestino'); 
+		if(objeto.value=='') {
+			alert('');
+			objeto.focus();
+			return false;
+		}
+	}
+	
+	var oriAep = document.getElementById('idIATAOrigen').value;
+	var desAep = document.getElementById('idIATADestino').value;
+	if(oriAep==0) {
+		alert('Debe seleccionar su Origen');
+		return false;
+	}
+	if(desAep==0) {
+		alert('Debe seleccionar su Destino');
+		return false;
+	}
+	
+	if ('AR' == 'EU') {
+		sitio = document.getElementById("ResidenciaEU").value;
+		document.frmReservas.action = 'bodies/reservas/procesarParametrosSABRE.asp?idIdioma=es&idSitio=EU&pais='+sitio+'&TipoReserva=EMPRESA';
+	}
+	
+	document.getElementById("promoCode").value = 'WBB00';
+	document.getElementById("couponNo").value = 'CB626E34';
+	document.getElementById("nCliente").value = 'CAWEB70';
+	document.getElementById("nUsuario").value = 'prueba';
+	document.frmReservas.submit()
+	
+	var oriAep = document.getElementById('idIATAOrigen').value;
+	var desAep = document.getElementById('idIATADestino').value;
+	var bln_Origen_cabotaje = DestinoCabotaje(oriAep);
+	var bln_Destino_cabotaje = DestinoCabotaje(desAep);
+	if ((bln_Origen_cabotaje) && (bln_Destino_cabotaje))
+		window.open('bodies/popup_reserva_previo.asp?pais=AR&idi=es', '', 'height=535,width=550,toolbar=no,directories=no,status=no,linemenubar=no,scrollbars=yes,resizable=no,modal=yes,left=30,top=15');
+
+}
+//FIN FUNCTION FnValidarReservas
+
+//FUNCTION infantes_display
+function infantes_display() {
+
+	var oriAep = document.getElementById('idIATAOrigen').value;
+	var desAep = document.getElementById('idIATADestino').value;
+	
+	var bln_origen_cabotaje = false; 
+	var bln_destino_cabotaje = false;
+	
+	// San Luis LUQ
+	if ((oriAep == 'LUQ') || (desAep == 'LUQ')) {
+		window.open('bodies/popupSanLuis.asp?idioma=es','Volar','height=150,width=400,top=150,left=200,toolbar=no,directories=no,status=no,linemenubar=no,scrollbars=no,resizable=no,modal=yes');
+	}
+	
+	if ((oriAep == 'BHI') || (oriAep == 'BRC') ||
+		(oriAep == 'BUE') || (oriAep == 'CTC') ||
+		(oriAep == 'CRD') || (oriAep == 'FTE') ||
+		(oriAep == 'EQS') || (oriAep == 'FMA') ||
+		(oriAep == 'IGR') || (oriAep == 'JUJ') ||
+		(oriAep == 'IRJ') || (oriAep == 'MDQ') ||
+		(oriAep == 'MDZ') || (oriAep == 'NQN') ||
+		(oriAep == 'PSS') || (oriAep == 'RSA') ||
+		(oriAep == 'RES') || (oriAep == 'RGL') ||
+		(oriAep == 'RGA') || (oriAep == 'ROS') ||
+		(oriAep == 'SLA') || (oriAep == 'UAQ') ||
+		(oriAep == 'LUQ') || (oriAep == 'CPC') ||
+		(oriAep == 'AFA') || (oriAep == 'SFN') ||
+		(oriAep == 'SDE') || (oriAep == 'REL') ||
+		(oriAep == 'TUC') || (oriAep == 'USH') ||
+		(oriAep == 'COR') || (oriAep == 'CNQ') ||
+		(oriAep == 'VDM'))
+			bln_origen_cabotaje = true;
+			
+	if ((desAep == 'BHI') || (desAep == 'BRC') ||
+		(desAep == 'BUE') || (desAep == 'CTC') ||
+		(desAep == 'CRD') || (desAep == 'FTE') ||
+		(desAep == 'EQS') || (desAep == 'FMA') ||
+		(desAep == 'IGR') || (desAep == 'JUJ') ||
+		(desAep == 'IRJ') || (desAep == 'MDQ') ||
+		(desAep == 'MDZ') || (desAep == 'NQN') ||
+		(desAep == 'PSS') || (desAep == 'RSA') ||
+		(desAep == 'RES') || (desAep == 'RGL') ||
+		(desAep == 'RGA') || (desAep == 'ROS') ||
+		(desAep == 'SLA') || (desAep == 'UAQ') ||
+		(desAep == 'LUQ') || (desAep == 'CPC') ||
+		(desAep == 'AFA') || (desAep == 'SFN') ||
+		(desAep == 'SDE') || (desAep == 'REL') ||
+		(desAep == 'TUC') || (desAep == 'USH') ||
+		(desAep == 'COR') || (desAep == 'CNQ') ||
+		(desAep == 'VDM'))
+			bln_destino_cabotaje = true;
+}
+//FIN FUNCTION infantes_display
+
+//FUNCTION DestinoCabotaje
+function DestinoCabotaje(destino) {
+
+	var bln_cabotaje = false;  
+	if ((destino == 'BHI') || (destino == 'BRC') ||
+		(destino == 'BUE') || (destino == 'CTC') ||
+		(destino == 'CRD') || (destino == 'FTE') ||
+		(destino == 'EQS') || (destino == 'FMA') ||
+		(destino == 'IGR') || (destino == 'JUJ') ||
+		(destino == 'IRJ') || (destino == 'MDQ') ||
+		(destino == 'MDZ') || (destino == 'NQN') ||
+		(destino == 'PSS') || (destino == 'RSA') ||
+		(destino == 'RES') || (destino == 'RGL') ||
+		(destino == 'RGA') || (destino == 'ROS') ||
+		(destino == 'SLA') || (destino == 'UAQ') ||
+		(destino == 'LUQ') || (destino == 'CPC') ||
+		(destino == 'AFA') || (destino == 'SFN') ||
+		(destino == 'SDE') || (destino == 'REL') ||
+		(destino == 'TUC') || (destino == 'USH') ||
+		(destino == 'COR') || (destino == 'CNQ') ||
+		(destino == 'VDM'))
+			bln_cabotaje = true;
+			
+	return bln_cabotaje;
+}
+//FIN FUNCTION DestinoCabotaje
+
+//FUNCTION ValidaCantidadPasajeros
+function ValidaCantidadPasajeros(objListBox1,objListBox2) {
+	var totalPasajeros = parseInt(objListBox1.value) + parseInt(objListBox2.value);
+	if(totalPasajeros >7) {
+		alert('Solo se admiten hasta nueve (7) pasajeros (adultos + niños) por reserva.');
+		return false;
+	}
+}
+//FIN FUNCTION ValidaCantidadPasajeros
+
+/* SETEO DE LOS CALENDARIOS */
+var d = 15
+var m = 8
+var y = 2014
+
+tomorrow = new Date(y, m, d);
+tomorrow.setDate(tomorrow.getDate()-1);
+
+ultima = new Date(y, m, d);
+ultima.setDate(ultima.getDate() + 333);
+
+//FUNCTION dateStatus
+function dateStatus(date) {
+	if (date.getTime() <= tomorrow.getTime() || date.getTime() >= ultima.getTime())
+		return true; 
+	else
+		return false; 
+}
+//FIN FUNCTION dateStatus
+
+Calendar.setup({
+	inputField		:	"calendarioIda",	// id of the input field
+	ifFormat		:	"%d/%m/%Y",			// format of the input field
+	button			:	"calendarioIda",	// trigger for the calendar (button ID)
+	align			:	"Tl",				// alignment (defaults to "Bl")
+	singleClick		:	true,
+	dateStatusFunc	:	dateStatus,
+	onClose			:	fnCambiaFechaIda
+});
+
+Calendar.setup({
+	inputField		:	"calendarioIda",	// id of the input field
+	ifFormat		:	"%d/%m/%Y",			// format of the input field
+	button			:	"imgCalendarioIda",	// trigger for the calendar (button ID)
+	align			:	"Tl",				// alignment (defaults to "Bl")
+	singleClick		:	true,
+	dateStatusFunc	:	dateStatus,
+	onClose			:	fnCambiaFechaIda
+});
+
+Calendar.setup({
+	inputField		:	"calendarioVuelta",	// id of the input field
+	ifFormat		:	"%d/%m/%Y",			// format of the input field
+	button			:	"calendarioVuelta",	// trigger for the calendar (button ID)
+	align			:	"Tl",				// alignment (defaults to "Bl")
+	singleClick		:	true,
+	dateStatusFunc	:	dateStatus,
+	onClose			:	fnCambiaFechaIda
+});
+
+Calendar.setup({
+	inputField		:	"calendarioVuelta",		// id of the input field
+	ifFormat		:	"%d/%m/%Y",				// format of the input field
+	button			:	"imgCalendarioVuelta",	// trigger for the calendar (button ID)
+	align			:	"Tl",					// alignment (defaults to "Bl")
+	singleClick		:	true,
+	dateStatusFunc	:	dateStatus,
+	onClose			:	fnCambiaFechaIda
+});
+
+function fnt_adultos() {
+  open('bodies/Aclaracion_Edades.asp?idi=es&Op=A','','width=620, height=240, resizable=yes, scrollbars=yes');
+}
+
+function fnt_ninos() {
+  open('bodies/Aclaracion_Edades.asp?idi=es&Op=N','','width=620, height=240, resizable=yes, scrollbars=yes');
+}
+
+function fnt_bebes() {
+  open('bodies/Aclaracion_Edades.asp?idi=es&Op=B','','width=620, height=240, resizable=yes, scrollbars=yes');
+}
+
+</script>  <!-- * diccionario * -->
+
+  <table width="1002" border="0" align="center" cellpadding="0" cellspacing="0" style="clear:both;">
+    <tbody><tr>
+      <td bgcolor="#FFFFFF">&nbsp;</td>
+      <td valign="bottom" bgcolor="#FFFFFF">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="333" bgcolor="#FFFFFF"><img src="Content/themes/V2/img/backgrounds/footer-left.jpg" width="333" height="100" alt=""></td>
+      <td width="669" valign="bottom" bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tbody><tr>
+          <td><table width="660" border="0" cellspacing="0" cellpadding="0">
+            <tbody><tr>
+              <td height="1" bgcolor="#A6AAAD"><span class="txtGirs"><img src="../../../main.asp_files/0.gif" width="1" height="1" alt=""></span></td>
+              </tr>
+            <tr>
+              <td height="5"><img src="../../../main.asp_files/0.gif" width="1" height="5" alt=""></td>
+              </tr>
+            <tr>
+              <td align="left"><table width="560" border="0" cellpadding="0" cellspacing="0">
+                <tbody><tr>
+                  
+                  <td width="94"><img src="Content/themes/V2/img/common/footer-logoAustral.gif" alt="Austral" border="0" onclick="abrirAustral();" style="cursor:pointer;"></td>
+                  <td width="96"><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=81&idIdioma=es"><img src="Content/themes/V2/img/common/footer-logoJetPaq.gif" alt="JetPaq" border="0"></a></td>
+                  <td width="124"><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=9&idIdioma=es"><img src="Content/themes/V2/img/common/footer-logoAerohandling.gif" alt="Aerohandling" border="0"></a></td>                  
+                  <td width="42"><a href="http://www.optar.com/" target="_blank"><img src="Content/themes/V2/img/common/footer-logoOptar.gif" alt="Optar" border="0"></a></td>
+				  <td width="34"><!--<a href="main.asp?idSitio=AR&idPagina=9&empresa=C&idIdioma=es"><img src="images/common/footer-logoAeroCargo.gif" width="109" height="30" alt="Aerolineas Cargo" border="0"></a>--></td>
+				  <!--<td width="95"><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=1&idIdioma=es"><img src="images/common/footer-logoAASkyTeam.gif" alt="Aerolineas Argentinas" border="0"></a></td>-->
+				  <td width="75"><img src="Content/themes/V2/img/common/logo_arg.jpg" alt="" border="0"></td>
+				  <td width="75"><img src="Content/themes/V2/img/common/argentina_paisbuenagente.gif" alt="" border="0"></td>
+                  </tr>
+              </tbody></table></td>
+              </tr>
+            <tr>
+              <td align="center">
+				<table width="490" border="0" cellpadding="0" cellspacing="0">
+					<tbody><tr>
+						<td align="center">
+							<span class="txtGirsfoote">aerolineas.com&nbsp;Sitio Oficial de Aerolíneas Argentinas. © 1996 - 2014 Aerolíneas Argentinas S.A. <br>
+							<a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=72&idIdioma=es" class="txtGirsfoote">Legales</a> | 
+							<a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=174&idIdioma=es#" onclick="popup_condiciones_transporte();" class="txtGirsfoote">Condiciones Generales de Transporte</a> | 
+							<a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=94&idIdioma=es" class="txtGirsfoote">Mapa del Sitio</a>   |   
+							<a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=84&idIdioma=es" class="txtGirsfoote">Ud. está en un SITIO SEGURO </a>
+							</span>
+						</td>
+						<td align="right"><a href="https://servicios1.afip.gov.ar/clavefiscal/qr/mobilePublicInfo.aspx?req=e1ttZXRob2Q9Z2V0UHVibGljSW5mb11bcGVyc29uYT0zMDY0MTQwNTU1NF1bdGlwb2RvbWljaWxpbz0wXVtzZWN1ZW5jaWE9MF1bdXJsPWh0dHA6Ly93d3cuYWVyb2xpbmVhcy5jb20uYXJdfQ==" target="_F960AFIPInfo"><img src="Content/themes/V2/img/common/qr_code.gif" border="0"></a></td>
+					</tr>
+				</tbody></table>
+			  </td>
+              </tr>
+            </tbody></table></td>
+        </tr>
+        <tr>
+          <td><img src="Images/reservas/footer-right.gif" width="669" height="14" alt=""></td>
+        </tr>
+      </tbody></table></td>
+    </tr>
+  </tbody></table> 
+<script>
+function popup_condiciones_transporte() {
+  var winC = window.open('bodies/CondicionesGrales_contratoTransporte.asp?idSitio=AR&idIdioma=es','wContr', 'scrollbars=yes, resizable=1,width=800,height=600');
+  winC.moveTo(0,0);
+}
+function abrirAustral() {
+  window.open('http://www.austral.com.ar/index.asp?idSitio=AR&idIdioma=es','Austral', 'scrollbars=yes, resizable=1,width=1020,height=805');
+}
+</script>
+<!-- LIMPIA TODAS LAS VARIABLES LIBERANDO MEMORIA -->
+</div><div class="calendar" style="position: absolute; display: none; left: 799px; top: 276px;"><table cellspacing="0" cellpadding="0" style="visibility: visible;"><thead><tr><td colspan="1" class="button"><div unselectable="on">?</div></td><td colspan="6" class="title" style="cursor: move;">Septiembre, 2014</td><td colspan="1" class="button"><div unselectable="on">×</div></td></tr><tr class="headrow"><td colspan="1" class="button nav"><div unselectable="on">«</div></td><td colspan="1" class="button nav"><div unselectable="on">‹</div></td><td colspan="4" class="button"><div unselectable="on">Hoy</div></td><td colspan="1" class="button nav"><div unselectable="on">›</div></td><td colspan="1" class="button nav"><div unselectable="on">»</div></td></tr><tr class="daynames"><td class="name wn">sem</td><td class="day name">Lun</td><td class="day name">Mar</td><td class="day name">Mié</td><td class="day name">Jue</td><td class="day name">Vie</td><td class="name day weekend">Sáb</td><td class="name day weekend">Dom</td></tr></thead><tbody><tr class="daysrow"><td class="day wn">36</td><td class="day disabled">1</td><td class="day disabled">2</td><td class="day disabled">3</td><td class="day disabled">4</td><td class="day disabled">5</td><td class="day disabled">6</td><td class="day disabled">7</td></tr><tr class="daysrow"><td class="day wn">37</td><td class="day disabled">8</td><td class="day disabled">9</td><td class="day disabled">10</td><td class="day disabled">11</td><td class="day disabled">12</td><td class="day disabled">13</td><td class="day disabled">14</td></tr><tr class="daysrow"><td class="day wn">38</td><td class="day false selected today">15</td><td class="day false">16</td><td class="day false">17</td><td class="day false">18</td><td class="day false">19</td><td class="day false weekend">20</td><td class="day false weekend">21</td></tr><tr class="daysrow"><td class="day wn">39</td><td class="day false">22</td><td class="day false">23</td><td class="day false">24</td><td class="day false">25</td><td class="day false">26</td><td class="day false weekend">27</td><td class="day false weekend">28</td></tr><tr class="daysrow"><td class="day wn">40</td><td class="day false">29</td><td class="day false">30</td><td class="emptycell">&nbsp;</td><td class="emptycell">&nbsp;</td><td class="emptycell">&nbsp;</td><td class="emptycell">&nbsp;</td><td class="emptycell">&nbsp;</td></tr><tr class="emptyrow"><td class="day wn">41</td><td class="emptycell">&nbsp;</td><td class="emptycell">&nbsp;</td><td class="emptycell">&nbsp;</td><td class="emptycell">&nbsp;</td><td class="emptycell">&nbsp;</td><td class="emptycell">&nbsp;</td><td class="emptycell">&nbsp;</td></tr></tbody><tfoot><tr class="footrow"><td colspan="8" class="ttip" style="cursor: move;"><div unselectable="on">Seleccionar fecha</div></td></tr></tfoot></table><div class="combo" style="display: none;"><div class="label">Ene</div><div class="label">Feb</div><div class="label">Mar</div><div class="label">Abr</div><div class="label">May</div><div class="label">Jun</div><div class="label">Jul</div><div class="label">Ago</div><div class="label">Sep</div><div class="label">Oct</div><div class="label">Nov</div><div class="label">Dic</div></div><div class="combo"><div class="label"></div><div class="label"></div><div class="label"></div><div class="label"></div><div class="label"></div><div class="label"></div><div class="label"></div><div class="label"></div><div class="label"></div><div class="label"></div><div class="label"></div><div class="label"></div></div></div><div class="calendar" style="position: absolute; display: none; left: 799px; top: 276px;"><table cellspacing="0" cellpadding="0" style="visibility: visible;"><thead><tr><td colspan="1" class="button"><div unselectable="on">?</div></td><td colspan="6" class="title" style="cursor: move;">Septiembre, 2014</td><td colspan="1" class="button"><div unselectable="on">×</div></td></tr><tr class="headrow"><td colspan="1" class="button nav"><div unselectable="on">«</div></td><td colspan="1" class="button nav"><div unselectable="on">‹</div></td><td colspan="4" class="button"><div unselectable="on">Hoy</div></td><td colspan="1" class="button nav"><div unselectable="on">›</div></td><td colspan="1" class="button nav"><div unselectable="on">»</div></td></tr><tr class="daynames"><td class="name wn">sem</td><td class="day name">Lun</td><td class="day name">Mar</td><td class="day name">Mié</td><td class="day name">Jue</td><td class="day name">Vie</td><td class="name day weekend">Sáb</td><td class="name day weekend">Dom</td></tr></thead><tbody><tr class="daysrow"><td class="day wn">36</td><td class="day disabled">1</td><td class="day disabled">2</td><td class="day disabled">3</td><td class="day disabled">4</td><td class="day disabled">5</td><td class="day disabled">6</td><td class="day disabled">7</td></tr><tr class="daysrow"><td class="day wn">37</td><td class="day disabled">8</td><td class="day disabled">9</td><td class="day disabled">10</td><td class="day disabled">11</td><td class="day disabled">12</td><td class="day disabled">13</td><td class="day disabled">14</td></tr><tr class="daysrow"><td class="day wn">38</td><td class="day false selected today">15</td><td class="day false">16</td><td class="day false">17</td><td class="day false">18</td><td class="day false">19</td><td class="day false weekend">20</td><td class="day false weekend">21</td></tr><tr class="daysrow"><td class="day wn">39</td><td class="day false">22</td><td class="day false">23</td><td class="day false">24</td><td class="day false">25</td><td class="day false">26</td><td class="day false weekend">27</td><td class="day false weekend">28</td></tr><tr class="daysrow"><td class="day wn">40</td><td class="day false">29</td><td class="day false">30</td><td class="emptycell">&nbsp;</td><td class="emptycell">&nbsp;</td><td class="emptycell">&nbsp;</td><td class="emptycell">&nbsp;</td><td class="emptycell">&nbsp;</td></tr><tr class="emptyrow"><td class="day wn">41</td><td class="emptycell">&nbsp;</td><td class="emptycell">&nbsp;</td><td class="emptycell">&nbsp;</td><td class="emptycell">&nbsp;</td><td class="emptycell">&nbsp;</td><td class="emptycell">&nbsp;</td><td class="emptycell">&nbsp;</td></tr></tbody><tfoot><tr class="footrow"><td colspan="8" class="ttip" style="cursor: move;">Seleccionar fecha</td></tr></tfoot></table><div class="combo" style="display: none;"><div class="label">Ene</div><div class="label">Feb</div><div class="label">Mar</div><div class="label">Abr</div><div class="label">May</div><div class="label">Jun</div><div class="label">Jul</div><div class="label">Ago</div><div class="label">Sep</div><div class="label">Oct</div><div class="label">Nov</div><div class="label">Dic</div></div><div class="combo"><div class="label"></div><div class="label"></div><div class="label"></div><div class="label"></div><div class="label"></div><div class="label"></div><div class="label"></div><div class="label"></div><div class="label"></div><div class="label"></div><div class="label"></div><div class="label"></div></div></div></body></html>

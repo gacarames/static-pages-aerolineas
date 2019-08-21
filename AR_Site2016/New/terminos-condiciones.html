@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Aerolineas Argentinas</title>
+    <meta http-equiv="title" content="Aerolineas Argentinas">
+    <meta name="Description" content="Todo tu viaje en un solo lugar aerolineas.com, vuelos baratos.">
+    <link href="Images/condor_chico.gif" rel="shortcut icon" type="image/x-icon" />
+    <link href="http://www.aerolineas.com.ar/es-ar" rel="canonical"></link>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.touchSwipe.min.js"></script>
+    <script src="js/carousel-hero.js"></script>
+    
+    <script src="js/slick.min.js"></script><!-- Script footer menu carousel -->
+
+    <script src="js/jquery.matchHeight-min.js"></script><!--  Match Height Cols -->
+    <script>// matchHeight blocks content
+        $(document).ready(function() {
+            $('.col-desc').matchHeight();
+            $('.col-desc .title').matchHeight();
+            $('.tabs a').matchHeight();
+           
+        });
+    </script>
+      
+    <script src="js/locales/es-AR.min.js"></script><!-- //datapicker form -->
+
+
+    <link rel="stylesheet" href="css/selectize.css" /><!-- //selects form CSS -->
+    <script src="js/selectize.js"></script> <!-- //selects form -->
+    <script>//selectize
+        $(document).ready(function() {
+            $('.selectSearch').selectize({
+                sortField: 'text'
+            });
+        });
+    </script>
+
+
+    <!-- <msdropdown> -->
+    <link rel="stylesheet" href="css/msdropdown/dd.css" />
+    <script src="js/msdropdown/jquery.dd.min.js"></script>
+    <link rel="stylesheet" href="css/msdropdown/skin2.css" />
+    <link rel="stylesheet" href="css/msdropdown/flags.css" />
+    <!-- </msdropdown> -->
+
+    <!-- tabs to dropdown -->
+    <!--  <link rel="stylesheet" href="css/tabs-to-dropdown.css" />
+    <script src="js/tabs.js"></script> -->
+    <!-- / tabs to dropdown -->
+    
+
+    <script src="js/jquery.html5-placeholder-shim.js"></script>
+    
+    <script src="js/scripts.js"></script><!-- general scripts -->
+
+
+</head>
+<body>
+<!-- CONTENEDOR -->
+<div id="main-content" class="conditions">
+    <header role="banner">
+            <a href="" class="firstFocus"></a>
+            <ul id="utilityNav" class="list-unstyled" accesskey="a">
+                <li><a href="#main-nav" class="">Skip to main navigation</a></li>
+                <li><a href="#wrapper" class="">Skip to main content</a></li>
+                <li><a href="#footer" class="">Skip to footer</a></li>
+            </ul>
+            <div id="header" class="clearfix">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div id="header-top" class="header-top clearfix">
+                        <div id="logo-header" class="pull-left">
+                            <a href="index.html" accesskey="h"><img alt="Aerolineas.com" src="img/common/logo_Aerolineas.gif" /></a>
+                        </div>
+                        <div id="access-top" class="pull-right">
+                            <div id="CultureContainer" class="hidden-xs hidden-sm">
+                                <select class="INPUTBuscador" id="culture" name="culture" title="Culture">
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag ar" selected="selected" value="es-ar" data-title="Argentina (Español)">Argentina (Español)</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag ar" value="en-ar" data-title="Argentina (Inglés)">Argentina (Inglés)</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag au" value="en-au" data-title="Australia">Australia</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag bo" value="es-bo" data-title="Bolivia">Bolivia</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag br" value="pt-br" data-title="Brasil">Brasil</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag co" value="es-co" data-title="Colombia">Colombia</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag cl" value="es-cl" data-title="Chile">Chile</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag es" value="es-eu" data-title="España">España</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag fr" value="fr-fr" data-title="Francia">Francia</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag it" value="it-eu" data-title="Italia">Italia</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag mx" value="es-mx" data-title="México">México</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag nz" value="en-nz" data-title="New Zealand">New Zealand</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag pa" value="es-pa" data-title="Paraguay">Paraguay</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag pe" value="es-pe" data-title="Perú">Perú </option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag en" value="en-eu" data-title="Rest of Europe">Rest of Europe</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag uy" value="es-uy" data-title="Uruguay">Uruguay</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag us" value="es-us" data-title="United States (Español)">United States (Español)</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag us" value="en-us" data-title="United States (English)">United States (English)</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag es" value="es-us" data-title="Otros países (Español)">Otros países (Español)</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag us" value="en-us" data-title="Other Countries (English)">Other Countries (English)</option>
+                                </select>
+                            </div>
+                            <!--  
+                            <div id="user-arplus">
+                                <span class="name text-blue"><i class="fa fa-user" aria-hidden="true"></i> <span>Maximiliano Ballesteros</span></span>
+                                <a id="logout" href="" class="underline">Cerrar sesión</a>
+                            </div> 
+                            -->
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-header-collapse" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- NAVBAR -->
+                    <nav id="main-nav" class="navbar navbar-default" role="navigation" aria-label="Menú principal">
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="navbar-header-collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="menu-item">
+                                    <a href="productos-opcionales.html">
+                                   Productos opcionales<span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="arplus.html">Viajeros Frecuentes</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="servicios.html">Servicios al cliente</a>
+                                </li>
+                                <li><a id="btnSearchMobile" class="hidden-md hidden-lg" role="button" data-toggle="collapse" href="#collapseFormSearchMobile" aria-expanded="false" aria-controls="collapseFormSearchMobile"><span><img src="img/common/ico_plane.png" alt="Vuelos" role="presentation"></span> Reservá tu vuelo</a>
+                                </li>
+                                <li><a class="hidden-md hidden-lg" role="button" data-toggle="collapse" href="#collapseChatMobile" aria-expanded="false" aria-controls="collapseChatMobile"><span><img src="img/common/ico_chat.png" alt="chat" role="presentation"></span> ¿Necesitas ayuda?</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </nav>
+                    <!-- /NAVBAR -->
+                    
+                    <!-- Breadcrumb -->
+                    <ol class="breadcrumb">
+                      <li><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> <span class="sr-only">Home</span></a></li>
+                      <li><a href="#">Nivel 1</a></li>
+                      <li class="active">Estado de reserva</li>
+                    </ol>
+                    <!-- /Breadcrumb -->
+                </div>
+                <!-- /.container -->
+            </div>
+    </header>
+    <!-- CONTENEDOR WRAPPER -->
+    <div id="wrapper" role="main">
+        <!-- #hero-form -->
+            <div id="hero-form" class="hero-form hero-form-slider hero-form-slider-interna no-form">
+                <!-- Carousel -->
+                <div id="myCarousel" class="carousel slide reservas" data-ride="carousel" data-interval="false">
+                    <!-- Indicators -->
+                    <div class="container hidden-xs hidden-sm">
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                        </ol>
+                    </div>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active" role="option">
+                            <div class="container">
+                                <div class="carousel-caption">
+                                    <h2 class="title">Información legal</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item item2" role="option">
+                            <div class="container">
+                                <div class="carousel-caption">
+                                    <h2 class="title">Another example headline.</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <div class="controls visible-xs-inline-block">
+                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <!-- Controls -->
+                </div>
+                <!-- /.carousel -->
+            </div>
+            <!-- /#hero-form -->
+
+        
+            <div class="container">
+                
+                <div class="content-reserva">
+                <div class="ancla"><a name="info" id="info"></a></div>
+
+                <div class="tabs-container">
+                    <h1 class="title hidden-md hidden-lg h2">Términos y Condiciones</h1>
+                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-tabs" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <nav role='navigation' class="tabs navbar-tabs">
+                      <div class="collapse navbar-collapse" id="collapse-tabs">
+                            <ul class="nav nav-tabs nav-justified nav-tabs-inner ">
+                                <li id="terminosCondiciones" role="presentation" class="active"><a href="terminos-condiciones.html#info">Términos y Condiciones</a></li>
+                                <li id="politicaPrivacidad" role="presentation"><a href="politica-privacidad.html#info">Política de Privacidad</a></li>
+                                <li id="condicionesTransporte" role="presentation"><a href="condiciones-transporte.html#info">Condiciones generales de Transporte</a></li>
+                                <!--<li id="" role="presentation"><a href="#info">Agregar Tab</a></li>-->
+                            </ul> 
+                      </div>
+                  </nav>
+                </div>
+
+
+                <!-- <h1 class="sr-only">Estado de reserva</h1> -->
+                
+
+                <div class="content">
+                    <p>Aerolíneas Argentinas S.A., con domicilio legal en la Av. Rafael Obligado s/n, Terminal 4, 6° Piso, Aeroparque Jorge Newbery, Ciudad Autónoma de Buenos Aires.</p>
+
+                    <p>La ley argentina 25.326 es una norma de orden público que regula la actividad de las bases de datos que registran información de carácter personal con el objeto de garantizar a las personas el control del uso de sus datos personales.</p>
+
+                    <p>Aerolíneas Argentinas y Austral han registrado sus bases de datos en el Registro Nacional de Bases de Datos, asegurando la efectiva tutela de los datos personales de todos sus usuarios.</p>
+
+                    <p>Para más información, consulte la página web del Ministerio de Justicia y Derechos Humanos de la Nación Argentina: <a href="http://www.jus.gov.ar" target="_blank">http://www.jus.gov.ar</a></p>
+
+                    <img src="img/banners/RNBD-legales.jpg" class="img-responsive">
+
+                    <hr>
+
+                    <p>Los siguientes Términos y Condiciones regulan el uso del Sitio de Internet www.aerolineas.com  (el 'Sitio'), en donde nuestra compañía brinda información sobre: ofertas para pasajeros particulares y agencias, la empresa, productos y servicios, Programa Pasajeros Frecuentes, Cargas y Preguntas frecuentes. Rogamos leer estos Términos y Condiciones con atención, debido a que el uso del Sitio por su parte, indica su aceptación absoluta. Si Ud. quiere realizar algún comentario sobre el Sitio y/o tiene alguna sugerencia, rogamos dirigirla a <a href="mailto:ventasonline@aerolineas.com.ar">ventasonline@aerolineas.com.ar</a>. Algunos servicios que se ofrecen en el Sitio, pueden además contener Términos y Condiciones particulares, que son específicos de ese servicio y adicionales de los presentes.</p>
+
+                    <hr>
+
+                    <h2>Uso de cookies</h2>
+                    <p>El presente sitio recoge información estadística del usuario mediante el almacenamiento de una "cookie" en el disco duro del visitante. La citada información en modo alguno identifica ni es susceptible de identificar personalmente al usuario, es decir, es totalmente anónima. Estas cookies podrán permitir al usuario un acceso más rápido al sitio, como así también podrán facilitar a Aerolíneas Argentinas S.A. información con fines estadísticos.</p>
+                    <p>Todos los datos que el usuario ingrese en el sitio serán resguardados y tratados con toda la confidencialidad y no del caso y sólo podrán ser develados en cumplimiento de una orden de autoridad competente.
+                    El usuario del sitio tiene la posibilidad de configurar su navegador para que le avise en pantalla de la recepción de "cookies" y para impedir la instalación de las mismas en su disco duro.
+                    El usuario puede en cualquier momento desactivar el uso de las cookies mediante la modificación de los parámetros de configuración de su navegador (consulte las instrucciones de su navegador para realizar esto). La desactivación no impide la visualización de las páginas de este sitio ni interfiere en la navegación.</p>
+                    
+                    <hr>
+
+                    <h2>Pasos para efectuar una reserva</h2>
+                    <h3>1. Vuelos</h3>
+                    <p>Este paso da inicio al proceso de Reserva de pasajes. Aquí el pasajero comienza su búsqueda eligiendo el origen, destino, fechas, clase/cabina, y cantidad de pasajeros discriminado por edad (Bebés: Hasta los dos años sin cumplir / Niños: Desde los 2 hasta los 12 años sin cumplir / Adultos: A partir de los 12 años cumplidos). </p>
+
+                    <p class="text-blue">De acuerdo al origen y destino de los vuelos se podrá presentar alguna de las siguientes opciones:</p>
+
+                    <ul>
+                        <li>Se desplegará un cuadro de doble entrada presentando en su margen derecho los vuelos que operan en el día seleccionado y en la fila superior las diferentes familias de tarifas con sus respectivas condiciones y restricciones aplicables. Preseleccionado aparecerá el primer vuelo con la tarifa más económica de los vuelos para las fechas indicadas. En la parte superior además se visualizan diferentes pestañas con fechas alternativas (3 días anteriores y 3 días posteriores) e incluyen la tarifa más baja para cada uno de ellos. Si la solicitud fue de ida y vuelta, posterior a este cuadro se presentará otro igual con los regresos.</li>
+                        <li>Se presentará un listado con diferentes opciones de vuelos de ida, con la tarifa más baja para cada selección. Si los resultados son varios, al pié podrá encontrar un contador de páginas para navegar a través de las mismas. Preseleccionada aparecerá la primera opción, la cual podrá modificar de acuerdo a su conveniencia. Una vez efectuada la selección, deberá clickear en “Continuar”. En el caso de haber elegido “ida y vuelta”, este proceso se repetirá con las opciones para el regreso.<br><br></li>
+                    </ul>
+
+                    <div class="table-responsive">
+                        <table class="table table-condensed table-striped"> 
+                            <thead> 
+                                <tr> 
+                                    <th>#</th> 
+                                    <th>First Name</th> 
+                                    <th>Last Name</th> 
+                                    <th>Username</th> 
+                                </tr> 
+                            </thead> 
+                            <tbody> 
+                                <tr> 
+                                    <th scope="row">1</th> 
+                                    <td>Mark</td> 
+                                    <td>Otto</td> 
+                                    <td>@mdo</td> 
+                                </tr> 
+                                <tr> 
+                                    <th scope="row">2</th> 
+                                    <td>Jacob</td> 
+                                    <td>Thornton</td> 
+                                    <td>@fat</td> 
+                                </tr> 
+                                <tr> 
+                                    <th scope="row">3</th> 
+                                    <td colspan="2">Larry the Bird</td> 
+                                    <td>@twitter</td> 
+                                </tr> 
+                            </tbody> 
+                        </table>
+                    </div>
+
+                    <img src="img/common/dangerarticlesnotallowed.png" alt="Elementos Peligrosos" class="img-responsive img-center" role="presentation">
+
+                    <h3>2. Verificación - Revisá tu elección</h3> 
+                    <p>Este paso le permitirá revisar la información preliminar de la selección realizada, para confirmar que la misma se ha efectuado de acuerdo a sus deseos.</p>
+
+                    <p>Aquí verá en primer lugar la tarifa final por el total de pasajeros seleccionados. En la línea siguiente, el desglose por tipo de pasajero individualizando precio de la tarifa e impuestos. El mismo no incluye el cargo de gestión. Esta información es repetida posteriormente en un recuadro de color amarillo.</p>
+
+                    <p>También se identificará de manera individual, el detalle de cada uno de los vuelos seleccionados incluyendo origen y destino, fechas, horarios, la línea aérea transportadora, posibles escalas, número de vuelo, cabina de transporte y el avión que opera.</p>
+
+                    <p>En caso de encontrar datos erróneos, el pasajero deberá comenzar nuevamente el proceso de reserva a través del botón “Nueva Búsqueda” en la parte superior de la Web.</p>
+
+                    <p>De aceptar la selección hecha hasta aquí, podrá ingresar con los datos de su cuenta Aerolíneas Plus para que los datos sean completados automáticamente o bien “Continuar sin registrarse”. En el caso que posea cuenta Aerolíneas Plus y la clave no sea aceptada, deberá ingresar por única vez a “Mi Cuenta Plus  Primera Vez que Ingresa” y generar una nueva. A las 48 hs quedará habilitada para ser utilizada.</p> 
+
+                    <h3>3. Datos</h3>   
+                    <p>En este paso será necesario completar los datos personales para cada uno de los pasajeros. Los campos marcados con un asterisco rojo son los obligatorios.</p>
+
+                    <p>Aquí también se podrá solicitar comidas y servicios especiales (asistencia para pasajeros sordos, no videntes o con necesidad de silla de ruedas).</p>
+
+                    <p>Posteriormente deberá ingresar los datos de contacto incluyendo al menos un teléfono y una dirección de email.</p>            
+                    
+                    <h3>4. Reserva</h3>
+                    <p>En este paso se presenta un resumen de toda la información de la gestión realizada hasta el momento.</p>
+
+                    <p>Precio total (no incluye cargos de gestión).</p>
+
+                    <p>Detalle de cada uno de los vuelos.</p>
+
+                    <p>Datos de los pasajeros.</p>
+
+                    <p>Cuadro de condiciones de tarifas.</p>
+
+                    <p>Información adicional sobre la reserva a realizar, tasas aeroportuarias no incluidas para ciertos destinos/aeropuertos, posibles requerimientos y vencimiento de la reserva que se estará finalizando.</p>
+                    
+                    <p>Para poder continuar con la confirmación de la reserva, el pasajero deberá tildar la casilla en la cual se deja establecido que se han leído y aceptado las condiciones de la tarifa y del equipaje de mano.</p>
+
+                    <p>Por último deberá hacer un clic en "Continuar" para obtener el código de reserva, único aval de que la misma fue gestionada correctamente.</p>
+
+                    <h3>5. Confirmación</h3>
+                    <p>Aquí se mostrará la reserva efectuada. Asimismo, de manera automática se generará un correo electrónico a la casilla de e-mail informada, con los mismos datos que aquí se muestran. Dicha información permanecerá en el sistema hasta 48 hs. posteriores a la fecha y hora del último tramo del viaje registrado en la reserva. Luego la misma se baja del sistema y se almacena en una base de datos permanente, de uso exclusivo de Aerolíneas Argentinas S.A.</p>
+
+                    <p>Los datos incluyen el código de reserva, el tiempo de validez de la misma, la tarifa final y su desglose, los datos de el/los vuelos confirmados y datos de los pasajeros.
+                    Asimismo se mostrarán las formas de pago online habilitadas para efectivizar la compra de la misma. En el caso de hacerlo a través de la Web, el cargo de gestión no será cobrado.</p>
+
+                    <p>Al pie de esa pantalla se permite la asignación de asientos para aquellas tarifas que así lo permitan y la impresión del contenido de la misma.</p>
+
+                    <hr>
+
+                    <h2>Notas del vuelo</h2>
+
+                    <p>Las tarifas expresadas en pesos (ARS) para vuelos dentro del territorio argentino no se aplican para compras realizadas en el exterior. Sólo se aplican a residentes en Argentina.<br>
+                    <p>Esta tarifa puede estar sometida a restricciones especiales.<br>
+                    El importe estará sujeto al tipo de cambio en el momento de la emisión del ticket.<br>
+                    Consulte aquí los cargos adicionales para compras efectuadas en Argentina, España, Italia, Alemania, Francia y Colombia.<br>
+                    Tasas incluidas, excepto cuando las tasas de aeropuertos locales se cobran en el momento de registrarse en el aeropuerto.<br>
+                    Consulte aquí las oficinas de venta más cercana para pagar su ticket.<br>
+                    Para asegurarse de obtener los billetes a la tarifa estimada, debe adquirirlos en el país de salida.</p>
+
+                    <p>Recuerde categoría para Niños / Bebés:<br>
+                    Vuelos Internacionales, Regionales y Domésticos:</p>
+                    <ul>
+                        <li>Niño (2-12 sin cumplir)</li>
+                        <li>Bebé (0-2 sin cumplir)</li>
+                    </ul>
+
+                    <p>Asimismo, respecto de algunos servicios hemos llegado a acuerdos con otras líneas aéreas que operarán el avión en el que Ud. viajará. Los vuelos operados de esta forma se regirán por las Condiciones de Transporte de tales compañías aéreas. Ud. podrá encontrar detalles de estas Condiciones de Transporte en la página web de la compañía que opere dicho vuelo, o bien, obtenerlas directamente de la compañía operadora del vuelo.</p>
+
+                    <p>El acceso al Sitio es totalmente libre y gratuito, sin la necesidad de registrarse. Sin embargo, es necesario registrarse para efectuar una compra de pasajes, asociarse en el programa de pasajeros frecuentes así como al programa Club Secretarias y tener una contraseña para consultar los puntos obtenidos en los citados programas.</p>
+
+                    <p>Todo el contenido del Sitio, incluyendo pero no limitando a textos, gráficos, fotografías, logotipos, marcas, imágenes, bases de datos, así como el diseño gráfico, código fuente y software, son de exclusiva propiedad de Aerolíneas Argentinas S.A. o de terceros, cuyos derechos reconoce Aerolíneas Argentinas S.A., y están sujetos a derechos de propiedad intelectual e industrial protegidos por a legislación nacional e internacional.</p>
+
+                    <p>Queda estrictamente prohibido la utilización de todos los elementos objeto de propiedad intelectual e industrial con cualquier fin, incluyendo su reproducción, copia, distribución, modificación, alteración en forma total o parcial.</p>
+
+                    <p>El usuario o visitante del Sitio se obliga a usar el Sitio de conformidad con estos Términos y Condiciones, en forma diligente, correcta y lícita, y conforme con la moral y las buenas costumbres. El usuario o visitante responderá por los daños y perjuicios de toda naturaleza que Aerolíneas Argentinas S.A. pueda sufrir, directa o indirectamente, como consecuencia del incumplimiento de cualquiera de las obligaciones derivadas de estos Términos y Condiciones, de los términos y condiciones de algún servicio en particular que se incluya en el Sitio o de la ley aplicable en relación con la utilización del Sitio.</p>
+
+                    <p>Aerolíneas Argentinas S.A. se reserva el derecho, a su exclusiva discreción, de interrumpir, modificar, alterar el contenido y/o acceso del Sitio, así como también de excluir al usuario y/o sus datos ingresados, en cualquier momento y sin previo aviso, ya sea por motivos técnicos, de seguridad, de control, de mantenimiento, por fallos de suministro eléctrico o por cualquier otra causa.</p>
+
+                    <p>Aerolíneas Argentinas S.A. no garantiza ni asume ningún tipo de responsabilidad por los daños y perjuicios sufridos por el acceso al Sitio por parte de terceros a través de conexiones, vínculos o links de los sitios enlazados, ni tampoco por enlaces con otros sitios que el usuario o visitante pueda realizar desde el Sitio. Aerolíneas Argentinas S.A. tampoco será responsable por los daños y perjuicios que puedan deberse a la presencia de virus o a la presencia de otros elementos lesivos en los contenidos del Sitio, que puedan producir alteración en los sistemas informáticos así como en los documentos o sistemas almacenados en los mismos.</p>
+
+                    <p>En caso de duda o contradicción entre el texto en español y el resto de los idiomas, prevalecerá el texto en español.</p>
+
+                    <p>Toda información o dato personal que Ud. nos proporcione, será utilizada conforme a la Política de Privacidad.</p>
+
+                    <p>Los Términos y Condiciones del Sitio se regirán e interpretarán de acuerdo con las leyes de la República Argentina. Los jueces federales en lo civil y comercial de la Ciudad de Buenos Aires serán los tribunales exclusivamente competentes para entender en todas las controversias legales emergentes de o relacionadas con el Sitio.</p>
+
+                    <p>Si cualquier disposición del Sitio se tuviera por nula, invalida, inaplicable, inoperante o inoponible, ninguna otra disposición se verá afectada como resultado de ello, y consecuentemente, las disposiciones restantes permanecerán en plena vigencia.</p>
+
+                    <p>Mediante el presente Ud. deja constancia que ha sido debidamente informado respecto de la finalidad para la cual han sido recabados sus datos personales y quiénes pueden ser sus destinatarios, como así también el derecho que le asiste a tener acceso a los mismos, como así a peticionar su rectificación y/o supresión, todo ello conforme a lo normado en la Ley Nacional de la República Argentina N° 25326 (Protección de Datos Personales) y su Decreto Reglamentario N° 1558/01.</p>     
+                </div>
+
+            </div>
+    </div>
+    <!-- /CONTENEDOR WRAPPER -->
+    <footer id="footer" role="contentinfo" class="no-slider">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="nav-footer-content">
+                            <div class="nav-footer">
+                                <div><a id="slick-slide00" href="http://ww1.aerolineas.com.ar/arg/main.asp?idsitio=ar&idpagina=164&ididioma=es">La Empresa</a></div>
+                                <div><a id="slick-slide01" href="http://www.aerolineas.com.ar/es-ar/prensa/comunicado">Prensa</a></div>
+                                <div><a id="slick-slide02" href="http://www.skyteam.com/" target="_blank">Alianza Skyteam</a></div>
+                                <div><a id="slick-slide03" href="http://www.aerolineas.com.ar/es-ar/cefepra/acercade" target="_blank" class="link">Cefepra</a></div>
+                                <div><a id="slick-slide04" href="http://cargo.aerolineas.com.ar/es-ar" target="_blank" class="link">Cargas</a></div>
+                                <div><a id="slick-slide05" href="http://www.jetpaq.com.ar/es-ar" target="_blank">Jetpaq</a></div>
+                                <div><a id="slick-slide06" href="http://www.aerolineas.com.ar/es-ar/la_empresa/recursos_humanos" target="" class="link">RRHH</a></div>
+                                <div><a id="slick-slide07" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=152&amp;idIdioma=es" target="_blank" class="link">Proveedores</a></div>
+                                <div><a id="slick-slide08" href="">Otro</a></div>
+                                <div><a id="slick-slide09" href="">Otro</a></div>
+                                <div><a id="slick-slide010" href="">Otro</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="social-links">
+                            <ul class="nav-justified list-unstyled ">
+                                <li><a target="_blank" href="https://www.facebook.com/Aerolineas.argentinas"><i class="fa fa-facebook"></i><span class="sr-only">Facebook</span></a></li>
+                                <li><a target="_blank" href="http://twitter.com/Aerolineas_AR/"><i class="fa fa-twitter"></i><span class="sr-only">Twitter</span></a></li>
+                                <li><a target="_blank" href="https://www.instagram.com/aerolineas_argentinas/"><i class="fa fa-instagram"></i><span class="sr-only">Instagram</span></a></li>
+                                <li><a target="_blank" href="http://www.linkedin.com/company/aerolineas-argentinas"><i class="fa fa-linkedin"></i><span class="sr-only">Linkedin</span></a></li>
+                                <li><a target="_blank" href="https://plus.google.com/106198199507305429358/posts"><i class="fa fa-google-plus"></i><span class="sr-only">GooglePlus</span></a></li>
+                                <li><a target="_blank" href="http://www.youtube.com/user/AerolineasAR"><i class="fa fa-youtube"></i><span class="sr-only">Youtube</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="clearfix">
+                    <div class="row">
+                        <div class="col-sm-7 col-md-6">
+                            <ul class="list-unstyled list-inline pull-left">
+                                <li class="codigo-qr">
+                                    <a href="https://servicios1.afip.gov.ar/clavefiscal/qr/mobilePublicInfo.aspx?req=e1ttZXRob2Q9Z2V0UHVibGljSW5mb11bcGVyc29uYT0zMDY0MTQwNTU1NF1bdGlwb2RvbWljaWxpbz0wXVtzZWN1ZW5jaWE9MF1bdXJsPWh0dHA6Ly93d3cuYWVyb2xpbmVhcy5jb20uYXJdfQ==" target="_F960AFIPInfo"><img src="img/common/qr_code.gif" alt="QR-Code" /></a>
+                                </li>
+                                <li class="pie_texto">
+                                    <span>aerolineas.com Sitio Oficial de Aerolineas Argentinas. <br>
+                                <span class="number"><i class="fa fa-phone" aria-hidden="true"></i> <span class="text">SAC: </span><span class="sr-only">Llamanos al </span> <a href="tel:0800-761-0254">0800-761-0254</a></span>
+                                    <span class="number"><span class="text"> | Central</span> de Vendas: <a href="tel:0800-761-0254">0800-761-0254</a></span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-5 col-md-6">
+                            <ul class="list-unstyled list-inline pull-right logos-footer">
+                                <li class="hidden-xs">
+                                    <a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=9&amp;idIdioma=es"><img src="img/common/footer-aerohandling.jpg"></a>
+                                </li>
+                                <li class="hidden-xs">
+                                    <a href="http://www.jetpaq.com.ar/es-ar" target="_blank"><img src="img/common/footer-jetpaq.jpg" alt="Logo JetPaq"></a>
+                                </li>
+                                <li class="hidden-xs">
+                                    <a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=9&amp;idIdioma=es"><img src="img/common/footer-optar.jpg" alt="Logo Optar"></a>
+                                </li>
+                                <li>
+                                    <a href="http://www.austral.com.ar/index.asp" target="_blank"><img src="img/common/footer-austral.jpg" alt="Logo Austral"></a>
+                                </li>
+                                <li><img src="img/common/footer-aa.jpg" alt="Logo Aerolíneas Argentinas"></li>
+                                <li>
+                                    <a href="http://www.skyteam.com/" target="_blank"><img src="img/common/footer-skyteam.jpg" alt="Logo Aerolíneas Argentinas"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <div class="container">
+                    <a class="pie" href="/es-bo/legales/terminoscondiciones">Legales</a> | © 1996 - 2016 Aerolíneas Argentinas S.A.
+                    <a href="#" class="scrollToTop"><span class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span><span class="sr-only">Scroll To Top</span></a>
+                </div>
+            </div>
+        </footer>
+
+</div>
+</body>
+
+</html>

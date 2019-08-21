@@ -1,0 +1,600 @@
+<!doctype html>
+<html ⚡>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="canonical" href="hello-world.html">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both
+        }
+
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+            to {
+                visibility: visible
+            }
+        }
+
+        /*    custom css    */
+
+        @media only screen and (max-width: 768px) {
+
+            /*      basic layout      */
+            body {
+                font-family: "Open Sans", Helvetica, Arial, sans-serif;
+                font-size: 14px;
+                color: #656566;
+                margin: 0;
+            }
+
+            /*********************************************************************************************
+
+1.  Base code
+
+*********************************************************************************************/
+            *,
+            *:after,
+            *:before {
+                margin: 0;
+                padding: 0;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+            [class*='grid-'] {
+                padding: 0px 10px;
+                float: left;
+                width: 100%;
+            }
+
+            .clear-grid {
+                clear: both;
+                float: inherit;
+            }
+            .container {
+                padding: 0px 10px;
+                margin: 0%;
+                width: 100%;
+            }
+            .container:after,
+            .container:before {
+                display: table;
+                clear: both;
+                content: " ";
+            }
+            .nest {
+                margin: 0 -10px;
+                padding: 0;
+                width: auto;
+            }
+
+            /*********************************************************************************************
+
+2.  Mobile Grid
+
+*********************************************************************************************/
+            .grid-m-12 {
+                width: 100%;
+            }
+            .grid-m-11 {
+                width: 91.666663%;
+            }
+            .grid-m-10 {
+                width: 83.33%;
+            }
+            .grid-m-9 {
+                width: 74.999997%;
+            }
+            .grid-m-8 {
+                width: 66.66666664%;
+            }
+            .grid-m-7 {
+                width: 58.333%;
+            }
+            .grid-m-6 {
+                width: 50%;
+            }
+            .grid-m-5 {
+                width: 41.6665%;
+            }
+            .grid-m-4 {
+                width: 33.33%;
+            }
+            .grid-m-3 {
+                width: 24.99%;
+            }
+            .grid-m-2 {
+                width: 16.66666%;
+            }
+            .grid-m-1 {
+                width: 8.33%;
+            }
+
+            /* Helper classes*/
+            .invisible {
+                visibility: hidden
+            }
+
+            .hidden {
+                display: none!important
+            }
+
+            /*      header-slider      */
+            .promo-slider .amp-carousel-slide>.i-amphtml-replaced-content {
+                -o-object-fit: contain;
+                object-fit: cover;
+                object-position: 50% 50%;
+            }
+
+            .promo-slider .amp-carousel-button {
+                background-color: rgba(0, 0, 0, 0.05);
+                background-size: 18px;
+                opacity: 0.75;
+                border-radius: 0px;
+            }
+
+            .promo-slider .amp-carousel-button:hover,
+            .promo-slider .amp-carousel-button:focus {
+                background-color: rgba(0, 0, 0, 0.3);
+                outline: none;
+            }
+
+            .promo-slider .amp-carousel-button-next {
+                right: -0px;
+                background-image: url(img/header-slider/right-chevron.svg);
+            }
+
+            .promo-slider .amp-carousel-button-prev {
+                left: -0px;
+                background-image: url(img/header-slider/left-chevron.svg);
+            }
+
+            /*      header-search      */
+            .contenedor_form_search {
+                padding: 15px 0px;
+                color: #555;
+                position: relative;
+                top: -60px;
+            }
+
+            .contenedor_form_search .search-title {
+                background-color: #0079ca;
+                color: #fff;
+                border-top: #01599a 1px solid;
+                text-align: center;
+                padding: 0px 5px;
+                font-size: 16px;
+                margin: 0;
+                position: relative;
+                height: 28px;
+            }
+
+            .contenedor_form_search .search-title span {
+                display: inline-block;
+                position: relative;
+                line-height: 28px;
+                font-weight: 600;
+            }
+
+            .contenedor_form_search .search-title .title-plane-icon {
+                position: absolute;
+                left: 33%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                -webkit-transform: translate(-50%, -50%);
+            }
+
+            form [class*="grid-m-"] {
+                padding-right: 5px;
+                padding-left: 5px;
+            }
+
+            .form-group {
+                margin-top: 10px;
+            }
+
+            .form-group .inline-group-radio {
+                margin-left: 10px;
+                display: inline-block;
+            }
+
+            .form-group .input-group .form-control {
+                position: relative;
+                z-index: 2;
+                float: left;
+                width: 100%;
+                margin-bottom: 0;
+
+                height: 40px;
+                padding: 10px 12px;
+                line-height: 1.42857143;
+                background-color: #f3f3f3;
+                border: 1px solid #f3f3f3;
+                font-size: 13px;
+                -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+                -moz-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+                -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+                transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+                color: #555;
+            }
+
+            .form-group .input-group .search-single {
+                background: url(/img/header-search/magnifying-glass.svg) no-repeat right center;
+                background-origin: content-box;
+                background-size: 20px;
+            }
+
+            .form-group .input-group .form-control input {
+                position: relative;
+                z-index: 2;
+                float: left;
+                width: 100%;
+                margin-bottom: 0;
+            }
+
+            .form-group .inline-group-radio .radio-inline {
+                position: relative;
+                display: inline-block;
+                padding-left: 20px;
+                margin-bottom: 0;
+                font-weight: 400;
+                vertical-align: middle;
+                cursor: pointer;
+            }
+
+            .form-group label {
+                font-size: 11px;
+                display: inline-block;
+                max-width: 100%;
+                margin-bottom: 5px;
+            }
+
+            .checkbox input[type=checkbox],
+            .checkbox-inline input[type=checkbox],
+            .radio input[type=radio],
+            .radio-inline input[type=radio] {
+                position: absolute;
+                margin-top: 4px\9;
+                margin-left: -20px
+            }
+
+
+            .selectize-control {
+                position: relative;
+                height: 38px;
+            }
+
+            .row-tooltip [class*=grid-] {
+                padding: 1px 2px;
+            }
+
+            .row-tooltip label {
+                font-size: 8px;
+            }
+
+            .row-tooltip .form-group .input-group .form-control {
+                padding: 6px 0;
+            }
+
+            .row-tooltip .more-info-tooltip {
+                position: relative;
+                right: 0px;
+                top: 0px;
+            }
+
+            p.tooltip-inner {
+                display: inline-block;
+            }
+
+            .tooltip {
+                display: none;
+            }
+
+            .tooltip+label {
+                display: inline;
+                position: relative;
+                cursor: pointer;
+                color: white;
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                user-select: none;
+            }
+
+            .tooltip:checked+label>span {
+                position: absolute;
+                top: 10px;
+                right: 0;
+                width: max-content;
+                opacity: 1;
+                transition: opacity .25s ease-out;
+            }
+
+            .tooltip:checked+label {
+                color: black;
+            }
+
+            .tooltip+label>span {
+                color: #ffffff;
+                font-size: 12px;
+                position: absolute;
+                top: 10px;
+                right: 0;
+                opacity: 0;
+                z-index: 100;
+                width: max-content;
+                padding: 3px 8px;
+                background: #0079ca;
+                border-radius: 2px;
+                will-change: opacity;
+                transition: opacity .25s ease-in;
+            }
+
+            .input-group .btn-search {
+                position: relative;
+                z-index: 2;
+                float: left;
+                width: 100%;
+                margin-bottom: 0;
+            }
+
+            input.btn-search {
+                color: #fff;
+                background-color: #0075ca;
+                height: 40px;
+                -webkit-appearance: button;
+                margin-bottom: 0;
+                font-weight: 400;
+                text-align: center;
+                vertical-align: middle;
+                touch-action: manipulation;
+                cursor: pointer;
+                background-image: none;
+                border: 1px solid transparent;
+                white-space: nowrap;
+                font-size: 14px;
+                line-height: 1.42857143;
+                border-radius: 4px;
+                padding: 10px 12px;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+
+            .banner-form {
+                padding: 10px 0px;
+            }
+        }
+
+    </style>
+
+    <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+
+    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+</head>
+
+<body>
+    <header>
+        <amp-carousel width="400" height="300" loop autoplay delay="3000" layout="responsive" type="slides" class="promo-slider">
+            <amp-img src="img/header-slider/slide1.jpg" width="1920" height="565" layout="responsive" alt="sample image"></amp-img>
+            <amp-img src="img/header-slider/slide2.jpg" width="1920" height="565" layout="responsive" alt="sample image"></amp-img>
+            <amp-img src="img/header-slider/slide3.jpg" width="1920" height="565" layout="responsive" alt="sample image"></amp-img>
+        </amp-carousel>
+
+        <div class="container">
+            <div class="contenedor_form_search">
+                <form method="post" class="p2" action-xhr="/components/amp-form/submit-form-xhr" target="_blank">
+                    <div class="grid-m-12">
+                        <h3 class="search-title">
+                            <amp-img src="/img/header-search/ico_plane.png" width="38" height="18" layout="" alt="Vuelos" class="title-plane-icon"></amp-img>
+                            <span>
+                        Vuelos
+                       </span>
+                        </h3>
+                    </div>
+
+                    <div class="grid-m-12">
+                        <div class="form-group">
+                            <div class="ampstart-input ampstart-input-radio inline-group-radio">
+                                <label for="idaVuelta" class="radio-inline">
+                                <input type="radio" id="idaVuelta" name="idaVuelta" value="idaVuelta"> Ida y vuelta</label>
+                            </div>
+                            <div class="ampstart-input ampstart-input-radio inline-group-radio">
+                                <label for="ida" class="radio-inline">
+                                <input type="radio" id="ida" name="ida" value="ida"> Ida</label>
+                            </div>
+                            <div class="ampstart-input ampstart-input-radio inline-group-radio">
+                                <label for="multiplesDestinos" class="radio-inline">
+                                <input type="radio" id="multiplesDestinos" name="multiplesDestinos" value="multiplesDestinos"> Múltiples Destinos</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-m-12">
+                        <div class="form-group">
+                            <label for="Origen" class="hidden">Origen</label>
+                            <div class="input-group">
+                                <input type="text" placeholder="Origen" class="form-control search-single">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-m-12">
+                        <div class="form-group">
+                            <label for="Destino" class="hidden">Destino</label>
+                            <div class="input-group">
+                                <input type="text" placeholder="Destino" class="user-valid valid form-control search-single" height="34">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-m-6">
+                        <div class="form-group">
+                            <label for="Salida" class="hidden">Salida</label>
+                            <div class="input-group">
+                                <input name="Salida" type="date" value="2020-12-30" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-m-6">
+                        <div class="form-group">
+                            <label for="Llegada" class="hidden">Llegada</label>
+                            <div class="input-group">
+                                <input name="Llegada" type="date" value="2020-12-30" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-m-6">
+                        <div class="form-group">
+                            <label for="Clase">Clase</label>
+                            <div class="ampstart-input  input-group">
+                                <select name="Clase" id="Clase" class="user-valid valid form-control">
+                                        <option value="Economy">Economy</option>
+                                        <option value="Club Economy">Club Economy</option>
+                                        <option value="Club Cóndor">Club Cóndor</option>
+                                    </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-m-6 row-tooltip">
+                        <div class="grid-m-4">
+                            <div class="form-group">
+                                <label for="adultos" class="">adultos</label>
+
+                                <p class="tooltip-inner"><input id="tooltip-adultos" type="checkbox" class="tooltip">
+                                    <label for="tooltip-adultos"><i class="more-info-tooltip"><amp-img class src="/img/header-search/question-circular.svg" height="9" width="9" layout="fixed" alt="AMP"></amp-img></i><span>+ de 12 años</span></label></p>
+
+                                <div class="input-group">
+                                    <select name="adultos" id="adultos" class="user-valid valid form-control">
+                                                    <option value="1">01</option>
+                                                    <option value="2">02</option>
+                                                    <option value="3">03</option>
+                                                    <option value="4">04</option>
+                                                    <option value="5">05</option>
+                                                    <option value="6">06</option>
+                                                    <option value="7">07</option>
+                                                    <option value="8">08</option>
+                                                    <option value="9">09</option>
+                                                </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid-m-4">
+                            <div class="form-group">
+                                <label for="niños" class="">niños</label>
+                                <p class="tooltip-inner"><input id="tooltip-ninos" type="checkbox" class="tooltip">
+                                    <label for="tooltip-ninos"><i class="more-info-tooltip"><amp-img class src="/img/header-search/question-circular.svg" height="9" width="9" layout="fixed" alt="AMP"></amp-img></i><span>Niños (2-11 años)</span></label></p>
+                                <div class="input-group">
+                                    <select name="niños" id="niños" class="user-valid valid form-control">
+                                                    <option value="1">01</option>
+                                                    <option value="2">02</option>
+                                                    <option value="3">03</option>
+                                                    <option value="4">04</option>
+                                                    <option value="5">05</option>
+                                                    <option value="6">06</option>
+                                                    <option value="7">07</option>
+                                                    <option value="8">08</option>
+                                                    <option value="9">09</option>
+                                                </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid-m-4 input-group">
+                            <div class="form-group">
+                                <label for="bebes" class="">bebés</label>
+                                <p class="tooltip-inner"><input id="tooltip-bebes" type="checkbox" class="tooltip">
+                                    <label for="tooltip-bebes"><i class="more-info-tooltip"><amp-img class src="/img/header-search/question-circular.svg" height="9" width="9" layout="fixed" alt="AMP"></amp-img></i><span>Bebés (0-1 años)</span></label></p>
+                                <div class="input-group">
+                                    <select name="bebés" id="bebés" class="user-valid valid form-control">
+                                                    <option value="1">01</option>
+                                                    <option value="2">02</option>
+                                                    <option value="3">03</option>
+                                                    <option value="4">04</option>
+                                                    <option value="5">05</option>
+                                                    <option value="6">06</option>
+                                                    <option value="7">07</option>
+                                                    <option value="8">08</option>
+                                                    <option value="9">09</option>
+                                                </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-m-12">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="submit" value="Buscar" class="btn-search">
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+                <div class="grid-m-12 banner-form">
+                    <a href="https://sdd.aerolineas.com.ar/Mpol20/buscar?pdv=a0&UI_LOCALE=es_AR">
+                        <amp-img src="/img/header-search/pagar-aqui.gif" width="290" height="28" layout="responsive" alt="AMP"></amp-img>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+</body>
+
+
+</html>

@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reserva</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- So that mobile will display zoomed in -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- enable media queries for windows phone 8 -->
+    <meta name="format-detection" content="telephone=no">
+    <!-- disable auto telephone linking in iOS -->
+    <style>
+		body {
+			max-width: 700px;
+			margin: auto;
+			color: #333;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 16px;
+			font-weight: lighter
+		}
+
+		table {
+			width: 100%
+		}
+
+		tr .flex {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: space-around;
+			align-items: flex-start
+		}
+
+		tr .flex td,
+		tr .flex th {
+			flex-grow: 1;
+			padding: 0 20px 0 20px;
+		}
+
+		@media (max-width:600px) {
+			body {
+				text-align: left
+			}
+			tr .flex {
+				justify-content: space-between;
+				flex-wrap: wrap
+			}
+			tr .flex td,
+			tr .flex th {
+				width: 100%
+			}
+		}
+
+		.scrollable-table {
+			overflow-x: auto;
+			padding: 10px 5px;
+			margin: 10px 0
+		}
+
+		.scrollable-table .table {
+			border-collapse: collapse;
+			width: 100%;
+			max-width: 100%
+		}
+
+		.scrollable-table .table tr {
+			padding: 0
+		}
+
+		.scrollable-table .table td,
+		.scrollable-table .table th {
+			text-align: left;
+			padding: .25em;
+			min-width: 120px;
+			border: 1px solid #fff
+		}
+
+		.call-center {
+			margin: 5px 0!important
+		}
+
+		.call-center td,
+		.call-center th {
+			border-left: 5px solid #fff!important;
+			border-right: 5px solid #fff!important
+		}
+
+		.small,
+		blockquote {
+			font-size: 14px
+		}
+
+		.bold,
+		.medium {
+			font-weight: 700
+		}
+
+		tr {
+			padding: 10px 0
+		}
+
+		p {
+			text-align: left;
+			margin: 10px 0;
+		
+		}
+
+		blockquote {
+			margin: 0 15px 0 45px
+		}
+
+		.center {
+			text-align: center
+		}
+
+		.left {
+			text-align: left
+		}
+
+		.primary-text {
+			color: #0074c8
+		}
+
+		.light-text {
+			color: #fff
+		}
+
+		.medium {
+			font-size: 18px
+		}
+
+		.big {
+			font-size: 20px
+		}
+
+		.italic {
+			font-style: italic
+		}
+
+		.upper {
+			text-transform: uppercase
+		}
+
+		.link {
+			font-size: 18px;
+			color: #0074c8;
+			font-weight: 400
+		}
+
+		.primary-back {
+			background-color: #0074c8
+		}
+
+		.grey-back {
+			background-color: #eee
+		}
+
+		.striped {
+			background-color: #fafafa
+		}
+
+		.dark-back {
+			background-color: #8e8e8e
+		}
+
+		.list {
+			padding-left: 0;
+			list-style: none
+		}
+
+		.inline-item {
+			display: inline-block;
+			list-style: none;
+			padding: 0 8px
+		}
+
+		.wrapper {
+			padding: 15px
+		}
+
+		.jumbotron {
+			padding: 30px 0
+		}
+
+		@media (max-width:600px) {
+			p {
+				text-align: left
+			}
+			blockquote {
+				margin: 0 15px
+			}
+			.jumbotron {
+				padding: 15px 0
+			}
+		}
+
+		.v-center {
+			align-items: center!important
+		}
+
+		.v-left {
+			align-items: left!important
+		}
+
+		.s-row {
+			padding: 0
+		}
+
+		.collapsed-row {
+			padding: 0;
+			margin: 0
+		}
+
+		.left-block {
+			float: left
+		}
+
+		.right-block {
+			float: right
+		}
+
+		@media (max-width:600px) {
+			.left-block,
+			.right-block {
+				float: none!important
+			}
+		}
+
+		.responsive {
+			width: 100%;
+			height: auto
+		}
+
+		.center-block {
+			display: block;
+			margin: auto
+		}
+
+		.flight-ico {
+			margin: 10px 0
+		}
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <td>
+                <table>
+                    <tr class="flex primary-back">
+                        <td class="section">
+                            <img class="left-block" src="images/logo-aerolineas-argentinas.png" alt="Aerol&iacute;neas Argentinas" width="240" height="auto" border="0" />
+                        </td>
+                        <td>
+                            <ul class="list right-block">
+                                <li class="inline-item"><img src="images/facebook-logo.png" alt="Facebook"></li>
+                                <li class="inline-item"><img src="images/instagram-symbol.png" alt="Instagram"></li>
+                                <li class="inline-item"><img src="images/twitter-black-shape.png" alt="Twitter"></li>
+                                <li class="inline-item"><img src="images/youtube-logo.png" alt="Youtube"></li>
+                                <li class="inline-item"><img src="images/linkedin-letters.png" alt="Linkedin"></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr class="flex">
+                        <td><h4 class="medium primary-text ">Estimado pasajero:</h4>                          <p>¡Gracias por comprar tu pasaje en <strong>AAAerolíneas Argentinas</strong>! Emitimos tu reserva y a continuación incluimos el detalle completo de tu itinerario.</p>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr class="flex primary-back jumbotron">
+                        <td>
+                            <p class="big light-text center">Código de reserva:</p>
+                        </td>
+                        <td>
+                            <p class="big light-text center upper">sshgwk</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="detail">
+                    <tr class="flex s-row">
+                        <td>
+                            <img class="flight-ico" src="images/ico_plane.png" alt="">
+                        </td>
+                        <td>
+                            <p><strong class="upper">Aerolineas Argentinas</strong> <span class="small">Número de vuelo</span> <span class="medium primary-text">AR2611</span></p>
+                        </td>
+                        <td>
+                            <p><strong class="small">Sábado, 30 de diciembre</strong></p>
+                        </td>
+                    </tr>
+                    <tr class="flex s-row" style="background: #DFDFDF">
+                        <td>
+                            <p>Operado por: AU SA</p>
+                        </td>
+                    </tr>
+                    <tr class="flex striped">
+                        <th>
+                            <p class="small">Salida</p>
+                        </th>
+                        <td>
+                            <p class="upper">aep aeroparque Jorge Newbery</p>
+                        </td>
+                        <td>
+                            <p>07:30 hs.</p>
+                        </td>
+                    </tr>
+                    <tr class="flex" style="background: #DFDFDF">
+                        <th>
+                            <p class="small">Llegada</p>
+                        </th>
+                        <td>
+                            <p class="upper">mdq Mar del Plata Argentina</p>
+                        </td>
+                        <td>
+                            <p>08:30 hs.</p>
+                        </td>
+                    </tr>
+                    <tr class="flex">
+                        <td>
+                            <p><strong>Verificá el  de vuelo antes de la salida.</strong></p>
+                        </td>
+                    </tr>
+                    <tr class="flex striped" style="background: #DFDFDF">
+                        <th class="small">
+                            <p>Clase:</p>
+                        </th>
+                        <td>
+                            <p>Económica</p>
+                        </td>
+                        <th class="small">
+                            <p>Duración:</p>
+                        </th>
+                        <td>
+                            <p>1 horas 15 minuto(s)</p>
+                        </td>
+                    </tr>
+                    <tr class="flex">
+                        <th class="small">
+                            <p>Comida:</p>
+                        </th>
+                        <td>
+                            <p>Sin servicio de comida</p>
+                        </td>
+                        <th class="small">
+                            <p>Distancia (en millas):</p>
+                        </th>
+                        <td>
+                            <p>237</p>
+                        </td>
+                    </tr>
+                    <tr class="flex striped" style="background: #DFDFDF">
+                        <th class="small">
+                            <p>Aeronave:</p>
+                        </th>
+                        <td>
+                            <p class="upper">embraer emb e90 jet</p>
+                        </td>
+                    </tr>
+                    <tr class="flex">
+                        <th class="small">
+                            <p>Fanny Pena Sanchez</p>
+                        </th>
+                        <td>
+                            <p><strong class="small">Asiento:</strong> No asignado</p>
+                        </td>
+                    </tr>
+                    <tr class="flex" style="background: #DFDFDF">
+                        <td>
+                            <p>
+                                <a class="link" href="#">Agregar al calendario &raquo;</a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                
+                <table class="detail-2">
+                    <tr class="flex s-row">
+                        <td>
+                            <img class="flight-ico" src="images/ico_plane.png" alt="">
+                        </td>
+                        <td>
+                            <p><strong class="upper">Aerolineas Argentinas</strong> <span class="small">Número de vuelo</span> <span class="medium primary-text">AR2611</span></p>
+                        </td>
+                        <td>
+                            <p><strong class="small">Lunes, 1 de enero</strong></p>
+                        </td>
+                    </tr>
+                    <tr class="flex s-row" style="background: #DFDFDF">
+                        <td>
+                            <p>Operado por: AU SA</p>
+                        </td>
+                    </tr>
+                    <tr class="flex striped">
+                        <th>
+                            <p class="small">Salida</p>
+                        </th>
+                        <td>
+                            <p class="upper"> mdq Mar del Plata Argentina</p>
+                        </td>
+                        <td>
+                            <p>07:30 hs.</p>
+                        </td>
+                    </tr>
+                    <tr class="flex" style="background: #DFDFDF">
+                        <th>
+                            <p class="small">Llegada</p>
+                        </th>
+                        <td>
+                            <p class="upper">aep aeroparque Jorge Newbery</p>
+                        </td>
+                        <td>
+                            <p>08:30 hs.</p>
+                        </td>
+                    </tr>
+                    <tr class="flex">
+                        <td>
+                            <p><strong>Verificá el horario del vuelo antes de la salida.</strong></p>
+                        </td>
+                    </tr>
+                    <tr class="flex striped" style="background: #DFDFDF">
+                        <th class="small">
+                            <p>Clase:</p>
+                        </th>
+                        <td>
+                            <p>Económica</p>
+                        </td>
+                        <th class="small">
+                            <p>Duración:</p>
+                        </th>
+                        <td>
+                            <p>1 horas 15 minuto(s)</p>
+                        </td>
+                    </tr>
+                    <tr class="flex">
+                        <th class="small">
+                            <p>Comida:</p>
+                        </th>
+                        <td>
+                            <p>Sin servicio de comida</p>
+                        </td>
+                        <th class="small">
+                            <p>Distancia (en millas):</p>
+                        </th>
+                        <td>
+                            <p>237</p>
+                        </td>
+                    </tr>
+                    <tr class="flex striped" style="background: #DFDFDF">
+                        <th class="small">
+                            <p>Aeronave:</p>
+                        </th>
+                        <td>
+                            <p class="upper">embraer emb e90 jet</p>
+                        </td>
+                    </tr>
+                    <tr class="flex">
+                        <th class="small">
+                            <p>Fanny Pena Sanchez</p>
+                        </th>
+                        <td>
+                            <p><strong class="small">Asiento:</strong> No asignado</p>
+                        </td>
+                    </tr>
+                    <tr class="flex" style="background: #DFDFDF">
+                        <td>
+                            <p>
+                                <a class="link" href="#">Agregar al calendario &raquo;</a>
+                            </p>
+                        </td>
+
+                        <td>
+                            <p>
+                                <a class="link" href="#">Ver viaje en TripCase &raquo;</a>
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                <a class="link" href="#">Imprimir itinerario &raquo;</a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="flex">
+                        <td>
+                            <p class="big bold">Tu(s) Boleto(s):</p>
+                        </td>
+                    </tr>
+                    <tr class="flex" style="background: #DFDFDF">
+                        <td>
+                            <p class="big bold">Fanny Pena Sanchez</p>
+                        </td>
+                        <td>
+                            <p class="big primary-text">0425898225815</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr class="productos-opcionales">
+                        <td>
+                            <tr class="flex">
+                                <td>
+                                    <a href=""><img class="responsive" src="images/banner.jpg" alt="Cónoce la politica de equipaje"></a>
+                                </td>
+                            </tr>
+
+                            <tr class="flex">
+                                <td>
+                                    <a href="#"><img class="responsive" src="http://d1jp0w2s0ejaji.cloudfront.net/Images/BannersRelacionados/BannerES320x200pxAlquiler100_20170928124002.jpg" alt="Alquiler de auto"></a>
+                                </td>
+                                <td>
+                                    <a href="#"><img class="responsive" src="http://d1jp0w2s0ejaji.cloudfront.net/Images/BannersRelacionados/BannerES320x200pxAsistencia100_20170928124019.jpg" alt="Asistencia al viajero"></a>
+                                </td>
+                            </tr>
+                        </td>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr class="footer flex primary-back">
+                        <td>
+                            <p class="light-text small center">Encontrá más información para tu próximo viaje en <strong>aerolineas.com.ar</strong> o llamando al <strong>0810-222-86527</strong></p>
+                        </td>
+                    </tr>
+                </table>
+
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

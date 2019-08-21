@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>aerolineas.com</title>
+	<meta http-equiv="title" content="SkyPriority en Aerol&#237;neas Argentinas - aerolineas.com">
+	<meta name="Description" content="SkyPriority conjunto de beneficios que le permitir&#225;n tener una experiencia en los aeropuertos m&#225;s &#225;gil y placentera">
+    <link href="Images/condor_chico.gif" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />    
+    <link href="Content/themes/V2/css/screen.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/css/estilo.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/css/form_argentina.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/css/form_argentina_home.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/css/Extras.css" rel="stylesheet"/>
+    <link href="Content/themes/V2/Error.css" rel="stylesheet"/>
+    <link href="Content/themes/V2/jquery-ui-timepicker-addon.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.core.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.resizable.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.selectable.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.accordion.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.autocomplete.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.button.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.dialog.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.slider.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.tabs.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.datepicker.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.progressbar.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.theme.css" rel="stylesheet"/>
+    
+    <script src="Scripts/jquery-1.8.3.js"></script>
+    <script src="Scripts/jquery-ui-1.9.2.js"></script>
+    <script src="Scripts/jquery.unobtrusive-ajax.js"></script>
+	<script src="Scripts/jquery.validate.js"></script>
+    <script src="Scripts/modernizr-2.5.3.js"></script>
+    <script src="Scripts/funcionesVarias.js"></script>
+    <script src="Scripts/jquery.watermark.js"></script>
+</head>
+<body>
+    <!-- CONTENEDOR -->
+    <div id="contenedor_home">
+        <header>
+            <div id="fecha" align="right">
+                
+            </div>
+            <br clear="all">
+            
+            
+            <!--HEADER-->
+            <div id="header">
+            <div class=" header_borde">
+            </div>
+            <div id="header-left">
+                <a href="http://www.aerolineas.com.ar/es-ar/reservas-y-servicios/alojamiento#" target="_self">
+                    </a><a href="" title="Logo Aerolineas Argentinas"><img alt="Logo Aerolineas Argentinas" border="0" height="44px" hspace="0" src="Content/themes/V2/img/common/logo_aerolineas.gif" vspace="0" width="252px"></a>
+                <span class="screen-reader-text">Aerolineas.com</span>
+            </div>
+                
+            
+            <!-- /HEADER -->
+            <br clear="all">
+            <a name="startcontent" id="startcontent"></a>
+            <!-- NAVBAR -->
+            
+            <!-- / NAVBAR -->
+            
+        </div></header>
+        <div>
+            
+            
+            <section>
+                
+<link href="http://www.aerolineas.com.ar/Content/V2/_validate_Helpers?v=Ybj9mjJVfZVw_5qnJqHUIYqYhvKC2ZOOLXLCABdAYK41" rel="stylesheet">
+
+<style type="text/css">
+    #ui-datepicker-div
+    {
+        font-size: 70%;
+    }
+</style>
+<script type="text/javascript">
+
+    function capitalize(text) {
+        return text.charAt(0).toUpperCase() + text.slice(1).toLowerCase();
+    }
+
+    formatoFecha = "dd/mm/yy";
+    dia = "domingo,lunes,martes,miércoles,jueves,viernes,sábado".split(",");
+    nomDia = "dom,lun,mar,mié,jue,vie,sáb".split(",");
+    mesCorto = "ene,feb,mar,abr,may,jun,jul,ago,sep,oct,nov,dic,".split(",");
+    nomMes = "enero,febrero,marzo,abril,mayo,junio,julio,agosto,septiembre,octubre,noviembre,diciembre,".split(",");
+    todayText = "Hoy";
+    for (var i = 0; i < dia.length; i++) {
+        dia[i] = capitalize(dia[i]);
+    }
+    for (var i = 0; i < nomDia.length; i++) {
+        nomDia[i] = capitalize(nomDia[i]);
+    }
+    for (var i = 0; i < mesCorto.length; i++) {
+        mesCorto[i] = capitalize(mesCorto[i]);
+    }
+    for (var i = 0; i < nomMes.length; i++) {
+        nomMes[i] = capitalize(nomMes[i]);
+    }
+    $(function () {
+
+        $("#fecha_llegada").datepicker({
+            closeText: "X",
+            currentText: todayText,
+            showButtonPanel: true,
+            buttonImageOnly: true,
+            showAnim: "clip", 		//animacion de como aparece y desaparece
+            dateFormat: formatoFecha, //formato fecha
+            minDate: 0, 				//muestra fechas desde hoy
+            maxDate: "+11M", 		//muestra fechas hasta 11 meses
+            showOtherMonths: true,      //muestra los dias del mes anterior
+            selectOtherMonths: true, //muestra los dias del mes posterior
+            //changeMonth: true,		//muestra el combo con los meses
+            //changeYear: true,			//muestra el combo con los años
+            numberOfMonths: 2, 		//muestra dos meses
+            dayNames: dia, 			//nombre de los dias        
+            dayNamesMin: nomDia, 	//nombre de los dias
+            monthNamesShort: mesCorto, //nombre de los meses
+            autoSize: true, //
+            monthNames: nomMes			//nombre de los meses
+
+        });
+
+        $("#fecha_nacimiento").datepicker({
+            closeText: "X",
+            currentText: todayText,
+            showButtonPanel: true,
+            showAnim: "clip", 		//animacion de como aparece y desaparece
+            dateFormat: formatoFecha, //formato fecha
+            minDate: 0, 				//muestra fechas desde hoy
+            maxDate: "+11M", 		//muestra fechas hasta 11 meses
+            showOtherMonths: true,      //muestra los dias del mes anterior
+            selectOtherMonths: true, //muestra los dias del mes posterior
+            //changeMonth: true,		//muestra el combo con los meses
+            //changeYear: true,			//muestra el combo con los años
+            numberOfMonths: 2, 		//muestra dos meses
+            dayNames: dia, 			//nombre de los dias
+            dayNamesMin: nomDia, 	//nombre de los dias        
+            monthNamesShort: mesCorto, //nombre de los meses
+            monthNames: nomMes			//nombre de los meses
+        });
+
+        $('#fecha_llegada').watermark('Fecha de Partida');
+        $('#fecha_partida').watermark('Fecha de llegada');
+
+        $.validator.addMethod('IsNotEqualTo', function (val, el, comparador) {
+            return val != comparador;
+        });
+        $("#frmHoteles").validate({
+            rules: {
+                cmbPais2: {
+                    required: true,
+                    IsNotEqualTo: 0
+                },
+                provincia: {
+                    required: true,
+                    IsNotEqualTo: 0
+                },
+                fecha_partida: {
+                    required: true
+                },
+                fecha_llegada: {
+                    required: true
+                },
+                cantidadCuartos: {
+                    required: true
+                }
+            },
+            messages: {
+                cmbPais2: {
+                    required: 'Debe ingresar el "Pais"',
+                    IsNotEqualTo: 'Debe ingresar el "Pais"'
+                },
+                provincia: {
+                    required: 'Debe ingresar la "provincia/estado"',
+                    IsNotEqualTo: 'Debe ingresar la "provincia/estado"'
+                },
+                fecha_partida: {
+                    required: 'Debe ingresar la fecha de "Partida".'
+                },
+                fecha_llegada: {
+                    required: 'Debe ingresar la fecha de "LLegada".'
+                },
+                cantidadCuartos: {
+                    required: 'Debe ingresar la cantidad de "Cuartos"'
+                }
+            },
+            onkeyup: false,
+            onfocusout: false,
+            onclick: false,
+            showErrors: function (errMap, errList) {
+                $(".msj-error p").remove();
+                $(".rojo-error").removeClass("rojo-error");
+                if (errList.length > 0)
+                    $(".msj-error").show();
+                else
+                    $(".msj-error").hide();
+
+                $(errList).each(function (i, e) {
+                    $(".msj-error").append($("<p>").text(e.message));
+                    $(e.element).addClass("rojo-error");
+                });
+                $('#fecha_llegada').watermark('Fecha de Partida');
+                $('#fecha_partida').watermark('Fecha de llegada');
+
+            }
+        });
+    });
+</script>
+<link href="http://www.aerolineas.com.ar/Content/themes/V2/cupertino/jquery-ui-1.9.1.custom.min.css" rel="stylesheet">
+
+<div id="newcont" class="fleft">
+    
+    <h1>
+        Concurso
+    </h1>
+    <div class="concurso">
+        <img src="img/img_concurso.jpg">
+    	<div class="form-concurso">
+        
+        <h2 class="tit">
+                Terminos y condiciones
+         </h2>
+         <p><u>CONCURSO Mi Primer Vuelo</u><br><br>
+
+<u>Bases y condiciones generales</u><br><br>
+
+El presente concurso es organizado por Aerolíneas Argentinas S.A. (en adelante “ARSA”), C.U.I.T. 3064140555-4, con domicilio legal en calle Bouchard 547, piso 9no, Ciudad Autónoma de Buenos Aires, República Argentina.
+<br><br>
+La participación en el concurso implica el total conocimiento y aceptación de las bases y condiciones aquí detalladas (en adelante “Bases y Condiciones”), así como de las decisiones que posteriormente pueda adoptar ARSA de acuerdo a lo previsto en los presentes Bases y Condiciones.
+<br><br>
+<u>Vigencia del concurso:</u> desde las 11hs. del 23/OCT/2014 hasta las 13:00 hs del 28/OCT/2014
+<br><br>
+La participación en el presente concurso es gratuita y no implica, ni directa ni indirectamente, obligación de compra ni contratación de servicio oneroso.<br><br>
+
+El presente concurso está dirigido a todas aquellas personas físicas mayores de 18 años y residentes en la República Argentina.
+<br><br>
+<u>Mecánica del concurso:</u>
+<br><br>
+Las personas que desean participar en el concurso deberán:<br>
+Ingresar a la páginal de ARSA  (http://www.aerolineas.com/miprimervuelo) <br>
+Se deberá completar los datos requeridos en el formulario de inscripción: Nombre, Apellido, Dirección de e-mail, Teléfono, Teléfono Adicional, N° de DNI, Fecha de Nacimiento, Género. 
+Presionar el botón Aceptar.
+<br><br>
+Una vez completados todos los datos y aceptados las Bases y Condiciones, ya se está participando del sorteo.
+<br><br>
+<u>Normas de conducta del participante:</u>
+<br><br>
+De detectarse que el usuario participante resulta ficticio, ha introducido algún dato incorrectamente o ha realizado cualquier ardid con el objeto de resultar ganador, ARSA –a su exclusivo criterio- se reserva el derecho de descalificarlo del concurso.  <br>
+Los participantes se comprometen a:<br>
+No violar la privacidad de otros usuarios.<br>
+No publicar datos personales sin el consentimiento de la persona.
+<br><br>
+<u>Se sorteará:</u><br>
+(Ciento veinte) 120 plazas para un vuelo de fecha 8 de noviembre de 2014 a las 15 hs. de 20 minutos de duración sobre la Ciudad Autónoma de Buenos Aires.<br>
+El ganador tendrá tiempo para confirmar su asistencia al vuelo hasta las 12hs del 30 de octubre de 2014 , a través de un mail dirigido a la dirección de correo electrónico miprimervuelo@erolineas.com.ar<br>
+Los billetes de pasaje no tienen valoración pecuniario por tanto no permiten devolución .<br>
+Una vez emitidos los billetes, los mismos son intransferibles, y son solamente válidos para el titular ganador que figura en la reserva.
+<br><br>
+-  Serán acreedores del premio en pugna, aquellos que resultasen beneficiarios en el sorteo.  El sorteo se realizará el día 28 de Octubre de 2014 a las 15 hs, ante la presencia de Escribano Público en las oficinas de ARSA ubicadas en Bouchard 547 piso 9.ª,  Ciudad Autónoma de Buenos Aires.
+<br><br>
+-  El sorteo se realizará por extracción simple y al azar utilizando un proceso informático denominado "random" (sistema de selección aleatoria) que arrojará entre todos las personas físicas participantes, al ganador. 
+<br><br>
+-  ARSA extraerá (sesenta) 60 usuarios adicionales en carácter de suplentes, para el supuesto que por algún motivo alguno de los ganadores determinados por azar no compareciere a recibir su premio de acuerdo con las indicaciones impartidas por ARSA, o fuere descalificado por incumplir con alguna de las condiciones establecidas en estas Bases.
+<br><br>
+-  En el supuesto que por algún motivo el ganador del premio no aceptase o no pudiese utilizar su premio de acuerdo con las indicaciones impartidas por ARSA , o fuere descalificado por incumplir con alguna de las condiciones establecidas en estas Bases, ARSA entregará el premio al primer ganador del ranking de suplentes, quienes también deberán cumplir con todos los requisitos establecidos en las presentes Bases y comparecer hasta las 12 hs del 04 noviembre de 2014.  En caso de incomparecencia o descalificación de éste, se entregará el premio a los ganadores subsiguientes del ranking de suplentes, y así sucesivamente hasta tanto se efectivice el premio asignado. 
+<br><br>
+-   ARSA no será responsable en el supuesto que los datos consignados no permitan la notificación de los ganadores, los participantes deberán brindar datos de contacto que permitan a ARSA comunicarse los días hábiles, en el horario de 10 a 17 hs. En caso de imposibilidad de contacto, ARSA insistirá en cinco oportunidades en diferentes horarios. Superado ese límite, ARSA descalificará al participante y entregará el premio al siguiente ganador de la lista de suplentes. 
+<br><br>
+-   La asignación del premio quedará condicionada (i) a su reclamo por el Ganador antes de la fecha indicada en estas Bases, (ii) A que el potencial ganador conteste correctamente no menos de tres (3) de las cuatro (4) preguntas de cultura general que se les formulará ante escribano público y (iii) A que se cumplan con los demás requisitos establecidos en estas Bases como condición para ello.  
+<br><br>
+-   Los nombres y apellidos del ganador serán publicados, a partir del 29 de octubre de 2014, en la página principal (“Home”) de la página Web de ARSA (http://www.aerolíneas.com) por el término de siete días <br>corridos, y en los sitios oficiales ARSA en facebook y twitter: 
+http://www.facebook.com/aerolineas.argentinas<br>
+http://www.twitter.com/Aerolineas_Ar
+<br><br>
+-  Los participantes autorizan a ARSA a difundir y/o publicar sus nombres y/o sus datos personales, imagen personal y foto ganadora dentro del portal y/o cualquier otro medio que este decidiera sin contraprestación alguna.
+<br><br>
+-  No podrán participar en el concurso el personal de ARSA, ni de ninguna de las sociedades y/o empresas vinculadas con éstas, y/o familiares directos de los mismos, como tampoco podrán participar los parientes por consanguinidad o afinidad hasta el segundo grado inclusive.
+<br><br>
+-  Los gastos de cualquier naturaleza (incluyendo aunque no limitados a aquellos correspondientes a movilidad, estadías, traslados, etc.) que el ganador tuviere que efectuar para la materialización del premio serán a exclusivo cargo del ganador.
+<br><br>
+-  ARSA podrá suspender o modificar total o parcialmente las presentes Bases y Condiciones cuando se presenten situaciones no imputables a ARSA, sin que ello genere derecho a compensación alguna a favor de los participantes. ARSA será el único que tendrá facultad de decisión respecto de toda situación no prevista en estas Bases y Condiciones y las resoluciones que adopte al respecto serán definitivas e inapelables.
+<br><br>
+-  ARSA se reserva el derecho de cancelar, suspender o modificar este concurso, por caso fortuito o fuerza mayor u otras circunstancias que a criterio de ARSA así lo justifiquen. En ningún caso el ejercicio de tales derechos por parte de ARSA dará derecho al participante a reclamo alguno.
+<br><br>
+-  Toda relación que en virtud del Concurso se genere entre los participantes y ARSA será regida por la legislación de la República Argentina, renunciando el participante a cualquier otra ley que por cualquier motivo pudiere corresponderle. Las controversias legales que pudieran suscitarse con motivo del presente srán dirimidas por los Tribunales Competentes de la Ciudad Autónoma de Buenos Aires, cualquiera sea la causa de la acción.
+<br><br>
+-  La información que proporciones sólo se utilizará para ser agregada a la base de datos de Aerolíneas Argentinas para el envío de información comercial.
+<br><br>
+
+-  Los participantes tendrán derecho a acceder a la información referida a su persona contenida en la base de datos de ARSA, verificar su veracidad y exactitud y solicitar, en todo momento, su rectificación o supresión..</p><br>
+        
+        <div>
+
+ </div>
+        
+        </div>
+        
+    </div>
+    
+</div>
+
+            </section>
+
+            
+            <div id="bannerRelacionadoFooter" style="margin-left:8px !important">
+                <div></div> <div><script type="text/javascript">
+                   $(function () {
+                        $('#bannerRelacionadoLateral').append('<img src="/Images/BannersRelacionados/hotel_20140203063010.jpg"></img>' );                       
+                    });</script></div>
+            </div>
+        </div>
+        <footer>
+            <!--pie-->
+            
+
+
+
+     <script type="text/javascript">
+
+        function abrirAustral() {
+          window.open('http://www.austral.com.ar/index.asp?idSitio=AR&idIdioma=es','Austral', 'scrollbars=yes, resizable=1,width=1020,height=805');
+        }
+     
+      function popup_condiciones_transporte() {
+          var winC = window.open('http://ww1.aerolineas.com.ar/arg/bodies/CondicionesGrales_contratoTransporte.asp?idSitio=AR&idIdioma=es', 'wContr', 'scrollbars=yes, resizable=1,width=800,height=600');
+          winC.moveTo(0, 0);
+      }
+
+
+     </script> 
+               <div id="pie">
+          
+          <div class="div">
+          </div>
+          <div class="div_pie">
+              
+              
+              
+              
+          </div>
+          <div class="div_borde">
+              <img src="Content/themes/V2/img/backgrounds/footer-right.gif" alt="">
+          </div>
+      </div>
+
+
+            <!--fin de pie-->
+        </footer>
+    </div>
+    
+    
+
+    <!--************GOOGLE ANALYTICS*******************-->
+    <script type="text/javascript">var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-7304952-1']);
+_gaq.push(['_setDomainName', 'aerolineas.com.ar']);
+_gaq.push(['_setAllowLinker', 'true']);
+_gaq.push(['_setAllowHash', 'false']);
+_gaq.push(['_trackPageview']);
+
+	            (function() {
+		            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+		            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	            })();
+            </script>
+    <!--************GOOGLE ANALYTICS*******************-->
+
+    <!--************CREO COOKIE PNR*******************-->
+
+    <!--************CREO COOKIE PNR*******************-->
+
+
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div></body></html>

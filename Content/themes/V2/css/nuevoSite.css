@@ -1,0 +1,257 @@
+@charset "utf-8";
+/* CSS Document */
+body {background-color:#A6AAAD; font-family:Arial, Helvetica, sans-serif; font-size:11px;/*margin:10px 0px 10px 0px;*/padding:0px;}
+.tablas-cont {padding-left:9px; padding-right:9px; background-color:#FFF;}
+.tablas-contBeneficios {background-color:#FFF;}
+.FondoVuelos {
+	background-image: url(../images/reservas/Fondo.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.FondoVuelos-dark {
+	background-image: url(../images/reservas/Fondo-dark.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+a {text-decoration:none;}
+.txtGirs {color:#808084; font-size:10px;}
+.txtGris11 {color:#808084; font-size:11px;}
+.txtAzul {color:#0081C6;}
+.txtAmarillo {color:#FFD200}
+.txtBlanco {color:#FFF; font-size:11px;}
+.txtBlanco9 {color: #FFFFFF;font-size: 9px;}
+.txtAmarillo9 {color: #FFCC00;font-size: 9px;}
+
+
+.txtBlancoBold {color:#FFF; font-weight:bold; font-size:11px;}
+.txtGirs10 {color:#808084; font-size:10px;}
+.txtGirsOscuroBold{
+	color:#525354;
+	font-weight:bold;font-size:11px;
+}
+.txtAzulTitulos12 {color:#0081C6; font-size:12px; font-weight:bold;}
+.txtAzulTitulos14 {color:#0081C6; font-size:14px; font-weight:bold;}
+.txtAzulTitulos {color:#0081C6; font-size:16px; font-weight:bold;}
+.txtAzulTitulos18 {color:#0081C6; font-size:18px; font-weight:bold;}
+
+.txtAzulTitulos-dark {color:#5c5c5c; font-size:16px; font-weight:bold;}
+
+.fdo-welcome {	background-image: url(../images/welcome/WelcomeSkyTeam.jpg);	background-repeat:no-repeat;	background-position: center;}
+.txtGirsfoote {color:#808084; font-family:Tahoma, Geneva, Arial, sans-serif; font-size:9px; line-height:14px;}
+.fdo-accesos {	background-image: url(../images/common/fondo-accesos.jpg);	background-repeat:no-repeat;	background-position: center;}
+.fdo-accesos-dark {	background-image: url(../images/common/fondo-accesos-dark.jpg);	background-repeat:no-repeat;	background-position: center;}
+
+.fdo-bt {	background-image: url(../images/common/bt-fdo.jpg);	background-repeat: repeat-x;	background-position: left center;}
+.INPUTBuscador {
+	BACKGROUND-IMAGE: url(../images/common/fdo-buscador.jpg);
+	BORDER-BOTTOM: #d9d9d9 1px solid;
+	BORDER-LEFT: #d9d9d9 1px solid;
+	WIDTH: 100px;
+	BACKGROUND-REPEAT: repeat-x;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	COLOR: #808084;
+	FONT-SIZE: 11px;
+	BORDER-TOP: #d9d9d9 1px solid;
+	BORDER-RIGHT: #d9d9d9 1px solid;
+	height: 18px;
+	line-height: normal;
+}
+.INPUTBuscadorLupa{
+	font-size:10px;
+	color:#808084;
+	background-image: url(../images/common/fdo-buscador.jpg);
+	background-repeat: repeat-x;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 100px;
+	/*border-top-style: none;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-left-color: #D9D9D9;*/
+	border:1px #D9D9D9 solid;
+	border-right-style: none;
+}
+
+.puntos {
+	background-image: url(../images/common/punto.gif);
+	background-repeat: repeat-x;
+	background-position: left center;
+}
+.Bordetarifas {
+	background-color: #A0A1A5;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #A4A7AA;
+	border-bottom-color: #A4A7AA;
+	border-left-color: #A6AAAD;
+}
+.FondoWebChIn {
+	background-image: url(../images/reservas/fondo-Wch-in.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.FondoWebChIn-dark{
+	background-image: url(../images/reservas/fondo-Wch-in-dark.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.FondoViajes {
+	background-image: url(../images/reservas/fondo-Viajes.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.FondoViajes-dark{
+	background-image: url(../images/reservas/fondo-Viajes-dark.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.FondoHoteles {
+	background-image: url(../images/reservas/fondo-Hoteles.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.INPUTFecha {
+	height:16px;
+	font-size:10px;
+	color:#808084;
+	background-image: url(../images/common/fdo-buscador.jpg);
+	background-repeat: repeat-x;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.fondoBox {
+	background-image: url(../images/reservas/fondo-boxes.jpg);
+	background-repeat: repeat-y;
+	background-position: left top;
+}
+.FondoVuelosGrande {
+	background-image: url(../images/reservas/fdo-vuelos.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.FondoWebChInGrande {
+	background-image: url(../images/reservas/fdo-webchin.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.FondoViajesGrande {
+	background-image: url(../images/reservas/fdo-viajes.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.FondoHotelesGrande {
+	background-image: url(../images/reservas/fdo-hoteles.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.INPUTCombo {
+	font-size:10px;
+	color:#808084;
+	background-image: url(../../../../Images/reservas/fdo-buscador.jpg);
+	background-repeat: repeat-x;
+	border-top-style: none;
+	border-bottom-style: none;
+	border-left-style: solid;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 130px;
+	border-left-width: 1px;
+	border-left-color: #D9D9D9;
+	border-right-style: none;
+	height: 15px;
+}
+.txtBlanco10 {
+	color:#FFF;
+	font-size:10px;
+}
+.txtGirs14 {
+	color:#808084;
+	font-size:14px;
+}
+.txtAzulBordo {
+	color:#D62128;
+	font-size:30px;
+	font-weight:normal;
+}
+
+#formaPagos{width:620px;}
+#formaPagos .tarjeta{margin:0 0 5px 0; float:left;}
+
+.txtFucxia11Bld {
+	font-size: 11px;
+	font-weight: bold;
+	color: #E47B7F;
+	text-decoration: none;
+}
+.txtFucxia14 {
+	font-size: 14px;
+	font-weight: normal;
+	color: #E47B7F;
+	text-decoration: none;
+}
+.txtFucxia11Normal {
+	font-size: 11px;
+	font-weight: normal;
+	color: #E47B7F;
+	text-decoration: none;
+}
+.capitalize{text-transform: capitalize;}
+.fdo-premios-secretarias {	background-image: url(../images/clubSecretaria/fondo-premios.jpg);	background-repeat:no-repeat;	background-position: top;}
+.fdo-info-secretarias {	background-image: url(../images/clubSecretaria/fondo-info.jpg);	background-repeat:no-repeat;	background-position: top;}
+.txtAzulBajada {color:#0081C6; font-size:14px; font-weight:normal;}
+.txtAzulBajada10 {color:#0081C6; font-size:10px; font-weight:normal;}
+.txtAzulBajadaCH {color:#0081C6; font-size:12px; font-weight:normal;}
+.txtAzulTitulosSec {color:#0081C6; font-size:18px; font-weight:bold;}
+
+#galeria1 {
+	position:absolute;
+	width:180px;
+	height:131px;
+	z-index:1;
+	visibility: hidden;
+}
+#galeria2 {
+	position:absolute;
+	width:180px;
+	height:131px;
+	z-index:2;
+	visibility: hidden;
+}
+#galeria3 {
+	position:absolute;
+	width:180px;
+	height:131px;
+	z-index:3;
+	visibility: hidden;
+}
+#galeria4 {
+	position:absolute;
+	width:180px;
+	height:131px;
+	z-index:4;
+	visibility: hidden;
+}
+#galeria5 {
+	position:absolute;
+	width:180px;
+	height:131px;
+	z-index:5;
+	visibility: hidden;
+}
+.style1 {
+	font-size: 13px;
+	border-bottom-style: inset;
+	border-bottom-color: #bed5e5;
+	border-top-color: #bed5e5;
+	border-right-color: #bed5e5;
+	border-left-color: #bed5e5;
+}
+.style2 {font-size: 11px}
+#overAzul a:{color:#808084; font-size:10px;}
+#overAzul a:hover{color:#0081C6; font-size:10px;}

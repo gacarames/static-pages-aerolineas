@@ -1,0 +1,3459 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+/*tipos*/
+
+
+
+	 
+	 
+/*general*/
+body  {
+	margin: 0;  
+	padding: 0; 
+	background: #A6AAAD; 
+	font-family: arial, helvetica, sans-serif;
+	}
+	
+	 .clearing{
+      clear:both;
+   }
+	
+.screen-reader-text {
+  position: absolute !important;
+  clip: rect(.01em, .01em, .01em, .01em);
+  padding: 0 !important;
+  border: 0 !important;
+  height: .01em !important; 
+  width: .01em !important; 
+  overflow: hidden;
+}	
+	
+ul
+{
+    list-style-type: none; margin: 0;
+padding: 0;
+}
+
+a { text-decoration:none}
+a:hover { text-decoration: underline; }
+	
+a.pie { 
+  text-decoration:none; 
+  color:#838384
+  }
+  
+  
+ p { font: normal 11px Tahoma, Geneva, sans-serif; 
+ color:#838384
+ }
+ 
+p.space {line-height: 150%} 
+p.space2 {line-height: 50%} 
+p.space3 {line-height: 90%} 
+ul.space {line-height: 150%}
+li.space {line-height: 150%} 
+
+ul  .condor
+{
+list-style-image:url("../img/buttons/condor_chico.gif");
+
+}
+h2 { font-family:"Neo_sans"; font-size:25px;  color: #0081c6; letter-spacing: 0px}
+h4 {font-family: "Neo_sans";  color:#0081c6}
+h6 {font-family: normal "Neo_sans"; font-size:10px; letter-spacing: 0px;   color:#0081c6; margin-top:10px; margin-bottom:15px}
+.center { text-align:center}
+.mleft2 { margin-left:2px}
+.mleft5 { margin-left:5px}
+.mleft15 { margin-left:15px}
+.mleft35 { margin-left:35px}
+.mtop0 { margin-top:0}
+.mtop2{ margin-top:2px}
+.mtop4 { margin-top:4px}
+.mtop5 { margin-top:5px}
+.mtop7 { margin-top:7px;}
+.mtop10 { margin-top:10px}
+.mtop14 { margin-top:14px}
+.mtop15 { margin-top:15px}
+.mtop16 { margin-top:16px}
+.mtop20 { margin-top:20px}
+.mtop25 { margin-top:25px}
+.mtop26 { margin-top:26px}
+.mtop30 { margin-top:30px}
+.mtop33 { margin-top:33px}
+.mtop35 { margin-top:35px}
+.mtop39 { margin-top:39px}
+.mtop42 { margin-top:42px}
+.mtop45 { margin-top:45px}
+.mtop50 { margin-top:50px}
+.mtop55 { margin-top:55px}
+.mtop61 { margin-top:61px}
+.mtop65 { margin-top:65px}
+.mtop70 { margin-top:70px}
+.mtop80 { margin-top:80px}
+.mtop100 { margin-top:100px}
+.mtop120 { margin-top:155px}
+
+.mleft1 { margin-left:1px}
+.mleft2 { margin-left:2px}
+.mleft5 { margin-left:5px}
+.mleft6 { margin-left:6px}
+.mleft10 { margin-left:10px}
+.mleft15 { margin-left:15px}
+.mleft20 { margin-left:20px}
+.mleft25 { margin-left:25px}
+.mleft30 { margin-left:30px}
+.mleft35 { margin-left:35px}
+.mleft40 { margin-left:40px}
+.mleft45 { margin-left:45px}
+.mleft50 { margin-left:50px}
+.mleft55 { margin-left:55px}
+.mleft60 { margin-left:60px}
+.mleft65 { margin-left:65px}
+.mleft70 { margin-left:70px}
+.mleft90 { margin-left:90px}
+.mleft100 { margin-left:100px}
+.mleft110 { margin-left:110px}
+.mleft115 { margin-left:115px}
+.mleft120 { margin-left:120px}
+.mleft125 { margin-left:125px}
+.mleft130 { margin-left:130px}
+.mleft140 { margin-left:140px}
+.mleft150 { margin-left:150px}
+.mleft155 { margin-left:155px}
+.mleft160 { margin-left:160px}
+.mleft170 { margin-left:170px}
+.mleft190 { margin-left:190px}
+.mleft200 { margin-left:200px}
+.mleft210 { margin-left:210px}
+.mleft220 { margin-left:220px}
+.mleft225 { margin-left:225px}
+.mleft325 { margin-left:325px}
+.mleft390 { margin-left:390px}
+.mleft510 { margin-left:510px}
+
+.mright5 { margin-right:5px}
+.mright15 { margin-right:15px}
+.mright35 { margin-right:35px}
+.mright52 { margin-right:52px}
+.mright60 { margin-right:60px}
+.mbot0 { margin-bottom:0px}
+.mbot2 { margin-bottom: 2px;}
+.mbot5 { margin-bottom:5px}
+.mbot6 { margin-bottom:6px}
+.mbot10 { margin-bottom:10px}
+.mbot25 { margin-bottom:25px}
+.mbot30 { margin-bottom:30px}
+.mbot50 { margin-bottom:50px}
+.mbot200 { margin-bottom:200px}
+.fleft { float:left}
+.fright { float:right}
+.padding5 { padding:5px}
+.padding10 { padding:10px}
+.pleft5 { padding-left:5px}
+.pleft10 { padding-left:10px}
+.ptop7 { padding-top:7px}
+.pleft15 { padding-left:15px}
+.pright5 { padding-right:5px}
+.pright10 { padding-right:10px}
+.pright15 { padding-right:15px}
+.pright25 { padding-right:25px}
+.pleft85 {padding-left:85px; }
+.pright30 { padding-right:30px}
+.ptop3 { padding-top:3px}
+.ptop5 { padding-top:5px}
+.ptop10 {padding-top:10px}
+.pbot3 { padding-bottom:2px}
+.pbot5 { padding-bottom:5px}
+ a { color:#0081c6}
+ 
+ .width35 { width:35px}
+  .width45 { width:45px}
+.width50 { width:50px}
+ .width55 { width:55px}
+ .width50 { width:50px}
+  .width60 { width:60px}
+ .width72 { width:72px}
+ .width80 { width:80px}
+  .width90 { width:90px}
+.width91 { width:91px}
+ .width94 { width:94px}
+.width95 { width:95px}
+  .width99 { width:99px}
+.width100 {width:100px}
+.width105 {width:105px}
+  .width108 { width:108px}
+  .width100 { width:100px}
+.width123 { width:123px}
+.width128 { width:128px}
+   .width136 { width:136px}
+   .width140 { width:140px}
+.width143 { width:143px}
+ .width150 { width:150px}
+  .width160 { width:160px}
+  .width170 { width:170px}
+  .width176 { width:176px}
+   .width180 { width:180px}
+.width185 { width:185px}
+.width186 { width:186px}
+.width190 { width:190px}
+.width195 { width:195px}
+.width196 { width:196px}
+.width200 { width:200px}
+.width210 { width:210px}
+.width220 { width:220px}
+.width230 { width:230px}
+.width240 { width:240px}
+.width245 { width:245px}
+.width250 { width:250px}
+.width257 {width:257px;}
+.width260 { width:260px}
+.width123 { width:123px}
+.width129 { width:129px}
+.width143 { width:143px}
+.width176 { width:176px}
+.width186 { width:186px}
+.width190 { width:190px}
+.width196 { width:196px}
+.width262 {width:262px}
+.width268 {width:268px}
+.width257 {width:257px;}
+.width290 { width:290px}
+.width295 { width:295px}
+.width300 { width:300px}
+.width310 { width:310px}
+.width320 { width:320px}
+.width350 { width:350px}
+.width400 { width:400px}
+.width500 { width:500px}
+.width550 { width:550px}
+.width590 { width:590px}
+.width600 { width:600px}
+.width650 { width:650px}
+.width758 {width:758px}
+	
+	
+.height9 { height:9px}
+.height15 { height:15px}
+.height20 { height:20px}
+.height25 { height:25px}
+.height30 { height:30px}
+.height35 { height:35px}
+ .height40 { height:40px}
+.height50 { height:50px}
+.height60 { height:60px}
+.height70 { height:70px}
+.height80 { height:80px}
+.height90 { height:90px}
+.height150 { height:150px}
+.height139 { height:139px}
+.height700 { height:700px}
+.height_auto { height:auto}
+
+  
+ /*fecha*/
+
+#fecha {
+	 width:1002px; 
+	 height:8px; 
+	 font-size:11px; 
+	 padding:7px 0 7px 0; 
+	 background: #A6AAAD; float: right;
+	 
+	 }
+	 
+.contacto {
+	text-decoration:none; 
+	font:11px Tahoma, Geneva, sans-serif; 
+	color:#858585}
+
+	
+	/*tipos*/
+.rojo11 {font: normal 11px Tahoma, Geneva, sans-serif; color:red}
+ .grey { color:#838384}
+ .gris { color:#555; font-size:12px;}
+ .gris9 {color:#555; font-size:9px;}
+ .gris10 { color:#555; font-size:10px;}
+ .gris11 { font: normal 11px Tahoma, Geneva, sans-serif; color:#838384}
+ .gris12 { font: normal 12px Tahoma, Geneva, sans-serif; color:#838384}
+ .gris2 {font-family: "Neo_sans";  color:#969697;}
+ .gris3 {font: normal 10px "Neo_sans";  color:#969697;}
+ .negro8 {color:#000000; font-size:8px;}
+ .negro10 {font: normal 10px Tahoma, Geneva, sans-serif; color:#000000}
+ .negro11 {font: normal 11px Tahoma, Geneva, sans-serif; color:#000000}
+  .negro12 {font: normal 12px Tahoma, Geneva, sans-serif; color:#000000}
+ .azul {font: normal 12px Tahoma, Geneva, sans-serif; color:#0081c6}
+ .azul9 { color:#0081c6; font-size:9px;}
+ .azul10 { color:#0081c6; font-size:10px;}
+ .azul11 { color:#0081c6; font-size:11px;}
+ .azul12 { color:#0081c6; font-size:12px;}
+ .blanco {font-family: "Neo_sans";  color:#FFF;}
+  .blanco2 { color:#FFF; font-size:11px}
+ .link { text-decoration:none}
+ .skiplink {display:none}
+ .bold { font: bold;}
+ .font_neo1 {font-family: "Neo_san";  }
+.font_neo2 {font-family: "Neo_sans";  }
+.font_size1 { font-size:10px}
+.font_size2 { font-size:11px}
+.font_size3 { font-size:12px}
+.font_size4 { font-size:14px}
+
+/*NUEVA HOME*/
+
+#contenido_home {
+		width:/*61.500em;*/ 984px;
+		height: auto ; 
+		
+		padding-left:7px; 
+		padding-right:7px; 
+		background-color: #fff;
+		
+		}
+		
+#contenedor_home {
+		width: 1002px;
+		height:auto;
+		margin:  auto; 
+		background: #fff;
+		}		
+		
+		#slider { 
+	  height:374px; 
+	  width:390px; border: solid 1px #999; z-index:100;   
+	  background-color:#; overflow:hidden;}
+		
+		
+#columna2 { float:left}		
+/*FIN DE NUEVA HOME*/
+
+
+ /*contenedor*/
+ #contenedor_welcome {
+		width: 1082px; /*1002px*/
+		height:auto;
+		margin:  auto; padding-top:25px; 
+		background: #fff;
+		}
+ 
+	#contenedor {
+		width: 1002px;
+		/*height:165px;*/
+		height:auto;
+		margin:  auto; 
+		background: #fff;
+		}
+		
+		#contenedor_sky {
+		width: 1002px;
+		position: relative ;
+		height:auto;
+		margin:  auto; 
+		background: #fff;
+		}
+		
+		
+		#contenedor_preguntas {
+		width: 1002px;
+		position: relative ;
+		height:auto;
+		margin:  auto; 
+		background: #fff;
+		}
+		
+	#contenido {
+		width:/*61.500em;*/ 984px;
+		height: auto ; 
+		padding-bottom:3px;
+		padding-left:7px; 
+		padding-right:7px; 
+		background-color: #fff;
+		
+		} 
+		
+		.contenedor {width: 62.625em; 
+		height:auto;
+		margin: 0 auto; 
+		background: #fff;
+		}
+
+/*header*/
+	#header {background: #fff;}
+.header_borde {width:1002px; height:9px; background-image: url(../images/ARPLUS/top.gif)}
+	
+	#header-left { 
+		float: left; 
+		margin: 18px 0 13px 12px; 
+		width: 30%;
+		}
+	#logo-header {
+		float: right; 
+		margin-left:2px; 
+		margin-right:12px; 
+		margin-top:2px;
+		
+		}
+.no_border {border:0}	
+
+	#principal {
+		background: #fff; 
+		display: table;
+		}
+		
+	.logo_header { float:right; 
+	margin-left:12px; margin-bottom:4px;
+	}
+	
+	a img { border:none; }
+	.logo_social {padding: 5px 0 0 0}
+ 
+/*buscador*/  
+	.INPUTBuscador {
+		background-image: url("../images/common/fdo-buscador.jpg");
+		background-repeat: repeat-x;
+		border-color: #D9D9D9;
+		border-style: solid;
+		border-width: 1px;
+		color: #808084;
+		font-family: Arial,Helvetica,sans-serif;
+		font-size: 11px;
+		height: 18px;
+		line-height: normal;
+		width: 100px;
+	}
+
+.INPUTBuscador2 {
+background-image: url("../images/ARPLUS/fdo-ingreso.gif");}
+
+
+/*DESARROLLO DEL MENU	*/
+	#navbar {
+		position: relative;
+		width: 981px;
+		margin: 0 auto;
+		z-index:2;
+		}
+	
+		#botonera {
+		font: normal 16px "Neo_san", Tahoma, Geneva, sans-serif;
+		width: 100%;
+		height: 30px;
+		margin: 0px 0;
+		background-image:url(../images/ARPLUS/home_nav2.png); }
+		
+
+	.boton {
+		width: auto; 
+		height: 30px;
+		float: left;
+		text-align: center;
+		/*border-left:solid 1px #FFF;*/
+		font-weight: normal;
+		font-size: 72%;
+		line-height: 30px; color:#FFF; 
+		
+		}
+	
+	
+	.boton:hover  {background-color:#186796; }
+	
+	.select_boton  {background-color:#186796; }
+
+	.boton a {
+		color: white;
+		text-decoration: none;
+		display: block; 
+		}
+		
+	.boton  a:hover { color: white; }
+
+
+/*	Desarrollo de los menu desplegables	*/
+	
+	/* desplegable de dos columnas*/
+	#boton_2col_a {
+		float:left; 
+		height:170px; 
+		background:none; 
+		radius:0;-moz-border-radius: 0px; 
+		-webkit-border-radius : 0px;  
+		width: auto; 
+		border-right: dashed thin; 
+		color:#FFF; margin-right:20px; 
+		font: normal 12px "Neo_san", Tahoma, Geneva, sans-serif;
+		}
+	#boton_2col_b {
+		float:left; 
+	width:145px; 
+	background:none; 
+	font: normal 12px "Neo_san", Tahoma, Geneva, sans-serif;
+	}
+	
+	#div_2 {height:170px; width:350px;  }
+
+		.width_1 { width:150px}
+		.width_2 { width:200px}
+		.width_3 { width:300px}
+		.width_4 { width:180px}
+		.width_5 { width:175px}
+		.width_6 { width:120px}
+		
+.boton div {
+		position: relative ;
+		z-index:-1;
+		margin-top:-10px;
+		width: 125%;
+		background-color: #186796;
+		font-size: 100%;
+		visibility: hidden;
+		text-align: left;
+		padding: 10px 2px 10px 10px;
+		font: normal 100% arial; 
+		radius:7px;-moz-border-radius: 7px; 
+		-webkit-border-radius : 7px;
+		-ms-border-radius: 10px;
+		}
+		
+ 
+	.boton:hover div { 
+	visibility: visible; 
+	}
+ 
+ 
+	.boton ul {
+		font: normal 12px "Neo_san", Tahoma, Geneva, sans-serif;
+		margin: 0 10px;
+		padding: 0;
+		list-style: outside; 
+		color:#FFF }
+		
+	.boton li a {
+		color: white;
+		text-decoration: none;
+		padding: 3px; }
+		
+		.boton li a:hover { 
+		color: #fa6; 
+		}
+	
+
+.transparent {
+        zoom: 1; height:auto;
+        filter: alpha(opacity=90);
+        opacity: 0.9;
+}
+
+
+.redondeado {border-radius:7px;-moz-border-radius: 7px; 
+		-webkit-border-radius : 7px;
+		-ms-border-radius: 7px;
+		}
+		
+		
+		
+		
+/*DIV Central*/
+
+#bloque {width: 100%;
+margin: 0 auto;
+}
+#caja1, #caja2, #caja3 {
+margin-left: 2px;
+float: left;
+}
+#caja1 {background-color: #fff; width: 30%;margin-top:3px; margin-bottom:10px;
+margin-left: 10px!important;
+margin-left: 1px;
+}
+#caja2 {background-color: #fff;width: 21%; margin-left:20px; margin-top:3px;}
+#caja3 {background-color: #fff;width: 18%; margin-left:60px; margin-top:5px;}
+.salto {clear: both;}
+
+
+
+ /*slider centro*/
+	 .titulo_slide_centro { 
+		 font:bold 16px Tahoma, Geneva, sans-serif; 
+		 margin:10px 0 0 10px; 
+		 color:#5c656a;
+		 }
+	 .itinerario_slide_centro {
+		 font:normal 24px Tahoma, Geneva, sans-serif; 
+		 margin:5px 0 0 13px; 
+		 color:#009fd6;
+		 }
+	 .precio_dolar {
+		 font:normal 26px Tahoma, Geneva, sans-serif; 
+		 margin: 0 0 0 10px; 
+		 color:#0081c5;
+		 }
+	 .precio_slide_centro {
+		 font:normal 46px Tahoma, Geneva, sans-serif; 
+		 color:#0081c5;
+		 }
+	 .precio_final {
+		 font:normal 11px Tahoma, Geneva, sans-serif; 
+		 color:#0081c5;
+		 }
+ 
+
+  /*slider medio*/
+  #slider_botonera { 
+	  border:none; 
+	  margin-left:5px; 
+	  margin-bottom:40px; 
+	  width:290px; 
+	  height:24px
+	  }
+  
+  #slider { 
+	  height:331px; 
+	  margin-left:0px; 
+	  width:272px; 
+	  background-color:#EDEEEE; }
+	  
+	
+	  
+	#menu_izquierdo { 
+		 padding:0px 5px 5px 5px; 
+		 margin:5px; 
+		 height:248px; 
+		 width:269px; 
+		 background-color:#EDEEEE; 
+		 border: solid 1px #0081c6
+		 }
+	  
+	  .boton_slider { float:left}
+	  
+	  .boton_slider_alojamiento { 
+	  	  font: normal  "Neo_san", Tahoma, Geneva, sans-serif;
+		  padding-top:3px; 
+		  width:143px; 
+		  height:20px; 
+		  float:left; 
+		  background-image:url(../img/reservas/alojamientos.gif)
+		  }
+	  
+	  .boton_slider_autos {
+		  padding-top:3px; 
+		  padding-right:20px; 
+		  width:118px; 
+		  height:20px; 
+		  float:left; 
+		  background-image:url(../img/reservas/autos.gif)
+		  }
+		  
+	  .boton_slider_check_in {
+		  padding-top:0.188em; 
+		  padding-left:2.188em; 
+		  width:6.688em; 
+		  height:1.313em; 
+		  float:left; 
+		  background-image:url(../img/reservas/check_in.gif)
+		  }
+		  
+	  .boton_slider_mis_viajes {
+		  padding-top:0.188em; 
+		  padding-left:2.125em; 
+		  width:6.563em; 
+		  height:1.313em; 
+		  float:left; 
+		  background-image:url(../img/reservas/mis_viajes.gif)
+		  }
+		  
+	  .boton_slider_vuelos {
+		  padding-top:4px; 
+		  padding-left:7.5em; 
+		  width:10.063em; 
+		  height:1.113em; 
+		  float:left; 
+		  background-image:url(../img/reservas/vuelos.gif)
+		  }
+		  .boton_slider_vuelos2 { margin-top:10px;
+			  
+			 
+		  padding-top:0.188em; 
+		  padding-left:7.5em; 
+		  width:10.063em; 
+		  height:1.313em; 
+		  float:left; 
+		  background-image:url(../img/reservas/vuelos2.gif)
+		  }
+	  .texto_botonera { 
+	  font: normal 12px  "Neo_san", Tahoma, Geneva, sans-serif;
+		  margin-right:1.000em; 
+		  text-decoration:none; 
+		  color:#666;
+		  }
+		  
+		    .texto_botonera_on { 
+	  font: normal 12px  "Neo_san", Tahoma, Geneva, sans-serif;
+		  margin-right:1.000em; 
+		  text-decoration:none; 
+		  color:#fff;
+		  }
+	  
+	  .text_slider {
+		  font: normal 11px Tahoma, Geneva, sans-serif; 
+		  color:#0081c6
+		  ;}
+		  
+		   .text_slider2 {
+		  font: normal 10px Tahoma, Geneva, sans-serif; 
+		  color:#0081c6
+		  ;}
+		  
+	
+   
+ /*pie*/
+	#pie  {
+		background: #fff; 
+		width:62.625em
+		;}
+		
+	.pie_texto { 
+		text-align:center; 
+		padding-top:0.313em; 
+		font: normal 10px Tahoma, Geneva, sans-serif; 
+		text-decoration:none; 
+		color:#838384;
+		}
+	
+	.div { 
+		float:left; 
+		width:20.813em; 
+		height:6.250em; 
+		background-image:url(../images/ARPLUS/footer-left.jpg) 
+		}
+	
+	.div_borde { float:left;}
+	
+	.div_pie { 
+		background-color:#FFF; 
+		width:41.188em; height:6.188em; 
+		float:left; border-top: solid 1px #CCC;
+		}
+	
+	.div_links { 
+		margin-top:0.313em; 
+		border:none; 
+		padding:0 0 0 3.750em; 
+		}
+		
+		
+	.div_partner { float:left; padding: 0.313em 0.750em 0 0}
+	.div_fb { float:left; padding: 0.313em 0.250em 0 0}
+
+/*   columnas */
+	#primero {background: #fff; 
+		float: right; 
+		width: 15.125em; 
+		padding-left:0.625em ; 
+		display: block;
+		}
+	
+	#segundo {background: #fff; 
+		float: right; width: 27.188em; 
+		display: block;
+		}
+	
+	#tercero {background: #fff; 
+		float: right; 
+		width: 17.625em; 
+		display: block;
+		}
+
+/*texto ofertas columna derecha*/
+#oferta { 
+	background-image:url(../images/ARPLUS/tarifa_1.gif); 
+	width:15.125em; 
+	height:5.813em; 
+
+	}
+
+#oferta2 { 
+	background-image:url(../images/ARPLUS/tarifa_2.gif); 
+	width:15.125em; 
+	height:5.813em; 
+	margin-top:0.438em;
+	}
+
+#oferta3 { 
+	background-image:url(../images/ARPLUS/tarifa_3.gif); 
+	width:15.125em; 
+	height:5.813em; 
+	margin-top:0.438em; 
+	margin-bottom:0.438em;
+	}
+
+	#oferta3_2 { 
+	background-image:url(../img/backgrounds/tarifa_3.gif); 
+	width:15.125em; 
+	height:5.813em; 
+	margin-top:0.438em; 
+	
+	}
+/*MENU OFERTAS A DONDE VIAJAR*/
+.contenido { float: left; height: 103px; width: 176px; }
+.contenido ul { margin: 0.088em 0 0 0.625em; }
+.contenido ul, .contenido ul li { width: 100%; }
+.contenido ul li { float: left; font-family: "Neo_sans", Tahoma, Geneva, sans-serif; color: white; }
+.contenido ul li.dato1 { font-size: 14px; margin: 1px; height: 15px; }
+.contenido ul li.dato2 { font-size: 11px; height: 28px; }
+.contenido ul li.dato2 span.moneda { font-size: 15px; font-weight: bold; }
+.contenido ul li.dato3 { font-size: 11px; height: 24px; }
+.contenido ul li.dato4 { height: 15px;  color:#0081c6; font-size:9px; }
+.contenido ul li.dato5 { height: 23px; color:#0081c6; font-size:10px; text-align: right; }
+.contenido ul li.dato5 a { margin: 6px 15px; display: block; }
+	
+.contenido ul li.dato2 span.precio { 
+	font-size: 23px;
+	font-weight: bold;
+	}
+
+/*MENU OFERTAS HOME*/
+.contenido2 { float: left; height: 103px; width: 200px; }
+.contenido2 ul { margin: 0.088em 0 0 0.625em; }
+.contenido2 ul, .contenido ul li { width: 100%; }
+.contenido2 ul li { float: left; font-family: "Neo_sans", Tahoma, Geneva, sans-serif; color: white; }
+.contenido2 ul li.dato1 { font-size: 14px; margin: 1px; height: 15px; }
+.contenido2 ul li.dato2 { font-size: 11px; height: 28px; }
+.contenido2 ul li.dato2 span.moneda { font-size: 15px; font-weight: bold; }
+.contenido2 ul li.dato3 { font-size: 11px; height: 24px; }
+.contenido2 ul li.dato4 { height: 15px;  color:#0081c6; font-size:9px; }
+.contenido2 ul li.dato5 { height: 23px; color:#0081c6; font-size:10px; text-align: right; }
+.contenido2 ul li.dato5 a { margin: 6px 15px; display: block; }
+	
+.contenido ul li.dato2 span.precio { 
+	font-size: 23px;
+	font-weight: bold;
+	}
+
+
+
+.destino {
+	font: normal 14px "Neo_sans", Tahoma, Geneva, sans-serif; margin:0; 
+	color:#FFF
+	}
+	
+.desde {
+	font: normal 11px  "Neo_sans", Tahoma, Geneva, sans-serif; 
+	color:#FFF
+	}
+	
+.moneda {
+	font: bold 16px "Neo_sans", Tahoma, Geneva, sans-serif; 
+	color:#FFF
+	}
+	
+.precio { 
+	font: bold 26px "Neo_sans", Tahoma, Geneva, sans-serif;  
+	color:#FFF
+	}
+
+.cuotas {
+	font: normal 11px Tahoma, Geneva, sans-serif; 
+	color:#FFF
+	}
+	
+.plus { 
+	float:left; 
+	margin:0.5em 0.125em 0.188em 0.938em; 
+	font: normal 10px Tahoma, Geneva, sans-serif; 
+	color:#00669D; width:176px; height:20px;
+	}
+
+.plus_comprar {
+	float:left; 
+	width:2.500em; 
+	font: normal 10px Tahoma, Geneva, sans-serif; 
+	color:#0081c6; 
+	margin:6px 0.125em 0.188em 0.438em; 
+	text-decoration:none 
+	}
+	
+	.plus_comprar_derecha {
+	float:right; 
+	width:2.500em; 
+	font: normal 10px Tahoma, Geneva, sans-serif; 
+	color:#0081c6; 
+	margin:0em 2.985em 0.19em 0.438em; 
+	text-decoration:none 
+	}
+	
+/*texto ofertas columna central*/
+
+/*banner central*/
+	#banner_a_donde { 
+		width:27.188em; 
+		height:3.125em; 
+		margin:0.625em 0 0 0;  
+		background: #333 url(../img/banners/donde_viajar.gif)
+		}
+
+	.banner_a_donde {
+		margin:0.188em 0 0 0;  
+		font: normal 18px "Neo_sans", Tahoma, Geneva, sans-serif; 
+		color:#0081c6 
+		}
+		
+	.titulo_a_donde { 
+		margin:0.188em 2.813em 0 0; 
+		width:16.250em; 
+		font: italic 22px Tahoma, Geneva, sans-serif; 
+		color:#0081c6
+		}
+
+/*banner central cuadrado*/
+	#banner { 
+		width:188px; 
+		height:177px; 
+		background: #333 url(../img/home/banner_3.jpg);
+		}
+		
+	#banner_2 { 
+		width:191px; 
+		height:85px; 
+		background: #333 url(../img/home/banner_1.jpg);
+		}	
+		
+	#banner_3 { 
+		width:191px; 
+		height:85px; 
+		background: #333 url(../img/home/banner_2.jpg);
+		}		
+		
+	
+	#banner2 { 
+		margin:0.625em 0.688em 0.313em 0; 
+		width:13.250em; 
+		height:11.063em; 
+		float:left; 
+		background: #333 url(../img/banners/paquetes_v2.gif);
+		}
+	
+	#banner2 { 
+		margin:0.625em 0.688em 0.313em 0; 
+		width:13.250em; 
+		height:11.063em; 
+		float:left; 
+		background-image:url(../img/banners/banner_cupondesc_02_V2.gif); 
+		}
+	
+	.destino2 { 
+		font: bold 16px Tahoma, Geneva, sans-serif; 
+		color:#FFF;
+		}
+	
+	.precio2 {
+		font: bold 26px Tahoma, Geneva, sans-serif; 
+		color:#0081c6;
+		}
+	
+	.hotel { 
+		font: normal  13px  Tahoma, Geneva, sans-serif; 
+		color:#FFF;
+		}
+	
+	.dias {
+		font: normal 10px Tahoma, Geneva, sans-serif; 
+		color:#5d656a;
+		}
+	.boton_paq { 
+		margin-top:0.7em; 
+		width:100px; 
+		height:0.938em; 
+		font: normal 10px Tahoma, Geneva, sans-serif; 
+		color:#0081c6;
+		}
+	
+	.link_cupones { 
+		margin:5.688em 10px 5px 10px;
+		text-decoration:none;
+		font: normal 10px Tahoma, Geneva, sans-serif; 
+		color:#0081c6;
+		}
+	
+	.link_cupones:hover { text-decoration: underline; }
+	
+	.titulo_banner2 { 
+		margin:-2px 45px 0 0; 
+		width:160px; 
+		font:  22px "Neo_sans", Tahoma, Geneva, sans-serif; 
+		color:#0081c6;
+		}
+	
+	.titulo_banner {
+		width:9.375em; 
+		margin-top:3.750em; 
+		margin-right:0.625em; 
+		}
+
+/*banner banco*/
+#banner_banco { 
+	width:27.188em; 
+	height:5.000em; 
+	padding-top:0.438em; 
+	background-image: url(../img/banners/banco.gif); 
+	background-repeat:no-repeat; 
+	border:solid 1px #999;
+	}
+
+.titulo_banner3 { 
+	margin-left:5.625em; 
+	font: normal 24px Tahoma, Geneva, sans-serif; 
+	color:#00a0d6
+	}
+
+.subtitulo_banner3 {
+	margin-left:11.875em; 
+	font: normal 18px Tahoma, Geneva, sans-serif; 
+	color:#00a0d6;
+	}
+
+/*banners columna izquierda*/
+.banner_izquierda {
+	margin:5px 0 5px 3px;
+	}
+	
+.boton_buscar { 
+	text-align:center; 
+	float:left;  
+	width:7.335em; 
+	height:1.750em; 
+	background-image:url(../images/ARPLUS/buscar.gif); 
+	padding-top:0.188em;  
+	font: normal 12px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF;
+	border:0;
+	}
+	
+	.boton_buscar_it {text-align:center; 
+	float:right;  
+	width:7.335em; 
+	height:1.750em; 
+	background-image:url(../images/ARPLUS/buscar.gif); 
+	padding-top:0.188em;  
+	font: normal 12px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF;
+	border:0; }
+	
+.align_btn1 {margin-top:1.8em; margin-bottom:0.25em; 
+	margin-left:1.875em;}
+	
+	
+#buscador_principal  {  
+	font: normal 16px "Neo_sans"; Tahoma, Geneva, sans-serif; 
+	float:right; 
+	width:11.500em;
+	border:none; 
+	background-color:#FFF;
+	border-radius: 5px; 
+	-moz-border-radius:0.375em; 
+	background-image: url("../img/backgrounds/fdo-ingreso.gif");
+	-webkit-border-radius:0.625em; 
+	height:20px;margin: 10px 10px 0 0;
+	padding:;  
+	}
+	
+	#buscador_principal_login  {  
+	
+	
+	width:4em;
+	border:solid 1px #999; 
+	background-color:#FFF; 
+	border-radius: 5px; 
+	-moz-border-radius:5px; 
+	background-image: url("../img/backgrounds/fdo-ingreso.gif");
+	-webkit-border-radius:5px; 
+	height:18px; margin-left:3px;
+	padding:0.125em;  
+	}
+	
+#buscador_volver  {  
+	font: normal 16px "Neo_sans" Tahoma, Geneva, sans-serif; float:right; 
+	width:4em; text-align:center;
+	border:solid 1px #999; 
+	background-color:#FFF; 
+	border-radius: 5px; 
+	-moz-border-radius:0.375em; 
+	background-image: url("../img/backgrounds/fdo-ingreso.gif");
+	-webkit-border-radius:0.625em; 
+	height:18px;margin: 10px 10px 0 0;
+	  
+	}	
+	
+	#searchField{
+    width: 210px;
+    height: 20px;
+    padding-right: 0px; /* puts padding on the right side, so text doesn't go under the button. NOTE: TOTAL WIDTH IS 240 + 25 = 265px */
+    float: left; /* some browsers display correctly without this, but better to leave it for cross browser compatibility */
+    border: 1px solid #999; /* sets new color for border of the field */
+	
+	
+}
+
+
+#searchSubmit{
+    background: transparent  url("../images/common/busc3.jpg") no-repeat;
+    width: 30px;
+    height: 22px;
+    border: none; /* removes default button borders */
+    cursor: pointer; /* when your mouse is over the button, cursor changes into a pointer */
+	margin-left: -31px; /* image is 20x20px, so leave little extra */
+    margin-top: 1px; /* leave some space from the top, so button looks in the middle */
+	-moz-border-radius:0 0.375em  0.375em  0 ; 
+}
+
+.buscador_general { margin-top:7px;  
+	width:13.438em;  
+	border: solid 1px #999; 
+	font: normal 11px Tahoma, Geneva, sans-serif; 
+	-moz-border-radius:0.300em;
+	-webkit-border-radius:0.325em; 
+		}
+
+#buscador {
+	width:16.063em;
+	border:none; 
+	background-color:#FFF;
+	-moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em; 
+	height:18px;margin:0.625em 0 0 0; 
+	padding:0.188em 0.188em 0.188em 0.313em; 
+	}
+	
+.buscador {  
+	width:12.500em;  
+	border:none; 
+	font: normal 11px Tahoma, Geneva, sans-serif; 
+		}
+		
+.buscador_plus {  
+	width:19.5em; 
+	margin-left:0.625em; margin-top:1px; 
+	border:none; 
+	font: normal 11px Tahoma, Geneva, sans-serif; 
+	background:none; 
+	color:#0081c6;
+	}
+	
+.div_buscador2 { 
+	float:left
+	}	
+
+#buscador2 {
+	width:7.750em;
+	border:none; 
+	background-color:#FFF;
+	-moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em; 
+	height:1.250em; margin:5px 0.313em 0.625em 0; 
+	padding:0.188em 0 0 0.313em; 
+	}
+	
+.buscador2 {  
+	width:90px;  
+	border:none; 
+	font: normal 11px Tahoma, Geneva, sans-serif; 
+		}
+
+#buscador3 {
+	float:left; 
+	text-align:center;
+	width:3.5em;
+	border:none; 
+	background-color:#FFF;
+	-moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em; 
+	height:1.850em;
+	margin:0.425em 0.563em 0.313em 0.313em; 
+	padding:0.000em; 
+	}
+	
+.buscador3 { 
+	float:left;  
+	width:1.2em;  
+	border:none; 
+	font: normal 11px Tahoma, Geneva, sans-serif; 
+		}
+		
+		
+	.div_buscador3 { 
+	padding:0.125em 0 0 0; 
+	margin:0.625em 0 0.313em 0; 
+	width:16.750em; 
+	height:7.838em; 
+	border-top:solid 1px #1693d0; 
+	border-bottom:solid 1px #1693d0;
+	}
+		
+		#buscador4 {
+	float:left;  
+	text-align:center;
+	width:88px
+	border:none; 
+	background-color:#FFF;
+	-moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em; 
+	height:19px;
+	margin:20px 0.563em 0.313em 0.313em; 
+	padding:2px 0 0 2px ; 
+	}
+	
+.buscador4 { 
+	float:left;  
+	width:1.2em;  
+	border:none; 
+	font: normal 11px Tahoma, Geneva, sans-serif; 
+		}
+		
+
+
+.buscador3_vuelos {
+	float:left; 
+	width:50px; 
+	margin:3px auto; 
+	text-align:center;
+	font: normal 11px Tahoma, Geneva, sans-serif; 
+	color:#0081c6;
+	}
+
+.div_buscador_pie {
+	margin:25px 0px 5px 0px; 
+	width:16.875em; 
+	height:32.750em;
+	}		
+
+/* Slider */
+
+
+	
+	#container{	
+		z-index:1;
+		position:relative;
+		text-align:left;
+		width:435px; height:286px;
+		margin-bottom:6px;
+			}	
+			
+
+	#slider ul, #slider li,
+	#slider2 ul, #slider2 li{
+		margin:0;
+		padding:0;
+		list-style:none;
+		}
+	#slider2{margin-top:1em; margin-left:0.3em}
+	#slider li, #slider2 li{ 
+		/* 
+			define width and height of list item (slide)
+			entire slider area will adjust according to the parameters provided here
+		*/ 
+		width:435px;
+		height:286px;
+		overflow:hidden; 
+		}	
+
+		
+	/* numeric controls */	
+
+	ol#controls{
+		margin:-2.3em 1em;
+		padding:0;
+		height:30px; font:normal 11px Tahoma, Geneva, sans-serif;	
+		
+		}
+	ol#controls li{
+		margin:0; 
+		padding:0;
+		float:right;
+		list-style:none;
+		height:28px;
+		line-height:28px;
+		}
+	ol#controls li a{
+		float:left;
+		height:17px;
+		line-height:15px;
+		background-image:url(../images/ARPLUS/boton_slider_off.png);
+		background-repeat: no-repeat; 
+		color:#FFF;
+		padding:0 5px;
+		text-decoration:none;
+		}
+	ol#controls li.current a{
+		background-image:url(../images/ARPLUS/boton_slider_on.png);
+		background-repeat: no-repeat; 
+		color:#3194D6;
+		}
+	ol#controls li a:focus, #prevBtn a:focus, #nextBtn a:focus{outline:none;}
+	
+/* //  Slider */
+
+/*slider banco*/
+/*.jcarousel-skin-tango .jcarousel-direction-rtl {
+	direction: rtl;
+}
+
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+    width: 245px;
+    padding: 0px 80px;
+}
+
+
+.jcarousel-skin-tango .jcarousel-clip {
+    overflow: hidden;
+}
+
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+    width:  345px;
+    height: 25px;
+}/**
+
+/*slider chico izquierdo*/
+
+#container2{	
+		z-index:1;
+		position:relative;
+		text-align:left;
+		width:282px;
+		padding-bottom:30px;
+			}	
+	
+#img_s1 { background-image:url(../img/banners/slide.plus_v2.gif)}
+#img_s2 { background-image:url(../img/banners/banner_arplus.gif)}
+/*#img3 { background-image:url(../img/banners/#)}*/
+
+	#slider ul, #slider li,
+	#slider2 ul, #slider2 li{
+		margin:0;
+		padding:0;
+		list-style:none;
+		}
+	#slider2{margin-top:0.5em;}
+	#slider2 li, #slider2 li{ 
+		/* 
+			define width and height of list item (slide)
+			entire slider area will adjust according to the parameters provided here
+		*/ 
+		width:282px;
+		height:177px;
+		overflow:hidden; 
+		}	
+
+/* numeric controls */	
+#prevBtn {
+		margin:-2.3em 1em;
+		padding:0;
+		height:30px; font:normal 11px Tahoma, Geneva, sans-serif;	
+		}
+		
+	
+
+#prevBtn li a{
+		float:left;
+		height:17px;
+		line-height:15px;
+		background-image:url(../images/ARPLUS/boton_slider_off.png);
+		background-repeat: no-repeat; 
+		color:#FFF;
+		padding:0 5px;
+		text-decoration:none;
+		}
+		
+		#prevBtn li{
+		margin:0; 
+		padding:0;
+		float:right;
+		list-style:none;
+		height:28px;
+		line-height:28px;
+		}
+		
+	#prevBtn li.current a{
+		background-image:url(../images/ARPLUS/boton_slider_on.png);
+		background-repeat: no-repeat; 
+		color:#3194D6;
+		}
+		
+		
+/*PAGINA A DONDE VIAJAR*/
+.columna_izquierda {float:left; background-color:#FFF; width:284px; height:880px; padding-left:10px}
+.columna_centro {float:left; background-color:#FFF; padding-right:4px; width:500px; padding-left:10px; height:880px }
+.columna_derecha {float:left; background-color:#FFF; width:187px; padding-right:0.438em; height:880px} /*962 total*/
+.fb-comments { height:40px}
+.comentarios { width:480px; height:210px; background-color:#ECEBEB; font:normal 11px Tahoma, Geneva, sans-serif; color:#000; padding:5px }
+.comentarios_box { width:300px; height:20px}
+.boton_buscar_donde { 
+	text-align:center; 
+	float:left;  
+	width:85px; 
+	height:18px; 
+	background-image:url(../images/ARPLUS/buscar2.gif); 
+	padding-top:0.188em;  
+	font: normal 12px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF;
+	border:0;
+	}
+.boton_buscar_donde2{ 
+	text-align:center; 
+	float:left;  
+	width:150px; 
+	height:18px; 
+	background-image:url(../images/ARPLUS/buscar3.gif); 
+	padding-top:0.188em;  
+	font: normal 12px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF;
+	border:0;
+	margin-right:5px;
+	}
+
+
+.btn_vuelos { width:277px; padding:5px 0 2px 5px; height:18px; background-color:#1793D1; }
+.menu_vuelos { width:279px; margin-top:13px;  height: 280px; background-color:#EDEEEE; border:solid 1px #1793D1;}
+#oferta_adonde {width:187px; height:105px; margin-bottom:6px }
+	.oferta_adonde1 {background-image:url(../images/ARPLUS/tarifa_1_adonde.gif); }
+	.oferta_adonde2 {background-image:url(../images/ARPLUS/tarifa_2_adonde.gif); }
+	.oferta_adonde3 {background-image:url(../images/ARPLUS/tarifa_3_adonde.gif); }
+	
+#lista {font: normal 12px "Neo_sans";  text-decoration:none; margin:4px 0 4px 0   }
+a.lista { text-decoration:none;  }
+a.lista:hover { text-decoration:underline}
+	#clima { border:solid 1px #CCC; padding:5px;  height:72px; width:272px; background-image:url(../images/ARPLUS/a_donde_viajar_clima.jpg); background-repeat:  repeat: x; -moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em;   }
+	.clima { float:left; padding:3px 2px 3px 0;}
+	
+	
+
+#cupon { width:187px; margin-top:20px; border-top:dashed 1px #CCC;}
+.cupon_img { float:right; background-image:url(../img/common/cupon_tijera.gif); width:27px; height:13px; }
+.cupon {border-bottom:dashed 1px #CCC; padding:5px 0 5px 0}
+
+.titulo {	font:  15px "Neo_san", Tahoma, Geneva, sans-serif; color:#0081c6; line-height: 100%; margin:0px}
+.titulo2 {	font:  15px "Neo_sans", Tahoma, Geneva, sans-serif; color:#0081c6; line-height: 100%; margin:0px}
+.titulo-promo { 
+		margin:0px;
+		 
+		font:  13px "Neo_sans", Tahoma, Geneva, sans-serif; 
+		color:#0081c6;
+		}
+		
+		.descuento {font: 40px "Neo_sans", Tahoma, Geneva, sans-serif; 
+		color:#EA6B26; }
+		
+.descuento2 {font: 24px "Neo_sans", Tahoma, Geneva, sans-serif; 
+		color:#EA6B26; }
+		
+		
+		
+/*	Desarrollo de la galeria de imagenes	*/
+
+.galeria {width:500px; margin-top:25px;}
+
+
+#image{ float:left; padding-top:5px; margin-bottom:10px;
+height:222px;
+width:429px;}
+
+.thumb{
+float:left;
+margin-right:10px;
+margin-top:5px;}
+
+/*PAGINA ALOJAMIENTO*/
+
+.columna_izquierda_hotel{ border-right: solid 1px #8B8B8B; width:284px; padding-right:3px; float:left; background-color:#FFF;  height:900px; padding-left:10px}
+.columna_centro_hotel {float:left; background-color:#FFF; width:694px; padding-left:0.600em; height:900px }
+.columna_derecha_hotel {float:left; background-color:#FFF; width:290px; padding-right:0.438em; height:900px; }
+.btn_select { width:283px; height:24px; color:#FFF; padding-top:3px; padding-left:5px;  background-image:url(../images/ARPLUS/a_donde_viajar_hoteles_select.gif)}
+#box_cupon { width:654px; height:72px; padding:5px 0 0 20px; margin-bottom:10px;  border:solid 1px #C6C6C7; background-image:url(../images/ARPLUS/a_donde_viajar_hoteles_box.jpg); background-repeat:  repeat: x; -moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em;  }
+	
+
+
+
+.select { width:144px; float:left}
+
+
+.align_btn2 {margin-top:0.5em; 
+	margin-left:37.475em;}	
+
+#hoteles_1 { width:674px; border-top: solid 1px #8B8B8B }
+#hoteles2 { width:674px;}
+#hoteles { width:490px; height: auto;   }
+
+	.descuento_hotel {font: 30px "Neo_sans", Tahoma, Geneva, sans-serif; 
+		color:#EA6B26; }
+		.descuento_hotel2 {font: 18px "Neo_sans", Tahoma, Geneva, sans-serif; 
+		color:#EA6B26; }
+		
+.btn_voucher { background-image:url(../images/ARPLUS/a_donde_viajar_hoteles_voucher.gif); margin-top:5px; width:106px; height: 20px; font: normal 12px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF; padding-left:39px; padding-top:4px}
+	
+	.btn_ubicacion { margin-left:10px; margin-top:4px;padding-left:39px;padding-top:5px;  background-image:url(../images/ARPLUS/a_donde_viajar_hoteles_ubicacion.gif); width:83px; height:22px}
+	
+	.bgn_con { background-color:#F4F4F4; padding:5px; }
+	.bgn_con_arplus { padding:5px; border-bottom: solid 1px #999; border-top:solid 1px #999;}
+	
+	.degradado {
+    height: 100px;
+    background-color: #FFF ; /* Navegadores sin CSS3 *
+    background-image: url(images/linear_bg_2.png); /* Navegadores sin CSS3 */
+    background-image: -moz-linear-gradient(100% 100% 90deg, #E6E6E6, #fff); /* Firefox */
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#E6E6E6), to(#fff)); /* Webkit: Chrome, Opera,... */
+    background-image: linear-gradient(top , #E6E6E6, #fff ); /* CSS3 puro */
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#E6E6E6', EndColorStr='#ffffff');  
+
+}
+
+
+
+
+	
+	
+	.voucher { width:490px; height:190px; border-bottom:dashed 1px #CCC;}
+	.paginas { text-align:center; margin-top:20px;}
+		
+		a.paginas { text-decoration:none; color:#999}
+a.paginas:hover { text-decoration: underline; }
+a.link {text-decoration:none;}	
+a.link:hover { text-decoration: underline; }
+		
+/*PAGINA BENEFICIOS*/	
+.columna_centro_beneficios {float:left; background-color:#FFF; width:682px; padding-left:0.500em; height:900px }
+.bgn_a_donde { padding-top:0.188em; padding-left:0.5em; width:284px; height:33px;  float:left; background-image: url(../images/ARPLUS/a_donde_viajar.jpg); }
+#conten_ben { width:1001px; height:360px; background-color:#FFF}
+.col_height	 {height: 350px;}
+#box_cupon_ben { width:284px; height:314px; padding:5px;   border:solid 1px #C6C6C7; background-image:url(../images/ARPLUS/a_donde_viajar_beneficios.jpg); background-repeat:  repeat: x; -moz-border-radius:0.500em; -webkit-border-radius:0.625em;  }
+#box_cupon_2 { width:653px; height:111px; padding:5px 0 0 5px;  border:solid 1px #C6C6C7; background-image:url(../images/ARPLUS/a_donde_viajar_ben_box.jpg); background-repeat:  repeat: x; -moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em;  }
+#cupon_ben { width:150px; margin-right:10px;  padding-top:5px; border-top:dashed 1px #CCC}
+.btn_info { background-color:#1693D0;  margin-top:10px; width:79px; height: 16px; font: normal 12px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF; padding-left:15px; padding-top:2px; margin-left:85px; -moz-border-radius:0.500em; -webkit-border-radius:0.625em; }
+	.align_btn3 {margin-top:2em; 
+	margin-left:35.9em;}	
+	
+	.img_tijera {  width:69px;   margin-top:10px;}
+	
+/*PAGINA GOOGLEMAP*/
+
+
+	
+	#pop{padding-left:5px; padding-bottom:20px;
+ border:solid 1px #CCC;
+ background:#FFF;
+ width:600px;
+ height:408px;
+ left:40%;
+ top:40%;
+ margin-left:-100px;
+ margin-top:-100px;
+ position:fixed;
+ display:none;
+ box-shadow: 2px 2px 2px #ffc;
+   -webkit-box-shadow: 2px 2px 2px #999;
+   -moz-box-shadow: 2px 2px 2px #999; z-index:3;
+}
+#fondo-blanco{
+ background:#fff;
+ width:100%;
+ height:100%;
+ position:fixed;
+ top:0;
+ left:0;
+ opacity:0.6; filter: alpha(opacity = 50);
+ display:none; z-index:2;
+ 
+}
+
+
+#pop2{padding-left:5px; padding-bottom:20px;
+ border:solid 1px #CCC;
+ background:#FFF;
+ width:800px;
+ height:840px;
+ left:30%;
+ top:15%;
+ margin-left:-100px;
+ margin-top:-100px;
+ position: absolute;
+ display:none;
+ box-shadow: 2px 2px 2px #ffc;
+ -webkit-box-shadow: 2px 2px 2px #999;
+   -moz-box-shadow: 2px 2px 2px #999; z-index:3;
+}
+
+#pop5{padding-bottom:0px;
+ background:#FFF; 
+ width:644px;
+ height:476px;
+ left:30%;
+ top:25%;
+ margin-left:-100px;
+ margin-top:-100px;
+ position: absolute;
+ display:none;
+  z-index:3;
+}
+
+
+
+#fondo-negro{
+ background:#000;
+ width:100%;
+ height:100%;
+ position:fixed;
+ top:0;
+ left:0;
+ opacity:0.6; filter: alpha(opacity = 50);
+ display:none; z-index:2;
+ 
+}
+
+.btn_volver { background-color:#1693D0;    font: normal 12px Tahoma, Geneva, sans-serif;  
+	text-decoration:none; color:#FFF;  padding:0px;  -moz-border-radius:0.500em; -webkit-border-radius:0.625em; }
+
+/*PAGINA AEROLINEAS PLUS*/
+
+/*contenedores*/
+	#contenedor_arplus {
+		width: 1002px;
+		height:505px;
+		margin:  auto; 
+		background: #fff;
+		float:left;
+		}
+		
+	#contenedor_arplus2 {
+		width: 1002px;
+		height:565px;
+		margin:  auto; 
+		background: #fff;
+		}	
+		
+		
+		#contenedor_arplus3 {
+		width: 1002px;
+		height:865px;
+		margin:  auto; 
+		background: #fff;
+		float:left;
+		}	
+		
+		#contenedor_arplus4 {
+		width: 1002px;
+		height:665px;
+		margin:  auto; 
+		background: #fff;
+		}	
+		
+		
+		#contenedor_arplus5 {
+		width: 1002px;
+		height:1200px;
+		margin:  auto; 
+		background: #fff;
+		float:left;
+	}
+	#contenedor_arplus6 {
+		width: 1002px;
+		height:740px;
+		margin:  auto; 
+		background: #fff;
+	}
+
+		
+#contenedor_arplus_fix {
+		width: auto ; /*1002px*/ height:auto
+		margin:  auto; 
+		background: #fff;
+		}	
+		
+		#contenedor_preguntas_fix {
+		width: 795px ; /*1002px*/ height:auto
+		
+		margin:  auto; 
+		background: #fff;
+		}	
+		
+		
+		.etiqueta {
+overflow: auto;
+		}	
+		
+.columna_unica { background-color:#FFF;  width:960px;  margin-left:35px; height:470px }
+#caja_plus { position:absolute; width:360px; left:57% ;  padding-top:8px; margin-top:0; }
+
+.fondo_plus { width:956px; height:419px; background-image:
+url(../img/banners/aerolineas-plus.jpg)}
+
+/*columnas general*/
+.columna_izq {float:left; background-color:#FFF; width:178px; height:480px; }
+.columna_cent{float:left;  background-color:#FFF; background-image:url(../images/ARPLUS/arplus_fondo.jpg);  width:558px;  height:455px; padding:45px 20px 0 20px }
+.columna_cent2{float:left;  background-color:#FFF; background-image:url(../images/ARPLUS/arplus_fondo2.jpg);  width:558px;  height:520px; padding:45px 20px 0 20px }
+
+.columna_der{float:left; background-color:#FFF;  width:210px; height:500px; } /*962 total*/
+#ingreso_plus { 
+	font: normal 16px "Neo_sans"; Tahoma, Geneva, sans-serif; 
+	float:right; 
+	width:12.563em;
+	border:none; 
+	background-color:#FFF;
+	-moz-border-radius:0.375em; 
+	background-image: url("../images/ARPLUS/fdo-ingreso.gif");
+	-webkit-border-radius:0.625em; 
+	height:18px;margin:0.188em; 
+	padding:0.125em;  
+	}
+.ingreso_plus {  
+	width:20.5em; 
+	margin-left:0.625em; margin-top:1px; 
+	border:none; 
+	font: normal 11px Tahoma, Geneva, sans-serif; 
+	background:none; 
+	color:#0081c6;
+	}
+
+
+.tituloplus {	font:  15px "Neo_san", Tahoma, Geneva, sans-serif; color:#0081c6; line-height: 100%; }
+.tituloplus4 {	font:  16px "Neo_sans", Tahoma, Geneva, sans-serif; color:#0081c6; line-height: 100%; }
+.tituloplus5 {	font:  16px "Neo_san", Tahoma, Geneva, sans-serif; color:#0081c6; line-height: 100%; }
+.tituloplus4 {	font:  16px "Neo_sans", Tahoma, Geneva, sans-serif; color:#0081c6; line-height: 100%; }
+.tituloplus_chico {	font:  14px "Neo_san", Tahoma, Geneva, sans-serif; color:#0081c6; line-height: 100%; margin:0px}
+.tituloplus_linea {	font:  16px "Neo_san", Tahoma, Geneva, sans-serif; color:#0081c6; line-height: 100%; margin:0px; padding-bottom:3px;  border-bottom:solid 1px #0081C6}
+.tituloplus2 {	font:  14px "Neo_san", Tahoma, Geneva, sans-serif; color:#0081c6; line-height: 100%; padding:20px 0 0 16px}
+.tituloplus3 {	font:  14px "Neo_san", Tahoma, Geneva, sans-serif; color:#0081c6; line-height: 100%; padding:10px 0 0 16px}
+#listaplus {font: normal 12px "Neo_san";  text-decoration:none; margin:5px 0 5px 0   }
+.listaplus_select {font: bold 11px "Neo_sans";  text-decoration:none; margin:5px 0 5px 0}
+.columna_plus { width:203px; height:245px; background-image:url(..images/ARPLUS/arplus_columna.jpg)}
+#fecha_plus { font: normal 11px Tahoma, Geneva, sans-serif; color:#9c9ca0; float:right}
+.align_btn4 {margin-top:0.5em; 
+	margin-left:20.475em;}	
+	
+	
+.btn_inscribite { margin-left:280px;
+ margin-top:10px; 
+ position: relative;}	
+	
+p input {
+  float: left; 
+  height: 1em;
+  margin: 0px 5px 55px 0;
+  padding-bottom:40px}
+  
+  .boton_aceptar { background-color:#1492CF;  
+  
+	text-align:center; 
+	float:left;  
+	width:7.335em; 
+	height:1.750em; 
+	padding-top:0.188em;  
+	font: normal 10px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF;
+	border:0;
+	-moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em; 
+	}
+	
+	 .boton_aceptar2 { background-color:#1492CF;  
+  
+	text-align:center; 
+	float:left;  
+	width:10.335em; 
+	height:1.750em; 
+	padding-top:0.188em;  
+	font: normal 10px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF;
+	border:0;
+	-moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em; 
+	}
+	
+	.boton_aceptar3 { background-color:#1492CF;  
+  
+	text-align:center; 
+	float:left;  
+	width:11.335em; 
+	height:1.750em; 
+	padding-top:0.188em;  
+	font: normal 10px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF;
+	border:0;
+	-moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em; 
+	}
+	
+	.boton_aceptar4 {background-color:#1492CF;  
+  
+	text-align:center; 
+	float:left;  
+	width:8.335em; 
+	height:1.750em; 
+	padding-top:0.188em;  
+	font: normal 11px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF;
+	border:0; border-radius: 5px;
+	-moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em;}
+	
+	.boton_elite { background-color:#1492CF;  
+  
+	text-align:left; 
+	float:left;   
+	width:26.335em; 
+	padding-left: 20px;
+	height:1.350em; 
+	padding-top:0.188em;  
+	font: normal 12px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF;
+	border:0;border-radius: 5px;
+	-moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em; 
+	}
+	
+	.boton_elite1 { background-color:#1492CF;  
+  
+	text-align:center; 
+	float:left;  
+	width:27.335em; 
+	height:1.750em; 
+	padding-top:0.188em;  
+	font: normal 10px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF;
+	border:0;
+	-moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em; 
+	}
+	
+	.boton_elite2 { background-color:#1492CF;  
+  
+	text-align:center; 
+	float:left;  
+	width:39.335em; 
+	height:1.750em; 
+	padding-top:0.188em;  
+	font: normal 10px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF;
+	border:0;
+	-moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em; 
+	}
+	
+	
+	
+	.INPUT {
+		background-image: url("../images/common/fdo-buscador.jpg");
+		background-repeat: repeat-x;
+		border-color: #D9D9D9;
+		border-style: solid;
+		border-width: 1px;
+		color: #808084;
+		font-family: Arial,Helvetica,sans-serif;
+		font-size: 11px;
+		height: 16px;
+		line-height: normal;
+		
+	}
+	
+	#celda {  padding:2px; font:normal 10px Tahoma, Geneva, sans-serif; color:#000}
+	.celda1 {background-color:#76ccf7; height:21px }
+	.celda2 { background-color:#EDE9EA; margin-right:1px; padding:4px 2px 2px 2px; height:19px}
+	
+	/*po up*/
+
+/*hoverpopups type 1*/
+
+#popup { color: #000; width:20px;   }
+
+#popup a, #popup a:visited {
+	position: relative;
+	display: block;
+	text-align: right;
+	margin: 0;
+	border: none;
+	text-decoration: none;
+	font: normal 11px Arial, Helvetica, sans-serif;
+	
+}
+
+#popup a span {display: none;}
+
+#popup a:hover { background-color: #e9e9e2;  }
+
+/* the IE correction rule */
+#popup a:hover	{
+ background-color: #e9e9e2;
+text-indent: 0; /* added the default value */
+}
+
+#popup a:hover span{
+display: block;
+position: absolute;
+top: -100px;
+left: 10px;
+width: 465px;
+margin: 0px;
+padding: 10px 5px 10px 5px;
+color: #666;
+font-weight: normal;
+background: #fff;
+text-align: left;
+border: 1px solid #0081c6;
+border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; 
+
+}
+
+
+
+.callout {
+    position: relative;
+    margin: 18px 0;
+	width: 265px;
+    padding: 18px 20px;
+    background-color: #eef4f9;
+    /* easy rounded corners for modern browsers */
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+	font: normal 11px Arial, Helvetica, sans-serif;
+	
+}
+.callout .notch {
+    position: absolute;
+    bottom: -10px;
+    left: 105px;
+    margin: 0;
+    border-top: 10px solid #eef4f9;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+    /* ie6 height fix */
+    font-size: 0;
+    line-height: 0;
+     /* ie6 transparent fix */
+    _border-right-color: pink;
+    _border-left-color: pink;
+    _filter: chroma(color=pink);
+}
+
+.border-callout { border: 1px solid #0081c6; padding: 17px 19px; }
+.border-callout .border-notch { border-top-color: #0081c6; bottom: -11px; }
+
+
+#popup2 { color: #000; width:20px;   }
+
+#popup2 a, #popup a:visited {
+	position: relative;
+	display: block;
+	text-align: right;
+	margin: 0;
+	border: none;
+	text-decoration: none;
+	font: normal 11px Arial, Helvetica, sans-serif;
+	
+}
+
+#popup2 a span {display: none;}
+
+#popup2 a:hover { background-color: #e9e9e2;  }
+
+/* the IE correction rule */
+#popup2 a:hover	{
+ background-color: #e9e9e2;
+text-indent: 0; /* added the default value */
+}
+
+#popup2 a:hover span{
+display: block;
+position: absolute;
+top: -65px;
+left: -100px;
+width: 190px;
+margin: 0px;
+padding: 10px 5px 10px 5px;
+color: #666;
+font-weight: normal;
+background: #fff;
+text-align: left;
+border: 1px solid #0081c6;
+border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; 
+
+}
+
+.callout2 {
+    position: relative;
+    margin: 18px 0;
+	width: 265px;
+    padding: 18px 20px;
+    background-color: #eef4f9;
+    /* easy rounded corners for modern browsers */
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+	font: normal 11px Arial, Helvetica, sans-serif;
+	
+}
+.callout2 .notch2 {
+    position: absolute;
+    bottom: -10px;
+    left: 100px;
+    margin: 0;
+    border-top: 10px solid #eef4f9;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+    /* ie6 height fix */
+    font-size: 0;
+    line-height: 0;
+     /* ie6 transparent fix */
+    _border-right-color: pink;
+    _border-left-color: pink;
+    _filter: chroma(color=pink);
+}
+
+.border-callout2 { border: 1px solid #0081c6; padding: 17px 19px; }
+.border-callout2 .border-notch2 { border-top-color: #0081c6; bottom: -11px; }
+
+.boton_ok { background-color:#1492CF;  
+  
+	text-align:center; 
+	float:left;  
+	width:2.25em; 
+	height:1.750em; 
+	padding-top:0.188em;  
+	font: normal 10px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF;
+	border:0;
+	-moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em; 
+	}
+
+/*PAGINA GANAR MILLAS AR PLUS*/
+.columna_millas{float:left;  background-color:#FFF; background-image:url(../images/ARPLUS/arplus_fondo.jpg);  width:792px;  height:530px; }
+.btn_ganar_millas { width:190px; height:45px; background-image: url(../images/ARPLUS/arplus_ganar_millas.gif); padding:20px 0 0 20px}
+.btn_ganar_millas_off { width:190px; height:45px; background-image: url(../images/ARPLUS/arplus_ganar_millas_off.gif); padding:20px 0 0 20px}
+.btn_sky__team { width:122px; height:45px; background-image: url(../images/ARPLUS/arplus_vuelos_sky.gif); padding:20px 0 0 20px}
+.btn_sky__team_on { width:122px; height:45px; background-image: url(../images/ARPLUS/arplus_vuelos_sky_off.gif); padding:20px 0 0 20px}
+.millas_borde { width: 440px; height:65px; background-image:url(file:///C|/Documents%20and%20Settings/ediaz/My%20Documents/SVN_ar/trunk/images/ARPLUS/arplus_ganar_millas_borde.gif) }
+#box_millas { width:660px; height:42px; padding:15px 0 0 10px; margin-bottom:10px;  border:solid 1px #C6C6C7; background-image:url(../images/ARPLUS/a_donde_viajar_hoteles_box.jpg); background-repeat:  repeat: x; -moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em;  }
+.select_millas { width:245px; float:left}
+.columna_der_millas {float:left; background-color:#FFF;  width:13.125em; height:33.125em;  } /*962 total*/
+.tabla_millas_head { width:651px; height:34px; background-color:#6DC9F6; margin:10px 0 0 70px; padding:0px 0 0 15px  }
+.tabla_millas_head_gris { width:651px; height:34px; background-color:#D2D0D1; margin:0px 0 0 70px; padding:0px 0 0 15px  }
+.tabla_millas_body { width:652px; height:auto;  margin:0px 0 0 77px; background-color:#ECE9E9}
+.borde_blanco { border-right:solid 1px #FFF; border-bottom:solid 1px #FFF; height:44px; padding:5px}
+.fondo_millas { background-image:url(../images/ARPLUS/arplus_ganar_millas_fondo.gif); width:757px; height:192px; }
+.div_borde_millas { border-bottom: solid 1px  #0081C6; border-top: solid 1px #0081C6;       padding:10px 30px 0 10px;}
+.divbox {overflow: hidden}
+
+/*tabla millas sky*/
+
+.col_cel { background-color: #6DC9F6}
+.col_gris{  background-color:#EDE9EA}
+.col_gris2{  background-color:#D2D0D1}
+
+/*PAGINA CONOCE AR PLUS*/
+.columna_conoce{float:left;  background-color:#FFF; background-image:url(../images/ARPLUS/arplus_fondo.jpg);  width:768px;  height:448px; padding:25px 5px 0 20px }
+.columna_der_conoce{float:left; background-color:#FFF;  width:200px; height:500px; } /*962 total*/
+.columna_plus_conoce { width:200px; height:248px; }
+
+
+/*PAGINA PRIVI PLATINO*/
+
+.columna_platino {float:left;  background-color:#FFF;  width:768px;  height:645px; padding:25px 5px 0 20px  }
+.columna_der_platino{float:left; background-color:#FFF;  width:13.050em; height:670px; } /*962 total*/
+
+/*PAGINA ELITE*/
+.columna_elite {float:left;  background-color:#FFF; background-image:url(..images/ARPLUS/arplus_elite_fondo.gif);  width:768px;  height:560px; padding:25px 5px 0 20px }
+
+
+/*PAGINA EMPL ASOC*/
+.columna_emp{float:left;  background-color:#FFF; background-image:url(../images/ARPLUS/arplus_fondo.jpg);  width:770px;  height:480px; padding:25px 12px 0 20px }
+.columna_der_emp_asoc {float:left;   width:12em; height:500px; } /*962 total*/
+ .boton_volver { background-color:#1492CF;  
+  
+	text-align:center; 
+	position: relative;
+	top:-25px; left:-40px;
+	float:right;  
+	width:6.335em; 
+	height:1.750em; 
+	padding-top:0.188em;  
+	font: normal 10px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF; 
+	border:0;
+	-moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em; 
+	}
+
+/*PAGINA PREGUNTAS FRECUENTES AR PLUS*/
+.columna_preguntas {float:left;  background-color:#FFF; background-image:url(..images/ARPLUS/arplus_fondo_preguntas.gif);  width:768px;  height:430px; padding:25px 5px 0 20px }
+.columna_der_preguntas {float:left; background-color:#FFF;  width:200px; height:600px; } /*962 total*/
+.columna_plus_preguntas { width:200px; height:265px; }
+.box { overflow : hidden } /* IE8 margin bug */
+
+/*PAGINA PREGUNTAS INTERES AR PLUS*/
+.columna_plus_interes { width:200px; height:247px; }
+
+.columna_cond{float:left;  background-color:#FFF; background-image: url(../img/backgrounds/arplus_conoce.gif) ; background-repeat:no-repeat;  width:768px;  height: auto ; padding:25px 5px 0 20px }
+
+/*PAGINA GANAR MILLAS AR SKY*/
+.div_gris { background-color:#EDE9EA; }
+.div_gris2 { background-color:#E4E4E4; }
+.div_celeste1 { background-color:#6DCAF6;  height:30px;}
+.div_celeste { background-color:#6DCAF6;  height:30px; padding:7px 0 0 15px}
+.div_celeste2 { background-color:#6DCAF6; height:30px; padding:7px 0 0 15px}
+.btn_sky { background-image:url(../images/ARPLUS/arplus_boton_sky.gif); width:773px; height:44px; padding:10px 0 0 20px}
+.col_derecha_sky {background-image: url(../images/ARPLUS/arplus__sky_col.gif); width:180px; height:389px}
+columna_millas_fix{float:left;  background-color:#FFF; background-image:url(../images/ARPLUS/arplus_fondo.jpg);  width:772px;  height: auto; }
+#div_flotante { background-image:url(../images/ARPLUS/arplus_sky.png); width: 232px; height: 286px;
+position:absolute;
+top:310px;
+left:770px;
+z-index:1;
+}
+
+/*PAGINA BANCO*/
+.col_derecha_banco {background-image: url(../images/ARPLUS/arplus__banco_col.gif); width:222px; height:500px}
+.columna_banco {float:left;  background-color:#FFF; /*background-image:url(../images/ARPLUS/arplus_fondo.jpg);*/  width:780px;  height: auto;  }
+#div_flotante_banco { background-image:url(../images/ARPLUS/arplus_banco.png); width: 232px; height: 286px;
+position:absolute;
+top:360px;
+left:770px;
+z-index:1000;
+}
+
+#div_oro { background-image:url(../img/common/oro.png); width: 232px; height: 286px;
+position:absolute;
+top:550px;
+left:770px;
+z-index:1000;
+}
+
+
+#div_flotante_oro { background-image:url(../img/common/arplus_oro.png); width: 232px; height: 373px;
+position:absolute;
+top:450px;
+left:770px;
+z-index:1000;
+}
+
+/*PAGINA MAPA*/
+#div_flotante2 {
+	width: 100px;
+	height: 20px;
+	position: relative;
+	top:-596px;
+	left:865px;
+	z-index:1;
+	padding:5px; background-color:#FFF; border:solid 1px #999;
+}
+
+#pop3{padding-left:5px; padding-bottom:20px;
+ border:solid 1px #CCC;
+ background:#FFF;
+ width:383px;
+ height:232px;
+ 
+ margin-left:-275px;
+ margin-top:-37px;
+ position: absolute    ;
+ display:none;
+ box-shadow: 2px 2px 2px #ffc;
+   -webkit-box-shadow: 2px 2px 2px #999;
+   -moz-box-shadow: 2px 2px 2px #999; z-index:3;
+}
+
+.borde_right { border-right:dashed 1px #CCC; margin-right:10px}
+
+
+/*reclamo pop up*/
+.input_calendar
+{
+    background: url(../img/buttons/calendar.gif)   no-repeat scroll 0 0 transparent ;  height:22px;  background-position: 105px 3px;
+    border: 1px solid #BCBCBC; margin-bottom:10px; 
+    font-size:11px;
+    color: #666; padding-left:2px; background-color:#FFF;
+       }
+	   
+.sombra_interior {  background-color:
+
+#fff;-moz-box-shadow: inset 1px 0  1px #999; }
+
+	 .redondeadas {  background-color: #fff;
+
+border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px;}
+
+
+.rounded{
+border-radius:7px;
+-moz-border-radius:7px; /*Firefox*/
+-webkit-border-radius:7px; /*Safari y navegadores que usen WebKit*/
+}
+
+.rounded2{
+border-radius:7px;
+-moz-border-radius:7px; /*Firefox*/
+-webkit-border-radius:7px; /*Safari y navegadores que usen WebKit*/
+ 
+text-shadow: #fff 0px 1px 1px;
+box-shadow: 1px 1px 2px rgba(0,0,0,.5);
+-webkit-box-shadow: 1px 1px 2px rgba(0,0,0,.5);/*Safari y navegadores que usen WebKit*/
+-moz-box-shadow: 1px 1px 2px rgba(0,0,0,.5);
+ 
+background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#D7E9F3));
+background: -moz-linear-gradient(top,  #ffffff ,  #D7E9F3);
+filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff ', endColorstr='#D7E9F3');
+}
+
+/*Alojamiento Vouchers*/
+
+.voucher {width:650px; height:140px; overflow:auto;}
+
+
+/*EQUIPAJE*/
+
+.btn_1 {background-image:url(../images/laempresa/prensa/btn_mano.jpg); width:120px; height:23px; text-align:center }
+.btn_1_2 {background-image:url(../images/laempresa/prensa/btn_mano2.jpg); width:120px; height:23px; text-align:center }
+.btn_2 { background-image: url(../images/laempresa/prensa/btn_registrado.jpg); width:120px; height:23px; text-align:center}
+.btn_3  { background-image:url(../images/laempresa/prensa/btn_rastreo.jpg); width:120px; height:23px; text-align:center}
+.btn_4  { background-image:url(../images/laempresa/prensa/btn_medio.jpg); width:120px; height:23px; text-align:center}
+.div_celeste_chico { background-color:#6DCAF6;  height:15px;}
+.btn_equipaje { padding:20px 0 0 0}
+.btn_equipaje_off {width:115px; height:23px;  padding:20px 0 0 5px}
+.btn_desplegable { width:749px; height:34px; background-image: url(../images/laempresa/prensa/desplegable.jpg); padding:20px 0 0 20px}
+.btn_desplegable1 { width:749px; height:23px; background-image: url(../images/laempresa/prensa/desplegable_arriba.jpg); padding:20px 0 0 20px}
+.btn_desplegable2 { width:729px; height: auto; background-image: url(../images/laempresa/prensa/desplegable_centro.jpg); padding:20px 20px 0 20px}
+.linea { border-bottom: solid 1px #fff}
+.linea_izquierda { border-left: solid 1px #fff}
+.linea_gris { border-bottom: solid 1px #1693d0}
+
+/*TABLA*/
+
+/*PAGINA SKYTEAM*/
+
+.contenido_sky { width:900px; background-image:url(..img/backgrounds/ar20plus_fondo.jpg);  height: 350px; }
+.landing { background-image:url("../img/skyteam/Welcome.jpg"); width:984px; height:500px} 
+
+
+/*EASYSLIDER*/
+
+
+
+			
+    /* image replacement */
+        .graphic, #prevBtn, #nextBtn, #slider1prev, #slider1next{
+            margin:0;
+            padding:0;
+            display:block;
+            overflow:hidden;
+            text-indent:-8000px;
+            }
+    /* // image replacement */
+			
+	#container{	
+		margin:0 ; 
+		position:relative;
+		text-align:left;
+		width:390px; 
+		background:#fff;		
+		
+		}	
+		
+
+			
+	#content{
+		position:relative;
+		}		
+
+/* Easy Slider */
+
+	#slider ul, #slider li{
+		margin:0;
+		padding:0 ;
+		list-style:none;
+		}
+	
+	#slider li{ 
+		/* 
+			define width and height of list item (slide)
+			entire slider area will adjust according to the parameters provided here
+		*/ 
+		width:390px;
+		height:370px;
+		overflow: hidden ; 
+		}	
+		
+		#slider2 li{ 
+		/* 
+			define width and height of list item (slide)
+			entire slider area will adjust according to the parameters provided here
+		*/ 
+		width:325px;
+		height:177px;
+		overflow:hidden; 
+		}	
+	
+	
+	#nextBtn, #slider1next{ 
+		left:396px;
+		}														
+	#prevBtn a, #nextBtn a,
+	#slider1next a, #slider1prev a{   
+		 
+		display: block ;
+      position: absolute; top:155px; left:270px;
+		width:17px;
+		height:17px;
+		background:url(../img/buttons/boton_slider_off2.png) no-repeat 0 0;	
+		}	
+	#nextBtn a, #slider1next a{ 
+	display: block ;
+      position: absolute; top:155px; left:290px;
+		width:17px; 
+		height:17px;
+		background:url(../img/buttons/boton_slider_on_2.png) no-repeat 0 0;	
+		}	
+		
+		
+		
+
+		
+		
+		
+	/* numeric controls primer slider */	
+
+	ol#controls{ float:right; position: relative;
+		margin:-25px 10px 0px 0;
+		padding:0;   
+		height:30px; font:normal 11px Tahoma, Geneva, sans-serif;	
+		}
+	ol#controls li{
+		margin:2px; 
+		padding:0;
+		float:right;
+		list-style:none; 
+		height:28px; 
+		line-height:28px; 
+		}
+	ol#controls li a{
+		float:left; 
+		height:17px; 
+		line-height:17px; 
+		background:url(../img/buttons/boton_slider_off2.png) no-repeat 0 0;	
+		color:#DAF3F8;
+		padding:0 6px;
+		text-decoration:none;
+		}
+	ol#controls li.current a{
+		background:url(../img/buttons/boton_slider_on_2.png) no-repeat 0 0;	
+		color:#0081C6; 
+		}
+	ol#controls li a:focus, #prevBtn a:focus, #nextBtn a:focus{outline:none;}
+	
+	
+	/* numeric controls segundo slider*/	
+	
+	ol#controls3{ float:right; position: relative;
+		margin:-25px 10px 0px 0;
+		padding:0;   
+		height:30px; font:normal 11px Tahoma, Geneva, sans-serif;	
+		}
+	ol#controls3 li{
+		margin:2px; 
+		padding:0;
+		float:right;
+		list-style:none; 
+		height:28px; 
+		line-height:28px; 
+		}
+	ol#controls3 li a{
+		float:left; 
+		height:17px; 
+		line-height:17px; 
+		background:url(../img/buttons/boton_slider_off2.png) no-repeat 0 0;	
+		color:#DAF3F8;
+		padding:0 6px;
+		text-decoration:none;
+		}
+	ol#controls3 li.current a{
+		background:url(../img/buttons/boton_slider_on_2.png) no-repeat 0 0;	
+		color:#0081C6; 
+		}
+	ol#controls3 li a:focus, #prevBtn a:focus, #nextBtn a:focus{outline:none;}
+	
+/* // Easy Slider */
+
+
+
+/*MOTOR DE BUSQUEDA PAISES*/
+
+/*ARGENTINA*/
+
+/*HOME*/
+
+#contenedor_form_home { width:326px; height:326px;}
+	.box_form_home { 
+		 padding:6px 3px 5px 4px; 
+		 height:255px; 
+		 width:317px; 
+		 background-color:#EDEEEE; 
+		 border: solid 1px #0081c6;
+		 /*border-radius:0 0 5px 5px; -webkit-border-radius: 0 0 5px 5px; -moz-border-radius: 0 0 5px 5px;*/
+		 }
+
+
+
+.bot1 {  
+	  	  font: normal  "Neo_sans", Tahoma, Geneva, sans-serif;
+		  padding-top:4px; 
+		  padding-left:49px; 
+		  width:110px; 
+		  height:19px; 
+		  float:left; 
+		  background-image:url(../img/home/bot1.jpg)
+		  }
+ .bot2 {
+		  padding-top:5px; 
+		  padding-right:31px; 
+		  width:136px; 
+		  height:18px; 
+		  float:left; 
+		  background-image:url(../img/home/bot2.jpg)
+		  }
+		  
+ .bot3 {
+		  padding-top:3px; 
+		  padding-left:50px; 
+		  width:109px; 
+		  height:21px; 
+		  float:left; 
+		  background-image:url(../img/home/bot3.jpg)
+		  }	
+		  
+.bot4 {
+		  padding-top:3px; 
+		  padding-left:60px; 
+		  width:107px; 
+		  height:21px; 
+		  float:left; 
+		  background-image:url(../img/home/bot4.jpg)
+		  }
+		  
+		  
+.bot5 {
+		  padding-top:0; 
+		  padding-left:150px; 
+		  width:176px; 
+		  height:23px; 
+		  float:left; 
+		  background-image:url(../img/home/bot5.jpg)
+		  }		  
+/*FIN DE HOME*/
+
+
+/*BOTONES CHECK IN*/
+.bot6 {
+		  padding-top:0; 
+		  padding-left:120px; 
+		  width:206px; 
+		  height:23px; 
+		  float:left; 
+		  background-image:url(../img/home/bot6.jpg)
+		  }	
+.bot7 {
+		  padding-top:3px; 
+		  padding-left:50px; 
+		  width:109px; 
+		  height:21px; 
+		  float:left; 
+		  background-image:url(../img/home/bot7.jpg)
+		  }	
+
+
+
+#contenedor_form { width:282px; height:326px;}
+
+.boton_alojamiento {  
+	  	  font: normal  "Neo_sans", Tahoma, Geneva, sans-serif;
+		  padding-top:4px; 
+		  padding-left:49px; 
+		  width:94px; 
+		  height:19px; 
+		  float:left; 
+		  background-image:url(../img/reservas/alojamientos.gif)
+		  }
+		  
+		   .texto_botonera { 
+	  font: normal 12px  "Neo_sans", Tahoma, Geneva, sans-serif;
+		  margin-right:1.000em; 
+		  text-decoration:none; 
+		  color:#666;
+		  }
+		  
+		     .texto_botonera_select { 
+	  font: normal 12px  "Neo_sans", Tahoma, Geneva, sans-serif;
+		  margin-right:1.000em; 
+		  text-decoration:none; 
+		  color:#fff;
+		  }
+		  
+		    .boton_autos {
+		  padding-top:5px; 
+		  padding-right:31px; 
+		  width:107px; 
+		  height:18px; 
+		  float:left; 
+		  background-image:url(../img/reservas/autos.gif)
+		  }
+		  
+		  .boton_check_in {
+		  padding-top:3px; 
+		  padding-left:35px; 
+		  width:107px; 
+		  height:21px; 
+		  float:left; 
+		  background-image:url(../img/reservas/check_in.gif)
+		  }
+		  
+		  .boton_mis_viajes {
+		  padding-top:0.188em; 
+		  padding-left:2.525em; 
+		  width:6.163em; 
+		  height:1.313em; 
+		  float:left; 
+		  background-image:url(../img/reservas/mis_viajes.gif)
+		  }
+		  
+		  .boton_vuelos {
+		  padding-top:0.188em; 
+		  padding-left:7.5em; 
+		  width:10.063em; 
+		  height:20px; 
+		  float:left; 
+		  background-image:url(../img/reservas/vuelos2.gif)
+		  }
+		  
+		  	.box_form { 
+		 padding:6px 3px 5px 4px; 
+		 height:245px; 
+		 width:272px; 
+		 background-color:#EDEEEE; 
+		 border: solid 1px #0081c6;
+		 border-radius:0 0 5px 5px; -webkit-border-radius: 0 0 5px 5px; -moz-border-radius: 0 0 5px 5px;
+		 }
+		 
+		 .box_form2 { 
+		 padding:6px 3px 5px 4px; 
+		 height:285px; 
+		 width:272px; 
+		 background-color:#EDEEEE; 
+		 border: solid 1px #0081c6;
+		 border-radius:0 0 5px 5px; -webkit-border-radius: 0 0 5px 5px; -moz-border-radius: 0 0 5px 5px;
+		 }
+		 
+		 .box_border {  border-bottom:solid 1px #0081c6; margin-top:-2px; padding-top:0px; }
+		 
+		 .buscador {width:240px; margin-top:3px; margin-left:25px;}
+		 
+		  .buscador2 {width:45px; margin-top:3px;}
+		 
+		 .btn_it {text-align:center; 
+	width:88px; 
+	height:21px; 
+	background-image:url(../img/buttons/buscar.gif); 
+	padding-top:0.188em; 
+	font: normal 12px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF;
+	border:0; }
+		 
+		
+
+		 
+
+/*margen*/
+.mtop3 { margin-top:3px}
+.mtop10 { margin-top:10px}
+.mtop15 { margin-top:15px}
+.ml115 {margin-left:115px}
+.ml10 {margin-left:10px}
+.ml14 {margin-left:14px}
+.mr130 { margin-right:130px}
+.height20 { height:20px}
+
+/*align*/
+
+.fleft { float:left}
+
+/*textos*/
+
+
+.deco_none { text-decoration:none}
+		 .text1 {
+		  font: normal 11px Tahoma, Geneva, sans-serif; 
+		  color:#0081c6
+		  ;}
+		  
+		   .text2 {
+		  font: normal 10px Tahoma, Geneva, sans-serif; 
+		  color:#0081c6
+		  ;}
+		  .text3 { font: normal 11px Tahoma, Geneva, sans-serif; 
+		  color:#666666
+		  ;}
+		  
+/*boxes*/
+
+.width1 { width:45px}
+.width2 { width:105px}
+.width3 {width:135px}
+
+
+		  .search1 {
+	width:90px;
+	height:18px;
+	font-size:11px;
+	color: #666;
+	position:absolute;
+	margin-left:5px;
+	left: 186px;
+	top: 113px;
+}
+		  
+		  .search2 {
+	width:190px;
+	height:18px;
+	font-size:11px;
+	color: #666;
+	position:absolute;
+	margin-left:5px;
+	left: 84px;
+	top: 114px;
+}
+		 .redondeadas {  background-color: #fff;
+
+border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px;}
+		  
+		  .sombra_interior {  background-color:
+
+#fff;-moz-box-shadow: inset 1px 0  1px #999;}
+
+
+.input
+{
+    
+    border: 1px solid #FFF;
+    font-size:11px;
+    color: #666; padding-left:2px; background-color:#FFF;
+       
+}
+
+.input_arrow
+{
+    background: url(../img/buttons/arrow.gif)   no-repeat scroll 0 0 transparent ;  background-position: 172px 1px;
+    border: 1px solid #BFBFBF;
+    color: #BFBFBF; padding-left:2px; background-color:#FFF;
+       
+}
+
+.input_arrow_chico
+{
+    background: url(../img/buttons/arrow.gif)   no-repeat scroll 0 0 transparent ;  background-position: 25px 1px;
+    border: 1px solid #FFF;
+    font-size:11px;
+    color: #666; padding-left:2px; background-color:#FFF;
+       
+}
+
+.input_lupa
+{
+    background: url(../img/buttons/search.gif)   no-repeat scroll 0 0 transparent ; width:260px; height:20px;  background-position: 235px 3px;
+    border: 1px solid #fff; margin-bottom:4px; font-size:11px;
+    color: #666; padding-left:2px; background-color:#FFF;
+}
+.input_lupa_home
+{
+    background: url(../img/buttons/search.gif)   no-repeat scroll 0 0 transparent ; width:296px; height:20px;  background-position: 275px 3px;
+    border: 1px solid #fff; margin-bottom:4px; font-size:11px;
+    color: #666; padding-left:2px; background-color:#FFF;
+       
+}
+
+.input_lupa2
+{
+    background: url(../img/buttons/search2.gif)   no-repeat scroll 0 0 transparent ; width:266px; height:20px;  background-position: 260px 0px;
+    border: 1px solid #fff; margin-bottom:4px; font-size:11px;
+    color: #666; padding-left:2px; background-color:#FFF;
+       
+}
+
+.input_calendar
+{
+    background: url(../img/buttons/calendar.gif)   no-repeat scroll 0 0 transparent ; width:123px; height:18px;  background-position: 105px 3px;
+    border: 1px solid #fff; margin-bottom:10px; 
+    font-size:11px;
+    color: #666; padding-left:2px; background-color:#FFF;
+       
+}
+
+.input_calendar_home
+{
+    background: url(../img/buttons/calendar.gif)   no-repeat scroll 0 0 transparent ; width:143px; height:18px;  background-position: 125px 3px;
+    border: 1px solid #fff; margin-bottom:10px; 
+    font-size:11px;
+    color: #666; padding-left:2px; background-color:#FFF;
+       
+}
+
+/*ARGENTINA*/
+
+/*FANCYBOX*/
+#fancybox-loading {
+	
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 40px;
+	height: 40px;
+	margin-top: -20px;
+	margin-left: -20px;
+	cursor: pointer;
+	overflow: hidden;
+	z-index: 1104;
+	display: none;
+}
+
+#fancybox-loading div {
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40px;
+	height: 480px;
+	background-image: url('../img/fancybox.png');
+}
+
+#fancybox-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1100;
+	display: none;
+}
+
+#fancybox-tmp {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	overflow: auto;
+	display: none;
+}
+
+#fancybox-wrap {
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 20px;
+	z-index: 1101;
+	outline: none;
+	display: none;
+}
+
+#fancybox-outer {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+}
+
+#fancybox-content {
+	width: 0;
+	height: 0;
+	padding: 0;
+	outline: none;
+	position: relative;
+	overflow: hidden;
+	z-index: 1102;
+	border: 0px solid #fff;
+}
+
+#fancybox-hide-sel-frame {
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	z-index: 1101;
+}
+
+#fancybox-close {
+	position: absolute;
+	top: 7px;
+	right: 7px;
+	width: 30px;
+	height: 30px;
+	background: transparent url('../img/fancybox.png') -40px 0px;
+	cursor: pointer;
+	z-index: 1103;
+	display: none;
+}
+
+#fancybox-error {
+	color: #444;
+	font: normal 12px/20px Arial;
+	padding: 14px;
+	margin: 0;
+}
+
+#fancybox-img {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	border: none;
+	outline: none;
+	line-height: 0;
+	vertical-align: top;
+}
+
+#fancybox-frame {
+	width: 100%;
+	height: 100%;
+	border: none;
+	display: block;
+}
+
+#fancybox-left, #fancybox-right {
+	position: absolute;
+	bottom: 0px;
+	height: 100%;
+	width: 35%;
+	cursor: pointer;
+	outline: none;
+	background: transparent url('../img/blank.gif');
+	z-index: 1102;
+	display: none;
+}
+
+#fancybox-left {
+	left: 0px;
+}
+
+#fancybox-right {
+	right: 0px;
+}
+
+#fancybox-left-ico, #fancybox-right-ico {
+	position: absolute;
+	top: 50%;
+	left: -9999px;
+	width: 30px;
+	height: 30px;
+	margin-top: -15px;
+	cursor: pointer;
+	z-index: 1102;
+	display: block;
+}
+
+#fancybox-left-ico {
+	background-image: url('../img/fancybox.png');
+	background-position: -40px -30px;
+}
+
+#fancybox-right-ico {
+	background-image: url('../img/fancybox.png');
+	background-position: -40px -60px;
+}
+
+#fancybox-left:hover, #fancybox-right:hover {
+	visibility: visible; /* IE6 */
+}
+
+#fancybox-left:hover span {
+	left: 20px;
+}
+
+#fancybox-right:hover span {
+	left: auto;
+	right: 20px;
+}
+
+.fancybox-bg {
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	width: 20px;
+	height: 20px;
+	z-index: 1001;
+}
+
+#fancybox-bg-n {
+	top: -20px;
+	left: 0;
+	width: 100%;
+	background-image: url('../img/fancybox-x.png');
+}
+
+#fancybox-bg-ne {
+	top: -20px;
+	right: -20px;
+	background-image: url('../img/fancybox.png');
+	background-position: -40px -162px;
+}
+
+#fancybox-bg-e {
+	top: 0;
+	right: -20px;
+	height: 100%;
+	background-image: url('../img/fancybox-y.png');
+	background-position: -20px 0px;
+}
+
+#fancybox-bg-se {
+	bottom: -20px;
+	right: -20px;
+	background-image: url('../img/fancybox.png');
+	background-position: -40px -182px; 
+}
+
+#fancybox-bg-s {
+	bottom: -20px;
+	left: 0;
+	width: 100%;
+	background-image: url('../img/fancybox-x.png');
+	background-position: 0px -20px;
+}
+
+#fancybox-bg-sw {
+	bottom: -20px;
+	left: -20px;
+	background-image: url('../img/fancybox.png');
+	background-position: -40px -142px;
+}
+
+#fancybox-bg-w {
+	top: 0;
+	left: -20px;
+	height: 100%;
+	background-image: url('../img/fancybox-y.png');
+}
+
+#fancybox-bg-nw {
+	top: -20px;
+	left: -20px;
+	background-image: url('../img/fancybox.png');
+	background-position: -40px -122px;
+}
+
+#fancybox-title {
+	font-family: Helvetica;
+	font-size: 12px;
+	z-index: 1102;
+}
+
+.fancybox-title-inside {
+	padding-bottom: 10px;
+	text-align: center;
+	color: #333;
+	background: #fff;
+	position: relative;
+}
+
+.fancybox-title-outside {
+	padding-top: 10px;
+	color: #fff;
+}
+
+.fancybox-title-over {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #FFF;
+	text-align: left;
+}
+
+#fancybox-title-over {
+	padding: 10px;
+	background-image: url('../img/fancy_title_over.png');
+	display: block;
+}
+
+.fancybox-title-float {
+	position: absolute;
+	left: 0;
+	bottom: -20px;
+	height: 32px;
+}
+
+#fancybox-title-float-wrap {
+	border: none;
+	border-collapse: collapse;
+	width: auto;
+}
+
+#fancybox-title-float-wrap td {
+	border: none;
+	white-space: nowrap;
+}
+
+#fancybox-title-float-left {
+	padding: 0 0 0 15px;
+	background: url('../img/fancybox.png') -40px -90px no-repeat;
+}
+
+#fancybox-title-float-main {
+	color: #FFF;
+	line-height: 29px;
+	font-weight: bold;
+	padding: 0 0 3px 0;
+	background: url('../img/fancybox-x.png') 0px -40px;
+}
+
+#fancybox-title-float-right {
+	padding: 0 0 0 15px;
+	background: url('../img/fancybox.png') -55px -90px no-repeat;
+}
+
+/* IE6 */
+
+.fancybox-ie6 #fancybox-close { background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/fancy_close.png', sizingMethod='scale'); }
+
+.fancybox-ie6 #fancybox-left-ico { background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/fancy_nav_left.png', sizingMethod='scale'); }
+.fancybox-ie6 #fancybox-right-ico { background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/fancy_nav_right.png', sizingMethod='scale'); }
+
+.fancybox-ie6 #fancybox-title-over { background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/fancy_title_over.png', sizingMethod='scale'); zoom: 1; }
+.fancybox-ie6 #fancybox-title-float-left { background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/fancy_title_left.png', sizingMethod='scale'); }
+.fancybox-ie6 #fancybox-title-float-main { background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/fancy_title_main.png', sizingMethod='scale'); }
+.fancybox-ie6 #fancybox-title-float-right { background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/fancy_title_right.png', sizingMethod='scale'); }
+
+.fancybox-ie6 #fancybox-bg-w, .fancybox-ie6 #fancybox-bg-e, .fancybox-ie6 #fancybox-left, .fancybox-ie6 #fancybox-right, #fancybox-hide-sel-frame {
+	height: expression(this.parentNode.clientHeight + "px");
+}
+
+#fancybox-loading.fancybox-ie6 {
+	position: absolute; margin-top: 0;
+	top: expression( (-20 + (document.documentElement.clientHeight ? document.documentElement.clientHeight/2 : document.body.clientHeight/2 ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop )) + 'px');
+}
+
+#fancybox-loading.fancybox-ie6 div	{ background: transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/fancy_loading.png', sizingMethod='scale'); }
+
+/* IE6, IE7, IE8 */
+
+.fancybox-ie .fancybox-bg { background: transparent !important; }
+
+.fancybox-ie #fancybox-bg-n { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/fancy_shadow_n.png', sizingMethod='scale'); }
+.fancybox-ie #fancybox-bg-ne { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/fancy_shadow_ne.png', sizingMethod='scale'); }
+.fancybox-ie #fancybox-bg-e { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/fancy_shadow_e.png', sizingMethod='scale'); }
+.fancybox-ie #fancybox-bg-se { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/fancy_shadow_se.png', sizingMethod='scale'); }
+.fancybox-ie #fancybox-bg-s { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/fancy_shadow_s.png', sizingMethod='scale'); }
+.fancybox-ie #fancybox-bg-sw { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/fancy_shadow_sw.png', sizingMethod='scale'); }
+.fancybox-ie #fancybox-bg-w { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/fancy_shadow_w.png', sizingMethod='scale'); }
+.fancybox-ie #fancybox-bg-nw { filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/fancy_shadow_nw.png', sizingMethod='scale'); }
+/*FANCYBOX*/
+
+/*FORM Concurso*/
+.titulo_azul { 	font:  18px "Neo_san", Tahoma, Geneva, sans-serif; color:#0081c6; line-height: 100%; margin:0px }
+.titulo_gris { 	font:  18px "Neo_san", Tahoma, Geneva, sans-serif; color:#666; line-height: 100%; margin:0px }
+.boton_form { background-color:#1492CF;  
+  
+	text-align:center; 
+	float:left;  
+	width:75px; 
+	height:1.750em; 
+	padding-top:0.188em;  
+	font: normal 11px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF;
+	border:0;
+	-moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em; 
+	}
+/*FORM Concurso*/
+
+
+/*DARKSITE-------------------------------------------------------------------------------*/
+
+.div_noticia {border-bottom:dotted 1px #666; margin-bottom:10px; padding-bottom:10px}
+.div_index {
+position: absolute;
+top: 65%; 
+left: 55%; 
+width: 600 px; 
+height: 400px; 
+margin-top: -200px; 
+margin-left: -300px; 
+}
+
+
+	
+#botonera_dark {
+font: normal 16px "Neo_san", Tahoma, Geneva, sans-serif;
+width: 100%;
+height: 30px;
+margin: 0px 0;
+background-image:url("../img/darksite/img/backgrounds/home_nav2.png")}
+
+.botond {
+		width: auto; 
+		height: 30px;
+		float: left;
+		text-align: center; 
+		/*border-left:solid 1px #FFF;*/
+		font-weight: normal;
+		font-size: 72%;
+		line-height: 30px; color:#FFF; 
+		
+		}
+	
+	
+	.botond:hover  {background-color:#666; }
+	
+	.select_boton  {background-color:#186796; }
+
+	.botond a {
+		color: white;
+		text-decoration: none;
+		display: block; 
+		}
+		
+	.botond  a:hover { color: white; }
+
+
+/*	Desarrollo de los menu desplegables	*/
+	
+	
+	
+	
+
+		
+		.width_1 { width:160px}
+		.width_2 { width:200px}
+		.width_3 { width:300px}
+		.width_4 { width:180px}
+		.width_5 { width:175px}
+		.width_6 { width:120px}
+		
+.botond div {
+		position: relative ;
+		z-index:-1;
+		margin-top:-10px;
+		width: 125%;
+		background-color: #666;
+		font-size: 100%;
+		visibility: hidden;
+		text-align: left;
+		padding: 10px 2px 10px 10px;
+		font: normal 100% arial; 
+		radius:7px;-moz-border-radius: 7px; 
+		-webkit-border-radius : 7px;
+		-ms-border-radius: 10px;
+		}
+		
+ 
+	.botond:hover div { 
+	visibility: visible; 
+	}
+ 
+ 
+	.botond ul {
+		font: normal 12px "Neo_san", Tahoma, Geneva, sans-serif;
+		margin: 0 10px;
+		padding: 0;
+		list-style: outside; 
+		color:#FFF }
+		
+	.botond li a {
+		color: white;
+		text-decoration: none;
+		padding: 3px; }
+		
+		.botond li a:hover { 
+		color: #ccc; 
+		}
+	
+	#ofertad { 
+	background-image:url(../img/darksite/img/backgrounds/tarifa_1.gif); 
+	}
+	#ofertad2 { 
+	background-image:url(../img/darksite/img/backgrounds/tarifa_2.gif); 
+	
+	}
+
+#ofertad3 { 
+	background-image:url(../img/darksite/img/backgrounds/tarifa_3.gif); 
+}
+#bannerd { 
+		width:188px; 
+		height:177px; 
+		background: #333 url(../img/darksite/img/home/banner_3.jpg);
+		}
+		
+	.divd { 
+		float:left; 
+		width:20.813em; 
+		height:6.250em; 
+		background-image:url(../img/darksite/img/backgrounds/footer-left.jpg) 
+		}	
+		
+		
+  .bot1d {  
+	  	  font: normal  "Neo_sans", Tahoma, Geneva, sans-serif;
+		  padding-top:4px; 
+		  padding-left:49px; 
+		  width:110px; 
+		  height:19px; 
+		  float:left; 
+		  background-image:url(../img/darksite/img/home/bot1.jpg)
+		  }
+ .bot2d {
+		  padding-top:5px; 
+		  padding-right:31px; 
+		  width:136px; 
+		  height:18px; 
+		  float:left; 
+		  background-image:url(../img/darksite/img/home/bot2.jpg)
+		  }
+		  
+ .bot3d {
+		  padding-top:3px; 
+		  padding-left:50px; 
+		  width:109px; 
+		  height:21px; 
+		  float:left; 
+		  background-image: url(../img/darksite/img/home/bot3.jpg)
+		  }	
+		  
+.bot4d {
+		  padding-top:3px; 
+		  padding-left:60px; 
+		  width:107px; 
+		  height:21px; 
+		  float:left; 
+		  background-image:url(../img/darksite/img/home/bot4.jpg)
+		  }
+		  
+		  
+.bot5d {
+		  padding-top:0; 
+		  padding-left:150px; 
+		  width:176px; 
+		  height:23px; 
+		  float:left; 
+		  background-image:url(../img/darksite/img/home/bot5.jpg)
+		  }	
+		  
+		  .input_calendar_home_dark
+{
+    background: url(../img/darksite/img/buttons/calendar.gif)    no-repeat scroll 0 0 transparent ; width:143px; height:18px;  background-position: 125px 3px;
+    border: 1px solid #fff; margin-bottom:10px; 
+    font-size:11px;
+    color: #666; padding-left:2px; background-color:#FFF;
+       
+}
+
+.box_form_home_dark { 
+		 padding:6px 3px 5px 4px; 
+		 height:255px; 
+		 width:317px; 
+		 background-color:#EDEEEE; 
+		 border: solid 1px #ccc;
+		 /*border-radius:0 0 5px 5px; -webkit-border-radius: 0 0 5px 5px; -moz-border-radius: 0 0 5px 5px;*/
+		 }
+		 
+		 .btn_dark {text-align:center; 
+	width:88px; 
+	height:21px; 
+	background-image: url(../img/darksite/img/buttons/buscar.gif); 
+	padding-top:0.188em; 
+	font: normal 12px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF;
+	border:0; }
+	
+	.box_border_dark {  border-bottom:solid 1px #000; margin-top:-2px; padding-top:0px; }
+
+
+/* formulario promo 16/10/12 */
+.marco1 {width:474px; padding:10px; height:454px; background-image:url(img/galeria2/chicas/sombra.jpg); }
+.galeria1 {width:459px; height:380px; }
+#images {  padding-top:5px; margin-bottom:10px; height:222px; width:429px; }
+.thumb { margin-right:1px; margin-top:120px; }
+#contenedor-promo1 { background:url(../images/common/arplus_banco2.jpg) no-repeat top right; width:930px; height:400px; padding-top:50px; padding-left:15px; float: left; }
+#contenedor-promo1 .form-promo1 { width: 462px; float: left; margin-left: 145px; text-align:left;}
+#contenedor-promo1 .form-promo1 fieldset.ida-vuelta { border: none; padding: 0px; margin: 10px 0px 0px 0px; }
+#contenedor-promo1 .form-promo1 .form-select1 { width:355px;  margin-bottom:7px; float: left; border:solid 1px #CCC; }
+#contenedor-promo1 .form-promo1 span.select1-span { width:355px;  margin-bottom:7px; height:25px;} 
+#contenedor-promo1 .form-promo1 span.select1-span input {  width:250px;  padding:0 2px 1px 2px;  border: none;  font-size:11px; color: #666; margin-top:5px;}
+#contenedor-promo1 .form-promo1 img { float: right; margin-right: 4px; padding-top: 3px; padding-bottom: 3px; }
+#contenedor-promo1 .form-promo1 .form-select2 { width:355px;  margin-bottom:7px; float: left; border:solid 1px #CCC; height:25px; }
+#contenedor-promo1 .form-promo1 .form-select2 span.select2-span { width:298px;  margin-bottom:7px; background-color: transparent; }
+#contenedor-promo1 .form-promo1 .form-select2 span.select2-span input { width:250px;  padding:0 2px 1px 2px;  border: none;  font-size:11px; color: #666; background-color: transparent; margin-top:5px;}
+#contenedor-promo1 .form-promo1 .borde { height: 2px; border-bottom: solid 1px #0081c6; width: 462px; float: left; }
+#contenedor-promo1 .form-promo1 .ida-vuelta-calendar { border: 1px solid #CCCCCC; float: left; height: 24px; margin-bottom: 7px; margin-top: 10px; width: 105px; }
+#contenedor-promo1 .form-promo1 .ida-vuelta-calendar input { background-position: 77px 3px; width: 97px; }
+#contenedor-promo1 .form-promo1 .cupos-disponibles { border: medium none; float: left; margin: 0 0 0 10px; padding: 0; width: 118px; }
+#contenedor-promo1 .form-promo1 .ultimos-cupos { width: 100px; float: left; border: none; padding: 0px; margin: 0px; margin-left:5px; }
+#contenedor-promo1 .form-promo1 .cupos-disponibles img, #contenedor-promo1 .form-promo1 .ultimos-cupos img { width: 9px; height: 9px; }
+#contenedor-promo1 .form-promo1 fieldset.adultos-ninios-bebes { width: 60px; float: left; border: none; padding: 0px; margin: 10px 0px 0px 0px; }
+#contenedor-promo1 .form-promo1 fieldset.adultos-ninios-bebes select.bordeselect { border:solid 1px #ccc; }
+#contenedor-promo1 .form-promo1 .boton-continuar { padding-top: 2px; margin-top: 5px; float: right; width:290px;}
+/* formulario promo 16/10/12 */
+
+/*calendario promociones*/
+.odd { background-color: blue; }
+
+.disable a.ui-state-default {
+	color: #ddd !important;
+	background: #ccc !important;
+	border:0px;
+}
+
+.markedDay{
+	color: #ddd !important;
+	background: #E7E902 !important;
+	border:0px;
+}
+.markedDay a.ui-state-default {
+	color: #000 !important;
+	background: #E7E902 !important;
+}
+.markedDay a.ui-state-hover {
+	background: #E7E902 !important;
+}
+
+.markedDay2{
+	color: #ddd !important;
+	background: #037101 !important;
+	border:0px;
+}
+.markedDay2 a.ui-state-default {
+	color: #000 !important;
+	background: #037101 !important;
+}
+.markedDay2 a.ui-state-hover {
+	background: #037101 !important;
+}
+
+/* pop up promo dia de la madre */
+#pop-ddm{ padding-bottom:0px; background:#FFF; width:644px; height:auto; left:30%; top:25%; margin-left:-100px; margin-top:-100px; position: absolute; display:none; z-index:3; }
+#pop-ddm .tituloform { margin-left: 49px; text-align: justify; width: 540px; }
+#pop-ddm .borde { height: 2px; border-bottom: solid 1px #0081c6; margin: 5px 0px 10px 40px; width: 535px;float: left; }
+#pop-ddm .padding0 { padding: 0px;}
+#pop-ddm form { margin-left: 10px;}
+
+/* concurso_nov */
+#concurso_nov { background:#FFF; width:644px; height:auto; margin: 30px auto; }
+#concurso_nov .titulo_azul { font:  18px "Neo_san", Tahoma, Geneva, sans-serif; color:#0081c6; margin:0px }
+#concurso_nov .col-form { float: left; min-height: 238px; width: 220px; margin-top: 20px; }
+#concurso_nov fieldset { border: none; padding: 0px; margin: 9px 0;}
+#concurso_nov fieldset.placeholder { height: 20px; height: 24px\0/;}
+#concurso_nov .INPUT { background-image: url(../images/common/fdo-buscador2.jpg); background-repeat: repeat-x; border: solid 1px #b3b3b3; height: 18px; }
+#concurso_nov input.width_2 { width: 215px; }
+#concurso_nov select { height: 22px !important; padding: 2px; margin-top: 3px; }
+#concurso_nov select.tressel { width: 65px; width: 65px\0/; margin-right: 0px; margin-top: 2px\0/; }
+#concurso_nov select.tipodoc { margin-top: 2px; margin-top: 1px\0/; }
+#concurso_nov select.width_2 { width: 217px; }
+#concurso_nov input.tressel { width: 63px; width: 61px\0/; *width: 62px; }
+#concurso_nov .mtopespecial  { margin-top: 2px\0/; }
+#concurso_nov .mtopespecial2  { margin-top: 2px; margin-top: 0px\0/; }
+#concurso_nov .mtopespecial3  { margin-top: 3px\9 !important;  }
+#concurso_nov .mtopespecial4  { margin-top: 4px\9 !important;  }
+label { height: 12px; color:#555; font-size:12px; }
+#concurso_nov .clear {clear: both; display: block;}
+#concurso_nov p.aclaracion { font-size: 9px; color: #666; }
+#concurso_nov span.terms { width: 160px; float: left;  }
+/* concurso_nov */
+
+/* arplus - seccion tarjetas de credito */
+.tarj-cred { width: 100%; background: url(../images/tarjetas_credito/bg_tarj-cred_01.jpg) no-repeat top left; height: 650px; padding: 30px 25px; }
+.tarj-cred .tituloplus_linea { width: 76%; }
+.tarj-cred .informes { float: left; margin-left: 29px; font-size: 0.625em; margin-top: 285px; }
+.tarj-cred .informes span { font-size: 0.563em; *font-size: 0.750em; }
+ul.tarj-cred-lista { width: 97%; min-height:100px; }
+ul.tarj-cred-lista li { float: left; width: 176px; height: 209px; background: url(../images/tarjetas_credito/bg-mod_tarj-cred.jpg) no-repeat top left; margin: 2px;  }
+ul.tarj-cred-lista li .margin12 { margin: 12px; }
+ul.tarj-cred-lista li h3 { font-family: "NeoSanLig", Tahoma, Geneva, sans-serif; font-size: 0.875em; color: #797a7d; border-bottom: solid 1px #797a7d; width: 100%; margin-top: 5px; letter-spacing: 0px; }
+ul.tarj-cred-lista li p, ul.tarj-cred-lista li a { font-size: 0.625em; margin-bottom: 3px; }
+ul.tarj-cred-lista li a { font-weight: 700; float: right; }
+/* arplus - seccion tarjetas de credito */
+
+/* arplus - seccion nuevo */
+.aerolineas-plus-nuevo { width:984px; height: 549px; float: left; background: url(../images/ARPLUS/bg_nuevo-aerolineas-plus.jpg) no-repeat top left; margin: 10px 10px 20px; }
+.aerolineas-plus-nuevo .cont1 { width: 440px; min-height: 200px; margin: 65px 0px 0px 22px; }
+.aerolineas-plus-nuevo .cont1 ul { width: 100%; }
+.aerolineas-plus-nuevo .cont1 ul li { width: 422px; height: 90px; background: url(../images/ARPLUS/bg_mod_nuevo-aerolineas-plus.png) no-repeat; margin-bottom: 1px; *height: 80px; padding: 2px 9px; *padding-top: 10px; }
+.aerolineas-plus-nuevo .cont1 ul li h1 { line-height: 2px; }
+.aerolineas-plus-nuevo .cont1 ul li p { line-height: 14px; margin-bottom: 5px; }
+.aerolineas-plus-nuevo .cont1 ul li a { font-weight: 700; float: right; font-size: 0.750em; }
+/* arplus - seccion nuevo */
+
+/* tabla exceso equipaje 05-11-2012 */
+table.europa td { border-bottom: dotted 1px #1b6e9e; border-left: solid 1px #1b6e9e; }
+table.europa td.bord-right { border-right: solid 1px #bed5e5; }
+table.europa td.bord-top { border-top: solid 1px #bed5e5; }
+table.europa td.bord-left-no { border-left: none; }
+table.europa td.bord-bottom-no { border-bottom: none; }
+table.europa td.bord-bottom-solid { border-bottom: solid 1px #bed5e5; }
+table.europa .color-white { color: white; }
+/* tabla exceso equipaje 05-11-2012 */
+
+.counrty_today_partials {
+    color: #FFFFFF;
+    font: x-small Tahoma;
+}
+/* promos - platos */
+#promo-platos { background: url(../img/backgrounds/bg_promo_platos.jpg) no-repeat top left; width: 984px; height: 548px; padding-top: 42px;  *padding-top: 40px; }
+#promo-platos h2 { background: url(../img/common/tit_promo_platos.png) no-repeat top left; width: 545px; height: 161px; text-indent: -1000em; margin: 0px 0px 13px 25px; *margin-bottom: 0px; }
+#promo-platos form { width: 421px; margin-left: 33px; margin-top: 0px; padding-top: 0px; }
+#promo-platos form fieldset { border: none; margin: 4px 0px; padding: 0px; }
+#promo-platos form input { width: 230px; height: 22px; border: solid 1px #b2b2b2; background: white; }
+#promo-platos form label { width: 167px; float: left; text-align: right; margin-right: 20px; margin-top: 5px; font-size: 13px; color: white; font-weight: bold; }
+#promo-platos form fieldset.terminosycondiciones { margin-left: 189px; float: left; width: 232px; }
+#promo-platos form fieldset.terminosycondiciones input.chx { background-color: transparent; border: none; width: 30px; float: left; }
+#promo-platos form fieldset.terminosycondiciones label { float: left; font-size: 11px; font-weight: normal; margin-right: 0 !important; text-align: right; width: 194px; }
+#promo-platos form fieldset.terminosycondiciones label a { color: white; text-decoration: underline; }
+#promo-platos form fieldset.btn-enviar { text-align: right; *margin-top: 0px; clear: both; }
+#promo-platos form fieldset.btn-enviar input { background: url(../img/buttons/btn_promo_platos.png) no-repeat top left; width: 90px; height: 36px; display: block; text-indent: -1000em; border: none; float: right; margin-top: 7px; }
+/* promos - platos */
+
+
+/* pop ajustable */
+.pop-ajustable { position: absolute; margin: 0px auto; top: 30px; left: 140px; }
+.pop-ajustable a { font-size: 12px; }
+.pop-ajustable a:hover { text-decoration: none; }
+.pop-ajustable p { text-align: justify; font-size: 12px; }
+.pop-ajustable .top { background: url(../img/backgrounds/bg_popajust_top.png) no-repeat top center; width: 722px; height: 50px; float:left; }
+.pop-ajustable .bot { background: url(../img/backgrounds/bg_popajust_bot.png) no-repeat top center; width: 722px; height: 50px; float:left; }
+.pop-ajustable .mid { background: url(../img/backgrounds/bg_popajust_mid.png) repeat-y top center; width: 602px; min-height: 50px; padding: 10px 60px;  float:left; }
+.pop-ajustable a.btn-close { float: right; font-size: 22px; font-weight: bold; margin: -5px -11px; }
+.pop-ajustable h2 { font-size: 16px !important; width: 97% !important; margin-top: 0px !important; }
+.pop-ajustable form { margin: 10px 0 0 65px; width: 470px;  float:left; }
+.pop-ajustable fieldset { border: 0 none; margin: 0 0 10px; padding: 0; width: 100%; float: left; }
+.pop-ajustable fieldset.corto { width: 225px; float: left;  }
+.pop-ajustable select, .pop-ajustable input, .pop-ajustable textarea { background: none repeat scroll 0 0 white; border: 1px solid #0081C5; color: #5D5D5D; float: left; font-size: 12px; height: 25px; padding-left: 5px; width: 100%;  }
+.pop-ajustable input[type="checkbox"] { width: auto; border: none; }
+.pop-ajustable input[type="button"] { background: none repeat scroll 0 0 #0584C7; border: medium none; color: white; float: right; font-size: 12px;  font-weight: bold; padding: 4px 12px; }
+.pop-ajustable select { width: 101.8%; }
+.pop-ajustable textarea { height: 100px; }
+.pop-ajustable label.font_size2 { float: left; margin-top: 10px; margin-left: 5px; *margin-top: 7px; }
+.pop-ajustable .separador { border-bottom: 1px solid #0584C7; height: 5px; margin: 0px 0px 10px 0; width: 476px; float: left; }
+.mright20 { margin-right: 20px !important; }
+.mleft120 { margin-left: 120px !important; }
+.pop-ajustable .rojo-error { /*border: solid 1px red !important;*/ color: red !important; }
+.pop-ajustable h3 {font-family: "Neo_san",Tahoma,Geneva,sans-serif; font-size: 16px; color: #0082C6; margin-top: 0px; margin-bottom: 5px; border-bottom: 1px solid #0584C7; }
+
+.hide { display: none; }

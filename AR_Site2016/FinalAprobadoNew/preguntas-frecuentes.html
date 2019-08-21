@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Aerolineas Argentinas</title>
+    <meta http-equiv="title" content="Aerolineas Argentinas">
+    <meta name="Description" content="Todo tu viaje en un solo lugar aerolineas.com, vuelos baratos.">
+    <link href="Images/condor_chico.gif" rel="shortcut icon" type="image/x-icon" />
+    <link href="http://www.aerolineas.com.ar/es-ar" rel="canonical"></link>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.touchSwipe.min.js"></script>
+    <script src="js/carousel-hero.js"></script>
+    <script src="js/slick.min.js"></script>
+    <!-- Script footer menu carousel -->
+    <script src="js/jquery.matchHeight-min.js"></script>
+    <!--  Match Height Cols -->
+    <script>
+    // matchHeight blocks content
+    $(document).ready(function() {
+        $('.col-desc').matchHeight();
+        $('.col-desc .title').matchHeight();
+    });
+    </script>
+    <script src="js/locales/es-AR.min.js"></script>
+    <!-- //datapicker form -->
+    <script src="js/datepicker.min.js"></script>
+    <!-- //datapicker form -->
+    <script src="js/form-home.js"></script>
+    <!-- //datapicker form home -->
+    <link rel="stylesheet" href="css/selectize.css" />
+    <!-- //selects form CSS -->
+    <script src="js/selectize.js"></script>
+    <!-- //selects form -->
+    <script>
+    //selectize
+    $(document).ready(function() {
+        $('.selectSearch').selectize({
+            sortField: 'text'
+        });
+    });
+    </script>
+    <script src="js/chat.js"></script>
+    <!-- //chat -->
+    <script src="js/form-search.js"></script>
+    <!-- //datapicker form search -->
+    
+
+    <!-- <msdropdown> -->
+    <link rel="stylesheet" href="css/msdropdown/dd.css" />
+    <script src="js/msdropdown/jquery.dd.min.js"></script>
+    <link rel="stylesheet" href="css/msdropdown/skin2.css" />
+    <link rel="stylesheet" href="css/msdropdown/flags.css" />
+    <!-- </msdropdown> -->
+
+    <script src="js/jquery.lwtCountdown-1.0.js"></script><!-- COUNTDOWN -->
+    
+    <script src="js/jquery.html5-placeholder-shim.js"></script>
+    
+    <script src="js/scripts.js"></script>
+    <!-- general scripts -->
+</head>
+
+
+<body>
+
+
+    <!-- CONTENEDOR -->
+    <div id="main-content" class="devoluciones">
+        <header role="banner">
+            <a href="#utilityNav" class="firstFocus"></a>
+            <ul id="utilityNav" class="list-unstyled" accesskey="a">
+                <li><a href="#main-nav" class="">Skip to main navigation</a></li>
+                <li><a href="#wrapper" class="">Skip to main content</a></li>
+                <li><a href="#footer" class="">Skip to footer</a></li>
+            </ul>
+            <div id="header" class="clearfix">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div id="header-top" class="header-top clearfix">
+                        <div id="logo-header" class="pull-left">
+                            <a href="index.html" accesskey="h" ><img alt="Aerolineas.com" src="img/common/logo_Aerolineas.gif" /></a>
+                        </div>
+                        <div id="access-top" class="pull-right">
+                            <div id="CultureContainer" class="hidden-xs hidden-sm">
+                                 <select class="INPUTBuscador" id="culture" name="culture" title="Culture">
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag ar" selected="selected" value="es-ar" data-title="Argentina (Español)">Argentina (Español)</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag ar" value="en-ar" data-title="Argentina (Inglés)">Argentina (Inglés)</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag au" value="en-au" data-title="Australia">Australia</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag bo" value="es-bo" data-title="Bolivia">Bolivia</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag br" value="pt-br" data-title="Brasil">Brasil</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag co" value="es-co" data-title="Colombia">Colombia</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag cl" value="es-cl" data-title="Chile">Chile</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag es" value="es-eu" data-title="España">España</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag fr" value="fr-fr" data-title="Francia">Francia</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag it" value="it-eu" data-title="Italia">Italia</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag mx" value="es-mx" data-title="México">México</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag nz" value="en-nz" data-title="New Zealand">New Zealand</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag pa" value="es-pa" data-title="Paraguay">Paraguay</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag pe" value="es-pe" data-title="Perú">Perú </option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag en" value="en-eu" data-title="Rest of Europe">Rest of Europe</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag uy" value="es-uy" data-title="Uruguay">Uruguay</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag us" value="es-us" data-title="United States (Español)">United States (Español)</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag us" value="en-us" data-title="United States (English)">United States (English)</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag es" value="es-us" data-title="Otros países (Español)">Otros países (Español)</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag us" value="en-us" data-title="Other Countries (English)">Other Countries (English)</option>
+                                </select>
+                            </div>  
+                            <!--  
+                            <div id="user-arplus">
+                                <span class="name text-blue"><i class="fa fa-user" aria-hidden="true"></i> <span>Maximiliano Ballesteros</span></span>
+                                <a id="logout" href="" class="underline">Cerrar sesión</a>
+                            </div> 
+                            -->    
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-header-collapse" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- NAVBAR -->
+                    <nav id="main-nav" class="navbar navbar-default" role="navigation" aria-label="Menú principal">
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="navbar-header-collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="menu-item hidden-md hidden-lg">
+                                    <div id="CultureContainer_m">
+                                        <select class="INPUTBuscador" id="culture_m" name="culture_m" title="culture_m">
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag ar" selected="selected" value="es-ar" data-title="Argentina (Español)">Argentina (Español)</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag ar" value="en-ar" data-title="Argentina (Inglés)">Argentina (Inglés)</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag au" value="en-au" data-title="Australia">Australia</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag bo" value="es-bo" data-title="Bolivia">Bolivia</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag br" value="pt-br" data-title="Brasil">Brasil</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag co" value="es-co" data-title="Colombia">Colombia</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag cl" value="es-cl" data-title="Chile">Chile</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag es" value="es-eu" data-title="España">España</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag fr" value="fr-fr" data-title="Francia">Francia</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag it" value="it-eu" data-title="Italia">Italia</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag mx" value="es-mx" data-title="México">México</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag nz" value="en-nz" data-title="New Zealand">New Zealand</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag pa" value="es-pa" data-title="Paraguay">Paraguay</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag pe" value="es-pe" data-title="Perú">Perú </option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag en" value="en-eu" data-title="Rest of Europe">Rest of Europe</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag uy" value="es-uy" data-title="Uruguay">Uruguay</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag us" value="es-us" data-title="United States (Español)">United States (Español)</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag us" value="en-us" data-title="United States (English)">United States (English)</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag es" value="es-us" data-title="Otros países (Español)">Otros países (Español)</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag us" value="en-us" data-title="Other Countries (English)">Other Countries (English)</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="productos-opcionales.html">
+                                   Productos opcionales<span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="arplus.html">Viajeros Frecuentes</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="servicios.html">Servicios al cliente</a>
+                                </li>
+                                <li><a class="hidden-md hidden-lg" href="#"><span><img src="img/common/ico_plane.png" alt="Vuelos" role="presentation"></span> Reservá tu vuelo</a></li>
+                                <li><a class="hidden-md hidden-lg" role="button" data-toggle="collapse" href="#collapseChatMobile" aria-expanded="false" aria-controls="collapseChatMobile"><span><img src="img/common/ico_chat.png" alt="chat" role="presentation"></span> ¿Necesitas ayuda?</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </nav>
+                    <!-- /NAVBAR -->
+                </div>
+                <!-- /.container -->
+            </div>
+        </header>
+        <!-- CONTENEDOR WRAPPER -->
+        <div id="wrapper" role="main">
+            <!-- #hero-form -->
+            <div id="hero-form" class="hero-form hero-form-slider hero-form-slider-interna no-form">
+                <!-- Carousel -->
+                <div id="myCarousel" class="carousel slide multiples-destinos" data-ride="carousel" data-interval="false">
+                    <!-- Indicators -->
+                    <div class="container hidden-xs hidden-sm">
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                        </ol>
+                    </div>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active" onclick="window.location.href='index.html';" role="option">
+                            <div class="container">
+                                <div class="carousel-caption">
+                                    <h2 class="title">Preguntas Frecuentes</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item item2" role="option">
+                            <div class="container">
+                                <div class="carousel-caption">
+                                    <h2 class="title">Another example headline.</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <div class="controls visible-xs-inline-block">
+                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <!-- Controls -->
+                </div>
+                <!-- /.carousel -->
+            </div>
+            <!-- /#hero-form -->
+            <div class="container conditions-container">
+                <h1 class="sr-only">Preguntas Frecuentes</h1>
+
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                      Reservas y Servicios
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                  <div class="panel-body">
+                                    <p><span class="text-blue"><i class="fa fa-angle-right" aria-hidden="true"></i> ¿Cuánto tiempo antes del viaje puedo hacer mi reserva?</span><br>
+                                    A través de aerolineas.com podés reservar y emitir desde 24 horas antes del vuelo hasta 11 meses en adelante para todos los países excepto en el caso de Perú donde podrás reservar desde 72 hs antes a la salida del vuelo hasta 11 meses en adelante.</p> 
+
+                                    <p><span class="text-blue"><i class="fa fa-angle-right" aria-hidden="true"></i> ¿En qué momento de la reserva debo ingresar mi número de Socio Aerolíneas Plus?</span><br>
+                                    Debés hacerlo al momento de ingresar tus datos. Recordá que es la única oportunidad que tendrás de ingresarlo y que el mismo es necesario al momento de hacer el Web Check In para que puedas sumar millas en tu Cuenta Plus.</p> 
+
+                                    <p><span class="text-blue"><i class="fa fa-angle-right" aria-hidden="true"></i> ¿Con qué medios de pago puedo abonar mi reserva on-line?</span><br>
+                                    La forma de pago aceptada en todos los sitios Web es tarjeta de crédito. En el caso de Argentina además podrá abonar a través de Pago Fácil y Pago Mis Cuentas.</p> 
+
+                                    <p><span class="text-blue"><i class="fa fa-angle-right" aria-hidden="true"></i> ¿Puedo abonar en cuotas mi pasaje con tarjeta de crédito?</span><br>
+                                    Las compras efectuadas en los sitos para Argentina, Brasil y Chile se pueden pagar en cuotas con tarjetas locales. El resto de los sitios no permiten la financiación de las compras.<br>
+                                    Para tarjetas y Bancos que no participen de la promoción de cuotas sin interés (aplica sólo para Argentina), se aplicarán las siguientes tasas de interés:<br>
+                                    <strong>AMERICAN EXPRESS:</strong> 3 Cuotas (3,80%), 6 Cuotas (9,68% ), 12 cuotas (24,60%)<br>
+                                    <strong>MASTERCARD / ARGENCARD / NATIVA MASTER:</strong> 3 Cuotas (7,33%), 6 Cuotas (13,25% ), 12 cuotas (27,53%)<br>
+                                    <strong>VISA / NATIVA VISA:</strong> 3 Cuotas (7,33%), 6 Cuotas (13,25% ), 12 cuotas (28,15%)<br>
+                                    <strong>DINERS:</strong> 3 Cuotas (7,33%), 6 Cuotas (13,25% ), 12 cuotas (27,53%)<br>
+                                    <strong>CENCOSUD:</strong> 3 Cuotas (7,33%), 6 Cuotas (13,25% ), 12 cuotas (27,53%)<br>
+                                    <strong>CABAL</strong> 3 Cuotas (7,33%), 6 Cuotas (13,25% ), 12 cuotas (28,15%)
+                                    </p> 
+
+                                    <p><span class="text-blue"><i class="fa fa-angle-right" aria-hidden="true"></i> ¿Cómo pago una reserva con Pago Fácil?</span><br>
+                                    El pago a través del sistema PAGO FÁCIL se encuentra disponible para reservas Web efectuadas en nuestro sitio para Argentina y cuyo primer vuelo sea posterior a los 7 días de efectuada la reserva. El importe de las reservas a abonar con PAGO FACIL no pueden superar los $ 30.000 (pesos argentinos) con excepción de la red Correo Argentino que acepta pagos de hasta $ 5.000 (pesos argentinos). Tené en cuenta que esta modalidad de pago no ofrece la posibilidad de realizarlo en cuotas y que la única moneda aceptada son los Pesos Argentinos. Una vez elegida esta opción se generará un Comprobante de Pago que contendrá todos los datos relativos a tu reserva, incluido el importe de la misma y un código de barras. Deberás imprimirlo y dirigirte con el mismo a cualquier boca de pago habilitada por Pago Fácil (http://desa.e-pagofacil.com/espanol/site/donde_pago.php) en el Territorio Argentino y dentro de las 24 hs. de efectuada la reserva con el fin de abonarlo. Dentro de las 96 hs. de efectuado el pago, recibirás vía email el Recibo de Pasaje correspondiente. Es importante destacar que una vez vencido el comprobante, tanto el mismo como la reserva carecerán de validez.</p> 
+
+                                    <p><span class="text-blue"><i class="fa fa-angle-right" aria-hidden="true"></i> ¿Recibo algún comprobante una vez que termino de reservar o pagar mi pasaje?</span><br>
+                                    Una vez realizada y finalizada la reserva recibirás en tu casilla de mail en forma inmediata el código de reserva de seis letras y el detalle de la misma. Posteriormente y una vez finalizado el proceso de pago también recibirás la confirmación del mismo conjuntamente con los números de tickets.</p>
+
+                                    <p><span class="text-blue"><i class="fa fa-angle-right" aria-hidden="true"></i> ¿Puedo reservar algún otro servicio en aerolineas.com?</span><br>
+                                    En aerolineas.com podrás reservar también hoteles y autos.</p>
+
+                                    <p><span class="text-blue"><i class="fa fa-angle-right" aria-hidden="true"></i> ¿Si compro en aerolineas.com debo abonar el cargo de gestión?</span><br>
+                                    En aerolineas.com no te cobramos el cargo de gestión.</p>
+
+                                    <p>¿No encontraste lo que buscabas? <a href="">Contactate con nosotros.</a></p>
+
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                      Aerolíneas Plus
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                  <div class="panel-body">
+                                    <p><span class="text-blue"><i class="fa fa-angle-right" aria-hidden="true"></i> ¿Qué es el programa Aerolíneas Plus?</span><br>
+                                    Aerolíneas Plus es un programa creado para premiar la fidelidad de nuestros clientes con la posibilidad de volar gratis a destinos nacionales y del mundo, más una serie de beneficios adicionales. Para participar sólo tenes que inscribirte y obtendrás tu numero de Pasajero Frecuente que te acreditara como socio del programa. El trámite es sencillo y completamente gratuito.</p> 
+
+                                    <p><span class="text-blue"><i class="fa fa-angle-right" aria-hidden="true"></i> ¿Puedo inscribirme al programa desde aerolineas.com?</span><br>
+                                    Sí, a través del <a href="" target="_blank">formulario de inscripción on-line.</a></p> 
+
+                                    <p><span class="text-blue"><i class="fa fa-angle-right" aria-hidden="true"></i> Consultá nuestros videos explicativos acerca del programa Aerolíneas Plus.</span><br>
+                                    <a href="https://www.youtube.com/playlist?list=PL9TgSYGZPjWDGeqFTI9pFDe4LqEjrjQam" target="_blank">Ver videos explicativos.</a></p>
+
+                                    <p><span class="text-blue"><i class="fa fa-angle-right" aria-hidden="true"></i> ¿A qué servicios de Aerolíneas Plus puedo acceder desde la página web?</span><br>
+                                    Desde aerolineas.com podrás conocer los beneficios que te otorga el programa: Inscribirte –Conocer los Beneficios – Suscribirte para recibir tu extracto vía e-mail – Reservar y Emitir billetes de premio – Consultar millas – Imprimir una tarjeta virtual – Newsletter – Conocer Información de Interés – Consultar la tabla de utilización de millas – Ver las condiciones de Uso</p>
+
+                                    <p><span class="text-blue"><i class="fa fa-angle-right" aria-hidden="true"></i> ¿Cómo obtengo mi clave para acceder a estos servicios on-line?</span><br>
+                                    <a href="" target="_blank">Ingresa en Mi Cuenta Plus.</a></p>
+
+                                    <p><span class="text-blue"><i class="fa fa-angle-right" aria-hidden="true"></i> ¿Quienes pueden ser beneficiarios de mi cuenta?</span><br>
+                                    Los beneficiarios podran ser el conyuge, los hermanos, hijos y padres.</p>
+
+                                    <p><span class="text-blue"><i class="fa fa-angle-right" aria-hidden="true"></i> ¿Como hago para nombrar a los beneficiarios?</span><br>
+                                    Para realizar el nombramiento es necesario que el titular de la cuenta envie una nota firmada por mail a <a href="mailto:beneficiarios_plus@aerolineas.com.ar">beneficiarios_plus@aerolineas.com.ar</a> con los siguientes datos:<br>
+
+                                    -Nombre y Apellido de cada uno de los beneficiarios<br>
+
+                                    -Numero de documento y Fecha de nacimiento de cada uno de los beneficiarios<br>
+
+                                    -Parentesco de cada beneficiario con el titular<br>
+
+                                    -Firma y Numero de documento del titular de la cuenta<br>
+
+                                    Junto a la nota se debera adjuntar una fotocopia del documento del titular, no siendo necesario la copia de los documentos de los beneficiarios.</p>
+
+                                    <p><span class="text-blue"><i class="fa fa-angle-right" aria-hidden="true"></i> ¿Cómo accedo a la consulta de millas?</span><br>
+                                    <a href="" target="_blank">Ingresa en Mi Cuenta Plus.</a></p>
+
+                                    <p><span class="text-blue"><i class="fa fa-angle-right" aria-hidden="true"></i> ¿Cómo debo hacer para acreditar mis millas faltantes?</span><br>
+                                    <strong>Para vuelos de Aerolíneas Argentinas o Austral:</strong> En caso de no haber informado su número de Socio antes de volar, deberá hacerlo desde la web aerolineas.com, en la solapa Aerolíneas Plus encontrará Mi Cuenta Plus, al ingresar con su número de Socio y Clave podrá ingresar en la opción Acreditación de vuelos realizados. Después de los 30 días de realizado el vuelo y no más de 6 meses. <br> <br>
+
+                                    <strong>Para vuelos de SkyTeam:</strong> En caso de no haber informado su número de Socio antes de volar, debe enviar por correo postal, los cupones originales del boarding pass (tarjeta de embarque), copia del ticket electrónico, su número de Socio y/o DNI y un mail de contacto a Rivadavia 578 CP C1002AAP Ciudad de Buenos Aires, Argentina, dirigido a Aerolíneas Plus. Dentro de los 6 meses de realizado el vuelo.</p>
+
+                                    <p><span class="text-blue"><i class="fa fa-angle-right" aria-hidden="true"></i> ¿Cómo debo hacer para solicitar mi reserva con millas Aerolíneas Plus desde la web?</span><br>
+                                    <a href="" target="_blank">Ingresa a Mi Cuenta Plus y hace click en reserva de premio.</a></p>
+
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingThree">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                      Web Check-In
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                  <div class="panel-body">
+                                    <p><span class="text-blue"><i class="fa fa-angle-right" aria-hidden="true"></i> ¿Cómo realizo mi Web Check-In?</span><br>
+                                    <a href="" target="_blank">Para ver como realizar tu Web Check-In ingresá aquí</a></p>
+
+                                    <p><span class="text-blue"><i class="fa fa-angle-right" aria-hidden="true"></i> Consultá nuestro video explicativo para realizar tu Web Check In.</span><br>
+                                    <a href="" target="_blank">Ver vídeos explicativos.</a></p>
+
+                                    <p><span class="text-blue"><i class="fa fa-angle-right" aria-hidden="true"></i> ¿Cuánto tiempo antes puedo realizar mi web check-in?</span><br>
+                                     Podrás realizar tu web check-in entre 2 y 36 hs antes de la partida de su vuelo.</p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingFour">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                      Check In Móvil
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                  <div class="panel-body">
+                                    <p><span class="text-blue"><i class="fa fa-angle-right" aria-hidden="true"></i> ¿Cómo realizo mi Check In Móvil?</span><br>
+                                    Para ver como realizar tu Móvil Check-In ingresá aquí.</p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingFive">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                      Cambios y Devoluciones
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                  <div class="panel-body">
+                                    <p><span class="text-blue"><i class="fa fa-angle-right" aria-hidden="true"></i> ¿Qué reservas se pueden cambiar online?</span><br>
+                                    Se pueden cambiar todas las reservas generadas en Argentina en nuestras sucursales, Call Center y aerolineas.com que se encuentren vigentes, hasta 24hs antes de la salida de tu vuelo.<br>
+                                    No están permitidos los cambios de reservas generadas en agencias de viaje.</p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingSix">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                      JetPaq
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                                  <div class="panel-body">
+                                    <p><span class="text-blue"><i class="fa fa-angle-right" aria-hidden="true"></i> ¿Cuál es el horario de atención en Aeroparque?</span><br>
+                                    El horario de atención al público en Aeroparque es de Lunes a Domingo las 24 horas. El horario de atención telefónica es de Lunes a Viernes de 9:00 a 18:00 hs.</p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingSeven">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                      Aerolíneas Cargo
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                                  <div class="panel-body">
+                                    <p><span class="text-blue"><i class="fa fa-angle-right" aria-hidden="true"></i> ¿Puedo trasladar féretros por vía aérea ?</span><br>
+                                    Sí es posible enviar féretros.<br>
+                                    * Información válida para envíos desde la República Argentina.</p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingEight">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                      Consejos para viajeros
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+                                  <div class="panel-body">
+                                    <p><span class="text-blue"><i class="fa fa-angle-right" aria-hidden="true"></i> Comidas especiales</span><br>
+                                    Si por razones religiosas o que responden a una dieta personal, usted desea que sus comidas cumplan requerimientos especiales, deberá indicarlo al momento de la reserva y como mínimo con 72 horas de anticipación. En ese caso, por favor notifique al personal de cabina antes del servicio de la comida. Todas las carnes que se sirven en nuestros vuelos cuentan con rigurosos controles correspondientes.<br>
+                                    Aerolíneas Argentinas/Austral están en proceso de incorporación paulatina de Comida Libre de Gluten (GFML) en todos sus vuelos y cabinas.<br>
+                                    Para mayor información llamar al 0810-222-VOLAR (86527) o consultar en Servicios Especiales.</p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingNine">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                      Daños al equipaje y faltantes
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+                                  <div class="panel-body">
+                                    <p><span class="text-blue"><i class="fa fa-angle-right" aria-hidden="true"></i> ¿Dónde se debe comenzar el reclamo cuando me doy cuenta que tengo algún objeto faltante y/o roturas en mi equipaje?</span><br>
+                                    Al detectar un faltante y/o daño a tu equipaje deberás presentarte ante nuestro personal en el hall de arribos a fin de confeccionar el Parte de Irregularidad de Equipajes (PIR). Recordá que todo reclamo de equipaje debe ser efectuado en el ámbito del aeropuerto y previo a retirarte del mismo, dado que en caso contrario se considera que el equipaje fue recibido de conformidad.</p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTen">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                      Equipaje demorado o extraviado
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
+                                  <div class="panel-body">
+                                    <p><span class="text-blue"><i class="fa fa-angle-right" aria-hidden="true"></i> ¿Cómo debo actuar si mi equipaje no llegó a destino?</span><br>
+                                    Al detectar que tu equipaje no llegó a destino, presentate ante nuestro personal ubicado en el hall de arribos quienes procederán a ingresar al sistema World Tracer los datos de tu equipaje con el fin de confeccionar el Parte de Irregularidad de Equipajes (PIR). Este sistema es utilizado por la mayoría de las líneas aéreas otorgando una alta confiabilidad en la ubicación de tu valija.</p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingEleven">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                                      SkyPriority
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
+                                  <div class="panel-body">
+                                    <p><span class="text-blue"><i class="fa fa-angle-right" aria-hidden="true"></i> ¿Qué es SkyPriority?</span><br>
+                                    SkyPriority ofrece a los pasajeros SkyTeam Elite Plus y a quienes vuelan en Primera Clase o Business una serie de servicios especiales en el aeropuerto – como check in, despacho de equipaje y embarque prioritario – que hará que sus viajes en toda la red operada por la alianza sean mas rápidos, fáciles y convenientes.</p> 
+                                  </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwelve">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                                      Pregunta con imagen
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseTwelve" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwelve">
+                                  <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <p><span class="text-blue"><i class="fa fa-angle-right" aria-hidden="true"></i> ¿Esto es una pregunta?</span></p> 
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3">
+                                            <img src="img/arplus/img_04.jpg" class="img-responsive">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-9">
+                                            <p>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo). <br>
+                                            Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer. </p>
+                                        </div>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                        <h2 class="panel-title">
+                                            <a href="#collapseThirteenb" data-parent="#collapsible" class="accordion-toggle collapsed" data-toggle="collapse">Pregunta con submenú</a>
+                                        </h2>
+                                </div>
+                                <div id="collapseThirteenb" class="panel-collapse collapse subpanel">
+                                    <div class="panel-body">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                    <h2 class="panel-title">
+                                                        <a href="#collapse-sub1" data-parent="#collapseThirteenb" class="accordion-toggle collapsed" data-toggle="collapse">Submenú 1</a>
+                                                    </h2>
+                                            </div>
+                                            <div id="collapse-sub1" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <p><span class="text-blue"><i class="fa fa-angle-right" aria-hidden="true"></i> ¿Es una pregunta?</span><br>
+                                                    Text....</p> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h2 class="panel-title">
+                                                    <a href="#collapse-sub2" data-parent="#collapseThirteenb" class="accordion-toggle collapsed" data-toggle="collapse">Submenú 2</a>
+                                                </h2>
+                                            </div>
+                                            <div id="collapse-sub2" class="panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <p><span class="text-blue"><i class="fa fa-angle-right" aria-hidden="true"></i> ¿Es una pregunta?</span><br>
+                                                    Text....</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                
+            </div>
+        </div>
+        <!-- /CONTENEDOR WRAPPER -->
+        <footer id="footer" role="contentinfo" class="no-slider">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="nav-footer-content">
+                            <div class="nav-footer">
+                                <div><a id="slick-slide00" href="http://ww1.aerolineas.com.ar/arg/main.asp?idsitio=ar&idpagina=164&ididioma=es">La Empresa</a></div>
+                                <div><a id="slick-slide01" href="http://www.aerolineas.com.ar/es-ar/prensa/comunicado">Prensa</a></div>
+                                <div><a id="slick-slide02" href="http://www.skyteam.com/" target="_blank">Alianza Skyteam</a></div>
+                                <div><a id="slick-slide03" href="http://www.aerolineas.com.ar/es-ar/cefepra/acercade" target="_blank" class="link">Cefepra</a></div>
+                                <div><a id="slick-slide04" href="http://cargo.aerolineas.com.ar/es-ar" target="_blank" class="link">Cargas</a></div>
+                                <div><a id="slick-slide05" href="http://www.jetpaq.com.ar/es-ar" target="_blank">Jetpaq</a></div>
+                                <div><a id="slick-slide06" href="http://www.aerolineas.com.ar/es-ar/la_empresa/recursos_humanos" target="" class="link">RRHH</a></div>
+                                <div><a id="slick-slide07" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=152&amp;idIdioma=es" target="_blank" class="link">Proveedores</a></div>
+                                <div><a id="slick-slide08" href="">Otro</a></div>
+                                <div><a id="slick-slide09" href="">Otro</a></div>
+                                <div><a id="slick-slide010" href="">Otro</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="social-links">
+                            <ul class="nav-justified list-unstyled ">
+                                <li><a target="_blank" href="https://www.facebook.com/Aerolineas.argentinas"><i class="fa fa-facebook"></i><span class="sr-only">Facebook</span></a></li>
+                                <li><a target="_blank" href="http://twitter.com/Aerolineas_AR/"><i class="fa fa-twitter"></i><span class="sr-only">Twitter</span></a></li>
+                                <li><a target="_blank" href="https://www.instagram.com/aerolineas_argentinas/"><i class="fa fa-instagram"></i><span class="sr-only">Instagram</span></a></li>
+                                <li><a target="_blank" href="http://www.linkedin.com/company/aerolineas-argentinas"><i class="fa fa-linkedin"></i><span class="sr-only">Linkedin</span></a></li>
+                                <li><a target="_blank" href="https://plus.google.com/106198199507305429358/posts"><i class="fa fa-google-plus"></i><span class="sr-only">GooglePlus</span></a></li>
+                                <li><a target="_blank" href="http://www.youtube.com/user/AerolineasAR"><i class="fa fa-youtube"></i><span class="sr-only">Youtube</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="clearfix">
+                    <div class="row">
+                        <div class="col-sm-7 col-md-6">
+                            <ul class="list-unstyled list-inline pull-left">
+                                <li class="codigo-qr">
+                                    <a href="https://servicios1.afip.gov.ar/clavefiscal/qr/mobilePublicInfo.aspx?req=e1ttZXRob2Q9Z2V0UHVibGljSW5mb11bcGVyc29uYT0zMDY0MTQwNTU1NF1bdGlwb2RvbWljaWxpbz0wXVtzZWN1ZW5jaWE9MF1bdXJsPWh0dHA6Ly93d3cuYWVyb2xpbmVhcy5jb20uYXJdfQ==" target="_F960AFIPInfo"><img src="img/common/qr_code.gif" alt="QR-Code" /></a>
+                                </li>
+                                <li class="pie_texto">
+                                    <span>aerolineas.com Sitio Oficial de Aerolineas Argentinas. <br>
+                                <span class="number"><i class="fa fa-phone" aria-hidden="true"></i> <span class="text">SAC: </span><span class="sr-only">Llamanos al </span> <a href="tel:0800-761-0254">0800-761-0254</a></span>
+                                    <span class="number"><span class="text"> | Central</span> de Vendas: <a href="tel:0800-761-0254">0800-761-0254</a></span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-5 col-md-6">
+                            <ul class="list-unstyled list-inline pull-right logos-footer">
+                                <li class="hidden-xs">
+                                    <a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=9&amp;idIdioma=es"><img src="img/common/footer-aerohandling.jpg"></a>
+                                </li>
+                                <li class="hidden-xs">
+                                    <a href="http://www.jetpaq.com.ar/es-ar" target="_blank"><img src="img/common/footer-jetpaq.jpg" alt="Logo JetPaq"></a>
+                                </li>
+                                <li class="hidden-xs">
+                                    <a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=9&amp;idIdioma=es"><img src="img/common/footer-optar.jpg" alt="Logo Optar"></a>
+                                </li>
+                                <li>
+                                    <a href="http://www.austral.com.ar/index.asp" target="_blank"><img src="img/common/footer-austral.jpg" alt="Logo Austral"></a>
+                                </li>
+                                <li><img src="img/common/footer-aa.jpg" alt="Logo Aerolíneas Argentinas"></li>
+                                <li>
+                                    <a href="http://www.skyteam.com/" target="_blank"><img src="img/common/footer-skyteam.jpg" alt="Logo Aerolíneas Argentinas"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <div class="container">
+                    <a class="pie" href="/es-bo/legales/terminoscondiciones">Legales</a> | © 1996 - 2016 Aerolíneas Argentinas S.A.
+                    <a href="#" class="scrollToTop"><span class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span><span class="sr-only">Scroll To Top</span></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+<!-- Modal Text -->
+    <div id="modalText" class="modal fade modal-text" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Lorem ipsum dolor sit amet </h4>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, assumenda earum officiis quisquam voluptas nobis tempore blanditiis, sunt explicabo eveniet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, assumenda earum officiis quisquam voluptas nobis tempore blanditiis, sunt explicabo eveniet.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- / Modal Text -->
+</html>

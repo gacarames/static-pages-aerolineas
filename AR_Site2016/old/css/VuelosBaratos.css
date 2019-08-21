@@ -1,0 +1,267 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+@font-face {
+    font-family: "NeoSanLig";
+    src: url('../Font/NeoSanLig.ttf') format("truetype");
+}
+
+.titulo_azul {
+    font-size: 23px;
+}
+
+h2 {
+    font-size: 25px;
+    color: #0081c6;
+}
+
+.mright20 {
+    margin-right: 20px
+}
+
+.mright45 {
+    margin-right: 45px
+}
+
+.mright52 {
+    margin-right: 52px
+}
+
+.mright60 {
+    margin-right: 60px
+}
+
+.mright100 {
+    margin-right: 100px
+}
+
+.mbot30 {
+    margin-bottom: 30px
+}
+
+.width100 {
+    width: 100px
+}
+
+.width610 {
+    width: 610px
+}
+
+.width970 {
+    width: 970px
+}
+
+.height700 {
+    height: 700px
+}
+
+.azuld {
+    font: normal Tahoma, Geneva, sans-serif;
+    color: #0081c6
+}
+
+.TxtGris10 {
+    font-family: Tahoma, Verdana, Arial;
+    font-size: 10px;
+    color: #5D5D5D;
+    text-decoration: none;
+}
+
+
+
+
+/*contenedor*/
+
+#contenedor_welcome {
+    width: 1082px;
+    /*1002px*/
+    height: auto;
+    margin: auto;
+    padding-top: 25px;
+    background: #fff;
+}
+
+.width_7 {
+    width: 220px
+}
+
+#lista {
+    font: normal 14px "Neo_san";
+    text-decoration: none;
+    margin: 4px 0 4px 0
+}
+
+#pop5 {
+    padding-bottom: 0px;
+    background: #FFF;
+    width: 644px;
+    height: 476px;
+    left: 30%;
+    top: 25%;
+    margin-left: -100px;
+    margin-top: -100px;
+    position: absolute;
+    display: none;
+    z-index: 3;
+}
+
+.tituloplus5 {
+    font: 16px "Neo_san", Tahoma, Geneva, sans-serif;
+    color: #0081c6;
+    line-height: 100%;
+}
+
+
+/* vuelos baratos */
+
+#tab_vuelos_baratos_blanco {
+    background-image: url("../img/backgrounds/tab_blanco_vuelos_baratos.jpg");
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 76px;
+    padding: 5px 0 0 0;
+    color: #0081c6;
+    text-align: center;
+}
+
+#tab_vuelos_baratos_blanco a {
+    color: #0081c6;
+    text-decoration: none;
+    text-align: center;
+}
+
+#tab_vuelos_baratos_azul {
+    background-image: url("../img/backgrounds/tab_azul_vuelos_baratos.jpg");
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 76px;
+    padding: 5px 0 0 0;
+    text-align: center;
+}
+
+#tab_vuelos_baratos_azul a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.arriba {
+    width: 806px;
+    position: absolute;
+    z-index: 1;
+    height: 12px;
+}
+
+.abajo {
+    width: 970px;
+    z-index: 2;
+}
+
+#contenedor_vuelos_baratos > .fleft {}
+
+ul.lista_vuelos {
+    width: 455px;
+    margin: 0;
+    padding: 0 10px 0 0;
+    list-style: none;
+}
+
+ul.lista_vuelos li {
+    height: 102px;
+    position: relative;
+    border-bottom: 1px solid #0081c5;
+    padding-bottom: 5px;
+    margin-bottom: 40px;
+}
+
+ul.lista_vuelos img {
+    width: 101px;
+    height: 102px;
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.destino_vuelos_baratos {
+    width: 215px;
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.destino_vuelos_baratos h1 {
+    font-family: "Neo_san", Tahoma, Geneva, sans-serif;
+    font-size: 16px;
+    color: #0081c5;
+    margin: 0 0 5px 0;
+    text-decoration: underline;
+}
+
+.destino_vuelos_baratos h3 {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    color: #0081c5;
+    margin: 5px 0 0 0;
+}
+
+.destino_vuelos_baratos p {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 11px;
+    margin: 0px;
+}
+
+.destino_vuelos_baratos p.pagos {
+    color: #0081c5;
+}
+
+.destino_vuelos_baratos p.millas {
+    padding-top: 5px;
+}
+
+.compra_vuelos_baratos {
+    width: 121px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.compra_vuelos_baratos a.conoce {
+    font-size: 11px;
+    text-decoration: underline;
+    text-align: right;
+}
+
+.alignright {
+    text-align: right;
+}
+
+a.Vercondiciones {
+    color: #838384;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 11px;
+    text-decoration: underline;
+}
+
+.origin {
+    color: #757575;
+    font-weight: 600;
+    font-size: 11px;
+}
+
+.title {
+	    font-family: 'Regular-Semibold', 'Open Sans', sans-serif;
+    color: #0079ca;
+    font-size: 20px;
+    margin: 0;
+    text-decoration: none;
+    word-break: break-word;
+    line-height: 18px;
+}
+
+.conditions {
+	display: none;
+	font-size: 11px;
+    padding: 20px;
+    background-color: #F9F9F9;
+    margin-top: 20px;
+}

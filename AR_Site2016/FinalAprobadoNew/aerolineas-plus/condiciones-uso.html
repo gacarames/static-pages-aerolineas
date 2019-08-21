@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Aerolineas Argentinas</title>
+    <meta http-equiv="title" content="Aerolineas Argentinas">
+    <meta name="Description" content="Todo tu viaje en un solo lugar aerolineas.com, vuelos baratos.">
+    <link href="../Images/condor_chico.gif" rel="shortcut icon" type="image/x-icon" />
+    <link href="http://www.aerolineas.com.ar/es-ar" rel="canonical"></link>
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.touchSwipe.min.js"></script>
+    <script src="../js/carousel-hero.js"></script>
+    
+    <script src="../js/slick.min.js"></script>
+    <!-- Script footer menu carousel -->
+    <script src="../js/jquery.matchHeight-min.js"></script>
+    <!--  Match Height Cols -->
+    <script>
+    // matchHeight blocks content
+    $(document).ready(function() {
+        $('.col-desc').matchHeight();
+        $('.col-desc .title').matchHeight();
+        $('.tabs a').matchHeight();
+    });
+    </script>
+    <script src="../js/locales/es-AR.min.js"></script>
+    <!-- //datapicker form -->
+    <script src="../js/datepicker.min.js"></script>
+    <!-- //datapicker form -->
+    <script src="../js/form-home.js"></script>
+    <!-- //datapicker form home -->
+    <link rel="stylesheet" href="../css/selectize.css" />
+    <!-- //selects form CSS -->
+    <script src="../js/selectize.js"></script>
+    <!-- //selects form -->
+    <script>
+    //selectize
+    $(document).ready(function() {
+        $('.selectSearch').selectize({
+            sortField: 'text'
+        });
+    });
+    </script>
+    <script src="../js/chat.js"></script>
+    <!-- //chat -->
+    <script src="../js/form-search.js"></script>
+    <!-- //datapicker form search -->
+    
+
+    <!-- <msdropdown> -->
+    <link rel="stylesheet" href="../css/msdropdown/dd.css" />
+    <script src="../js/msdropdown/jquery.dd.min.js"></script>
+    <link rel="stylesheet" href="../css/msdropdown/skin2.css" />
+    <link rel="stylesheet" href="../css/msdropdown/flags.css" />
+    <!-- </msdropdown> -->
+
+    <script src="../js/jquery.lwtCountdown-1.0.js"></script><!-- COUNTDOWN -->
+    
+    <script src="../js/jquery.html5-placeholder-shim.js"></script>
+    <script src="../js/scripts.js"></script>
+    <!-- general scripts -->
+
+    <script>
+    $(document).ready(function() {
+        $('.more-info-tooltip').tooltip();
+        $('.more-info-tooltip').click(function(e){
+                if($(this).parent('div').find(".tooltip").length){
+                    $('.more-info-tooltip').tooltip('hide');
+                }
+                else{
+                    $(this).tooltip('show');
+
+                }
+        });
+
+    });
+    </script>
+</head>
+<body>
+    <!-- CONTENEDOR -->
+    <div id="main-content" class="arplus">
+        <header role="banner">
+            <a href="#utilityNav" class="firstFocus"></a>
+            <ul id="utilityNav" class="list-unstyled" accesskey="a">
+                <li><a href="#main-nav" class="">Skip to main navigation</a></li>
+                <li><a href="#wrapper" class="">Skip to main content</a></li>
+                <li><a href="#footer" class="">Skip to footer</a></li>
+            </ul>
+            <div id="header" class="clearfix">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div id="header-top" class="header-top clearfix">
+                        <div id="logo-header" class="pull-left">
+                            <a href="../index.html" accesskey="h" ><img alt="Aerolineas.com" src="../img/common/logo_Aerolineas.gif" /></a>
+                        </div>
+                        <div id="access-top" class="pull-right">
+                            <div id="CultureContainer" class="hidden-xs hidden-sm">
+                                 <select class="INPUTBuscador" id="culture" name="culture" title="Culture">
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag ar" selected="selected" value="es-ar" data-title="Argentina (Español)">Argentina (Español)</option>
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag ar" value="en-ar" data-title="Argentina (Inglés)">Argentina (Inglés)</option>
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag au" value="en-au" data-title="Australia">Australia</option>
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag bo" value="es-bo" data-title="Bolivia">Bolivia</option>
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag br" value="pt-br" data-title="Brasil">Brasil</option>
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag co" value="es-co" data-title="Colombia">Colombia</option>
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag cl" value="es-cl" data-title="Chile">Chile</option>
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag es" value="es-eu" data-title="España">España</option>
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag fr" value="fr-fr" data-title="Francia">Francia</option>
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag it" value="it-eu" data-title="Italia">Italia</option>
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag mx" value="es-mx" data-title="México">México</option>
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag nz" value="en-nz" data-title="New Zealand">New Zealand</option>
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag pa" value="es-pa" data-title="Paraguay">Paraguay</option>
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag pe" value="es-pe" data-title="Perú">Perú </option>
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag en" value="en-eu" data-title="Rest of Europe">Rest of Europe</option>
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag uy" value="es-uy" data-title="Uruguay">Uruguay</option>
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag us" value="es-us" data-title="United States (Español)">United States (Español)</option>
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag us" value="en-us" data-title="United States (English)">United States (English)</option>
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag es" value="es-us" data-title="Otros países (Español)">Otros países (Español)</option>
+                                    <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag us" value="en-us" data-title="Other Countries (English)">Other Countries (English)</option>
+                                </select>
+                            </div>  
+                            <!--  
+                            <div id="user-arplus">
+                                <span class="name text-blue"><i class="fa fa-user" aria-hidden="true"></i> <span>Maximiliano Ballesteros</span></span>
+                                <a id="logout" href="" class="underline">Cerrar sesión</a>
+                            </div> 
+                            -->    
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-header-collapse" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- NAVBAR -->
+                    <nav id="main-nav" class="navbar navbar-default" role="navigation" aria-label="Menú principal">
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="navbar-header-collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="menu-item hidden-md hidden-lg">
+                                    <div id="CultureContainer_m">
+                                        <select class="INPUTBuscador_m" id="culture_m" name="culture_m" title="culture_m">
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag ar" selected="selected" value="es-ar" data-title="Argentina (Español)">Argentina (Español)</option>
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag ar" value="en-ar" data-title="Argentina (Inglés)">Argentina (Inglés)</option>
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag au" value="en-au" data-title="Australia">Australia</option>
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag bo" value="es-bo" data-title="Bolivia">Bolivia</option>
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag br" value="pt-br" data-title="Brasil">Brasil</option>
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag co" value="es-co" data-title="Colombia">Colombia</option>
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag cl" value="es-cl" data-title="Chile">Chile</option>
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag es" value="es-eu" data-title="España">España</option>
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag fr" value="fr-fr" data-title="Francia">Francia</option>
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag it" value="it-eu" data-title="Italia">Italia</option>
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag mx" value="es-mx" data-title="México">México</option>
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag nz" value="en-nz" data-title="New Zealand">New Zealand</option>
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag pa" value="es-pa" data-title="Paraguay">Paraguay</option>
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag pe" value="es-pe" data-title="Perú">Perú </option>
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag en" value="en-eu" data-title="Rest of Europe">Rest of Europe</option>
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag uy" value="es-uy" data-title="Uruguay">Uruguay</option>
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag us" value="es-us" data-title="United States (Español)">United States (Español)</option>
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag us" value="en-us" data-title="United States (English)">United States (English)</option>
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag es" value="es-us" data-title="Otros países (Español)">Otros países (Español)</option>
+                                            <option data-image="../Images/msdropdown/icons/blank.gif" data-imagecss="flag us" value="en-us" data-title="Other Countries (English)">Other Countries (English)</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="productos-opcionales.html">
+                                   Productos opcionales<span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="arplus.html">Viajeros Frecuentes</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="servicios.html">Servicios al cliente</a>
+                                </li>
+                                <li><a class="hidden-md hidden-lg" href="#"><span><img src="../img/common/ico_plane.png" alt="Vuelos" role="presentation"></span> Reservá tu vuelo</a></li>
+                                <li><a class="hidden-md hidden-lg" role="button" data-toggle="collapse" href="#collapseChatMobile" aria-expanded="false" aria-controls="collapseChatMobile"><span><img src="../img/common/ico_chat.png" alt="chat" role="presentation"></span> ¿Necesitas ayuda?</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </nav>
+                    <!-- /NAVBAR -->
+                    <!-- Breadcrumb -->
+                    <ol class="breadcrumb hidden-xs">
+                      <li><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> <span class="sr-only">Home</span></a></li>
+                      <li><a href="#">Nivel 1</a></li>
+                      <li class="active">Programa de Pasajeros Frecuentes</li>
+                    </ol>
+                    <!-- /Breadcrumb -->
+                </div>
+                <!-- /.container -->
+            </div>
+        </header>
+        <!-- CONTENEDOR WRAPPER -->
+        <div id="wrapper" role="main">
+            <!-- #hero-form -->
+            <div id="hero-form" class="hero-form hero-form-slider hero-form-slider-interna">
+                <!-- Carousel -->
+                <div id="myCarousel" class="carousel slide arplus" data-ride="carousel" data-interval="false">
+                    <!-- Indicators -->
+                    <div class="container hidden-xs hidden-sm">
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                        </ol>
+                    </div>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active countdown_active" role="option">
+                            <div class="container">
+                                <div class="carousel-caption">
+                                    <h2 class="title">Programa de Pasajeros Frecuentes</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item item2" role="option">
+                            <div class="container">
+                                <div class="carousel-caption">
+                                    <h2 class="title">Another example headline.</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <div class="controls visible-xs-inline-block">
+                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <!-- Controls -->
+                </div>
+                <!-- /.carousel -->
+                <div class="container">
+                    <!-- form-slider -->
+                    <div class="form-slider">
+                        <div id="contenedor_form-slider" class="clearfix">
+                            <h3 class="title"><i class="fa fa-user" aria-hidden="true"></i> Ingresar a mi cuenta</h3>
+                            <form id="reservationFlightSearchForm" class="form " method="post" name="reservationFlightSearchForm">
+                                <div class="content">
+                                    <fieldset>
+                                            <legend class="sr-only">Ingresar a mi cuenta</legend>
+                                            <div class="form-group">
+                                                <label class="sr-only" for="NroSocio">Número de Socio</label>
+                                                <input type="text" class="form-control" id="NroSocio" placeholder="Número de Socio" name="NroSocio">
+                                                <i class="fa fa-user" aria-hidden="true"></i>
+                                                <a class="small" href="/es-ar/aerolineas_plus/mi_cuenta_plus/olvidastetunrosocio">Olvidaste tu Nº de Socio?</a>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="sr-only" for="Clave">Password</label>
+                                                <input type="password" class="form-control" id="Clave" placeholder="Password" name="Clave">
+                                                <i class="fa fa-lock" aria-hidden="true"></i>
+                                                <a class="small" href="/es-ar/aerolineas_plus/mi_cuenta_plus/olvidastetuclave1">Olvidaste tu Clave?</a>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="sr-only" for="input2">Label <span class="sr-only">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit</span></label>
+                                                <div class="promocod has-tooltip">
+                                                <i class="fa fa-question-circle more-info-tooltip" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit"></i>
+                                                <input type="text" class="form-control" id="input2" placeholder="..." name="input2"></div>
+                                            </div>
+                                            
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                       <a class="small underline btn_ingreso" href="/es-ar/aerolineas_plus/mi_cuenta_plus/primeravez">Primera vez que ingreso</a> 
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group btn-block">
+                                                <input type="submit" value="Aceptar" class="btn btn-primary btn-block" />
+                                            </div>
+                                                </div>
+                                            </div>
+
+                                    </fieldset>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- /form-slider -->
+                </div>
+            </div>
+            <!-- /#hero-form -->
+
+            <div class="container">
+                <h1 class="sr-only">Programa de Pasajeros Frecuentes</h1>
+                <div class="wrapper-tabs">
+                    <div class="ancla"><a name="info" id="info"></a></div>
+                    <div class="tabs-container">
+                        <h1 class="title hidden-md hidden-lg h2">Condiciones de uso</h1>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-tabs" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <nav role='navigation' class="tabs navbar-tabs">
+                            <div class="collapse navbar-collapse" id="collapse-tabs">
+                                <ul class="nav nav-tabs nav-justified nav-tabs-inner">
+                                    <li id="conoceArplus" role="presentation"><a href="programa.html#info">Conocé Aerolíneas Plus</a></li>
+                                    <li id="asociate" role="presentation"><a href="inscripcion.html#info">Asociate</a></li>
+                                    <li id="informacionInteres" role="presentation"><a href="informacion-interes.html#info">Información de interés</a></li>
+                                    <li id="preguntasFrecuentes" role="presentation"><a href="preguntas-frecuentes.html#info">Preguntas Frecuentes</a></li>
+                                    <li id="condiciones" role="presentation" class="active"><a href="condiciones-uso.html#info">Condiciones de uso</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+
+
+                    <h1 class="sr-only">Condiciones de uso</h1>
+                    <div class="content">
+                        <p>Hacé click en el ítem de tu interés para consultar las preguntas más frecuentes de las condiciones de uso del programa:</p>
+
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                      1. Sujetos Intervinientes
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                  <div class="panel-body">
+                                    <p><span class="text-blue">1.1 TITULARES.</span> Son titulares (miembros de AEROLINEAS ARGENTINAS PLUS) las personas físicas que han completado y entregado los datos del formulario de inscripción y una vez aceptados han recibido su número de socio que corresponde a la identificación de su cuenta.<br>
+                                    La cuenta es unipersonal y reconoce un único titular.<br>
+                                    Será responsabilidad de cada socio conocer el Reglamento del Programa y sus actualizaciones que se publican en la página web.<br>
+                                    En en caso de un titular menor de edad (*) la administración de su cuenta la tendrán sus padres o sus tutores
+                                    (*) Serán titulares de cuenta los niños  mayores a 2 años.</p>
+
+                                    <p><span class="text-blue">1.2 BENEFICIARIOS.</span> Podrán ser el cónyuge, los ascendientes y descendientes en línea recta en primer grado de consanguinidad y los hermanos, que hayan sido nombrados por el titular. Dicho nombramiento se realiza por escrito.<br>
+                                    En el caso de los menores las millas podrán ser utilizadas por el propio menor o por  familiares directos quienes deberán estar comprendidos dentro del parentesco establecido para beneficiarios y que sólo podrán ser nominados y autorizados por ambos  padres o tutores del titular que administren su cuenta.<br>
+                                    Solamente pueden ser nombrados beneficiarios el cónyuge, los ascendientes y descendientes en línea directa en primer grado de consanguinidad (padres, hermanos, hijos) del Titular de la cuenta.<br>
+                                    AEROLÍNEAS ARGENTINAS se reserva el derecho de solicitar documentación que pruebe el vínculo familiar.</p>
+
+                                    <p><span class="text-blue">1.3 ACOMPAÑANTES.</span> Se considera acompañante a la persona que sin necesidad de existencia de vínculo familiar, viaje con el titular con un boleto de premio cedido por éste en los mismos vuelos cuya reserva y emisión de billete se realice en forma conjunta con la del titular. A estos efectos, sólo se admite un acompañante por vuelo.<br>
+                                    La cancelación de la reserva del titular hará caer la del acompañante, y sólo en el caso que el billete de pasaje tuviere derecho a devolución, ésta podrá ser solicitada.</p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                      2. Objeto del Programa
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                  <div class="panel-body">
+                                    <p>El objeto del Programa AEROLINEAS ARGENTINAS PLUS es una promoción permanente basada en la obtención de millas por parte del titular (según las condiciones y procedimientos detallados en la condición 5) que sirven para ser canjeados por billetes de avión de las compañías aéreas que participan en el programa o por los servicios que prestaran las empresas asociadas al programa (bajo las condiciones y procedimientos detallados en la condición 6).</p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingThree">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                      3. De la Tarjeta Aerolineas Plus
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                  <div class="panel-body">
+                                    <p><span class="text-blue">3.1 DEFINICIÓN.</span> La tarjeta AEROLÍNEAS ARGENTINAS PLUS es el instrumento operativo del programa que identifica al titular y lo faculta para la participación en el programa. Tiene estampado el nombre y apellido del titular así como el número personal identificatorio de su cuenta.<br>
+                                    Una vez producida el alta en el Programa el cliente tendrá un número de socio identificatorio  que consta de 8 (ocho) dígitos numéricos.<br>
+                                    A fin de solicitar su identificación el socio podrá imprimir una tarjeta virtual con su nombre y número de cuenta en el sitio web aerolíneas.com / Mi Cuenta Plus.<br>
+                                    En el caso de socios Elite: Platino u Oro el Programa  emitirá una tarjetas plástica personalizada con una fecha de vencimiento estampada en la misma. Estas serán renovadas conforme  a la cantidad  de millas acumuladas dentro de un período determinado.<br>
+                                    El socio podrá solicitar en cualquier sucursal de Aerolíneas Argentinas una tarjeta provisoria.</p>
+
+                                    <p><span class="text-blue">3.2 VIGENCIA - TITULARIDAD – PROPIEDAD.</span> La tarjeta es personal e intransferible y tiene una vigencia ilimitada, excepto las tarjetas Platino y Oro o de segmentación especial que tienen un vencimiento estampado en las mismas; éstas serán renovadas conforme a la cantidad de millas o segmentos o millas y segmentos acumulados en el período inmediato anual vencido.<br>
+                                    AEROLÍNEAS ARGENTINAS S.A. es la propietaria de la tarjeta. El titular es simplemente depositario de la misma y responsable de su correcta utilización y conservación.</p>
+
+                                    <p><span class="text-blue">3.3</span> En caso de pérdida, sustracción o deterioro de la tarjeta AEROLÍNEAS ARGENTINAS PLUS, el titular deberá comunicarlo por escrito o e-mail, a las direcciones que constan al final del presente reglamento,  procediendo a emitir una nueva tarjeta, no responsabilizándose  del uso indebido o fraudulento que pudiera haberse hecho de la misma previo a la notificación.<br>
+                                    AEROLÍNEAS ARGENTINAS PLUS podrá aplicar un cargo en caso de reemplazo de la tarjeta.</p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingFour">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                      4. Ámbito de Aplicación del Programa Aerolineas Plus
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                  <div class="panel-body">
+                                    <p>El programa se aplica en todos aquellos lugares donde operen vuelos tanto de Aerolíneas Argentinas como de las líneas aéreas que participen del programa.</p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingFive">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                      5. Obtención de Millas Aerolineas Plus
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                  <div class="panel-body">
+                                    <p><span class="text-blue">5.1 CONDICIONES DE OBTENCION DE MILLAS AEREOS.</span> Las millas AEROLINEAS ARGENTINAS PLUS se obtienen mediante la realización de vuelos por el titular únicamente, en cualquiera de los vuelos operados por las líneas aéreas participantes del Programa. Serán considerados los vuelos y los servicios de las compañías asociadas realizados a partir de la fecha de asociación al Programa.</p>
+
+                                    <p><span class="text-blue">5.2 TABLA DE OBTENCION DE MILLAS.</span> La cantidad de millas obtenida por vuelo se calculará a partir de:<br>
+
+                                    a) La tabla básica de obtención de millas, vigente a la fecha de cada vuelo a computarse, construida a partir del origen / destino de los vuelos realizados y la clase en la que se abonen. AEROLINEAS ARGENTINAS S.A. se reserva el derecho a modificar estas tablas comunicando las nuevas condiciones de obtención de millas y su fecha de entrada en vigencia vía internet, revista de abordo o telefónicamente ante la consulta del cliente.<br>
+
+                                    b) Promociones específicas en determinadas rutas y períodos a fijar por AEROLINEAS ARGENTINAS S.A. y/o el resto de las compañías participantes en el Programa.<br>
+
+                                    AEROLÍNEAS ARGENTINAS PLUS se reserva el derecho de ofrecer millas de bonificación y ofertas de promoción de manera selectiva para determinados socios en cualquier momento, según el número de viajes, ubicación geográfica, su participación en el Programa, u otros factores. </p> 
+
+                                    <p><span class="text-blue">5.3 NO OTORGAN MILLAS</span> los billetes gratuitos o con descuentos , tales como charters, tarifas de industria del turismo, gubernamentales y otras especiales que pudieren estar vigentes. AEROLINEAS ARGENTINAS S.A. se reserva el derecho de limitar, o no otorgar,  millas en determinados días, rutas, fechas, períodos y tarifa. <br>
+
+                                    AEROLÍNEAS ARGENTINAS PLUS no se responsabilizará por el retiro del Programa de las compañías asociadas ni por la cancelación de premios causada por dicho retiro ni por la desprogramación  de un servicio de Aerolíneas Argentinas o de la compañía asociada. Las compañías asociadas podrán, a su discreción, modificar la cantidad de  millas obtenidas o imponer otras restricciones sobre la acreditación  y el otorgamiento de premios. Toda información sobre el particular, será publicada con la correspondiente anticipación en la página web.</p>
+
+                                    <p><span class="text-blue">5.4 PROCEDIMIENTOS.</span> Para obtener millas el pasajero deberá informar su número de socio AEROLINEAS ARGENTINAS PLUS al efectuar su reserva  en Aerolíneas Argentinas y en el momento del embarque al presentarse en el mostrador del aeropuerto para realizar el check-in del vuelo deberá presentar la tarjeta AEROLINEAS ARGENTINAS PLUS y si así le fuera requerido, un documento que acredite su identidad (pasaporte, D.N.I., C.I., etc).<br>
+                                    Las millas se acreditan en la cuenta del titular después de realizado el correspondiente vuelo.<br>
+                                    No obstante, será responsabilidad de cada socio controlar que sus millas estén debidamente acreditadas, para lo cual podrá efectuar la consulta telefónicamente, vía e-mail o través de la consulta de saldo de cuenta en internet.<br>
+                                    Cuando un socio argumente que no le han sido acreditadas las millas de un servicio utilizado, deberá si el vuelo fue por Aerolineas Argentinas / Austral, cargarlas ingresando en a la página www.aerolineas.com/Aerolineas Plus / Mi Cuenta Plus / Acreditación de vuelos realizados. Si el vuelo se realizó en algunas de las empresas pertenecientes a la Alianza SkyTeam u otra empresa aérea asociada al Programa Aerolineas Plus, el socio deberá enviar vía correo electrónico a creditosSkyTeam@aerolineas.com.ar las copias del pasaje y de los boarding pass  En los casos  que AEROLINEAS ARGENTINAS PLUS considere que resulta necesaria la verificación de la documentación para proceder a la carga de millas, se le solicitará al titular el boarding pass original (tarjeta de embarque) que constituirán la documentación necesaria para formular cualquier reclamo en caso de existir alguna diferencia en la acreditación de millas. AEROLINEAS ARGENTINAS S.A. no acreditará millas en los casos en que hayan transcurrido más de 6 meses desde la realización del vuelo.</p>
+
+                                    <p><span class="text-blue">5.5 CONDICIONES DE OBTENCION DE MILLAS NO AEREOS.</span> Se podrán obtener millas por servicios prestados por las empresas asociadas con fecha posterior a la asociación al Programa.<br>
+
+                                    Las millas se acreditarán en la cuenta del titular una vez recibida la información de las compañías asociadas en el caso  de los servicios prestados por estas.<br>
+
+                                    Para obtener millas el pasajero deberá presentar su tarjeta AEROLINEAS ARGENTINAS PLUS en el momento de contratar el servicio de la empresa y si así le fuera requerido, un documento que acredite su identidad (pasaporte, D.N.I., C.I., etc).<br>
+
+                                    El titular deberá conservar los originales del contrato de alquiler de auto o la factura del hotel o empresa asociada que constituirán la documentación necesaria para formular cualquier reclamo en caso de existir alguna diferencia en la acreditación de millas.<br>
+
+                                    En el caso de los servicios no aéreos de empresas asociadas el tiempo máximo para realizar el reclamo es de 3 meses desde la fecha de prestación del servicio.<br>
+
+                                    Las empresas asociadas podrán, por propia decisión, modificar la cantidad de millas que se obtengan por sus servicios o informar otras restricciones en el proceso de obtención de los mismos.</p>
+
+                                    <p><span class="text-blue">5.6 OMISION DE PRESENTACION DE TARJETA.</span> En caso de no cumplir con la obligación de  la presentación de la tarjeta AEROLÍNEAS ARGENTINAS PLUS, no se acreditarán millas por el vuelo / servicio realizado.</p>
+
+                                    <p><span class="text-blue">5.7 COMPRA DE MILLAS</span> La compra de millas solo podrá realizarse  a través de nuestra página web www.aerolíneas.com con las tarjetas de crédito que fueren aceptables al momento de la adquisición, y su valor será calculado al cambio vigente del dólar estadounidense para la adquisición de pasajes aéreos, con más los impuestos locales que se apliquen en cada país constituyendo el precio final. La base será mil millas igual U$S 30+impuestos.<br>
+
+                                    El  número mínimo de Millas que se podrán comprar será de 1.000 Millas y de esa cantidad en más ,solo se venderán en  múltiplos de mil hasta un máximo de  de 60.000 por año calendario. Una vez acreditadas las millas en cuenta no se admitirán devoluciones.<br>
+
+                                    Las Millas podrán adquirirse para  ser aplicada a  un premio o bien para ser acumuladas en la cuenta del adquirente para ser aplicadas a futuros beneficios del programa.<br>
+
+                                    Los Millas compradas no serán considerados para clasificar en las distintas categorías de socios Aerolíneas Plus ni para cambiar de una a otra ni modificará la fecha de caducidad de las Millas de tu Cuenta Plus.</p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingSix">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                      6. Ámbito de Aplicación del Programa Aerolineas Plus
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                                  <div class="panel-body">
+                                    <p>Las millas obtenidos pueden ser canjeados por billetes de las líneas aéreas que participan del programa o por servicios que pudieren prestar compañías que presenten la modalidad de canje de millas que estén asociadas al plan a la fecha de utilización del premio.</p>
+
+                                    <p>El canje de los millas debe ajustarse a lo siguiente:</p>
+
+                                    <p><span class="text-blue">6.1 CONDICIONES DE UTILIZACION DE MILLAS AEROLINEAS ARGENTINAS PLUS.</span> Los billetes de premio podrán emitirse en Clase Promocional, Clase Turista, Club Economy y/o Clase Business siendo las mismas combinables entre si en diferentes tramos de un mismo documento de transporte .Cuando los billetes se emitan combinando clases y una de ella fuere la Clase Promocional todo el documento de transporte se regirá por las condiciones y restricciones de ésta. Los viajes a realizar con cargo a millas para los pasajes de premio en clase Promocional serán siempre billetes de ida y vuelta (round trips), punto a punto, no estando permitidas paradas estancia.- Los billetes con cargo a millas serán NO ENDOSABLES aún en aquellos casos en que el vuelo sea cancelado por la Empresa.
+                                    Los viajes a realizar por canje de millas podrán ser reservados y emitidos de manera instantánea a través de la página web www.aerolineas.com o bien directamente en las oficinas de AEROLINEAS ARGENTINAS indicando que se trata de un pasaje con cargo a millas de AEROLINEAS ARGENTINAS PLUS.<br>
+                                    El canje de millas para la emisión de un billete de premio AEROLÍNEAS PLUS a través de los medios explicitados anteriormente está sujeto a un cargo de emisión (Aerolíneas Plus Fee) para cada billete emitido. En todo caso dicho cargo es adicional a las tasas e impuestos correspondientes a cada tipo de billete, destino y clase que haya canjeado. Este cargo está publicado en www.aerolineas.com.
+                                    Únicamente las oficinas de AEROLINEAS ARGENTINAS S.A. habilitadas podrán emitir dichos billetes.<br>
+                                    El canje de millas por billetes está  condicionado a la existencia de saldo de millas suficientes en la cuenta del titular, según la tabla de utilización de millas vigente en ese momento, y a la disponibilidad de plazas en el cupo especial según el vuelo y la clase solicitada. AEROLÍNEAS ARGENTINAS S.A. fija la disponibilidad y extensión de los cupos para los billetes de premio según temporada, ruta y/o clase.<br>
+                                    Las reservas deben estar confirmadas de ida y vuelta al momento de emitir el billete. <br>
+                                    El Programa se reserva el derecho de efectuar promociones especiales, poniendo a disposición de los socios clases especiales de billetes con cargo a millas en los que no se permitirá cambios de trayecto, anulaciones, devolución de millas u otras condiciones que se especificarán en la tabla y en el billete emitido.<br>
+                                    Según  los diferentes tipos de tarjetas de asociado, Regular,  Oro y Platino,  el programa podrá ofrecer diferentes beneficios en concepto de “cortesía” que no implicarán débito de millas.<br>
+                                    AEROLINEAS ARGENTINAS PLUS podrá cambiar, cancelar o limitar la estructura de los premios con  aviso, y de “cortesías”.<br>
+                                    Podrá incrementar  la cantidad de millas necesarias para canjear premios. Los viajes de premio serán válidos sólo hacia los destinos operados tanto al momento de emisión del pasaje de premio como al de salida; y AEROLINEAS ARGENTINAS y las compañías asociadas no se responsabilizarán por los cambios de programación que resulten en la cancelación del servicio a algún destino. <br>
+                                    AEROLINEAS ARGENTINAS PLUS podrá establecer períodos de VEDA para la utilización de pasajes de premio por canje de millas.<br>
+                                    Los billetes de premio  robados o extraviados se rigen por las mismas normas vigentes para los billetes pagos y estarán sujetos a la aplicación de los cargos monetarios que se establezcan para estos casos.<br>
+                                    Cuando exista un acuerdo con una empresa para la provisión de servicios de canje de millas en caso de alquilar un automóvil u hospedarse en un hotel con cargo a millas será necesario realizar previamente la reserva correspondiente en la compañía participante y obtener un documento que solo pueden emitir las oficinas de ventas de AEROLÍNEAS ARGENTINAS. Este documento deberá ser presentado junto con la tarjeta AEROLINEAS ARGENTINAS PLUS, al retirar el automóvil o al hospedarse en el hotel.</p>
+
+                                    <p><span class="text-blue">6.2 TABLA DE UTILIZACION DE MILLAS.</span> La cantidad de millas necesaria para obtener un determinado billete se calculará a partir de:<br>
+
+                                    a) Una tabla básica de utilización de millas, construída a partir del origen/destino de los vuelos. AEROLINEAS ARGENTINAS S.A. se reserva el derecho a modificar estas tablas comunicando las nuevas condiciones de utilización de millas y su fecha de entrada en vigencia vía internet, revista de abordo, telefónicamente ante la consulta del cliente y con los ejemplares de las tablas que se encuentran a disposición en las oficinas de AEROLÍNEAS ARGENTINAS S.A..<br>
+
+                                    b) Promociones específicas en determinadas rutas y períodos a fijar por AEROLINEAS ARGENTINAS S.A. y/o el resto de las compañías participantes en el Programa.<br>
+
+                                    <p><span class="text-blue">6.3 PROCEDIMIENTO CANJE DE MILLAS.</span> Sólo el titular puede disponer de las millas  acreditados en su cuenta ya sea para uso propio, de sus beneficiarios o acompañante según lo descripto en el punto 1. <br>
+
+                                    La solicitud de emisión de premios puede efectuarla el titular o en su nombre una persona autorizada por escrito que presente la tarjeta y fotocopia del D.N.I. del titular.</p>
+
+                                    <p>a) SOLICITUD  DE RESERVA DEL PREMIO<br>
+
+                                    El titular  debe solicitar la reserva y emisión de manera instantánea con una anticipación mínima de 48 hs. hábiles antes de la salida del vuelo, sujeto a disponibilidad, informando que se trata de canje de millas  AEROLÍNEAS ARGENTINAS PLUS, en las oficinas de AEROLÍNEAS ARGENTINAS o en el sitio web aerolíneas.com.</p>
+
+                                    <p>b) SOLICITUD DE EMISIÓN DEL PREMIO<br>
+
+                                    El titular debe presentar su tarjeta AEROLINEAS ARGENTINAS PLUS e identificarse convenientemente con su documento de identidad al solicitar el billete de premio.<br>
+
+                                    En caso de ser otra persona también debe identificarse presentando la autorización, documento de identidad, la tarjeta y fotocopia del D.N.I. del titular.</p>
+
+                                    <p>El billete será  entregado previo descuento de millas, cobro del cargo de emisión (Aerolíneas Plus Fee)  y firma por parte del titular, o persona autorizada, del correspondiente justificante de cargo. Las oficinas de AEROLINEAS ARGENTINAS S.A. además de la web son las únicas autorizadas para la emisión de billetes con cargo a millas. Al presentarse en el aeropuerto con un billete emitido con cargo a millas, el titular, el beneficiario o acompañante en su caso, deben acreditar su identidad mediante D.N.I. o pasaporte.<br>
+
+                                    El cargo de emisión ( Aerolíneas Plus Fee), las tasas de salida por el uso de aeropuertos, de migración, cargos de seguridad u otros establecidos por aeropuertos, países o línea aérea que sean aplicables a los billetes de premio están a cargo del socio y deberán ser abonados en el momento de la emisión del premio, excepto aquellos que sólo se recaudan en el aeropuerto o país de salida del vuelo.<br>
+
+                                    No se otorgarán premios a los socios que al momento de solicitar su premio registraren deuda o juicio pendiente con AEROLÍNEAS ARGENTINAS S.A.<br>
+
+                                    <p><span class="text-blue">6.4 LIMITACIONES.</span> Los socios AEROLÍNEAS ARGENTINAS PLUS podrán utilizar sus millas exclusivamente en los vuelos operados por AEROLÍNEAS ARGENTINAS y las empresas asociadas al Programa.<br>
+
+                                    Ante la cancelación o reprogramación de un vuelo , el billete de premio no es endosable a otra líneas aérea, conforme a lo establecido en las Condiciones Generales de Transporte Resolución 1532/96 anexo 1 art.12, apartado b).<br>
+
+                                    No obstante, AEROLÍNEAS ARGENTINAS hará sus mejores esfuerzos para reubicar al pasajero en el próximo vuelo con igual ruta y destino que los del billete de premio.</p>                                     
+
+                                    <p><span class="text-blue">6.5 DEVOLUCIONES.</span> En caso de no utilización del billete de premio el socio podrá optar por la devolución total (no se permite la devolución de un solo tramo) con anterioridad a la salida del vuelo, o mantener el billete previa cancelación de la reserva y dentro de la validez del mismo (1 año a partir de la fecha de emisión), sujeto a las condiciones de cambio de tabla de millas.</p>
+
+                                    <p>El socio deberá presentar el billete para la devolución en el Centro de Servicios o en cualquier oficina de AEROLÍNEAS ARGENTINAS S.A. habilitada para la operación del programa. Una vez tramitada dicha devolución, se reembolsarán ( acreditarán) las millas en la cuenta del titular. En caso de solicitar la devolución o reemisión de un billete de premio los cargos por el concepto de emisión ( Aerolíneas Plus Fee) abonados oportunamente no serán reintegrados.</p>
+
+                                    <p>Si un socio solicita, por cualquier motivo, la devolución, reemisión o cambio de ruta de un billete de premio emitido a partir del 1° de noviembre de 2008, deberá abonar un cargo de gestión igual al cargo de emisión ( Aerolíneas Plus Fee).</p>
+
+                                    <p>Los billetes de premio con restricciones (Clase Promocional) no admiten la devolución de millas o modificaciones una vez emitidos.</p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingSeven">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                      7. Información al Titular
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                                  <div class="panel-body">
+                                    <p>AEROLINEAS ARGENTINAS S.A. enviará periódicamente al titular un Extracto de cuenta en el que le informará las transacciones realizadas, así como las millas obtenidas y consumidas. El envío de dicho Extracto se realiza siempre que se haya producido algún movimiento en la cuenta de millas y se enviará exclusivamente por correo electrónico a la dirección de email que el socio titular haya registrado debidamente en su cuenta a través de su ingreso en el sitio de internet aerolineas.com.<br>
+                                    Continuará disponible la posibilidad de consulta on line mediante su clave personal en aerolineas.com/Mi cuenta Plus.</p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingEight">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                      8. Caducidad de Millas
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+                                  <div class="panel-body">
+                                    <p>Las millas obtenidas caducarán cuando en el período de 3 años desde la última acreditación o emisión de premio, no se haya registrado ningún movimiento aéreo en la cuenta. Se entiende por “movimiento aéreo” tanto por un pasaje de premio emitido en canje de millas, como por la acreditación de millas por pasajes pagos en tarifas válidas. Por lo tanto transcurrido dicho período sin registro de movimientos, la cuenta pasará a tener automáticamente saldo cero.</p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingNine">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                      9. Transferencia de Millas
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+                                  <div class="panel-body">
+                                    <p>No se admite la transferencia de millas entre  cuentas de distintos titulares. <br>
+                                    Las millas obtenidos en el programa NO SON TRANSFERIBLES NI NEGOCIABLES EN NINGUN CASO. El incumplimiento de esta condición faculta a AEROLINEAS ARGENTINAS S.A. a cancelar la cuenta de millas inhabilitar la tarjeta del titular y exigir las responsabilidades pertinentes.</p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTen">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                      10. Fallecimiento del Titular
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
+                                  <div class="panel-body">
+                                    <p>En caso de fallecimiento del titular las millas de la cuenta caducarán automáticamente.</p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingEleven">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                                      11. Renuncia al Programa
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
+                                  <div class="panel-body">
+                                    <p>El titular podrá poner fin a su participación en el Programa en cualquier momento notificándolo por escrito y enviando su tarjeta cortada en dos al Centro de Servicios AEROLÍNEAS ARGENTINAS PLUS. En caso de quedar saldo de menos millas al de la emisión del premio menor, el mismo no podrá ser usufructuado. Toda la información archivada relativa a ese titular será destruida en 6 meses.</p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwelve">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                                      12. Uso Indebido de la Cuenta Aerolíneas Plus
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseTwelve" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwelve">
+                                  <div class="panel-body">
+                                    <p>AEROLINEAS ARGENTINAS PLUS podrá dar de baja una cuenta, y anular las millas acumuladas, ante el uso indebido de millas o acreditación fraudulenta en una cuenta por parte del titular o de un tercero e inclusive inhibir la futura participación de la persona en el Programa y exigir las responsabilidades pertinentes. <br>
+                                    Igual medida podrá adoptar la companía en caso de cualquier conducta impropia del socio a bordo de las aeronaves de la compañía, como no acatar las indicaciones del Comandante de la aeronave o del personal de cabina , faltar el debido respeto o molestar a un tripulante o a otros pasajeros, o en caso de cualquier otra conducta impropia, tanto a bordo, como en el aeropuerto o en establecimientos, locales o instalaciones de la compañía, que implique la determinación de la AR/AU de declararlo inaceptable como pasajero en sus vuelos. El cierre de su cuenta al ser ingresado en la lista de pasajeros inhabilitados implicará la caducidad de todas las millas acumuladas, tanto para él como para sus beneficiarios.<br>
+                                    La permanencia del socio en el Programa está sujeta al cumplimiento de todos los términos y condiciones del Programa Aerolíneas Argentinas Plus y a la observancia estricta de las normas y reglamentos de la compañía, tanto a bordo como en los lugares que se encuentran bajo custodia de la companía.</p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingThirteen">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                                      13. Modificación de las Condiciones Generales de Uso
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseThirteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThirteen">
+                                  <div class="panel-body">
+                                    <p>AEROLINEAS ARGENTINAS S.A. se reserva el derecho a modificar las presentes “Condiciones Generales de Uso”.</p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingFourteen">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+                                      14. Cancelación
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseFourteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFourteen">
+                                  <div class="panel-body">
+                                    <p>El programa AEROLINEAS ARGENTINAS PLUS podrá ser cancelado por AEROLINEAS ARGENTINAS S.A. con un previo aviso de seis meses, dentro de los cuales los socios con suficientes millas acreditadas deberán solicitar sus premios, caso contrario caducará el derecho de hacerlo.</p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingFifteen">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+                                      15. Responsabilidades
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseFifteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFifteen">
+                                  <div class="panel-body">
+                                    <p>AEROLINEAS ARGENTINAS S.A. no se hace responsable de la imposibilidad de llevar a cabo el programa AEROLINEAS ARGENTINAS PLUS, cuando sea debido a imposiciones legales o causas de fuerza mayor.</p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingSixteen">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+                                      16. Legislación
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseSixteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSixteen">
+                                  <div class="panel-body">
+                                    <p>Las presentes “Condiciones Generales de Uso” se regirán, cumplirán y ejecutarán conforme a las leyes argentinas.</p>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingSeventeen">
+                                  <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
+                                      17. Jurisdicción
+                                    </a>
+                                  </h4>
+                                </div>
+                                <div id="collapseSeventeen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeventeen">
+                                  <div class="panel-body">
+                                    <p>oda controversia que se suscite entre las partes con relación a este contrato, su existencia, validez, calificación, interpretación, alcance, cumplimiento o resolución, se resolverá definitivamente por el Tribunal de Arbitraje General de la Bolsa de Comercio de Buenos Aires de acuerdo con la reglamentación vigente para el arbitraje de derecho que las partes conocen y aceptan.<br><br>
+
+                                    <span class="text-blue">Centro de Servicios AEROLÍNEAS ARGENTINAS PLUS</span><br>
+
+                                    Perú 2 – C1067AAB Ciudad Autónoma de Buenos Aires – Argentina<br>
+
+                                    Call Center en Argentina: <a href="tel:0810-222-86527"><span class="sr-only">Llamar al</span> 0810-222-VOLAR(86527) <span class="sr-only">(0810-222-86527)</span></a><br>
+
+                                    e-mail: <a href="mailto:arplus@aerolineas.com.ar">arplus@aerolineas.com.ar</a><br>
+
+                                    <a href="htt://www.aerolineas.com" target="_blank">aerolineas.com</a></p>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /CONTENEDOR WRAPPER -->
+        <footer id="footer" role="contentinfo" class="no-slider">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="nav-footer-content">
+                            <div class="nav-footer">
+                                <div><a id="slick-slide00" href="http://ww1.aerolineas.com.ar/arg/main.asp?idsitio=ar&idpagina=164&ididioma=es">La Empresa</a></div>
+                                <div><a id="slick-slide01" href="http://www.aerolineas.com.ar/es-ar/prensa/comunicado">Prensa</a></div>
+                                <div><a id="slick-slide02" href="http://www.skyteam.com/" target="_blank">Alianza Skyteam</a></div>
+                                <div><a id="slick-slide03" href="http://www.aerolineas.com.ar/es-ar/cefepra/acercade" target="_blank" class="link">Cefepra</a></div>
+                                <div><a id="slick-slide04" href="http://cargo.aerolineas.com.ar/es-ar" target="_blank" class="link">Cargas</a></div>
+                                <div><a id="slick-slide05" href="http://www.jetpaq.com.ar/es-ar" target="_blank">Jetpaq</a></div>
+                                <div><a id="slick-slide06" href="http://www.aerolineas.com.ar/es-ar/la_empresa/recursos_humanos" target="" class="link">RRHH</a></div>
+                                <div><a id="slick-slide07" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=152&amp;idIdioma=es" target="_blank" class="link">Proveedores</a></div>
+                                <div><a id="slick-slide08" href="">Otro</a></div>
+                                <div><a id="slick-slide09" href="">Otro</a></div>
+                                <div><a id="slick-slide010" href="">Otro</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="social-links">
+                            <ul class="nav-justified list-unstyled ">
+                                <li><a target="_blank" href="https://www.facebook.com/Aerolineas.argentinas"><i class="fa fa-facebook"></i><span class="sr-only">Facebook</span></a></li>
+                                <li><a target="_blank" href="http://twitter.com/Aerolineas_AR/"><i class="fa fa-twitter"></i><span class="sr-only">Twitter</span></a></li>
+                                <li><a target="_blank" href="https://www.instagram.com/aerolineas_argentinas/"><i class="fa fa-instagram"></i><span class="sr-only">Instagram</span></a></li>
+                                <li><a target="_blank" href="http://www.linkedin.com/company/aerolineas-argentinas"><i class="fa fa-linkedin"></i><span class="sr-only">Linkedin</span></a></li>
+                                <li><a target="_blank" href="https://plus.google.com/106198199507305429358/posts"><i class="fa fa-google-plus"></i><span class="sr-only">GooglePlus</span></a></li>
+                                <li><a target="_blank" href="http://www.youtube.com/user/AerolineasAR"><i class="fa fa-youtube"></i><span class="sr-only">Youtube</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="clearfix">
+                    <div class="row">
+                        <div class="col-sm-7 col-md-6">
+                            <ul class="list-unstyled list-inline pull-left">
+                                <li class="codigo-qr">
+                                    <a href="https://servicios1.afip.gov.ar/clavefiscal/qr/mobilePublicInfo.aspx?req=e1ttZXRob2Q9Z2V0UHVibGljSW5mb11bcGVyc29uYT0zMDY0MTQwNTU1NF1bdGlwb2RvbWljaWxpbz0wXVtzZWN1ZW5jaWE9MF1bdXJsPWh0dHA6Ly93d3cuYWVyb2xpbmVhcy5jb20uYXJdfQ==" target="_F960AFIPInfo"><img src="../img/common/qr_code.gif" alt="QR-Code" /></a>
+                                </li>
+                                <li class="pie_texto">
+                                    <span>aerolineas.com Sitio Oficial de Aerolineas Argentinas. <br>
+                                <span class="number"><i class="fa fa-phone" aria-hidden="true"></i> <span class="text">SAC: </span><span class="sr-only">Llamanos al </span> <a href="tel:0800-761-0254">0800-761-0254</a></span>
+                                    <span class="number"><span class="text"> | Central</span> de Vendas: <a href="tel:0800-761-0254">0800-761-0254</a></span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-5 col-md-6">
+                            <ul class="list-unstyled list-inline pull-right logos-footer">
+                                <li class="hidden-xs">
+                                    <a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=9&amp;idIdioma=es"><img src="../img/common/footer-aerohandling.jpg"></a>
+                                </li>
+                                <li class="hidden-xs">
+                                    <a href="http://www.jetpaq.com.ar/es-ar" target="_blank"><img src="../img/common/footer-jetpaq.jpg" alt="Logo JetPaq"></a>
+                                </li>
+                                <li class="hidden-xs">
+                                    <a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=9&amp;idIdioma=es"><img src="../img/common/footer-optar.jpg" alt="Logo Optar"></a>
+                                </li>
+                                <li>
+                                    <a href="http://www.austral.com.ar/index.asp" target="_blank"><img src="../img/common/footer-austral.jpg" alt="Logo Austral"></a>
+                                </li>
+                                <li><img src="../img/common/footer-aa.jpg" alt="Logo Aerolíneas Argentinas"></li>
+                                <li>
+                                    <a href="http://www.skyteam.com/" target="_blank"><img src="../img/common/footer-skyteam.jpg" alt="Logo Aerolíneas Argentinas"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <div class="container">
+                    <a class="pie" href="/es-bo/legales/terminoscondiciones">Legales</a> | © 1996 - 2016 Aerolíneas Argentinas S.A.
+                    <a href="#" class="scrollToTop"><span class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span><span class="sr-only">Scroll To Top</span></a>
+                </div>
+            </div>
+        </footer>
+
+        
+
+        
+    </div>
+</body>
+
+</html>

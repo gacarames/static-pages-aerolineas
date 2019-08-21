@@ -1,0 +1,569 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="shortcut icon" href="Content/themes/V2/img/buttons/condor_chico.gif">
+<title>Aerolineas Argentinas</title>
+<link rel="stylesheet" type="text/css" href="Content/themes/V2/css/estilo.css" />
+<link rel="stylesheet" type="text/css" href="Content/themes/V2/css/form_argentina_home.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.0/jquery.min.js"></script>
+ <script type="text/javascript">
+ $(function() {
+$(".image").click(function() {
+var image = $(this).attr("rel");
+$('#image').hide();
+$('#image').fadeIn('slow');
+$('#image').html('<img src="' + image + '"/>');
+return false;
+	});
+});
+</script>   
+    
+   
+
+   
+   <!--AR PLUS REGISTRATE pop up -->
+ <script type="text/javascript">
+function open(){
+	document.getElementById('pop2').style.display='block';
+	document.getElementById('fondo-negro').style.display='block';
+}
+function close(){
+	document.getElementById('pop2').style.display='none';
+	document.getElementById('fondo-negro').style.display='none';
+}
+</script>
+ <!--AR PLUS REGISTRATE   pop up -->
+
+     
+
+</head>
+<body>
+<a class="skiplink" href="#startcontent">Saltar sobre la barra de navegación</a> 
+<!-- CONTENEDOR -->
+<div id="contenedor">
+
+
+<!--fecha-->
+    <div id="fecha" align="right">
+		<script languaje="JavaScript">
+        var mydate=new Date()
+        var year=mydate.getYear()
+        if (year < 1000)
+        year+=1900
+        var day=mydate.getDay()
+        var month=mydate.getMonth()
+        var daym=mydate.getDate()
+        if (daym<10)
+        daym="0"+daym
+        var dayarray=new Array("Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sabado")
+        var montharray=new Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre")
+        document.write("<small><font color='ffffff' face='tahoma'>"+dayarray[day]+" "+daym+" de"+montharray[month]+" de "+year+"</font></small>")
+        </script>
+    </div><br clear="all" />
+<!--fin de fecha-->
+
+<!--HEADER-->
+    <div id="header">
+            <div class=" header_borde ">
+        </div>
+      <div id="header-left"><a href="#" target="_self"><img src="Content/themes/V2/img/common/logo_aerolineas.gif" alt="Logo Aerolineas Argentinas" width="252" height="44" hspace="0" vspace="0" border="0" /></a>
+<h1 class="screen-reader-text">aerolíneas.com</h1></div><div class="fleft"><img  src="Content/themes/V2/img/buttons/Sello.png" /></div>
+            <div align="right" id="logo-header">
+               
+        
+        <div class=" width300   fleft  mleft100 mtop5">
+       <img width="154" height="30" alt="60 años de Aerolineas" src="Content/themes/V2/img/common/logos_header.gif" />
+        </div>
+        <div class=" fleft mtop10 ">
+         <!--select paises-->
+       <select  id="cmbPais" class="INPUTBuscador" style="width:100px; margin-left:10px;" onchange="cmbPais_Change(this.value);" name="cmbPais">
+            <option selected="" value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">Argentina</option>
+          </select>
+          <!--fin de select paises-->
+          </div>
+         
+
+       <div class="width400 mtop42  ">
+       <p><a href="#" class="contacto  ">Preguntas Frecuentes</a> | <span class="contacto">Cont&aacute;ctanos</span> <img  src="Content/themes/V2/img/buttons/mail.gif" alt="Contáctanos" border="0" />
+             0810-222-VOLAR (86527)</p>
+        </div>
+  
+        
+         
+      </div>
+    </div>
+	<!-- /HEADER -->
+
+	<br clear="all" />
+<a name="startcontent" id="startcontent"></a> 
+    <!-- NAVBAR -->
+    <div id="navbar">
+        <div id="botonera">
+                <div class="boton  width_1">
+                    Destinos y Promos
+                      
+                     
+                        <div class="transparent">
+                            <ul>
+                                <li><a href="tarifas.html">Promociones</a></li>
+                                <li><a href="a_donde_viajar_mapa.html">Mapa de destino</a></li>
+                                <li><a href="beneficios.html">Cupones de descuento</a></li>
+                                
+                            </ul>
+                        </div>
+          </div><div class="boton"><img src="Content/themes/V2/img/backgrounds/line.jpg" /></div>
+                    <div class="boton width_1">
+                       Reservas y Servicios
+                        <div class="transparent">
+                          
+                              <ul>
+                                <li><a href="#">Compr&aacute; tu pasaje</a></li>
+                                <li><a href="#">Pag&aacute; tu reserva web </a></li>
+                                <li><a href="#">Reserv&aacute; tu hotel </a></li>
+                                <li><a href="#">Hac&eacute; tu Web Check-in </a></li>
+                                <li><a href="#">Estado actual de tu vuelo </a></li>
+                                <li><a href="#">Horario de vuelos programados </a></li>
+                                <li><a href="#">Constancia de cr&eacute;dito fiscal </a></li>
+                              </ul>
+                            </div>
+                           
+                        
+                    
+          </div>
+          <div class="boton"><img src="Content/themes/V2/img/backgrounds/line.jpg" /></div>
+                    <div class="boton width_1">
+                        Info para tu viaje
+                        <div class="transparent">
+                                 <ul>
+                                    <li><a href="equipaje_de_mano.html">Equipaje</a></li>
+                                    <li><a href="#">Embarque de Menores, Embarazadas y Mascotas</a></li>
+                                    <li><a href="#">Info de servicios especiales</a></li>
+                                    <li><a href="#">Documentaci&oacute;n para tu viaje</a></li>
+                                    <li><a href="#">Mapa y datos de aeropuertos</a></li>
+                                    <li><a href="#">Nuestros aviones y servicios a bordo</a></li>
+                                    <li><a href="#">Sucursales</a></li>
+                          </ul>
+                        </div>
+          </div>
+         <div class="boton"><img src="Content/themes/V2/img/backgrounds/line.jpg" /></div>
+                    <div class=" boton width_1 select_boton">
+                        Aerolineas Plus
+                            <div class="transparent">
+                                <ul>
+                                    <li><a href="arplus_conoce.html">Acerca de Aerolineas Plus</a></li>
+                                      <li><a href="javascript:open()">Registrate</a></li>
+                                    <li><a href="aerolineas_plus.html">Mi cuenta Plus</a></li>
+                                    <li><a href="aerolineas_plus_ganar_millas.html">Ganar millas</a></li>
+                                     <li><a href="aerolineas_plus_utilizar_millas.html"> utilizar millas</a></li>
+                                    <li><a href="aerolineas_plus_compra_de_millas.html">Compra de millas</a></li>
+                                    <li><a href="#">Nueva tabla de millas</a></li>
+                                    <li><a href="arplus_elite.html">Socios Elite</a></li>
+                                    <li><a href="beneficios.html">Cupones de descuento</a></li>
+                                    <li><a href="arplus_emp_asoc.html">Empresas Asociadas</a></li>
+                                    <li><a href="arplus_inf_interes.html">Informaci&oacute;n de Inter&eacute;s</a></li>
+                                    <li><a href="arplus_preguntas.html">Preguntas Frecuentes</a></li>
+                                    <li><a href="arplus_con_uso.html">Condiciones de Uso</a></li>
+                                    <li><a href="arplus_privi_platino.html">Socios Platino</a></li>
+                                </ul>
+                            </div>
+   		  </div>
+                <div class="boton"><img src="Content/themes/V2/img/backgrounds/line.jpg" /></div>
+                    <div class="boton width_1">
+                        Corporativos
+                            <div class="transparent">
+                                <ul>
+                                    <li><a href="#">Acuerdos Corporativos</a></li>
+                                    <li><a href="#">Ferias y Congresos</a></li>
+                                    <li><a href="#">Club Secretarias</a></li>
+                                </ul>
+                            </div>
+                    </div>
+                    <div class="boton "><img src="Content/themes/V2/img/backgrounds/line.jpg" /></div>
+                    <div class="boton width_6 ">
+                        Cargas
+                            <div class="transparent">
+                                <ul>
+                                    <li><a href="#">Jet Paq</a></li>
+                                    <li><a href="#">Aerol&iacute;neas Cargo</a></li>
+                                </ul>
+                            </div>
+                    </div>
+         
+        </div>
+    </div>
+    <!-- / NAVBAR -->
+   
+    <!--columna-->
+  <div class=" mtop10">
+    <div class="fleft mleft10 gris12 mtop5"> 
+    	<span>Informaci&oacute;n de vuelos:<a href="#"> M&aacute;s Informaci&oacute;n</a></span>
+    </div>
+    <div class="fleft mleft220       ">
+            <form id="search">
+              <input id="searchSubmit" type="submit" value=""  />
+            </form>
+    </div>
+ <div class=" fleft    mleft45" style=" padding: 2px; height:16px"><span class="gris12">Sr. Martin Ignacio Duarte</span><a href="#" ><span class=" azul12  " id="buscador_principal_login">Salir >></span></a>
+      </div>
+</div>
+<!--<div class=" mleft15 mtop45" style="border-top: solid 1px #999"><h6>Aerolineas Plus | <span class="gris3">  Mi cuenta Plus</span> (Argentina)</h6> </div>-->
+
+<div class="salto"></div>
+<img src="Content/themes/V2/img/backgrounds/arplus_linea.jpg" width="993" height="10" />
+<!--contenedor-->
+<div id="contenedor_arplus">
+
+     <!--primer columna-->
+      
+      <div class="columna_izq  mtop10 mleft10 ptop10">
+     
+
+    <h1 class="tituloplus4">Mi cuenta <span class="gris2">Plus</span></h1>
+   <div class="mtop26  ">
+    <div id="listaplus"><a class=" lista" href="micuenta_arplus.html">Saldo y caducidad</a></div>
+    <div><img src="Content/themes/V2/img/backgrounds/a_donde_viajar_linea.gif" /></div>
+    <div id="listaplus"><a class="lista" href="micuenta_arplus_extracto.html">Registro de email para extracto</a></div>
+        <div><img src="Content/themes/V2/img/backgrounds/a_donde_viajar_linea.gif" /></div>
+    <div id="listaplus"><a class="lista" href="micuenta_arplus_tarjetas.html">Imprim&iacute; tu tarjeta</a></div>
+        <div><img src="Content/themes/V2/img/backgrounds/a_donde_viajar_linea.gif" /></div>
+    <div id="listaplus"><a class="lista" href="micuenta_arplus_claves.html">Cambio de clave</a></div>
+        <div><img src="Content/themes/V2/img/backgrounds/a_donde_viajar_linea.gif" /></div>
+    <div class="listaplus_select" ><a class="lista" href="micuenta_arplus_acreditacion.html">Acreditaci&oacute;n de vuelos realizados</a></div>
+     <div><img src="Content/themes/V2/img/backgrounds/a_donde_viajar_linea.gif" /></div>
+       <div id="listaplus"><a class="listaplus_select" href="micuenta_arplus_consulta.html">Consulta por acreditaci&oacute;n</a></div>
+     <div><img src="Content/themes/V2/img/backgrounds/a_donde_viajar_linea.gif" /></div>
+       <div id="listaplus"><a class="lista" href="https://sdd.aerolineas.com.ar/Mopf10/xfer?pdv=a0&amp;idi=es&amp;tkn=4637a3b576a70d5ce4e3077c0884bff54f32bf07r1406693">Reserva de premio</a></div>
+       <div><img src="Content/themes/V2/img/backgrounds/a_donde_viajar_linea.gif" /></div>
+     <div id="listaplus"><a class="lista" href="micuenta_arplus_pago_de_reserva.html">Pago de una reserva ya realizada</a></div>
+     <div><img src="Content/themes/V2/img/backgrounds/a_donde_viajar_linea.gif" /></div>
+  
+       <div id="listaplus"><a class="lista" href="micuenta_arplus_actualizar.html">Actualizar datos</a></div>
+    
+    </div>
+        
+
+      
+      </div>
+      
+ 
+      <!--primer columna-->
+      
+       <!--pop up-->
+        <div id="fondo-negro"></div>
+        <div id="pop2">
+        <p><a href="javascript:close()"><img class="fright   mright5 " src="Content/themes/V2/img/buttons/x_btn.jpg" /></a></p> 
+         <h1 class="tituloplus_linea ">Inscripci&oacute;n <span class="gris2">online</span></h1>
+        <p>Para inscribirte en el Programa de Pasajeros Frecuentes Aerol&iacute;neas Argentinas Plus, complet&aacute; el formulario a continuaci&oacute;n y conocé las Condiciones 
+        Generales del Programa antes de hacer click en <strong>Aceptar</strong>. </p>
+        <h4 class="azul">Datos personales</h4>
+        <div class="fleft width180 mleft10 ">
+         <span class="gris11">Apellido</span><br />
+        <input alt="Origen" class="INPUT width_4   "  type="text"  name="#" value=""/>
+        <span class="gris11">Fecha de Nac.</span><br />
+        <select id="cmbPais3" class="INPUT  " style="width:54px; margin-top:2px; height:20px" onchange="cmbPais_Change(this.value);" name="cmbPais3">
+        <option  selected="selected">D&iacute;a</option>
+        <!--       <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+               <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+               <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+               <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+               <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+               <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option> -->
+        </select>
+             
+            
+        <select id="cmbPais3" class="INPUT mleft5 " style="width:54px; margin-top:2px; height:20px" onchange="cmbPais_Change(this.value);" name="cmbPais3">
+        <option  selected="selected">Mes</option>
+        <!--       <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+               <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+               <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+               <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+               <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+               <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option> -->
+        </select>
+        <select id="cmbPais3" class="INPUT  mleft5 " style="width:54px; margin-top:2px; height:20px" onchange="cmbPais_Change(this.value);" name="cmbPais3">
+        <option  selected="selected">A&ntilde;o</option>
+        <!--   <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+               <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+               <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+               <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+               <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+               <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option> -->
+        </select>
+        <span class="gris11"> G&eacute;nero</span>
+        <input alt="Femenino" id="ratio"  type="radio" name="#" value="#"> <span class=" gris10">Femenino</span>
+        <input alt="Masculino" id="ratio"  type="radio" name="#" value="#"> <span class="gris10">Masculino</span>
+        </div>
+        <!--segunda columna-->
+        <div class="fleft width180 mleft10 ">
+        <span class="gris11">Nombre</span><br />
+        <input alt="Origen" class="INPUT width_4   "  type="text"  name="#" value=""/>
+        <div class=" mtop5"><span class="gris11">Nacionalidad</span><br />
+        <select id="cmbPais3" class="INPUT " style="width:180px; margin-top:2px; height:20px" onchange="cmbPais_Change(this.value);" name="cmbPais3">
+        <option  selected="selected">Buenos Aires</option>
+        <!--   <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+               <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+               <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+               <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+               <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+               <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option> -->
+        </select>
+        </div>
+        <div class=" mtop10">
+        <div class=" mtop2"><span class="gris11">Tel&eacute;fono</span><br />
+        <input alt="Origen" class="INPUT   width50  "  type="text"  name="#" value=""/><input alt="Origen" class="INPUT mleft5 width50 "  type="text"  name="#" value=""/><input alt="Origen" class="INPUT mleft5 width50 "  type="text"  name="#" value=""/></div></div>
+        <p class="gris10">Pref. Pa&iacute;s Cod.Area N&uacute;mero</p>
+        </div>
+        <!--fin segunda columna-->
+        <!--tercer columna-->
+        <div class="fleft width180 mleft10 ">
+        <span class="gris11">Tipo de Doc.</span><br />
+        <select id="cmbPais3" class="INPUT mtop2 width_4" style="height:20px"  onchange="cmbPais_Change(this.value);" name="cmbPais3">
+        <option  selected="selected">Buenos Aires</option>
+        <!--   <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+               <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+               <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+               <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+               <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+               <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option> -->
+        </select>
+             
+        <div class="mtop2"><span class="gris11">Est. Civil</span></div>
+        <select id="cmbPais3" class="INPUT mtop2 width_4 " style="height:20px"  onchange="cmbPais_Change(this.value);" name="cmbPais3">
+        <option  selected="selected">Seleccion&aacute;</option>
+        <!--   <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+               <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+               <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+               <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+               <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+               <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option> -->
+        </select>
+        <div class=" mtop10"><span class="gris11">Empresa</span><br />
+        <input alt="Origen" class="INPUT width_4  "  type="text"  name="#" value=""/></div>
+        </div>
+        <!--fin tercer columna-->
+        <!--cuarta columna-->
+        <div class="fleft width180 mleft10 ">
+        <span class="gris11">N&uacute;mero</span><br />
+        <input alt="Origen" class="INPUT width_4 "  type="text"  name="#" value=""/>
+             
+        <div class=" mtop5"><span class="gris11">Profesi&oacute;n</span><br />
+        <select id="cmbPais3" class="INPUT mtop2 width_4 " style="height:20px" onchange="cmbPais_Change(this.value);" name="cmbPais3">
+        <option  selected="selected">Seleccion&aacute;</option>
+        <!--   <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+               <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+               <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+               <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+               <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+               <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option> -->
+        </select>
+        </div>
+        </div>
+        <!--fin cuarta columna-->
+        <!--segunda fila-->
+        <br clear="all" />
+        <h4 class="azul">Domicilio de correspondencia</h4>
+        <span class="gris11">Domicilio de correspondencia</span><input alt="Femenino" id="ratio"  type="radio" name="#" value="#"> <span class=" gris10">Particular</span>
+        <input alt="Masculino" id="ratio"  type="radio" name="#" value="#"> <span class="gris10">Laboral</span>
+        <p class="azul10"> Si residis en la Ciudad Autonoma de Buenos Aires, debes seleccionar en donde dice "Provincia"</p>
+        <div class="fleft width180 mleft10 ">
+        <div class=" mtop5"><span class="gris11">Pa&iacute;s</span><br />
+        <select id="cmbPais3" class="INPUT " style="width:180px; margin-top:2px; height:20px" onchange="cmbPais_Change(this.value);" name="cmbPais3">
+        <option  selected="selected">Seleccion&aacute;</option>
+               <!--<option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+                   <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+                   <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+                   <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+                   <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+                   <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option> -->
+        </select>
+        </div>
+        <div class="mtop10"><span class="gris11">Localidad</span><br />
+        <input alt="Origen" class="INPUT width_4 "  type="text"  name="#" value=""/></div>
+        <div class="mtop25"><span class="gris11">Email</span><br />
+        <input alt="Origen" class="INPUT width_4 "  type="text"  name="#" value=""/></div>
+        </div>
+        <!--segunda columna-->
+        <div class="fleft width180 mleft10 ">
+        <div class=" mtop5"><span class="gris11">Provincia</span><br />
+        <select id="cmbPais3" class="INPUT mtop2 width_4" style="height:20px" onchange="cmbPais_Change(this.value);" name="cmbPais3">
+        <option  selected="selected">Seleccion&aacute;</option>
+               <!--<option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+                   <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+                   <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+                   <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+                   <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+                   <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option> -->
+        </select>
+        </div>
+        <div class=" mtop20"><span class="gris11 mright5">Codigo Postal</span>
+        <select id="cmbPais3" class="INPUT " style="width:105px; margin-top:2px; height:20px" onchange="cmbPais_Change(this.value);" name="cmbPais3">
+        <option  selected="selected">Seleccion&aacute;</option>
+               <!--<option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+                   <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+                   <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+                   <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+                   <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option>
+                   <option  value="main.asp?idSitio=AR&idPagina=1&idIdioma=es">#</option> -->
+        </select>
+        </div>
+        <div class="mtop25"><span class="gris11">Reconfirme su Email</span><br />
+        <input alt="Origen" class="INPUT width170 "  type="text"  name="#" value=""/></div>
+        </div>    
+        <!--fin segunda columna-->
+        <!--tercer columna-->
+        <div class="fleft width180 mleft10 ">
+        <div class=" mtop5"><span class="gris11">Calle</span><br />
+        <input alt="Origen" class="INPUT width_4 "  type="text"  name="#" value=""/></div>
+        <div class="mtop10"><span class="gris11">Datos Adicionales</span><br />
+        <input alt="Origen" class="INPUT width_4 "  type="text"  name="#" value=""/></div>
+        </div>  
+        <!--fin tercer columna-->    
+        <!--cuarta columna-->
+        <div class="fleft width180  mleft10 ">
+        <div>
+        <div class=" fleft gris11">N&uacute;mero</div><div class="fleft gris11  mleft60 ">Piso</div><br />
+        <div class=" fleft mtop0 "><input alt="Origen" class="INPUT width72  "  type="text"  name="#" value=""/></div>
+        <div class=" fleft "><input alt="Origen" class="INPUT width72 mleft20"  type="text"  name="#" value=""/></div>
+        </div>
+        <div class="mtop30"><span class="gris11">Estado</span><br />
+        <input alt="Origen" class="INPUT width_4 "  type="text"  name="#" value=""/></div>
+        </div>  
+        <!--fin cuarta columna-->  
+        <div class="mtop100 mleft20"><span class="azul10">(S&oacute;lo complet&aacute; si necesitas agregar m&aacute;s datos del domicilio)</span>
+        <div class="mtop20 "><p class="negro10">El Programa enviará en forma periódica el Extracto de millas por 
+        correo electrónico a la dirección de email registrada.</p></div>
+        </div>
+        <h4 class="azul">Clave para la consulta de saldo de millas</h4>
+        <p class="negro10">Por favor, escribí una clave que utilizaras para ingresar en la consulta online de millas de Aerolíneas Argentinas Plus. La clave debe estar compuesta por 6 a 8 caracteres 
+        alfanuméricos (letras y/o números).</p>
+        <!--fin segunda fila-->
+        <div class="fleft" style="width:400px">
+        <!--tercer fila-->
+        <div class="fleft width180 mleft10 ">
+        <span class="gris11">Clave</span><br />
+        <input alt="Origen" class="INPUT width_4 "  type="text"  name="#" value=""/>
+        </div>
+        <!--fin tercer fila-->
+        <!--cuarta fila-->
+        <div class="fleft width180 mleft10 ">
+        <span class="gris11">Reconfirm&aacute; tu Clave</span><br />
+        <input alt="Origen" class="INPUT width_4 "  type="text"  name="#" value=""/>
+        </div>
+        <!--fin cuarta fila-->
+        <div><input alt="Femenino" id="ratio"  type="radio" name="#" value="#"> <span class=" gris10">Conozco y acepto las <a href="#">Condiciones Generales</a> del Programa.</span></div>
+        </div>
+        <!--quinta fila-->
+        <div class="fleft  mleft10 ">
+        <div class="fleft"><img src="Content/themes/V2/img/common/arplus_inscribite_captcha.jpg" /></div><div class="fleft"><img src="Content/themes/V2/img/secured.jpg" class="mleft10" /> </div>
+        </div>
+        <!--fin quinta fila-->
+        <br clear="all" />
+        <div class="btn_inscribite" >
+        <div class="fleft" ><a href="#" class="boton_aceptar2">Borrar</a></div>
+        <div class=" fleft mleft10"><a href="#" class="boton_aceptar2">Aceptar</a></div>
+        </div>
+        <div class=" mtop42"><p class="negro10">Mediante el presente dejo constancia que he sido debidamente informado respecto de la finalidad para la cual han sido recabados mis datos personales y quiénes pueden ser 
+        sus destinatarios, como así también del derecho que me asiste a tener acceso a los mismos, como así a peticionar su rectificación y/o supresión, todo ello conforme a lo 
+        normado en la Ley Nacional N° 25326 (Protección de Datos Personales) y su Decreto Reglamentario N° 1558/01</p></div>
+        </div>
+        <!--fin pop up-->
+      <!--segunda columna-->
+      
+    <div style="background-image:url(Content/themes/V2/img/backgrounds/arplus_fondo.jpg)" class="columna_cent   ">
+      
+<div id="fecha_plus" class="mtop14 mbot10">17/10/2011 05:17 pm</div>
+<br clear="all" />
+      <div class="  mtop35">
+      <p class="azul  mleft15  mright5  "> Tu solicitud de acreditación ha sido cursada, podrás ingresar en 24 horas a la solapa “Consulta Acreditación” para verificar que tu vuelo ha sido acreditado.</p>
+     </div>
+        <div class="  mtop39  mleft225  " border="0"><span><a href="#" class="boton_aceptar4">Volver</a></span>
+      </div>
+
+
+
+
+
+    </div>
+       <!--segunda columna-->
+      
+      
+     
+      
+       <!--tercer columna-->
+       <div class="columna_der " >
+       
+       <img src="Content/themes/V2/img/backgrounds/arplus_foto.jpg" width="202" height="233" />
+       
+       <div class="columna_plus" style="background-image:url(Content/themes/V2/img/backgrounds/arplus_columna.jpg)">
+       <div class="tituloplus2">Informaci&oacute;n 
+             <p class="gris11 mtop5">Conoc&eacute; la<a href="#" target="_self" class="gris11"> <strong>tabla de millas</strong></a> y elegí tu próximo destino.</p></div>
+       </div>
+
+       
+       
+     
+       
+      
+       </div> 
+  </div>
+         
+          <!--tercer columna-->
+         
+         
+
+         
+              <!--CONTENEDOR-->
+         
+ <!--pie-->
+    <div id="pie">
+    <div class="ml10 mtop10">
+                    <div class="azul fleft mtop10"><a href="#" class="link">Conocenos</a> | <a href="#" class="link">Encuestas</a> | <a href="#" class="link">Noticias</a> | <a href="#" class="link">Proveedores</a></div> 		
+                <div class=" fright mright15">
+                <a href="#" target="_blank"><img src="Content/themes/V2/img/buttons/i_like.jpg" alt="Logo Optar" width="77" height="19" /></a>
+                <a href="https://www.facebook.com/aerolineas.argentinas" target="_blank"><img src="Content/themes/V2/img/common/ic-facebook.gif" alt="Facebook" width="22" height="22" border="0" /></a>
+                <a href="http://twitter.com/#!/Aerolineas_AR/" target="_blank"><img src="Content/themes/V2/img/common/ic-Twitter.gif" alt="Twitter" width="22" height="22" border="0" /></a>
+                <a href="https://plus.google.com/106198199507305429358/posts" target="_blank"><img src="Content/themes/V2/img/common/ic-gplus.gif" alt="Facebook" width="22" height="22" border="0" /></a>
+                <a href="http://www.sonico.com/publico/509291864/aerolineas-argentinas" target="_blank"><img src="Content/themes/V2/img/common/ic-Sonico.gif" alt="sonico" width="20" height="22" border="0" /></a>
+                <a href="http://www.youtube.com/user/AerolineasAR" target="_blank"><img src="Content/themes/V2/img/common/ic-YouTube.gif" alt="Youtube" width="22" height="22" border="0" /></a>
+                <a href="http://www.aerolineas.com.ar/arg/rss.asp?idSitio=AR&amp;idIdioma=es" target="_blank"><img src="Content/themes/V2/img/common/ic-RSS.gif" alt="Rss" width="22" height="22" border="0" /></a></div>
+                <br clear="all" />
+    </div>
+    
+   	  <input id="searchField" type="text" class="redondeado  input_lupa2" value="Buscar" />
+   	  <div class="div">
+</div>
+    	<div class="div_pie">
+            <div class="div_links"> 
+            	<div class="div_partner"><img src="Content/themes/V2/img/common/footer-logoAA.gif" alt="Logo Aerolíneas Argentinas" />
+               </div>
+                <div class="div_partner"><img src="Content/themes/V2/img/common/footer-logoAustral.gif" alt="Loog Austral" />
+               </div>
+                <div class="div_partner"><img src="Content/themes/V2/img/common/footer-logoJetPaq.gif" alt="Logo JetPaq" />
+               </div>
+                <div class="div_partner"><img src="Content/themes/V2/img/common/footer-logoAerohandling.gif" alt="Logo Aerohandling" />
+               </div>
+                <div class="div_partner"><img src="Content/themes/V2/img/common/footer-logoOptar.gif" alt="Logo Optar" />
+               </div>
+               
+   		  </div>    
+          <br clear="all" />
+	<div class="pie_texto"> 
+    	<span>Sitio Oficial de Aerolineas Argentinas, &copy; 1996 - 2011 Aerol&iacute;neas Argentinas S.A.<br/>
+       	<a class="pie" href="#">Legales</a>|<a class="pie" href="#">Condiciones Generales de Transporte</a>|<a class="pie" href="#">Mapa del Sitio</a>|<a class="pie" href="#">Ud. est&aacute; en un SITIO SEGURO</a></span>
+      	</div>
+    </div>
+   <div class="div_borde"><img src="Content/themes/V2/img/backgrounds/footer-right.gif" />
+   </div>
+  </div>
+    
+    </div>
+
+         
+         
+    </div>
+    
+
+</body>
+</html>

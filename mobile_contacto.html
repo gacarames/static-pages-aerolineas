@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html class="no-js" hola_ext_inject="ready">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Página de inicio de check-in</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="">
+    <link rel="stylesheet" href="mobile/css/main.css">
+    <link rel="stylesheet" href="mobile/css/main2.css">
+    <link rel="stylesheet" href="mobile/css/custom.css">
+    <link rel="stylesheet" href="mobile/css/styles.css">
+    <link rel="stylesheet" href="mobile/css/bootstrap-modal.css">
+    <link rel="icon" href="https://movil.aerolineas.com.ar/SSW2010/static/1868/ARM0/32/responsive/images/favicon.ico">
+  
+</head>
+
+<body cz-shortcut-listen="true" hola-ext-player="1" class="CONCURSO motor" data-lang="es_ES">
+    <div id="app-container">
+        <div id="app">
+            <div class="page">
+                <section id="cnt_3" class="container">
+                    <section id="scc_header" class="component scc header">
+                        <h1 id="logo"></h1>
+                        <a href="https://movil.aerolineas.com.ar/SSW2010/ARM0/#" id="btn-home" class="header-btn"> <i class="fa fa-home"></i></a>
+                        
+                        <div class="settings-component">
+                            <nav>
+                                <ul>
+                                    <li class="option"> <a href="https://movil.aerolineas.com.ar/SSW2010/ARM0/#" id="language"><i class="fa fa-chevron-right"></i> <span data-translate="label.lang.language">Idioma</span></a> </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div id="help-tooltip">
+                            <div class="information" data-translate="label.lang.currencyTooltip">label.lang.currencyTooltip</div>
+                        </div>
+                    </section>
+                </section>
+                <section id="check_in_container" class="container">
+                    <section id="sscilookup_1" class="component sscilookup initialized">
+                        <fieldset class="form-group Buscador">
+                            <select id="culture" name="culture" class="form-control INPUTBuscador" title="Culture" onchange="onCultureChanged()">
+                            <option selected="selected" value="es-ar">Argentina (Español)</option>
+                               <option value="en-ar">Argentina (Inglés)</option>
+                                    <option value="en-au">Australia</option>
+                                    <option value="es-bo">Bolivia</option>
+                                    <option value="pt-br">Brasil</option>
+                                    <option value="en-ca">Canadá</option>
+                                    <option value="es-co">Colombia</option>
+                                    <option value="es-cl">Chile</option>
+                                    <option value="es-eu">España</option>
+                                    <option value="fr-fr">Francia</option>
+                                    <option value="it-eu">Italia</option>
+                                    <option value="es-mx">México</option>
+                                    <option value="en-nz">New Zealand</option>
+                                    <option value="es-pa">Paraguay</option>
+                                    <option value="es-pe">Perú </option>
+                                    <option value="en-eu">Rest of Europe</option>
+                                    <option value="es-uy">Uruguay</option>
+                                    <option value="es-us">United States (Español)</option>
+                                    <option value="en-us">United States (English)</option>
+                                    <option value="es-ve">Venezuela</option>
+                                    <option value="es-us">Otros países (Español)</option>
+                                    <option value="en-us">Other Countries (English)</option>
+                            </select>
+                        </fieldset>
+
+                        <h1 class="h-s">    <i class="fa fa-plane"></i><span data-translate="label.checkin.title">Reservar un vuelo </span><br>
+                        <span class="subtitle">Elija su próxima aventura...</span></h1>
+                        <form id="checkin-form">
+                            <div class="component-content">
+                                <div class="wrapper">
+
+                                <div class="motor-search">
+                                    <div class="radios x2">
+                                         <input type="radio" id="radio1" name="radios" value="ida y vuelta" checked>
+                                           <label for="radio1">Ida y vuelta</label>
+                                        <input type="radio" id="radio2" name="radios" value="ida">
+                                           <label for="radio2">Sólo ida</label>
+                                    </div>
+
+                                    <fieldset class="form-group">
+                                        <label for="departure-airport" class="control-label">Origen de su vuelo</label>
+                                        <select id="departure-airport" name="departure-airport" class="form-control">
+                                            <option value="">Ingresar Ciudad o Código</option>
+                                            <option value="">Origen</option>
+                                        </select>
+                                    </fieldset>
+
+                                    <fieldset class="form-group">
+                                        <label for="departure-airport" class="control-label">Destino de su vuelo</label>
+                                        <select id="departure-airport" name="departure-airport" class="form-control">
+                                            <option value="">Ingresar Ciudad o Código</option>
+                                            <option value="">Origen</option>
+                                        </select>
+                                    </fieldset>
+
+                                    <div class="row-fluid clearfix form-group">
+                                       <div class="calendar date span6">                        
+                                            <label data-translate="label.flightstatus.dates" for="date">Fecha de salida:</label>                        
+                                            <div>
+                                                <input type="hidden" id="date" value="13/01/2016" name="date">
+                                                <span data-translate="Wed Jan 13 2016 13:20:23 GMT-0300 (Hora estándar de Argentina)" data-date-format="%a, %b %d">Mie, Ene 13</span>
+                                            </div>                    
+                                        </div>
+                                        <div class="calendar date span6">                        
+                                            <label data-translate="label.flightstatus.dates" for="date">Fecha de regreso:</label>                        
+                                            <div>
+                                                <input type="hidden" id="date" value="13/01/2016" name="date">
+                                                <span data-translate="Wed Jan 13 2016 13:20:23 GMT-0300 (Hora estándar de Argentina)" data-date-format="%a, %b %d">Mie, Ene 13</span>
+                                            </div>                    
+                                        </div>
+                                    </div>
+
+                                    <fieldset class="form-group">
+                                        <span for="departure-airport" class="control-label label">Destino de su vuelo</span>
+                                        <div class="radios x3">
+                                         <input type="radio" id="radioclase1" name="radios2" value="Economica" checked>
+                                           <label for="radioclase1">Económica</label>
+                                        <input type="radio" id="radioclase2" name="radios2" value="Ejecutiva">
+                                           <label for="radioclase2">Ejecutiva</label>
+                                        <input type="radio" id="radioclase3" name="radios2" value="Premium">
+                                           <label for="radioclase3">Premium</label>
+                                    </div>
+                                    </fieldset>
+
+                                    <fieldset class="form-group">
+                                        <label for="departure-airport" class="control-label">Código de Promoción</label>
+                                        <input type="text" name="" data-translate="">
+                                    </fieldset>
+
+                                    <div class="row-fluid clearfix form-group">
+                                       <div class=" date span4">                        
+                                            <label data-translate="label.flightstatus.dates" for="date">Adulto</label>                        
+                                            <div class="input-group spinner">
+                                                <button class="btn btn-default" type="button"><i class="fa fa-minus"></i></button>
+                                                <input type=number class="form-control" value="1">
+                                                <button class="btn btn-default" type="button"><i class="fa fa-plus"></i></button>
+                                            </div>                  
+                                        </div>
+                                        <div class=" date span4">                        
+                                            <label data-translate="label.flightstatus.dates" for="date">Niño (de 2 a 11 años)</label>                        
+                                            <div class="input-group spinner">
+                                                <button class="btn btn-default" type="button"><i class="fa fa-minus"></i></button>
+                                                <input type=number class="form-control" value="1">
+                                                <button class="btn btn-default" type="button"><i class="fa fa-plus"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class=" date span4">                        
+                                            <label data-translate="label.flightstatus.dates" for="date">Bebé 0-23 Meses</label>                        
+                                            <div class="input-group spinner">
+                                                <button class="btn btn-default" type="button"><i class="fa fa-minus"></i></button>
+                                                <input type=number class="form-control" value="1">
+                                                <button class="btn btn-default" type="button"><i class="fa fa-plus"></i></button>
+                                            </div>                   
+                                        </div>
+                                    </div>
+
+                                    <div class="row-fluid clearfix form-group">
+                                       
+                                    </div>                               
+                                </div>
+                                </div>
+                                <br>
+                                 <input type="submit" class="btn btn-primary btn-block btn-large" value="Buscar">
+                            </div>
+                           
+
+                        </form>
+
+
+                    </section>
+                    <section id="sbmt_1" class="component sbmt checkin">
+                        <div class="submit clearfix row-fluid">
+                            <div class="span3 return"><a href="https://movil.aerolineas.com.ar/SSW2010/ARM0/#" class="goBack"> <i class="fa fa-angle-double-left"></i> <span data-translate="label.flc.returnToHome">Volver a inicio</span> </a></div>
+                            
+                        </div>
+                    </section>
+                    <section id="sscilookup_2" class="component sscilookup ">
+                        <div>
+                            
+                        </div>
+                    </section>
+                </section>
+                <section id="cnt_1" class="container">
+                    <section id="scc_footer" class="component scc footer">
+                        <ul class="clearfix">
+                            <li class="" data-translate="label.scc.contact"><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=7&idIdioma=es" target="_blank">Contacto</a></li>
+                            <li class="" data-translate="label.scc.coc"><a href="04_06_2015_terminos_y_condiciones.html" target="_blank">Condiciones</a></li>
+                        </ul>
+                    </section>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="mobile/js/bootstrap.min.js"></script>
+    <script>
+        (function ($) {
+          $('.spinner .btn:last-of-type').on('click', function() {
+            $(this).prev("input").val( parseInt($(this).prev("input").val(), 10) + 1);
+          });
+          $('.spinner .btn:first-of-type').on('click', function() {
+            $(this).next("input").val( parseInt($(this).next("input").val(), 10) - 1);
+          });
+        })(jQuery);
+    </script>
+</body>
+
+</html>

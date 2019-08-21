@@ -1,0 +1,299 @@
+/* CSS Document */
+
+#ulmain li {
+	position:relative;
+	width:100px;
+	background-color:#FFFFFF;	
+	border:0px solid white;
+	float:right;	
+	cursor:pointer;
+	padding-left:5px;
+	/*background-image:url('../images/pixeltrans.png');*/
+	}
+#ulmain, #ulmain ul  {
+	padding:0;
+	margin:0;
+	width:100px;
+	list-style-type:none;
+	border:0px solid red;	
+	margin-top:5px;	
+	}
+#ulmain ul {
+	position:absolute;	
+	left:-100px;
+	top:-6px;
+	display:none;	
+	}
+#ulmain ul {text-align:center;}
+#ulmain li:hover {background-image:url('../images/pixeltransddd.png');}
+#seleccione {
+	width:102px;
+	height:17px;
+	background-image:url('../images/cmb.jpg');
+	background-repeat:no-repeat;
+	padding:2px 0 0 3px;
+	border:0px solid black;
+	margin:0;	
+	cursor:pointer;
+	}
+#ulmain {
+	display:none;
+	border:0px solid black;
+	margin:0;
+	padding:0;
+	}
+.textHome{
+	font-family:Arial, Helvetica, sans-serif; 
+	font-size:11px;
+	}
+
+/*********MENSAJE INFO***************/
+html>body #msjInfo{margin:0px; padding:3px 5px 0 5px; height:18px;}
+#msjInfo{
+	background-color:#FFFFCC;
+	border:2px #999	solid;
+	height:22px;
+	color:#000; 
+	font-size:11px;
+	padding:3px 5px 0 5px;
+	clear: both;
+	width: auto;
+	float:left;
+}
+#msjInfo a{
+	color:#000; 
+	font-size:11px;
+	text-decoration:underline;
+	color:#3F7FC3;
+}
+#msjInfo a:hover{
+	color:#000; 
+	font-size:11px;
+	text-decoration:none;
+	color:#3F7FC3;
+}
+/*********MENSAJE INFO***************/
+	
+/*********LOGUEO HOME***************/
+#container {
+    /*width:780px;
+    margin:0 auto;*/
+    position: relative;
+}
+
+#topnav {
+    padding:10px 0px 12px;
+    font-size:11px;
+    line-height:23px;
+    text-align:right;
+}
+#topnav a.signin {
+    background:#88bbd4;
+    padding:4px 6px 6px;
+    text-decoration:none;
+    font-weight:bold;
+    color:#fff;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    *background:transparent url("../images/signin-nav-bg-ie.png") no-repeat 0 0;
+    *padding:4px 12px 6px;
+}
+#topnav a.signin:hover {
+    background:#59B;
+    *background:transparent url("../images/signin-nav-bg-hover-ie.png") no-repeat 0 0;
+    *padding:4px 12px 6px;
+}
+#topnav a.signin, #topnav a.signin:hover {
+    *background-position:0 3px!important;
+}
+
+a.signin {
+    position:relative;
+    margin-left:3px;
+}
+a.signin span {
+    background-image:url("../images/toggle_down_light.png");
+    background-repeat:no-repeat;
+    background-position:100% 50%;
+    padding:4px 16px 6px 0;
+}
+#topnav a.menu-open {
+    background:#ddeef6!important;
+    color:#666!important;
+    outline:none;
+}
+#small_signup {
+    display:inline;
+    float:none;
+    line-height:23px;
+    margin:25px 0 0;
+    width:170px;
+}
+a.signin.menu-open span {
+    background-image:url("../images/toggle_up_dark.png");
+    color:#789;
+}
+
+#signin_menu {
+    -moz-border-radius-topleft:5px;
+    -moz-border-radius-bottomleft:5px;
+    -moz-border-radius-bottomright:5px;
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-bottom-left-radius:5px;
+    -webkit-border-bottom-right-radius:5px;
+    display:none;
+    background-color:#ddeef6;
+    position:absolute;
+    width:210px;
+    z-index:100;
+    border:1px transparent;
+    text-align:left;
+    padding:12px;
+    top: 24.5px; 
+    right: 0px; 
+    margin-top:5px;
+    margin-right: 0px;
+    *margin-right: -1px;
+    color:#789;
+    font-size:11px;
+}
+
+#signin_menu input[type=text], #signin_menu input[type=password] {
+    display:block;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border:1px solid #ACE;
+    font-size:13px;
+    margin:0 0 5px;
+    padding:5px;
+    width:203px;
+}
+#signin_menu p {
+    margin:0;
+}
+#signin_menu a {
+    color:#6AC;
+}
+#signin_menu label {
+    font-weight:normal;
+}
+#signin_menu p.remember {
+    padding:10px 0;
+}
+#signin_menu p.forgot, #signin_menu p.complete {
+    clear:both;
+    margin:5px 0;
+}
+#signin_menu p a {
+    color:#27B!important;
+}
+#signin_submit {
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    background:#39d url('../images/bg-btn-blue.png') repeat-x scroll 0 0;
+    border:1px solid #39D;
+    color:#fff;
+    text-shadow:0 -1px 0 #39d;
+    padding:4px 10px 5px;
+    font-size:11px;
+    margin:0 5px 0 0;
+    font-weight:bold;
+}
+#signin_submit::-moz-focus-inner {
+padding:0;
+border:0;
+}
+#signin_submit:hover, #signin_submit:focus {
+    background-position:0 -5px;
+    cursor:pointer;
+}
+/*********LOGUEO HOME***************/
+
+
+/************MENU*******************/
+/* Reset */
+#menuPrincipal ul, li {
+	margin: 0px;
+	padding: 0px;
+	text-indent: 0px;
+	z-index:999;
+}
+
+/* Style */
+#menuPrincipal ul {
+	background-color: #999;
+	list-style: url(none) none;
+}
+#menuPrincipal ul li {
+	/*display: inline;
+	position: relative;
+	background-color: #39f;*/
+	float: left;
+	margin: 0px;
+}
+#menuPrincipal ul li a {
+	color: #fff;
+	text-decoration: none;
+	background-color: #999;
+	font-size: 12px;
+	display: block;
+	/*width: 140px;
+	padding: 2px 5px;*/
+}
+#menuPrincipal ul li a:hover, ul li a:active {
+	color:#000;
+	background-color: #ccc;
+}
+#menuPrincipal ul li ul {
+	position: absolute;
+	display: none;
+}
+#menuPrincipal ul li ul li {
+	/*display: list-item;
+	float: none;*/
+	width:200px;
+	clear:both;
+	margin: 0px;
+	padding: 0px;
+}
+#menuPrincipal ul li ul li a {
+	font-size: 12px;
+}
+#menuPrincipal .li200{width:200px;color:#fff;}
+#menuPrincipal .padding{margin:0px; padding:0px;}
+#menuPrincipal .padding a {padding:2px 0 5px 10px;}
+
+#menuPrincipal .laEmpresa_es{width: 89px;}
+#menuPrincipal .reservas_es{width: 136px;}
+#menuPrincipal .Infoparatuviaje_es{width: 127px;}
+#menuPrincipal .Promociones_es{width: 100px;}
+#menuPrincipal .ArPlus_es{width: 121px;}
+#menuPrincipal .Corpo_es{width: 97px;}
+#menuPrincipal .Cargas_es{width: 68px;}
+
+#menuPrincipal .laEmpresa_en{width: 100px;}
+#menuPrincipal .reservas_en{width: 176px;}
+#menuPrincipal .Infoparatuviaje_en{width: 125px;}
+#menuPrincipal .Promociones_en{width: 109px;}
+#menuPrincipal .ArPlus_en{width: 121px;}
+#menuPrincipal .Corpo_en{width: 145px;}
+#menuPrincipal .Cargas_en{width: 55px;}
+
+#menuPrincipal .laEmpresa_po{width: 94px;}
+#menuPrincipal .reservas_po{width: 119px;}
+#menuPrincipal .Infoparatuviaje_po{width: 214px;}
+#menuPrincipal .Promociones_po{width: 95px;}
+#menuPrincipal .ArPlus_po{width: 121px;}
+#menuPrincipal .Corpo_po{width: 97px;}
+#menuPrincipal .Cargas_po{width: 63px;}
+
+#menuPrincipal .laEmpresa_it{width: 104px;}
+#menuPrincipal .reservas_it{width: 139px;}
+#menuPrincipal .Infoparatuviaje_it{width: 130px;}
+#menuPrincipal .Promociones_it{width: 95px;}
+#menuPrincipal .ArPlus_it{width: 121px;}
+#menuPrincipal .Corpo_it{width: 97px;}
+#menuPrincipal .Cargas_it{width: 68px;}
+/************MENU*******************/
+

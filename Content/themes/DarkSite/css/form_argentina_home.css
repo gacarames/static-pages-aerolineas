@@ -1,0 +1,328 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*HOME*/
+
+#contenedor_form_home { width:326px; height:326px;}
+	.box_form_home { 
+		 padding:6px 3px 5px 4px; 
+		 height:255px; 
+		 width:317px; 
+		 background-color:#EDEEEE; 
+		 border: solid 1px #ccc;
+		 /*border-radius:0 0 5px 5px; -webkit-border-radius: 0 0 5px 5px; -moz-border-radius: 0 0 5px 5px;*/
+		 }
+
+
+
+.bot1 {  
+			background: url("../img/home/bot1.jpg") no-repeat scroll 0 0 transparent;
+			float: left;
+			height: 19px;
+			padding-top: 4px;
+			width: 159px;
+		  }
+ .bot2 {
+			background: url("../img/home/bot2.jpg") no-repeat scroll 0 0 transparent;
+			float: left;
+			height: 18px;
+			padding-top: 5px;
+			width: 167px;
+		  }
+		  
+ .bot3 {
+			background: url("../img/home/bot3.jpg") no-repeat scroll 0 0 transparent;
+			float: left;
+			height: 21px;
+			padding-top: 3px;
+			width: 159px;
+		  }	
+		  
+.bot4 {
+			background: url("../img/home/bot4.jpg") no-repeat scroll 0 0 transparent;
+			float: left;
+			height: 21px;
+			padding-top: 3px;
+			width: 167px;	
+		  }
+	  
+		  
+.bot5 {
+			background: url("../img/home/bot5.jpg") no-repeat scroll 0 0 transparent;
+			float: left;
+			height: 23px;
+			padding-top: 3px;
+			width: 326px;
+		  }		
+		  
+span.alojamientos-off { background: url(../img/home/sprite_iconos.png) no-repeat -17px -21px; width: 17px; height: 10px; display:block; margin: 3px 10px 0 30px; float: left; }
+span.alojamientos-on { background: url(../img/home/sprite_iconos.png) no-repeat 0px -21px; width: 17px; height: 10px; display: block; margin: 3px 10px 0 30px; float: left; }
+span.autos-off { background: url(../img/home/sprite_iconos.png) no-repeat -17px -47px; float: left; width: 18px; height: 14px; display: block; margin: 0 10px 0 49px; }
+span.webcheckin-on { background:url(../img/home/sprite_iconos.png) no-repeat 0px 0px; float: left; width: 12px; height: 11px; display: block; margin: 3px 10px 0px 33px; }
+span.webcheckin-off { background:url(../img/home/sprite_iconos.png) no-repeat -12px 0px; float: left; width: 12px; height: 11px; display: block; margin: 3px 10px 0px 33px; }
+span.misviajes-on { background: url(../img/home/sprite_iconos.png) no-repeat 0px -31px; float: left; width: 19px; height: 16px; display: block; margin: 1px 10px 0 39px; }
+span.misviajes-off { background: url(../img/home/sprite_iconos.png) no-repeat -20px -31px; float: left; width:19px; height: 16px; display: block; margin: 1px 10px 0 39px; }
+span.vuelos-off { background: url(../img/home/sprite_iconos.png) no-repeat -19px -11px;  float: left; width: 19px; height: 10px; display: block; margin: 4px 10px 0 125px;}
+span.vuelos-on { background: url(../img/home/sprite_iconos.png) no-repeat 0px -11px; float: left; width: 19px; height: 10px; display: block; margin: 5px 10px 0 125px; }		    
+/*FIN DE HOME*/
+
+
+/*BOTONES CHECK IN*/
+.bot6 {
+		  padding-top:0; 
+		  padding-left:120px; 
+		  width:206px; 
+		  height:23px; 
+		  float:left; 
+		  background-image:url(../img/home/bot6.jpg)
+		  }	
+.bot7 {
+		  padding-top:3px; 
+		  padding-left:50px; 
+		  width:109px; 
+		  height:21px; 
+		  float:left; 
+		  background-image:url(../img/home/bot7.jpg)
+		  }	
+
+
+
+#contenedor_form { width:282px; height:326px;}
+
+.boton_alojamiento {  
+	  	  font: normal  "Neo_sans", Tahoma, Geneva, sans-serif;
+		  padding-top:4px; 
+		  padding-left:49px; 
+		  width:94px; 
+		  height:19px; 
+		  float:left; 
+		  background-image:url(../img/reservas/alojamientos.gif)
+		  }
+		  
+		   .texto_botonera { 
+	  font: normal 12px  "Neo_sans", Tahoma, Geneva, sans-serif;
+		  margin-right:1.000em; 
+		  text-decoration:none; 
+		  color:#666;
+		  }
+		  
+		     .texto_botonera_select { 
+	  font: normal 12px  "Neo_sans", Tahoma, Geneva, sans-serif;
+		  margin-right:1.000em; 
+		  text-decoration:none; 
+		  color:#fff;
+		  }
+		  
+		    .boton_autos {
+		  padding-top:5px; 
+		  padding-right:31px; 
+		  width:107px; 
+		  height:18px; 
+		  float:left; 
+		  background-image:url(../img/reservas/autos.gif)
+		  }
+		  
+		  .boton_check_in {
+		  padding-top:3px; 
+		  padding-left:35px; 
+		  width:107px; 
+		  height:21px; 
+		  float:left; 
+		  background-image:url(../img/reservas/check_in.gif)
+		  }
+		  
+		  .boton_mis_viajes {
+		  padding-top:0.188em; 
+		  padding-left:2.525em; 
+		  width:6.163em; 
+		  height:1.313em; 
+		  float:left; 
+		  background-image:url(../img/reservas/mis_viajes.gif)
+		  }
+		  
+		  .boton_vuelos {
+		  padding-top:0.188em; 
+		  padding-left:7.5em; 
+		  width:10.063em; 
+		  height:20px; 
+		  float:left; 
+		  background-image:url(../img/reservas/vuelos2.gif)
+		  }
+		  
+		  	.box_form { 
+		 padding:6px 3px 5px 4px; 
+		 height:245px; 
+		 width:272px; 
+		 background-color:#EDEEEE; 
+		 border: solid 1px #0081c6;
+		 border-radius:0 0 5px 5px; -webkit-border-radius: 0 0 5px 5px; -moz-border-radius: 0 0 5px 5px;
+		 }
+		 
+		 .box_form2 { 
+		 padding:6px 3px 5px 4px; 
+		 height:285px; 
+		 width:272px; 
+		 background-color:#EDEEEE; 
+		 border: solid 1px #0081c6;
+		 border-radius:0 0 5px 5px; -webkit-border-radius: 0 0 5px 5px; -moz-border-radius: 0 0 5px 5px;
+		 }
+		 
+		 .box_border {  border-bottom:solid 1px #000; margin-top:-2px; padding-top:0px; }
+		 
+		 .buscador {width:240px; margin-top:3px; margin-left:25px;}
+		 
+		  .buscador2 {width:45px; margin-top:3px;}
+		 
+		 .btn_it {text-align:center; 
+	width:88px; 
+	height:21px; 
+	background-image:url(../img/buttons/buscar.gif); 
+	padding-top:0.188em; 
+	font: normal 12px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF;
+	border:0; }
+		 
+	.btn2_it {text-align:center; 
+	width:131px; 
+	height:23px; 
+	background-image:url(../img/buttons/btn_buscar_50p.jpg); 
+	padding-top:1px; 
+	font: normal 12px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF;
+	border:0; }
+
+		 
+
+/*margen*/
+.mtop3 { margin-top:3px}
+.mtop10 { margin-top:10px}
+.mtop15 { margin-top:15px}
+.ml115 {margin-left:115px}
+.ml10 {margin-left:10px}
+.ml14 {margin-left:14px}
+.mr130 { margin-right:130px}
+.height20 { height:20px}
+
+/*align*/
+
+.fleft { float:left}
+
+/*textos*/
+
+
+.deco_none { text-decoration:none}
+		 .text1 {
+		  font: normal 11px Tahoma, Geneva, sans-serif; 
+		  color:#000
+		  ;}
+		  
+		   .text2 {
+		  font: normal 10px Tahoma, Geneva, sans-serif; 
+		  color:#000
+		  ;}
+		  .text3 { font: normal 11px Tahoma, Geneva, sans-serif; 
+		  color:#666666
+		  ;}
+		  
+/*boxes*/
+
+.width1 { width:45px}
+.width2 { width:105px}
+.width3 {width:135px}
+
+
+		  .search1 {
+	width:90px;
+	height:18px;
+	font-size:11px;
+	color: #666;
+	position:absolute;
+	margin-left:5px;
+	left: 186px;
+	top: 113px;
+}
+		  
+		  .search2 {
+	width:190px;
+	height:18px;
+	font-size:11px;
+	color: #666;
+	position:absolute;
+	margin-left:5px;
+	left: 84px;
+	top: 114px;
+}
+		 .redondeadas {  background-color: #fff;
+
+border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px;}
+		  
+		  .sombra_interior {  background-color:
+
+#fff;-moz-box-shadow: inset 1px 0  1px #999;}
+
+
+.input
+{
+    
+    border: 1px solid #FFF;
+    font-size:11px;
+    color: #666; padding-left:2px; background-color:#FFF;
+       
+}
+
+.input_arrow
+{
+    background: url(../img/buttons/arrow.gif)   no-repeat scroll 0 0 transparent ;  background-position: 172px 1px;
+    border: 1px solid #BFBFBF;
+    color: #BFBFBF; padding-left:2px; background-color:#FFF;
+       
+}
+
+.input_arrow_chico
+{
+    background: url(../img/buttons/arrow.gif)   no-repeat scroll 0 0 transparent ;  background-position: 25px 1px;
+    border: 1px solid #FFF;
+    font-size:11px;
+    color: #666; padding-left:2px; background-color:#FFF;
+       
+}
+
+.input_lupa
+{
+    background: url(../img/buttons/search.gif)   no-repeat scroll 0 0 transparent ; width:260px; height:20px;  background-position: 235px 3px;
+    border: 1px solid #fff; margin-bottom:4px; font-size:11px;
+    color: #666; padding-left:2px; background-color:#FFF;
+}
+.input_lupa_home
+{
+    background: url(../img/buttons/search.gif)   no-repeat scroll 0 0 transparent ; width:296px; height:20px;  background-position: 275px 3px;
+    border: 1px solid #fff; margin-bottom:4px; font-size:11px;
+    color: #666; padding-left:2px; background-color:#FFF;
+       
+}
+
+.input_lupa2
+{
+    background: url(../img/buttons/search2.gif)   no-repeat scroll 0 0 transparent ; width:266px; height:20px;  background-position: 260px 0px;
+    border: 1px solid #fff; margin-bottom:4px; font-size:11px;
+    color: #666; padding-left:2px; background-color:#FFF;
+       
+}
+
+.input_calendar
+{
+    background: url(../img/buttons/calendar.gif)   no-repeat scroll 0 0 transparent ; width:123px; height:18px;  background-position: 105px 3px;
+    border: 1px solid #fff; margin-bottom:10px; 
+    font-size:11px;
+    color: #666; padding-left:2px; background-color:#FFF;
+       
+}
+
+.input_calendar_home
+{
+    background: url(../img/buttons/calendar.gif)   no-repeat scroll 0 0 transparent ; width:143px; height:18px;  background-position: 125px 3px;
+    border: 1px solid #fff; margin-bottom:10px; 
+    font-size:11px;
+    color: #666; padding-left:2px; background-color:#FFF;
+       
+}

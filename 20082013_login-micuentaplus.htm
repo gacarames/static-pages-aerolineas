@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>Preguntas frecuentes y puntos de contacto - aerolineas.com</title>
+	<meta http-equiv="title" content="SkyPriority en Aerol&#237;neas Argentinas - aerolineas.com">
+	<meta name="Description" content="SkyPriority conjunto de beneficios que le permitir&#225;n tener una experiencia en los aeropuertos m&#225;s &#225;gil y placentera">
+    <link href="Images/condor_chico.gif" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />    
+    <link href="Content/themes/V2/css/screen.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/css/estilo.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/css/form_argentina.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/css/form_argentina_home.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/css/Extras.css" rel="stylesheet"/>
+    <link href="Content/themes/V2/Error.css" rel="stylesheet"/>
+    <link href="Content/themes/V2/jquery-ui-timepicker-addon.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.core.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.resizable.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.selectable.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.accordion.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.autocomplete.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.button.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.dialog.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.slider.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.tabs.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.datepicker.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.progressbar.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.theme.css" rel="stylesheet"/>
+    
+    <script src="Scripts/jquery-1.8.3.js"></script>
+    <script src="Scripts/jquery-ui-1.9.2.js"></script>
+    <script src="Scripts/jquery.unobtrusive-ajax.js"></script>
+	<script src="Scripts/jquery.validate.js"></script>
+    <script src="Scripts/modernizr-2.5.3.js"></script>
+    <script src="Scripts/funcionesVarias.js"></script>
+    <script src="Scripts/jquery.watermark.js"></script>
+</head>
+<body>
+    <div style="width:400px;" class="padding5" id="caja_plus">
+			<!-- FORM Login -->
+			<form action="index.php?secc=1" method="POST" name="frmIngresar">
+				<!-- HIDDEN -->
+				<input type="hidden" value="L" id="accion" name="accion">
+				<p style="width:300px;margin-left:50px;" class="azul mbot6"><strong>INGRESAR A MI CUENTA</strong></p>
+				<!-- NUMERO SOCIO y CLAVE -->
+				<div style="width:350px;" class="fright">
+					<input type="text" placeholder="Número de socio" id="txtNroSocio" name="txtNroSocio" class="width170 redondeado" alt="Número Socio">
+					<input type="password" placeholder="Clave" value="" id="txtClave" name="txtClave" class="width160 redondeado" alt="Clave">
+				</div>
+                <!-- ESTO ES LO QUE MODIFIQUE -->
+				<div style="margin-left:50px;" class="fleft width170">					
+					<a style="text-decoration:underline; font-weight: bold; font-size: 10px;" href="#inline2" id="various2" class="gris11">Olvidaste tu Nº de Socio?</a>
+				</div>
+                
+				<div style="margin-left:10px;" class="fleft mleft5 width136">
+					<a style="text-decoration:underline; font-weight: bold; font-size: 10px;" href="#inline3" id="various3" class="gris11">Primera vez que ingreso</a>
+					<a style="text-decoration:underline;display:none;" href="#inline4" id="various4" class="gris11">Primera vez que ingreso</a><br>
+                    <a style="text-decoration:underline; font-weight: bold; font-size: 10px;" href="#inline1" id="various1" class="gris11">Olvidaste tu Clave?</a><br>
+				</div>
+                <!-- /ESTO ES LO QUE MODIFIQUE -->
+				<!-- <div class="fleft mleft140 mtop5  "><a href="#" class="boton_ok" onclick="validarLogin();">OK</a></span></div> -->
+				<div class="fleft mtop19"><input type="submit" value="OK" class="boton_ok"></div>
+			</form>
+			<!-- END FORM -->
+		</div>
+</body>
+</html>

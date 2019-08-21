@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Aerolineas Argentinas</title>
+    <meta http-equiv="title" content="Aerolineas Argentinas">
+    <meta name="Description" content="Todo tu viaje en un solo lugar aerolineas.com, vuelos baratos.">
+    <link href="Images/condor_chico.gif" rel="shortcut icon" type="image/x-icon" />
+    <link href="http://www.aerolineas.com.ar/es-ar" rel="canonical"></link>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.touchSwipe.min.js"></script>
+    <script src="js/slick.min.js"></script><!-- Script footer menu carousel -->
+
+    <script src="js/jquery.matchHeight-min.js"></script><!--  Match Height Cols -->
+    <script>// matchHeight blocks content
+        $(document).ready(function() {
+            $('.col-desc').matchHeight();
+            $('.col-desc .title').matchHeight();
+        });
+    </script>
+      
+    <script src="js/locales/es-AR.min.js"></script><!-- //datapicker form -->
+    <script src="js/datepicker.min.js"></script> <!-- //datapicker form -->
+    <script src="js/form-home.js"></script><!-- //datapicker form home -->
+
+    <link rel="stylesheet" href="css/selectize.css" /><!-- //selects form CSS -->
+    <script src="js/selectize.js"></script> <!-- //selects form -->
+    <script>//selectize
+        $(document).ready(function() {
+            $('.selectSearch').selectize({
+                sortField: 'text'
+            });
+        });
+    </script>
+
+    <script src="js/chat.js"></script><!-- //chat -->
+    <script src="js/form-search.js"></script><!-- //datapicker form search -->
+
+
+     <!-- <msdropdown> -->
+    <link rel="stylesheet" href="css/msdropdown/dd.css" />
+    <script src="js/msdropdown/jquery.dd.min.js"></script>
+    <link rel="stylesheet" href="css/msdropdown/skin2.css" />
+    <link rel="stylesheet" href="css/msdropdown/flags.css" />
+    <!-- </msdropdown> -->
+
+    <script src="js/jquery.html5-placeholder-shim.js"></script>
+    
+    <script src="js/scripts.js"></script><!-- general scripts -->
+    <script src="js/jquery.validate-1.14.0.min.js"></script>
+    <!-- //validate form -->
+    <script src="js/jquery-validate.bootstrap-tooltip.js"></script>
+    <!-- //validate form -->
+    <script>
+    $(document).ready(function() {
+        $("#reservationFlightSearchForm").validate({
+            rules: {
+                typeOfCabin: {
+                    required: true
+                },
+                Adults: {
+                    required: true
+                },
+                Menores: {
+                    required: true
+                }
+            },
+            messages: {
+                typeOfCabin: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quam deleniti aspernatur, ipsum aliquam commodi accusantium. Quibusdam quas animi quod."
+            }
+        });
+
+        $('.more-info-tooltip').tooltip();
+        $('.more-info-tooltip').click(function(e){
+                if($(this).parent('div').find(".tooltip").length){
+                    $('.more-info-tooltip').tooltip('hide');
+                }
+                else{
+                    $(this).tooltip('show');
+
+                }
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <!-- CONTENEDOR -->
+    <div id="main-content" class="home">
+        <header role="banner">
+            <a href="#utilityNav" class="firstFocus"></a>
+            <ul id="utilityNav" class="list-unstyled" accesskey="a">
+                <li><a href="#main-nav" class="">Skip to main navigation</a></li>
+                <li><a href="#wrapper" class="">Skip to main content</a></li>
+                <li><a href="#footer" class="">Skip to footer</a></li>
+            </ul>
+            <div id="header" class="clearfix">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div id="header-top" class="header-top clearfix">
+                        <div id="logo-header" class="pull-left">
+                            <a href="index.html" accesskey="h" ><img alt="Aerolineas.com" src="img/common/logo_Aerolineas.gif" /></a>
+                        </div>
+                        <div id="access-top" class="pull-right">
+                            <div id="CultureContainer" class="hidden-xs hidden-sm">
+                            <select class="INPUTBuscador" id="culture" name="culture" title="Culture">
+                                <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag ar" selected="selected" value="es-ar" data-title="Argentina (Español)">Argentina (Español)</option>
+                                <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag ar" value="en-ar" data-title="Argentina (Inglés)">Argentina (Inglés)</option>
+                                <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag au" value="en-au" data-title="Australia">Australia</option>
+                                <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag bo" value="es-bo" data-title="Bolivia">Bolivia</option>
+                                <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag br" value="pt-br" data-title="Brasil">Brasil</option>
+                                <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag co" value="es-co" data-title="Colombia">Colombia</option>
+                                <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag cl" value="es-cl" data-title="Chile">Chile</option>
+                                <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag es" value="es-eu" data-title="España">España</option>
+                                <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag fr" value="fr-fr" data-title="Francia">Francia</option>
+                                <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag it" value="it-eu" data-title="Italia">Italia</option>
+                                <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag mx" value="es-mx" data-title="México">México</option>
+                                <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag nz" value="en-nz" data-title="New Zealand">New Zealand</option>
+                                <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag pa" value="es-pa" data-title="Paraguay">Paraguay</option>
+                                <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag pe" value="es-pe" data-title="Perú">Perú </option>
+                                <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag en" value="en-eu" data-title="Rest of Europe">Rest of Europe</option>
+                                <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag uy" value="es-uy" data-title="Uruguay">Uruguay</option>
+                                <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag us" value="es-us" data-title="United States (Español)">United States (Español)</option>
+                                <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag us" value="en-us" data-title="United States (English)">United States (English)</option>
+                                <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag es" value="es-us" data-title="Otros países (Español)">Otros países (Español)</option>
+                                <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag us" value="en-us" data-title="Other Countries (English)">Other Countries (English)</option>
+                            </select>
+                            </div>                              
+                            
+                            <!-- 
+                            <div id="user-arplus">
+                                <span class="name text-blue"><i class="fa fa-user" aria-hidden="true"></i> <span>Maximiliano Ballesteros</span></span>
+                                <a id="logout" href="" class="underline">Cerrar sesión</a>
+                            </div> 
+                             -->
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-header-collapse" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- NAVBAR -->
+                    <nav id="main-nav" class="navbar navbar-default" role="navigation" aria-label="Menú principal">
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="navbar-header-collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="menu-item hidden-md hidden-lg">
+                                    <div id="CultureContainer_m">
+                                       <select class="INPUTBuscador" id="culture_m" name="culture_m" title="culture_m">
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag ar" selected="selected" value="es-ar" data-title="Argentina (Español)">Argentina (Español)</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag ar" value="en-ar" data-title="Argentina (Inglés)">Argentina (Inglés)</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag au" value="en-au" data-title="Australia">Australia</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag bo" value="es-bo" data-title="Bolivia">Bolivia</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag br" value="pt-br" data-title="Brasil">Brasil</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag co" value="es-co" data-title="Colombia">Colombia</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag cl" value="es-cl" data-title="Chile">Chile</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag es" value="es-eu" data-title="España">España</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag fr" value="fr-fr" data-title="Francia">Francia</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag it" value="it-eu" data-title="Italia">Italia</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag mx" value="es-mx" data-title="México">México</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag nz" value="en-nz" data-title="New Zealand">New Zealand</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag pa" value="es-pa" data-title="Paraguay">Paraguay</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag pe" value="es-pe" data-title="Perú">Perú </option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag en" value="en-eu" data-title="Rest of Europe">Rest of Europe</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag uy" value="es-uy" data-title="Uruguay">Uruguay</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag us" value="es-us" data-title="United States (Español)">United States (Español)</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag us" value="en-us" data-title="United States (English)">United States (English)</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag es" value="es-us" data-title="Otros países (Español)">Otros países (Español)</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag us" value="en-us" data-title="Other Countries (English)">Other Countries (English)</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li class="menu-item">
+                                <a href="productos-opcionales.html">
+                                   Productos opcionales<span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="arplus.html">Viajeros Frecuentes</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="servicios.html">Servicios al cliente</a>
+                                </li>
+                                <li class="hidden-md hidden-lg"><a href="#"><span><img src="img/common/ico_plane.png" alt="Vuelos" role="presentation"></span> Reservá tu vuelo</a></li>
+                                <li class="hidden-md hidden-lg"><a href="#"><span><img src="img/common/ico_chat.png" alt="chat" role="presentation"></span> ¿Necesitas ayuda?</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </nav>
+                    <!-- /NAVBAR -->
+                </div>
+                <!-- /.container -->
+            </div>
+        </header>
+
+        <!-- CONTENEDOR WRAPPER -->
+        <div id="wrapper" role="main">
+            <!-- #hero-form -->
+            <div id="hero-form" class="hero-form hero-form-slider">
+                <!-- Carousel -->
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active" role="option">
+                            <div class="container hidden-xs hidden-sm">
+                            <!-- Countdown dashboard start -->
+                                <div id="countdown_dashboard" class="hidden-xs"> 
+                                  <div class="content-countdown">
+                                      <span class="title"><i class="fa fa-bullhorn" aria-hidden="true"></i> ¡Apurate! Queda poco tiempo</span>  
+                                      <div class="dash-contente">
+                                           <div class="dash days_dash">
+                                              <div class="digit">0</div>
+                                              <div class="digit">0</div>
+                                              <span>Días</span>
+                                            </div>              
+                                            <div class="dash hours_dash">
+                                              <div class="digit">0</div>
+                                              <div class="digit">0</div>
+                                              <span>Horas</span>
+                                            </div>
+
+                                            <div class="dash minutes_dash">
+                                              <div class="digit">0</div>
+                                              <div class="digit">0</div>
+                                              <span>Minutos</span>
+                                            </div>
+
+                                            <div class="dash seconds_dash">
+                                              <div class="digit">0</div>
+                                              <div class="digit">0</div>
+                                              <span>Segundos</span>
+                                            </div>
+                                      </div> 
+                                  </div>
+                                </div>
+                                <!-- Countdown dashboard end -->
+                                <div class="carousel-caption">
+                                    <h2 class="title"><a href="#">Another example headline.</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <div class="controls visible-xs-inline-block">
+                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <!-- Controls -->
+                </div>
+                <!-- /.carousel -->
+                <div class="container">
+                    <!-- form-slider -->
+                    <div class="form-slider">
+                        <div id="contenedor_form-slider" class="clearfix">
+                            <h3 class="title"><span><img src="img/common/ico_plane.png" alt="Vuelos" role="presentation"> Vuelos</span></h3>
+                            <form id="reservationFlightSearchForm" class="form" method="post" name="reservationFlightSearchForm">
+                                <div class="content">
+                                    <fieldset>
+                                        <legend class="sr-only">Datos del vuelo</legend>
+                                        <div class="group-checkradio">
+                                            <label class="radio-inline">
+                                                <input type="radio" name="tripType" id="tripTypeReturnTravel" value="ReturnTravel" checked>Ida y vuelta
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="tripType" id="tripTypeOneWayTravel" value="OneWayTravel"> Ida
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="tripType" id="tripTypeMultiCity" value="MultiCity"> Multiples Destinos
+                                            </label>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputOrigin" class="sr-only">Origen</label>
+                                            <select id="inputOrigin" class="selectSearch js-states" name="inputOrigin">
+                                                <option value="">Seleccionar Origen</option>
+                                                <optgroup label="Albania">Albania
+                                                    <option value="2">Tirana (TIA)</option>
+                                                </optgroup>
+                                                <optgroup label="Alemania">Alemania
+                                                    <option value="268">Berlín (TXL)</option>
+                                                    <option value="111">Frankfurt (FRA)</option>
+                                                    <option value="113">Munich (MUC)</option>
+                                                </optgroup>
+                                                <optgroup label="Argentina">Argentina
+                                                    <option value="18">Bahía Blanca (BHI)</option>
+                                                    <option value="12">Bariloche (BRC)</option>
+                                                    <option value="19">Buenos Aires (BUE)</option>
+                                                    <option value="77">Catamarca (CTC)</option>
+                                                    <option value="209">Comodoro Rivadavia (CRD)</option>
+                                                    <option value="223">Córdoba (COR)</option>
+                                                    <option value="246">Corrientes (CNQ)</option>
+                                                    <option value="16">El Calafate (FTE)</option>
+                                                    <option value="210">Esquel (EQS)</option>
+                                                    <option value="247">Formosa (FMA)</option>
+                                                    <option value="8">Iguazú (IGR)</option>
+                                                    <option value="248">Jujuy (JUJ)</option>
+                                                    <option value="4">La Rioja (IRJ)</option>
+                                                    <option value="21">Mar del Plata (MDQ)</option>
+                                                    <option value="7">Mendoza (MDZ)</option>
+                                                    <option value="11">Neuquén (NQN)</option>
+                                                    <option value="267">Paraná (PRA)</option>
+                                                    <option value="9">Posadas (PSS)</option>
+                                                    <option value="141">Resistencia (RES)</option>
+                                                    <option value="350">Rio Cuarto (RCU)</option>
+                                                    <option value="17">Rio Gallegos (RGL)</option>
+                                                    <option value="26">Rio Grande (RGA)</option>
+                                                    <option value="24">Rio Hondo (RHD)</option>
+                                                    <option value="22">Rosario (ROS)</option>
+                                                    <option value="14">Salta (SLA)</option>
+                                                    <option value="15">San Juan (UAQ)</option>
+                                                    <option value="245">San Luis (LUQ)</option>
+                                                    <option value="10">San Martín de los Andes (CPC)</option>
+                                                    <option value="5">San Rafael (AFA)</option>
+                                                    <option value="23">Santa Fe (SFN)</option>
+                                                    <option value="3">Santa Rosa (RSA)</option>
+                                                    <option value="25">Santiago del Estero (SDE)</option>
+                                                    <option value="211">Trelew (REL)</option>
+                                                    <option value="28">Tucumán (TUC)</option>
+                                                    <option value="27">Ushuaia (USH)</option>
+                                                    <option value="13">Viedma (VDM)</option>
+                                                </optgroup>
+                                                <optgroup label="Australia">Australia
+                                                    <option value="42">Melbourne (MEL)</option>
+                                                    <option value="47">Sydney (SYD)</option>
+                                                </optgroup>
+                                                <optgroup label="Belgica">Belgica
+                                                    <option value="49">Bruselas (BRU)</option>
+                                                </optgroup>
+                                                <optgroup label="Bolivia">Bolivia
+                                                    <option value="51">Cochabamba (CBB)</option>
+                                                    <option value="52">La Paz (LPB)</option>
+                                                    <option value="316">Rurrenabaque (RBQ)</option>
+                                                    <option value="55">Santa Cruz de la Sierra (SRZ)</option>
+                                                    <option value="53">Sucre (SRE)</option>
+                                                    <option value="315">Uyuni (UYU)</option>
+                                                </optgroup>
+                                                <optgroup label="Brasil">Brasil
+                                                    <option value="56">Aracajú (AJU)</option>
+                                                    <option value="57">Belem (BEL)</option>
+                                                    <option value="58">Belo Horizonte (BHZ)</option>
+                                                    <option value="59">Brasilia (BSB)</option>
+                                                    <option value="61">Campo Grande (CGR)</option>
+                                                    <option value="60">Cuiaba (CGB)</option>
+                                                    <option value="62">Curitiba (CWB)</option>
+                                                    <option value="63">Florianópolis (FLN)</option>
+                                                    <option value="64">Fortaleza (FOR)</option>
+                                                    <option value="302">Foz de Iguazu (IGU)</option>
+                                                    <option value="65">Goiania (GYN)</option>
+                                                    <option value="304">Ilheus (IOS)</option>
+                                                    <option value="303">Imperatriz (IMP)</option>
+                                                    <option value="300">Joao Pessoa (JPA)</option>
+                                                    <option value="334">Joinville (JOI)</option>
+                                                    <option value="301">Londrina (LDB)</option>
+                                                    <option value="67">Maceió (MCZ)</option>
+                                                    <option value="66">Manaos (MAO)</option>
+                                                    <option value="305">Maraba (MAB)</option>
+                                                    <option value="306">Maringa (MGF)</option>
+                                                    <option value="307">Montes Claros (MOC)</option>
+                                                    <option value="68">Natal (NAT)</option>
+                                                    <option value="299">Navegantes (NVT)</option>
+                                                    <option value="308">Palmas (PMW)</option>
+                                                    <option value="69">Porto Alegre (POA)</option>
+                                                    <option value="269">Porto Seguro (BPS)</option>
+                                                    <option value="309">Porto Velho (PVH)</option>
+                                                    <option value="70">Recife (REC)</option>
+                                                    <option value="310">Rio Branco (RBR)</option>
+                                                    <option value="71">Río de Janeiro (RIO)</option>
+                                                    <option value="74">Salvador de Bahía (SSA)</option>
+                                                    <option value="73">Sao Luis (SLZ)</option>
+                                                    <option value="72">São Paulo (SAO)</option>
+                                                    <option value="75">Teresina (THE)</option>
+                                                    <option value="298">Uberlandia (UDI)</option>
+                                                    <option value="76">Victoria (VIX)</option>
+                                                </optgroup>
+                                                <optgroup label="Bulgaria">Bulgaria
+                                                    <option value="50">Sofia (SOF)</option>
+                                                </optgroup>
+                                                <optgroup label="Canada">Canada
+                                                    <option value="322">Montreal (YMQ)</option>
+                                                    <option value="324">Quebec (YQB)</option>
+                                                    <option value="323">Toronto (YTO)</option>
+                                                </optgroup>
+                                                <optgroup label="Chile">Chile
+                                                    <option value="88">Santiago de Chile (SCL)</option>
+                                                </optgroup>
+                                                <optgroup label="Colombia">Colombia
+                                                    <option value="91">Armenia (AXM)</option>
+                                                    <option value="98">Barrancabermeja (EJA)</option>
+                                                    <option value="92">Barranquilla (BAQ)</option>
+                                                    <option value="94">Bogotá (BOG)</option>
+                                                    <option value="93">Bucaramanga (BGA)</option>
+                                                    <option value="95">Cali (CLO)</option>
+                                                    <option value="96">Cartagena (CTG)</option>
+                                                    <option value="97">Cúcuta (CUC)</option>
+                                                    <option value="99">Ibagué (IBE)</option>
+                                                    <option value="102">Manizales (MZL)</option>
+                                                    <option value="100">Medellín (MDE)</option>
+                                                    <option value="101">Montería (MTR)</option>
+                                                    <option value="103">Neiva (NVA)</option>
+                                                    <option value="332">Pasto (PSO)</option>
+                                                    <option value="104">Pereira (PEI)</option>
+                                                    <option value="105">Popayán (PPN)</option>
+                                                    <option value="106">Riohacha (RCH)</option>
+                                                    <option value="90">San Andrés (ADZ)</option>
+                                                    <option value="107">Santa Marta (SMR)</option>
+                                                    <option value="108">Valledupar (VUP)</option>
+                                                </optgroup>
+                                                <optgroup label="Croacia">Croacia
+                                                    <option value="313">Dubrovnik (DBV)</option>
+                                                    <option value="312">Split (SPU)</option>
+                                                    <option value="145">Zagreb (ZAG)</option>
+                                                </optgroup>
+                                                <optgroup label="Cuba">Cuba
+                                                    <option value="318">La Habana (HAV)</option>
+                                                </optgroup>
+                                                <optgroup label="EEUU">EEUU
+                                                    <option value="224">Atlanta (ATL)</option>
+                                                    <option value="279">Baltimore (BWI)</option>
+                                                    <option value="277">Boston (BOS)</option>
+                                                    <option value="278">Buffalo (BUF)</option>
+                                                    <option value="280">Charleston (CHS)</option>
+                                                    <option value="282">Charlotte (CLT)</option>
+                                                    <option value="225">Chicago (CHI)</option>
+                                                    <option value="284">Cincinnati (CVG)</option>
+                                                    <option value="281">Cleveland (CLE)</option>
+                                                    <option value="283">Columbus (CMH)</option>
+                                                    <option value="286">Dallas (DFW)</option>
+                                                    <option value="285">Denver (DEN)</option>
+                                                    <option value="226">Detroit (DTT)</option>
+                                                    <option value="290">Filadelfia (PHL)</option>
+                                                    <option value="287">Houston (IAH)</option>
+                                                    <option value="288">Indianapolis (IND)</option>
+                                                    <option value="289">Las Vegas (LAS)</option>
+                                                    <option value="227">Los Angeles (LAX)</option>
+                                                    <option value="228">Memphis (MEM)</option>
+                                                    <option value="229">Miami (MIA)</option>
+                                                    <option value="230">Mineápolis (MSP)</option>
+                                                    <option value="336">Nashville (BNA)</option>
+                                                    <option value="335">New Orleans (MSY)</option>
+                                                    <option value="231">Nueva York (NYC)</option>
+                                                    <option value="342">Orlando (ORL)</option>
+                                                    <option value="291">Pittsburgh (PIT)</option>
+                                                    <option value="292">Richmond (RIC)</option>
+                                                    <option value="296">Saint Louis (STL)</option>
+                                                    <option value="295">Salt Lake City (SLC)</option>
+                                                    <option value="293">San Diego (SAN)</option>
+                                                    <option value="297">San Francisco (SFO)</option>
+                                                    <option value="294">Seattle (SEA)</option>
+                                                    <option value="232">Washington (WAS)</option>
+                                                </optgroup>
+                                                <optgroup label="Ecuador">Ecuador
+                                                    <option value="329">Guayaquil (GYE)</option>
+                                                </optgroup>
+                                                <optgroup label="Egipto">Egipto
+                                                    <option value="115">El Cairo (CAI)</option>
+                                                </optgroup>
+                                                <optgroup label="España">España
+                                                    <option value="128">Asturias-Oviedo (OVD)</option>
+                                                    <option value="119">Barcelona (BCN)</option>
+                                                    <option value="120">Bilbao (BIO)</option>
+                                                    <option value="121">Fuerteventura (FUE)</option>
+                                                    <option value="125">Gran Canaria (LPA)</option>
+                                                    <option value="123">Ibiza (IBZ)</option>
+                                                    <option value="116">Lanzarote (ACE)</option>
+                                                    <option value="126">Madrid (MAD)</option>
+                                                    <option value="127">Menorca (MAH)</option>
+                                                    <option value="129">Palma de Mallorca (PMI)</option>
+                                                    <option value="132">Tenerife Norte (TFN)</option>
+                                                    <option value="136">Valencia (VLC)</option>
+                                                    <option value="135">Vigo (VGO)</option>
+                                                </optgroup>
+                                                <optgroup label="Francia">Francia
+                                                    <option value="275">Bordeaux (BOD)</option>
+                                                    <option value="138">Marsella (MRS)</option>
+                                                    <option value="139">Niza (NCE)</option>
+                                                    <option value="140">París (PAR)</option>
+                                                    <option value="274">Toulouse (TLS)</option>
+                                                </optgroup>
+                                                <optgroup label="Gran" bretaña="">Gran Bretaña
+                                                    <option value="142">Londres (LON)</option>
+                                                </optgroup>
+                                                <optgroup label="Grecia">Grecia
+                                                    <option value="143">Atenas (ATH)</option>
+                                                </optgroup>
+                                                <optgroup label="Holanda">Holanda
+                                                    <option value="207">Amsterdam (AMS)</option>
+                                                </optgroup>
+                                                <optgroup label="Hungria">Hungria
+                                                    <option value="146">Budapest (BUD)</option>
+                                                </optgroup>
+                                                <optgroup label="Israel">Israel
+                                                    <option value="147">Tel Aviv (TLV)</option>
+                                                </optgroup>
+                                                <optgroup label="Italia">Italia
+                                                    <option value="317">Alghero (AHO)</option>
+                                                    <option value="151">Bari (BRI)</option>
+                                                    <option value="150">Bologna (BLQ)</option>
+                                                    <option value="149">Brindisi (BDS)</option>
+                                                    <option value="152">Cagliari (CAG)</option>
+                                                    <option value="154">Catania (CTA)</option>
+                                                    <option value="155">Florencia (FLR)</option>
+                                                    <option value="156">Génova (GOA)</option>
+                                                    <option value="164">Lamezia Terme (SUF)</option>
+                                                    <option value="157">Milán (MIL)</option>
+                                                    <option value="159">Nápoles (NAP)</option>
+                                                    <option value="160">Palermo (PMO)</option>
+                                                    <option value="161">Pisa (PSA)</option>
+                                                    <option value="162">Reggio Calabria (REG)</option>
+                                                    <option value="163">Roma (ROM)</option>
+                                                    <option value="165">Torino (TRN)</option>
+                                                    <option value="166">Trieste (TRS)</option>
+                                                    <option value="167">Venecia (VCE)</option>
+                                                    <option value="168">Verona (VRN)</option>
+                                                </optgroup>
+                                                <optgroup label="Korea" (south)="">Korea (South)
+                                                    <option value="338">Seul (SEL)</option>
+                                                </optgroup>
+                                                <optgroup label="Malta">Malta
+                                                    <option value="169">Malta (MLA)</option>
+                                                </optgroup>
+                                                <optgroup label="Marruecos">Marruecos
+                                                    <option value="320">Casablanca (CAS)</option>
+                                                    <option value="321">Tanger (TNG)</option>
+                                                </optgroup>
+                                                <optgroup label="Mexico">Mexico
+                                                    <option value="178">Cancún (CUN)</option>
+                                                </optgroup>
+                                                <optgroup label="Nueva" zelanda="">Nueva Zelanda
+                                                    <option value="208">Auckland (AKL)</option>
+                                                </optgroup>
+                                                <optgroup label="Paraguay">Paraguay
+                                                    <option value="212">Asunción (ASU)</option>
+                                                </optgroup>
+                                                <optgroup label="Perú">Perú
+                                                    <option value="343">Arequipa (AQP)</option>
+                                                    <option value="344">Cuzco (CUZ)</option>
+                                                    <option value="213">Lima (LIM)</option>
+                                                    <option value="347">Piura (PIU)</option>
+                                                    <option value="346">Pucallpa (PCL)</option>
+                                                    <option value="348">Tacna (TCQ)</option>
+                                                    <option value="349">Tarapoto (TPP)</option>
+                                                </optgroup>
+                                                <optgroup label="Polonia">Polonia
+                                                    <option value="214">Varsovia (WAW)</option>
+                                                </optgroup>
+                                                <optgroup label="Portugal">Portugal
+                                                    <option value="215">Lisboa (LIS)</option>
+                                                    <option value="314">Oporto (OPO)</option>
+                                                </optgroup>
+                                                <optgroup label="Republica" checa="">Republica Checa
+                                                    <option value="109">Praga (PRG)</option>
+                                                </optgroup>
+                                                <optgroup label="Republica" dominicana="">Republica Dominicana
+                                                    <option value="319">Punta Cana (PUJ)</option>
+                                                </optgroup>
+                                                <optgroup label="Rumania">Rumania
+                                                    <option value="216">Bucarest (BUH)</option>
+                                                </optgroup>
+                                                <optgroup label="Rusia">Rusia
+                                                    <option value="219">Moscú (MOW)</option>
+                                                    <option value="218">San Petersburgo (LED)</option>
+                                                </optgroup>
+                                                <optgroup label="Serbia">Serbia
+                                                    <option value="217">Belgrado (BEG)</option>
+                                                </optgroup>
+                                                <optgroup label="Suiza">Suiza
+                                                    <option value="78">Ginebra (GVA)</option>
+                                                    <option value="79">Zurich (ZRH)</option>
+                                                </optgroup>
+                                                <optgroup label="Tunisia">Tunisia
+                                                    <option value="330">Tunez (TUN)</option>
+                                                </optgroup>
+                                                <optgroup label="Turquía">Turquía
+                                                    <option value="221">Estambul (IST)</option>
+                                                </optgroup>
+                                                <optgroup label="Ucrania">Ucrania
+                                                    <option value="222">Kiev (IEV)</option>
+                                                </optgroup>
+                                                <optgroup label="Uruguay">Uruguay
+                                                    <option value="233">Montevideo (MVD)</option>
+                                                    <option value="234">Punta del Este (PDP)</option>
+                                                </optgroup>
+                                                <optgroup label="Venezuela">Venezuela
+                                                    <option value="236">Caracas (CCS)</option>
+                                                    <option value="243">El Vigía (VIG)</option>
+                                                    <option value="238">Maracaibo (MAR)</option>
+                                                    <option value="240">Porlamar (PMV)</option>
+                                                </optgroup>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputDestination" class="sr-only">Destino</label>
+                                            <select id="inputDestination" class="selectSearch js-states" name="inputDestination">
+                                                <option value="">Seleccionar Destino</option>
+                                                <optgroup label="Albania">Albania
+                                                    <option value="2">Tirana (TIA)</option>
+                                                </optgroup>
+                                                <optgroup label="Alemania">Alemania
+                                                    <option value="268">Berlín (TXL)</option>
+                                                    <option value="111">Frankfurt (FRA)</option>
+                                                    <option value="113">Munich (MUC)</option>
+                                                </optgroup>
+                                                <optgroup label="Argentina">Argentina
+                                                    <option value="18">Bahía Blanca (BHI)</option>
+                                                    <option value="12">Bariloche (BRC)</option>
+                                                    <option value="19">Buenos Aires (BUE)</option>
+                                                    <option value="77">Catamarca (CTC)</option>
+                                                    <option value="209">Comodoro Rivadavia (CRD)</option>
+                                                    <option value="223">Córdoba (COR)</option>
+                                                    <option value="246">Corrientes (CNQ)</option>
+                                                    <option value="16">El Calafate (FTE)</option>
+                                                    <option value="210">Esquel (EQS)</option>
+                                                    <option value="247">Formosa (FMA)</option>
+                                                    <option value="8">Iguazú (IGR)</option>
+                                                    <option value="248">Jujuy (JUJ)</option>
+                                                    <option value="4">La Rioja (IRJ)</option>
+                                                    <option value="21">Mar del Plata (MDQ)</option>
+                                                    <option value="7">Mendoza (MDZ)</option>
+                                                    <option value="11">Neuquén (NQN)</option>
+                                                    <option value="267">Paraná (PRA)</option>
+                                                    <option value="9">Posadas (PSS)</option>
+                                                    <option value="141">Resistencia (RES)</option>
+                                                    <option value="350">Rio Cuarto (RCU)</option>
+                                                    <option value="17">Rio Gallegos (RGL)</option>
+                                                    <option value="26">Rio Grande (RGA)</option>
+                                                    <option value="24">Rio Hondo (RHD)</option>
+                                                    <option value="22">Rosario (ROS)</option>
+                                                    <option value="14">Salta (SLA)</option>
+                                                    <option value="15">San Juan (UAQ)</option>
+                                                    <option value="245">San Luis (LUQ)</option>
+                                                    <option value="10">San Martín de los Andes (CPC)</option>
+                                                    <option value="5">San Rafael (AFA)</option>
+                                                    <option value="23">Santa Fe (SFN)</option>
+                                                    <option value="3">Santa Rosa (RSA)</option>
+                                                    <option value="25">Santiago del Estero (SDE)</option>
+                                                    <option value="211">Trelew (REL)</option>
+                                                    <option value="28">Tucumán (TUC)</option>
+                                                    <option value="27">Ushuaia (USH)</option>
+                                                    <option value="13">Viedma (VDM)</option>
+                                                </optgroup>
+                                                <optgroup label="Australia">Australia
+                                                    <option value="42">Melbourne (MEL)</option>
+                                                    <option value="47">Sydney (SYD)</option>
+                                                </optgroup>
+                                                <optgroup label="Belgica">Belgica
+                                                    <option value="49">Bruselas (BRU)</option>
+                                                </optgroup>
+                                                <optgroup label="Bolivia">Bolivia
+                                                    <option value="51">Cochabamba (CBB)</option>
+                                                    <option value="52">La Paz (LPB)</option>
+                                                    <option value="316">Rurrenabaque (RBQ)</option>
+                                                    <option value="55">Santa Cruz de la Sierra (SRZ)</option>
+                                                    <option value="53">Sucre (SRE)</option>
+                                                    <option value="315">Uyuni (UYU)</option>
+                                                </optgroup>
+                                                <optgroup label="Brasil">Brasil
+                                                    <option value="56">Aracajú (AJU)</option>
+                                                    <option value="57">Belem (BEL)</option>
+                                                    <option value="58">Belo Horizonte (BHZ)</option>
+                                                    <option value="59">Brasilia (BSB)</option>
+                                                    <option value="61">Campo Grande (CGR)</option>
+                                                    <option value="60">Cuiaba (CGB)</option>
+                                                    <option value="62">Curitiba (CWB)</option>
+                                                    <option value="63">Florianópolis (FLN)</option>
+                                                    <option value="64">Fortaleza (FOR)</option>
+                                                    <option value="302">Foz de Iguazu (IGU)</option>
+                                                    <option value="65">Goiania (GYN)</option>
+                                                    <option value="304">Ilheus (IOS)</option>
+                                                    <option value="303">Imperatriz (IMP)</option>
+                                                    <option value="300">Joao Pessoa (JPA)</option>
+                                                    <option value="334">Joinville (JOI)</option>
+                                                    <option value="301">Londrina (LDB)</option>
+                                                    <option value="67">Maceió (MCZ)</option>
+                                                    <option value="66">Manaos (MAO)</option>
+                                                    <option value="305">Maraba (MAB)</option>
+                                                    <option value="306">Maringa (MGF)</option>
+                                                    <option value="307">Montes Claros (MOC)</option>
+                                                    <option value="68">Natal (NAT)</option>
+                                                    <option value="299">Navegantes (NVT)</option>
+                                                    <option value="308">Palmas (PMW)</option>
+                                                    <option value="69">Porto Alegre (POA)</option>
+                                                    <option value="269">Porto Seguro (BPS)</option>
+                                                    <option value="309">Porto Velho (PVH)</option>
+                                                    <option value="70">Recife (REC)</option>
+                                                    <option value="310">Rio Branco (RBR)</option>
+                                                    <option value="71">Río de Janeiro (RIO)</option>
+                                                    <option value="74">Salvador de Bahía (SSA)</option>
+                                                    <option value="73">Sao Luis (SLZ)</option>
+                                                    <option value="72">São Paulo (SAO)</option>
+                                                    <option value="75">Teresina (THE)</option>
+                                                    <option value="298">Uberlandia (UDI)</option>
+                                                    <option value="76">Victoria (VIX)</option>
+                                                </optgroup>
+                                                <optgroup label="Bulgaria">Bulgaria
+                                                    <option value="50">Sofia (SOF)</option>
+                                                </optgroup>
+                                                <optgroup label="Canada">Canada
+                                                    <option value="322">Montreal (YMQ)</option>
+                                                    <option value="324">Quebec (YQB)</option>
+                                                    <option value="323">Toronto (YTO)</option>
+                                                </optgroup>
+                                                <optgroup label="Chile">Chile
+                                                    <option value="88">Santiago de Chile (SCL)</option>
+                                                </optgroup>
+                                                <optgroup label="Colombia">Colombia
+                                                    <option value="91">Armenia (AXM)</option>
+                                                    <option value="98">Barrancabermeja (EJA)</option>
+                                                    <option value="92">Barranquilla (BAQ)</option>
+                                                    <option value="94">Bogotá (BOG)</option>
+                                                    <option value="93">Bucaramanga (BGA)</option>
+                                                    <option value="95">Cali (CLO)</option>
+                                                    <option value="96">Cartagena (CTG)</option>
+                                                    <option value="97">Cúcuta (CUC)</option>
+                                                    <option value="99">Ibagué (IBE)</option>
+                                                    <option value="102">Manizales (MZL)</option>
+                                                    <option value="100">Medellín (MDE)</option>
+                                                    <option value="101">Montería (MTR)</option>
+                                                    <option value="103">Neiva (NVA)</option>
+                                                    <option value="332">Pasto (PSO)</option>
+                                                    <option value="104">Pereira (PEI)</option>
+                                                    <option value="105">Popayán (PPN)</option>
+                                                    <option value="106">Riohacha (RCH)</option>
+                                                    <option value="90">San Andrés (ADZ)</option>
+                                                    <option value="107">Santa Marta (SMR)</option>
+                                                    <option value="108">Valledupar (VUP)</option>
+                                                </optgroup>
+                                                <optgroup label="Croacia">Croacia
+                                                    <option value="313">Dubrovnik (DBV)</option>
+                                                    <option value="312">Split (SPU)</option>
+                                                    <option value="145">Zagreb (ZAG)</option>
+                                                </optgroup>
+                                                <optgroup label="Cuba">Cuba
+                                                    <option value="318">La Habana (HAV)</option>
+                                                </optgroup>
+                                                <optgroup label="EEUU">EEUU
+                                                    <option value="224">Atlanta (ATL)</option>
+                                                    <option value="279">Baltimore (BWI)</option>
+                                                    <option value="277">Boston (BOS)</option>
+                                                    <option value="278">Buffalo (BUF)</option>
+                                                    <option value="280">Charleston (CHS)</option>
+                                                    <option value="282">Charlotte (CLT)</option>
+                                                    <option value="225">Chicago (CHI)</option>
+                                                    <option value="284">Cincinnati (CVG)</option>
+                                                    <option value="281">Cleveland (CLE)</option>
+                                                    <option value="283">Columbus (CMH)</option>
+                                                    <option value="286">Dallas (DFW)</option>
+                                                    <option value="285">Denver (DEN)</option>
+                                                    <option value="226">Detroit (DTT)</option>
+                                                    <option value="290">Filadelfia (PHL)</option>
+                                                    <option value="287">Houston (IAH)</option>
+                                                    <option value="288">Indianapolis (IND)</option>
+                                                    <option value="289">Las Vegas (LAS)</option>
+                                                    <option value="227">Los Angeles (LAX)</option>
+                                                    <option value="228">Memphis (MEM)</option>
+                                                    <option value="229">Miami (MIA)</option>
+                                                    <option value="230">Mineápolis (MSP)</option>
+                                                    <option value="336">Nashville (BNA)</option>
+                                                    <option value="335">New Orleans (MSY)</option>
+                                                    <option value="231">Nueva York (NYC)</option>
+                                                    <option value="342">Orlando (ORL)</option>
+                                                    <option value="291">Pittsburgh (PIT)</option>
+                                                    <option value="292">Richmond (RIC)</option>
+                                                    <option value="296">Saint Louis (STL)</option>
+                                                    <option value="295">Salt Lake City (SLC)</option>
+                                                    <option value="293">San Diego (SAN)</option>
+                                                    <option value="297">San Francisco (SFO)</option>
+                                                    <option value="294">Seattle (SEA)</option>
+                                                    <option value="232">Washington (WAS)</option>
+                                                </optgroup>
+                                                <optgroup label="Ecuador">Ecuador
+                                                    <option value="329">Guayaquil (GYE)</option>
+                                                </optgroup>
+                                                <optgroup label="Egipto">Egipto
+                                                    <option value="115">El Cairo (CAI)</option>
+                                                </optgroup>
+                                                <optgroup label="España">España
+                                                    <option value="128">Asturias-Oviedo (OVD)</option>
+                                                    <option value="119">Barcelona (BCN)</option>
+                                                    <option value="120">Bilbao (BIO)</option>
+                                                    <option value="121">Fuerteventura (FUE)</option>
+                                                    <option value="125">Gran Canaria (LPA)</option>
+                                                    <option value="123">Ibiza (IBZ)</option>
+                                                    <option value="116">Lanzarote (ACE)</option>
+                                                    <option value="126">Madrid (MAD)</option>
+                                                    <option value="127">Menorca (MAH)</option>
+                                                    <option value="129">Palma de Mallorca (PMI)</option>
+                                                    <option value="132">Tenerife Norte (TFN)</option>
+                                                    <option value="136">Valencia (VLC)</option>
+                                                    <option value="135">Vigo (VGO)</option>
+                                                </optgroup>
+                                                <optgroup label="Francia">Francia
+                                                    <option value="275">Bordeaux (BOD)</option>
+                                                    <option value="138">Marsella (MRS)</option>
+                                                    <option value="139">Niza (NCE)</option>
+                                                    <option value="140">París (PAR)</option>
+                                                    <option value="274">Toulouse (TLS)</option>
+                                                </optgroup>
+                                                <optgroup label="Gran" bretaña="">Gran Bretaña
+                                                    <option value="142">Londres (LON)</option>
+                                                </optgroup>
+                                                <optgroup label="Grecia">Grecia
+                                                    <option value="143">Atenas (ATH)</option>
+                                                </optgroup>
+                                                <optgroup label="Holanda">Holanda
+                                                    <option value="207">Amsterdam (AMS)</option>
+                                                </optgroup>
+                                                <optgroup label="Hungria">Hungria
+                                                    <option value="146">Budapest (BUD)</option>
+                                                </optgroup>
+                                                <optgroup label="Israel">Israel
+                                                    <option value="147">Tel Aviv (TLV)</option>
+                                                </optgroup>
+                                                <optgroup label="Italia">Italia
+                                                    <option value="317">Alghero (AHO)</option>
+                                                    <option value="151">Bari (BRI)</option>
+                                                    <option value="150">Bologna (BLQ)</option>
+                                                    <option value="149">Brindisi (BDS)</option>
+                                                    <option value="152">Cagliari (CAG)</option>
+                                                    <option value="154">Catania (CTA)</option>
+                                                    <option value="155">Florencia (FLR)</option>
+                                                    <option value="156">Génova (GOA)</option>
+                                                    <option value="164">Lamezia Terme (SUF)</option>
+                                                    <option value="157">Milán (MIL)</option>
+                                                    <option value="159">Nápoles (NAP)</option>
+                                                    <option value="160">Palermo (PMO)</option>
+                                                    <option value="161">Pisa (PSA)</option>
+                                                    <option value="162">Reggio Calabria (REG)</option>
+                                                    <option value="163">Roma (ROM)</option>
+                                                    <option value="165">Torino (TRN)</option>
+                                                    <option value="166">Trieste (TRS)</option>
+                                                    <option value="167">Venecia (VCE)</option>
+                                                    <option value="168">Verona (VRN)</option>
+                                                </optgroup>
+                                                <optgroup label="Korea" (south)="">Korea (South)
+                                                    <option value="338">Seul (SEL)</option>
+                                                </optgroup>
+                                                <optgroup label="Malta">Malta
+                                                    <option value="169">Malta (MLA)</option>
+                                                </optgroup>
+                                                <optgroup label="Marruecos">Marruecos
+                                                    <option value="320">Casablanca (CAS)</option>
+                                                    <option value="321">Tanger (TNG)</option>
+                                                </optgroup>
+                                                <optgroup label="Mexico">Mexico
+                                                    <option value="178">Cancún (CUN)</option>
+                                                </optgroup>
+                                                <optgroup label="Nueva" zelanda="">Nueva Zelanda
+                                                    <option value="208">Auckland (AKL)</option>
+                                                </optgroup>
+                                                <optgroup label="Paraguay">Paraguay
+                                                    <option value="212">Asunción (ASU)</option>
+                                                </optgroup>
+                                                <optgroup label="Perú">Perú
+                                                    <option value="343">Arequipa (AQP)</option>
+                                                    <option value="344">Cuzco (CUZ)</option>
+                                                    <option value="213">Lima (LIM)</option>
+                                                    <option value="347">Piura (PIU)</option>
+                                                    <option value="346">Pucallpa (PCL)</option>
+                                                    <option value="348">Tacna (TCQ)</option>
+                                                    <option value="349">Tarapoto (TPP)</option>
+                                                </optgroup>
+                                                <optgroup label="Polonia">Polonia
+                                                    <option value="214">Varsovia (WAW)</option>
+                                                </optgroup>
+                                                <optgroup label="Portugal">Portugal
+                                                    <option value="215">Lisboa (LIS)</option>
+                                                    <option value="314">Oporto (OPO)</option>
+                                                </optgroup>
+                                                <optgroup label="Republica" checa="">Republica Checa
+                                                    <option value="109">Praga (PRG)</option>
+                                                </optgroup>
+                                                <optgroup label="Republica" dominicana="">Republica Dominicana
+                                                    <option value="319">Punta Cana (PUJ)</option>
+                                                </optgroup>
+                                                <optgroup label="Rumania">Rumania
+                                                    <option value="216">Bucarest (BUH)</option>
+                                                </optgroup>
+                                                <optgroup label="Rusia">Rusia
+                                                    <option value="219">Moscú (MOW)</option>
+                                                    <option value="218">San Petersburgo (LED)</option>
+                                                </optgroup>
+                                                <optgroup label="Serbia">Serbia
+                                                    <option value="217">Belgrado (BEG)</option>
+                                                </optgroup>
+                                                <optgroup label="Suiza">Suiza
+                                                    <option value="78">Ginebra (GVA)</option>
+                                                    <option value="79">Zurich (ZRH)</option>
+                                                </optgroup>
+                                                <optgroup label="Tunisia">Tunisia
+                                                    <option value="330">Tunez (TUN)</option>
+                                                </optgroup>
+                                                <optgroup label="Turquía">Turquía
+                                                    <option value="221">Estambul (IST)</option>
+                                                </optgroup>
+                                                <optgroup label="Ucrania">Ucrania
+                                                    <option value="222">Kiev (IEV)</option>
+                                                </optgroup>
+                                                <optgroup label="Uruguay">Uruguay
+                                                    <option value="233">Montevideo (MVD)</option>
+                                                    <option value="234">Punta del Este (PDP)</option>
+                                                </optgroup>
+                                                <optgroup label="Venezuela">Venezuela
+                                                    <option value="236">Caracas (CCS)</option>
+                                                    <option value="243">El Vigía (VIG)</option>
+                                                    <option value="238">Maracaibo (MAR)</option>
+                                                    <option value="240">Porlamar (PMV)</option>
+                                                </optgroup>
+                                            </select>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                                <div class="form-group">
+                                                    <label for="inputDepartureDate" class="sr-only">Fecha de partida</label>
+                                                    <input type="text" class="form-control datepicker" id="inputDepartureDate" name="inputDepartureDate" placeholder="DD/MM/YY" title="format : dd/MM/yy" />
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <div class="form-group return-date">
+                                                    <label for="inputReturnDate" class="sr-only">Fecha de vuelta</label>
+                                                    <input type="text" class="form-control datepicker" id="inputReturnDate" name="inputReturnDate" placeholder="DD/MM/YY" title="format : dd/MM/yy" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row row-type">
+                                            <div class="col-xs-6">
+                                                <div class="form-group has-error">
+                                                    <label for="typeOfCabin" class="">Clase</label>
+                                                    <select class="form-control" id="typeOfCabin" name="typeOfCabin" required>
+                                                        <option value="">Seleccionar</option>
+                                                        <option value="ECONOMY">Economy</option>
+                                                        <option value="FIRST">Club Economy</option>
+                                                        <option value="BUSINESS">Club Cóndor</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <div class="row row-tooltip">
+                                                    <div class="col-xs-4">
+                                                        <div class="form-group has-tooltip has-tooltip-gris">
+                                                            <label for="inputAdults">Adultos <span class="sr-only">Lorem ipsum dolor sit amet.</span> </label>
+                                                            <i class="fa fa-question-circle more-info-tooltip" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet." ></i>
+                                                            <select class="form-control smallselect" name="inputAdults" id="inputAdults" required>
+                                                                <option value="1">01</option>
+                                                                <option value="2">02</option>
+                                                                <option value="3">03</option>
+                                                                <option value="4">04</option>
+                                                                <option value="5">05</option>
+                                                                <option value="6">06</option>
+                                                                <option value="7">07</option>
+                                                                <option value="8">08</option>
+                                                                <option value="9">09</option>
+                                                            </select>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-4">
+                                                        <div class="form-group has-tooltip has-tooltip-gris">
+                                                            <label for="inputMenores">Niños <span class="sr-only">Lorem ipsum dolor sit amet.</span> </label>
+                                                            <i class="fa fa-question-circle more-info-tooltip" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet." ></i>
+                                                            <select class="form-control smallselect" name="inputMenores" id="inputMenores" required>
+                                                                <option value="0">00</option>
+                                                                <option value="1">01</option>
+                                                                <option value="2">02</option>
+                                                                <option value="3">03</option>
+                                                                <option value="4">04</option>
+                                                                <option value="5">05</option>
+                                                                <option value="6">06</option>
+                                                                <option value="7">07</option>
+                                                                <option value="8">08</option>
+                                                                <option value="9">09</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-4">
+                                                        <div class="form-group has-tooltip has-tooltip-gris">
+                                                            <label for="inputBebes">Bebes <span class="sr-only">Lorem ipsum dolor sit amet.</span> </label>
+                                                            <i class="fa fa-question-circle more-info-tooltip" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet." ></i>
+                                                            <select class="form-control smallselect" name="inputBebes" id="inputBebes">
+                                                                <option value="0">00</option>
+                                                                <option value="1">01</option>
+                                                                <option value="2">02</option>
+                                                                <option value="3">03</option>
+                                                                <option value="4">04</option>
+                                                                <option value="5">05</option>
+                                                                <option value="6">06</option>
+                                                                <option value="7">07</option>
+                                                                <option value="8">08</option>
+                                                                <option value="9">09</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                                <div class="form-group">
+                                                    <label for="PromoCod_1" class="sr-only">PromoCod <span class="sr-only">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit</span></label>
+                                                    <div class="promocod has-tooltip">
+                                                        <i class="fa fa-question-circle more-info-tooltip" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit"></i>
+                                                        <input type="text" name="PromoCod_1" id="PromoCod_1" placeholder="PromoCod" class="form-control error_orig_dest" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <div class="form-group">
+                                                    <label for="PromoCod_2" class="sr-only">PromoCod <span class="sr-only">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit</span></label>
+                                                    <div class="promocod has-tooltip">
+                                                        <span class="sr-only">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit</span> <i class="fa fa-question-circle more-info-tooltip" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit"></i>
+                                                <input type="text" name="PromoCod_2" id="PromoCod_2" placeholder="PromoCod" class="form-control error_orig_dest" /></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <div class="form-group">
+                                                    <label for="PromoCod_3" class="sr-only">PromoCod <span class="sr-only">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit</span></label>
+                                                    <div class="promocod has-tooltip">
+                                                    <i class="fa fa-question-circle more-info-tooltip" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit"></i>
+                                                    <input type="text" name="PromoCod_3" id="PromoCod_3" placeholder="PromoCod" class="form-control error_orig_dest" /></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 pull-right">
+                                                <div class="form-group btn-block">
+                                                    <input type="submit" value="Buscar" class="btn btn-primary btn-block" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="banner-form">
+                            <a href="https://sdd.aerolineas.com.ar/Mpol15/buscar?pdv=a0&UI_LOCALE=es_AR">
+                                <img class="img-responsive" alt="Pago on-line" src="img/banners/Pagar-aqui.jpg" /></a>
+                        </div>
+                        <div class="banner-form"><a href="http://www.aerolineas.com.ar/landingsespeciales/landings/22_aproveite-a-comodidade-de-comprar-a-sua-passagem-como-voce-quer"><img class="img-responsive" alt="Forma de pago" src="img/banners/Cuotas-banner.jpg"></a>
+                        </div>
+                    </div>
+                    <!-- /form-slider -->
+                </div>
+            </div>
+            <!-- /#hero-form -->
+            <div class="container">
+
+            <div class="text-banner theme1 clearfix">
+                <div class="">
+                    <h2 class="title">Lorem Ipsum is simply dummy text of the printing and typesetting industry</h2>
+                    <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                </div>
+            </div>
+
+            <!-- <div class="text-banner theme2 clearfix">
+                <div class="text-center">
+                    <h2 class="title">Lorem Ipsum is simply dummy text of the printing and typesetting industry</h2>
+                    <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                </div>
+            </div>
+             -->
+
+            
+
+            <a class="small underline clearfix link-collapse" role="button" data-toggle="collapse" href="#collapseCondicionesPromo" aria-expanded="false" aria-controls="collapseCondicionesPromo">Condiciones Generales</a>
+
+            <div class="collapse" id="collapseCondicionesPromo">
+                <div class="collapse-body">
+                    <div class="conditions-container">
+                            <p>Las tarifas expresadas en pesos (ARS) para vuelos dentro de Argentina sólo son válidas para residentes en el país y para compras realizadas dentro del territorio argentino. Si no sos residente argentino por favor, hacé tu reserva ingresando a la página web de tu país de residencia.</p>
+                            <hr>
+                            <h2>Sistema de Reservas de Aerolíneas Argentinas y Austral </h2>
+                            <p>Antes de efectuar tu reserva o consultar nuestros horarios y tarifas, te sugerimos leer atentamente las siguientes condiciones generales de nuestro <strong>Sistema de Reservas y compras On-line</strong>.</p>
+
+                            <h3>1. Consultas</h3>
+                            <div class="content">
+                                <p>Para consultar horarios, disponibilidad y tarifas de los vuelos de Aerolíneas Argentinas y Austral, no es necesario que dejes tus datos personales ni tu número de tarjeta de crédito.</p>
+                            </div>
+
+                            <h3>2. Reservas</h3>
+                            <div class="content">
+                                <p>Podés reservar pasajes en vuelos de Aerolíneas Argentinas y Austral hasta un <strong>máximo de 9 (nueve) pasajeros</strong>.</p>
+                                <p>Luego de realizada la reserva on-line, obtendrás automáticamente un <strong>código de reserva </strong> (con vencimiento para la emisión) y <strong>recibirás un mail</strong> con los datos de tu reserva.</p>
+                                <p><strong>Para asegurarte la obtención de los pasajes a la tarifa estimada, los mismos deben adquirirse en el país de origen.</strong></p>
+                            </div>
+                            
+                            <h3>3. Pagos y Emisión</h3>
+                            <div class="content">
+                                <h4>Pago y emisión on-line </h4>
+                                <p><strong>Todos los pasajeros que compren su pasaje en aerolineas.com se ahorran el cargo de gestión.</strong> <br>
+                                Sin perjuicio de ello, Aerolíneas Argentinas informa que ciertas promociones o fechas particulares pueden tener cargo de gestión. En dicho caso, al momento de abonar, el precio incluirá el mismo.</p>
+                                <p>Podrás abonar tus reservas realizadas en nuestra página web dentro de <strong>1 hora de efectuada tu reserva</strong> y aquellas reservas efectuadas en nuestras bocas de venta habilitadas hasta <strong>30 minutos antes del vencimiento</strong> con tarjetas de crédito <i>American Express</i>, <i>Argencard</i>, <i>Cabal</i>, <i>Diners</i>, <i>MasterCard</i>, <i>Nativa Visa</i>, <i>Nativa MasterCard</i>, <i>Tarjeta Naranja</i> o <i>Visa</i> y también a través de <i>Pago Fácil</i> y <i>Pago Mis Cuentas</i> y emitir tu ticket electrónico. Este servicio está habilitado para todas las rutas operadas por Aerolíneas Argentinas y Austral y el/los tramos con otras compañías con que Aerolíneas Argentinas tiene acuerdo.</p>
+                                <p>Cualquier reclamo o consulta por los bienes y/o servicios adquiridos por los socios AMEX, el pagador deberá comunicarse previamente con Aerolíneas Argentinas al <a href="tel:0810-222-86527"><span class="sr-only">Llamar al</span> 0810-222-VOLAR <span class="sr-only">(0810-222-86527)</span></a> - <a href="http://www.aerolineas.com.ar/es-ar/reservas-servicios/puntos-de-contacto" target="_blank">www.aerolineas.com.ar/es-ar/reservas-servicios/puntos-de-contacto</a>.</p>
+                                <p>En el caso que la reserva no sea abonada vía web, podrás pagar tu ticket en alguna de nuestras sucursales.</p>
+                                <p>El pago on-line desde / hacia Lima está habilitado únicamente para reservas cuyos vuelos sean posteriores a las 72 horas corridas de la fecha de creación de la reserva.</p>
+                                <h4>Devoluciones</h4>
+                                <p>Si tu tarifa admite devolución, la misma debe <a href="http://www.aerolineas.com.ar/es-AR/ReservasServicios/Devolucion" target="_blank">solicitarse a través del formulario online</a> creado para tal fin. En caso de tratarse de un pago realizado con la modalidad <i>Pago Fácil</i> o <i>Pago Mis Cuentas</i>, ya que el reintegro se realizará en efectivo, <strong>recibirás por mail el número de voucher</strong> para presentar la devolución en la Oficina de Ventas más cercana. En caso de <strong>montos superiores a ARS 10.000 te contactaremos</strong> para coordinar el lugar y fecha en que te presentarás, de esta manera nos asegurarnos que la oficina cuente con el efectivo necesario.</p>
+                                <h4>Cargos FEE aplicables por cambios</h4>
+                                <p><a href="#modalFeeLabel" data-toggle="modal" data-target="#modalFee">Consultá aquí los cargos (FEE)</a> aplicables por cambios efectuados en el ámbito de la República Argentina que se realicen en tickets con rutas de cabotaje, regionales o internacionales independientemente del lugar de emisión. Los mismos aplican tanto para tarifas de residentes argentinos como de extranjeros.</p>
+                                <h4>Intereses por mora </h4>
+                                <p>En el caso que el pagador y/o pasajero, no haya abonado en todo, o haya abonado en parte la tarifa contratada, o en el caso que el medio de pago utilizado haya sido rechazado, o en el caso que el pago haya sido dejado sin efecto por el pagador, o si el billete de pasaje haya sido obtenido en infracción a la ley , deberá abonar un interés por mora, sin interpelación alguna, equivalente al 1.5 de la Tasa Activa de Carteras General Diversas del Banco de la Nación Argentina (<a href="http://www.bna.com.ar" target="_blank">www.bna.com.ar</a>), vigente al momento del efectivo pago. (CFT: 1.5 Tasa Activa de Carteras General Diversas del Banco de la Nación Argentina, TNA vencida con capitalización cada 30 días + IVA, vigente al efectivo pago).</p>
+                            </div>
+                            
+                            <h3>Menores No Acompañados</h3>
+                            <div class="content">
+                                <p>Para efectuar una reserva para menores que deban viajar solos deberá comunicarse con nuestro Call Center al 0810-222-VOLAR (86527)</p>
+                                <h4>Vuelos Nacionales / Regionales / Internacionales</h4>
+                                <p>Los menores de 2 a 5 años sin cumplir deberán viajar obligatoriamente acompañados por sus padres o responsables a cargo. No se podrá optar por el servicio de Menor no acompañado.</p>
+                                <p>Los menores de 5 a 12 años sin cumplir: </p>
+                                <ul>
+                                    <li> Viajando sin acompañante: deberán solicitar el servicio de menor no acompañado.</li>
+                                    <li>Viajando con acompañante mayor de 12 años: No requiere el servicio de menor no acompañado. </li>
+                                </ul>
+                            </div>
+                            <h3>Artículos restringidos</h3>
+                            <div class="content">
+                                <p><a href="#articlesNotAllowedLabel" data-toggle="modal" data-target="#modalArticlesNotAllowed">Hace click aquí para conocer los objetos que no podrás embarcar ni despachar</a>.</p>
+                            </div>
+                            <h3>Aviso a pasajeros no residentes en la Argentina</h3>
+                            <div class="content">
+                                <p>Las tarifas expresadas en pesos (ARS) para vuelos dentro del territorio argentino no se aplican para compras realizadas en el exterior. Sólo se aplican para los residentes en Argentina.</p>
+                                <p><a href="#additionalChargesLabel" data-toggle="modal" data-target="#modalAdditionalCharges">Consulte aquí los cargos adicionales aplicables para emisiones en otros países</a>. </p>
+                            </div>
+                            <h3>Responsabilidades</h3>
+                            <div class="content">
+                                <p>Si el viaje del pasajero incluye un destino o parada en un país que no sea el de salida, se puede aplicar el Convenio de Varsovia y sus modificaciones de los Protocolos de La Haya y Montreal, según corresponda, que en la mayoría de los casos limitan la responsabilidad de los transportadores por muerte o daño personal y con respecto al equipaje dañado o extraviado.</p>
+                                <p>Si el viaje del pasajero se inicia y termina dentro del territorio argentino, sin escalas previstas en el exterior, se aplica el Código Aeronáutico de la República Argentina que, en la mayoría de los casos, limita la responsabilidad de los transportadores por muerte o daño personal y con respecto al equipaje dañado o extraviado.</p>
+                                <p>En cuanto no se contrapongan con las normas antedichas, las Condiciones Generales del Contrato de Transporte Aéreo (Resolución 1532/98 MEyOySP) que forman parte de este Contrato y pueden ser consultadas en las oficinas de la empresa, regulan todo lo relativo a los derechos y obligaciones de las partes. </p>
+                                <p>Se les recuerda a todos los pasajeros que para realizar su viaje, previo al mismo , deberán consultar la documentación necesaria para salir del país y para desembarcar en el punto de destino, y que se ha cumplido con las regulaciones, disposiciones y requisitos de viaje de los países desde y hacia los cuales se viajará como con las disposiciones del transportador; en caso de no presentar dicha documentación al momento de embarque la empresa podrá denegar el mismo , no haciéndose responsable por los daños que esto le ocasione al pasajero (conf. arts. 8 y 17 de las Condiciones Generales del Transporte Aèreo-Resolución 1532/98 -Anexo I- del ex MEyOySP).</p>
+                            </div>
+
+                            <h3>Condiciones generales del contrato de transporte</h3>
+                            <div class="content">
+                            <h4>Deber de información</h4>
+                            <p>El presente documento tiene por objeto tener informado al pasajero de sus derechos y obligaciones al momento de contratar los servicios de nuestras compañías haciendo un resumen de los aspectos más importantes de los mismos contemplados en las reglamentaciones vigentes y las regulaciones de las transportadoras Aerolíneas Argentinas S.A. y Austral Líneas Aéreas – Cielos del Sur S.A.</p>
+                            <h4>Autoridad de aplicación</h4>
+                            <p>La aeronáutica comercial se encuentra regida por la Autoridad Aeronáutica, que en la República Argentina es la Administración Nacional de Aviación Civil –ANAC- que garantiza la aplicación eficaz de los Derechos del Usuario del Transporte Aéreo de Pasajeros y regulaciones de los transportadores, ante la cual se pueden efectuar las correspondientes denuncias por incumplimientos de las obligaciones allí contenidas, en ANAC, mesa de entradas, calle Hipólito Yrigoyen 250, Piso 12, Tel. 4349-7160, ó en la <a href="http://www.anac.gov.ar/" target="_blank">www.anac.gov.ar</a>.-</p>
+                            <h4>Concepto y alcance de los diferentes términos utilizados en el transporte aerocomercial</h4>
+                            <p><i><strong>Documento de transporte:</strong></i> sustituye a la designación billete de pasaje, y constituye el título legal del contrato de transporte aéreo, que será emitido por cualquier medio escrito o electrónico y registrado en la base de datos del transportista . Habilita al pasajero a presentarse al embarque únicamente con su documentación personal en regla, evitando los problemas que se presentaban ante la pérdida, adulteración o rotura del billete de pasaje físico.</p>
+                            <p><i><strong>Equipaje registrado:</strong></i> es el que recibe el transportador para su custodia y que debe transportar en bodega de la misma aeronave que el pasajero, salvo que existan razones técnicas, de estibaje, de horario u otras justificables que lo impidan. La cantidad de bultos y peso individual queda registrado en la base de datos utilizada para la aceptación del pasajero en el aeropuerto y se emite un talón de identificación de equipaje para cada bulto. </p>
+                            <p><i><strong>Franquicia:</strong></i> El transportador puede determinar la existencia de una franquicia de equipaje, de acuerdo a la ruta y tarifa abonada.</p>
+                            <p><i><strong>Compensación de peso:</strong></i> Cuando dos o más pasajeros viajen juntos bajo un mismo código de reserva, se permitirá la compensación del peso, o del número de piezas, de sus respectivos equipajes hasta el límite autorizado. En igual forma se procederá en el caso de denegaciones, en tanto la compensación sea solicitada al momento del despacho.</p>
+                            <p><i><strong>Contenido del equipaje-Declaración de valor:</i></strong> está constituido por los artículos, efectos y otra propiedad personal del pasajero, necesarios o apropiados para vestimenta, uso, comodidad o conveniencia en relación con el viaje. Mediante una declaración especial de valor al momento de la entrega y acreditando el pago de un cargo si así lo exigieren las regulaciones del transportador, éste se obliga ante un siniestro a pagar el importe declarado a menos que éste sea superior al valor real del equipaje que debió entregar al pasajero en el lugar de destino. </p>
+                            <p><i><strong>Contenido prohibido:</i></strong> El pasajero no incluirá en su equipaje registrado: dinero, joyas, títulos negociables, acciones u otros valores comerciales o bancarios, documentos de negocios, contratos; ni equipamientos electrónicos tales como: cámaras de video, máquinas fotográficas, notebooks, teléfonos celulares y sus accesorios, y todo otro tipo de aparato electrónico, que deben transportarse como equipaje de mano.</p>
+                            <p><i><strong>Endoso:</i></strong> es la transferencia de un pasajero de un transportador aéreo a otro. El transportador endosante emitirá un documento denominado FIM “manifiesto de interrupción de vuelo” mediante el cual asume el costo de los servicios y es la base para la facturación de los mismos por el endosatario.</p>
+                            <p><i><strong>Reserva:</i></strong> es el mantenimiento de la oferta del lugar físico en el avión en la clase tarifaria requerida por el pasajero y registrada conforme la disponibilidad hasta una fecha y hora fijada por el transportador. La emisión del documento de transporte hace invariables esas condiciones, las que se extienden a la clase de la tarifa reservada, pero no al precio, en tanto éste sufra variaciones antes de la emisión.</p>
+                            <p><i><strong>Servicio incidental:</i></strong> comprende todo el proporcionado por el transportador en razón de contingencias imprevistas, que produzcan reencaminamiento del pasajero, cambio de ruta u horario o cualquier otra circunstancia cuyo cargo deba asumir el transportador.</p>
+                            <p><i><strong>Conexión:</i></strong> es la continuación de un viaje en un punto de la ruta por el mismo u otro transportador, según figure registrado en el documento de transporte con indicación de vuelo, fecha y reserva confirmada.</p>
+                            <p><i><strong>Tarifa:</i></strong> Es el precio del transporte aéreo para cubrir una determinada ruta. Comprende una franquicia de equipaje, y se ajusta a la naturaleza y condiciones del servicio prestado.</p>
+                            <p><i><strong>Tarifa sin derecho a devolución -(No Refund):</i></strong> Es la condición especial de ciertas tarifas económicas, generalmente con esta restricción para el uso del ticket. </p>
+                            <p><i><strong>Web Chek-In:</i></strong> Es el procedimiento informático de aceptación de pasajeros al embarque realizado por el pasajero sin intervención de personal del aeropuerto.</p>
+                            
+                            <h4>Presentación y aceptación del pasajero a embarcar</h4>
+                            <p>El pasajero deberá hacerse presente en los aeropuertos de partida, con la anticipación necesaria de acuerdo a lo indicado por el transportador y reglamentaciones aeroportuarias vigentes, para que pueda cumplirse con los trámites de aceptación y despacho y procedimientos de seguridad y en los vuelos internacionales, también con los que correspondan a migraciones y aduana. El pasajero que se presente en el mostrador de aceptación después del horario límite fijado para finalizar el despacho operativo del vuelo, se considerará como no presentado a embarcar sin perjuicio de la aplicación del régimen sobre "no show" establecido en el Reglamento y las Condiciones del Transportador.</p>
+                            <p>El transportador podrá habilitar la aceptación de pasajeros adultos mediante vía informática, web check-in, sólo con ticket electrónico, y de pasajeros que no requieran asistencia especial, tanto en condición con o sin equipaje registrado. En el primer caso, sólo deberá cumplir en el aeropuerto con el despacho del mismo. En caso que un pasajero luego de aceptado por este procedimiento no se presente a embarcar, el transportador podrá considerar perdido el derecho a reintegro del tramo.</p>
+                            <p>El transportador tendrá la facultad de verificar la identidad del pasajero en el momento de embarco, y consultar las bases de datos en donde se encuentran listadas las personas calificadas para la aerolínea, como peligrosas para la seguridad del transporte aéreo, quedando, en tal caso, facultado a denegar el transporte.</p>
+                            <p>El transportador podrá establecer listas de espera a través del sistema de reservas con el código HL y en los aeropuertos para atender a los pasajeros.</p>
+
+                            <h4>Negativa y limitación al transporte de pasajeros</h4>
+                            <p>El transportador puede negar el transporte de cualquier pasajero y/o de su equipaje por razones de seguridad o si: I) Esta acción es necesaria para cumplir con una norma legal aplicable, regulaciones u órdenes de cualquier Estado desde el cual, dentro del cual o hacia el cual se realizará el transporte o si el pasajero no posee la documentación debida o que no haya cumplido con las leyes, regulaciones, disposiciones, exigencias o requisitos aplicables, o cuyos documentos no estén en regla. II) La conducta, edad o estado mental o físico del pasajero es tal que: -requiera asistencia especial del transportador; u -origine peligro o riesgo para sí mismo o para otras personas o propiedades; o -ponga en peligro la seguridad de la aeronavegación; -no cumplan con las instrucciones impartidas por el transportador dentro de un marco de razonabilidad; o -se haya negado a cumplir con un control de seguridad.</p>
+                            <p>Las personas enfermas, intervenidas quirúrgicamente, o que por su grado de discapacidad requieran oxígeno a bordo o asistencia para movilizarse, deberán presentar el formulario de información médica (MEDIF) firmado y sellado por el médico actuante. Este informe deberá ser entregado 48 hs. hábiles previo a la salida del vuelo, en donde el pasajero tenga reserva, siendo el servicio médico de la transportadora, el que decidirá sobre la posibilidad del transporte y condiciones del mismo para su seguridad y la de los demás pasajeros, queda excluido de estas condiciones el transporte sanitario.</p>
+                            <p>El transportador permitirá el embarque a las mujeres embarazadas que no superen las 34 semanas de gestación en vuelos de hasta 3 horas de duración y 32 semanas de gestación para vuelos de mayor duración, sin completar certificado médico. No obstante, podrá requerir como requisito para su aceptación como pasajero, completar el formulario de “Transporte de pasajeras embarazadas”. En caso de duda la aceptación queda a criterio del Servicio Médico de la transportadora.</p>
+                            <h4>Cumplimiento de horarios e itinerarios. Circunstancias extraordinarias</h4>
+                            <p>El transportador, salvo caso de fuerza mayor, debe cumplir con los horarios y los itinerarios publicados e indicados en el documento de viaje. No tendrá responsabilidad por el incumplimiento del horario cuando mediare una circunstancia extraordinaria e inevitable que justificare la demora en la ejecución del vuelo.</p>
+                            <p>Se consideran “circunstancias extraordinarias” que limitan o excluyen la responsabilidad del transportador, aquellas que no hubieran podido evitarse incluso si se hubiesen tomado todas las medidas razonables. Dichas circunstancias pueden producirse en particular, en casos de inestabilidad política, condiciones meteorológicas incompatibles con la realización del vuelo, riesgos para la seguridad, deficiencias inesperadas en la seguridad del vuelo y huelgas ajenas a la empresa transportadora que afecten a las operaciones de un transportista aéreo encargado de efectuarlo. Sólo se considerará como eximente la huelga de empleados de la transportadora cuando la autoridad laboral haya dictado una normativa de alcance particular para asegurar la cobertura de vuelos mínimos de emergencia que obliga a reanudar el servicio y no es acatada.</p>
+                            <h4>Responsabilidad por daños a pasajeros y equipaje</h4>
+                            <p>El transportador es responsable sólo por los daños a sus pasajeros producidos a bordo de la aeronave y durante las operaciones de embarque y desembarque.</p>
+                            <p>En cuanto a contingencias del “equipaje registrado” del pasajero el transportador es responsable desde el momento de la aceptación del mismo en el mostrador del aeropuerto donde es registrado por cantidad y peso de cada uno de los bultos, hasta su entrega en el destino indicado en el documento de transporte. El equipaje no registrado, también denominado “de mano”, queda bajo custodia del pasajero, respondiendo excepcionalmente el transportador. Si el pasajero se presentare a la puerta de embarque con equipaje de mano que supere las dimensiones y peso permitido por el transportador o la autoridad aeroportuaria, le será remitido a bodega como equipaje registrado. Todas las reparaciones indemnizatorias se encuentran limitadas conforme la legislación nacional y tratados internacionales aprobados por la República.</p>
+                            <h4>Reclamos directos al transportador</h4>
+                            <p>En el caso de faltante o daño al equipaje, el pasajero podrá presentarse, antes de retirarse del aeropuerto en la oficina de reclamos del transportador. Allí, éste le entregará un formulario en donde declarará el contenido y estimación del valor del daño o faltante. La recepción por el transportador de este formulario con la información declarada por pasajero y firmada por éste, cumplirá los efectos legales del protesto aeronáutico, quien instruirá un expediente de reclamo que deberá ser resuelto en un plazo de 30 (treinta) días. Esta reclamación es requisito para la admisión de una eventual acción judicial.</p>
+                            <p> En caso que dicho formulario no haya sido completado, el transportador deberá atender los reclamos por pérdida, destrucción, retardo, daño o faltante del equipaje en el acto de la entrega, en el transporte interno, como máximo dentro de los TRES (3) días desde la fecha de entrega para los casos de daños o faltante, y de DIEZ (10) días en que debieron ser puestas a su disposición, en el caso de equipaje no acompañado o mercancía en los supuestos de pérdida, destrucción o retardo.</p>
+                            <p>Se aclara al pasajero que si el reclamo lo presentase luego de retirarse del aeropuerto, quedará a su cargo probar que los daños o faltantes se produjeron durante el transporte aéreo.</p>
+                            <h4>Legislación aplicable</h4>
+                            <p>Para el contrato de transporte aéreo de cabotaje, y sus prestaciones incidentales, regirá las disposiciones del Código Aeronáutico de la República Argentina y su reglamentación referida a los Derechos del Usuario del Transporte Aéreo de Pasajeros.</p>
+                            <p>Cualquier acción por daños derivados en la celebración y ejecución del contrato de transporte aéreo de pasajeros y equipaje, cualquiera sea su título, solamente podrá ejercitarse dentro de las condiciones de las reglamentaciones vigentes y límites del Código Aeronáutico, encontrándose expresamente excluida la aplicación de la Ley de Defensa del Consumidor conforme Decreto 565/08.</p>
+                            <p>El documento de transporte el válido por un año desde la fecha de emisión, a menos que se haya estipulado otra particular, de acuerdo a las condiciones de la tarifa abonada por el pasajero.</p>
+                            <h4>Reconfirmación de reservas</h4>
+                            <p>Las reservas para continuación del viaje o de retorno pueden estar sujetas al requisito de reconfirmación, dentro de los plazos determinados en las regulaciones del transportador. De no cumplirse con este requisito, la reserva puede ser cancelada por el transportador, pasando a la condición de pasaje con “fecha abierta”.</p>
+                            <h4>Cancelación de reserva</h4>
+                            <p>El transportador puede cancelar una reserva si el pasajero no ha hecho emitir su documento de viaje previo al tiempo límite especificado en la reserva para su emisión. Si el documento de transporte estuviera emitido, el pasajero podrá cancelar su reserva asumiendo los cargos previstos en las condiciones de su tarifa.</p>
+                            <h4>Cancelación automática de reserva de continuación de viaje</h4>
+                            <p>Si un pasajero no utiliza una reserva correspondiente a un documento de transporte ya emitido y no avisa al transportador, los sistemas de reservas cancelarán todos los tramos subsiguientes no volados una vez cerrada la aceptación para el embarque de pasajeros para ese vuelo en el aeropuerto. Para la continuación del viaje o el retorno deberán efectuar una nueva reserva, caso contrario el documento de viaje quedará en la condición de fecha abierta.</p>
+                            <h4>Cargo al pasajero por su no presentación a la partida del vuelo (no show)</h4>
+                            <p>Cuando un pasajero no utilice el espacio con reserva confirmada, el transportador podrá aplicar un cargo, conforme las condiciones de la tarifa. Asimismo, este cargo será aplicable al pasajero que no se haya presentado al mostrador de aceptación después del horario límite fijado para finalizar el despacho operativo del vuelo.</p>
+                            <h4>Aviso a los pasajeros internacionales</h4>
+                            <p>Para estos pasajeros regirán las condiciones indicadas, la reglamentación vigente en cuanto a los Derechos del Usuario del Transporte Aéreo de Pasajeros y el Convenio para la Unificación de Ciertas Reglas para el Transporte Aéreo Internacional suscripto en la ciudad de Montreal y aprobado por Ley 26.451 que limita la responsabilidad del transportista aéreo.</p>
+                            <p>Los plazos para las reclamaciones serán de siete (7) días para el equipaje facturado a partir de su recibo y veintiún (21) días para el retraso desde que el equipaje ha sido puesto a disposición del pasajero.</p>
+                            <p>El transportista que emite documentos de transporte por las líneas de otro transportista, actúa sólo como agente de éste.</p>
+                            <p><i>Tasas e impuestos:</i> El precio que figura en el documento de transporte incluye la tarifa y pueden incluir los impuestos que gravan el transporte aéreo. Se podrá requerir el pago de tasas e impuestos que no hayan sido recaudados al momento de la emisión.</p>
+                            <p>El pasajero deberá cumplir todos los requisitos gubernamentales del viaje y presentar los documentos de salida, entrada y demás exigidos, así como llegar al aeropuerto a la hora señalada por el transportista ó, si no se hubiera fijado ninguna, con la antelación suficiente que le permita cumplimentar los trámites de salida. Su incumplimiento implicará la inclusión del pasajero en el régimen para los pasajeros no presentados –no show-.</p>
+
+
+                            </div>
+                            <div class="info-box">
+                                <p> Solicitamos leer atentamente las <a href="#liabilityLimitationsLabel" data-toggle="modal" data-target="#modalLiabilityLimitations">Limitaciones a la Responsabilidad</a> y las <a href="#securityConditionsLabel" data-toggle="modal" data-target="#modalSecurityConditions">Condiciones de Seguridad</a> que regulan los servicios que se brindan a través de la red. Ante cualquier consulta no dude en contactarse con nuestra oficina local.</p>
+                            </div>     
+                        </div>
+                </div>
+            </div>
+
+
+                                  
+            </div>
+        </div>
+        <!-- /CONTENEDOR WRAPPER -->
+
+        <footer id="footer" role="contentinfo" class="no-slider">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="nav-footer-content">
+                            <div class="nav-footer">
+                                <div><a id="slick-slide00" href="http://ww1.aerolineas.com.ar/arg/main.asp?idsitio=ar&idpagina=164&ididioma=es">La Empresa</a></div>
+                                <div><a id="slick-slide01" href="http://www.aerolineas.com.ar/es-ar/prensa/comunicado">Prensa</a></div>
+                                <div><a id="slick-slide02" href="http://www.skyteam.com/" target="_blank">Alianza Skyteam</a></div>
+                                <div><a id="slick-slide03" href="http://www.aerolineas.com.ar/es-ar/cefepra/acercade" target="_blank" class="link">Cefepra</a></div>
+                                <div><a id="slick-slide04" href="http://cargo.aerolineas.com.ar/es-ar" target="_blank" class="link">Cargas</a></div>
+                                <div><a id="slick-slide05" href="http://www.jetpaq.com.ar/es-ar" target="_blank">Jetpaq</a></div>
+                                <div><a id="slick-slide06" href="http://www.aerolineas.com.ar/es-ar/la_empresa/recursos_humanos" target="" class="link">RRHH</a></div>
+                                <div><a id="slick-slide07" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=152&amp;idIdioma=es" target="_blank" class="link">Proveedores</a></div>
+                                <div><a id="slick-slide08" href="">Otro</a></div>
+                                <div><a id="slick-slide09" href="">Otro</a></div>
+                                <div><a id="slick-slide010" href="">Otro</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="social-links">
+                            <ul class="nav-justified list-unstyled ">
+                                <li><a target="_blank" href="https://www.facebook.com/Aerolineas.argentinas"><i class="fa fa-facebook"></i><span class="sr-only">Facebook</span></a></li>
+                                <li><a target="_blank" href="http://twitter.com/Aerolineas_AR/"><i class="fa fa-twitter"></i><span class="sr-only">Twitter</span></a></li>
+                                <li><a target="_blank" href="https://www.instagram.com/aerolineas_argentinas/"><i class="fa fa-instagram"></i><span class="sr-only">Instagram</span></a></li>
+                                <li><a target="_blank" href="http://www.linkedin.com/company/aerolineas-argentinas"><i class="fa fa-linkedin"></i><span class="sr-only">Linkedin</span></a></li>
+                                <li><a target="_blank" href="https://plus.google.com/106198199507305429358/posts"><i class="fa fa-google-plus"></i><span class="sr-only">GooglePlus</span></a></li>
+                                <li><a target="_blank" href="http://www.youtube.com/user/AerolineasAR"><i class="fa fa-youtube"></i><span class="sr-only">Youtube</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="clearfix">
+                    <div class="row">
+                        <div class="col-sm-7 col-md-6">
+                            <ul class="list-unstyled list-inline pull-left">
+                                <li class="codigo-qr">
+                                    <a href="https://servicios1.afip.gov.ar/clavefiscal/qr/mobilePublicInfo.aspx?req=e1ttZXRob2Q9Z2V0UHVibGljSW5mb11bcGVyc29uYT0zMDY0MTQwNTU1NF1bdGlwb2RvbWljaWxpbz0wXVtzZWN1ZW5jaWE9MF1bdXJsPWh0dHA6Ly93d3cuYWVyb2xpbmVhcy5jb20uYXJdfQ==" target="_F960AFIPInfo"><img src="img/common/qr_code.gif" alt="QR-Code" /></a>
+                                </li>
+                                <li class="pie_texto">
+                                    <span>aerolineas.com Sitio Oficial de Aerolineas Argentinas. <br>
+                                <span class="number"><i class="fa fa-phone" aria-hidden="true"></i> <span class="text">SAC: </span><span class="sr-only">Llamanos al </span> <a href="tel:0800-761-0254">0800-761-0254</a></span>
+                                    <span class="number"><span class="text"> | Central</span> de Vendas: <a href="tel:0800-761-0254">0800-761-0254</a></span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-5 col-md-6">
+                            <ul class="list-unstyled list-inline pull-right logos-footer">
+                                <li class="hidden-xs">
+                                    <a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=9&amp;idIdioma=es"><img src="img/common/footer-aerohandling.jpg"></a>
+                                </li>
+                                <li class="hidden-xs">
+                                    <a href="http://www.jetpaq.com.ar/es-ar" target="_blank"><img src="img/common/footer-jetpaq.jpg" alt="Logo JetPaq"></a>
+                                </li>
+                                <li class="hidden-xs">
+                                    <a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=9&amp;idIdioma=es"><img src="img/common/footer-optar.jpg" alt="Logo Optar"></a>
+                                </li>
+                                <li>
+                                    <a href="http://www.austral.com.ar/index.asp" target="_blank"><img src="img/common/footer-austral.jpg" alt="Logo Austral"></a>
+                                </li>
+                                <li><img src="img/common/footer-aa.jpg" alt="Logo Aerolíneas Argentinas"></li>
+                                <li>
+                                    <a href="http://www.skyteam.com/" target="_blank"><img src="img/common/footer-skyteam.jpg" alt="Logo Aerolíneas Argentinas"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <div class="container">
+                    <a class="pie" href="/es-bo/legales/terminoscondiciones">Legales</a> | © 1996 - 2016 Aerolíneas Argentinas S.A.
+                    <a href="#" class="scrollToTop"><span class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span><span class="sr-only">Scroll To Top</span></a>
+                </div>
+            </div>
+        </footer>
+
+       
+
+
+    </div>
+</body>
+
+</html>

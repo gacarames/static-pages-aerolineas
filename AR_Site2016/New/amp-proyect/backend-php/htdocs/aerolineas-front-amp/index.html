@@ -1,0 +1,2476 @@
+<!doctype html>
+<html ⚡>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="canonical" href="hello-world.html">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <title>Accelerated Mobile Pages Project – AMP</title>
+    <link rel="shortcut icon" href="static/img/amp_favicon.png?v=3">
+    <link rel="canonical" href="https://www.ampproject.org/">
+
+    <link rel="manifest" href="/manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" sizes="120x120" href="static/img/icons/120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="static/img/icons/152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="static/img/icons/167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/img/icons/180.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+
+    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+
+    <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+
+    <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.1.js"></script>
+
+    <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+    
+    <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
+    
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    
+    <style amp-custom>
+        /*    custom css    */
+
+        /*      basic layout      */
+
+        body {
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #656566;
+            margin: 0;
+        }
+
+        /*********************************************************************************************
+
+1.  Base code
+
+*********************************************************************************************/
+
+        *,
+        *:after,
+        *:before {
+            margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        [class*='grid-'] {
+            padding: 0px 10px;
+            float: left;
+            width: 100%;
+        }
+
+        .clear-grid {
+            clear: both;
+            float: inherit;
+        }
+
+        .container {
+            padding: 0px 15px;
+            margin: 0%;
+            width: 100%;
+        }
+
+        .container:after,
+        .container:before {
+            display: table;
+            clear: both;
+            content: " ";
+        }
+
+        .nest {
+            margin: 0 -10px;
+            padding: 0;
+            width: auto;
+        }
+
+        /*********************************************************************************************
+
+2.  Mobile Grid
+
+*********************************************************************************************/
+
+        .grid-m-12 {
+            width: 100%;
+        }
+
+        .grid-m-11 {
+            width: 91.666663%;
+        }
+
+        .grid-m-10 {
+            width: 83.33%;
+        }
+
+        .grid-m-9 {
+            width: 74.999997%;
+        }
+
+        .grid-m-8 {
+            width: 66.66666664%;
+        }
+
+        .grid-m-7 {
+            width: 58.333%;
+        }
+
+        .grid-m-6 {
+            width: 50%;
+        }
+
+        .grid-m-5 {
+            width: 41.6665%;
+        }
+
+        .grid-m-4 {
+            width: 33.33%;
+        }
+
+        .grid-m-3 {
+            width: 24.99%;
+        }
+
+        .grid-m-2 {
+            width: 16.66666%;
+        }
+
+        .grid-m-1 {
+            width: 8.33%;
+        }
+
+        /* Helper classes*/
+
+        .invisible {
+            visibility: hidden
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        /*     Componentes       */
+
+        /*            header*/
+
+        .header.fixed {
+            left: 0;
+            position: fixed;
+            top: 0;
+            transform: translateY(0%);
+            transition: all .4s ease;
+            width: 100%;
+            z-index: 1000
+        }
+
+        body,
+        .header .tab .list-container>ul li a,
+        .card,
+        .searchbar input {
+            font-weight: 300;
+            text-transform: none
+        }
+
+        .small,
+        .header .tab .list-container>ul li a,
+        .searchbar input {
+            color: #333;
+            font-size: 14px;
+            line-height: 26px
+        }
+
+        .header .tab .list-container>ul li.has-sublist::after,
+        .language .current::after,
+        amp-sidebar .language .current::after,
+        amp-sidebar .has-sub-level::after {
+            display: inline-block;
+            background-image: url("img/header/sprite.svg");
+            background-size: 100px 74px
+        }
+
+        .header {
+            backface-visibility: hidden;
+            background-color: #fff;
+            box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            font-weight: 300;
+            transform: translateZ(0)
+        }
+
+        .header .container {
+            position: relative;
+            z-index: 1
+        }
+
+        .header.fixed {
+            left: 0;
+            position: fixed;
+            top: 0;
+            transform: translateY(0%);
+            transition: all .4s ease;
+            width: 100%;
+            z-index: 1000
+        }
+
+        .header .nav-container,
+        .header .left-nav,
+        .header .alt,
+        .header .tabs {
+            display: flex
+        }
+
+        .header .nav-container {
+            justify-content: space-between;
+            position: relative
+        }
+
+        .header .left-nav,
+        .header .alt {
+            justify-content: flex-start
+        }
+
+        .header .left-nav {
+            align-items: center;
+            font-size: 20px;
+            font-weight: 300;
+            margin-left: 0
+        }
+
+        .header .left-nav .header-title {
+            background: url("img/header/logo_Aerolineas.gif") no-repeat center left/100%;
+            color: #0379c4;
+            margin: 0px 30px;
+            padding: 30px 80px 30px 80px;
+            text-transform: none;
+            white-space: nowrap;
+            width: auto
+        }
+
+        .header .left-nav .header-title::after,
+        .header .left-nav .header-title::before {
+            display: none
+        }
+
+        .header .alt,
+        .header .tabs {
+            align-items: stretch
+        }
+
+        .header .alt {
+            padding: 0
+        }
+
+        .header .alt.right {
+            font-size: 15px
+        }
+
+        .header .tabs {
+            justify-content: center;
+            margin-left: 60px
+        }
+
+        .header .tab {
+            color: #333;
+            font-weight: 400;
+            margin: 0 4px;
+            padding: 6px;
+            position: relative;
+            transition: .1s ease color
+        }
+
+        .header .tab::after {
+            background: linear-gradient(to right, #0079ca, #0389ff, #0dd3ff);
+            bottom: 0;
+            content: '';
+            height: 3px;
+            left: 20px;
+            margin: auto;
+            opacity: 0;
+            position: absolute;
+            right: 20px;
+            transition: .1s ease opacity
+        }
+
+        .header .tab:hover,
+        .header .tab.active {
+            color: #0079ca
+        }
+
+        .header .tab.active::after {
+            opacity: 1
+        }
+
+        .header .tab.active:hover::after {
+            opacity: 0
+        }
+
+        .header .tab.hamburger {
+            align-self: center;
+            background: url("img/header/hamburger.svg") no-repeat center/30px 24px transparent;
+            border: 0;
+            cursor: pointer;
+            display: none;
+            height: 40px;
+            margin: 0;
+            padding: 0;
+            width: 40px
+        }
+
+        .header .tab {
+            padding: 6px 20px
+        }
+
+        .header .tab::before {
+            bottom: 0;
+            box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.1);
+            content: '';
+            left: -10px;
+            opacity: 0;
+            position: absolute;
+            right: -10px;
+            top: 0px;
+            transition: opacity .2s ease-out
+        }
+
+        .header .tab>a {
+            color: inherit;
+            font-size: 12px;
+            position: relative;
+            top: 12px
+        }
+
+        .header .tab .list-container>ul,
+        .header .tab .sublist {
+            list-style: none
+        }
+
+        .header .tab .list-container,
+        .header .tab .sublist {
+            opacity: 0;
+            position: absolute
+        }
+
+        .header .tab .list-container {
+            left: -10px;
+            top: 100%;
+            transition: .2s ease-out;
+            z-index: -1
+        }
+
+        .header .tab .list-shadow {
+            bottom: -50px;
+            left: -50px;
+            overflow: hidden;
+            position: absolute;
+            right: -50px;
+            top: 0
+        }
+
+        .header .tab .list-shadow::before {
+            bottom: 50px;
+            box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.1);
+            content: '';
+            left: 50px;
+            position: absolute;
+            right: 50px;
+            top: 0
+        }
+
+        .header .tab .list-container>ul {
+            background: #fff;
+            min-width: 250px;
+            position: relative
+        }
+
+        .header .tab .list-container>ul li {
+            box-sizing: border-box;
+            position: relative
+        }
+
+        .header .tab .list-container>ul li.has-sublist::after {
+            width: 6.12px;
+            height: 11.88px;
+            background-position: -84px -38.94px;
+            content: '';
+            position: absolute;
+            right: 20px;
+            top: 18px
+        }
+
+        .header .tab .list-container>ul li a {
+            display: block;
+            padding: 7.5px 30px
+        }
+
+        .header .tab .list-container>ul li:hover {
+            background: #f8f8f8
+        }
+
+        .header .tab .list-container>ul li:hover .sublist {
+            opacity: 1;
+        }
+
+        .header .tab .list-container>ul li.external a {
+            background: no-repeat right 15px center / 12px
+        }
+
+        .header .tab .list-container>ul li.external:hover a {
+            background-image: url("static/img/ic_open_in_new_black.svg")
+        }
+
+        .header .tab .list-container>ul .sublist {
+            background: #f8f8f8;
+            box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.1);
+            right: 0;
+            top: 0;
+            transform: translateX(100%);
+            transition: opacity .3s;
+            max-height: calc(100vh - 295px);
+            overflow-y: auto
+        }
+
+        .header .tab .list-container>ul .sublist li:hover {
+            background: white
+        }
+
+        .header .tab .list-container>ul .sublist li a {
+            display: block;
+            font-size: 14px;
+            line-height: 1.3;
+            padding: 15px 35px
+        }
+
+        .header .tab:hover::before {
+            opacity: 1
+        }
+
+        .header .tab:hover .list-container {
+            opacity: 1;
+            z-index: 0;
+        }
+
+        .rtl .header .tabs {
+            margin-right: 60px
+        }
+
+        .rtl .header .tab .list-container {
+            left: auto;
+            right: -10px
+        }
+
+        .rtl .header .tab .list-container>ul li.has-sublist::after {
+            left: 20px;
+            right: auto;
+            transform: rotate(180deg)
+        }
+
+        .rtl .header .tab .list-container>ul li.external a {
+            background-position: left 15px center
+        }
+
+        .rtl .header .tab .list-container>ul .sublist {
+            left: 0;
+            transform: translateX(-100%);
+            right: auto
+        }
+
+        .rtl .header .promo .link::after {
+            transform: rotate(180deg)
+        }
+
+        header .language {
+            align-self: center;
+            margin-left: 12px
+        }
+
+
+        header .language .others-inner div {
+            padding: 7px 15px
+        }
+
+        header .language .others-inner div a {
+            display: block
+        }
+
+
+
+        /*      Sidebar      */
+
+        amp-sidebar .return-button {
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: .56px;
+            line-height: 16px;
+        }
+
+        .header .tab .list-container>ul li.has-sublist::after,
+        .language .current::after,
+        amp-sidebar .language .current::after,
+        amp-sidebar .has-sub-level::after {
+            display: inline-block;
+            background-image: url("img/header/sprite.svg");
+            background-size: 100px 74px
+        }
+
+        .doc-sidebar,
+        .toc {
+            top: 140px
+        }
+
+        amp-sidebar .language {
+            bottom: 15px;
+            left: 10px;
+            position: absolute;
+            top: auto
+        }
+
+        amp-sidebar .language section[expanded] .current {
+            left: 0;
+            padding-left: 15px;
+        }
+
+        amp-sidebar .language .current a,
+        amp-sidebar .language .others-inner div a {
+            color: #0079ca;
+        }
+
+        amp-sidebar .language .current {
+            margin-right: 0;
+            text-align: left;
+            padding-left: 15px;
+        }
+
+        amp-sidebar .language .current::after {
+            width: 15.53px;
+            height: 8.3px;
+            background-position: -84px -15.71px;
+            top: -5px;
+            transform: rotate(180deg) scale(0.75)
+        }
+
+        amp-sidebar .language .others {
+            box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.1);
+            left: 0;
+            padding: 0;
+            transform: translateY(-117%);
+            transform: translateY(calc(-100% - 50px))
+        }
+
+        amp-sidebar .language .others .others-inner {
+            box-shadow: none;
+            width: 240px
+        }
+
+        amp-sidebar .language .others .others-inner::after {
+            clear: both;
+            content: '';
+            display: table
+        }
+
+        amp-sidebar .language .others .others-inner div {
+            float: left;
+            width: 120px
+        }
+
+        .rtl amp-sidebar .language section[expanded] .current {
+            right: -50px;
+            padding-left: 15px;
+        }
+
+        amp-sidebar {
+            background: #fff;
+            width: 100vw
+        }
+
+        amp-sidebar .submenu {
+            background: #fff;
+            bottom: 0;
+            box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.075);
+            left: 0;
+            position: fixed;
+            right: 0;
+            top: 0;
+            transform: translateX(100%);
+            transition: transform 233ms cubic-bezier(0, 0, 0.21, 1)
+        }
+
+        amp-sidebar input:checked+.submenu {
+            transform: translateX(0)
+        }
+
+        amp-sidebar input[type="checkbox"] {
+            position: absolute;
+            visibility: hidden
+        }
+
+        amp-sidebar .menu-item {
+            border-bottom: solid 1px #ededed;
+            color: #656565;
+            display: block;
+            position: relative;
+            text-transform: none
+        }
+
+        amp-sidebar .menu-item:hover {
+            background: #f9f9f9
+        }
+
+        amp-sidebar .item-layer-1 {
+            font-size: 16px;
+            font-weight: 100;
+            line-height: 44px;
+            padding: 10px 35px 10px 25px;
+        }
+
+        amp-sidebar .item-layer-2,
+        amp-sidebar .item-layer-3 {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 26px;
+            padding: 15px 35px 15px 25px
+        }
+
+        amp-sidebar .menu-layer::after {
+            background: #0079ca;
+            bottom: 0;
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 3px
+        }
+
+        amp-sidebar .menu-layer .items {
+            left: 0;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            position: absolute;
+            right: 0
+        }
+
+        amp-sidebar .menu-layer.primary {
+            height: 100%;
+            position: relative
+        }
+
+        amp-sidebar .menu-layer.primary .items {
+            bottom: 80px;
+            top: 60px
+        }
+
+        amp-sidebar .menu-layer.secondary {
+            z-index: 2
+        }
+
+        amp-sidebar .menu-layer.tertiary {
+            z-index: 3
+        }
+
+        amp-sidebar .menu-layer.secondary .items,
+        amp-sidebar .menu-layer.tertiary .items {
+            bottom: 0;
+            top: 85px
+        }
+
+        amp-sidebar .has-sub-level::after {
+            width: 15.53px;
+            height: 8.3px;
+            background-position: -84px -15.71px;
+            content: '';
+            height: 12px;
+            position: absolute;
+            right: 35px;
+            top: calc(50% - 6px);
+            transform: rotate(90deg) scale(0.75);
+            width: 16px
+        }
+
+        amp-sidebar .close-button {
+            background: url(img/header/close.svg) no-repeat center/18px transparent;
+            border: 0;
+            height: 58px;
+            position: absolute;
+            right: 13px;
+            top: 0;
+            width: 68px
+        }
+
+        amp-sidebar .return-button {
+            color: #b3b3b3;
+            font-weight: 300;
+            left: 25px;
+            position: absolute;
+            top: 22px
+        }
+
+        amp-sidebar .return-button::before {
+            background: url(img/header/return.svg) no-repeat center/contain transparent;
+            border: 0;
+            content: '';
+            display: inline-block;
+            height: 11px;
+            margin-right: 5px;
+            position: relative;
+            top: 1px;
+            width: 7px
+        }
+
+        .rtl amp-sidebar .item-layer-1 {
+            padding: 30px 35px
+        }
+
+        .rtl amp-sidebar .has-sub-level::after {
+            left: 35px;
+            right: auto;
+            transform: rotate(-90deg) scale(0.75)
+        }
+
+        .rtl amp-sidebar .return-button::before {
+            margin: 0 5px;
+            transform: rotate(180deg)
+        }
+
+        .rtl amp-sidebar .submenu {
+            transform: translateX(-100%)
+        }
+
+        .language {
+            height: 33px;
+            left: 100px;
+            position: relative;
+            top: -4px;
+        }
+
+        .language section {
+            border: 0;
+            padding: 0
+        }
+
+        .language section[expanded] .current,
+        .language section[expanded] .others-inner {
+            box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.1)
+        }
+
+        .language section[expanded] .current {
+            left: 60px
+        }
+
+        .language section[expanded] .current::after {
+            transform: scale(0.75)
+        }
+
+        .language .current {
+            font-size: 1em;
+            margin-right: 100px;
+            text-align: right;
+            width: 140px
+        }
+
+        .language .current::after {
+            width: 16px;
+            height: 8.3px;
+            background-position: -42.58px -54.2px;
+            content: '';
+            display: inline-block;
+            position: relative;
+            top: -4px;
+            transform: scale(0.75)
+        }
+
+        .language .others {
+            padding: 0 50px 50px 50px;
+            left: -50px;
+            top: -1px
+        }
+
+        .language .others-inner {
+            background: #fff;
+            margin: 0
+        }
+
+        .language .others-inner div {
+            width: 200px
+        }
+
+        .language .others-inner div a {
+            margin: 0 10px;
+            text-transform: capitalize
+        }
+
+        .language .others-inner div:hover {
+            background-color: #f9f9f9
+        }
+
+        .language .current,
+        .language .others-inner div {
+            background-color: transparent;
+            border: 0;
+            box-sizing: border-box;
+            height: auto;
+            padding: 10px 0px 8px
+        }
+
+        .language .current:hover a,
+        .language .others-inner div:hover a {
+            text-decoration: none
+        }
+
+        .language .current a,
+        .language .others-inner div a {
+            color: #333;
+            display: inline-block;
+            overflow: hidden;
+            padding: 0;
+            text-overflow: ellipsis;
+            white-space: nowrap
+        }
+
+        .rtl .language {
+            left: auto;
+            right: 100px
+        }
+
+        .rtl .language .current {
+            margin: 0 0 0 100px;
+            right: -60px;
+        }
+
+        .rtl .language .others {
+            left: auto;
+            right: -50px
+        }
+
+        .rtl .language section[expanded] .current {
+            left: auto;
+            right: 0
+        }
+
+        .rtl .language .current a,
+        .rtl .language .others-inner div a {
+            background-position: right 6px
+        }
+
+        header .language {
+            align-self: center;
+            margin-left: 12px
+        }
+
+        header .language .others-inner div {
+            padding: 7px 15px
+        }
+
+        header .language .others-inner div a {
+            display: block
+        }
+
+
+        amp-sidebar .language {
+            bottom: 15px;
+            left: 10px;
+            position: absolute;
+            top: auto
+        }
+
+        amp-sidebar .language section[expanded] .current {
+            left: 0;
+            padding-left: 15px;
+        }
+
+        amp-sidebar .language .current a,
+        amp-sidebar .language .others-inner div a {
+            color: #0079ca
+        }
+
+        amp-sidebar .language .current {
+            margin-right: 0;
+            text-align: left;
+            padding-left: 15px;
+        }
+
+        amp-sidebar .language .current::after {
+            width: 15.53px;
+            height: 8.3px;
+            background-position: -84px -15.71px;
+            top: -5px;
+            transform: rotate(180deg) scale(0.75)
+        }
+
+        amp-sidebar .language .others {
+            box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.1);
+            left: 0;
+            padding: 0;
+            transform: translateY(-117%);
+            transform: translateY(calc(-100% - 50px))
+        }
+
+        amp-sidebar .language .others .others-inner {
+            box-shadow: none;
+            width: 240px
+        }
+
+        amp-sidebar .language .others .others-inner::after {
+            clear: both;
+            content: '';
+            display: table
+        }
+
+        amp-sidebar .language .others .others-inner div {
+            float: left;
+            width: 120px
+        }
+
+        .rtl amp-sidebar .language section[expanded] .current {
+            right: -50px;
+            padding-left: 15px;
+        }
+
+
+        /*      header-slider      */
+
+        .promo-slider {
+            margin-top: 60px;
+        }
+
+        .promo-slider .amp-carousel-slide>[class*="replaced-content"] {
+            -o-object-fit: contain;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+
+        .promo-slider .amp-carousel-button {
+            background-color: rgba(0, 0, 0, 0.05);
+            background-size: 18px;
+            opacity: 0.75;
+            border-radius: 0px;
+        }
+
+        .promo-slider .amp-carousel-button:hover,
+        .promo-slider .amp-carousel-button:focus {
+            background-color: rgba(0, 0, 0, 0.3);
+            outline: none;
+        }
+
+        .promo-slider .amp-carousel-button-next {
+            right: -0px;
+            background-image: url(img/header-slider/right-chevron.svg);
+        }
+
+        .promo-slider .amp-carousel-button-prev {
+            left: -0px;
+            background-image: url(img/header-slider/left-chevron.svg);
+        }
+
+        /*      header-search      */
+
+        .contenedor_form_slider {
+            padding: 0px 0;
+            color: #555;
+            position: relative;
+            top: -10px;
+            max-width: 456px;
+            margin: 0px auto auto;
+            z-index: 100;
+            left: 0;
+            right: 0;
+            border-bottom: 1px solid #e3e3e3;
+        }
+
+        .contenedor_form_body {
+            padding: 15px 0;
+            margin: 15px 0;
+        }
+
+        .contenedor_form_slider .search-title {
+            background-color: #0079ca;
+            color: #fff;
+            border-top: #01599a 1px solid;
+            text-align: center;
+            padding: 0px 5px;
+            font-size: 16px;
+            margin: 0;
+            position: relative;
+            height: 28px;
+        }
+
+        .contenedor_form_slider .search-title span {
+            display: inline-block;
+            position: relative;
+            line-height: 28px;
+            font-weight: 600;
+        }
+
+        .contenedor_form_slider .search-title .title-icon {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translate(0, -50%);
+            -webkit-transform: translate(0, -50%);
+        }
+
+        form [class*="grid-m-"] {
+            padding-right: 3px;
+            padding-left: 3px;
+        }
+
+        .form-group {
+            margin-top: 10px;
+        }
+
+        .form-group .inline-group-radio {
+            margin-left: 10px;
+            display: inline-block;
+            vertical-align: bottom;
+        }
+
+        .form-group .input-group .form-control {
+            position: relative;
+            z-index: 2;
+            float: left;
+            width: 100%;
+            margin-bottom: 0;
+            height: 40px;
+            padding: 10px 12px;
+            line-height: 1.42857143;
+            background-color: #f3f3f3;
+            border: 1px solid transparent;
+            font-size: 13px;
+            -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+            -moz-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+            -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+            transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+            color: #555;
+        }
+.close-autocomplete-box{
+    font-size: 32px;
+    color: #0079ca;
+    z-index: 99;
+    position: relative;
+    right: 0px;
+    background: #f3f3f3;
+    height: 38px;
+    padding-right: 15px;
+                    }
+
+.form-group .input-group .search-single {
+    background: #f3f3f3 url(img/header-search/magnifying-glass.svg) no-repeat right center;
+    background-origin: content-box;
+    background-size: 20px;
+}
+        
+.form-group .input-group .search-single:focus,.form-group .input-group .search-single:active,.form-group .input-group .search-single:hover {
+    background: #f3f3f3;
+}
+
+.form-group .input-group .date-entry {
+    background: #f3f3f3 url(img/icons/calendar-primary.svg) no-repeat right center;
+    background-origin: content-box;
+    background-size: 20px;
+}
+        
+        .form-group .input-group .date-entry:focus,.form-group .input-group .date-entry:hover,.form-group .input-group .date-entry:active, {
+    background: #f3f3f3;
+}
+
+        .form-group .input-group .user-number {
+            background: #f3f3f3 url(img/header-search/user-shape.svg) no-repeat right center;
+            background-origin: content-box;
+            background-size: 16px;
+        }
+
+        .form-group .input-group .user-password {
+            background: #f3f3f3 url(img/header-search/padlock-primary.svg) no-repeat right center;
+            background-origin: content-box;
+            background-size: 16px;
+            -webkit-text-security: disc;
+        }
+
+        .form-group .input-group .form-control input {
+            position: relative;
+            z-index: 2;
+            float: left;
+            width: 100%;
+            margin-bottom: 0;
+        }
+
+        .form-group .inline-group-radio .radio-inline {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 0;
+            font-weight: 400;
+            vertical-align: top;
+            cursor: pointer;
+        }
+
+        .form-group label {
+            font-size: 12px;
+            display: inline-block;
+            max-width: 100%;
+            margin-bottom: 5px;
+        }
+
+        .form-group .btn-segmentos {
+            text-align: center;
+        }
+
+        .checkbox input[type=checkbox],
+        .checkbox-inline input[type=checkbox],
+        .radio input[type=radio],
+        .radio-inline input[type=radio] {
+            position: absolute;
+            margin-top: 4px\9;
+            margin-left: -20px
+        }
+
+
+        .selectize-control {
+            position: relative;
+            height: 38px;
+        }
+
+        .row-tooltip [class*=grid-] {
+            padding: 1px 2px;
+        }
+
+        .row-tooltip label {
+            font-size: 8px;
+        }
+
+        .row-tooltip .form-group .input-group .form-control {
+            padding: 6px 0;
+        }
+
+        .row-tooltip .more-info-tooltip {
+            position: relative;
+            right: 0px;
+            top: 0px;
+        }
+
+        .row-tooltip p {
+            margin: 0;
+        }
+
+        p.tooltip-inner {
+            display: inline-block;
+        }
+
+        .tooltip {
+            display: none;
+        }
+
+        .tooltip+label {
+            display: inline;
+            position: relative;
+            cursor: pointer;
+            color: white;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+        .tooltip:checked+label>span {
+            position: absolute;
+            top: 10px;
+            right: 0;
+            width: max-content;
+            opacity: 1;
+            transition: opacity .25s ease-out;
+        }
+
+        .tooltip:checked+label {
+            color: black;
+        }
+
+        .tooltip+label>span {
+            color: #ffffff;
+            font-size: 12px;
+            position: absolute;
+            top: 10px;
+            right: 0;
+            opacity: 0;
+            z-index: 100;
+            width: max-content;
+            padding: 3px 8px;
+            background: #0079ca;
+            border-radius: 2px;
+            will-change: opacity;
+            transition: opacity .25s ease-in;
+        }
+
+        .input-group .btn-search {
+            position: relative;
+            z-index: 2;
+            float: left;
+            width: 100%;
+            margin-bottom: 0;
+        }
+
+        input.btn-search {
+            color: #fff;
+            background-color: #0075ca;
+            height: 40px;
+            -webkit-appearance: button;
+            margin-bottom: 0;
+            font-weight: 400;
+            text-align: center;
+            vertical-align: middle;
+            cursor: pointer;
+            background-image: none;
+            border: 1px solid transparent;
+            white-space: nowrap;
+            font-size: 14px;
+            line-height: 1.42857143;
+            border-radius: 4px;
+            padding: 10px 12px;
+        }
+
+        .banner-form {
+            padding: 10px 0px;
+        }
+
+        .card-container {
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 5px
+        }
+
+
+        /*     main       */
+
+        main {
+            margin-bottom: 15px;
+        }
+
+        hr {
+            border-top: 1px solid #cecece;
+            margin: 10px 10px;
+        }
+
+.h1,
+.h2,
+.h3,
+h1,
+h2,
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #0079ca;
+    font-weight: 400;
+}
+        
+.primary-title {
+            color: #0079ca;
+            font-size: 22px;
+        margin: 10px 0 20px;
+        }
+        
+.intro {
+            color: #656565;
+            font-size: 14px;
+            margin: 0;
+        }
+        
+        .amp-accordion {
+            margin-top: 20px;
+        }
+        
+        .accordion-header {
+        cursor: pointer;
+    color: #0079ca;
+    font-size: 12px;
+    background-color: #ffffff;
+    padding: 15px 0;
+            margin-top: 20px;
+    border: none;
+}
+        
+        .sr-only {
+            display: none;
+        }
+
+        main p,
+        section p {
+            margin: 15px 0;
+        }
+
+        main .link,
+        section .link,
+        div[class*=contenedor_form_] .link {
+            color: #0079ca;
+            text-decoration: none;
+            background: none;
+            border: none;
+        }
+
+        main .link.xs,
+        section .link.xs,
+        div[class*=contenedor_form_] .link.xs {
+            font-size: 12px;
+        }
+
+        main .link.sm,
+        section .link.sm,
+        div[class*=contenedor_form_] .link.sm {
+            font-size: 14px;
+        }
+
+        main .link.lg,
+        section .link.lg,
+        div[class*=contenedor_form_] .link.lg {
+            font-size: 16px;
+        }
+
+        .info {
+            color: #0079ca;
+            font-size: 12px;
+            background-color: #eeeeee;
+            padding: 5px 15px;
+            border-left: 3px solid;
+        }
+
+        .home .hero .container {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /*            cards*/
+
+        .home .hero .card {
+            flex-basis: 100%
+        }
+
+
+        .card-container.grid .card-link p::before {
+            background: linear-gradient(to right, #0389ff, #0dd3ff);
+            bottom: -3px;
+            content: '';
+            left: 0;
+            height: 1px;
+            position: absolute;
+            right: 0
+        }
+
+
+        .card-container.grid .card-link p.cta {
+            overflow: hidden
+        }
+
+
+        .card-container.grid .card-link p.cta::before {
+            bottom: -5px;
+            height: 1px
+        }
+
+
+        .card-container.grid .card-link p.cta:hover::before {
+            animation: 0.5s 1 cta-line
+        }
+
+        .card {
+            background: #fff;
+            box-shadow: 0px 3px 20px 0 rgba(0, 0, 0, 0.075);
+            box-sizing: border-box;
+            flex: 0 0 31%;
+            flex: 0 0 calc(33% - 30px);
+            flex-basis: calc(33% - 30px);
+            height: 90%;
+            margin: 10px 5px;
+            position: relative;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+        }
+
+        .card::before {
+            background: linear-gradient(to right, #0079ca, #0079ca, #0dd3ff);
+            content: '';
+            left: 0;
+            height: 2px;
+            position: absolute;
+            right: 0;
+            top: -2px;
+        }
+
+        .card.centered {
+            align-items: center;
+            text-align: center
+        }
+
+        .card:hover {
+            box-shadow: 0px 3px 50px 0 rgba(0, 0, 0, 0.075);
+            transform: translateY(-5px)
+        }
+
+        .card--spacer {
+            box-shadow: none;
+            height: 0;
+            padding: 0
+        }
+
+        .card--spacer::before {
+            display: none
+        }
+
+        .card--spacer:hover {
+            box-shadow: none
+        }
+
+        .card-inner {
+            display: inline-flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: space-between;
+            width: 100%;
+            padding-bottom: 10px;
+            padding-top: 5px;
+            background-color: #eeeeee;
+        }
+
+        .card-type {
+            color: #0079ca;
+            font-size: 18px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+            text-decoration: none;
+        }
+
+        .card-content {
+            font-size: 12px;
+            color: #757575;
+            font-weight: 300;
+            text-transform: none
+        }
+
+        .card-content h4 {
+            hyphens: auto
+        }
+
+        .card-content p {
+            line-height: 24px;
+            overflow: hidden
+        }
+
+        .card-date {
+            margin-top: 10px
+        }
+
+        .card-section-heading {
+            font-size: 30px;
+            margin: 50px 10px 0
+        }
+
+        .card-container.grid {
+            flex-wrap: wrap
+        }
+
+        .card-container.grid::after {
+            content: '';
+            display: block;
+            flex: 0 0 31%;
+            flex: 0 0 calc(33% - 30px);
+            flex-basis: calc(33% - 30px);
+            margin: 10px 5px;
+            visibility: hidden
+        }
+
+        .card-container.grid .card {
+            display: flex;
+            height: auto;
+            min-height: 400px;
+            padding: 0
+        }
+
+        .card-container.grid .card:hover .card-link p::before {
+            animation: .5s 1 cta-line
+        }
+
+        .card-container.grid .card-inner {
+            display: flex;
+            height: auto;
+            padding: 50px;
+            width: 100%
+        }
+
+        .card-container.grid .card-title {
+            display: block;
+            flex: 1 0 auto;
+            hyphens: none;
+            margin-bottom: 1em
+        }
+
+        .card-container.grid .card-title h2 {
+            font-size: 36px;
+            word-break: initial
+        }
+
+        .card-container.grid .card-link p {
+            color: #0079ca;
+            display: inline;
+            margin: 0;
+            padding: 0;
+            position: relative
+        }
+
+        .card-container.grid .card-link p::before {
+            bottom: -5px;
+            height: 2px
+        }
+
+        .card-container.case .card-inner {
+            padding: 50px
+        }
+
+        .card-container.case .card-date::before {
+            content: ' | ';
+            display: inline;
+            margin: 0 12px
+        }
+
+        .card-container.case .card-logo {
+            align-items: center;
+            display: flex;
+            height: 40px;
+            margin: 1em 0
+        }
+
+        /*        tabs */
+
+        .tabs-info .ampTabContainer {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .tabs-info .tabButton[selected] {
+            outline: none;
+            background: #ccc;
+        }
+
+        .tabs-info .tabButton {
+            list-style: none;
+            flex-grow: 1;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .tabs-info .tabContent {
+            display: none;
+            width: 100%;
+            order: 1;
+            margin: 15px 0;
+        }
+
+        .tabs-info .tabButton[selected]+.tabContent {
+            display: block;
+        }
+
+        /* For example below (not required) */
+
+        .tabs-info .itemCustom {
+            border: 1px solid #000;
+            height: 280px;
+            width: 380px;
+            margin: 10px;
+            text-align: center;
+            padding-top: 140px;
+        }
+
+        .tabs-info amp-selector {}
+
+        .tabs-info amp-selector [option] {
+            color: #0068ae;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            background-color: #f3f3f3;
+            width: 100%;
+            cursor: pointer;
+            padding: 10px 15px;
+            margin-bottom: 5px;
+        }
+
+        .tabs-info amp-selector [option][selected] {
+            cursor: auto;
+            outline: none;
+            width: 100%;
+            background-color: #ddeefd;
+        }
+
+        /* footer */
+
+        footer hr {
+            border-top: 1px solid #cecece;
+            margin: 10px 10px;
+        }
+
+        footer {
+            background-color: #eee;
+            position: relative;
+        }
+
+        footer #mas-info h6 {
+            background-color: #eee;
+            text-align: center;
+            padding: 10px 20px;
+            border: none;
+        }
+
+        footer #mas-info ul {
+            text-align: center;
+        }
+
+        footer #mas-info a {
+            font-size: 14px;
+            text-decoration: underline;
+            color: #757575;
+        }
+
+        footer #mas-info:focus,
+        footer #mas-info:hover {
+            text-decoration: underline;
+        }
+
+        footer .footer-slide-item {
+            background-color: #eee;
+            padding: 30px 0;
+            position: relative
+        }
+
+        footer .footer-image {
+            margin: 0 10px
+        }
+
+        footer .footer-image.facebook,
+        footer .footer-image.twitter,
+        footer .footer-image.instagram,
+        footer .footer-image.linkedin,
+        footer .footer-image.google-plus,
+        footer .footer-image.youtube {
+            width: 24px;
+            height: 24px;
+            background-size: cover;
+        }
+
+        footer .footer-image.facebook {
+            background-image: url("img/footer/facebook-logo.svg");
+        }
+
+        footer .footer-image.twitter {
+            background-image: url("img/footer/twitter-black-shape.svg");
+        }
+
+        footer .footer-image.instagram {
+            background-image: url("img/footer/instagram-symbol.svg");
+        }
+
+        footer .footer-image.linkedin {
+            background-image: url("img/footer/linkedin-letters.svg");
+        }
+
+        footer .footer-image.google-plus {
+            background-image: url("img/footer/google-plus-symbol.svg");
+        }
+
+        footer .footer-image.youtube {
+            background-image: url("img/footer/youtube-logo.svg");
+        }
+
+        footer .footer-icons {
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: center
+        }
+
+        footer .social {
+            padding: 20px 0px 10px 0px;
+        }
+
+        footer .bottom-footer {
+            padding: 15px 0px 30px 0px;
+        }
+
+        footer .footer-privacy {
+            color: #727272;
+            font-size: 12px;
+            font-weight: 400;
+            justify-content: center;
+            text-transform: none;
+            padding: 0px 15px;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        footer .info-empresa {
+            font-size: 14px;
+            line-height: 18px;
+            padding: 10px 0px;
+        }
+
+        footer .info-empresa li {
+            list-style: none;
+            padding: 0 15px;
+        }
+
+        footer .carousel-footer {}
+
+        footer .carousel-footer .carousel-footer-inner {
+            max-width: 100vw;
+            line-height: 48px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        footer .carousel-footer .carousel-footer-inner .amp-carousel-button {
+            background-color: #eeeeee;
+            background-size: 12px;
+        }
+
+        footer .carousel-footer .carousel-footer-inner .amp-carousel-button-next {
+            right: -0px;
+            background-image: url(img/footer/right-chevron.svg);
+        }
+
+        footer .carousel-footer .carousel-footer-inner .amp-carousel-button-prev {
+            left: -0px;
+            background-image: url(img/footer/chevron-pointing-to-the-left.svg);
+        }
+
+        footer .carousel-footer .carousel-footer-inner .amp-scrollable-carousel-slide {
+            font-size: 12px;
+            margin: 0px 10px;
+            color: #6c6c6d;
+            text-decoration: underline;
+        }
+
+        footer .footer-icons a {
+            margin: 0px;
+        }
+
+        @media only screen and (max-width: 956px) {
+            .header .container {
+                padding-right: 18px
+            }
+            .header .left-nav {
+                flex: 1 1 auto;
+                width: auto
+            }
+            .header .left-nav .header-title {
+                margin: 0;
+                padding: 30px 65px 30px 65px;
+                width: auto
+            }
+            .header div.tab,
+            .header .desktop {
+                display: none
+            }
+            .header .tab.hamburger {
+                display: inline-block
+            }
+
+        }
+
+        strong {
+            font-family: Arial, sans-serif;
+            line-height: 150%;
+            text-align: justify;
+
+        }
+
+        /*    autosuggest style    */
+
+        .search-container {
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .search-box,
+        .search-submit,
+        .select-option {
+            font-size: 14px;
+        }
+
+        .autosuggest-box {
+            position: absolute;
+            width: 100%;
+            /* make the overlay opaque */
+            background-color: #fafafa;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, .3);
+        }
+
+.select-option {
+    display: block;
+    box-sizing: border-box;
+    height: 28px;
+    line-height: 28px;
+    padding: 0px 15px;
+    background: #f3f3f3;
+}
+
+        amp-selector .select-option.no-outline.no-outline[option] {
+            outline: none;
+        }
+
+        .select-option:focus {
+            box-shadow: inset rgb(94, 158, 215) 0px 0px 45px;
+        }
+
+        .select-option:focus {
+            background: #fff;
+        }
+
+.select-option:nth-child(2n) {
+    background: #eee;
+}
+        
+/*    alert modal 
+------------------------------------------- */
+        amp-lightbox#alert-messege-modal {
+    background-color: rgba(0, 0, 0, 0.24);
+}
+        
+        a.close {
+    color: #fff;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 600;
+    position: absolute;
+    top: 0px;
+    right: 12px;
+    padding-top: 4px;
+}
+        
+        
+        .alert-messege-modal-content {
+    position: absolute;
+    top: 70px;
+    background-color: #0079ca;
+    padding-bottom: 20px;
+    margin: 10px;
+    border-radius: 4px;
+            min-width: 93%;
+}
+        
+        .alert-messege-modal-heading {
+    padding: 10px 0 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+        .alert-messege-modal-heading h3 {
+    color: #fff;
+            margin: 0px;
+}
+        
+        div.messege {
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    padding: 20px 0px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+        
+        div.messege p {
+    padding-bottom: 20px;
+}
+        
+        .messege a {
+    color: #fff;
+}
+        .messege .underline {
+    text-decoration: underline;
+}
+        
+        .messege .btn {
+        padding: 5px 10px;
+    font-size: 12px;
+    border: 1px solid #ffff;
+    border-radius: 4px;
+}
+        
+/*    fin alert modal
+------------------------------------------- */
+
+    </style>
+
+</head>
+
+<body>
+    <amp-sidebar id='sidebar' side='left' layout='nodisplay'>
+        <form class="menu-layer primary" action="/" target="_top">
+            <button type="reset" class="close-button" id="menu-button" on='tap:sidebar.toggle'></button>
+            <div class="items">
+                <label class="menu-item item-layer-1 has-sub-level"><input type="checkbox">Productos Opcionales<div class="submenu menu-layer secondary">
+            <div class="return-button">Atrás</div>
+            <button type="reset" class="close-button" id="menu-button" on='tap:sidebar.toggle'></button>
+            <div class="items">
+                <a class="menu-item item-layer-2" href="/learn/overview/">Lorem ipsum</a>
+                <a class="menu-item item-layer-2" href="/learn/about-how/">Lorem ipsum</a>
+                <a class="menu-item item-layer-2" href="/learn/amp-design-principles/">Lorem ipsum</a>
+                <label class="menu-item item-layer-2 has-sub-level"><input type="checkbox">Lorem ipsum
+                  <div class="submenu menu-layer tertiary">
+                    <div class="return-button">Atrás</div>
+                    <button type="reset" class="close-button" id="menu-button" on='tap:sidebar.toggle'></button>
+                    <div class="items">
+                      <a class="menu-item item-layer-3" href="/learn/who-uses-amp/">Lorem ipsum</a>
+                      <a class="menu-item item-layer-3" href="/learn/who-uses-amp/publishers/">Lorem ipsum</a>
+                      <a class="menu-item item-layer-3" href="/learn/who-uses-amp/ad-tech-platforms/">Lorem ipsum</a>
+                      <a class="menu-item item-layer-3" href="/learn/who-uses-amp/advertisers/">Lorem ipsum</a>
+                    </div>
+                  </div>
+                </label>
+                <label class="menu-item item-layer-2 has-sub-level"><input type="checkbox">Lorem ipsum
+                  <div class="submenu menu-layer tertiary">
+                    <div class="return-button">Atrás</div>
+                    <button type="reset" class="close-button" id="menu-button" on='tap:sidebar.toggle'></button>
+                    <div class="items">
+                      <a class="menu-item item-layer-3" href="/case-studies/">Lorem ipsum</a>
+                      <a class="menu-item item-layer-3" href="/case-studies/publishers/">Lorem ipsum</a>
+                      <a class="menu-item item-layer-3" href="/case-studies/advertisers/">Lorem ipsum</a>
+                      <a class="menu-item item-layer-3" href="/case-studies/e-commerce/">Lorem ipsum</a>
+                    </div>
+                  </div>
+                </label>
+            </div>
+            </div>
+            </label>
+            <label class="menu-item item-layer-1 has-sub-level"><input type="checkbox">Viajeros Frecuentes<div class="submenu menu-layer secondary">
+            <div class="return-button">Atrás</div>
+            <button type="reset" class="close-button" id="menu-button" on='tap:sidebar.toggle'></button>
+            <div class="items">
+                <a class="menu-item item-layer-2" href="/docs/getting-started/">Lorem ipsum</a>
+                <label class="menu-item item-layer-2 has-sub-level"><input type="checkbox">Lorem ipsum
+                  <div class="submenu menu-layer tertiary">
+                    <div class="return-button">Atrás</div>
+                    <button type="reset" class="close-button" id="menu-button" on='tap:sidebar.toggle'></button>
+                    <div class="items">
+                      <a class="menu-item item-layer-3" href="/docs/tutorials/create.html">Lorem ipsum</a>
+                      <a class="menu-item item-layer-3" href="/docs/tutorials/create.html">Lorem ipsum</a>
+                      <a class="menu-item item-layer-3" href="/docs/tutorials/converting.html">Lorem ipsum</a>
+                      <a class="menu-item item-layer-3" href="/docs/tutorials/add_advanced.html">Lorem ipsum</a>
+                      <a class="menu-item item-layer-3" href="/docs/tutorials/interactivity.html">Lorem ipsum</a>
+                      <a class="menu-item item-layer-3" href="/docs/tutorials/login_requiring.html">Lorem ipsum</a>
+                      <a class="menu-item item-layer-3" href="/docs/tutorials/live_blog.html">Lorem ipsum</a>
+                    </div>
+                  </div>
+                </label>
+            <label class="menu-item item-layer-2 has-sub-level"><input type="checkbox">Lorem ipsum<div class="submenu menu-layer tertiary">
+                    <div class="return-button">Atrás</div>
+                    <button type="reset" class="close-button" id="menu-button" on='tap:sidebar.toggle'></button>
+                    <div class="items">
+                      <a class="menu-item item-layer-3" href="/docs/guides/responsive_amp.html">Lorem ipsum</a>
+                      <a class="menu-item item-layer-3" href="/docs/guides/validate.html">Lorem ipsum</a>
+                      <a class="menu-item item-layer-3" href="/docs/guides/responsive_amp.html">Lorem ipsum</a>
+                      <a class="menu-item item-layer-3" href="/docs/guides/analytics_amp.html">Lorem ipsum</a>
+                      <a class="menu-item item-layer-3" href="/docs/guides/amp-cache-debugging.html">Lorem ipsum</a>
+                      <a class="menu-item item-layer-3" href="/docs/guides/discovery.html">Lorem ipsum</a>
+                      <a class="menu-item item-layer-3" href="/docs/guides/amp_replacements.html">Lorem ipsum</a>
+                      <a class="menu-item item-layer-3" href="/docs/guides/iframes.html">Lorem ipsum</a>
+                      <a class="menu-item item-layer-3" href="/docs/guides/third_party_components.html">Lorem ipsum</a>
+                      <a class="menu-item item-layer-3" href="/docs/guides/ads_on_amp.html">Lorem ipsum</a>
+                      <a class="menu-item item-layer-3" href="/docs/guides/pwa-amp.html">Lorem ipsum</a>
+                      <a class="menu-item item-layer-3" href="/docs/guides/engagement.html">Lorem ipsum</a>
+                      <a class="menu-item item-layer-3" href="/docs/guides/amp-cors-requests.html">Lorem ipsum</a>
+                      <a class="menu-item item-layer-3" href="/docs/guides/how_cached.html">Lorem ipsum</a>
+                    </div>
+                  </div>
+                </label>
+            <label class="menu-item item-layer-2 has-sub-level"><input type="checkbox">Lorem ipsum<div class="submenu menu-layer tertiary">
+                    <div class="return-button">Atrás</div>
+                    <button type="reset" class="close-button" id="menu-button" on='tap:sidebar.toggle'></button>
+                    <div class="items">
+                      <a class="menu-item item-layer-3" href="/docs/reference/components.html">Lorem ipsum</a>
+                      <a class="menu-item item-layer-3" href="/docs/reference/components.html">Lorem ipsum</a>
+                      <a class="menu-item item-layer-3" href="/docs/reference/spec.html">Lorem ipsum</a>
+                      <a class="menu-item item-layer-3" href="/docs/reference/common_attributes.html">Lorem ipsum</a>
+                      <a class="menu-item item-layer-3" href="/docs/reference/experimental.html">Lorem ipsum</a>
+                      <a class="menu-item item-layer-3" href="/docs/reference/validation_errors.html">Lorem ipsum</a>
+                    </div>
+                  </div>
+                </label>
+            <a class="menu-item item-layer-2 external" href="https://ampbyexample.com/">Lorem ipsum</a>
+            <a class="menu-item item-layer-2 external" href="https://youtube.com/TheAMPProject">Lorem ipsum</a>
+            <label class="menu-item item-layer-2 has-sub-level"><input type="checkbox">Lorem ipsum
+                  <div class="submenu menu-layer tertiary">
+                    <div class="return-button">Atrás</div>
+                    <button type="reset" class="close-button" id="menu-button" on='tap:sidebar.toggle'></button>
+                    <div class="items">
+                      <a class="menu-item item-layer-3" href="/contribute/">Lorem ipsum</a>
+                      <a class="menu-item item-layer-3" href="/contribute/">Lorem ipsum</a>
+                      <a class="menu-item item-layer-3" href="/docs/contribute/integrate-your-tech/">Lorem ipsum</a>
+                      <a class="menu-item item-layer-3 external" href="https://github.com/ampproject/amphtml/issues/new">Lorem ipsum</a>
+                      <a class="menu-item item-layer-3 external" href="https://github.com/ampproject/amphtml">Lorem ipsum</a>
+                      <a class="menu-item item-layer-3" href="/docs/contribute/governance/">Lorem ipsum</a>
+                    </div>
+                  </div>
+                </label>
+            </div>
+            </div>
+            </label>
+            <label class="menu-item item-layer-1 has-sub-level"><input type="checkbox">Servicios al Cliente<div class="submenu menu-layer secondary">
+            <div class="return-button">Atrás</div>
+            <button type="reset" class="close-button" id="menu-button" on='tap:sidebar.toggle'></button>
+            <div class="items">
+                <a class="menu-item item-layer-2" href="/latest/">Lorem ipsum</a>
+                <a class="menu-item item-layer-2" href="/latest/blog">Lorem ipsum</a>
+                <a class="menu-item item-layer-2" href="/latest/event/">Lorem ipsum</a>
+                <a class="menu-item item-layer-2" href="/roadmap/">Lorem ipsum</a>
+            </div>
+          </div>
+        </label>
+            </div>
+            <div class="language desktop">
+                <amp-accordion disable-session-states>
+                    <section>
+                        <h6 class="current">
+                            <a class="flag-es"><span>Español (Arg)</span></a>
+                        </h6>
+                        <div class="others">
+                            <div class="others-inner">
+                                <div><a href="/ar/" class="flag-ar"><span>العربية</span></a></div>
+                                <div><a href="/de/" class="flag-de"><span>Deutsch</span></a></div>
+                                <div><a href="/es/" class="flag-en"><span>Argentina (Español)</span></a></div>
+                                <div><a href="/fr/" class="flag-fr"><span>français</span></a></div>
+                                <div><a href="/id/" class="flag-id"><span>Indonesia</span></a></div>
+                                <div><a href="/it/" class="flag-it"><span>italiano</span></a></div>
+                                <div><a href="/ja/" class="flag-ja"><span>日本語</span></a></div>
+                                <div><a href="/ko/" class="flag-ko"><span>한국어</span></a></div>
+                                <div><a href="/pl/" class="flag-pl"><span>polski</span></a></div>
+                                <div><a href="/pt_br/" class="flag-pt_BR"><span>português</span></a></div>
+                                <div><a href="/ru/" class="flag-ru"><span>русский</span></a></div>
+                                <div><a href="/th/" class="flag-th"><span>ไทย</span></a></div>
+                                <div><a href="/tr/" class="flag-tr"><span>Türkçe</span></a></div>
+                                <div><a href="/zh_cn/" class="flag-zh_CN"><span>中文</span></a></div>
+                            </div>
+                        </div>
+                    </section>
+                </amp-accordion>
+            </div>
+        </form>
+    </amp-sidebar>
+    <header class="header fixed">
+        <div class="container">
+            <div class="nav-container">
+                <div class="left-nav alt">
+                    <a href="#" class="tab header-title"><span></span></a>
+                </div>
+                <div class="right alt">
+                    <div class="tabs">
+                        <div class="tab">
+                            <a href="/learn/overview/">
+                                <span>
+                                    <span>Productos Opcionales</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="tab">
+                            <a href="/docs/">
+                                <span>
+                                    <span>Viajeros Frecuentes</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="tab">
+                            <a href="/latest/">
+                                <span>
+                                    <span>Servicios al Cliente</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="language desktop">
+                        <amp-accordion disable-session-states="">
+                            <section>
+                                <h6 role="heading" aria-controls="_AMP_content_0" aria-expanded="false" tabindex="0">
+                                    <a class="flag-es"><span><span><span>Español (Arg)</span></span></span></a>
+                                </h6>
+                                <div id="_AMP_content_0">
+                                    <div class="others-inner">
+                                        <div><a href="/ar/" class="flag-ar"><span><span><span>العربية</span></span></span></a></div>
+                                        <div><a href="/de/" class="flag-de"><span><span><span>Deutsch</span></span></span></a></div>
+                                        <div><a href="/es/" class="flag-es"><span><span><span>español</span></span></span></a></div>
+                                        <div><a href="/fr/" class="flag-fr"><span><span><span>français</span></span></span></a></div>
+                                        <div><a href="/id/" class="flag-id"><span><span><span>Indonesia</span></span></span></a></div>
+                                        <div><a href="/it/" class="flag-it"><span><span><span>italiano</span></span></span></a></div>
+                                        <div><a href="/ja/" class="flag-ja"><span><span><span>日本語</span></span></span></a></div>
+                                        <div><a href="/ko/" class="flag-ko"><span><span><span>한국어</span></span></span></a></div>
+                                        <div><a href="/pl/" class="flag-pl"><span><span><span>polski</span></span></span></a></div>
+                                        <div><a href="/pt_br/" class="flag-pt_BR"><span><span><span>português</span></span></span></a></div>
+                                        <div><a href="/ru/" class="flag-ru"><span><span><span>русский</span></span></span></a></div>
+                                        <div><a href="/th/" class="flag-th"><span><span><span>ไทย</span></span></span></a></div>
+                                        <div><a href="/tr/" class="flag-tr"><span><span><span>Türkçe</span></span></span></a></div>
+                                        <div><a href="/zh_cn/" class="flag-zh_CN"><span><span><span>中文</span></span></span></a></div>
+                                    </div>
+                                </div>
+                            </section>
+                        </amp-accordion>
+                    </div>
+                    <button class="tab hamburger" id="menu-button" on="tap:sidebar.toggle"></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <amp-carousel width="400" height="300" loop autoplay delay="3000" layout="responsive" type="slides" class="promo-slider">
+        <amp-img src="img/header-slider/slide1.jpg" width="1920" height="565" layout="responsive" alt="sample image"></amp-img>
+        <amp-img src="img/header-slider/slide2.jpg" width="1920" height="565" layout="responsive" alt="sample image"></amp-img>
+        <amp-img src="img/header-slider/slide3.jpg" width="1920" height="565" layout="responsive" alt="sample image"></amp-img>
+    </amp-carousel>
+    <div class="container">
+        <div class="grid-m-12 contenedor_form_slider">
+
+            <form method="post" action-xhr="/form/autosuggest/search" target="_blank" id="search-form" autocomplete="off">
+                <div class="grid-m-12">
+                    <h3 class="search-title">
+                        <amp-img src="img/header-search/ico_plane.png" width="38" height="18" layout="responsive" alt="Vuelos" class="title-icon"></amp-img>
+                        <span>
+                        Vuelos
+                       </span>
+                    </h3>
+                </div>
+
+                <div class="grid-m-12">
+                    <div class="form-group">
+                        <div class="ampstart-input ampstart-input-radio inline-group-radio">
+                            <input type="radio" id="idaVuelta" name="tramo" value="returntravel" checked>
+                            <label for="idaVuelta" class="radio-inline"> Ida y vuelta</label>
+                        </div>
+                        <div class="ampstart-input ampstart-input-radio inline-group-radio">
+                            <input type="radio" id="ida" name="tramo" value="onewaytravel">
+                            <label for="ida" class="radio-inline"> Ida</label>
+                        </div>
+                        <div class="ampstart-input ampstart-input-radio inline-group-radio">
+                            <input type="radio" id="toggleMultiplesDestinos" name="tramo" value="m" role="" tabindex="" on="tap:AMP.navigateTo(url='http://arsite.aper.net/AR_Site2016/New/amp-proyect/multiplesdestinos.html')">
+                            <label for="multiplesDestinos" class="radio-inline"> Múltiples Destinos</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-m-12">
+                    <label for="Origen" class="hidden">Origen</label>
+                    <div method="post" action-xhr="/form/autosuggest/search" target="_blank" id="search-form" on="submit:origen-autosuggest-list.hide;submit-success:results.show" autocomplete="off" class="form-group">
+                        <div class="search-container input-group">
+                            <input id="origen-query" name="origen-query" type="text" class="search-box form-control search-single" placeholder="Origen" on="input-debounced:AMP.setState({
+                            query: event.value,
+                            autosuggest: event.value
+                          }),
+                          origen-autosuggest-list.show,
+                          origen-close-autocomplete.show,
+                          results.hide" [value]="query || ''" />
+                        
+                        <span id="origen-close-autocomplete" class="close-autocomplete-box" role="button" tabindex="0" on="tap:origen-close-autocomplete.hide,origen-autosuggest-list.hide" style="display: none;">&times;</span>
+                        </div>
+                        <amp-list class="autosuggest-box" layout="fixed-height" height="112" src="https://ampbyexample.com/json/cart.json" [src]="https://ampbyexample.com/json/cart.json" id="origen-autosuggest-list" hidden>
+                            <template type="amp-mustache">
+                        <amp-selector
+                          keyboard-select-mode="focus"
+                          layout="container"
+                          on="select:AMP.setState({
+                              query: event.targetOption
+                            }),
+                            origen-autosuggest-list.hide,
+                            results.hide"
+                        >
+                          {{#cart_items}}
+                            <div
+                              class="select-option no-outline"
+                              role="option"
+                              tabindex="0"
+                              on="tap:origen-autosuggest-list.hide, origen-close-autocomplete.hide"
+                              option="{{name}}"
+                            >{{name}}</div>
+                          {{/cart_items}}
+                          {{^cart_items.3}}<div class="select-option"></div>{{/cart_items.3}}
+                          {{^cart_items.2}}<div class="select-option"></div>{{/cart_items.2}}
+                          {{^cart_items.1}}<div class="select-option"></div>{{/cart_items.1}}
+                          {{^cart_items.0}}<div class="select-option"></div>{{/cart_items.0}}
+                        </amp-selector>
+                      </template>
+                        </amp-list>
+                    </div>
+                </div>
+
+
+                <div class="grid-m-12">
+                    <label for="Destino" class="hidden">Destino</label>
+                    
+                    <div method="post" action-xhr="/form/autosuggest/search" target="_blank" id="search-form" on="submit:destino-autosuggest-list.hide;submit-success:results.show" autocomplete="off" class="form-group">
+                        
+                           <div class="search-container input-group">
+                            <input id="destino-query" name="destino-query" type="text" class="search-box form-control search-single" placeholder="Destino" on="input-debounced:AMP.setState({
+                            query: event.value,
+                            autosuggest: event.value
+                          }),
+                          destino-autosuggest-list.show,
+                          destino-close-autocomplete.show,
+                          results.hide" [value]="query || ''" />
+                          <span id="destino-close-autocomplete" class="close-autocomplete-box" role="button" tabindex="0" on="tap:destino-close-autocomplete.hide,destino-autosuggest-list.hide" style="display: none;">&times;</span>
+                        </div>
+                        
+                           <amp-list class="autosuggest-box" layout="fixed-height" height="112" src="https://ampbyexample.com/json/cart.json" [src]="https://ampbyexample.com/json/cart.json" id="destino-autosuggest-list" hidden>
+                            <template type="amp-mustache">
+                        
+                         <amp-selector
+                          keyboard-select-mode="focus"
+                          layout="container"
+                          on="select:AMP.setState({
+                              query: event.targetOption
+                            }),
+                            destino-autosuggest-list.hide,
+                            results.hide"
+                        >
+                          {{#cart_items}}
+                            <div
+                              class="select-option no-outline"
+                              role="option"
+                              tabindex="0"
+                              on="tap:destino-autosuggest-list.hide,
+                              destino-close-autocomplete.hide"
+                              option="{{name}}"
+                            >{{name}}</div>
+                          {{/cart_items}}
+                          {{^cart_items.3}}<div class="select-option"></div>{{/cart_items.3}}
+                          {{^cart_items.2}}<div class="select-option"></div>{{/cart_items.2}}
+                          {{^cart_items.1}}<div class="select-option"></div>{{/cart_items.1}}
+                          {{^cart_items.0}}<div class="select-option"></div>{{/cart_items.0}}
+                        </amp-selector>
+                      </template>
+                        </amp-list>
+                    </div>
+                </div>
+
+                <div class="grid-m-6">
+                    <div class="form-group">
+                        <label for="Salida" class="hidden">Salida</label>
+                        <div class="input-group">
+                            <input name="Salida" type="date" min='2017-11-08' max='2017-11-10' class="form-control date-entry">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-m-6">
+                    <div class="form-group">
+                        <label for="Llegada" class="hidden">Llegada</label>
+                        <div class="input-group">
+                            <input name="Llegada" type="date" min='2017-11-08' max='2017-11-10' class="form-control date-entry">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-m-6">
+                    <div class="form-group">
+                        <label for="Clase">Clase</label>
+                        <div class="ampstart-input  input-group">
+                            <select name="Clase" id="Clase" class="user-valid valid form-control">
+                                        <option value="Economy">Economy</option>
+                                        <option value="Club Economy">Club Economy</option>
+                                        <option value="Club Cóndor">Club Cóndor</option>
+                                    </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-m-6 row-tooltip">
+                    <div class="grid-m-4">
+                        <div class="form-group">
+                            <label for="adultos" class="">adultos</label>
+
+                            <p class="tooltip-inner"><input id="tooltip-adultos" type="checkbox" class="tooltip">
+                                <label for="tooltip-adultos"><i class="more-info-tooltip"><amp-img class src="img/header-search/question-circular.svg" height="9" width="9" layout="fixed" alt="AMP"></amp-img></i><span>+ de 12 años</span></label></p>
+
+                            <div class="input-group">
+                                <select name="adultos" id="adultos" class="user-valid valid form-control">
+                                                    <option value="1">01</option>
+                                                    <option value="2">02</option>
+                                                    <option value="3">03</option>
+                                                    <option value="4">04</option>
+                                                    <option value="5">05</option>
+                                                    <option value="6">06</option>
+                                                    <option value="7">07</option>
+                                                    <option value="8">08</option>
+                                                    <option value="9">09</option>
+                                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-m-4">
+                        <div class="form-group">
+                            <label for="niños" class="">niños</label>
+                            <p class="tooltip-inner"><input id="tooltip-ninos" type="checkbox" class="tooltip">
+                                <label for="tooltip-ninos"><i class="more-info-tooltip"><amp-img class src="img/header-search/question-circular.svg" height="9" width="9" layout="fixed" alt="AMP"></amp-img></i><span>Niños (2-11 años)</span></label></p>
+                            <div class="input-group">
+                                <select name="niños" id="niños" class="user-valid valid form-control">
+                                                    <option value="1">01</option>
+                                                    <option value="2">02</option>
+                                                    <option value="3">03</option>
+                                                    <option value="4">04</option>
+                                                    <option value="5">05</option>
+                                                    <option value="6">06</option>
+                                                    <option value="7">07</option>
+                                                    <option value="8">08</option>
+                                                    <option value="9">09</option>
+                                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-m-4 input-group">
+                        <div class="form-group">
+                            <label for="bebes" class="">bebés</label>
+                            <p class="tooltip-inner"><input id="tooltip-bebes" type="checkbox" class="tooltip">
+                                <label for="tooltip-bebes"><i class="more-info-tooltip"><amp-img class src="img/header-search/question-circular.svg" height="9" width="9" layout="fixed" alt="AMP"></amp-img></i><span>Bebés (0-1 años)</span></label></p>
+                            <div class="input-group">
+                                <select name="bebés" id="bebés" class="user-valid valid form-control">
+                                                    <option value="1">01</option>
+                                                    <option value="2">02</option>
+                                                    <option value="3">03</option>
+                                                    <option value="4">04</option>
+                                                    <option value="5">05</option>
+                                                    <option value="6">06</option>
+                                                    <option value="7">07</option>
+                                                    <option value="8">08</option>
+                                                    <option value="9">09</option>
+                                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-m-12">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="submit" value="Buscar" class="btn-search">
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <div class="grid-m-12 banner-form">
+                <a href="https://sdd.aerolineas.com.ar/Mpol20/buscar?pdv=a0&UI_LOCALE=es_AR">
+                    <amp-img src="img/header-search/pagar-aqui.gif" width="290" height="28" layout="responsive" alt="AMP"></amp-img>
+                </a>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="home">
+            <div class="container">
+                <a href="http://www.aerolineas.com.ar/es-ar/productosopcionales" class="card">
+                    <amp-img src="img/main/mejora-tu-experiencia.jpg" alt="text" height="200" width="320" layout="responsive"></amp-img>
+                    <div class="card-inner container">
+                        <div class="card-type text-label news">Mejorá tu experiencia de viaje</div>
+                        <div class="card-content small">¡Ingresá y contratá los servicios adicionales: Upgrade, Salas VIP, alquiler de autos y más!</div>
+                    </div>
+                </a>
+                <a href="http://www.aerolineas.com.ar/es-ar/viajerosfrecuentes" class="card">
+                    <amp-img src="img/main/viajeros-frecuentes.jpg" alt="text" height="200" width="320" layout="responsive"></amp-img>
+                    <div class="card-inner container">
+                        <div class="card-type text-label news">
+                            Viajeros Frecuentes</div>
+                        <div class="card-content small">Disfrutá nuestro Programa Aerolíneas Plus.</div>
+                    </div>
+                </a>
+                <a href="http://www.aerolineas.com.ar/es-ar/servicioscliente" class="card">
+                    <amp-img src="img/main/servicio-al-cliente.jpg" alt="text" height="200" width="320" layout="responsive"></amp-img>
+                    <div class="card-inner container">
+                        <div class="card-type text-label news">Servicios al Cliente</div>
+                        <div class="card-content small">Accedé a toda la información y servicios para tu viaje.</div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="carousel-footer">
+            <amp-carousel height="48" width="768" type="carousel" class="carousel-footer-inner">
+                <a href="http://www.aerolineas.com.ar/es-ar/prensa/comunicado" target="_blank" class="ampstart-label">Prensa</a>
+
+                <a href="http://www.aerolineas.com.ar/es-ar/laempresa" target="_blank" class="ampstart-label">La Empresa</a>
+
+                <a href="http://www.aerolineas.com.ar/es-ar/vuelos_baratos" target="_blank" class="ampstart-label">Explorá Argentina</a>
+
+                <a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=33&amp;idIdioma=es" target="_blank" class="ampstart-label">Acuerdos</a>
+
+                <a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=36&amp;idIdioma=es" target="_blank" class="ampstart-label">Ferias y Congresos</a>
+
+                <a href="http://www.aerolineas.com.ar/es-ar/servicioscliente/codeshare" target="_blank" class="ampstart-label">Nuestros Aliados</a>
+
+                <a href="http://www.aerolineas.com.ar/es-ar/landingsespeciales/landings/208_beneficio-para-jubilados" target="_blank" class="ampstart-label">Beneficios Jubilados</a>
+
+                <a href="http://www.aerolineas.com.ar/es-AR/promo/universia" target="_blank" class="ampstart-label">Universia</a>
+
+                <a href="http://www.aerolineas.com.ar/es-ar/landingsespeciales/landings/17_viaja-por-tu-pais-con-aerolineas-vacaciones" target="_blank" class="ampstart-label">Aerolíneas Vacaciones</a>
+
+                <a href="http://www.aerolineas.com.ar/es-ar/reservas_servicios/programa_membership_rewards" target="_blank" class="ampstart-label">Recompensas de membresía</a>
+
+                <a href="http://www.aerolineas.com.ar/es-ar/newsletter" target="_blank" class="ampstart-label">Hoja informativa</a>
+
+                <a href="http://www.aerolineas.com.ar/es-ar/aerolineas_movil" target="_blank" class="ampstart-label">Aerolíneas Móvil</a>
+
+                <a href="http://www.aerolineas.com.ar/es-ar/landingsespeciales/landings/49_flota---fleet" target="_blank" class="ampstart-label">Nuestra Flota</a>
+
+                <a href="http://www.aerolineas.com.ar/es-ar/skyteam/acerca_de_skyteam" class="ampstart-label">Alianza SkyTeam</a>
+
+                <a href="http://www.aerolineas.com.ar/es-ar/la_empresa/recursos_humanos" target="_blank" class="ampstart-label">RRHH</a>
+
+                <a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=152&amp;idIdioma=es" target="_blank" class="ampstart-label">Proveedores</a>
+
+                <a href="http://cargo.aerolineas.com.ar/es-ar" target="_blank" class="ampstart-label">Cargas</a>
+            </amp-carousel>
+        </div>
+        <div class="container">
+            <div class="social">
+                <div class="footer-icons">
+                    <a href="https://www.facebook.com/Aerolineas.argentinas">
+                        <div class="footer-image facebook"></div>
+                    </a>
+                    <a href="http://twitter.com/Aerolineas_AR/">
+                        <div class="footer-image twitter"></div>
+                    </a>
+                    <a href="https://www.instagram.com/aerolineas_argentinas/">
+                        <div class="footer-image instagram"></div>
+                    </a>
+                    <a href="http://www.linkedin.com/company/aerolineas-argentinas">
+                        <div class="footer-image linkedin"></div>
+                    </a>
+                    <a href="https://plus.google.com/106198199507305429358/posts">
+                        <div class="footer-image google-plus"></div>
+                    </a>
+                    <a href="http://www.youtube.com/user/AerolineasAR">
+                        <div class="footer-image youtube"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <ul class="info-empresa">
+                <li class="codigo-qr">
+                    <a href="https://servicios1.afip.gov.ar/clavefiscal/qr/mobilePublicInfo.aspx?req=e1ttZXRob2Q9Z2V0UHVibGljSW5mb11bcGVyc29uYT0zMDY0MTQwNTU1NF1bdGlwb2RvbWljaWxpbz0wXVtzZWN1ZW5jaWE9MF1bdXJsPWh0dHA6Ly93d3cuYWVyb2xpbmVhcy5jb20uYXJdfQ==" target="_blank">
+                        <amp-img src="img/footer/qr_code.gif" alt="QR-Code" height="41" width="30"></ amp-img>
+                    </a>
+                </li>
+                <li class="pie-texto"><span>Sitio Oficial de Aerolineas Argentinas S.A. © 1996 - 2017<br><span class="number"><span class="text"> Contactenos </span><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=7&amp;idIdioma=es">0810-222-86527</a></span>
+                    </span>
+                </li>
+            </ul>
+            <div class="bottom-footer">
+                <div class="footer-icons">
+                    <a class="footer-privacy" href="http://www.aerolineas.com.ar/es-ar/legales/terminoscondiciones">Legales y Condiciones Generales de Transporte</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

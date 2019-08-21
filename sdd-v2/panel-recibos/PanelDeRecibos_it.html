@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../css/mpol-ver-23756BC2D8F3AA3EC861AA1704C52341.css" />
+        <link rel="stylesheet" href="../css/acc.css" />
+
+
+    </head>
+    <body>
+        <wicket:panel>
+            
+            <article role="article" class="booking">
+                <ul class="booking-nav list-inline">
+                    <li class="pull-left"><span class="h1">Payment</span></li>
+                    <li class="datos"><span>Data</span></li>
+                    <li class="vuelos"><span>Flights</span></li>
+                    <li class="confirmacion"><span>Confirmation</span></li>
+                    <li class="active pago"><span>Payment</span></li>
+                </ul>
+                <div class="booking-content" wicket:id="esperando">
+                    <h1 id="paymentInformationLabel" class="sr-only title-mob">Payment</h1>
+                    <div class="module">
+                        <div class="item">
+                            <div class="details">
+                                <div class="container">
+                                    <div class="row espera_recibos">
+                                        <div class="col-sm-6 bg-blue">
+                                            <span class="cuotas" wicket:id="emitiendo">Stiamo emettendo i tuoi biglietti</span>
+                                        </div>
+                                        <div class="col-sm-6 bg-blue2">
+                                            <wicket:link><img src="inc/pagar/espera_recibos.gif" class="img-responsive img-recibos" role="presentation"></wicket:link>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>       
+                        </div>   
+                    </div>
+                </div>
+                <div class="booking-content" wicket:id="listo">
+                    <h1 id="paymentInformationLabel" class="sr-only title-mob">Payment</h1>
+                    <div class="module">
+                        <div class="item">
+                            <h2 class="title bg-blue">Conferma delle informazioni</h2>
+                            <div class="form">
+                                <ul class="row list-unstyled row-results summary">
+                                    <li class="col-sm-3">
+                                        <div class="label">Nome e Cognome</div>
+                                        <div class="detail" wicket:id="apenom">BEJARANO, MARIA MAGDALENA</div>
+                                    </li>
+                                    <li class="col-sm-2">
+                                        <div class="label">Numero di Passaporto</div>
+                                        <div class="detail" wicket:id="docu">AO12565412F</div>
+                                    </li>
+                                    <li class="col-sm-2">
+                                        <div class="label">Paese</div>
+                                        <div class="detail" wicket:id="pais">United States</div>
+                                    </li>
+                                    <li class="col-sm-2">
+                                        <div class="label">Numero d’ordine</div>
+                                        <div class="detail" wicket:id="nrooperacion">210076993</div>
+                                    </li>
+                                    <li class="col-sm-2">
+                                        <div class="label">Metodo di pagamento</div>
+                                        <div class="detail" wicket:id="tpago">Credit</div>
+                                    </li>
+                                    <li class="col-sm-1">
+                                        <div class="label">Valuta</div>
+                                        <div class="detail" wicket:id="moneda">US Dollar</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="clearfix">
+                                <span class="total" wicket:id="apagar">Prezzo totale: USD 599.50</span>
+                            </div>
+                            <p>IMPORTANTE: Le transazioni vengono gestite e processate dai nostri operatori in Uruguay. In alcuni casi, importi addizionali possono essere accreditati per le transazioni internazionali dalla vostra banca e/o carta di credito. Verificare tali dati prima di procedere all’acquisto.</p>
+                        </div>
+                    </div>
+                    <div class="module">
+                        <div class="item">
+                            <h2 class="title bg-blue">Dati d’acquisto</h2>
+                            <p class="txt-blue"><strong>Ricevuta <span wicket:id="openum">6790186</span></strong></p>
+
+                            <div class="cupones" wicket:id="imagenes">
+                                <img alt="Recibo" class="img-responsive" src="" wicket:id="imagen1">
+                                <img alt="Recibo" class="img-responsive" src="" wicket:id="imagen2">
+                            </div>
+                            
+                            <div class="center hide-mob">
+                                <a onclick="javascript:print();" class="btn btn-default btn-large">Stampa <span class="icon"><wicket:link><img role="presentation" alt="icon" src="inc/pagar/flecha-right.png"></wicket:link></span></a>
+                            </div>
+                            <hr>
+                            <div class="form">
+                                        <div class="form-group center">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <label for="" wicket:id="enviar">Invio via email</label>
+                                                </div>
+                                                <div class="col-lg-5">
+                                                    <input wicket:id="email" type="text" id="" size="30" name="" value="" class="form-control">
+                                                </div>
+                                                <div class="col-lg-3"> <a wicket:id="aenviar" class="btn btn-default btn-block"><span wicket:id="botonenviar"></span> <span class="icon"><wicket:link><img role="presentation" alt="icon" src="inc/pagar/flecha-right.png"></wicket:link></span></a></div>
+                                            </div>
+                                        </div>
+                            </div>
+                            <hr>
+                            <h2 class="title bg-blue2">Vantaggi per il tuo viaggio:</h2>
+                            <ul>
+                                <li><span>Approfitta delle migliori tariffe per il <a target="_blank" href="http://www.rentalcars.com/?affiliateCode=aeroargentina_rc&amp;preflang=es&amp;adplat=confemail">noleggio auto</a>. Inoltre, se sei socio di Aerolíneas Plus accumuli miglia extra.
+                                </span></li>
+
+                                <li><span>Transfer da/per Aeroparque alle migliori tariffe. <a target="_blank" href="http://arbus.plataforma10.com/Servicios?utm_source=arbus&amp;utm_medium=link&amp;utm_campaign=ow#buscar/7107/4761/_/1">Acquista ora il biglietto.</a></span></li>
+
+                                <li><span>Puoi anche prenotare la tua <a target="_blank" href="http://www.aseguratuviaje.com/aerolineasargentinas/">polizza assicurativa</a>.</span></li>
+
+                            </ul>
+                            <h2 class="title bg-blue2">Importante:</h2>
+                            <ul>
+                                <li><strong><span>Controlla <a target="_blank" href="http://www.aerolineas.com.ar/arg/main.asp?idsitio=ar&amp;idpagina=43&amp;ididioma=es">l'orario raccomandato del check-in</a> per il tuo volo.</span></strong></li>
+
+
+                                <li><span>Controlla tutta <a target="_blank" href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=43&amp;idIdioma=es">la documentazione necessaria</a>. Se viaggi verso gli USA, potrebbe essere richiesto il passaporto ed il visto. Se viaggi verso Cuba, potrebbe essere richiesta la tourist card o il visto turistico da acquistare presso il Consolato Cubano o presso le agenzie di viaggio prima dell'imbarco.</span></li>
+
+                                <li><span>In caso di coincidenza immediata da/per un volo domestico con un volo internazionale di Aerolíneas Argentinas, <a target="_blank" href="http://www.aerolineas.com.ar/es-ar/cuponesdescuentos/detalles/ar/buenos-aires/940_transporte-gratis-entre-ezeiza-y-aeroparque">puoi usufruire del transfer gratuito</a> tra gli aeroporti di Ezeiza ed Aeroparque. Questo servizio gratuito è valido solo per le coincidenze tra voli di Aerolineas Argentinas, non per coincidenze con i voli di altre compagnie aeree.</span></li>
+
+                                <li><span> Se non sei ancora socio del nostro programma Aerolíneas Plus, <a target="_blank" href="http://www.aerolineas.com.ar/es-AR/AerolineasPlus/AcercaDe?Inscripcion_Plus=si">iscriviti adesso</a>.</span></li>
+
+                                <li><span>Realizza il tuo <a target="_blank" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=113&amp;idIdioma=es">Web Check-In</a> in 3 facili mosse e guadagna tempo in aeroporto.</span></li>
+
+                                <li><span><a target="_blank" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=80&amp;idIdioma=es">Iscriviti alla newsletter</a>, rimani sempre aggiornato sulle ultime offerte e sulle novità Aerolíneas. </span>
+                                </li>
+
+                                <li><span><span>Seguici su<a target="_blank" href="http://www.facebook.com/aerolineas.argentinas">Facebook</a> e <a target="_blank" href="http://twitter.com/Aerolineas_AR">Twitter</a>.</span></span>
+                                </li>
+                            </ul>
+                            <div class="conoce-mas">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="info">
+                                            <div class="row">
+                                                <div class="col-xs-4 col-md-12">
+                                                    <wicket:link><img role="presentation" alt="Aerolíneas Plus" src="inc/pagar/img-plus.jpg"></wicket:link>
+                                                </div>
+                                                <div class="col-xs-8 col-md-12">
+                                                    <h3>Aerolíneas Plus</h3>
+                                                    <p>Se non sei ancora socio del nostro programma Aerolíneas Plus, iscriviti adesso.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="info">
+                                            <div class="row">
+                                                <div class="col-xs-4 col-md-12">
+                                                    <wicket:link><img role="presentation" alt="Check-In Movil" src="inc/pagar/img-mob.jpg"></wicket:link>
+                                                </div>
+                                                <div class="col-xs-8 col-md-12">
+                                                    <h3>Mobile Check-In</h3>
+                                                    <p>Realizza il tuo Web Check-In in 3 facili mosse e guadagna tempo in aeroporto.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="info">
+                                            <div class="row">
+                                                <div class="col-xs-4 col-md-12">
+                                                    <wicket:link><img role="presentation" alt="Web Check-In" src="inc/pagar/img-checkin.jpg"></wicket:link>
+                                                </div>
+                                                <div class="col-xs-8 col-md-12">
+                                                    <h3>Web Check-In</h3>
+                                                    <p>Realizza il tuo Web Check-In in 3 facili mosse e guadagna tempo in aeroporto.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="info">
+                                            <div class="row">
+                                                <div class="col-xs-4 col-md-12">
+                                                    <wicket:link><img role="presentation" alt="Web Check-In" src="inc/pagar/img-equip.jpg"></wicket:link>
+                                                </div>
+                                                <div class="col-xs-8 col-md-12">
+                                                    <h3>Bagaglio</h3>
+                                                    <p> <span><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=52&amp;idIdioma=es">Franchigia bagaglio</a>, <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=50&amp;idIdioma=es">bagaglio a mano, oggetti non consentiti a bordo</a>.</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="title bg-blue2">Informazioni:</h2>
+                            <ul>
+                                        <li><span>In caso di necessità di <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=144&amp;idIdioma=es">certificazione IVA</a>, contatta un Ufficio Aerolíneas Argentinas.</span></li>
+
+                                        <li><span><a href="http://www.aerolineas.com.ar/arg/bodies/CondicionesGrales_contratoTransporte.asp?idSitio=AR&amp;idIdioma=es">Contratto Generale del Trasporto Aereo.</a>.</span></li>
+                                    </ul>
+                            <div class="row row-encuesta-contacto">
+                                        <div class="col-sm-6">
+                                            <div class="encuesta">
+                                                <div class="row">
+                                                    <div class="col-xs-4 col-md-3">
+                                                        <wicket:link><img role="presentation" alt="Web Check-In" src="inc/pagar/img-equip.jpg"></wicket:link>
+                                                    </div>
+                                                    <div class="col-xs-8 col-md-9">
+                                                        <div class="info">
+                                                            <h4><strong>Sondaggio</strong></h4>
+                                                            <strong>La tua opinione è molto importante per noi, ti invitiamo a valutare la tua esperienza attraverso un </strong> <a target="_blank" href="https://es.research.net/s/MS6KRBN"><strong>sondaggio</strong></a> <strong> che non ti prenderà più di un minuto.</strong>.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="contacto">
+                                                <h4><strong>Seguici su:</strong></h4>
+                                                <ul class="rsociales list-inline list-unstyled">
+                                                    <li>
+                                                        <a href="https://www.facebook.com/Aerolineas.argentinas" target="_blank"><wicket:link><img width="46" height="46" role="presentation" alt="facebook" src="inc/pagar/ico-cont_01.jpg"></wicket:link><span class="sr-only">Facebook</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="http://twitter.com/Aerolineas_AR/" target="_blank"><wicket:link><img width="46" height="46" role="presentation" alt="twitter" src="inc/pagar/ico-cont_02.jpg"></wicket:link><span class="sr-only">Twitter</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="http://www.linkedin.com/company/aerolineas-argentinas" target="_blank"><wicket:link><img width="46" height="46" role="presentation" alt="linkedin" src="inc/pagar/ico-cont_03.jpg"></wicket:link><span class="sr-only">Linkedin</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://plus.google.com/106198199507305429358/posts" target="_blank"><wicket:link><img width="46" height="46" role="presentation" alt="google plus" src="inc/pagar/ico-cont_04.jpg"></wicket:link><span class="sr-only">Google Plus</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="http://www.youtube.com/user/AerolineasAR" target="_blank"><wicket:link><img width="46" height="46" role="presentation" alt="youtube" src="inc/pagar/ico-cont_05.jpg"></wicket:link><span class="sr-only">youtube</span></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+        </wicket:panel>
+    </body>
+</html>

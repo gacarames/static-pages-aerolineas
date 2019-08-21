@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url(../fonts/glyphicons-halflings-regular.eot);
+    src: url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'), 
+    	url(../fonts/glyphicons-halflings-regular.woff2) format('woff2'), 
+    	url(../fonts/glyphicons-halflings-regular.woff) format('woff'), 
+    	url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'), 
+    	url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')
+}
+@font-face {  
+    font-family: "Neo_Sans";
+    src: url(../fonts/neosans/NeoSan.eot);
+    src: url(../fonts/neosans/neosanmed-webfonts.eot) format("embedded-opentype");    
+    src: url(../fonts/neosans/NeoSan.ttf) format("truetype");
+}
+@font-face {    
+    font-family: "Neo_Sans_Medium";
+    src: url(../fonts/neosans/neosanmed-webfonts.eot);
+    src: url(../fonts/neosans/neosanbol-webfonts.eot) format("embedded-opentype");    
+    src: url(../fonts/neosans/Neo_Sans_Medium.ttf) format("truetype");
+}
+@font-face {
+    font-family: 'neo_sansmedium_italic';
+    src: url('../fonts/neosans/neosanmedita-webfont.eot');
+    src: url('../fonts/neosans/neosanmedita-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/neosans/neosanmedita-webfont.woff2') format('woff2'),
+         url('../fonts/neosans/neosanmedita-webfont.woff') format('woff'),
+         url('../fonts/neosans/neosanmedita-webfont.ttf') format('truetype'),
+         url('../fonts/neosans/neosanmedita-webfont.svg#neo_sansmedium_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {    
+    font-family: "Neo_Sans_Bold";
+    src: url(../fonts/neosans/neosanbol-webfonts.eot);
+    src: url(../fonts/neosans/Platform-Medium.eot?#iefix) format("embedded-opentype");
+    src: url(../fonts/neosans/neosanbol-webfont.ttf) format("truetype");
+}
+

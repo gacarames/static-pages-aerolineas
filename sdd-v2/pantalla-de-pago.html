@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Pantalla de pago</title>
+    <!--  fav-icon  -->
+    <link href="images/condor_chico.gif" rel="shortcut icon" type="image/x-icon">
+    <!-- theme color  -->
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#0079ca">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#0079ca">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0079ca">
+    <script type="text/javascript" src="js/jquery-1.10.2.min-ver-628072E7212DB1E8CDACB22B21752CDA.js"></script>
+    <script type="text/javascript" src="js/wicket-event-jquery.min-ver-708C94775B2E1A1A39180619EFAE9145.js"></script>
+    <script type="text/javascript" src="js/wicket-ajax-jquery.min-ver-0D95C654A2A183A4FB6EAF9C6F22FE6F.js"></script>
+    <script type="text/javascript" src="js/modal.min-ver-35033EE4AE3F9C9CF951E390E49D8FB0.js"></script>
+    <script type="text/javascript" id="wicket-ajax-base-url">
+        /*<![CDATA[*/
+        Wicket.Ajax.baseUrl = "buscar?pdv=a0&amp;UI_LOCALE=es_AR";
+        /*]]>*/
+
+    </script>
+
+    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">-->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="css/modal.min-ver-78F168E51786694AF792949CE008D5D1.css" />
+
+    <link rel="stylesheet" href="css/Common2-ver-F7CE317F3EB4782AFDE3CD31993510B1.css" />
+
+    <link rel="stylesheet" href="css/mpol-ver-23756BC2D8F3AA3EC861AA1704C52341.css" />
+
+    <link rel="stylesheet" href="css/tooltipster-ver-3380D1B08264FC854BF34DB6980D7F4F.css" />
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- <wicket:link><link rel="stylesheet" type="text/css" href="inc/interface/fisheye.css"/></wicket:link> -->
+
+    <link rel="stylesheet" href="css/style-chat.css" />
+
+    <script type="text/javascript" src="js/iutil-mw-ver-646745B3C27426AE550533F0A1338D1D.js"></script>
+
+    <script type="text/javascript" src="js/fisheye-ver-A7EB9B4574E830071B85B2B0CD54027D.js"></script>
+
+    <script type="text/javascript" src="js/jquery.tooltipster.min-ver-FF2F685494B400EA2098C79332759A8F.js"></script>
+
+    <!-- COUNTDOWN -->
+    <script src="js/jquery.lwtCountdown-1.0.js"></script>
+    <!-- COUNTDOWN -->
+    <script src="js/jquery.countdown.min.js"></script>
+
+    <script type="text/javascript">
+        /*<![CDATA[*/
+
+        //<![CDATA[
+        function logoEnPaso(p) {
+            for (var i = 1; i < 4; i++) {
+                var png = document.getElementById('paso' + i + 'png');
+                if (i === p) {
+                    png.src = png.src.replace(i + 'g.png', i + 'c.png');
+                } else {
+                    png.src = png.src.replace(i + 'c.png', i + 'g.png');
+                }
+                var txt = document.getElementById('paso' + i + 'txt');
+                if (i === p) {
+                    txt.className = 'textoPasoa';
+                } else {
+                    txt.className = 'textoPasop';
+                }
+            }
+        }
+        //]]>
+
+        /*]]>*/
+
+    </script>
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        Wicket.Event.add(window, "domready", function(event) {
+            Wicket.Ajax.ajax({
+                "c": "idc",
+                "ad": true,
+                "u": "./mpol?1-1.IBehaviorListener.0-base-paso0-codigo&pdv=a0&UI_LOCALE=es_AR",
+                "e": "change",
+                "m": "POST"
+            });;
+            Wicket.Ajax.ajax({
+                "c": "idd",
+                "ad": true,
+                "u": "./mpol?1-1.IBehaviorListener.0-base-paso0-pasajero&pdv=a0&UI_LOCALE=es_AR",
+                "e": "change",
+                "m": "POST"
+            });;
+            Wicket.Ajax.ajax({
+                "c": "ide",
+                "u": "./mpol?1-1.IBehaviorListener.0-base-paso0-btnBuscar&pdv=a0&UI_LOCALE=es_AR",
+                "e": "click",
+                "i": "velo"
+            });;;
+        });
+        /*]]>*/
+
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#my-tooltip').tooltipster({
+                content: $('<span><img src="img/codDeSeg_RESTO.jpg" /></span>')
+            });
+
+            $('#my-tooltip2').tooltipster({
+                content: $('<span><img src="img/codDeSeg_RESTO2.jpg" /></span>')
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <!-- <div id="lhc_status_container"><a id="online-icon" class="status-icon" href="#" onclick="return lh_inst.lh_openchatWindow()">Soporte en linea...</a></div> -->
+
+    <div id="velo" class="semiTransparent2">
+        <div class="arsaWait"></div>
+    </div>
+    <div id="idf" class="hidden"></div>
+
+    <header class="header clearfix">
+        <div class="container">
+            <div class="pull-left logo-header">
+                <a href="http://www.aerolineas.com.ar">
+                            <img alt="logo-aerolineas" src="img/common/logo-aerolineas.gif" /></a>
+            </div>
+            <div class="pull-right logo-header-right">
+                <img alt="" src="img/common/aerolineas_argentinas_skyteam.jpg" />
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <input type="hidden" class="hak-cb" value="">
+                <h1 class="step-title">Compra tu pasaje</h1>
+            </div>
+            
+            <div class="col-xs-12 col-sm-8">
+                <div class="bajada">
+                    <p>Ingresá los datos de pago como se encuentra en tu documento y tarjeta.</p>
+                </div>
+                <div class="TxtError" wicket:id="panelRojo" style="display: none;">
+                    <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>
+                    <h4 class="title">Error: Consulte la siguiente descripción</h4>
+                    <ul>
+                        <li><span>Cantidad de cuotas</span>: Campo obligatorio
+                        </li>
+                        <li><span>Número Documento Pagador</span>: Campo obligatorio
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4">
+                <div id="countdown_dashboard" class="">
+                    <div class="content-countdown">
+                        <span class="title-smallPromo"><i class="fa fa-bullhorn" aria-hidden="true"></i> ¡Apurate! Queda poco tiempo</span>
+                        <div class="dash-contente-smallPromo">
+                            <!--
+                            <div class="dash days_dash">
+                                <div class="digit">0</div>
+                                <div class="digit">0</div>
+                                <span>Días</span>
+                            </div>
+-->
+                            <div class="dash hours_dash">
+                                <div class="digit">0</div>
+                                <div class="digit">0</div>
+                                <span>Horas</span>
+                            </div>
+                            <div class="dash minutes_dash">
+                                <div class="digit">0</div>
+                                <div class="digit">0</div>
+                                <span>Minutos</span>
+                            </div>
+                            <div class="dash seconds_dash">
+                                <div class="digit">0</div>
+                                <div class="digit">0</div>
+                                <span>Segundos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-xs-12">
+                <h2 class="title bg-blue">Informaci&oacute;n del pago</h2>
+
+                <div id="fisheye" class="fisheye">
+                    <ul class="fisheyeContainter list-unstyled row">
+                        <li class="col-xs-3 col-sm-2">
+                            <a class="fisheyeItem" id="id53" href="javascript:;">
+                                                                <img src="img/pagar/decidir_AC-ver-67E7E114C5FE44D8BFE70A145248D33F.gif" id="id64" alt="decidir_AC">
+                                                                <span style="display: none;">&nbsp;</span>
+                                                            </a>
+                        </li>
+                        <li class="col-xs-3 col-sm-2">
+                            <a class="fisheyeItem" id="id54" href="javascript:;">
+                                                                <img src="img/pagar/decidir_AX-ver-BF34AAFDE47E8D67A49401085E5C9BBC.gif" id="id65" alt="decidir_AX">
+                                                                <span style="display: none;">&nbsp;</span>
+                                                            </a>
+                        </li>
+                        <li class="col-xs-3 col-sm-2">
+                            <a class="fisheyeItem" id="id55" href="javascript:;">
+                                                                <img src="img/pagar/decidir_CL-ver-10A8C96C058D8071A6141B73221C0969.gif" id="id66" alt="decidir_CL">
+                                                                <span style="display: none;">&nbsp;</span>
+                                                            </a>
+                        </li>
+                        <li class="col-xs-3 col-sm-2">
+                            <a class="fisheyeItem" id="id56" href="javascript:;">
+                                                                <img src="img/pagar/decidir_DC-ver-97AE09F03CD0D6D3E990947A071C5595.gif" id="id67" alt="decidir_DC">
+                                                                <span style="display: none;">&nbsp;</span>
+                                                            </a>
+                        </li>
+                        <li class="col-xs-3 col-sm-2">
+                            <a class="fisheyeItem" id="id57" href="javascript:;">
+                                                                <img src="img/pagar/decidir_JU-ver-C526A61122AA8FD00AA98B3CE78B42E6.gif" id="id68" alt="decidir_JU">
+                                                                <span style="display: none;">&nbsp;</span>
+                                                            </a>
+                        </li>
+                        <li class="col-xs-3 col-sm-2">
+                            <a class="fisheyeItem" id="id58" href="javascript:;">
+                                                                <img src="img/pagar/decidir_MC-ver-5A25642550E45FA26CC70C584C066670.gif" id="id69" alt="decidir_MC">
+                                                                <span style="display: none;">&nbsp;</span>
+                                                            </a>
+                        </li>
+                        <li class="col-xs-3 col-sm-2">
+                            <a class="fisheyeItem" id="id53" href="javascript:;">
+                                                                <img src="img/pagar/decidir_NT-ver-1219B9D4B6F665852986E345CF680686.gif" id="id64" alt="decidir_AC">
+                                                                <span style="display: none;">&nbsp;</span>
+                                                            </a>
+                        </li>
+                        <li class="col-xs-3 col-sm-2">
+                            <a class="fisheyeItem" id="id54" href="javascript:;">
+                                                                <img src="img/pagar/decidir_TN-ver-D2533E8235401899F74F782E8C970C48.gif" id="id65" alt="decidir_AX">
+                                                                <span style="display: none;">&nbsp;</span>
+                                                            </a>
+                        </li>
+                        <li class="col-xs-3 col-sm-2">
+                            <a class="fisheyeItem" id="id55" href="javascript:;">
+                                                                <img src="img/pagar/decidir_VI-ver-6F0FA3570C0326926CCCD0E3B59D3FCA.gif" id="id66" alt="decidir_CL">
+                                                                <span style="display: none;">&nbsp;</span>
+                                                            </a>
+                        </li>
+                        <li class="col-xs-3 col-sm-2">
+                            <a class="fisheyeItem" id="id56" href="javascript:;">
+                                                                <img src="img/pagar/decidir_PC-ver-B96850629AADA524F0656E20568D7FB6.gif" id="id67" alt="decidir_DC">
+                                                                <span style="display: none;">&nbsp;</span>
+                                                            </a>
+                        </li>
+                        <li class="col-xs-3 col-sm-2">
+                            <a class="fisheyeItem" id="id57" href="javascript:;">
+                                                                <img src="img/pagar/pagofacil-ver-0ADFD56B0D7FDDF696E8ACBD6FD39C3D.gif" id="id68" alt="decidir_JU">
+                                                                <span style="display: none;">&nbsp;</span>
+                                                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="small">
+                    <p>Si pagás con una tarjeta Visa Naranja, debés seleccionar el logo de Visa.
+                        <br>Si pagás con una Tarjeta CENCOSUD que comienza con 5, debés seleccionar el logo de MasterCard.</p>
+                </div>
+            </div>
+
+
+            <div class="col-xs-12">
+                <div class="bajada">
+                    <p>Ingres&aacute; los <strong class="txt-blue">PRIMEROS 6 dígitos</strong> del n&uacute;mero de tu tarjeta de cr&eacute;dito para conocer las promociones de pago disponibles y continuar el proceso de pago.</p>
+                </div>
+                <div class="form-group form-inline estas-pagando-con contentBinT">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="form-group binT clear">
+                                <label for="">Primeros 6 dígitos</label>
+                                <input class="form-control" type="text" max="6" value="" name="" id="id11a" mw-datos-vldn="">
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="">La tarjeta ingresada corresponde a:</div>
+                            <div class="contentBinT_Img">
+                                <div class="ImgTarjeta">
+                                    <img src="img/pagar/decidir_MC-ver-5A25642550E45FA26CC70C584C066670.gif?antiCache=1461352382378" id="idda" alt="Estás pagando con">
+                                </div>
+                                <div class="ImgBanco">
+                                    <img src="img/bancos/Banco_Nacion_20160317043327.jpg" alt="Banco Nacion">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="text-left">
+                                <a id="id5e" href="javascript:;" class="nuevoBotonGris btn btn-large btn-tarjeta">
+                                                                    <span><img id="flecha_atras_png" src="img/pagar/credit_card_cross-ver-2.png" alt="credit_card_cross-ver"></span>Cambiar Tarjeta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <h2 class="title bg-blue">Información del pago</h2>                                            
+                            <p>Completá el número de tu tarjeta de crédito para continuar el proceso de pago.</p>
+                            <div class="form-group form-inline estas-pagando-con">
+                            <span class="bg-blue2">La tarjeta ingresada corresponde a:</span>
+                            <img src="img/pagar/decidir_MC-ver-5A25642550E45FA26CC70C584C066670.gif?antiCache=1461352382378" id="idda" alt="Estás pagando con">
+                            <img src="img/pagar/___-ver-3B9FC2B7E6317823DA09F83C2FB557C0.gif" alt="Promo">    
+                            <a id="id5e" href="javascript:;" class="nuevoBotonGris btn btn-large btn-tarjeta">
+                            <span><img id="flecha_atras_png" src="img/pagar/credit_card_cross-ver-2.png" alt="credit_card_cross-ver"></span>Cambiar Tarjeta</a>                                      
+                            </div> -->
+            </div>
+            <div class="col-xs-12">
+                <h2 class="title bg-blue2">Seleccioná la cantidad de cuotas</h2>
+                <div class="row detail-cuotas">
+                    <div class="col-sm-4">
+                        <div class="detail">
+                            <span class="bg-blue" wicket:id="lopcion">Un pago sin interés</span>
+                            <span class="check"><input type="radio"></span>
+                            <span class="total">TOTAL: ARS 400.00</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="detail">
+                            <span class="bg-blue" wicket:id="lopcion">3 pagos sin interés</span>
+                            <span class="check"><input type="radio"></span>
+                            <span class="total">TOTAL: ARS 400.00</span>
+                            <span class="small" wicket:id="lcuotas">Importe por cuota: </span>
+                            <span class="small" wicket:id="cuotas">ARS 133.33</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="detail">
+                            <span class="bg-blue" wicket:id="lopcion">6 pagos sin interés</span>
+                            <span class="check"><input type="radio"></span>
+                            <span class="total">TOTAL: ARS 400.00</span>
+                            <span class="small" wicket:id="lcuotas">Importe por cuota: </span>
+                            <span class="small" wicket:id="cuotas">ARS 133.33</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="detail">
+                            <span class="bg-blue" wicket:id="lopcion">6 pagos sin interés</span>
+                            <span class="check"><input type="radio"></span>
+                            <span class="total">TOTAL: ARS 400.00</span>
+                            <span class="small" wicket:id="lcuotas">Importe por cuota: </span>
+                            <span class="small" wicket:id="cuotas">ARS 133.33</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row detail-cuotas">
+                    <div class="col-sm-4">
+                        <div class="detail">
+                            <span class="bg-gray" wicket:id="lopcion">Con interés</span>
+                            <span class="check"><input type="radio"></span>
+                            <span class="total">TOTAL: ARS 400.00</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="detail">
+                            <span class="bg-gray" wicket:id="lopcion">3 pagos con interés</span>
+                            <span class="check"><input type="radio"></span>
+                            <span class="total">TOTAL: ARS 400.00</span>
+                            <span class="small" wicket:id="lcuotas">Importe por cuota: </span>
+                            <span class="small" wicket:id="cuotas">ARS 133.33</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="detail">
+                            <span class="bg-gray" wicket:id="lopcion">6 pagos con interés</span>
+                            <span class="check"><input type="radio"></span>
+                            <span class="total">TOTAL: ARS 400.00</span>
+                            <span class="small" wicket:id="lcuotas">Importe por cuota: </span>
+                            <span class="small" wicket:id="cuotas">ARS 133.33</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12">
+                <h2 class="title bg-blue2">Completá los datos del pago</h2>
+                <div class="small">
+                    <br>
+                    <div class="clearfix form">
+                        <div class="row">
+                            <div class="form-group col-sm-4 nroTarjeta">
+                                <label for="">Número de tarjeta
+                                                                    <!-- <span class="small red">*</span> --></label>
+                                <div class="clear">
+                                    <input type="text" value="123456" class="documentoSinErrorU disabled form-control" name="" disabled id="id1c0">
+                                    <input class="documentoSinErrorU form-control" id="CardNumber" type="text" value="" maxlength="10" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label for="">Vencimiento
+                                                                    <!-- <span class="small red">*</span> --></label>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <select class="month form-control " title="Mes" tabindex="0">
+                                                                            <option value="">Mes</option>
+                                                                            <option value="0">01</option>
+                                                                            <option value="1">02</option>
+                                                                            <option value="2">03</option>
+                                                                            <option value="3">04</option>
+                                                                            <option value="4">05</option>
+                                                                            <option value="5">06</option>
+                                                                            <option value="6">07</option>
+                                                                            <option value="7">08</option>
+                                                                            <option value="8">09</option>
+                                                                            <option value="9">10</option>
+                                                                            <option value="10">11</option>
+                                                                            <option value="11">12</option>
+                                                                        </select>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <select class="year form-control col-xs-6" title="Año" tabindex="0">
+                                                                            <option value="">Año</option>
+                                                                            <option value="2016">2016</option>
+                                                                            <option value="2017">2017</option>
+                                                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-4 CardSecurityCode">
+                                <label for="">Código de seguridad
+                                                                    <!-- <span class="small red">*</span> -->
+                                                                </label>
+                                <div class="clear">
+                                    <input class="documentoSinErrorU form-control" id="CardSecurityCode" type="text" value="" maxlength="4" placeholder="">
+                                    <a id="my-tooltip" class="ans">¿donde se encuentra?</a>
+                                    <a id="my-tooltip2" class="ans">¿donde se encuentra?</a>
+                                </div>
+                                <span><!-- <wicket:messageÂ&nbsp;key="MPOLT.dondeSeEncuentra" >Â¿donde se encuentra?</wicket:message>--></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-sm-4">
+                                <label for="">Nombre como figura en el plástico
+                                                                    <!-- <span class="small red">*</span> --></label>
+                                <div wicket:id="binsps"></div>
+                                <input class="documentoSinErrorU form-control" id="CardHolderName" type="text" value="" placeholder="" maxlength="60">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label for="">Domicilio de facturación
+                                                                    <!-- <span class="small red">*</span> --></label>
+                                <div wicket:id="binsps"></div>
+                                <input class="documentoSinErrorU form-control" id="CardHolderAddressStreet" type="text" value="" placeholder="" maxlength="60">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label for="">Número de puerta
+                                                                    <!-- <span class="small red">*</span> --></label>
+                                <div wicket:id="binsps"></div>
+                                <input class="documentoSinErrorU form-control" id="CardHolderAddressNumber" type="text" value="" placeholder="" maxlength="10">
+                            </div>
+                        </div>
+                        <legend>Información del pagador</legend>
+                        <div class="row">
+                            <div class="form-group col-sm-4">
+                                <label for="">Tipo de documento</label>
+                                <select wicket:id="tipodoc" class=" form-control">
+                                                                    <option></option>
+                                                                    <option>DNI</option>
+                                                                    <option>Pasaporte</option>
+                                                                </select>
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label for="">Número </label>
+                                <input type="text" class=" form-control" value="" maxlength="13">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label for="">Fecha de nacimiento</label>
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <select class="day form-control " title="Day" tabindex="0">
+                                                                            <option value="">Día</option>
+                                                                            <option value="1">01</option>
+                                                                            <option value="2">02</option>
+                                                                            <option value="3">03</option>
+                                                                            <option value="4">04</option>
+                                                                            <option value="5">05</option>
+                                                                            <option value="6">06</option>
+                                                                            <option value="7">07</option>
+                                                                            <option value="8">08</option>
+                                                                            <option value="9">09</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <select class="month form-control " title="Mes" tabindex="0">
+                                                                            <option value="">Mes</option>
+                                                                            <option value="1">01</option>
+                                                                            <option value="2">02</option>
+                                                                            <option value="3">03</option>
+                                                                            <option value="4">04</option>
+                                                                            <option value="5">05</option>
+                                                                            <option value="6">06</option>
+                                                                            <option value="7">07</option>
+                                                                            <option value="8">08</option>
+                                                                            <option value="9">09</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                        </select>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <select class="year form-control col-xs-6" title="Año" tabindex="0">
+                                                                            <option value="">Año</option>
+                                                                            <option value="2008">2007</option>
+                                                                            <option value="2009">2008</option>
+                                                                            <option value="2010">2009</option>
+                                                                            <option value="2011">2010</option>
+                                                                            <option value="2012">2011</option>
+                                                                            <option value="2012">2012</option>
+                                                                            <option value="2012">2013</option>
+                                                                            <option value="2012">2014</option>
+                                                                            <option value="2012">2015</option>
+                                                                            <option value="2013" selected="">2016</option>
+                                                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-sm-4">
+                                <label for="">CUIT/CUIL/CDI
+                                                                    <!-- <span class="small red">*</span> --></label>
+                                <select class="form-control">
+                                                                    <option></option>
+                                                                    <option>CUIT</option>
+                                                                    <option>CUIL</option>
+                                                                    <option>CDI</option>
+                                                                </select>
+                            </div>
+                            <div class="form-group col-sm-4 number-cuit">
+                                <label for="">Número
+                                                                    <!-- <span class="small red">*</span> --></label>
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <select class="form-control" name="" id="">
+                                                                            <option value=""></option>
+                                                                            <option value="01">01</option>
+                                                                        </select>
+                                        <span>-</span>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <input class="form-control" type="text" value="">
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <span>-</span>
+                                        <select class="form-control n2" name="" id="">
+                                                                            <option value=""></option>
+                                                                            <option value="01">01</option>
+                                                                        </select>
+                                    </div>
+                                </div>
+                                <div wicket:id="binsps"></div>
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label for="">Correo electrónico<!-- <span class="small red">*</span> --></label>
+                                <div wicket:id="binsps"></div>
+                                <input type="text" wicket:id="email" maxlength="60" class="documentoSinErrorU form-control">
+                            </div>
+                        </div>
+                        <wicket:message key="MPOLT.leyendaPromociones">Conocé las <a href="javascript:void(0)">promociones sin interés</a> actualmente vigentes.</wicket:message>
+                    </div>
+                </div>
+                <div class="TxtError" wicket:id="panelRojo">
+                    <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>
+                    <h4 class="title">Error: Consulte la siguiente descripción</h4>
+                    <ul>
+                        <li><span>Error</span>: Campo obligatorio</li>
+                    </ul>
+                </div>
+                <p>
+                    Te recordamos que las tarifas adquiridas a través de nuestro site para Argentina son exclusivas para residentes del territorio argentino.
+                </p>
+                <p>
+                    Si no sos residente, por favor efectuá una nueva reserva y compra seleccionando tu <a href="javascript:void(0)">lugar de residencia</a>.
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-offset-9 col-sm-3">
+                <a class="btn btn-default btn-block pull-right">Pagar <span class="icon"><img src="img/pagar/flecha-right.png" alt="Pagar"></span></a>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

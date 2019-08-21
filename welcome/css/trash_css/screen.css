@@ -1,0 +1,139 @@
+
+
+			
+    /* image replacement */
+        .graphic, #prevBtn, #nextBtn, #slider1prev, #slider1next{
+            margin:0;
+            padding:0;
+            display:block;
+            overflow:hidden;
+            text-indent:-8000px;
+            }
+    /* // image replacement */
+			
+	#container{	
+		margin:0 ; 
+		position:relative;
+		text-align:left;
+		width:390px; 
+		background:#fff;		
+		
+		}	
+		
+
+			
+	#content{
+		position:relative;
+		}		
+
+/* Easy Slider */
+
+	#slider ul, #slider li{
+		margin:0;
+		padding:0 ;
+		list-style:none;
+		}
+	
+	#slider li{ 
+		/* 
+			define width and height of list item (slide)
+			entire slider area will adjust according to the parameters provided here
+		*/ 
+		width:390px;
+		height:370px;
+		overflow: hidden ; 
+		}	
+		
+		#slider2 li{ 
+		/* 
+			define width and height of list item (slide)
+			entire slider area will adjust according to the parameters provided here
+		*/ 
+		width:325px;
+		height:177px;
+		overflow:hidden; 
+		}	
+	
+	
+	#nextBtn, #slider1next{ 
+		left:396px;
+		}														
+	#prevBtn a, #nextBtn a,
+	#slider1next a, #slider1prev a{   
+		 
+		display: block ;
+      position: absolute; top:155px; left:270px;
+		width:17px;
+		height:17px;
+		background:url(../img/buttons/boton_slider_off2.png) no-repeat 0 0;	
+		}	
+	#nextBtn a, #slider1next a{ 
+	display: block ;
+      position: absolute; top:155px; left:290px;
+		width:17px; 
+		height:17px;
+		background:url(../img/buttons/boton_slider_on_2.png) no-repeat 0 0;	
+		}	
+		
+	/* numeric controls primer slider */	
+
+	ol#controls{ float:right; position: relative;
+		margin:-25px 10px 0px 0;
+		padding:0;   
+		height:30px; font:normal 11px Tahoma, Geneva, sans-serif;	
+		}
+	ol#controls li{
+		margin:2px; 
+		padding:0;
+		float:right;
+		list-style:none; 
+		height:28px; 
+		line-height:28px; 
+		}
+	ol#controls li a{
+		float:left; 
+		height:17px; 
+		line-height:17px; 
+		background:url(../img/buttons/boton_slider_off2.png) no-repeat 0 0;	
+		color:#DAF3F8;
+		padding:0 6px;
+		text-decoration:none;
+		}
+	ol#controls li.current a{
+		background:url(../img/buttons/boton_slider_on_2.png) no-repeat 0 0;	
+		color:#0081C6; 
+		}
+	ol#controls li a:focus, #prevBtn a:focus, #nextBtn a:focus{outline:none;}
+	
+	
+	/* numeric controls segundo slider*/	
+	
+	ol#controls3{ float:right; position: relative;
+		margin:-25px 10px 0px 0;
+		padding:0;   
+		height:30px; font:normal 11px Tahoma, Geneva, sans-serif;	
+		}
+	ol#controls3 li{
+		margin:2px; 
+		padding:0;
+		float:right;
+		list-style:none; 
+		height:28px; 
+		line-height:28px; 
+		}
+	ol#controls3 li a{
+		float:left; 
+		height:17px; 
+		line-height:17px; 
+		background:url(../img/buttons/boton_slider_off2.png) no-repeat 0 0;	
+		color:#DAF3F8;
+		padding:0 6px;
+		text-decoration:none;
+		}
+	ol#controls3 li.current a{
+		background:url(../img/buttons/boton_slider_on_2.png) no-repeat 0 0;	
+		color:#0081C6; 
+		}
+	ol#controls3 li a:focus, #prevBtn a:focus, #nextBtn a:focus{outline:none;}
+	
+/* // Easy Slider */

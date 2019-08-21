@@ -1,0 +1,14 @@
+{
+    "cart_items": [
+        {
+            "name": "Pluot",
+            "quantity": 5,
+            "price": "$1.00"
+    },
+        {
+            "name": "Apple",
+            "quantity": 1,
+            "price": "$3.25"
+    }
+  ]
+}

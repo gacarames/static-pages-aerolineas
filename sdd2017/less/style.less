@@ -1,0 +1,497 @@
+@import "fonts.css";
+@import "font-awesome.min.css";
+@import "bootstrap.less";
+
+.btn {
+	position: relative;
+	.fa {
+		position: absolute;
+		top: 11px;
+	}
+	&.icon-right {
+		padding-right: 20px;
+		.fa {
+			right: 10px;
+		}
+	}
+	&.icon-left {
+		padding-left: 35px;
+		.fa {
+			left: 10px;
+		}
+	}
+}
+
+
+
+.text-blue {
+	color: @brand-primary;
+}
+
+/* Boxs background colors
+-------------------------------------------------- */
+
+.bg-blue {
+	background-color: @brand-primary;
+	color: #ffffff;
+}
+
+.box {
+	padding: 10px 0px;
+	margin: 2px 0;
+	&.bg-lightblue {
+	    background-color: @blue-lighter;
+	    color: @blue-primary-blue-lighter;
+	    padding: 10px 15px;
+	}
+	&.bg-grey {
+	    background-color: #f3f3f3;
+	    padding: 10px 15px;
+	}
+	@media (max-width: @screen-sm-min) {
+		&.bg-grey,
+		&.bg-lightblue {
+			padding: 10px;
+		}
+		
+	}
+}
+
+h2.box {
+	margin-bottom: 20px;
+	margin-top: 0;
+}
+
+.box-bordered {
+	border: 2px solid @blue-lighter;
+}
+
+input[type=checkbox], input[type=radio] {
+    margin: 2px 0 0;
+    margin-left: -18px;
+}
+
+.content {
+    padding: 0 20px 20px;
+    @media (max-width: @screen-sm-min) {
+    	padding: 0 10px 10px;
+    }
+}
+
+.container-row {
+	max-width: 650px;
+	margin: auto;
+}
+
+
+.img-center img {
+	margin: auto;
+}
+.step-title {
+	margin-bottom: 35px;
+}
+.title {
+	margin-bottom: 25px;
+}
+
+.header {
+    border-bottom: 1px solid #f3f3f3;
+    padding-bottom: 15px;
+    margin-bottom: 35px;
+    .info-mi-cuenta {
+    	width: 100%;
+    	max-width: 350px;
+    	margin-top: 20px;
+    	.content {
+    		padding: 0 10px 10px;
+    	}
+	    font-size: 14px;
+	    color: #0075ca;
+	    .title {
+	    	padding: 5px;
+	    	margin: 0 0 8px;
+		    text-align: center;
+		    font-size: 16px;
+	    }
+	    .label {
+	    	font-size: inherit;
+	    }
+	}
+	.detail {
+		text-align: center;
+		display: block;
+	}
+	.logo-header {
+		margin-top: 10px;
+	}
+	@media (max-width: @screen-sm-min) and (orientation: portrait) {
+    	.info-mi-cuenta {
+    		margin-top: 30px;
+			float: none!important;
+    	}
+		.logo-header {
+			float: none!important; 
+		}
+    }
+}
+
+.row-nav {
+    margin: 50px -15px;
+    @media (max-width: @screen-sm-min) {
+    	margin: 25px -15px;
+    	.btn {
+    		margin-bottom: 10px;
+    	}
+    }
+}
+
+#footer {
+	background-color: #eee;
+	color: #6c6c6d;
+	font-size: 12px;
+	.container {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+    ul,
+    ul li {vertical-align: top;}
+	ul li {padding: 0px;}
+	.logos-footer {
+		float: inherit;
+		clear: both;
+		@media (min-width: @screen-sm-min)  {
+			float: right;
+			clear: inherit;
+			text-align: right;
+		}
+		@media (min-width: @screen-sm-min) and (orientation: portrait) {
+			margin-right: 25px;
+		}
+	}
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 68px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 68px;
+  background-color: #f5f5f5;
+}
+
+/* fisheye styles
+-------------------------------------------------- */
+.fisheye {
+    text-align: center;
+    position: relative;
+    //width: 60%;
+    margin: auto;
+    .fisheyeContainter {
+	    margin-bottom: 0px;
+	    clear: both;
+	    overflow: hidden;
+	    padding: 0;
+	    list-style: none;
+	    li {
+		    //padding: 0px;
+		    display: inline-block;
+		    @media (min-width: @screen-sm-min) {
+		    	//width: 14.28%;
+		    	//width: 12.5%;
+		    	width: 11.11%;
+		   	}
+		    .fisheyeItem {
+			    display: block;
+			    span {
+			    	display: none;
+    				position: absolute;
+			    }
+			    img {
+			    	border: none;
+				    margin: 0 auto 5px auto;
+				    width: 100%;
+				    -webkit-transition: all 0.2s linear;
+				    -moz-transition: all 0.2s linear;
+				    -o-transition: all 0.2s linear;
+				    -ms-transition: all 0.2s linear;
+				    transition: all 0.2s linear;
+				}
+				&:hover {
+					img {
+					    -webkit-transform: scale(1.1, 1.1);
+					    -moz-transform: scale(1.1, 1.1);
+					    -o-transform: scale(1.1, 1.1);
+					    -ms-transform: scale(1.1, 1.1);
+					    transform: scale(1.1, 1.1);
+					}
+				}
+			}
+			
+		}
+	}
+}
+
+.row-small {
+	margin: 0 -5px;
+	[class*="col-"] {
+		padding: 0 5px;
+	}
+}
+
+.TxtError {
+    background-color: #FFE7E7;
+    color: #d90000;
+    padding: 15px 15px 0px 60px;
+    border: 1px solid #FF9A9A;
+    margin: 0 0 35px;
+    text-align: left;
+    font-size: 14px;
+    position: relative;
+    padding-left: 33px;
+    padding-bottom: 5px;
+    .title {
+	    font-size: 16px;
+	    font-family: 'Regular-Semibold';
+	    font-weight: normal;
+	    line-height: 1.2em;
+	    padding: 0;
+	    margin: 0 0 5px 0;
+	}
+    .glyphicon {
+	    position: absolute;
+	    left: 10px;
+	    top: 10px;
+	    font-size: 14px;
+	    color: rgba(255, 0, 0, 0.43);
+	}
+	p {
+	    margin: 0 0 10px;
+	}
+}
+
+.images-bancos {
+	display: inline-block;
+	span {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	img {
+		max-height: 100px;
+		margin: auto 15px;
+	}
+	@media (max-width: @screen-sm-min) {
+		img {
+			max-height: 85px;
+		}
+	}
+}
+
+/* Detalle Cuotas
+-------------------------------------------------- */
+.detail-cuotas {
+    text-align: center;
+    
+	margin: auto;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    li {
+		vertical-align: middle;
+	    text-align: center;
+	}
+	.detail{
+		border: 1px solid #0075CA;
+		min-height: 124px;
+		margin-bottom: 10px;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 0;
+		span {
+		 	display: block;
+		 	color: #0075CA;
+		 	font-size: 12px;
+		 	text-align: center;
+		 	font-family: inherit;
+		 	line-height: normal;
+		 	&.bg-blue,
+			&.bg-blue2 {
+				font-family: 'Regular-Medium';
+				font-weight: normal;
+			    font-size: 15px;
+			    padding: 3px;
+			}
+			&.total {
+				background-color: #E8E8E8;
+			    padding: 5px;
+			    font-size: 14px;
+			    strong {
+					font-family: 'Regular-Semibold';
+				}
+			}
+			&.check {
+			 	padding: 5px;
+			}
+			&.bg-blue {
+				color: #FFFFFF;
+			}
+			&.bg-gray {
+			    background-color: #cecece;
+			    font-family: 'Regular-Medium';
+			    font-weight: normal;
+			    font-size: 15px;
+			    padding: 3px;
+			    color: #005a9d;
+			}
+			&.interes,
+			&.interes-pesos {
+				display: inline-block;
+			}
+		}
+		&.coninteres .small {
+			display: inline-block;
+		}
+	}
+	@media (min-width: @screen-sm-min)  {
+		//width: 80%;
+	}
+}
+
+.combodate {
+	clear: both;
+	overflow: hidden;
+	padding-left: 3px;
+	.form-control {
+	    width: 30.5%;
+	    padding: 0 1px 0 2px;
+	    float: left;
+	    margin: 0;
+	    display: inline-block;
+	    margin-left: 5px;
+	    &:first-child {
+			margin-left: 0px;
+		}
+	}
+}
+
+.CardSecurityCode {
+	.form-control {
+		width: 78px;
+		float: left;
+	}
+}
+
+.nroTarjeta {
+	input {
+		display: inline-block;
+		width: 73%;
+		&.disabled {
+		    width: 25%;
+		    //background-color: #E8E8E8;
+		    //color: #8A8A8A;
+		    text-align: center;
+		}
+	}
+}
+
+.has-tooltip {
+	position: relative;
+	.more-info-tooltip {
+		color: #a1a1a1;
+		top: 5px;
+		right: 5px;
+		z-index: 9;
+		cursor: pointer;
+	}
+	.tooltip {width: inherit;}
+		.tooltip-inner {
+			width: 150px;
+		}
+	.more-info-tooltip {
+		color: #a1a1a1;
+		font-size: 12px;
+	}
+	&.has-tooltip-gris {
+		@media (max-width:320px) {
+			label {
+				font-size: 62%;
+			}
+			.more-info-tooltip {
+				right: 0;
+				font-size: 10px;
+				top: 8px;
+			}
+		}
+	}
+}
+
+#my-tooltip {
+	cursor: pointer;
+	display: block;
+    margin-left: 11px;
+    float: left;
+    margin-top: 10px;
+}
+
+.row-well {
+    padding: 0px;
+    .checkbox {
+	    margin-top: 30px;
+	}
+	.form-group {
+	    margin-bottom: 4px;
+	}
+	label {
+	    margin-bottom: 0px;
+	}
+	legend {
+	    padding-bottom: 0px;
+	    margin-bottom: 5px;
+	}
+	.group-radios {
+	    margin-top: 27px;
+	}
+}
+
+.has-error {
+	.checkbox, 
+	.has-error .checkbox-inline, 
+	.has-error .control-label, 
+	.has-error .help-block, 
+	.has-error .radio, 
+	.has-error .radio-inline,
+	&.checkbox label, 
+	&.checkbox-inline label, 
+	&.radio label, 
+	&.radio-inline label {
+		color: #d50000;
+	}
+	.form-control {
+		border-color: #ff9f9f;
+	}
+	&.checkbox label, 
+	&.radio label {
+	    background-color: #FFE7E7;
+	    color: #d90000;
+	    border: 1px solid #FF9A9A;
+	    padding: 10px;
+	    input {
+	    	margin-left: -6px;
+    		margin-top: -6px;
+	    }
+	}
+}
+
+
+
+
+
+
+

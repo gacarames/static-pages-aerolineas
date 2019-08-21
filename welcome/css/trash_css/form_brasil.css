@@ -1,0 +1,193 @@
+@charset "utf-8";
+/* CSS Document */
+
+#contenedor_form { width:282px; height:318px}
+.boton_alojamiento { 
+	  	  font: normal  "Neo_sans", Tahoma, Geneva, sans-serif;
+		  padding-top:4px; 
+		  padding-left:39px; 
+		  width:104px; 
+		  height:19px; 
+		  float:left; 
+		  background-image:url(../img/reservas/alojamientos.gif)
+		  }
+		  
+		  
+		    .boton_autos {
+		  padding-top:5px; 
+		  padding-right:31px; 
+		  width:107px; 
+		  height:18px; 
+		  float:left; 
+		  background-image:url(../img/reservas/autos.gif)
+		  }
+		  
+		  .boton_check_in_br {
+		  padding-top:4px; 
+		  padding-left:101px; 
+		  width:180px; 
+		  height:19px; 
+		  float:left; 
+		  background-image: url(../img/reservas/check_in_br.gif)
+		  }
+		  
+		  .boton_mis_viajes {
+		  padding-top:4px; 
+		  padding-left:36px; 
+		  width:103px; 
+		  height:20px; 
+		  float:left; 
+		  background-image:url(../img/reservas/mis_viajes.gif)
+		  }
+		  
+		  .boton_vuelos_br {
+		  padding-top:3px; 
+		  padding-left:56px; 
+		  width:86px; 
+		  height:21px; 
+		  float:left; 
+		  background-image:url(../img/reservas/vuelos_br.gif)
+		  }
+		  
+		  	.box_form { margin-top:0; 
+		 padding:6px 3px 5px 4px; 
+		 height:235px; 
+		 width:272px; 
+		 background-color:#EDEEEE; 
+		 border: solid 1px #0081c6;
+		 border-radius:0 0 5px 5px; -webkit-border-radius: 0 0 5px 5px; -moz-border-radius: 0 0 5px 5px;
+		 }
+		 
+		 .box_border { border-top: solid 1px #0081c6; border-bottom:solid 1px #0081c6; margin-top:12px; padding-top:4px}
+		 
+		 
+		 .btn_br {text-align:center; 
+	float:right;  
+	width:7.335em; 
+	height:19px; 
+	background-image:url(../img/buttons/buscar.gif); 
+	padding-top:4px;   
+	font: normal 12px Tahoma, Geneva, sans-serif; margin-left:20px; margin-top:20px; 
+	text-decoration:none; color:#FFF;
+	border:0; }
+		 
+
+/*margen*/
+.mtop3 { margin-top:3px}
+.mtop5 { margin-top:5px}
+.mtop10 { margin-top:10px}
+.mtop15 { margin-top:15px}
+.ml4 { margin-left:4px}
+.ml10 { margin-left:10px}
+.ml115 {margin-left:115px}
+.ml14 {margin-left:14px}
+.mr130 { margin-right:130px}
+.height20 { height:20px}
+
+/*align*/
+
+.fleft { float:left}
+
+/*textos*/
+
+.texto_botonera { 
+font: normal 12px  "Neo_sans", Tahoma, Geneva, sans-serif;
+margin-right:1.000em; 
+text-decoration:none; 
+color:#666;
+}
+
+.text1 {
+font: normal 11px Tahoma, Geneva, sans-serif; 
+}
+		  
+.text2 {
+font: normal 10px Tahoma, Geneva, sans-serif; 
+}
+
+.text3 {font: normal 14px  "Neo_sans", Tahoma, Geneva, sans-serif;
+margin-right:1.000em; 
+text-decoration:none; 
+color:#FFF;
+}
+
+.textsize1 {}
+.textsize2 {}
+.textsize3 { font-size:9px}
+
+		  
+.color1 {color:#0081c6}
+.color2 { color:#666}
+		  
+/*boxes*/
+
+.width1 { width:45px}
+.width2 { width:95px}
+.width4 { width:125px}
+.width5  { width:130px}
+.width3 { width:155px}
+
+
+
+		  .search1 {
+	width:90px;
+	height:18px;
+	font-size:11px;
+	color: #666;
+	position:absolute;
+	margin-left:5px;
+	left: 13px;
+	top: 88px;
+}
+		  
+		 .redondeadas {  background-color: #fff;
+
+border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px;}
+		  
+		  .sombra_interior {  background-color:
+
+#fff;-moz-box-shadow: inset 2px 1px  1px #999;}
+
+
+.input
+{
+    
+    border: 1px solid #FFF; height:20px;
+    font-size:11px;
+    color: #666; padding-left:2px; background-color:#FFF;
+       
+}
+
+.input_arrow
+{
+    background: url(../img/buttons/arrow.gif)   no-repeat scroll 0 0 transparent ;  background-position: 200px 1px;
+    border: 1px solid #FFF;
+    color: #666; font-size:11px; padding-left:2px; background-color:#FFF; height:20px; width:218px;
+       
+}
+
+.input_arrow_chico
+{
+    background: url(../img/buttons/arrow.gif)   no-repeat scroll 0 0 transparent ;  background-position: 25px 1px;
+    border: 1px solid #FFF;
+    font-size:11px;
+    color: #666; padding-left:2px; background-color:#FFF;
+       
+}
+
+.input_lupa
+{
+    background: url(../img/buttons/search.gif)   no-repeat scroll 0 0 transparent ; width:266px; height:23px;  background-position: 245px 3px;
+    border: 1px solid #fff; margin-bottom:4px; font-size:11px;
+    color: #666; padding-left:2px; background-color:#FFF;
+       
+}
+
+.input_calendar
+{
+    background: url(../img/buttons/calendar.gif)   no-repeat scroll 0 0 transparent ; width:127px; height:23px;  background-position: 105px 3px;
+    border: 1px solid #fff; margin-bottom:10px; 
+    font-size:11px;
+    color: #666; padding-left:2px; background-color:#FFF;
+       
+}

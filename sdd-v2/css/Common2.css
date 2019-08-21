@@ -1,0 +1,471 @@
+.TxtNaviAzul {
+	font-family:Tahoma, Verdana;
+	font-size:9px;
+	color:#233982;
+	text-decoration:none;
+}
+
+.TxtGris10 {
+	font-family:Tahoma, Verdana;
+	font-size:10px;
+	color:#4d4d4d;
+	text-decoration:none;
+}
+
+.TxtGris11 {
+	font-family:Tahoma, Verdana;
+	font-size:11px;
+	color:#4d4d4d;
+	text-decoration:none;
+}
+
+
+.TxtGrisOscuro11 {
+	font-family:Tahoma, Verdana;
+	font-size:11px;
+	color:#4d5066;
+	text-decoration:none;
+}
+
+.TxtNegro11 {
+	font-family:Tahoma, Verdana;
+	font-size:11px;
+	color:#000000;
+	text-decoration:none;
+}
+
+.TxtGris11Activo {
+	font-family:Tahoma, Verdana;
+	font-size:11px;
+	color:#4d4d4d;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.TxtBlanco10 {
+	font-family:Tahoma, Verdana;
+	font-size:10px;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+.TxtBlanco11 {
+	font-family:Tahoma, Verdana;
+	font-size:11px;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+.TxtBlanco12 {
+	font-family:Tahoma, Verdana;
+	font-size:12px;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+.Txt2Navi {
+	font-family:Tahoma, Verdana;
+	font-size:10px;
+	color:#fd8900;
+	text-decoration:none;
+}
+
+.Txt2NaviActivo {
+	font-family:Tahoma, Verdana;
+	font-size:10px;
+	font-weight:bold;
+	color:#fd8900;
+	text-decoration:none;
+}
+
+.TxtAzul10 {
+	font-family:Tahoma, Verdana;
+	font-size:10px;
+	color:#1b6e9e;
+	text-decoration:none;
+}
+
+.TxtAzul11 {
+	font-family:Tahoma, Verdana;
+	font-size:11px;
+	color:#1b6e9e;
+	text-decoration:none;
+}
+
+.TxtAzul12 {
+	font-family:Tahoma, Verdana;
+	font-size:12px;
+	color:#1b6e9e;
+	text-decoration:none;
+}
+
+.TxtAzul11Activo {
+	font-family:Tahoma, Verdana;
+	font-size:11px;
+	color:#1b6e9e;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.TxtNaranja10 {
+	font-family:Tahoma, Verdana;
+	font-size:10px;
+	color:#fd8900;
+	text-decoration:none;
+}
+
+.TxtNaranja11 {
+	font-family:Tahoma, Verdana;
+	font-size:11px;
+	color:#fd8900;
+	text-decoration:none;
+}
+
+.TxtNaranja15 {
+	font-family:Tahoma, Verdana;
+	font-size:15px;
+	color:#fd8900;
+	text-decoration:none;
+}
+
+.TxtFucsia10 {
+	font-family:Tahoma, Verdana;
+	font-size:10px;
+	color:#de536a;
+	text-decoration:none;
+}
+
+
+.TxtFucsia11 {
+	font-family:Tahoma, Verdana;
+	font-size:11px;
+	color:#de536a;
+	text-decoration:none;
+}
+
+.TxtFucsia9 {
+	font-family:Tahoma, Verdana;
+	font-size:9px;
+	color:#de536a;
+	text-decoration:none;
+}
+
+.TxtFucsia9Activo {
+	font-family:Tahoma, Verdana;
+	font-size:9px;
+	font-weight:bold;
+	color:#de536a;
+	text-decoration:none;
+}
+
+.TxtVerde11 {
+	font-family:Tahoma, Verdana;
+	font-size:11px;
+	color:#3DBF15;
+	text-decoration:none;
+}
+.TxtRojo11 {
+	font-family:Tahoma, Verdana;
+	font-size:11px;
+	color:#D82118;
+	text-decoration:none;
+}
+
+.TxtExecutive15 {
+	font-family:Tahoma, Verdana;
+	font-size:15px;
+	color:#77674d;
+}
+
+
+.TxtExecutive11 {
+	font-family:Tahoma, Verdana;
+	font-size:11px;
+	color:#77674d;
+}
+
+.TxtExecutive10 {
+	font-family:Tahoma, Verdana;
+	font-size:10px;
+	color:#77674d;
+}
+
+.TxtError {
+             font-family:Tahoma, Verdana;
+             font-size:9px;
+             color:#d50000;
+             font-weight:bold;
+}
+
+.txtTituloTicket {
+                font-family:Tahoma, Verdana;
+                font-size:16px;
+                color:#0f2561;
+                text-decoration:none;
+                font-weight:bold;
+}
+.txtGirs {color:#808084;font-size:11px;}
+.txtGirsClaro {color:#CCC;font-size:11px;}
+.txtCeleste {color:#0081C6;font-size:11px;}
+.txtCeleste12 {color:#0081C6; font-size:12px; font-weight:bold;}
+.txtCeleste14 {color:#0081C6; font-size:14px; font-weight:bold;}
+.txtAmarillo {color:#FFD200;font-size:11px;}
+.txtBlancoBold {color:#FFF; font-weight:bold;font-size:11px;}
+.txtBlanco {color:#FFF;font-size:11px;}
+.txtBlancoOn {color:#FFF; font-size:11px;font-weight:bold; text-decoration:underline;}
+.txtGirs10 {color:#808084;font-size:10px;}
+.txtGirsOscuroBold{	color:#525354;	font-weight:bold;font-size:11px;}
+.txtGirsfoote {color:#808084; font-family:Tahoma, Geneva, sans-serif; font-size:9px; line-height:14px;}
+.imputFechas {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #333;
+	background-color: #F1F1F1;
+	width: 65px;
+    height: 17px;
+	border: 1px solid #BDE8FF;
+}
+.imputAnios {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333;
+	width: 60px;
+	border: 1px solid #BDE8FF;
+}
+.puntos {
+	background-image: url(puntos.gif);
+	background-repeat: repeat-x;
+	background-position: left center;
+}
+.imputTicket {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333;
+	border: 1px solid #BDE8FF;
+}
+.imputNombreAp {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333;
+	background-color: #F1F1F1;
+	width: 150px;
+	border: 1px solid #BDE8FF;
+}
+.imputDiaMes {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333;
+	width: 45px;
+	border: 1px solid #BDE8FF;
+}
+.imputMes {
+ 	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333;
+	width: 85px;
+	border: 1px solid #BDE8FF;
+}
+.imputTelefon {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333;
+	background-color: #F1F1F1;
+	width: 40px;
+	border: 1px solid #BDE8FF;
+}
+.imputTelefonC90 {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333;
+	background-color: #F1F1F1;
+	width: 90px;
+	border: 1px solid #BDE8FF;
+}
+.imputSelectC100 {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333;
+	background-color: #F1F1F1;
+	width: 100px;
+	border: 1px solid #BDE8FF;
+}
+.imputSelectC120 {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333;
+	background-color: #F1F1F1;
+	width: 120px;
+	border: 1px solid #BDE8FF;
+}
+.imputTelefonC110 {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333;
+	background-color: #F1F1F1;
+	width: 110px;
+	border: 1px solid #BDE8FF;
+}
+.imputTelefonC160 {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333;
+	background-color: #F1F1F1;
+	width: 160px;
+	border: 1px solid #BDE8FF;
+}
+.imputSelectC180 {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333;
+	background-color: #F1F1F1;
+	width: 180px;
+	border: 1px solid #BDE8FF;
+}
+.imputSelectC220 {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #333;
+	background-color: #F1F1F1;
+	width: 220px;
+	border: 1px solid #BDE8FF;
+}
+.imputDestinoOrigen {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #333;
+	background-color: #F1F1F1;
+	width: 240px;
+	border: 1px solid #BDE8FF;
+}
+.txtAzulBold {color:#0081C6; font-weight:bold;font-size:11px;}
+.txtAzulOscuroBold {color:#313767; font-weight:bold;font-size:11px;}
+.txtAzulOscuro2Bold {color:#005582; font-weight:bold;font-size:11px;}
+.txtAzulunderline {color:#0081C6; text-decoration:underline;font-size:11px;}
+.linea {
+	background-image: url(0.gif);
+	background-repeat: repeat-x;
+	background-position: left center;
+}
+
+.fondoGeneral {background-color: #FFFFFF;background-repeat: no-repeat;background-position: center top;}
+/*Estilos para los Listados*/
+.botonOver{
+        background-color: #B0CFEF; 
+        font-weight: 600; 
+        font-family: Arial; 
+        font-size: xx-small; 
+        cursor: pointer; }
+
+.boton{
+        background-color: #CCCCCC; 
+        background-image: url(img/botonback.jpg); 
+        font-weight: 600; 
+        font-family:  Arial; 
+        font-size:  xx-small;  
+        cursor: pointer; }
+.tituloTextoEncabezado {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:  xx-small;
+        font-weight: 700;
+        color: #ffffff;
+        background-color : #2f2f4f;
+    }
+.celdaTextoSegmento{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:  xx-small;
+        color: #000000;
+        background-color : #cfdfff;
+    }
+.calendarioImagen{
+    border-spacing: 0;
+	padding: 0;
+        width: 100px;
+        height: 17px;
+        background-position: right top;
+        background-repeat: no-repeat;
+    }
+.textoMensaje{
+        font-family: Tahoma, Geneva, sans-serif;
+        font-size: xx-small;
+        font-weight: bold;
+}
+.textoChicoMensaje{
+        font-family: Tahoma, Geneva, sans-serif;
+        font-size:11px; 
+        font-weight: normal;
+}
+.textoRojo {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        font-weight: bold;
+        color: red;
+}
+.txtRecuadroAzul12 {
+    background-color:#0081C6;
+    color:#FFFFFF;
+    font: bold 12px tahoma;
+    height: 17px;
+    padding-left: 20px;
+ }
+.txtRojo11 {
+    color:#FF0000;
+    font: 11px tahoma;
+}
+.txtRecuadroNaranja11 {
+    background-color:#FBB03B;
+    color:#000000;
+    font: bold 11px tahoma;
+    height: 17px;
+}
+.txtRecuadroCeleste11 {
+    background-color:#BDE8FF;
+    color:#000000;
+    font: bold 11px tahoma;
+    height: 20px;
+}
+.txtRecuadroCeleste12 {
+    background-color:#BDE8FF;
+    color:#000000;
+    font: 12px tahoma;
+    height: 22px;
+}
+.txtNegro11 {
+    color:#000000;
+    font: 11px tahoma;
+    height: 20px;
+}
+.txtNegro9 {
+    color:#000000;
+    height: 20px;
+    font: 9px tahoma;
+}
+.txtNegroBold{
+    color:#000000;
+    font: bold 11px tahoma;
+}
+.txtRecuadroAzulCeleste12 {
+    border: 1px solid #0081C6;
+    background-color:#BDE8FF;
+    color:#000000;
+    font: bold 12px tahoma;
+    height: 22px;
+}
+.txtNegro14 {
+	color:#000000;
+    font: bold 14px tahoma;
+}

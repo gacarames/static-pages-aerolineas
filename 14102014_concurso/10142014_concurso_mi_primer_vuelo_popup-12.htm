@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>aerolineas.com</title>
+	<meta http-equiv="title" content="SkyPriority en Aerol&#237;neas Argentinas - aerolineas.com">
+	<meta name="Description" content="SkyPriority conjunto de beneficios que le permitir&#225;n tener una experiencia en los aeropuertos m&#225;s &#225;gil y placentera">
+    <link href="Images/condor_chico.gif" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />    
+    <link href="Content/themes/V2/css/screen.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/css/estilo.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/css/form_argentina.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/css/form_argentina_home.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/css/Extras.css" rel="stylesheet"/>
+    <link href="Content/themes/V2/Error.css" rel="stylesheet"/>
+    <link href="Content/themes/V2/jquery-ui-timepicker-addon.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.core.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.resizable.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.selectable.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.accordion.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.autocomplete.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.button.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.dialog.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.slider.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.tabs.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.datepicker.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.progressbar.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.theme.css" rel="stylesheet"/>
+    
+    <script src="Scripts/jquery-1.8.3.js"></script>
+    <script src="Scripts/jquery-ui-1.9.2.js"></script>
+    <script src="Scripts/jquery.unobtrusive-ajax.js"></script>
+	<script src="Scripts/jquery.validate.js"></script>
+    <script src="Scripts/modernizr-2.5.3.js"></script>
+    <script src="Scripts/funcionesVarias.js"></script>
+    <script src="Scripts/jquery.watermark.js"></script>
+</head>
+<body>
+    <!-- CONTENEDOR -->
+    <div id="contenedor_home">
+        <header>
+            <div id="fecha" align="right">
+                
+            </div>
+            <br clear="all">
+            
+            
+            <!--HEADER-->
+            <div id="header">
+            <div class=" header_borde">
+            </div>
+            <div id="header-left">
+                <a href="http://www.aerolineas.com.ar/es-ar/reservas-y-servicios/alojamiento#" target="_self">
+                    </a><a href="" title="Logo Aerolineas Argentinas"><img alt="Logo Aerolineas Argentinas" border="0" height="44px" hspace="0" src="Content/themes/V2/img/common/logo_aerolineas.gif" vspace="0" width="252px"></a>
+                <span class="screen-reader-text">Aerolineas.com</span>
+            </div>
+                
+            
+            <!-- /HEADER -->
+            <br clear="all">
+            <a name="startcontent" id="startcontent"></a>
+            <!-- NAVBAR -->
+            
+            <!-- / NAVBAR -->
+            
+        </div></header>
+        <div>
+            
+            
+            <section>
+                
+<link href="http://www.aerolineas.com.ar/Content/V2/_validate_Helpers?v=Ybj9mjJVfZVw_5qnJqHUIYqYhvKC2ZOOLXLCABdAYK41" rel="stylesheet">
+
+<style type="text/css">
+    #ui-datepicker-div
+    {
+        font-size: 70%;
+    }
+</style>
+<script type="text/javascript">
+
+    function capitalize(text) {
+        return text.charAt(0).toUpperCase() + text.slice(1).toLowerCase();
+    }
+
+    formatoFecha = "dd/mm/yy";
+    dia = "domingo,lunes,martes,miércoles,jueves,viernes,sábado".split(",");
+    nomDia = "dom,lun,mar,mié,jue,vie,sáb".split(",");
+    mesCorto = "ene,feb,mar,abr,may,jun,jul,ago,sep,oct,nov,dic,".split(",");
+    nomMes = "enero,febrero,marzo,abril,mayo,junio,julio,agosto,septiembre,octubre,noviembre,diciembre,".split(",");
+    todayText = "Hoy";
+    for (var i = 0; i < dia.length; i++) {
+        dia[i] = capitalize(dia[i]);
+    }
+    for (var i = 0; i < nomDia.length; i++) {
+        nomDia[i] = capitalize(nomDia[i]);
+    }
+    for (var i = 0; i < mesCorto.length; i++) {
+        mesCorto[i] = capitalize(mesCorto[i]);
+    }
+    for (var i = 0; i < nomMes.length; i++) {
+        nomMes[i] = capitalize(nomMes[i]);
+    }
+    $(function () {
+
+        $("#fecha_llegada").datepicker({
+            closeText: "X",
+            currentText: todayText,
+            showButtonPanel: true,
+            buttonImageOnly: true,
+            showAnim: "clip", 		//animacion de como aparece y desaparece
+            dateFormat: formatoFecha, //formato fecha
+            minDate: 0, 				//muestra fechas desde hoy
+            maxDate: "+11M", 		//muestra fechas hasta 11 meses
+            showOtherMonths: true,      //muestra los dias del mes anterior
+            selectOtherMonths: true, //muestra los dias del mes posterior
+            //changeMonth: true,		//muestra el combo con los meses
+            //changeYear: true,			//muestra el combo con los años
+            numberOfMonths: 2, 		//muestra dos meses
+            dayNames: dia, 			//nombre de los dias        
+            dayNamesMin: nomDia, 	//nombre de los dias
+            monthNamesShort: mesCorto, //nombre de los meses
+            autoSize: true, //
+            monthNames: nomMes			//nombre de los meses
+
+        });
+
+        $("#fecha_nacimiento").datepicker({
+            closeText: "X",
+            currentText: todayText,
+            showButtonPanel: true,
+            showAnim: "clip", 		//animacion de como aparece y desaparece
+            dateFormat: formatoFecha, //formato fecha
+            minDate: 0, 				//muestra fechas desde hoy
+            maxDate: "+11M", 		//muestra fechas hasta 11 meses
+            showOtherMonths: true,      //muestra los dias del mes anterior
+            selectOtherMonths: true, //muestra los dias del mes posterior
+            //changeMonth: true,		//muestra el combo con los meses
+            //changeYear: true,			//muestra el combo con los años
+            numberOfMonths: 2, 		//muestra dos meses
+            dayNames: dia, 			//nombre de los dias
+            dayNamesMin: nomDia, 	//nombre de los dias        
+            monthNamesShort: mesCorto, //nombre de los meses
+            monthNames: nomMes			//nombre de los meses
+        });
+
+        $('#fecha_llegada').watermark('Fecha de Partida');
+        $('#fecha_partida').watermark('Fecha de llegada');
+
+        $.validator.addMethod('IsNotEqualTo', function (val, el, comparador) {
+            return val != comparador;
+        });
+        $("#frmHoteles").validate({
+            rules: {
+                cmbPais2: {
+                    required: true,
+                    IsNotEqualTo: 0
+                },
+                provincia: {
+                    required: true,
+                    IsNotEqualTo: 0
+                },
+                fecha_partida: {
+                    required: true
+                },
+                fecha_llegada: {
+                    required: true
+                },
+                cantidadCuartos: {
+                    required: true
+                }
+            },
+            messages: {
+                cmbPais2: {
+                    required: 'Debe ingresar el "Pais"',
+                    IsNotEqualTo: 'Debe ingresar el "Pais"'
+                },
+                provincia: {
+                    required: 'Debe ingresar la "provincia/estado"',
+                    IsNotEqualTo: 'Debe ingresar la "provincia/estado"'
+                },
+                fecha_partida: {
+                    required: 'Debe ingresar la fecha de "Partida".'
+                },
+                fecha_llegada: {
+                    required: 'Debe ingresar la fecha de "LLegada".'
+                },
+                cantidadCuartos: {
+                    required: 'Debe ingresar la cantidad de "Cuartos"'
+                }
+            },
+            onkeyup: false,
+            onfocusout: false,
+            onclick: false,
+            showErrors: function (errMap, errList) {
+                $(".msj-error p").remove();
+                $(".rojo-error").removeClass("rojo-error");
+                if (errList.length > 0)
+                    $(".msj-error").show();
+                else
+                    $(".msj-error").hide();
+
+                $(errList).each(function (i, e) {
+                    $(".msj-error").append($("<p>").text(e.message));
+                    $(e.element).addClass("rojo-error");
+                });
+                $('#fecha_llegada').watermark('Fecha de Partida');
+                $('#fecha_partida').watermark('Fecha de llegada');
+
+            }
+        });
+    });
+</script>
+<link href="http://www.aerolineas.com.ar/Content/themes/V2/cupertino/jquery-ui-1.9.1.custom.min.css" rel="stylesheet">
+
+<div id="newcont" class="fleft">
+    
+    <h1>
+        Concurso
+    </h1>
+    <div class="concurso">
+        <img src="img/img_concurso.jpg">
+    	<div class="form-concurso">
+        
+        <h2 class="tit">
+                Aerolíneas cumple tu sueño de volar
+         </h2>
+         <p>Si nunca volaste y te gustaría realizar un vuelo de bautismo sobre la ciudad de Buenos Aires completá este formulario.</p><br>
+         
+        <script type="text/javascript">
+$(function(){
+	$('.pop-ajustable').show();
+
+	$('.btn-close').click(function(){$('.pop-ajustable').hide();});
+});
+</script>
+        <div class="pop-ajustable arplus-c-form hide" style="left: 0px; right: 0px; margin-left: auto; margin-right: auto; top: 25px; width: 722px; display: block;">
+	<div class="top"></div>
+	<div class="mid">            	
+		<a href="#" class="btn-close">x</a>
+		<!-- formulario ARPLUS -->
+		<div id="faq-f-arplus" class="clearing">
+			<h3 style="margin-bottom:20px;">Estimado/a</h3>
+			<p class="mbot25">Los menores de 12 años a la fecha del vuelo podrán viajar únicamente acompañados por un mayor responsable (padre, madre o tutor).</p>
+		</div> 
+	</div>
+	<div class="bot"></div>
+</div>
+
+        <div>
+<form action="" class="nuevo-form" id="frmHoteles" method="post" target="_blank" novalidate>                   
+                    
+                   <fieldset class="tercio mright15">
+                        <input class="" id="" name="" type="text" value="" size="10" placeholder="Nombre y Apellido *">
+                    </fieldset>
+                    <fieldset class="tercio mright15">
+                        <input class="" id="" name="" type="text" value="" size="10" placeholder="D.N.I. *">
+                    </fieldset>
+                    <fieldset class="tercio">
+                         <input class="inpfecha hasDatepicker" id="fecha_nacimiento" name="fecha_nacimiento" type="text" value="" placeholder="Fecha de nacimiento DD/MM/AAAA*">
+                    </fieldset>
+                   
+                    <fieldset class="tercio mright15">
+                     <input class="" id="telefono" name="telefono" type="text" value="" placeholder="Teléfono *">
+                    </fieldset>
+                <fieldset class="tercio mright15">
+                 	<input class="" id="telefono_adicional" name="telefono_adicional" type="text" value="" placeholder="Teléfono adicional">       
+                </fieldset>
+                <fieldset class="tercio">
+                 	<input class="" id="mail" name="mail" type="text" value="" placeholder="Mail *">
+                </fieldset>
+                    
+                    <fieldset class="tercio mright15">
+                        <input class="" id="reconf_mail" name="reconf_mail" type="text" value="" placeholder="Reconfirmación de mail *">
+                    </fieldset>
+                    <fieldset class="tercio mright15">
+                          <img id="imgcaptcha" src="https://ftarplus.aerolineas.com.ar/plus/PlusRealNewDic/images/captcha.php" style="float:right;">
+                    </fieldset>
+                    <fieldset class="tercio">
+                       <input class="" id="captcha" name="captcha" type="text" value="" placeholder="Ingresar captcha *" maxlength="6">
+                    </fieldset>
+                    
+                    <fieldset class="unico">
+                    <div class="separador">
+                    </div>
+                    </fieldset>
+                    
+                    <fieldset class="tercio mright15">
+                        <input class="" id="nombre_adulto" name="nombre_adulto" type="text" value="" placeholder="Nombre y Apellido Adulto *">
+                    </fieldset>
+                    <fieldset class="tercio mright15">
+                        <input class="" id="dni_adulto" name="dni_adulto" type="text" value="" placeholder="D.N.I. Adulto *">
+                    </fieldset>
+                    <fieldset class="tercio">
+                        
+                    </fieldset>
+                    
+                    <fieldset class="unico">
+                    <div class="separador">
+                    </div>
+                    </fieldset>
+                    
+                    
+                    
+                    <fieldset class="dostercios mright15">
+                        <input data-val="true" data-val-required="The Condiciones field is required." id="Condiciones" name="Condiciones" type="checkbox" value="true">
+                        <label class="font_size2" for="condiciones">He leído y acepto las <a href="terminos_condiciones.html" target="_blank">condiciones del concurso</a></label>
+                    </fieldset>
+                    <fieldset class="tercio">
+                        <input type="button" name="" value="Enviar">
+                    </fieldset>
+</form>        </div>
+        
+        </div>
+        
+    </div>
+    
+</div>
+
+            </section>
+
+            
+            <div id="bannerRelacionadoFooter" style="margin-left:8px !important">
+                <div></div> <div><script type="text/javascript">
+                   $(function () {
+                        $('#bannerRelacionadoLateral').append('<img src="/Images/BannersRelacionados/hotel_20140203063010.jpg"></img>' );                       
+                    });</script></div>
+            </div>
+        </div>
+        <footer>
+            <!--pie-->
+            
+
+
+
+     <script type="text/javascript">
+
+        function abrirAustral() {
+          window.open('http://www.austral.com.ar/index.asp?idSitio=AR&idIdioma=es','Austral', 'scrollbars=yes, resizable=1,width=1020,height=805');
+        }
+     
+      function popup_condiciones_transporte() {
+          var winC = window.open('http://ww1.aerolineas.com.ar/arg/bodies/CondicionesGrales_contratoTransporte.asp?idSitio=AR&idIdioma=es', 'wContr', 'scrollbars=yes, resizable=1,width=800,height=600');
+          winC.moveTo(0, 0);
+      }
+
+
+     </script> 
+               <div id="pie">
+          
+          <div class="div">
+          </div>
+          <div class="div_pie">
+              
+              
+              
+              
+          </div>
+          <div class="div_borde">
+              <img src="Content/themes/V2/img/backgrounds/footer-right.gif" alt="">
+          </div>
+      </div>
+
+
+            <!--fin de pie-->
+        </footer>
+    </div>
+    
+    
+
+    <!--************GOOGLE ANALYTICS*******************-->
+    <script type="text/javascript">var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-7304952-1']);
+_gaq.push(['_setDomainName', 'aerolineas.com.ar']);
+_gaq.push(['_setAllowLinker', 'true']);
+_gaq.push(['_setAllowHash', 'false']);
+_gaq.push(['_trackPageview']);
+
+	            (function() {
+		            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+		            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	            })();
+            </script>
+    <!--************GOOGLE ANALYTICS*******************-->
+
+    <!--************CREO COOKIE PNR*******************-->
+
+    <!--************CREO COOKIE PNR*******************-->
+
+
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div></body></html>

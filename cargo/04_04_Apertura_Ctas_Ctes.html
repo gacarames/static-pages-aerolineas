@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="img/buttons/condor_chico.gif">
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/estilo-cargo.css" />
+    <link rel="stylesheet" type="text/css" href="css/new.css" />
+    <title>Aerolineas Cargo</title>
+</head>
+
+<body id="internas">
+    <div id="wrap">
+        <div id="wrapper">
+            <!-- HEADER -->
+            <div id="header">
+                <div class="sombra-gr-top">
+                </div>
+                <div class="main-head">
+                    <div class="borde-izq">
+                    </div>
+                    <div class="header-content">
+                        <h1><a class="logo-aerolineas" href="/es-ar">Aerolineas Cargo</a></h1>
+                        <div class="ul-content">
+                            <ul class="ul-der-uno">
+                                <li>
+                                    <select class="select-pais" id="culture" name="culture" onchange="onCultureChanged();">
+                                        <option selected="selected" value="es-ar">Argentina (Español)</option>
+                                    </select>
+                                </li>
+                            </ul>
+                            <script type="text/javascript">
+                            function onCultureChanged() {
+                                var cultureName = $("#culture").val();
+                                GlobalCultureName = cultureName;
+
+                                var ruta = '/es-ar/culture/changeculture';
+                                var redirectUrl = '/_culture_';
+
+                                $.ajax({
+                                    url: ruta,
+                                    type: "post",
+                                    dataType: "json",
+                                    traditional: true,
+                                    async: false,
+                                    data: {
+                                        'selectedCultureName': cultureName
+                                    },
+                                    success: function(result, responseText) {
+
+                                        // // translateUrlAndRedirect(GlobalCultureName);
+
+                                        //alert('Cultura cambiada exitosamente por: ' + result);
+
+                                        // Redirecciono
+                                        redirectUrl = redirectUrl.replace("_culture_", GlobalCultureName);
+                                        window.location.replace(redirectUrl);
+
+                                        //  // Recargo la p&aacute;gina
+                                        //window.location.reload();
+                                    },
+                                    error: function() {
+                                        alert('Error al intentar cambiar la cultura');
+                                    }
+                                });
+
+                            }
+                            </script>
+                            <ul class="ul-der-dos">
+                                <li>
+                                    <span> | </span>
+                                    <a href="http://cargo.aerolineas.com.ar/es-AR/newsletter" target="" class="link">Newsletter</a>
+                                </li>
+                                <li>
+                                    <span> | </span>
+                                    <a href="http://cargo.aerolineas.com.ar/es-AR/contactenos/" target="" class="link">Cont&aacute;ctenos 0810-222-86527</a>
+                                </li>
+                                <li>
+                                    <a href="http://cargo.aerolineas.com.ar/es-AR/preguntas_frecuentes/" target="" class="link">Preguntas Frecuentes</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- menu -->
+                        <div class="main-nav">
+                            <ul>
+                                <li><a href="/es-ar/centro_de_atencion">Centros de Atenci&oacute;n</a></li>
+                                <li><a href="http://cargo.aerolineas.com.ar/es-AR/productos/Equation">Productos</a>
+                                    <ul class="sec-nav">
+                                        <li><a href="/es-AR/productos/Equation">Equation</a></li>
+                                        <li><a href="/es-AR/productos/Cohesion">Cohesion</a></li>
+                                        <li><a href="/es-AR/productos/Variation">Variation</a></li>
+                                        <li><a href="/es-AR/productos/Dimension">Dimension</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/es-ar/rutas_y_horarios">Rutas y Horarios</a></li>
+                                <li><a href="/es-AR/envios_personales/mascotas">Env&iacute;os Personales</a>
+                                    <ul class="sec-nav">
+                                        <li><a href="/es-AR/envios_personales/Animales">Mascotas</a></li>
+                                        <li><a href="/es-AR/envios_personales/mudanzas">Mudanzas</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/es-AR/informacion/drop_off_times">Informaci&oacute;n</a>
+                                    <ul class="sec-nav">
+                                        <li><a href="/es-AR/informacion/drop_off_times">Drop-off times</a></li>
+                                        <li><a href="http://cargo.aerolineas.com.ar/es-AR/informacion/ULDs">ULD´S</a></li>
+                                        <li><a href="/es-AR/informacion/calculoscargueros">C&aacute;lculos cargueros</a></li>
+                                        <li><a href="/es-AR/informacion/hora_y_clima">Hora y Clima</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/es-AR/envios_especiales/obras_de_arte_cuadros">Env&iacute;os Especiales</a>
+                                    <ul class="sec-nav">
+                                        <li><a href="/es-AR/envios_especiales/obras-arte">Obras de arte - Cuadros</a></li>
+                                        <li><a href="/es-AR/envios_especiales/feretros">F&eacute;retros</a></li>
+                                        <li><a href="/es-AR/envios_especiales/Cenizas-Humanas">Cenizas Humanas</a></li>
+                                        <li><a href="/es-AR/envios_especiales/Litio">Bater&iacute;as de Litio</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/es-ar/tarifas">Tarifas</a></li>
+                                <li><a href="/es-ar/tarifas">Nuevos Clientes</a>
+                                <ul class="sec-nav">
+                                        <li><a href="/es-AR/productos/Equation">Apertura de Ctas.Ctes</a></li>
+                                        <li><a href="/es-AR/productos/Cohesion">Solicitud de Stock CASS</a></li>
+                                        </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /menu -->
+                    </div>
+                    <div class="borde-der">
+                    </div>
+                </div>
+                <div class="sombra-gr-bottom">
+                </div>
+            </div>
+            <!-- HEADER -->
+            <!-- CONTENT -->
+            <div class="content-top"></div>
+            <div class="content">
+                <ul class="submenu">
+                    <li><a href="#">Apertura de Ctas.Ctes</a></li>
+                    <li><a href="#">Solicitud de Stock CASS</a></li>
+                </ul>
+                <div class="cont-gde">
+                    <div class="borde-top"></div>
+                    <div class="detalle-contenido">
+                       
+                        <h3 style="margin-bottom: 13px;">REQUISITOS PARA LA APERTURA DE CUENTA CORRIENTE</h3>
+                        <p><strong>A continuaci&oacute;n usted encontrar&aacute; una gu&iacute;a r&aacute;pida y sencilla acerca de toda la informaci&oacute;n necesaria para que pueda realizar la apertura de una cuenta corriente y comenzar a operar con nosotros:</strong></p>
+                        
+                        
+                        <!-- tabla nueva -->
+                        <div class="bg-gris" style="margin-bottom:15px;">
+                            
+                        <h3 class="h3subtitulo">Sociedades:</h3>  
+                           
+
+                            <ul class="listado-con-guion-dos" style="list-style-type:none; padding-left:0px;">
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Fotocopia legalizada del Estatuto o Contrato Social.</li>
+    
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> &Uacute;ltimo Balance, certificado por Consejo de Profesionales.</li>
+    
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Constancia de inscripci&oacute;n en A.F.I.P.</li>
+    
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Formulario de inscripci&oacute;n actualizado de Ingresos Brutos, CM01, todos los CM02 presentados</li>
+    
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Contribuyentes de Convenio Multilateral: &Uacute;ltimo CM05 presentado. De no contar con el mismo se aplicar&aacute; la percepci&oacute;n y no se podr&aacute; solicitar la devoluci&oacute;n una vez practicada.</li>
+    
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Contribuyente local: Inscripci&oacute;n en impuestos sobre los ingresos brutos de la respectiva jurisdicci&oacute;n. </li>
+    
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Certificado de excepci&oacute;n o exclusi&oacute;n vigente correspondiente al r&eacute;gimen de retenci&oacute;n del impuesto sobre los ingresos brutos emitido oportunamente por la direcci&oacute;n general de Rentas que corresponda.</li>
+    
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Copia autenticada por Escribano del Acta de Directorio con los nombramientos y vigencia de los cargos. </li>
+      
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Referencia a Res 3337(IVA Percepción) de encontrarse encuadrados dentro de las normas RG 17, 18 y anexos, adjuntar dicha constancia.</li>
+      
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Formulario: Solicitud de Cuenta Corriente para Transporte de Cargas, firmado, estando la misma certificada </li>
+      <li>
+      <span style="font-size:14px;"></span><a href="http://cargo.aerolineas.com.ar/es-ar/nuevosclientes">Descargar formulario</a></li>
+      <li>
+      
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> El solicitante deber&aacute; figurar en el Estatuto o en el Contrato Social, de ser apoderado, adjuntar fotocopia autenticada de Poder General y Amplio.</li>
+      
+     <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Detalle de las personas autorizadas a solicitar / retirar stock de gu&iacute;as a&eacute;reas en la l&iacute;nea a&eacute;rea con el respectivo correo electr&oacute;nico:</li>
+      
+     <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Certificaci&oacute;n bancaria de la firma del solicitante, s&oacute;lo en el original.</li>
+      
+     <li>
+      <span style="font-size:14px;"><strong>*</strong></span><strong>Nota:</strong> en papel con membrete de la Empresa, solicitando la apertura de la cuenta corriente y detallando: rubro, referencias bancarias (con n&uacute;mero de cuenta) y comerciales (direcci&oacute;n de correo electr&oacute;nico para env&iacute;o de factura electr&oacute;nica, direcci&oacute;n de correo de la oficina responsable de pagos), cantidad de env&iacute;os a realizar (unidades y Kg. mensuales) y destinos.</li>
+    
+						</ul>
+						</div>
+                        
+                        
+                        
+                        <!-- tabla nueva -->
+                        <div class="bg-gris" style="margin-bottom:15px;">
+                            
+                        <h3 class="h3subtitulo">Empresas Unipersonales o Sociedades de Hecho:</h3>  
+                           
+
+                            <ul class="listado-con-guion-dos" style="list-style-type:none; padding-left:0px;">
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Manifestaci&oacute;n de bienes.</li>
+    
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Certificado de ingresos por Contador y certificaci&oacute;n de firma del contador por Consejo Profesional de Ciencias Econ&oacute;micas.</li>
+    
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Fotocopia de los tres &uacute;ltimos pagos de aut&oacute;nomos.</li>
+    
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> &Uacute;ltima declaraci&oacute;n jurada de impuesto a las ganancias e impuestos personales.</li>
+    
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Certificado de domicilio o fotocopia de factura de servicios.</li>
+    
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Constancia de inscripci&oacute;n en A.F.I.P.</li>
+    
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Formulario de inscripci&oacute;n actualizado de Ingresos Brutos, CM01, todos los CM02 presentados</li>
+    
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Contribuyentes de Convenio Multilateral: &Uacute;ltimo CM05 presentado. De no contar con el mismo se aplicar&aacute; la percepci&oacute;n y no se podr&aacute; solicitar la devoluci&oacute;n una vez practicada.</li>
+      
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Contribuyente local: Inscripci&oacute;n en impuestos sobre los ingresos brutos de la respectiva jurisdicci&oacute;n.</li>
+      
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Certificado de excepci&oacute;n o exclusi&oacute;n vigente correspondiente al r&eacute;gimen de retenci&oacute;n del impuesto sobre los ingresos brutos emitido oportunamente por la direcci&oacute;n general de Rentas que corresponda.</li>
+      
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Referencia a Res 3337(IVA Percepci&oacute;n) de encontrarse encuadrados dentro de las normas RG 17, 18 y anexos, adjuntar dicha constancia.</li>
+      
+      <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Formulario: Solicitud de Cuenta Corriente para Transporte de Cargas, firmado, estando la misma certificada. (Link formulario + Link anexo 1).</li>
+      
+      <li>
+      <span style="font-size:14px;"></span><a href="http://cargo.aerolineas.com.ar/es-ar/nuevosclientes">Descargar formulario</a></li>
+      <li>
+      
+      <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Certificaci&oacute;n bancaria de la firma del solicitante (S&oacute;lo en el original).</li>
+      
+     <li>
+      <span style="font-size:14px;"><strong>*</strong></span><strong> Nota:</strong> en papel con membrete de la Empresa, solicitando la apertura de la cuenta corriente y detallando: rubro, referencias bancarias (con n&uacute;mero de cuenta) y comerciales (direcci&oacute;n de correo electr&oacute;nico para env&iacute;o de factura electr&oacute;nica, direcci&oacute;n de correo de la oficina responsable de pagos), cantidad de env&iacute;os a realizar (unidades y Kg. mensuales) y destinos.</li>
+     
+						</ul>
+						</div>
+                        
+                        
+                        
+                        <!-- tabla nueva -->
+                        <div class="bg-gris" style="margin-bottom:15px;">
+                            
+                        <h3 class="h3subtitulo">Entes Oficiales:</h3>  
+                           
+
+                            <ul class="listado-con-guion-dos" style="list-style-type:none; padding-left:0px;">
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Formulario: Solicitud de Cuenta Corriente para Transporte de Cargas, firmado, estando la misma certificada (Link formulario + Link anexo 1).</li>
+      
+      <li>
+      <span style="font-size:14px;"></span><a href="http://cargo.aerolineas.com.ar/es-ar/nuevosclientes">Descargar formulario</a></li>
+      <li>
+    
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Presentar Poder habilitante para apertura de Cuentas Corrientes o bien Poder General, en nombre de la Entidad.</li>
+    
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Certificaci&oacute;n bancaria de la firma del solicitante, s&oacute;lo en el original.</li>
+    
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Constancia de inscripci&oacute;n en A.F.I.P.</li>
+    
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Referencia a Res 3337(IVA Percepci&oacute;n) de encontrarse encuadrados dentro de las normas RG 17, 18 y anexos, adjuntar dicha constancia.</li>
+      
+     <li>
+      <span style="font-size:14px;"><strong>*</strong></span><strong> Nota:</strong> en papel con membrete de la Empresa, solicitando la apertura de la cuenta corriente y detallando: rubro, referencias bancarias (con n&uacute;mero de cuenta) y comerciales (direcci&oacute;n de correo electr&oacute;nico para env&iacute;o de factura electr&oacute;nica, direcci&oacute;n de correo de la oficina responsable de pagos), cantidad de env&iacute;os a realizar (unidades y Kg. mensuales) y destinos.</li>
+     
+						</ul>
+						</div>
+                        
+                        
+                        
+                      
+                        <p>Les recordamos que para todos aquellos agentes que no posean identificaci&oacute;n IATA, les ser&aacute; posible la apertura de una nueva cuenta corriente solo para realizar operaciones de importaci&oacute;n.</p>
+                        <p class="llamado">***Ante cualquier consulta no dude en ponerse en contacto con su centro de atenci&oacute;n m&aacute;s cercano***</p>
+                       
+                    </div>
+                    <div class="borde-bottom"></div>
+                </div>
+            </div>
+            <div class="content-bottom"></div>
+            <!-- CONTENT -->
+            <!-- FOOTER -->
+            <div id="footer">
+                <div class="sombra-gr-top"></div>
+                <div class="footer-content">
+                    <ul class="ul-izq-uno">
+                        <li><a href="#">aerolineas.com</a> |</li>
+                        <li><a href="#">Proveedor</a> |</li>
+                        <li><a href="#">Clima</a> |</li>
+                        <li><a href="#">Noticias</a> |</li>
+                        <li><a href="#">Nuestra Flota</a> |</li>
+                        <li><a href="#">Fuel y Security</a></li>
+                    </ul>
+                    <ul class="ul-der-dos">
+                        <li>
+                            <a target="_blank" href="http://www.facebook.com/aerolineas.argentinas"><img border="0" alt="Facebook" src="img/iconos/ic-facebook.gif"></a>
+                        </li>
+                        <li>
+                            <a onclick="window.open('http://twitter.com/Aerolineas_AR/'),'twitter',''; return false;" href="#"><img border="0" alt="Twitter" src="img/iconos/ic-Twitter.jpg"></a>
+                        </li>
+                        <li>
+                            <a link rel="publisher" href="https://plus.google.com/106198199507305429358">
+                                <a target="_blank" style="text-decoration:none;" href="https://plus.google.com/106198199507305429358?prsrc=3"><img style="border:0;width:22px;height:22px;" alt="" src="img/iconos/gplus-32.png"></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.youtube.com/user/AerolineasAR"><img border="0" alt="You Tube" src="img/iconos/ic-YouTube.gif"></a>
+                        </li>
+                        <li>
+                            <a href="preRss.asp?idIdioma=es&amp;idSitio=AR"><img border="0" alt="" src="img/iconos/ic-RSS.gif"></a>
+                        </li>
+                    </ul>
+                    <ul class="ul-der-tres">
+                        <li><img border="0" style="cursor:pointer;" alt="Austral" src="img/iconos/footer-logoAustral.gif"></li>
+                        <li>
+                            <a href="main.asp?idSitio=AR&amp;idPagina=81&amp;idIdioma=es"><img border="0" alt="JetPaq" src="img/iconos/footer-logoJetPaq.gif"></a>
+                        </li>
+                        <li>
+                            <a href="main.asp?idSitio=AR&amp;idPagina=9&amp;idIdioma=es"><img border="0" alt="Aerohandling" src="img/iconos/footer-logoAerohandling.gif"></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.optar.com/"><img border="0" alt="Optar" src="img/iconos/footer-logoOptar.gif"></a>
+                        </li>
+                        <li>
+                            <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=1&amp;idIdioma=es"><img border="0" alt="Aerolineas Argentinas" src="img/iconos/footer-logoAASkyTeam.gif"></a>
+                        </li>
+                    </ul>
+                    <ul class="legales">
+                        <li class="text">aerolineas.com&nbsp;Sitio Oficial de Aerol&iacute;neas Argentinas. &copy; 1996 - 2012 Aerol&iacute;neas Argentinas S.A.</li>
+                        <br />
+                        <li><a href="#">Legales</a> | </li>
+                        <li><a href="#">Condiciones Generales de Transporte</a> | </li>
+                        <li><a href="#">Mapa del Sitio</a> | </li>
+                        <li><a href="#">Ud. est&aacute; en un SITIO SEGURO </a></li>
+                    </ul>
+                </div>
+                <div class="sombra-gr-bottom"></div>
+            </div>
+            <!-- FOOTER -->
+        </div>
+    </div>
+</body>
+
+</html>

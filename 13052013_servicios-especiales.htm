@@ -1,0 +1,1854 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+
+
+        <title></title>
+        <meta http-equiv="title" content="">
+
+        <meta name="Description" content="">
+
+    <link href="Images/condor_chico.gif" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+
+   
+    
+    <link href="Content/themes/V2/css/screen.css" rel="stylesheet"/>
+<link href="Content/themes/V2/css/estilo.css" rel="stylesheet"/>
+<link href="Content/themes/V2/css/form_argentina.css" rel="stylesheet"/>
+<link href="Content/themes/V2/css/form_argentina_home.css" rel="stylesheet"/>
+<link href="Content/themes/V2/css/Extras.css" rel="stylesheet"/>
+<link href="Content/themes/V2/css/common2.css" rel="stylesheet"/>
+
+    <link href="Content/themes/V2/Error.css" rel="stylesheet"/>
+
+    <link href="Content/themes/V2/jquery-ui-timepicker-addon.css" rel="stylesheet"/>
+<link href="Content/themes/V2/jquery.ui.core.css" rel="stylesheet"/>
+<link href="Content/themes/V2/jquery.ui.resizable.css" rel="stylesheet"/>
+<link href="Content/themes/V2/jquery.ui.selectable.css" rel="stylesheet"/>
+<link href="Content/themes/V2/jquery.ui.accordion.css" rel="stylesheet"/>
+<link href="Content/themes/V2/jquery.ui.autocomplete.css" rel="stylesheet"/>
+<link href="Content/themes/V2/jquery.ui.button.css" rel="stylesheet"/>
+<link href="Content/themes/V2/jquery.ui.dialog.css" rel="stylesheet"/>
+<link href="Content/themes/V2/jquery.ui.slider.css" rel="stylesheet"/>
+<link href="Content/themes/V2/jquery.ui.tabs.css" rel="stylesheet"/>
+<link href="Content/themes/V2/jquery.ui.datepicker.css" rel="stylesheet"/>
+<link href="Content/themes/V2/jquery.ui.progressbar.css" rel="stylesheet"/>
+<link href="Content/themes/V2/jquery.ui.theme.css" rel="stylesheet"/>
+
+    
+    <script src="Scripts/jquery-1.8.3.js"></script>
+
+    <script src="Scripts/jquery-ui-1.9.2.js"></script>
+
+    <script src="Scripts/jquery.unobtrusive-ajax.js"></script>
+<script src="Scripts/jquery.validate.js"></script>
+
+    
+    <script src="Scripts/modernizr-2.5.3.js"></script>
+
+    <script src="Scripts/funcionesVarias.js"></script>
+
+    <script src="Scripts/jquery.watermark.js"></script>
+
+    
+</head>
+<body>
+    <!-- CONTENEDOR -->
+    <div id="contenedor_home">
+        <header>
+            <div id="fecha" align="right">
+                <table width="1002px">
+                    <tr>
+                        <td align="left">
+                            <!--Localizacion-->
+                            <div id="Country">
+                                
+                                
+                            </div>
+                            <!--fin de Localizacion-->
+                        </td>
+                        <td align="right">
+                            <!--fecha-->
+                            <div id="fecha2">
+                                
+                                <div class="counrty_today_partials">
+    jueves, 18 de abril de 2013
+</div>
+                            </div>
+                            <!--fin de fecha-->
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <br clear="all" />
+
+            
+            
+
+            <!--HEADER-->
+            <div id="header" />
+            <div class=" header_borde">
+                
+            </div>
+            <div id="header-left">
+                <a href="#" target="_self">
+                    <a href="" title="Logo Aerolineas Argentinas"><img alt="Logo Aerolineas Argentinas" border="0" height="44px" hspace="0" src="Content/themes/V2/img/common/logo_Aerolineas.gif" vspace="0" width="252px" /></a>
+                </a>
+                <span class="screen-reader-text">
+                    Aerolineas.com</span>
+            </div>
+                <div class="fleft">
+                    <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=228%26idIdioma=es" title=""><img alt="" src="Content/themes/V2/img/buttons/Sello.png" /></a>
+                </div>
+            <div align="right" id="logo-header">
+                <div class=" width300   fleft  mleft100 mtop5">
+                    <a href="" title="Logo Aerolineas Argentinas"><img alt="Logo Aerolineas Argentinas" border="0" height="42px" hspace="0" src="Content/themes/V2/img/common/aerolineas_argentinasST.jpg" vspace="0" width="100px" /></a>
+                    <a href="http://www.skyteam.com//es" target="blank" title=""><img alt="" src="Content/themes/V2/img/common/skyteam.jpg" /></a>
+                </div>
+                <div class=" fleft mtop10 ">
+                    <!--select paises-->
+                    <div id="CultureContainer"> 
+                        
+                        <select class="INPUTBuscador" id="culture" name="culture" onChange="onCultureChanged()" style="width: 150px; margin-left: 10px;"><option selected="selected" value="es-AR">Argentina (Espa&#241;ol)</option>
+<option value="en-AR">Argentina (Ingl&#233;s)</option>
+<option value="en-AU">Australia</option>
+<option value="es-BO">Bolivia</option>
+<option value="pt-BR">Brasil</option>
+<option value="en-CA">Canad&#225;</option>
+<option value="es-CO">Colombia</option>
+<option value="es-CL">Chile</option>
+<option value="es-EU">Europa (Espa&#241;ol)</option>
+<option value="it-EU">Europa (Italiano)</option>
+<option value="en-EU">Europa (English)</option>
+<option value="es-MX">M&#233;xico</option>
+<option value="en-NZ">New Zeland</option>
+<option value="es-PA">Paraguay</option>
+<option value="es-PE">Per&#250; (Espa&#241;ol)</option>
+<option value="es-UY">Uruguay</option>
+<option value="es-US">United States (Espa&#241;ol)</option>
+<option value="en-US">United States (English)</option>
+<option value="es-VE">Venezuela</option>
+<option value="es-US">Otros pa&#237;ses (Espa&#241;ol)</option>
+<option value="en-US">Other Countries (English)</option>
+</select>
+                    </div>
+                    <!--fin de select paises-->
+                </div>
+                <div class="width400 mtop25 clearing">
+                    <p>
+                         <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=58%26idIdioma=es">Cont&#225;ctanos</a>
+                        <img src="Content/themes/V2/img/buttons/mail.gif" alt="Cont&#225;ctanos" border="0" class="imgCont" />
+                        
+        <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=7&idIdioma=es">0800-000-0000                                                                                                                                                                                           </a>
+
+
+                    </p>
+                </div>
+            </div>
+        
+            <!-- /HEADER -->
+            <br clear="all" />
+            <a name="startcontent" id="startcontent"></a>
+            <!-- NAVBAR -->
+            <div id="navbar">
+                <div id="botonera">
+                    
+                    
+    <div class="boton  width_6">
+        <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=164%26idIdioma=es">La Empresa</a>
+        <div class="transparent">
+            <ul>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=2%26idIdioma=es">Conocenos</a></li>
+                <li><a href="SkyTeamAcercaDe.htm">Alianza SkyTeam</a></li>
+				<li><a href="SkyTeamSkyPriority.htm">SkyPriority</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=239%26idIdioma=es">Aerol&#237;neas Hoy</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=82%26idIdioma=es">Recursos Humanos</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=68%26idIdioma=es">Prensa</a></li>
+                    <li><a href="http://blog.aerolineas.com.ar/blog/" target="_blank">Blog de Noticias</a></li>
+                                    <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=152%26idIdioma=es">Proveedores</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="boton">
+        <img alt="" src="Content/themes/V2/img/backgrounds/line.jpg" />
+    </div>
+    <div class="boton width_1">
+        <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=163%26idIdioma=es">Reservas y Servicios</a>
+        <div class="transparent">
+            <ul>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=110%26idIdioma=es">Compr&#225; tu pasaje</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=29%26idIdioma=es">Horario de vuelos programados</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=111%26idIdioma=es">Estado actual de tu vuelo</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=168%26idIdioma=es">Cheque&#225; tu reserva</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=113%26idIdioma=es">Hac&#233; tu Web Check-in</a></li>
+                    <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=176%26idIdioma=es%26tipo=V">Paquetes Aerol&#237;neas Vacaciones</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/bodies/reservas/htmls/autos.asp?idIdioma=es" target="_blank">Alquiler de Auto</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=163%26idIdioma=es">Alojamiento</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=144%26idIdioma=es">Constancia de cr&#233;dito fiscal</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/bodies/popup_reembolsoBillete.asp?idSitio=AR%26idIdioma=es" target="_blank">Devoluci&#243;n de pasajes</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="boton">
+        <img alt="" src="Content/themes/V2/img/backgrounds/line.jpg" />
+    </div>
+    <div class="boton width_1">
+        <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=163%26idIdioma=es">Info para tu viaje</a>
+        <div class="transparent">
+            <ul>
+                <li><a href="MapaDestinos.htm">A d&#243;nde viajar</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=50%26idIdioma=es">Equipaje</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=43%26idIdioma=es">Documentaci&#243;n para tu viaje</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=22%26idIdioma=es">Info de servicios especiales</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=44%26idIdioma=es">Embarque de Menores, Embarazadas y Mascotas</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=4%26idIdioma=es">Nuestros aviones y servicios a bordo</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=27%26idIdioma=es">Mapa y datos de Aeropuertos</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=7%26idIdioma=es">Sucursales</a></li>
+                
+            </ul>
+        </div>
+    </div>
+    <div class="boton ">
+        <img alt="" src="Content/themes/V2/img/backgrounds/line.jpg" />
+    </div>
+    <div class="boton width_2 ">
+        <a href="VuelosBaratosModulos">Vuelos baratos</a>
+        <div class="transparent">
+            <ul>
+                <li><a href="MapaDestinos.htm">Mapa de destinos</a></li>
+                    <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=228%26idIdioma=es">Tarifa m&#225;s baja garantizada</a></li>
+                <li><a href="CuponesDescuentosHome.htm">Cupones de descuento</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=169%26idIdioma=es">Compr&#225; en aerolineas.com</a></li>
+                <li><a href="VisiteArgentina.htm">Visite Argentina</a></li>
+                <li><a href="SouthAmericanPass.htm">South American Pass</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="boton">
+        <img alt="" src="Content/themes/V2/img/backgrounds/line.jpg" />
+    </div>
+    <div class=" boton width_1">
+        <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=15%26idIdioma=es">Aerol&#237;neas Plus</a>
+        <div class="transparent">
+            <ul>
+                    <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=245%26idIdioma=es">Nuevo Aerol&#237;neas Plus</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=15%26idIdioma=es">Acerca de Aerol&#237;neas Plus</a></li>
+                <li><a href="javascript:openFormInscripcionPlus()">Registrate</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=77%26idIdioma=es">Mi cuenta Plus</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=216%26idIdioma=es">Nueva tabla de millas</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=223%26idIdioma=es">Ganar millas</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=225%26idIdioma=es">Utilizar millas</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=227%26idIdioma=es">Compra de millas</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=234%26idIdioma=es">Upgrade en Canje de Millas</a></li>
+                <li><a href="CuponesDescuentosHome.htm">Beneficios</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=192%26idIdioma=es">Socios Elite</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=18%26idIdioma=es">Informaci&#243;n de Inter&#233;s</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=56%26idIdioma=es">Empresas Asociadas</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=103%26idIdioma=es">Preguntas Frecuentes</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=14%26idIdioma=es">Condiciones de Uso</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="boton">
+        <img alt="" src="Content/themes/V2/img/backgrounds/line.jpg" />
+    </div>
+    <div class="boton width_6">
+        <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=167%26idIdioma=es">Corporativos</a>
+        <div class="transparent">
+            <ul>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=33%26idIdioma=es">Acuerdos Corporativos</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=36%26idIdioma=es">Ferias y Congresos</a></li>
+                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=60%26idIdioma=es">Club Secretarias</a></li>
+            </ul>
+        </div>
+    </div>
+    
+
+
+
+    <script type="text/javascript">
+
+        function openFormInscripcionPlus() {
+            document.getElementById('ifrInscripcion').src = 'https://ftarplus.aerolineas.com.ar/plus/PlusRealNewDic/index.php?secc=11&idi=es&idSitio=AR';
+            document.getElementById('pop2').style.display = 'block';
+            document.getElementById('fondo-negro').style.display = 'block';
+        }
+        function closeFormInscripcionPlus() {
+            document.getElementById('ifrInscripcion').src = '';
+            document.getElementById('pop2').style.display = 'none';
+            document.getElementById('fondo-negro').style.display = 'none';
+        }
+
+
+    </script> 
+
+     
+    <div id="fondo-negro"></div>
+    <div id="pop2" style="height:880px;">
+	        <p>
+                <a href="javascript:closeFormInscripcionPlus()">
+                    <img src="Content/themes/V2/img/buttons/x_btn.jpg" class="fright mright5" alt="Cerrar" />
+                </a>
+            </p> 
+	<h1 class="tituloplus_linea" style="padding-bottom:10px;">INSCRIPCIÓN <span class="gris2">ONLINE</span></h1>
+	<p>Para inscribirte en el Programa de Pasajeros Frecuentes Aerol&iacute;neas Argentinas Plus, complet&aacute; el formulario a continuaci&oacute;n y conocé las Condiciones<br>Generales del Programa antes de hacer click en  <strong>ACEPTAR</strong>.</p>
+	<iframe width="800" id="ifrInscripcion" height="800" src="" frameborder="0"></iframe>
+    </div>
+
+
+   
+
+
+                </div>
+            </div>
+            <!-- / NAVBAR -->
+            <div style="background-color:#FFF;height:50px;position:relative;">
+                <!-- LOGIN AR PLUS -->
+                
+<script type="text/javascript">
+    var url_loginARPlus = 'https://ftarplus.aerolineas.com.ar/plus/PlusRealNewDic/aplicaciones/ajax/login_step1.php?callback=?';
+    var url_loginOk = '/es-AR/LoginARPlus/LoginOk?Nombre=_NOMBRE_&Socio=_SOCIO_';
+    /*function submitLoginARPlus(isOk) {
+        if (isOk == 'ok') {
+            $.getJSON(url_loginARPlus, { nrosocio: $("#NroSocio").val(), clave: $("#Clave").val() }, function (data) {
+                if (parseInt(data.isOk, 10)) {
+                    var url = url_loginOk.replace("_NOMBRE_", data.nombre).replace("_SOCIO_", data.socio).replace("&", "&");
+                    $.get(url, null, function (response) {
+                        //$(".buscador_plus").val(response);
+                        //$("#loginPlus").css("display", "none");
+                        window.location = 'http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=77&idIdioma=es';
+                    });
+                }
+            });
+        }
+    }*/
+
+    $(function () {
+        $('#frmLoginARPlus').validate({
+            rules: {
+                NroSocio: 'required',
+                Clave: 'required'
+            },
+            messages: {
+                NroSocio: 'Debe ingresar el campo "Número Socio"',
+                Clave: 'Debe ingresar el campo "Clave"'
+            },
+            onkeyup: false,
+            onfocusout: false,
+            onclick: false,
+            showErrors: function (errMap, errList) {
+                if (errList.length) { alert(errList[0].message); }
+            },
+            submitHandler: function (form) {
+                $.getJSON(url_loginARPlus, { nrosocio: $("#NroSocio").val(), clave: $("#Clave").val() }, function (data) {
+                    if (parseInt(data.isOk, 10)) {
+                        url_loginOk = url_loginOk.replace("_NOMBRE_", data.nombre).replace("_SOCIO_", data.socio).replace("&", "&");
+                        $.get(url_loginOk, null, function (response) {
+                            window.location = 'http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=77&idIdioma=es';
+                        });
+                    }
+                });
+            }
+        });
+    });
+</script>
+
+
+
+
+<div id="buscador_principal" style="text-align:center;">
+    <div>
+        <input class="buscador_plus" type="button" value="Ingres&#225; a tu cuenta Aerol&#237;neas Plus" onclick="mostrarElemento('loginPlus');return false;" style="cursor:pointer;" />
+    </div>
+</div>
+
+
+<form action="/es-AR/LoginARPlus/Submitted" id="frmLoginARPlus" method="post" name="frmLoginARPlus" onsubmit="return false;">    <div id="loginPlus" class="pop-form-arplus" style="display:none;padding:0;top:20px;">
+        <div style="margin:37px auto 0 auto;width:375px;">
+            <p class="mleft10 azul" style="height:16px;">
+                <strong class="fleft">Ingresar a mi cuenta</strong> 
+                <img src="Content/themes/V2/img/common/ico_cerrar.png" onclick="mostrarElemento('loginPlus');" class="fright mright4" style="cursor:pointer;" />
+            </p>
+            <div class="mleft10">
+                <input class="width170 redondeado" id="NroSocio" name="NroSocio" type="text" value="" />
+                <input class="width160 redondeado mleft10" id="Clave" name="Clave" type="password" />
+            </div>
+            <div class="mleft10 fleft width170">
+                <ul>                    
+                    <li><a class="gris11" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=77%26idIdioma=es%26olvidastetuclave=1">No puedo ingresar en mi cuenta</a></li>
+                    <li><a class="gris11" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=77%26idIdioma=es%26olvidastetunrosocio=1">Olvidaste tu N&#186; de Socio?</a></li>
+                </ul>
+            </div>
+            <div class="mleft17 fleft width170">
+                <ul>
+                    <li><a class="gris11" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=77%26idIdioma=es%26primeravez=1">Primera vez que ingreso</a></li>
+                </ul>
+            </div>
+            <div class="fright">
+                <input type="submit" value="OK" class="boton_ok redondeado btnLoginARPlus mright8" />
+            </div>
+        </div>
+    </div>
+</form>
+                <!-- / LOGIN AR PLUS -->
+
+                
+                
+        <div style="float: left; width: 700px; margin-left: 10px; margin-top: 10px">
+                    <span class="gris12"><a href='http://www.aerolineas.com.ar' target='' class='link'>Importante! Presentaci&#243;n en Aeropuertos: Vuelos Nacionales 2 hs antes. Vuelos Internacionales 3 hs antes</a></span>
+        </div>
+
+
+
+
+
+            </div>
+        </header>
+        <div>
+            
+            
+            <section>
+                    
+
+
+
+<div class="salto"></div>
+<!--contenedor-->
+<div id="contenedor_pasoapaso_app" class="fleft">    
+    <!--primer columna-->
+    <table cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" align="center" width="1002" height="209" style="background-image: url(images/servicios/serviciosespecialesTop.jpg); background-repeat: no-repeat; background-position: top;clear:both;};">
+<tbody><tr>
+<td align="left" width="162" valign="top">
+    <table cellspacing="0" cellpadding="0" border="0" width="162" height="14">
+    <tbody><tr>
+    <td align="left" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>
+    </tr>
+    </tbody></table>
+</td>
+<td width="11"><img width="1" height="1" src="images/common/0.gif"></td>
+<td align="left" width="824" valign="top">
+            <table cellspacing="0" cellpadding="0" border="0" width="824" height="13">
+            <tbody><tr>
+            <td align="left" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>
+            </tr>
+            </tbody></table>
+            <table cellspacing="0" cellpadding="0" border="0" height="25">
+            <tbody><tr>
+            <td align="left" valign="middle"><img title="servicios especiales" alt="servicios especiales" src="images/servicios/serviciosespeciales_es.gif"></td>
+            </tr>
+            </tbody></table>
+</td>
+</tr>
+</tbody></table>
+
+<table cellspacing="0" cellpadding="0" bgcolor="#ffffff" align="center" width="1002" height="267" style="background-image: url(images/servicios/serviciosespecialesbottom.jpg); background-repeat: no-repeat; background-position: top;clear:both;};">
+<tbody><tr>
+<td width="65"><img width="1" height="1" src="images/common/0.gif"></td>
+<td align="left" width="370" valign="top"><img width="1" height="1" src="images/common/0.gif"></td><td>
+</td><td width="40"><img width="1" height="1" src="images/common/0.gif"></td>
+<td align="left" width="430" valign="top">
+                <table cellspacing="0" cellpadding="0" border="0" width="430" height="20">
+                <tbody><tr>
+                <td align="left" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>
+                </tr>
+                </tbody></table>
+                <table cellspacing="0" cellpadding="0" border="0" width="430">
+                <tbody><tr>
+                <td valign="top" class="txtAzulMenu11">Además de los servicios tradicionales de una compañía aérea, Aerolíneas   Argentinas ofrece un conjunto de servicios especiales que contemplan distintos   tipos de necesidades de sus pasajeros. <br>Aquí tiene una descripción detallada   de cuáles son, cómo acceder a los mismos, y también, la anticipación requerida   para solicitarlos.</td>
+                </tr>
+                </tbody></table>
+                <table cellspacing="0" cellpadding="0" border="0" width="430" height="20">
+                <tbody><tr>
+                <td align="left" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>
+                </tr>
+                </tbody></table>
+                <table cellspacing="0" cellpadding="0" border="0">
+                <tbody><tr>
+                <td width="430" valign="top" class="TxtAzul11"><li><strong>ASISTENCIA EN AEROPUERTO</strong></li></td>
+                </tr>
+                </tbody></table>
+               <table cellspacing="0" cellpadding="0" border="0" width="430" height="10">
+                <tbody><tr>
+                <td align="left" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>
+                </tr>
+                </tbody></table>
+                <table cellspacing="0" cellpadding="0" border="0" width="430">
+                <tbody><tr>
+                <td align="left" width="15" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>
+                <td valign="top" class="TxtGris11">Aerolíneas Argentinas ofrece servicios especiales de asistencia y recepción en aeropuerto a embarazadas, extranjeros y personas de edad avanzada. Nuestro personal facilita todo tipo de información y ayuda en el aeropuerto a los pasajeros que así lo requieran. Recuerde solicitarlo cuando haga su reserva, con una anticipación de al menos 24 horas.</td>
+                </tr>
+                </tbody></table>
+                 <table cellspacing="0" cellpadding="0" border="0" width="430" height="30">
+                <tbody><tr>
+                <td align="left" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>
+                </tr>
+                </tbody></table>
+                <table cellspacing="0" cellpadding="0" border="0">
+                <tbody><tr>
+                <td width="430" valign="top" class="TxtAzul11"><li><strong>MOISES</strong></li></td>
+                </tr>
+                </tbody></table>
+               <table cellspacing="0" cellpadding="0" border="0" width="430" height="10">
+                <tbody><tr>
+                <td align="left" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>
+                </tr>
+                </tbody></table>
+                <table cellspacing="0" cellpadding="0" border="0" width="430">
+                <tbody><tr>
+                <td align="left" width="15" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>
+                <td valign="top" class="TxtGris11">La solicitud de reserva de moisés se encuentra disponible para bebés de hasta 10 kgs de peso y menos de 70 cms. De altura. La misma sólo podrá realizarse para equipos AIRBUS (A340/300 &ndash; A340/200). <b>Debido a que este servicio de moisés, por el momento, no se puede ofrecer en toda la flota Airbus, la reserva y confirmación del moisés es condicional.</b> La reserva debe hacerse con un mínimo de 24 horas de anticipación y la misma no garantiza al pasajero que tendrá el servicio disponible en el vuelo reservado.</td>
+                </tr>
+                </tbody></table>
+                 <table cellspacing="0" cellpadding="0" border="0" width="430" height="30">
+                <tbody><tr>
+                <td align="left" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>
+                </tr>
+                </tbody></table>
+                <table cellspacing="0" cellpadding="0" border="0">
+                <tbody><tr>
+                <td width="430" valign="top" class="TxtAzul11"><li><strong>COMIDAS ESPECIALES</strong></li></td>
+                </tr>
+                </tbody></table>
+               <table cellspacing="0" cellpadding="0" border="0" width="430" height="10">
+                <tbody><tr>
+                <td align="left" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>
+                </tr>
+                </tbody></table>
+                <table cellspacing="0" cellpadding="0" border="0" width="430">
+                <tbody><tr>
+                <td align="left" width="15" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>
+                <td valign="top" class="TxtGris11">Los pasajeros que necesiten una determinada dieta (por razones médicas, religiosas o culturales), podrán solicitar a Aerolíneas Argentinas una alternativa a la comida prevista. También existen menúes especiales para bebés y para niños menores de 12 años. <br>Deberán ordenarla en el momento de la reserva, con una anticipación de al menos 24 horas, teniendo en cuenta los destinos y clases para las que están disponibles dichas comidas:<br></td>
+                </tr>
+                </tbody></table>
+                 <table cellspacing="0" cellpadding="0" border="0" width="430" height="10">
+                <tbody><tr>
+                <td align="left" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>
+                </tr>
+                </tbody></table>
+                	<table cellspacing="0" cellpadding="0" border="0" width="430"><!--Comienza tabla-->
+					<tbody><tr>
+					<td bgcolor="#6B6B6B" height="1" colspan="3"><img width="1" height="1" src="images/common/0.gif"></td>
+					</tr>
+					<tr>
+					<td bgcolor="#6B6B6B" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+					<td align="left" width="428" valign="top"><!--Contenido tabla-->
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#F6F6F6" width="428" height="5"><!--Separador-->
+								<tbody><tr>
+								<td><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#F6F6F6" width="428">
+								<tbody><tr>
+								<td width="10"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td align="center" width="408" valign="top" class="TxtAzul11"><strong>Disponibilidad de comidas especiales según Vuelos/Clases/Destinos</strong></td>
+								<td width="10"><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#F6F6F6" width="428" height="5"><!--Separador-->
+								<tbody><tr>
+								<td><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#BABABA" width="428" height="1"><!-- linea Separador-->
+								<tbody><tr>
+								<td><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#F6F6F6" width="428" height="5"><!--Separador-->
+								<tbody><tr>
+								<td width="100"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="100"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="226"><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#F6F6F6" width="428">
+								<tbody><tr>
+								<td width="10"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td align="left" width="90" valign="top" class="TxtAzul11">Vuelo</td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="10"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td align="left" width="90" valign="top" class="TxtAzul11">Clase</td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="10"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td align="left" width="216" valign="top" class="TxtAzul11">Disponibilidad según Destinos</td>
+								</tr>
+								</tbody></table>
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#F6F6F6" width="428" height="5"><!--Separador-->
+								<tbody><tr>
+								<td width="100"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="100"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="226"><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#BABABA" width="428" height="1"><!-- linea Separador-->
+								<tbody><tr>
+								<td><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" width="428" height="5"><!--Separador-->
+								<tbody><tr>
+								<td width="100"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="100"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="226"><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" width="428">
+								<tbody><tr>
+								<td width="10"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td align="left" width="90" valign="top" class="TxtGris11">Nacionales</td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="10"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td align="left" width="80" valign="top" class="TxtGris11">Club Economy</td>
+								<td width="10"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="10"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td align="left" width="206" valign="top" class="TxtGris11">Comida sin harina de gluten<br>Resto Comidas Especiales (*).</td>
+								<td width="10"><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" width="428" height="5"><!--Separador-->
+								<tbody><tr>
+								<td width="100"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="100"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="226"><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#BABABA" width="428" height="1"><!-- linea Separador-->
+								<tbody><tr>
+								<td><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" width="428" height="5"><!--Separador-->
+								<tbody><tr>
+								<td width="100"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="100"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="226"><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" width="428">
+								<tbody><tr>
+								<td width="10"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td align="left" width="90" valign="top" class="TxtGris11">Limítrofes y Perú</td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="10"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td align="left" width="80" valign="top" class="TxtGris11">Club Economy</td>
+								<td width="10"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="10"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td align="left" width="206" valign="top" class="TxtGris11">Comida sin harina de gluten<br>Resto Comidas Especiales (*).</td>
+								<td width="10"><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" width="428" height="5"><!--Separador-->
+								<tbody><tr>
+								<td width="100"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="100"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="226"><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#BABABA" width="428" height="1"><!-- linea Separador-->
+								<tbody><tr>
+								<td><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" width="428" height="5"><!--Separador-->
+								<tbody><tr>
+								<td width="100"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="100"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="226"><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" width="428">
+								<tbody><tr>
+								<td width="10"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td align="left" width="90" valign="top" class="TxtGris11">Internacionales</td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="10"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td align="left" width="80" valign="top" class="TxtGris11">Club Cóndor</td>
+								<td width="10"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="10"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td align="left" width="206" valign="top" class="TxtGris11">En todos los vuelos a todos los destinos.</td>
+								<td width="10"><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+								<!---->
+								
+								<!---->
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" width="428" height="5"><!--Separador-->
+								<tbody><tr>
+								<td width="100"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="100"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="226"><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#BABABA" width="428" height="1"><!-- linea Separador-->
+								<tbody><tr>
+								<td><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" width="428" height="5"><!--Separador-->
+								<tbody><tr>
+								<td width="100"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="100"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="226"><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" width="428">
+								<tbody><tr>
+								<td width="10"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td align="left" width="90" valign="top" class="TxtGris11">Nacionales</td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="10"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td align="left" width="80" valign="top" class="TxtGris11">Turista</td>
+								<td width="10"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="10"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td align="left" width="206" valign="top" class="TxtGris11">Comida sin harina de gluten</td>
+								<td width="10"><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" width="428" height="5"><!--Separador-->
+								<tbody><tr>
+								<td width="100"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="100"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="226"><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+								
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#BABABA" width="428" height="1"><!-- linea Separador-->
+								<tbody><tr>
+								<td><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+								
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" width="428" height="5"><!--Separador-->
+								<tbody><tr>
+								<td width="100"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="100"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="226"><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" width="428">
+								<tbody><tr>
+								<td width="10"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td align="left" width="90" valign="top" class="TxtGris11">Limítrofes y Perú</td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="10"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td align="left" width="80" valign="top" class="TxtGris11">Turista</td>
+								<td width="10"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="10"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td align="left" width="206" valign="top" class="TxtGris11">Comida sin harina de gluten</td>
+								<td width="10"><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" width="428" height="5"><!--Separador-->
+								<tbody><tr>
+								<td width="100"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="100"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="226"><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#BABABA" width="428" height="1"><!-- linea Separador-->
+								<tbody><tr>
+								<td><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" width="428" height="5"><!--Separador-->
+								<tbody><tr>
+								<td width="100"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="100"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="226"><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" width="428">
+								<tbody><tr>
+								<td width="10"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td align="left" width="90" valign="top" class="TxtGris11">Internacionales</td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="10"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td align="left" width="80" valign="top" class="TxtGris11">Turista</td>
+								<td width="10"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="10"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td align="left" width="206" valign="top" class="TxtGris11">En todos los vuelos a todos los destinos.</td>
+								<td width="10"><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" width="428" height="5"><!--Separador-->
+								<tbody><tr>
+								<td width="100"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="100"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="226"><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+					</td>
+					<td bgcolor="#6B6B6B" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+					</tr>
+					<tr>
+					<td bgcolor="#6B6B6B" height="1" colspan="3"><img width="1" height="1" src="images/common/0.gif"></td>
+					</tr>
+					</tbody></table>
+					<table cellspacing="0" cellpadding="0" border="0" width="430" height="10">
+                    <tbody><tr>
+                    <td align="left" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>
+                    </tr>
+                    </tbody></table>
+                    <table cellspacing="0" cellpadding="0" border="0" width="430">
+                    <!--titulo-->
+                    <tbody><tr>
+                    <td width="15"><img width="8" height="8" src="images/common/0.gif"></td>
+                    <td align="left" width="415" valign="top" class="TxtGris11">(*) No están disponibles por el momento.</td>
+                    </tr>
+                    </tbody></table>
+                    <table cellspacing="0" cellpadding="0" border="0" width="430" height="20">
+                    <tbody><tr>
+                    <td align="left" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>
+                    </tr>
+                    </tbody></table>
+                    <table cellspacing="0" cellpadding="0" border="0" width="430">
+                    <!--titulo-->
+                    <tbody><tr>
+                    <td width="15"><img width="8" height="8" src="images/common/0.gif"></td>
+                    <td align="left" width="415" valign="top" class="TxtAzul11"><strong>Tipos de Comida</strong></td>
+                    </tr>
+                    </tbody></table>
+                    <table cellspacing="0" cellpadding="0" border="0" width="430" height="10">
+                    <tbody><tr>
+                    <td align="left" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>
+                    </tr>
+                    </tbody></table>
+                      <table cellspacing="0" cellpadding="0" border="0" width="430">
+                      <tbody><tr>
+                      <td width="15"><img width="1" height="1" src="images/common/0.gif"></td>
+                      <td align="left" width="200" valign="top"><!--primera columna-->
+                              <table cellspacing="0" cellpadding="0" border="0" width="200">
+                              <tbody><tr>
+                                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                                <td align="left" width="190" valign="top" class="TxtGris11">Comida a base de frutas</td>
+                              </tr>
+                              <tr>
+                                <td height="4" colspan="2"><img width="1" height="1" src="images/common/0.gif"></td>
+                              </tr>
+                              <tr>
+                                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                                <td align="left" width="190" valign="top" class="TxtGris11">Comida baja en grasa y colesterol</td>
+                              </tr>
+                              <tr>
+                                <td height="4" colspan="2"><img width="1" height="1" src="images/common/0.gif"></td>
+                              </tr>
+                              <tr>
+                                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                                <td align="left" width="190" valign="top" class="TxtGris11">Comida bajas calorías</td>
+                              </tr>
+                              <tr>
+                                <td height="4" colspan="2"><img width="1" height="1" src="images/common/0.gif"></td>
+                              </tr><tr>
+                                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                                <td align="left" width="190" valign="top" class="TxtGris11">Comida blanda</td>
+                              </tr>
+                              <tr>
+                                <td height="4" colspan="2"><img width="1" height="1" src="images/common/0.gif"></td>
+                              </tr>
+                                <tr><td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                                <td align="left" width="190" valign="top" class="TxtGris11">Comida con bajo contenido de sodio</td>
+                              </tr>
+                              <tr>
+                                <td height="4" colspan="4"><img width="1" height="1" src="images/common/0.gif"></td>
+                              </tr>
+                             <tr>
+                                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                                <td align="left" width="190" valign="top" class="TxtGris11">Comida musulmana</td>
+                              </tr>
+                              <tr>
+                                <td height="4" colspan="2"><img width="1" height="1" src="images/common/0.gif"></td>
+                              </tr>
+                              <tr>
+                                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                                <td align="left" width="190" valign="top" class="TxtGris11">Comida hindú</td>
+                              </tr>
+                              <tr>
+                                <td height="4" colspan="2"><img width="1" height="1" src="images/common/0.gif"></td>
+                              </tr>
+                              <tr>
+                                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                                <td align="left" width="190" valign="top" class="TxtGris11">Comida kosher</td>
+                              </tr>
+							  						  
+							  						 
+							  <!--<tr>
+                                <td height="4" colspan="2"><img src="images/common/0.gif" width="1" height="1"></td>
+                              </tr>
+                              <tr>
+                                <td width="10" align="left" valign="top"><img src="images/common/flechagris.gif"></td>
+                                <td width="190" valign="top" align="left" class="TxtGris11">Comida libre de Gluten</td>
+                              </tr>-->							  
+                              </tbody></table>
+                      
+                      </td>
+                      <td width="15"><img width="1" height="1" src="images/common/0.gif"></td>
+                      <td align="left" width="200" valign="top"><!--segunda columna-->
+                            <table cellspacing="0" cellpadding="0" border="0" width="200">
+                              <tbody><tr>
+                                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                                <td align="left" width="190" valign="top" class="TxtGris11">Comida lacto-ovo vegetariana</td>
+                              </tr>
+                              <tr>
+                                <td height="4" colspan="4"><img width="1" height="1" src="images/common/0.gif"></td>
+                              </tr>
+                              <tr>
+                                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                                <td align="left" width="190" valign="top" class="TxtGris11">Comida para bebé</td>
+                              </tr>				  
+                              <tr>
+                                <td height="4" colspan="4"><img width="1" height="1" src="images/common/0.gif"></td>
+                              </tr><tr>
+                                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                                <td align="left" width="190" valign="top" class="TxtGris11">Comida para diabéticos</td>
+                              </tr>				  
+                              <tr>
+                                <td height="4" colspan="4"><img width="1" height="1" src="images/common/0.gif"></td>
+                              </tr>
+                              <tr>
+                                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                                <td align="left" width="190" valign="top" class="TxtGris11">Comida para niños</td>
+                              </tr>
+                              <tr>
+                                <td height="4" colspan="4"><img width="1" height="1" src="images/common/0.gif"></td>
+                              </tr>
+                              <tr>
+                                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                                <td align="left" width="190" valign="top" class="TxtGris11">Comida sin harina de gluten</td>
+                              </tr>
+                              <tr>
+                                <td height="4" colspan="4"><img width="1" height="1" src="images/common/0.gif"></td>
+                              </tr><tr>
+                                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                                <td align="left" width="190" valign="top" class="TxtGris11">Comida sin lactosa</td>
+                              </tr>
+                              <tr>
+                                <td height="4" colspan="4"><img width="1" height="1" src="images/common/0.gif"></td>
+                              </tr><tr>
+                                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                                <td align="left" width="190" valign="top" class="TxtGris11">Comida vegetariana asiática</td>
+                              </tr>
+                              <tr>
+                                <td height="4" colspan="4"><img width="1" height="1" src="images/common/0.gif"></td>
+                              </tr>
+                              <tr>
+                                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                                <td align="left" width="190" valign="top" class="TxtGris11">Comida vegetariana sin lácteos</td>
+                              </tr>
+							  						  
+                        </tbody></table>
+                      
+                      </td>
+                      </tr>
+                  </tbody></table>
+                  <table cellspacing="0" cellpadding="0" border="0" width="430" height="30">
+                <tbody><tr>
+                <td align="left" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>
+                </tr>
+                </tbody></table>
+                <table cellspacing="0" cellpadding="0" border="0">
+                <tbody><tr>
+                <td width="430" valign="top" class="TxtAzul11"><li><strong>SERVICIO DE MENOR NO ACOMPAÑADO</strong></li></td>
+                </tr>
+                </tbody></table>
+               <table cellspacing="0" cellpadding="0" border="0" width="430" height="10">
+                <tbody><tr>
+                <td align="left" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>
+                </tr>
+                </tbody></table>
+                <table cellspacing="0" cellpadding="0" border="0" width="430">
+                <tbody><tr>
+                <td align="left" width="15" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>
+                <td valign="top" class="TxtGris11"><p>Aerolíneas Argentinas informa que a partir del día 18 de Mayo de 2009 deja de prestar el servicio de Escort Hostess o Auxiliar Acompañante para menores.  Para los menores viajando solos, sin acompañante la Empresa únicamente ofrecerá el “Servicio de Menor no Acompañado” para todas las rutas de Aerolíneas Argentinas y Austral, cobrando un cargo de servicio para destinos de Cabotaje, Regionales e Internacionales.<br>Este servicio está habilitado para menores que viajen solos y que tengan entre 5 y 12 años sin cumplir.<br>Para mayor información haga click <a class="TxtAzul11" href="main.asp?idSitio=AR&amp;idPagina=44&amp;idIdioma=es">aquí</a>.<br><br>Para descargar el formulario de Menores no Acompañados haga click <a class="TxtAzul11" target="_blank" href="files/GuiaViajeros/Formulario_Menor_no_Acompañado1.pdf">aquí</a>.</p></td>
+                </tr>
+                </tbody></table>
+                <table cellspacing="0" cellpadding="0" border="0" width="430" height="30">
+                <tbody><tr>
+                <td align="left" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>
+                </tr>
+                </tbody></table>
+                <table cellspacing="0" cellpadding="0" border="0">
+                <tbody><tr>
+                <td width="430" valign="top" class="TxtAzul11"><li><strong>PASAJEROS CON NECESIDAD DE OXIGENO</strong></li></td>
+                </tr>
+                </tbody></table>
+               <table cellspacing="0" cellpadding="0" border="0" width="430" height="10">
+                <tbody><tr>
+                <td align="left" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>
+                </tr>
+                </tbody></table>
+                <table cellspacing="0" cellpadding="0" border="0" width="430"><!--titulo-->
+                <tbody><tr>
+                <td width="15"><img width="1" height="1" src="images/common/0.gif"></td>
+                <td align="left" width="415" valign="top" class="TxtGris11">Aerolíneas Argentinas ofrece facilidades para las personas que por necesidades de tratamiento médico soliciten viajar con oxígeno, bajo las siguientes condiciones y procedimiento. </td>
+                </tr>
+                </tbody></table>
+                <table cellspacing="0" cellpadding="0" border="0" width="430" height="10"><!--Separador-->
+                <tbody><tr>
+                <td><img width="1" height="1" src="images/common/0.gif"></td>
+                </tr>
+                </tbody></table>
+                <table cellspacing="0" cellpadding="0" border="0" width="430"><!--titulo-->
+                <tbody><tr>
+                <td width="15"><img width="8" height="8" src="images/common/0.gif"></td>
+                <td align="left" width="415" valign="top" class="TxtAzul11"><strong>Condiciones Generales </strong></td>
+                </tr>
+                </tbody></table>
+                <table cellspacing="0" cellpadding="0" border="0" width="430" height="10"><!--Separador-->
+                <tbody><tr>
+                <td><img width="1" height="1" src="images/common/0.gif"></td>
+                </tr>
+                </tbody></table>
+                <table cellspacing="0" cellpadding="0" border="0" width="430">
+				<!--
+                <tr>
+                <td width="15"><img src="images/common/0.gif" width="1" height="1"></td>
+                <td width="10" align="left" valign="top"><img src="images/common/flechagris.gif"></td>
+                <td width="405" valign="top" align="left" class="TxtGris11">Este servicio no aplica para las rutas <b>Madrid - Par&iacute;s - Madrid y Madrid   - Londres - Madrid</b>, y en vuelos operados por AUSTRAL.</td>
+                </tr>
+                <tr>
+                <td height="4" colspan="3"><img src="images/common/0.gif" width="1" height="1"></td>
+                </tr>
+				-->
+                <tbody><tr>
+                <td width="15"><img width="1" height="1" src="images/common/0.gif"></td>
+                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                <td align="left" width="405" valign="top" class="TxtGris11"> La provisión del servicio de oxígeno es sin cargo y está disponible en vuelos de Aerolíneas Argentinas, de manera restringida.</td>
+                </tr>
+                <tr>
+                <td height="4" colspan="3"><img width="1" height="1" src="images/common/0.gif"></td>
+                </tr>
+                <tr>
+                <td width="15"><img width="1" height="1" src="images/common/0.gif"></td>
+                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                <td align="left" width="405" valign="top" class="TxtGris11">El mismo sólo podrá ser suministrado por la Empresa. Por razones de seguridad, no se permite en vuelo la utilización de tubos de oxigeno que no sean propiedad de Aerolíneas Argentinas.</td>
+                </tr>
+                <tr>
+                <td height="4" colspan="3"><img width="1" height="1" src="images/common/0.gif"></td>
+                </tr>
+                <tr>
+                <td width="15"><img width="1" height="1" src="images/common/0.gif"></td>
+                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                <td align="left" width="405" valign="top" class="TxtGris11">El suministro será solamente de un flujo de 2 ó 4 litros por minuto, debiendo aclararse si el mismo es por precaución o se requiere en forma continua.</td>
+                </tr>
+                <tr>
+                <td height="4" colspan="3"><img width="1" height="1" src="images/common/0.gif"></td>
+                </tr>
+                <tr>
+                <td width="15"><img width="1" height="1" src="images/common/0.gif"></td>
+                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                <td align="left" width="405" valign="top" class="TxtGris11">En caso de que el pasajero viaje con su propia mochila, esta deberá estar vacía y será transportada en bodega. </td>
+                </tr>
+                </tbody></table>
+                <table cellspacing="0" cellpadding="0" border="0" width="430" height="5">
+                <!--Separador-->
+                <tbody><tr>
+                <td><img width="1" height="1" src="images/common/0.gif"></td>
+                </tr>
+                </tbody></table>
+                <table cellspacing="0" cellpadding="0" border="0" width="430">
+                <tbody><tr>
+                <td width="15"><img width="1" height="1" src="images/common/0.gif"></td>
+                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                <td align="left" width="405" valign="top" class="TxtGris11"> Por lo tanto, se recuerda que para todas las etapas anteriores, intermedias o posteriores al vuelo y al transporte requerido, la coordinación previa y la provisión del suministro de oxígeno <strong>quedarán exclusivamente a cargo y bajo la responsabilidad del pasajero y de su médico.</strong></td>
+                </tr>
+                <tr>
+                <td height="4" colspan="3"><img width="1" height="1" src="images/common/0.gif"></td>
+                </tr>
+                <tr>
+                <td width="15"><img width="1" height="1" src="images/common/0.gif"></td>
+                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                <td align="left" width="405" valign="top" class="TxtGris11">Para poder completar en forma segura el viaje, se recomienda tener en cuenta determinados imprevistos como demoras o escalas alternativas por razones meteorológicas o técnicas, a la hora de evaluar la posibilidad de realización del mismo.</td>
+                </tr>
+                <tr>
+                <td height="4" colspan="3"><img width="1" height="1" src="images/common/0.gif"></td>
+                </tr>
+                <tr>
+                <td width="15"><img width="1" height="1" src="images/common/0.gif"></td>
+                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                <td align="left" width="405" valign="top" class="TxtGris11"> El pasajero deberá viajar acompañado por un adulto hábil, es decir, por ejemplo: médico, enfermera, paramédico, o persona mayor de 18 años, con <strong>adiestramiento certificado en el suministro de oxígeno.</strong></td>                </tr>
+                <tr>
+                <td height="4" colspan="3"><img width="1" height="1" src="images/common/0.gif"></td>
+                </tr>
+                <tr>
+                <td width="15"><img width="1" height="1" src="images/common/0.gif"></td>
+                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                <td align="left" width="405" valign="top" class="TxtGris11">No se permitirá el transporte de pasajeros que necesiten para su viaje cualquier tipo de equipo médico que requiera electricidad, ni tampoco -en principio- el de aquellas personas con necesidades de uso de equipamiento médico-electrónico a bordo.</td>
+                </tr>
+                </tbody></table>
+                <table cellspacing="0" cellpadding="0" border="0" width="430">
+                <tbody><tr>
+                <td width="15"><img width="1" height="1" src="images/common/0.gif"></td>
+                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                <td align="left" width="405" valign="top" class="TxtGris11"> Por último, se recuerda que un certificado médico particular que avale la aptitud del pasajero para realizar el vuelo no supone poder embarcar, sino que depende exclusivamente de la autorización del Servicio Médico de Aerolíneas Argentinas.</td>
+                </tr>
+                </tbody></table>
+                <table cellspacing="0" cellpadding="0" border="0" width="430" height="10">
+                <!--Separador-->
+                <tbody><tr>
+                <td><img width="1" height="1" src="images/common/0.gif"></td>
+                </tr>
+                </tbody></table>
+                <table cellspacing="0" cellpadding="0" border="0" width="430"><!--titulo-->
+                <tbody><tr>
+                <td width="15"><img width="8" height="8" src="images/common/0.gif"></td>
+                <td align="left" width="415" valign="top" class="TxtAzul11"><strong>Procedimientos</strong></td>
+                </tr>
+                </tbody></table>
+                <table cellspacing="0" cellpadding="0" border="0" width="430" height="5">
+                <!--Separador-->
+                <tbody><tr>
+                <td><img width="1" height="1" src="images/common/0.gif"></td>
+                </tr>
+                </tbody></table>
+                <table cellspacing="0" cellpadding="0" border="0" width="430">
+                <tbody><tr>
+                <td width="15"><img width="1" height="1" src="images/common/0.gif"></td>
+                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                <td align="left" width="405" valign="top" class="TxtGris11">Solicitar el Formulario MEDIF al momento de efectuar la reserva y requerir el suministro de oxígeno. </td>
+                </tr>
+                <tr>
+                <td height="4" colspan="3"><img width="1" height="1" src="images/common/0.gif"></td>
+                </tr>
+                <tr>
+                <td width="15"><img width="1" height="1" src="images/common/0.gif"></td>
+                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                <td align="left" width="405" valign="top" class="TxtGris11">Entregar dicho formulario, completo con letra clara y legible, en cualquiera de las Oficinas de Venta de Aerolíneas Argentinas o bien enviarlo por fax al 4909-2502, Sector Servicios Especiales.</td>
+                </tr>
+                <tr>
+                <td height="4" colspan="3"><img width="1" height="1" src="images/common/0.gif"></td>
+                </tr>
+                <tr>
+                <td width="15"><img width="1" height="1" src="images/common/0.gif"></td>
+                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                <td align="left" width="405" valign="top" class="TxtGris11">Ponerse en contacto telefónicamente al 4909-2511/12 con dicho Sector, de lunes a viernes de 9:00 a 21:00 hs, para confirmar la recepción del Formulario vía fax y recibir las indicaciones que se consideren pertinentes.</td>
+                </tr>
+                <tr>
+                <td height="4" colspan="3"><img width="1" height="1" src="images/common/0.gif"></td>
+                </tr>
+                <tr>
+                <td width="15"><img width="1" height="1" src="images/common/0.gif"></td>
+                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                <td align="left" width="405" valign="top" class="TxtGris11">Aguardar la evaluación del Servicio Médico de Aerolíneas Argentinas sobre la aptitud del pasajero para realizar el viaje por vía aérea. La misma será informada a través del Sector Servicios Especiales.</td>
+                </tr>
+                </tbody></table>
+                <table cellspacing="0" cellpadding="0" border="0" width="430" height="5">
+                <!--Separador-->
+                <tbody><tr>
+                <td><img width="1" height="1" src="images/common/0.gif"></td>
+                </tr>
+                </tbody></table>
+                <table cellspacing="0" cellpadding="0" border="0" width="430">
+                <tbody><tr>
+                <td width="15"><img width="1" height="1" src="images/common/0.gif"></td>
+                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                <td align="left" width="405" valign="top" class="TxtGris11">El Sector Servicios Especiales podrá solicitar información adicional en caso de que el Servicio Médico de Aerolíneas Argentinas lo considere necesario.</td>
+                </tr>
+                <tr>
+                <td height="4" colspan="3"><img width="1" height="1" src="images/common/0.gif"></td>
+                </tr>
+                <tr>
+                <td width="15"><img width="1" height="1" src="images/common/0.gif"></td>
+                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                <td align="left" width="405" valign="top" class="TxtGris11">La autorización del Servicio Médico de Aerolíneas Argentinas es requisito imprescindible para poder embarcar.</td>
+                </tr>
+                <tr>
+                <td height="4" colspan="3"><img width="1" height="1" src="images/common/0.gif"></td>
+                </tr>
+                </tbody></table>
+                <table cellspacing="0" cellpadding="0" border="0" width="430" height="10">
+                <!--Separador-->
+                <tbody><tr>
+                <td><img width="1" height="1" src="images/common/0.gif"></td>
+                </tr>
+                </tbody></table>
+                <table cellspacing="0" cellpadding="0" border="0" width="430">
+                <!--titulo-->
+                <tbody><tr>
+                <td width="15"><img width="8" height="8" src="images/common/0.gif"></td>
+                <td align="left" width="415" valign="top" class="TxtAzul11"><strong>Anticipación</strong></td>
+                </tr>
+                </tbody></table>
+                <table cellspacing="0" cellpadding="0" border="0" width="430" height="5">
+                <!--Separador-->
+                <tbody><tr>
+                <td><img width="1" height="1" src="images/common/0.gif"></td>
+                </tr>
+                </tbody></table>
+                <table cellspacing="0" cellpadding="0" border="0" width="430">
+                <tbody><tr>
+                <td width="15"><img width="1" height="1" src="images/common/0.gif"></td>
+                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                <td align="left" width="405" valign="top" class="TxtGris11">Recuerde hacer la solicitud al momento de su reserva, contemplando los siguientes plazos mínimos, dentro de los cuales la misma será condicional:</td>
+                </tr>
+                <tr>
+                <td height="4" colspan="3"><img width="1" height="1" src="images/common/0.gif"></td>
+                </tr>
+                </tbody></table>
+                 <table cellspacing="0" cellpadding="0" border="0" width="430" height="10">
+                <tbody><tr>
+                <td align="left" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>
+                </tr>
+                </tbody></table>
+                <table cellspacing="0" cellpadding="0" border="0" width="430">
+                <tbody><tr>
+                <td align="left" width="21" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>
+                <td align="left" valign="top">
+                	<table cellspacing="0" cellpadding="0" border="0" width="409"><!--Comienza tabla-->
+					<tbody><tr>
+					<td bgcolor="#6B6B6B" height="1" colspan="3"><img width="1" height="1" src="images/common/0.gif"></td>
+					</tr>
+					<tr>
+					<td bgcolor="#6B6B6B" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+					<td align="left" width="407" valign="top"><!--Contenido tabla-->
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" width="407" height="5"><!--Separador-->
+								<tbody><tr>
+								<td width="250"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="156"><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" width="407">
+								<tbody><tr>
+								<td width="5"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td align="left" width="240" valign="middle" class="TxtAzul11"><strong>Saliendo de Buenos Aires</strong><br>
+								<font class="TxtGris11">Vuelos: Nacional / Regional / Internacional</font></td>
+								<td width="5"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="5"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td align="left" width="146" valign="middle" class="TxtAzul11"><strong>36 horas</strong> <font class="TxtGris11">antes del viaje</font></td>
+								<td width="5"><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" width="407" height="5"><!--Separador-->
+								<tbody><tr>
+								<td width="250"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="156"><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#BABABA" width="407" height="1"><!-- linea Separador-->
+								<tbody><tr>
+								<td><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" width="407" height="5"><!--Separador-->
+								<tbody><tr>
+								<td width="250"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="156"><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" width="407">
+								<tbody><tr>
+								<td width="5"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td align="left" width="240" valign="middle" class="TxtAzul11"><strong>Regresando a Buenos Aires</strong><br>
+								<font class="TxtGris11">Vuelos: Nacional / Regional</font></td>
+								<td width="5"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="5"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td align="left" width="146" valign="middle" class="TxtAzul11"><strong>48 horas</strong> <font class="TxtGris11">antes del viaje</font></td>
+								<td width="5"><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" width="407" height="5"><!--Separador-->
+								<tbody><tr>
+								<td width="250"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="156"><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#BABABA" width="407" height="1"><!-- linea Separador-->
+								<tbody><tr>
+								<td><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" width="407" height="5"><!--Separador-->
+								<tbody><tr>
+								<td width="250"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="156"><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" width="407">
+								<tbody><tr>
+								<td width="5"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td align="left" width="240" valign="middle" class="TxtAzul11"><strong>Regresando a Buenos Aires</strong><br>
+								<font class="TxtGris11">Vuelos:Internacional</font></td>
+								<td width="5"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="5"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td align="left" width="146" valign="middle" class="TxtAzul11"><strong>72 horas</strong> <font class="TxtGris11">antes del viaje</font></td>
+								<td width="5"><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+								<table cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF" width="407" height="5"><!--Separador-->
+								<tbody><tr>
+								<td width="250"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td bgcolor="#BABABA" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+								<td width="156"><img width="1" height="1" src="images/common/0.gif"></td>
+								</tr>
+								</tbody></table>
+					</td>
+					<td bgcolor="#6B6B6B" width="1"><img width="1" height="1" src="images/common/0.gif"></td>
+					</tr>
+					<tr>
+					<td bgcolor="#6B6B6B" height="1" colspan="3"><img width="1" height="1" src="images/common/0.gif"></td>
+					</tr>
+					</tbody></table>
+                </td>
+                </tr>
+                </tbody></table>
+                 <table cellspacing="0" cellpadding="0" border="0" width="430" height="30">
+                <tbody><tr>
+                <td align="left" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>
+                </tr>
+                </tbody></table>
+                <table cellspacing="0" cellpadding="0" border="0">
+                <tbody><tr>
+                <td width="430" valign="top" class="TxtAzul11"><li><strong>PASAJEROS QUE VIAJAN CON SU PROPIA SILLA DE RUEDAS</strong></li></td>
+                </tr>
+                </tbody></table>
+               <table cellspacing="0" cellpadding="0" border="0" width="430" height="10">
+                <tbody><tr>
+                <td align="left" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>
+                </tr>
+                </tbody></table>
+                <table cellspacing="0" cellpadding="0" border="0" width="430">
+                <tbody><tr>
+                <td align="left" width="15" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>
+                </tr>
+                <tr>
+                <td align="left" width="415" valign="top" class="TxtAzul11"><strong>1- Política del transporte de sillas de ruedas</strong><br><br></td>
+                </tr>
+
+                <tr>  
+                <td>
+                <table cellspacing="0" cellpadding="0" border="0" width="430">
+                <tr> 
+                <td align="left" width="15" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>             
+                <td valign="top" class="TxtGris11">
+					Aerolíneas Argentinas / Austral tienen disponible sillas de ruedas para facilitar el traslado y movimiento de pasajeros discapacitados, quienes podrán viajar solos o con un acompañante hábil según el grado de su incapacidad. Deben solicitarse en el momento de la reserva, con una anticipación mínima de 24 horas.<br><br>Adicionalmente, si las circunstancias lo requieren, podrá utilizarse un elevador para el acceso al avión.<br> Asimismo los pasajeros con movilidad reducida podrán transportar su silla de ruedas sin cargo adicional.<br><br>Recordá que si viajás con tu propia silla de ruedas, Aerolíneas Argentinas / Austral te brindan un servicio de cortesía. Este servicio permite trasladar al pasajero desde el área de checkin hasta el avión, y desde el avión hasta el sector de arribos.<br>Las sillas de ruedas se transportan únicamente como equipaje en bodega.<br>Aerolíneas Argentinas / Austral <strong>sólo</strong> transportan sillas de ruedas <strong>manuales</strong> y sillas de ruedas <strong>fijas o plegables impulsadas</strong> con <strong>Baterías No Derramables</strong>.<br><br>
+Aerolíneas Argentinas / Austral <strong>NO</strong> transportan sillas de ruedas impulsadas por <strong>Baterías Derramables ni impulsadas por Baterías de Litio</strong>.<br><br>
+				</td>
+                </tr>
+                </table>
+                </td>
+                </tr>
+                
+                <tr>
+                <td align="left" width="415" valign="top" class="TxtAzul11"><strong>2- Cómo determinar su tipo de batería</strong><br><br></td>
+                </tr>
+                <tr>  
+                <td>
+                <table cellspacing="0" cellpadding="0" border="0" width="430">
+                <tr> 
+                <td align="left" width="15" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>             
+                <td valign="top" class="TxtGris11">
+                	<strong>BATERIAS NO DERRAMABLES (Non Spillable)</strong><br><br>                    
+					Las baterías <strong>NO DERRAMABLES</strong> son aquellas que están identificadas con una de las siguientes “leyendas”.  Para el caso que tu batería no cuente con alguna de estas “leyendas”, deberás considerar a tu batería como <strong>DERRAMABLE</strong>.<br><br>
+                    <strong>Leyendas de baterías NO DERRAMABLES</strong><br><br>
+                </td>
+                </tr>
+                </table>
+                </td>
+                </tr>
+                <tr>
+                	<td>
+                    	<table cellspacing="0" cellpadding="0" border="0" width="430">
+                      <tbody><tr>
+                      <td width="15"><img width="1" height="1" src="images/common/0.gif"></td>
+                      <td align="left" width="200" valign="top"><!--primera columna-->
+                              <table cellspacing="0" cellpadding="0" border="0" width="200">
+                              <tbody><tr>
+                                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                                <td align="left" width="190" valign="top" class="TxtGris11">AGM</td>
+                              </tr>
+                              <tr>
+                                <td height="4" colspan="2"><img width="1" height="1" src="images/common/0.gif"></td>
+                              </tr>
+                              <tr>
+                                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                                <td align="left" width="190" valign="top" class="TxtGris11">Absorved Glass Mat</td>
+                              </tr>
+                              <tr>
+                                <td height="4" colspan="2"><img width="1" height="1" src="images/common/0.gif"></td>
+                              </tr>
+                              <tr>
+                                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                                <td align="left" width="190" valign="top" class="TxtGris11">Non Spillable</td>
+                              </tr>
+                              <tr>
+                                <td height="4" colspan="2"><img width="1" height="1" src="images/common/0.gif"></td>
+                              </tr><tr>
+                                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                                <td align="left" width="190" valign="top" class="TxtGris11">Dry</td>
+                              </tr>
+                              <tr>
+                                <td height="4" colspan="2"><img width="1" height="1" src="images/common/0.gif"></td>
+                                </tr> 
+                              <tr>
+                                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                                <td align="left" width="190" valign="top" class="TxtGris11">Dry Cell</td>
+                              </tr>
+                              
+                              </tbody></table>                      
+                      </td>
+                      <td width="15"><img width="1" height="1" src="images/common/0.gif"></td>
+                      <td align="left" width="200" valign="top"><!--segunda columna-->
+                            <table cellspacing="0" cellpadding="0" border="0" width="200">
+                              <tbody><tr>
+                                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                                <td align="left" width="190" valign="top" class="TxtGris11">Gel Cell</td>
+                              </tr>
+                              <tr>
+                                <td height="4" colspan="4"><img width="1" height="1" src="images/common/0.gif"></td>
+                              </tr>
+                              <tr>
+                                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                                <td align="left" width="190" valign="top" class="TxtGris11">SLA</td>
+                              </tr>				  
+                              <tr>
+                                <td height="4" colspan="4"><img width="1" height="1" src="images/common/0.gif"></td>
+                              </tr><tr>
+                                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                                <td align="left" width="190" valign="top" class="TxtGris11">Sealed Lead Acid</td>
+                              </tr>				  
+                              <tr>
+                                <td height="4" colspan="4"><img width="1" height="1" src="images/common/0.gif"></td>
+                              </tr>
+                              <tr>
+                                <td align="left" width="10" valign="top"><img src="images/common/flechagris.gif"></td>
+                                <td align="left" width="190" valign="top" class="TxtGris11">Non Regulated</td>
+                              </tr>
+                              <tr>
+                                <td height="4" colspan="4"><img width="1" height="1" src="images/common/0.gif"></td>
+                              </tr>		  
+                        </tbody></table>
+                      
+                      </td>
+                      </tr>
+                  </tbody></table>
+                    </td>
+                </tr>
+                <tr>
+                	<td align="center">
+                   	  <img src="Content/themes/V2/img/common/bat_nonspill.jpg" width="240" height="138"><br><br>
+                    </td>
+                </tr>
+                <tr>  
+                <td>
+                <table cellspacing="0" cellpadding="0" border="0" width="430">
+                <tr> 
+                <td align="left" width="15" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>             
+                <td valign="top" class="TxtGris11">
+                	<strong>BATERIAS DERRAMABLES (Wet batteries – spillable) </strong><br><br>                    
+					Aerolíneas Argentinas / Austral <strong>NO TRANSPORTAN</strong> sillas de ruedas impulsadas con <strong>BATERIAS DERRAMABLES</strong> como equipaje. Sólo podrás despachar la silla de ruedas sin tu batería. <br>Las <strong>BATERIAS DERRAMABLES</strong> solo podrán ser transportadas como <strong>CARGA</strong>. Para vuelos de  Cabotaje contactarse a <a href="mailto:jetpaq@aerolineas.com.ar" target="_blank">jetpaq@aerolineas.com.ar</a> o al TE +54-11-4130-4000 y para vuelos  Internacionales a <a href="mailto:aerolineascargo@aerolineas.com.ar" target="_blank">aerolineascargo@aerolineas.com.ar</a> o al TE +54-11-4480-6396/ 6264.<br><br>
+Toda batería que no tenga la “identificación” de <strong>NO DERRAMABLE</strong> (o cualquiera de sus variantes), será considerada <strong>DERRAMABLE</strong>.<br><br>
+                </td>
+                </tr>
+                </table>
+                </td>
+                </tr>
+                <tr>
+                	<td align="center">
+                   	  <img src="Content/themes/V2/img/common/bat_spill.jpg" width="259" height="194" alt="bateria derramable"><br><br>
+                    </td>
+                </tr>
+                <tr>  
+                <td>
+                <table cellspacing="0" cellpadding="0" border="0" width="430">
+                <tr> 
+                <td align="left" width="15" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>             
+                <td valign="top" class="TxtGris11">
+                	<strong>BATERIAS DE LITIO</strong><br><br>                    
+					Aerolíneas Argentinas / Austral <strong>NO TRANSPORTAN</strong> sillas de ruedas impulsadas con <strong>BATERIAS de LITIO</strong> como equipaje. Solo podrás despachar la silla de ruedas sin su batería. <br>En el caso que necesites transportar BATERÍAS de LITIO deberás consultar con el Sector Cargas. Para vuelos de Cabotaje contactarse a <a href="mailto:jetpaq@aerolineas.com.ar" target="_blank">jetpaq@aerolineas.com.ar</a> o al TE +54-11-4130-4000 y para vuelos  Internacionales a aerolineascargo@aerolineas.com.ar o al TE +54-11-4480-6396/ 6264.<br><br>
+                </td>
+                </tr>
+                </table>
+                </td>
+                </tr>
+                 <tr>
+                	<td align="center">
+                   	  <img src="Content/themes/V2/img/common/bateria-litio.jpg" width="210" height="210"><br><br>
+                    </td>
+                </tr>
+                <tr>
+                <td align="left" width="415" valign="top" class="TxtAzul11"><strong>3- RESERVA</strong><br><br></td>
+                </tr>
+                <tr>  
+                <td>
+                <table cellspacing="0" cellpadding="0" border="0" width="430">
+                <tr> 
+                <td align="left" width="15" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>             
+                <td valign="top" class="TxtGris11">                  
+					Una vez efectuada la reserva y compra de tu vuelo, deberás contactarte inmediatamente con la Compañía al 0810-222-VOLAR, con el objeto de planificar tu viaje para evitar imprevistos en el Aeropuerto.<br><br>Te solicitamos nos informes a más tardar 48 hs. antes de iniciar tu viaje sobre el tipo de sillas de ruedas a transportar. <br>En caso que realices trasbordo a otra compañía aérea, deberás contactarse con la misma y consultar las condiciones de transporte.<br><br>
+                </td>
+                </tr>
+                </table>
+                </td>
+                </tr>
+                 <tr>
+                <td align="left" width="415" valign="top" class="TxtAzul11"><strong>4- PRESENTACION EN EL AEROPUERTO</strong><br><br>
+               </td>
+                </tr>
+                <tr>  
+                <td>
+                <table cellspacing="0" cellpadding="0" border="0" width="430">
+                <tr> 
+                <td align="left" width="15" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>             
+                <td valign="top" class="TxtGris11">                  
+					Recordá que el día del viaje deberás presentarte en el aeropuerto 120 min. antes de la salida de tu vuelo de cabotaje y 180 min. antes de la salida de tu vuelo regional o internacional.<br><br>Las sillas de ruedas <strong>fijas o plegables</strong> impulsadas con <strong>baterías No Derramables</strong>, serán transportadas como equipaje en bodega, siempre y cuando <strong>la batería se encuentre perfectamente colocada en la silla de ruedas, desconectada y sus bornes aislados</strong>, para prevenir cortocircuitos o cualquier accionamiento de la silla. <br>Las sillas de ruedas “manuales” también serán despachadas en bodega.<br>Recomendamos conservar en tu equipaje de mano todos los accesorios que pudieran extraviarse: almohadón, reposapiés, antiescaras, entre otras.<br><br>
+                </td>
+                </tr>
+                </table>
+                </td>
+                </tr>
+                <tr>
+                <td align="left" width="415" valign="top" class="TxtAzul11"><strong>5- ARRIBO</strong><br><br></td>
+                </tr>
+                <tr>  
+                <td>
+                <table cellspacing="0" cellpadding="0" border="0" width="430">
+                <tr> 
+                <td align="left" width="15" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>             
+                <td valign="top" class="TxtGris11">                  
+					Por regla general, todos los tipos de sillas de ruedas eléctricas y/o manuales deben transportarse como equipaje en bodega. Por ello tené en cuenta que no podrás pedir la silla durante una conexión larga ni inmediatamente al salir del avión. La silla de ruedas se entregará en la sala de arribos.<br><br>
+                </td>
+                </tr>
+                </table>
+                </td>
+                </tr>
+                </tbody></table>
+                 <table cellspacing="0" cellpadding="0" border="0" width="430" height="30">
+                <tbody><tr>
+                <td align="left" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>
+                </tr>
+                </tbody></table>
+                <!--<table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                <td width="430" class="TxtAzul11" valign="top"><li><strong>DIABETICO VIAJANDO CON INSULINA</strong></td>
+                </tr>
+                </table>
+               <table width="430" height="10" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                <td align="left" valign="middle"><img src="images/common/0.gif" width="1" height="1"></td>
+                </tr>
+                </table>
+                <table width="430" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                <td width="15" align="left" valign="middle"><img src="images/common/0.gif" width="1" height="1"></td>
+                <td class="TxtGris11" valign="top">Los pasajeros diab&eacute;ticos que necesiten llevar consigo insulina no necesitan   presentar el formulario m&eacute;dico MEDIF. Asimismo Aerol&iacute;neas Argentinas le sugiere   lleve la credencial, si la posee, para presentarla en el sector de tr&aacute;fico del   aeropuerto. Deben llevar una heladera para refrigerar la insulina. La empresa   proveer&aacute; sin costo alguno, hasta 2 kilos de hielo seco. El pasajero deber&aacute;   presentar un escrito manifestando la responsabilidad de la cantidad de hielo   seco a aplicar y del cuidado de la cadena de fr&iacute;o. Al momento del check in, se   deber&aacute; entregar la insulina al personal de tr&aacute;fico quienes se la entregar&aacute;n a la   tripulaci&oacute;n. Si fuese necesario la aplicaci&oacute;n durante el vuelo, se deber&aacute;   solicitar la insulina a la tripulaci&oacute;n. </td>
+                </tr>
+                </table>
+				 <table width="430" height="30" cellpadding="0" cellspacing="0" border="0">
+					<tr>
+					<td align="left" valign="middle"><img src="images/common/0.gif" width="1" height="1"></td>
+					</tr>
+					</table>-->
+				
+					
+					<table cellspacing="0" cellpadding="0" border="0">
+					<tbody><tr>
+					<td width="430" valign="top" class="TxtAzul11"><li><strong>SERVICIO DE ASIENTO EXTRA (EXTRA SEAT) PARA VUELOS DENTRO DE ARGENTINA Y VUELOS REGIONALES</strong></li></td>
+					</tr>
+					</tbody></table>
+				   <table cellspacing="0" cellpadding="0" border="0" width="430" height="10">
+					<tbody><tr>
+					<td align="left" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>
+					</tr>
+					</tbody></table>
+					<table cellspacing="0" cellpadding="0" border="0" width="430">
+					<tbody><tr>
+					<td align="left" width="15" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>
+					<td valign="top" class="TxtGris11">Este servicio se brinda a aquellos pasajeros que, por razones médicas o por confort, soliciten un asiento extra en vuelos dentro del territorio Argentino y en  países limítrofes (Bolivia, Brasil, Chile, Paraguay, Uruguay) .<br><br><strong>Por casos médicos:</strong><br>Trátese de aquellos pasajeros que soliciten un asiento extra por su condición física, ya sea por contextura o por lesiones y que el servicio médico de Aerolíneas Argentinas deberá autorizar mediante el formulario 'INCAD-MEDIF y un Formulario denominado Solicitud de Transporte de pasajeros corpulentos/lesionados con requerimiento de Asiento Extra'.<br><br>Aerolíneas Argentinas le concederá el asiento extra sin cargo alguno.<br><br>Para descargar el formulario INCAD-MEDIF, haga click  <a class="TxtAzul11" target="_blank" href="files/GuiaViajeros/INCAD-MEDIF.pdf">aquí</a>.<br><br>Para descargar el formulario “Solicitud de Transporte de pasajeros corpulentos/lesionados con requerimiento de Asiento Extra”, haga click  <a class="TxtAzul11" target="_blank" href="files/GuiaViajeros/SOLICITUD_TRANSPORTE_PASAJEROS_CORPULENTOS.pdf">aquí</a>.<br><br><strong>Confort del pasajero:</strong><br>Trátese de aquellos pasajeros que soliciten un asiento extra por su propia comodidad, (no por necesidad física), abonando la totalidad del asiento extra.<br><br>Para mayor información comuníquese con nuestro Call Center al 0810-222-VOLAR (86527). </td>
+					</tr>
+					</tbody></table>
+					 <table cellspacing="0" cellpadding="0" border="0" width="430" height="10">
+					<tbody><tr>
+					<td align="left" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>
+					</tr>
+					</tbody></table>
+				
+				 <table cellspacing="0" cellpadding="0" border="0" width="430" height="30">
+				<tbody><tr>
+				<td align="left" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>
+				</tr>
+				</tbody></table>
+				<table cellspacing="0" cellpadding="0" border="0">
+				<tbody><tr>
+				<td width="430" valign="top" class="TxtAzul11"><li><strong>LEY DE NO DISCRIMINACION BASADA EN LA 'DISCAPACIDAD EN EL TRANSPORTE AEREO' PARA PASAJEROS QUE VIAJEN DESDE/ HACIA LOS ESTADOS UNIDOS.</strong></li></td>
+				</tr>
+				</tbody></table>
+			   <table cellspacing="0" cellpadding="0" border="0" width="430" height="10">
+				<tbody><tr>
+				<td align="left" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>
+				</tr>
+				</tbody></table>
+				<table cellspacing="0" cellpadding="0" border="0" width="430">
+				<tbody><tr>
+				<td align="left" width="15" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>
+				<td valign="top"><a class="TxtGris11" target="_blank" href="Http://airconsumer.ost.dot.gov/rules/Part%20382-2008.pdf ">Http://airconsumer.ost.dot.gov/rules/Part%20382-2008.pdf</a></td>
+				</tr>
+				</tbody></table>
+				 <table cellspacing="0" cellpadding="0" border="0" width="430" height="10">
+				<tbody><tr>
+				<td align="left" valign="middle"><img width="1" height="1" src="images/common/0.gif"></td>
+				</tr>
+				</tbody></table>
+</td>
+<td width="52"><img width="1" height="1" src="images/common/0.gif"></td>
+</tr>
+</tbody></table>
+
+<table cellspacing="0" cellpadding="0" border="0" align="center" width="1002" style="clear:both;">
+    <tbody><tr>
+      <td bgcolor="#FFFFFF">&nbsp;</td>
+      <td bgcolor="#FFFFFF" valign="bottom">&nbsp;</td>
+    </tr>
+    <tr>
+      <td bgcolor="#FFFFFF" width="333"><img width="333" height="100" alt="" src="images/common/footer-left.jpg"></td>
+      <td bgcolor="#FFFFFF" width="669" valign="bottom"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+        <tbody><tr>
+          <td><table cellspacing="0" cellpadding="0" border="0" width="660">
+            <tbody><tr>
+              <td bgcolor="#A6AAAD" height="1"><span class="txtGirs"><img width="1" height="1" alt="" src="images/common/0.gif"></span></td>
+              </tr>
+            <tr>
+              <td height="5"><img width="1" height="5" alt="" src="images/common/0.gif"></td>
+              </tr>
+            <tr>
+              <td align="left"><table cellspacing="0" cellpadding="0" border="0" width="560">
+                <tbody><tr>
+                  
+                  <td width="94"><img border="0" style="cursor:pointer;" onclick="abrirAustral();" alt="Austral" src="images/common/footer-logoAustral.gif"></td>
+                  <td width="96"><a href="main.asp?idSitio=AR&amp;idPagina=81&amp;idIdioma=es"><img border="0" alt="JetPaq" src="images/common/footer-logoJetPaq.gif"></a></td>
+                  <td width="124"><a href="main.asp?idSitio=AR&amp;idPagina=9&amp;idIdioma=es"><img border="0" alt="Aerohandling" src="images/common/footer-logoAerohandling.gif"></a></td>                  
+                  <td width="42"><a target="_blank" href="http://www.optar.com/"><img border="0" alt="Optar" src="images/common/footer-logoOptar.gif"></a></td>
+				  <td width="34"><!--<a href="main.asp?idSitio=AR&idPagina=9&empresa=C&idIdioma=es"><img src="images/common/footer-logoAeroCargo.gif" width="109" height="30" alt="Aerolineas Cargo" border="0"></a>--></td>
+				  <!--<td width="95"><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=1&idIdioma=es"><img src="images/common/footer-logoAASkyTeam.gif" alt="Aerolineas Argentinas" border="0"></a></td>-->
+				  <td width="75"><img border="0" alt="" src="images/common/logo_arg.jpg"></td>
+				  <td width="75"><img border="0" alt="" src="images/common/argentina_paisbuenagente.gif"></td>
+                  </tr>
+              </tbody></table></td>
+              </tr>
+            <tr>
+              <td align="center">
+				<table cellspacing="0" cellpadding="0" border="0" width="490">
+					<tbody><tr>
+						<td align="center">
+							<span class="txtGirsfoote">aerolineas.com&nbsp;Sitio Oficial de Aerolíneas Argentinas. &copy; 1996 - 2013 Aerolíneas Argentinas S.A. <br>
+							<a class="txtGirsfoote" href="main.asp?idSitio=AR&amp;idPagina=72&amp;idIdioma=es">Legales</a> | 
+							<a class="txtGirsfoote" onclick="popup_condiciones_transporte();" href="#">Condiciones Generales de Transporte</a> | 
+							<a class="txtGirsfoote" href="main.asp?idSitio=AR&amp;idPagina=94&amp;idIdioma=es">Mapa del Sitio</a>   |   
+							<a class="txtGirsfoote" href="main.asp?idSitio=AR&amp;idPagina=84&amp;idIdioma=es">Ud. está en un SITIO SEGURO </a>
+							</span>
+						</td>
+						<td align="right"><a target="_F960AFIPInfo" href="https://servicios1.afip.gov.ar/clavefiscal/qr/mobilePublicInfo.aspx?req=e1ttZXRob2Q9Z2V0UHVibGljSW5mb11bcGVyc29uYT0zMDY0MTQwNTU1NF1bdGlwb2RvbWljaWxpbz0wXVtzZWN1ZW5jaWE9MF1bdXJsPWh0dHA6Ly93d3cuYWVyb2xpbmVhcy5jb20uYXJdfQ=="><img border="0" src="images/common/DATAWEB.gif"></a></td>
+					</tr>
+				</tbody></table>
+			  </td>
+              </tr>
+            </tbody></table></td>
+        </tr>
+        <tr>
+          <td><img width="669" height="14" alt="" src="images/common/footer-right.gif"></td>
+        </tr>
+      </tbody></table></td>
+    </tr>
+  </tbody></table>
+<!--segunda columna-->
+    <ol class="round">
+    </ol>   
+</div>
+            </section>
+        </div>
+        <footer>
+            <!--pie-->
+            
+     <script type="text/javascript">
+
+        function abrirAustral() {
+          window.open('http://www.austral.com.ar/index.asp?idSitio=AR&idIdioma=es','Austral', 'scrollbars=yes, resizable=1,width=1020,height=805');
+        }
+     
+      function popup_condiciones_transporte() {
+          var winC = window.open('http://www.aerolineas.com.ar/arg/bodies/CondicionesGrales_contratoTransporte.asp?idSitio=AR&idIdioma=es', 'wContr', 'scrollbars=yes, resizable=1,width=800,height=600');
+          winC.moveTo(0, 0);
+      }
+
+
+     </script> 
+               <div id="pie">
+                <div class="ml10  mtop15">
+                    
+                    
+        <div class="azul fleft mtop20">
+                    <a href='http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=143&idIdioma=es                       ' target='_blank' class='link'>Clima                                                                                               </a> <span> | </span>
+                    <a href='http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=111&idIdioma=es                       ' target='' class='link'>Conoc&#233; el estado de tu vuelo                                                                        </a> <span> | </span>
+                    <a href='http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=103&idIdioma=es                       ' target='' class='link'>Preguntas frecuentes                                                                                </a> <span> | </span>
+                    <a href='http://www.aerolineas.com.ar/Arg/bodies/popup_reembolsoBillete.asp?idSitio=AR&idIdioma=es           ' target='_blank' class='link'>Devoluci&#243;n de ticket                                                                                </a> <span> | </span>
+        </div>
+                    <div class=" fright mright15 mtop15">
+                        <div id="fb-root"></div>
+                        <script language="javascript" type="text/javascript">
+                            (function (d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0];
+                                if (d.getElementById(id)) return;
+                                js = d.createElement(s); js.id = id;
+                                js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1";
+                                fjs.parentNode.insertBefore(js, fjs);
+                            } (document, 'script', 'facebook-jssdk'));
+                        </script>
+                        <div class="fb-like mbot5" data-href="http://www.facebook.com/aerolineas.argentinas" data-send="false" data-layout="button_count" data-width="77" data-show-faces="false" data-font="arial"></div>
+                        <a href="https://www.facebook.com/Aerolineas.argentinas" target="_blank">
+                            <img src="Content/themes/V2/img/common/ic-facebook.gif" alt="Facebook" width="22" height="22" border="0" /></a>
+                        <a href="http://twitter.com/Aerolineas_AR/" target="_blank">
+                            <img src="Content/themes/V2/img/common/ic-Twitter.jpg" alt="Twitter" width="22" height="22" border="0" /></a>
+                        <a href="https://plus.google.com/106198199507305429358/posts" target="_blank">
+                            <img src="Content/themes/V2/img/common/ic-gplus.gif" alt="Facebook" width="22" height="22" border="0" /></a>
+                        
+                        <a href="http://www.youtube.com/user/AerolineasAR" target="_blank">
+                            <img src="Content/themes/V2/img/common/ic-YouTube.gif" alt="Youtube" width="22" height="22" border="0" /></a>
+                        <a href="http://www.Aerolineas.com.ar/arg/rss.asp?idSitio=AR&idIdioma=es" target="_blank">
+                            <img src="Content/themes/V2/img/common/ic-RSS.gif" alt="Rss" width="22" height="22" border="0" /></a></div>
+                    <br clear="all" />
+                </div>
+                <div class="div">
+                </div>
+                <div class="div_pie">
+                    <div class="div_links">
+
+                    
+
+                        <div class="div_partner">
+                            <img src="Content/themes/V2/img/common/footer-logoAustral.gif" alt="Logo Austral" onclick="abrirAustral();" style="cursor:pointer;" />
+                        </div>
+                        <div class="div_partner">
+                            <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=81%26idIdioma=es" title=""><img alt="@MainFooterResource.JetPaq_Logo" src="Content/themes/V2/img/common/footer-logoJetPaq.gif" /></a>
+                        </div>
+                        <div class="div_partner">
+                            <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=9%26idIdioma=es" title=""><img alt="@MainFooterResource.Aerohandling_Logo" src="Content/themes/V2/img/common/footer-logoAerohandling.gif" /></a>
+                        </div>
+                        <div class="div_partner">
+                            <a href="http://www.optar.com/" target="_blank">
+                                <img src="Content/themes/V2/img/common/footer-logoOptar.gif" alt="Logo Optar" border="0"/>
+                            </a>
+                        </div>
+                       <div class="div_partner mtop7 mleft20"><img src="Content/themes/V2/img/common/logo_arg.jpg" alt="Logo Aerol&#237;neas Argentinas" width="47" height="30" />
+                       </div>
+                       <div class="div_partner mtop14 mleft25"><img src="Content/themes/V2/img/common/argentina_paisbuenagente.gif" alt="Logo Aerol&#237;neas Argentinas - Un pa&#237;s con buena gente" />
+                       </div>
+                  </div>
+                    <br clear="all" />
+                    <div class="codigo-qr">
+                        <a href="https://servicios1.afip.gov.ar/clavefiscal/qr/mobilePublicInfo.aspx?req=e1ttZXRob2Q9Z2V0UHVibGljSW5mb11bcGVyc29uYT0zMDY0MTQwNTU1NF1bdGlwb2RvbWljaWxpbz0wXVtzZWN1ZW5jaWE9MF1bdXJsPWh0dHA6Ly93d3cuYWVyb2xpbmVhcy5jb20uYXJdfQ==" target="_F960AFIPInfo">
+                            <img src="Content/themes/V2/img/common/qr_code.gif" alt="QR-Code" />
+                        </a>
+                    </div>
+                    <div class="pie_texto">
+                        <span>aerolineas.com Sitio Oficial de Aerolineas Argentinas. &#169; 1996 - 2013 Aerol&#237;neas Argentinas S.A.<br />
+                            <a class="pie" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=72%26idIdioma=es">Legales</a> |
+                            <a class="pie" href="#" onclick="popup_condiciones_transporte();"> Condiciones Generales de Transporte </a>|
+                            <a class="pie" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=94%26idIdioma=es">Mapa del Sitio</a> |
+                            <a class="pie" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=84%26idIdioma=es">Ud. est&#225; en un SITIO SEGURO</a> 
+                        </span>
+                    </div>
+                </div>
+                <div class="div_borde">
+                    <img src="Content/themes/V2/img/backgrounds/footer-right.gif" alt="" />
+                </div>
+            </div>
+
+
+            <!--fin de pie-->
+        </footer>
+    </div>
+    
+    
+
+
+    <script type="text/javascript">
+        function onCultureChanged() {
+            var cultureName = $("#culture").val();
+            GlobalCultureName = cultureName;
+
+            var ruta = '/es-AR/Culture/ChangeCulture';
+            ruta = '/es-AR/Culture/ChangeCulture';
+            //var redirectUrl = '/_culture_/VuelosBaratos/SouthAmericanPass';
+            var redirectUrl = '/_culture_';
+
+            $.ajax({
+                url: ruta,
+                type: "post",
+                dataType: "json",
+                traditional: true,
+                async: false,
+                data: { 'selectedCultureName': cultureName },
+                success: function (result, responseText) {
+                    
+                    // // translateUrlAndRedirect(GlobalCultureName);
+
+                    //alert('Cultura cambiada exitosamente por: ' + result);
+
+                    // Redirecciono
+                    redirectUrl = redirectUrl.replace("_culture_", GlobalCultureName);
+                    window.location.replace(redirectUrl);
+
+                    //  // Recargo la página
+                    //window.location.reload();
+                },
+                error: function () {
+                    alert('Error al intentar cambiar la cultura');
+                }
+            });
+
+        }
+        
+    </script>
+
+    <!--************GOOGLE ANALYTICS*******************-->
+    
+    <!--************GOOGLE ANALYTICS*******************-->
+
+</body>
+</html>

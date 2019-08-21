@@ -1,0 +1,76 @@
+.bg-blue,
+#countdown_dashboard span,
+.btn-primary,
+#ui-datepicker-div .ui-datepicker-header {
+    background-color: #dc4405;
+}
+
+.ui-widget-header .ui-icon {
+    background-image: url(../cupertino/images/ui-icons_72a7cf_256x240-orange.png);
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+	    border: 1px solid #f4e3dc;
+    background: #f7ece7 url(images/ui-bg_glass_80_d7ebf9_1x400.png) 50% 50% repeat-x;
+    font-weight: bold;
+    color: #ab4e28;
+}
+
+#contenedor_form_home .navbar-form .form-control:focus {
+border: 1px solid #e25920;
+background-color: #f9eeea;
+
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active, 
+.btn-primary:active, 
+.open>.dropdown-toggle.btn-primary {
+	background-color: #FF7238!important;
+    border-color: #FF8F60;
+    outline:0 !important;
+}
+
+.block .col-desc .title, .block .col-desc .title a,
+.block .col-desc span.price,
+.block .col-desc .search,
+.block .col-desc .search a,
+.hero-form h1.txt-blue a,
+.box-price .price,
+#contenedor_form_home .navbar-form .input-group .input-group-btn .glyphicon,
+.hot-sale .condiciones,
+.box_title,
+.btn-close .fa {
+	color:  #dc4405;
+}
+
+.carousel-caption {
+text-shadow: 0 1px 2px rgba(255, 255, 255, 0.6);
+}
+
+#contenedor_form_home .tabs_form_home>li.active>a, 
+#contenedor_form_home .tabs_form_home>li.active>a:focus, 
+#contenedor_form_home .tabs_form_home>li.active>a:hover {
+    background-color: #dc4405;
+        border-top: #FF6322 1px solid;
+}
+
+.input_calendar_home {
+background-image: url(../img/common/calendar-orange.png) !important;
+}
+#contenedor_form_home .tabs_form_home>li:first-child {
+	border: none;
+}
+
+.block {
+    background-color: #EAEAEA;
+}
+
+select option {
+	background-color: #FFFFFF;
+}
+
+option:hover {
+    box-shadow: 0 0 10px 100px #1882A8 inset;
+}

@@ -1,0 +1,52 @@
+.INPUTText {
+    FONT-SIZE: 12px;
+    TEXT-ALIGN: left;
+}
+
+.INPUTTextNumerico {
+    FONT-SIZE: 10px;
+    TEXT-ALIGN: right;
+}
+
+.INPUTSubmit {
+    FONT-SIZE: 10px;
+	TEXT-ALIGN: center;
+    TEXT-DECORATION: none
+}
+
+.INPUTCombo {
+    FONT-SIZE: 10px;
+    TEXT-ALIGN: left;
+}
+
+.INPUTCheckBox {
+    FONT-SIZE: 10px;
+    TEXT-ALIGN: left;
+}
+
+.INPUTTextArea {
+	FONT-SIZE: 10px;
+}
+
+.INPUTTextAreaError {
+	FONT-SIZE: 10px;
+}
+
+
+.TxtAzul12 {
+
+	font-family:Tahoma, Verdana;
+	font-size:12px;
+	color:#0C2577;
+	text-decoration:none;
+}
+
+.form-control {
+    background-color: #f3f3f3;
+    color: #5D5D5D;
+    font-size: 12px;
+    height: 34px;
+    padding: 6px 2px;
+    width: 100%;
+    border: none;
+}

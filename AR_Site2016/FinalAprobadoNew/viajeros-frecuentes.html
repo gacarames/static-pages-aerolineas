@@ -1,0 +1,1664 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Aerolineas Argentinas</title>
+    <meta http-equiv="title" content="Aerolineas Argentinas">
+    <meta name="Description" content="Todo tu viaje en un solo lugar aerolineas.com, vuelos baratos.">
+    <link href="Images/condor_chico.gif" rel="shortcut icon" type="image/x-icon" />
+    <link href="http://www.aerolineas.com.ar/es-ar" rel="canonical">
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="js/jquery.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.touchSwipe.min.js"></script>
+    <script src="js/carousel-hero.js"></script>
+
+    <script src="js/slick.min.js"></script>
+
+    <!-- Script footer menu carousel -->
+    <script src="js/jquery.matchHeight-min.js"></script>
+    <!--  Match Height Cols -->
+    <script>
+        // matchHeight blocks content
+        $(document).ready(function() {
+            $('.col-desc').matchHeight();
+            $('.col-desc .title').matchHeight();
+        });
+
+    </script>
+    <script src="js/locales/es-AR.min.js"></script>
+    <!-- //datapicker form -->
+    <script src="js/datepicker.min.js"></script>
+    <!-- //datapicker form -->
+    <script src="js/form-home.js"></script>
+    <!-- //datapicker form home -->
+
+    <script src="js/form-arplus-login.js"></script>
+    <script src="js/form-news-subscription.js"></script>
+    <script src="js/form-estado-vuelo.js"></script>
+    <script src="js/form-check-in.js"></script>
+
+    <!-- //LOGIN ARPLUS -->
+    <link rel="stylesheet" href="http://d1jp0w2s0ejaji.cloudfront.net/Content/themes/V3/css/selectize.css">
+    <!-- //selects form CSS -->
+    <script src="js/selectize.js"></script>
+    <!-- //selects form -->
+    <script>
+        //selectize
+        $(document).ready(function() {
+            $('.selectSearch').selectize({
+                sortField: 'text'
+            });
+        });
+
+    </script>
+    <script src="js/chat.js"></script>
+    <!-- //chat -->
+    <script src="js/form-search.js"></script>
+    <!-- //datapicker form search -->
+    <!-- Country Select CSS -->
+    <!-- <link rel="stylesheet" href="http://d1jp0w2s0ejaji.cloudfront.net/Content/themes/V3/css/countrySelect.min.css">
+    <script src="js/countrySelect.min.js"></script>
+     -->
+    <!-- <msdropdown> -->
+    <link rel="stylesheet" href="http://d1jp0w2s0ejaji.cloudfront.net/Content/themes/V3/css/msdropdown/dd.css">
+    <script src="js/msdropdown/jquery.dd.min.js"></script>
+    <link rel="stylesheet" href="http://d1jp0w2s0ejaji.cloudfront.net/Content/themes/V3/css/msdropdown/skin2.css">
+    <link rel="stylesheet" href="http://d1jp0w2s0ejaji.cloudfront.net/Content/themes/V3/css/msdropdown/flags.css">
+    <!-- </msdropdown> -->
+    <script src="js/jquery.lwtCountdown-1.0.js"></script>
+    <!-- COUNTDOWN -->
+    <script src="js/scripts.js"></script>
+    <!-- general scripts -->
+    <script>
+        $(document).ready(function() {
+            $('.more-info-tooltip').tooltip();
+            $('.more-info-tooltip').click(function(e) {
+                if ($(this).parent('div').find(".tooltip").length) {
+                    $('.more-info-tooltip').tooltip('hide');
+                } else {
+                    $(this).tooltip('show');
+
+                }
+            });
+
+        });
+
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('.menu-carousel').slick({
+                infinite: true,
+                speed: 0,
+                slidesToShow: 2
+            });
+        });
+
+    </script>
+
+
+
+    <script src="js/jquery.html5-placeholder-shim.js"></script>
+
+    <script src="www.aerolineasargentinas.com/bundles/Captcha?v=vPq-Pr5TIEp88tA7jNPzmn676EZdePi9c2r5ds72lMk1"></script>
+
+
+
+
+
+    <script>
+        $(document).ready(function() {
+            //Cerrar alerta
+            $("#closeBrowserAlertsMessage").click(function() {
+                $("#browserAlertsMessage").addClass("close-alert");
+            });
+
+            $("#closeAlertsMessage").click(function() {
+                $("#alertsMessage").addClass("close-alert");
+            });
+
+            $("#closeCookiesAlertsMessage").click(function() {
+                $("#cookiesAlertsMessage").addClass("close-alert");
+            });
+        });
+
+
+        var url_login_viajeros_frecuentes = '/es-AR/viajerosfrecuentes/loginviajerosfrecuentescaptcha';
+
+        $('#btnSubmit').click(function() {
+            $('#frmLoginARPlus').submit();
+        });
+
+        /*$('#modalPlusLogin .modal-footer button').click(function () { $('#modalPlusLogin').hide(); });*/
+
+
+        $(function() {
+            $('#frmLoginARPlus').validate({
+                focusInvalid: false,
+                rules: {
+                    NroSocio: {
+                        required: true,
+                        digits: true
+                    },
+                    Clave: 'required',
+                    Captcha: 'required'
+                },
+                messages: {
+                    NroSocio: {
+                        required: 'Debe ingresar el campo "Número Socio"',
+                        digits: 'El Número de Socio debe ser numérico. No debe contener puntos, ni comas, ni espacios.'
+                    },
+                    Clave: 'Debe ingresar el campo "Clave"',
+                    Captcha: 'Debe ingresar el código'
+                },
+                onkeyup: false,
+                onfocusout: false,
+                onclick: false,
+                showErrors: function(errMap, errList) {
+                    if (errList.length) {
+                        $('#modalLoginPlus .modal-body').html(errList[0].message);
+                        $('#modalLoginPlus').modal();
+                        $('.newCaptcha').click();
+                        $('#Captcha').val("");
+                    }
+                },
+                submitHandler: function(form) {
+                    $.blockUI({
+                        css: {
+                            border: 'none',
+                            padding: '15px',
+                            backgroundColor: '#000',
+                            '-webkit-border-radius': '10px',
+                            '-moz-border-radius': '10px',
+                            opacity: .5,
+                            color: '#fff'
+                        },
+                        message: '<img src="/Images/spinner.gif" />'
+                    });
+                    $.getJSON(url_login_viajeros_frecuentes, {
+                        NroSocio: $("#NroSocio").val(),
+                        Clave: $("#Clave").val(),
+                        UrlRedirect: $("#urlRedirect").val(),
+                        Captcha: $("#Captcha").val()
+                    }, function(data) {
+                        if (data.success) {
+                            if (data.urlRedirect === '')
+                                window.location = '/es-ar/viajerosfrecuentes/micuentaplus';
+                            else
+                                window.location = data.urlRedirect;
+                        } else {
+                            $.unblockUI();
+                            $('.newCaptcha').click();
+                            $('#Captcha').val("");
+                            $('#modalLoginPlus .modal-body').html(data.error);
+                            $('#modalLoginPlus').modal();
+                        }
+                    });
+                }
+            });
+        });
+
+        function LoadWatermarks() {
+            $('#NroSocio').watermark('Número de Socio');
+            $('#Clave').watermark('Clave');
+            $('#Captcha').watermark('Código');
+        }
+
+    </script>
+</head>
+
+<body>
+    <!-- CONTENEDOR -->
+    <div id="main-content" class="home">
+        <div id="browserAlertsMessage" class="top-alert top-alert-sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> <strong>Actualice su navegador.</strong> Asegúrese de contar con la versión más reciente de su navegador.
+                            <a class="underline" href="browser-compatibility.html">Más información <span class="sr-only">sobre el uso de cookies</span></a>
+                        </p>
+                        <button id="closeBrowserAlertsMessage" type="button" class="close" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="alertsMessage" class="top-alert top-alert-message top-alert-sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            <a class="underline" href="#">excepturi optio fugiat officiis</a>
+                        </p>
+                        <button id="closeAlertsMessage" type="button" class="close" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="cookiesAlertsMessage" class="top-alert top-alert-cookies top-alert-sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-10">
+                        <p>
+                            Esta web usa cookies para asegurar una buena experiencia de usuario. <a class="underline" href="#">Más información <span class="sr-only">sobre el uso de cookies</span></a>
+                        </p>
+                    </div>
+                    <div class="col-sm-2">
+                        <a id="closeCookiesAlertsMessage" class="underline btn pull-right btn-line" href="#">Aceptar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header role="banner">
+            <a href="#utilityNav" class="firstFocus"></a>
+            <ul id="utilityNav" class="list-unstyled" accesskey="a">
+                <li><a href="#main-nav" class="">Skip to main navigation</a></li>
+                <li><a href="#wrapper" class="">Skip to main content</a></li>
+                <li><a href="#footer" class="">Skip to footer</a></li>
+            </ul>
+            <div id="header" class="clearfix">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div id="header-top" class="header-top clearfix">
+                        <div id="logo-header" class="pull-left">
+                            <a href="index.html" accesskey="h"><img alt="Aerolineas.com" src="img/common/logo_Aerolineas.gif" /></a>
+                        </div>
+                        <div id="access-top" class="pull-right">
+                            <div id="CultureContainer" class="hidden-xs hidden-sm">
+                                <select class="INPUTBuscador" id="culture" name="culture" title="Culture">
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag ar" selected="selected" value="es-ar" data-title="Argentina (Español)">Argentina (Español)</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag ar" value="en-ar" data-title="Argentina (Inglés)">Argentina (Inglés)</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag au" value="en-au" data-title="Australia">Australia</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag bo" value="es-bo" data-title="Bolivia">Bolivia</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag br" value="pt-br" data-title="Brasil">Brasil</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag co" value="es-co" data-title="Colombia">Colombia</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag cl" value="es-cl" data-title="Chile">Chile</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag es" value="es-eu" data-title="España">España</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag fr" value="fr-fr" data-title="Francia">Francia</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag it" value="it-eu" data-title="Italia">Italia</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag mx" value="es-mx" data-title="México">México</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag nz" value="en-nz" data-title="New Zealand">New Zealand</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag pa" value="es-pa" data-title="Paraguay">Paraguay</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag pe" value="es-pe" data-title="Perú">Perú </option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag en" value="en-eu" data-title="Rest of Europe">Rest of Europe</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag uy" value="es-uy" data-title="Uruguay">Uruguay</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag us" value="es-us" data-title="United States (Español)">United States (Español)</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag us" value="en-us" data-title="United States (English)">United States (English)</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag es" value="es-us" data-title="Otros países (Español)">Otros países (Español)</option>
+                                    <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag us" value="en-us" data-title="Other Countries (English)">Other Countries (English)</option>
+                                </select>
+                            </div>
+
+                            <div class="dropdown" id="user-arplus">
+                                <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="name text-blue"><i class="fa fa-user" aria-hidden="true"></i> <span>Acceder</span></span><span class="caret"></span></a>
+                                <div class="dropdown-menu form-socio" aria-labelledby="dLabel">
+                                    <div id="contenedor_form-socio" class="clearfix">
+                                        <h3 class="title text-center"><i class="fa fa-user" aria-hidden="true"></i> Ingresar a mi cuenta</h3>
+                                        <div class="content socio-plus-info">
+                                            <form class="form " method="post">
+                                                <fieldset>
+                                                    <div class="row row-small">
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group">
+                                                                <label class="sr-only" for="NroSocio">Número de Socio</label>
+                                                                <input type="text" class="form-control" id="NroSocio" placeholder="Número de Socio" name="NroSocio">
+                                                                <i class="fa fa-user" aria-hidden="true"></i>
+                                                                <a class="small" href="/es-ar/aerolineas_plus/mi_cuenta_plus/olvidastetunrosocio">Olvidaste tu Nº de Socio?</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group">
+                                                                <label class="sr-only" for="Clave">Password</label>
+                                                                <input type="password" class="form-control" id="Clave" placeholder="Password" name="Clave">
+                                                                <i class="fa fa-lock" aria-hidden="true"></i>
+                                                                <a class="small" href="/es-ar/aerolineas_plus/mi_cuenta_plus/olvidastetuclave1">Olvidaste tu Clave?</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row row-small">
+                                                        <div class="col-xs-6 col-sm-6">
+                                                            <div class="captchaContainer" style="overflow: hidden;">
+                                                                <div style="float:left; overflow: hidden"><img border="0" src="img/arplus/captcha.jpg"></div>
+                                                            </div>
+                                                            <a class="newCaptcha" href="#">Refrescar</a>
+                                                        </div>
+                                                        <div class="col-xs-6 col-sm-6">
+                                                            <div class="captchaContainer">
+                                                                <div style="overflow:hidden">
+                                                                    <div style="float:right;width:100%"><input id="Captcha" name="Captcha" type="text" value="" placeholder="Código" class="form-control"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row row-small">
+                                                        <div class="col-sm-6">
+                                                            <a class="small underline btn_ingreso" href="/es-ar/aerolineas_plus/mi_cuenta_plus/primeravez">Primera vez que ingreso</a>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group btn-block">
+                                                                <input type="submit" value="Aceptar" class="btn btn-primary btn-block" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-header-collapse" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- NAVBAR -->
+                    <nav id="main-nav" class="navbar navbar-default" role="navigation" aria-label="Menú principal">
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="navbar-header-collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="menu-item hidden-md hidden-lg">
+                                    <div id="CultureContainer_m">
+                                        <select class="INPUTBuscador_m" id="culture_m" name="culture_m" title="culture_m">
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag ar" selected="selected" value="es-ar" data-title="Argentina (Español)">Argentina (Español)</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag ar" value="en-ar" data-title="Argentina (Inglés)">Argentina (Inglés)</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag au" value="en-au" data-title="Australia">Australia</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag bo" value="es-bo" data-title="Bolivia">Bolivia</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag br" value="pt-br" data-title="Brasil">Brasil</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag co" value="es-co" data-title="Colombia">Colombia</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag cl" value="es-cl" data-title="Chile">Chile</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag es" value="es-eu" data-title="España">España</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag fr" value="fr-fr" data-title="Francia">Francia</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag it" value="it-eu" data-title="Italia">Italia</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag mx" value="es-mx" data-title="México">México</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag nz" value="en-nz" data-title="New Zealand">New Zealand</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag pa" value="es-pa" data-title="Paraguay">Paraguay</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag pe" value="es-pe" data-title="Perú">Perú </option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag en" value="en-eu" data-title="Rest of Europe">Rest of Europe</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag uy" value="es-uy" data-title="Uruguay">Uruguay</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag us" value="es-us" data-title="United States (Español)">United States (Español)</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag us" value="en-us" data-title="United States (English)">United States (English)</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag es" value="es-us" data-title="Otros países (Español)">Otros países (Español)</option>
+                                            <option data-image="Images/msdropdown/icons/blank.gif" data-imagecss="flag us" value="en-us" data-title="Other Countries (English)">Other Countries (English)</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="productos-opcionales.html">
+                                   Productos opcionales<span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="arplus.html">Viajeros Frecuentes</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="servicios.html">Servicios al cliente</a>
+                                </li>
+                                <li><a class="hidden-md hidden-lg" href="#"><span><img src="img/common/ico_plane.png" alt="Vuelos" role="presentation"></span> Reservá tu vuelo</a></li>
+                                <li><a class="hidden-md hidden-lg" role="button" data-toggle="collapse" href="#collapseChatMobile" aria-expanded="false" aria-controls="collapseChatMobile"><span><img src="img/common/ico_chat.png" alt="chat" role="presentation"></span> ¿Necesitas ayuda?</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </nav>
+                    <!-- /NAVBAR -->
+                </div>
+                <!-- /.container -->
+            </div>
+        </header>
+        <!-- CONTENEDOR WRAPPER -->
+        <div id="wrapper" role="main">
+
+
+
+
+            <script src="/bundles/Captcha?v=vPq-Pr5TIEp88tA7jNPzmn676EZdePi9c2r5ds72lMk1"></script>
+
+
+
+
+            <!-- #hero-form -->
+            <div id="hero-form" class="hero-form hero-form-slider hero-form-slider-interna nobeforeunload">
+                <!-- Carousel -->
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <div class="container hidden-xs hidden-sm">
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active">
+                            </li>
+                            <li data-target="#myCarousel" data-slide-to="1" class="">
+                            </li>
+                            <li data-target="#myCarousel" data-slide-to="2" class="">
+                            </li>
+                            <li data-target="#myCarousel" data-slide-to="3" class="">
+                            </li>
+                            <li data-target="#myCarousel" data-slide-to="4" class="">
+                            </li>
+                            <li data-target="#myCarousel" data-slide-to="5" class="">
+                            </li>
+                            <li data-target="#myCarousel" data-slide-to="6" class="">
+                            </li>
+                            <li data-target="#myCarousel" data-slide-to="7" class="">
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active" style='background-image: url("http://d1jp0w2s0ejaji.cloudfront.net/Images/BannersRelacionados/Slider1920x3431_20170420124727.jpg");' data-url="#">
+                            <div class="container">
+                                <div class="carousel-caption">
+                                    <h2 class="title">
+                                        <a href="#">Viajeros Frecuentes</a></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item " style='background-image: url("http://d1jp0w2s0ejaji.cloudfront.net/Images/BannersRelacionados/SInternoBono_20171110120716.jpg");' data-url="/es-ar/landingsespeciales/landingplus/181_bono-por-compra-de-millas?artid=aeswbs3517">
+                            <div class="container">
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item " style='background-image: url("http://d1jp0w2s0ejaji.cloudfront.net/Images/BannersRelacionados/LandingTransf_20170602111210.jpg");' data-url="/es-ar/landingsespeciales/landingplus/97_queres-compartir-tus-millas?artid=aeswbs3519">
+                            <div class="container">
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item " style='background-image: url("http://d1jp0w2s0ejaji.cloudfront.net/Images/BannersRelacionados/InternaAR_20171027083302.jpg");' data-url="/es-ar/landingsespeciales/landingplus/12_argentina-mas-cerca">
+                            <div class="container">
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item " style='background-image: url("http://d1jp0w2s0ejaji.cloudfront.net/Images/BannersRelacionados/Triplic&#225;MillasSancor_20171115122637.jpg");' data-url="/es-ar/landingsespeciales/landings/165_asegurate-y-triplica-tus-millas-con-sancor-seguros">
+                            <div class="container">
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item " style='background-image: url("http://d1jp0w2s0ejaji.cloudfront.net/Images/BannersRelacionados/macro_premia1920x3432_20170626032511.jpg");' data-url="/es-ar/aerolineasplus/empresasasociadasdetalles/110_macro-premia">
+                            <div class="container">
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item " style='background-image: url("http://d1jp0w2s0ejaji.cloudfront.net/Images/BannersRelacionados/BannerInterna_20170920063212.jpg");' data-url="http://www.aerolineas.com.ar/landingsespeciales/landings/211_promociones-mendoza">
+                            <div class="container">
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item " style='background-image: url("http://d1jp0w2s0ejaji.cloudfront.net/Images/BannersRelacionados/SumademillasconST_20170127042419.jpg");' data-url="/es-ar/landingsespeciales/landings/104_ahora-podes-acreditar-tus-millas-on-line">
+                            <div class="container">
+                                <div class="carousel-caption">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <div class="controls visible-xs-inline-block">
+                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+                    </div>
+                    <!-- Controls -->
+
+                </div>
+                <!-- /.carousel -->
+                <div class="container">
+                    <!-- form-slider -->
+                    <div class="form-slider">
+                        <div id="contenedor_form-slider" class="clearfix">
+                            <h3 class="title">
+                                <i class="fa fa-user" aria-hidden="true"></i> Ingresar a mi cuenta</h3>
+                            <form autocomplete="off" class="form" id="frmLoginARPlus" method="post" name="frmLoginARPlus">
+
+                                <input type="hidden" id="urlRedirect" name="urlRedirect" />
+                                <div class="content">
+                                    <fieldset>
+                                        <legend class="sr-only">Ingresar a mi cuenta</legend>
+                                        
+                                           <div class="form-group">
+                                            <label class="sr-only" for="NroSocio">N&#250;mero de Socio</label>
+                                            <input autocomplete="off" class="form-control" id="NroSocio" name="NroSocio" placeholder="Número de Socio" type="text" value="" />
+                                            <i class="fa fa-user" aria-hidden="true"></i><a class="small" href="" data-toggle="modal" data-target="#modalOlvidarNroSocio">&#191;Olvidaste tu N&#250;mero de Socio?</a>
+                                        </div>
+                                        
+                                           <div class="form-group">
+                                            <label class="sr-only" for="Clave">Clave</label>
+                                            <input autocomplete="off" class="form-control" id="Clave" name="Clave" placeholder="Clave" type="password" />
+                                            <i class="fa fa-lock" aria-hidden="true"></i><a class="small" href="" data-toggle="modal" data-target="#modalOlvidarClave">&#191;Olvidaste tu Clave?</a>
+                                        </div>
+                                        
+                                        
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-xs-6">
+                                                    <div class="captchaContainer"><img border="0" src="img/arplus/captcha.jpg" /></div>
+                                                    <a class="newCaptcha" href="#">Refrescar</a>
+                                                    <br />
+                                                </div>
+                                                
+                                                <div class="col-xs-6">
+                                                   <input id="Captcha" name="Captcha" type="text" value="" placeholder="Código" class="form-control">
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                           <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-xs-6">
+                                                    <div class="form-group">
+                                                        <a class="small" href="" data-toggle="modal" data-target="#modalPrimerIngreso">Primera vez que ingreso</a>
+                                                    </div>
+                                                </div>
+                                                
+                                                
+                                                <div class="col-sm-6">
+                                                    <div class="form-group btn-block">
+                                                        <button type="button" id="btnSubmit" class="btn btn-primary btn-block">Aceptar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- /form-slider -->
+                </div>
+            </div>
+            <!-- /#hero-form -->
+            <!-- Modal -->
+            <div class="modal fade" id="modalLoginPlus" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">&nbsp;</h4>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="/Scripts/jquery.blockUI.min.js" type="text/javascript"></script>
+            <!-- Login ARPlus -->
+            <script type="text/javascript">
+                var url_login_viajeros_frecuentes = '/es-AR/viajerosfrecuentes/loginviajerosfrecuentescaptcha';
+
+                $('#btnSubmit').click(function() {
+                    $('#frmLoginARPlus').submit();
+                });
+
+                /*$('#modalPlusLogin .modal-footer button').click(function () { $('#modalPlusLogin').hide(); });*/
+
+                $(function() {
+                    $('#frmLoginARPlus').validate({
+                        focusInvalid: false,
+                        rules: {
+                            NroSocio: {
+                                required: true,
+                                digits: true
+                            },
+                            Clave: 'required',
+                            Captcha: 'required'
+                        },
+                        messages: {
+                            NroSocio: {
+                                required: 'Debe ingresar el campo "Número Socio"',
+                                digits: 'El Número de Socio debe ser numérico. No debe contener puntos, ni comas, ni espacios.'
+                            },
+                            Clave: 'Debe ingresar el campo "Clave"',
+                            Captcha: 'Debe ingresar el código'
+                        },
+                        onkeyup: false,
+                        onfocusout: false,
+                        onclick: false,
+                        showErrors: function(errMap, errList) {
+                            if (errList.length) {
+                                $('#modalLoginPlus .modal-body').html(errList[0].message);
+                                $('#modalLoginPlus').modal();
+                                $('.newCaptcha').click();
+                                $('#Captcha').val("");
+                            }
+                        },
+                        submitHandler: function(form) {
+                            $.blockUI({
+                                css: {
+                                    border: 'none',
+                                    padding: '15px',
+                                    backgroundColor: '#000',
+                                    '-webkit-border-radius': '10px',
+                                    '-moz-border-radius': '10px',
+                                    opacity: .5,
+                                    color: '#fff'
+                                },
+                                message: '<img src="/Images/spinner.gif" />'
+                            });
+                            $.getJSON(url_login_viajeros_frecuentes, {
+                                NroSocio: $("#NroSocio").val(),
+                                Clave: $("#Clave").val(),
+                                UrlRedirect: $("#urlRedirect").val(),
+                                Captcha: $("#Captcha").val()
+                            }, function(data) {
+                                if (data.success) {
+                                    if (data.urlRedirect === '')
+                                        window.location = '/es-ar/viajerosfrecuentes/micuentaplus';
+                                    else
+                                        window.location = data.urlRedirect;
+                                } else {
+                                    $.unblockUI();
+                                    $('.newCaptcha').click();
+                                    $('#Captcha').val("");
+                                    $('#modalLoginPlus .modal-body').html(data.error);
+                                    $('#modalLoginPlus').modal();
+                                }
+                            });
+                        }
+                    });
+                });
+
+                function LoadWatermarks() {
+                    $('#NroSocio').watermark('Número de Socio');
+                    $('#Clave').watermark('Clave');
+                    $('#Captcha').watermark('Código');
+                }
+
+                $(document).ready(function() {
+
+                    LoadWatermarks();
+
+                    // Script para mover el Input del componente Captcha al lado de la imagen y no debajo.
+                    var $divRow = $('<div class="row"></div>');
+                    var $divColImg = $('<div class="col-md-6" style="float:left"></div>');
+                    var $divColInp = $('<div class="col-md-6" style="float:right;width:100%"></div>');
+                    var $divColInpContainer = $('<div style="overflow:hidden"></div>');
+
+                    $divRow.append($divColImg);
+                    $divRow.append($divColInpContainer);
+                    $divColInpContainer.append($divColInp);
+
+                    $divColImg.append($('div.captchaContainer img'));
+                    $divColInp.append($('#Captcha'));
+                    $('div.captchaContainer').append($divRow);
+
+                    $('#Captcha').addClass("form-control");
+                });
+
+            </script>
+            <!-- / Login ARPlus -->
+            ;
+
+            <div class="container">
+                <h1 class="sr-only">Programa de Viajeros Frecuentes</h1>
+                <div></div>
+                <div></div>
+                <div class="row">
+                    <div class="col-sm-4 bannerCentral">
+
+
+                        <div class="block">
+                            <a class="customLink" style="color:transparent;" href="/es-ar/aerolineasplus/acercade" target=_self>
+                                <div class="col-img">
+                                    <img class="visible-xs-block img-responsive" src="http://d1jp0w2s0ejaji.cloudfront.net/Images/BannersRelacionados/Conoc&#233;ARPlus_20170105011057.png" style="width:100% !important;" />
+                                    <img class="hidden-xs img-responsive" src="http://d1jp0w2s0ejaji.cloudfront.net/Images/BannersRelacionados/Conoc&#233;ARPlus_20170105011057.png" style="width:auto !important;" />
+                                </div>
+                                <div class="col-desc" style="border-right:inherit;">
+                                    <h2 class="title">
+                                        Conoc&#233; Aerol&#237;neas Plus</h2>
+                                    <p>Conoc&#233; c&#243;mo funciona nuestro Programa de Viajeros Frecuentes.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-4 bannerCentral">
+
+
+                        <div class="block">
+                            <a class="customLink" style="color:transparent;" href="/es-ar/aerolineasplus/acercade?Inscripcion_Plus=si" target=_self>
+                                <div class="col-img">
+                                    <img class="visible-xs-block img-responsive" src="http://d1jp0w2s0ejaji.cloudfront.net/Images/BannersRelacionados/Registrate_20161227024019.jpg" style="width:100% !important;" />
+                                    <img class="hidden-xs img-responsive" src="http://d1jp0w2s0ejaji.cloudfront.net/Images/BannersRelacionados/Registrate_20161227024019.jpg" style="width:auto !important;" />
+                                </div>
+                                <div class="col-desc" style="border-right:inherit;">
+                                    <h2 class="title">
+                                        Registrate</h2>
+                                    <p>Empez&#225; a disfrutar las ventajas de ser socio Aerol&#237;neas Plus.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-4 bannerCentral">
+
+
+                        <div class="block">
+                            <a class="customLink" style="color:transparent;" href="/es-ar/aerolineas_plus/mi_cuenta_plus" target=_self>
+                                <div class="col-img">
+                                    <img class="visible-xs-block img-responsive" src="http://d1jp0w2s0ejaji.cloudfront.net/Images/BannersRelacionados/CanjeaARPlus_20161227024121.jpg" style="width:100% !important;" />
+                                    <img class="hidden-xs img-responsive" src="http://d1jp0w2s0ejaji.cloudfront.net/Images/BannersRelacionados/CanjeaARPlus_20161227024121.jpg" style="width:auto !important;" />
+                                </div>
+                                <div class="col-desc" style="border-right:inherit;">
+                                    <h2 class="title">
+                                        Canje&#225; Millas</h2>
+                                    <p>Reserv&#225; vuelos de premio con tus millas Aerol&#237;neas Plus.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-4 bannerCentral">
+
+
+                        <div class="block">
+                            <a class="customLink" style="color:transparent;" href="/es-ar/landingsespeciales/landingplus/12_argentina-mas-cerca" target=_self>
+                                <div class="col-img">
+                                    <img class="visible-xs-block img-responsive" src="http://d1jp0w2s0ejaji.cloudfront.net/Images/BannersRelacionados/DameroAR_320X200_20171027083638.jpg" style="width:100% !important;" />
+                                    <img class="hidden-xs img-responsive" src="http://d1jp0w2s0ejaji.cloudfront.net/Images/BannersRelacionados/DameroAR_320X200_20171027083638.jpg" style="width:auto !important;" />
+                                </div>
+                                <div class="col-desc" style="border-right:inherit;">
+                                    <h2 class="title">
+                                        Millas + Pesos Argentina</h2>
+                                    <p>Desde/hacia Buenos Aires a 35 destinos.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-4 bannerCentral">
+
+
+                        <div class="block">
+                            <a class="customLink" style="color:transparent;" href="/es-ar/landingsespeciales/landingplus/97_queres-compartir-tus-millas?artid=aeswbs3519" target=_self>
+                                <div class="col-img">
+                                    <img class="visible-xs-block img-responsive" src="http://d1jp0w2s0ejaji.cloudfront.net/Images/BannersRelacionados/TransferimillasActual_20171114112900.jpg" style="width:100% !important;" />
+                                    <img class="hidden-xs img-responsive" src="http://d1jp0w2s0ejaji.cloudfront.net/Images/BannersRelacionados/TransferimillasActual_20171114112900.jpg" style="width:auto !important;" />
+                                </div>
+                                <div class="col-desc" style="border-right:inherit;">
+                                    <h2 class="title">
+                                        Promo Bono por Transferencia de Millas</h2>
+                                    <p>Hasta el 21 de Noviembre 13hs.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-4 bannerCentral">
+
+
+                        <div class="block">
+                            <a class="customLink" style="color:transparent;" href="/es-ar/landingsespeciales/landingplus/181_bono-por-compra-de-millas?artid=aeswbs3517" target=_self>
+                                <div class="col-img">
+                                    <img class="visible-xs-block img-responsive" src="http://d1jp0w2s0ejaji.cloudfront.net/Images/BannersRelacionados/DameroAR_320X200_20171110121255.jpg" style="width:100% !important;" />
+                                    <img class="hidden-xs img-responsive" src="http://d1jp0w2s0ejaji.cloudfront.net/Images/BannersRelacionados/DameroAR_320X200_20171110121255.jpg" style="width:auto !important;" />
+                                </div>
+                                <div class="col-desc" style="border-right:inherit;">
+                                    <h2 class="title">
+                                        Promo Bono por Compra de Millas</h2>
+                                    <p>&#161;Sum&#225; hasta 24.000 Millas adicionales!</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-4 bannerCentral">
+
+
+                        <div class="block">
+                            <a class="customLink" style="color:transparent;" href="/arg/main.asp?idsitio=ar&amp;idpagina=216&amp;ididioma=es" target=_self>
+                                <div class="col-img">
+                                    <img class="visible-xs-block img-responsive" src="http://d1jp0w2s0ejaji.cloudfront.net/Images/BannersRelacionados/Tablademillas_20161227024627.jpg" style="width:100% !important;" />
+                                    <img class="hidden-xs img-responsive" src="http://d1jp0w2s0ejaji.cloudfront.net/Images/BannersRelacionados/Tablademillas_20161227024627.jpg" style="width:auto !important;" />
+                                </div>
+                                <div class="col-desc" style="border-right:inherit;">
+                                    <h2 class="title">
+                                        Tabla de Millas</h2>
+                                    <p>Conoc&#233; cu&#225;ntas millas necesit&#225;s para realizar tu pr&#243;ximo vuelo.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-4 bannerCentral">
+
+
+                        <div class="block">
+                            <a class="customLink" style="color:transparent;" href="/es-ar/aerolineas_plus/ganar_millas" target=_self>
+                                <div class="col-img">
+                                    <img class="visible-xs-block img-responsive" src="http://d1jp0w2s0ejaji.cloudfront.net/Images/BannersRelacionados/SumaMillas_20161227024725.jpg" style="width:100% !important;" />
+                                    <img class="hidden-xs img-responsive" src="http://d1jp0w2s0ejaji.cloudfront.net/Images/BannersRelacionados/SumaMillas_20161227024725.jpg" style="width:auto !important;" />
+                                </div>
+                                <div class="col-desc" style="border-right:inherit;">
+                                    <h2 class="title">
+                                        Sum&#225; Millas</h2>
+                                    <p>Descubr&#237; todas las formas de sumar millas en tu cuenta.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-4 bannerCentral">
+
+
+                        <div class="block">
+                            <a class="customLink" style="color:transparent;" href="/es-ar/aerolineas_plus/socios_elite" target=_self>
+                                <div class="col-img">
+                                    <img class="visible-xs-block img-responsive" src="http://d1jp0w2s0ejaji.cloudfront.net/Images/BannersRelacionados/DameroSociosElite_20170602041235.jpg" style="width:100% !important;" />
+                                    <img class="hidden-xs img-responsive" src="http://d1jp0w2s0ejaji.cloudfront.net/Images/BannersRelacionados/DameroSociosElite_20170602041235.jpg" style="width:auto !important;" />
+                                </div>
+                                <div class="col-desc" style="border-right:inherit;">
+                                    <h2 class="title">
+                                        Socios Elite</h2>
+                                    <p>Descubr&#237; los beneficios de ser Socio Oro y Platino </p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-4 bannerCentral">
+
+
+                        <div class="block">
+                            <a class="customLink" style="color:transparent;" href="/es-ar/aerolineas-plus/empresas-asociadas" target=_self>
+                                <div class="col-img">
+                                    <img class="visible-xs-block img-responsive" src="http://d1jp0w2s0ejaji.cloudfront.net/Images/BannersRelacionados/DameroEMPASO_20171115023252.jpg" style="width:100% !important;" />
+                                    <img class="hidden-xs img-responsive" src="http://d1jp0w2s0ejaji.cloudfront.net/Images/BannersRelacionados/DameroEMPASO_20171115023252.jpg" style="width:auto !important;" />
+                                </div>
+                                <div class="col-desc" style="border-right:inherit;">
+                                    <h2 class="title">
+                                        Empresas Asociadas</h2>
+                                    <p>&#191;Quer&#233;s ganar m&#225;s millas? Conoc&#233; todas las Empresas Asociadas al programa.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-4 bannerCentral">
+
+
+                        <div class="block">
+                            <a class="customLink" style="color:transparent;" href="/es-ar/aerolineas_plus/utilizar_millas" target=_self>
+                                <div class="col-img">
+                                    <img class="visible-xs-block img-responsive" src="http://d1jp0w2s0ejaji.cloudfront.net/Images/BannersRelacionados/Millasporvuelo_20161227025003.jpg" style="width:100% !important;" />
+                                    <img class="hidden-xs img-responsive" src="http://d1jp0w2s0ejaji.cloudfront.net/Images/BannersRelacionados/Millasporvuelo_20161227025003.jpg" style="width:auto !important;" />
+                                </div>
+                                <div class="col-desc" style="border-right:inherit;">
+                                    <h2 class="title">
+                                        Millas por vuelo</h2>
+                                    <p>Averigu&#225; cu&#225;ntas millas necesit&#225;s para volar.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-4 bannerCentral">
+
+
+                        <div class="block">
+                            <a class="customLink" style="color:transparent;" href="/es-ar/reservas-servicios/preguntas-frecuentes#videos" target=_self>
+                                <div class="col-img">
+                                    <img class="visible-xs-block img-responsive" src="http://d1jp0w2s0ejaji.cloudfront.net/Images/BannersRelacionados/Videoexplicativo_20161227025925.jpg" style="width:100% !important;" />
+                                    <img class="hidden-xs img-responsive" src="http://d1jp0w2s0ejaji.cloudfront.net/Images/BannersRelacionados/Videoexplicativo_20161227025925.jpg" style="width:auto !important;" />
+                                </div>
+                                <div class="col-desc" style="border-right:inherit;">
+                                    <h2 class="title">
+                                        Videos explicativos</h2>
+                                    <p>&#191;Alguna duda? Consult&#225; nuestros tutoriales.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-4 bannerCentral">
+
+
+                        <div class="block">
+                            <a class="customLink" style="color:transparent;" href="/arg/main.asp?idsitio=ar&amp;idpagina=234&amp;ididioma=es" target=_self>
+                                <div class="col-img">
+                                    <img class="visible-xs-block img-responsive" src="http://d1jp0w2s0ejaji.cloudfront.net/Images/BannersRelacionados/Upgradeconmillas_20161227025547.jpg" style="width:100% !important;" />
+                                    <img class="hidden-xs img-responsive" src="http://d1jp0w2s0ejaji.cloudfront.net/Images/BannersRelacionados/Upgradeconmillas_20161227025547.jpg" style="width:auto !important;" />
+                                </div>
+                                <div class="col-desc" style="border-right:inherit;">
+                                    <h2 class="title">
+                                        Upgrade con millas</h2>
+                                    <p>Us&#225; tus millas para obtener un upgrade de clase.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- inicio modal OlvidasteTuNroSocio -->
+            <div role="modal-container" data-loaded="false" data-body-url="/es-ar/viajerosfrecuentes/_olvidastetunrosocio_modalbody">
+
+                <!-- Modal Olvidar Nro de Socio -->
+                <div id="modalOlvidarNroSocio" class="modal fade modal-text" tabindex="-1" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title">¿Olvidaste tu Número de Socio?</h4>
+                            </div>
+                            <div class="modal-body"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / Modal Text -->
+
+                <div>
+                    <!-- Modal Text -->
+                    <div id="modalInfo" class="modal" tabindex="-1" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="mostrarElemento('modalInfo');return false;"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title"></h4>
+                                </div>
+                                <div class="modal-body">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / Modal Text -->
+                </div>
+
+            </div>
+            <!-- fin modal OlvidasteTuNroSocio -->
+            <!-- inicio modal OlvidasteTuClave -->
+            <div role="modal-container" data-loaded="false" data-body-url="/es-ar/viajerosfrecuentes/_olvidastetuclave_modalbody">
+
+                <!-- Modal Text -->
+                <div id="modalOlvidarClave" class="modal fade modal-text" tabindex="-1" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title">¿Olvidaste tu Clave?</h4>
+                            </div>
+                            <div class="modal-body"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / Modal Text -->
+
+                <div>
+                    <!-- Modal Text -->
+                    <div id="modalInfoClave" class="modal" tabindex="-1" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="mostrarElemento('modalInfoClave');return false;"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title"></h4>
+                                </div>
+                                <div class="modal-body">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / Modal Text -->
+                </div>
+
+            </div>
+            <!-- fin modal OlvidasteTuClave -->
+            <!-- inicio modal NoRecuerdaEmail -->
+            <div role="modal-container" data-loaded="false" data-body-url="/es-ar/viajerosfrecuentes/_norecuerdaemail_modalbody">
+
+                <!-- Modal Olvidar Nro de Socio -->
+                <div id="modalNoRecuerdaEmail" class="modal fade modal-text" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" style="overflow-y: scroll; max-height:85%;  margin-top: 50px; margin-bottom:50px;">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title">Mail no vigente/Olvidaste tu E-mail.</h4>
+                            </div>
+                            <div class="modal-body"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / Modal Text -->
+
+
+                <!-- Modal Text -->
+                <div>
+                    <div id="modalInfo" class="modal" tabindex="-1" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="mostrarElemento('modalInfo');return false;"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title">Importante</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="noRecuerdaEmailModalInfo" class="modal" tabindex="-1" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header small no-title">
+                                    <a class="close-btn" href="#" onclick="mostrarElemento('noRecuerdaEmailModalInfo');return false;">X</a>
+
+                                </div>
+                                <div class="modal-body">
+                                    <p></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary btnAceptMsjVld" onclick="mostrarElemento('noRecuerdaEmailModalInfo');return false;">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / Modal Text -->
+
+            </div>
+            <!-- fin modal NoRecuerdaEmail -->
+            <!-- inicio modal PrimerIngreso -->
+            <div role="modal-container" data-loaded="false" data-body-url="/es-ar/viajerosfrecuentes/_primeringreso_modalbody">
+
+                <!-- Modal Primera vez que ingreso -->
+                <div id="modalPrimerIngreso" class="modal fade modal-text" tabindex="-1" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title">Primera vez que ingreso a Mi Cuenta</h4>
+                            </div>
+                            <div class="modal-body"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <!-- Modal Text -->
+                    <div id="primerIngresoModalInfo" class="modal" tabindex="-1" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header small no-title">
+                                    <a class="close-btn" href="#" onclick="mostrarElemento('primerIngresoModalInfo');return false;">X</a>
+                                </div>
+                                <div class="modal-body">
+                                    <p></p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary btnAceptMsjVld" onclick="mostrarElemento('primerIngresoModalInfo');return false;">
+                        Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / Modal Text -->
+                </div>
+
+            </div>
+            <!-- fin modal PrimerIngreso -->
+            <div id="PrimerIngresoPaso2"></div>
+
+
+
+
+
+
+
+
+            <div class="nav-module visible-md-block visible-lg-block focus">
+                <ul class="module-container list-unstyled">
+                    <!-- CHAT -->
+                    <li>
+                        <div class="chat-container">
+                            <div class="chat-container-inner">
+                                <span class="btn-module btn-chat btn_form_chat">
+                                <img class="chat-img" src="http://d1jp0w2s0ejaji.cloudfront.net/Content/themes/V3/img/common/img-chat_b.png" alt="Ayuda" role="presentation" />
+                                <span class="text-img">Ayuda</span>
+                                </span>
+                                <span class="btn-module btn_form_close btn_form_chat_close hidden"><span class="sr-only">Cerrar</span><img src="http://d1jp0w2s0ejaji.cloudfront.net/Content/themes/V3/img/common/arrow-close-chat.png" alt="Cerrar" role="presentation"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- /CHAT -->
+                </ul>
+            </div>
+            <div class="footer-mobile hidden-md hidden-lg">
+                <ul class="nav nav-justified menu-carousel">
+                    <li>
+                        <a role="button" data-toggle="collapse" href="" onclick="openChat();" aria-expanded="false" aria-controls="collapseChatMobile">
+                            <div id="btnChatMobile" class="btnMob">
+                                <span class="inner"><span class="icon"><img src="http://d1jp0w2s0ejaji.cloudfront.net/Content/themes/V3/img/common/img-chat_b.png" alt="chat" role="presentation" /></span> &#191;Necesitas ayuda?</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <script type="text/javascript">
+                var dialogChat = null;
+                var maxTimeoutChat = 40; //Cantidad máxima intentos setInterval
+                var countTimeoutChat = maxTimeoutChat;
+
+                $(".btn_form_chat").click(function() {
+                    openChat();
+                });
+                $(".btn_form_chat_close").click(function() {
+                    closeChat();
+                });
+
+                function openChat() {
+                    (function() {
+                        $(".chat-inner").addClass("open");
+                        $(".btn_form_chat").addClass("hidden");
+                        $(".btn_form_chat_close").removeClass("hidden");
+
+                        if ($("#script-js-chat").length > 0) {
+                            $("#script-js-chat").remove();
+                        }
+                        if ($("#modal-chat").length > 0) {
+                            $("#modal-chat").remove();
+                        }
+                        if ($("#lhc_container").length > 0) {
+                            $("#lhc_container").remove();
+                        }
+
+                        var po = document.createElement('script');
+                        po.setAttribute('id', 'script-js-chat');
+                        po.type = 'text/javascript';
+                        po.async = true;
+                        var refferer = (document.referrer) ? encodeURIComponent(document.referrer.substr(document.referrer.indexOf('://') + 1)) : '';
+                        var location = (document.location) ? encodeURIComponent(window.location.href.substring(window.location.protocol.length)) : '';
+                        po.src = '//portalar.aerolineas.com.ar/chat/ar/chat/getstatus/(click)/internal/(position)/middle_right/(ma)/br/(top)/0/(units)/pixels/(leaveamessage)/false/false/(department)/_department_/(disable_pro_active)/true/(theme)/2?r=_refferer_&amp;l=_location_';
+                        // Agrego parametros
+                        po.src = po.src.replace(/_refferer_/gi, refferer);
+                        po.src = po.src.replace(/_location_/gi, location);
+                        po.src = po.src.replace(/_department_/gi, '2');
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(po, s);
+
+                        var modalDialog = '    <div id="modal-chat" class="modal fade" role="dialog" data-backdrop="static">' +
+                            '        <div class="modal-dialog modal-lg">' +
+                            '            <div class="modal-content">' +
+                            '                <div class="modal-header">' +
+                            '                    <button type="button" class="close" data-dismiss="modal">&times;</button>' +
+                            '                    <h4 class="modal-title">Chat Online</h4>' +
+                            '                </div>' +
+                            '                <div class="modal-body">' +
+                            '                    ' +
+                            '                </div>' +
+                            '                <!--' +
+                            '                <div class="modal-footer">' +
+                            '                    ' +
+                            '                </div>' +
+                            '                -->' +
+                            '            </div>' +
+                            '        </div>' +
+                            '    </div>';
+                        $("body").after(modalDialog);
+
+                        countTimeoutChat = maxTimeoutChat;
+                        dialogChat =
+                            setInterval(function() {
+                                    // Verifico si se cargó el chat
+                                    if ($('#lhc_container').length > 0 && !($('#lhc_container').hasClass("current-chat"))) {
+                                        clearInterval(dialogChat);
+                                        // Muevo el chat al modal
+
+                                        // Quito el header del formulario
+                                        $('#lhc_container #lhc_header').hide();
+                                        // Quito boton de minimizar
+                                        $('#lhc_container #lhc_min').hide();
+                                        // Quito imagen del formulario
+                                        //$('#lhc_container img.chat-img').hide();
+                                        // Cambio el tamaño de la pagina de chat
+                                        //$('#lhc_container').css('width', '400px');
+                                        $('#lhc_container').css('position', 'relative');
+
+                                        var chatWindow = $('#lhc_container').detach();
+                                        chatWindow.addClass('current-chat');
+                                        $("#modal-chat .modal-body").append(chatWindow);
+                                        //                                $('#lhc_container #lhc_close').on("click", function () {
+                                        //                                    $("#lhc_container").removeClass("current-chat");
+                                        //                                    closeChat();
+                                        //                                });
+
+                                        $("#modal-chat").modal('show');
+                                        //$('#modal-chat').css('width', '420px');
+                                        $('#modal-chat').on('hidden.bs.modal', function() {
+                                            $("#lhc_container").removeClass("current-chat");
+                                            $('#lhc_container #lhc_close').trigger("click");
+                                            closeChat();
+                                        })
+                                    } else if (countTimeoutChat <= 0) {
+                                        // Termino por Timeout de intentos
+                                        clearInterval(dialogChat);
+                                    } else {
+                                        // Decremento contador
+                                        countTimeoutChat--;
+                                    }
+                                },
+                                200);
+                    })();
+                }
+
+                function closeChat() {
+                    countTimeoutChat = 0;
+
+                    $("#lhc_container").removeClass("current-chat");
+                    $(".chat-inner").removeClass("open");
+                    $(".btn_form_chat").removeClass("hidden");
+                    $(".btn_form_chat_close").addClass("hidden");
+                    $("#modal-chat").modal('hide');
+                    // Elimino Script inyectado
+                    if ($("#script-js-chat").length > 0) {
+                        $("#script-js-chat").remove();
+                    }
+                    $(".modal-backdrop").remove();
+                    dialogChat = null;
+                }
+
+                $(document).on('DOMNodeRemoved', function(e) {
+                    // Capturo las actualizaciones de CHAT donde se quita el DIV y se vuelve a renderizar
+                    //alert("element removed");
+                    var $element = $(e.target).find('.current-chat');
+                    if (dialogChat != null && $(e.target) != null && $(e.target).length > 0 && $(e.target)[0].className == 'current-chat' && dialogChat != null) {
+                        closeChat();
+                        openChat();
+                    }
+                });
+
+            </script>
+
+
+        </div>
+
+        <footer id="footer" role="contentinfo" class="no-slider">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="nav-footer-content">
+                            <div class="nav-footer">
+
+
+                                <div aria-describedby="slick-slide0" aria-hidden="false" class="slick-slide" data-slick-index="0" role="option"><a href="http://www.aerolineas.com.ar/es-ar/prensa/comunicado" id="slick-slide0">Prensa </a></div>
+                                <div aria-describedby="slick-slide1" aria-hidden="false" class="slick-slide" data-slick-index="1" role="option"><a href="http://www.aerolineas.com.ar/es-ar/laempresa" id="slick-slide1">La Empresa</a></div>
+                                <div aria-describedby="slick-slide2" aria-hidden="false" class="slick-slide" data-slick-index="2" role="option"><a href="http://www.aerolineas.com.ar/es-ar/vuelos_baratos" id="slick-slide2">Explor&#225; Argentina</a></div>
+                                <div aria-describedby="slick-slide3" aria-hidden="false" class="slick-slide" data-slick-index="3" role="option"><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=33&amp;idIdioma=es" id="slick-slide3">Acuerdos corporativos</a></div>
+                                <div aria-describedby="slick-slide4" aria-hidden="false" class="slick-slide" data-slick-index="4" role="option"><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=36&amp;idIdioma=es" id="slick-slide4">Ferias y Congresos</a></div>
+                                <div aria-describedby="slick-slide5" aria-hidden="false" class="slick-slide" data-slick-index="5" role="option"><a href="http://www.aerolineas.com.ar/es-ar/servicioscliente/codeshare" id="slick-slide5">Nuestros Aliados</a></div>
+                                <div aria-describedby="slick-slide6" aria-hidden="false" class="slick-slide" data-slick-index="6" role="option"><a href="http://www.aerolineas.com.ar/es-ar/landingsespeciales/landings/208_beneficio-para-jubilados" id="slick-slide6" target="_blank">Beneficios Jubilados</a></div>
+                                <div aria-describedby="slick-slide7" aria-hidden="false" class="slick-slide" data-slick-index="7" role="option"><a href="http://www.aerolineas.com.ar/es-AR/promo/universia" id="slick-slide7">Universia</a></div>
+                                <div aria-describedby="slick-slide8" aria-hidden="false" class="slick-slide" data-slick-index="8" role="option"><a href="http://www.aerolineas.com.ar/es-ar/landingsespeciales/landings/17_viaja-por-tu-pais-con-aerolineas-vacaciones" id="slick-slide8">Aerol&#237;neas Vacaciones</a></div>
+                                <div aria-describedby="slick-slide9" aria-hidden="false" class="slick-slide" data-slick-index="9" role="option"><a href="http://www.aerolineas.com.ar/es-ar/reservas_servicios/programa_membership_rewards" id="slick-slide9">Membership Rewards</a></div>
+                                <div aria-describedby="slick-slide10" aria-hidden="false" class="slick-slide" data-slick-index="10" role="option"><a href="http://www.aerolineas.com.ar/es-ar/newsletter" id="slick-slide10">Newsletter</a></div>
+                                <div aria-describedby="slick-slide11" aria-hidden="false" class="slick-slide" data-slick-index="11" role="option"><a href="http://www.aerolineas.com.ar/es-ar/aerolineas_movil" id="slick-slide11">Aerol&#237;neas M&#243;vil</a></div>
+                                <div aria-describedby="slick-slide12" aria-hidden="false" class="slick-slide" data-slick-index="12" role="option"><a href="http://www.aerolineas.com.ar/es-ar/landingsespeciales/landings/49_flota---fleet" id="slick-slide12">Nuestra Flota</a></div>
+                                <div aria-describedby="slick-slide13" aria-hidden="false" class="slick-slide" data-slick-index="13" role="option"><a href="http://www.aerolineas.com.ar/es-ar/skyteam/acerca_de_skyteam" id="slick-slide13">Alianza SkyTeam</a></div>
+                                <div aria-describedby="slick-slide14" aria-hidden="false" class="slick-slide" data-slick-index="14" role="option"><a href="http://www.aerolineas.com.ar/es-ar/la_empresa/recursos_humanos" id="slick-slide14">RRHH</a></div>
+                                <div aria-describedby="slick-slide15" aria-hidden="false" class="slick-slide" data-slick-index="15" role="option"><a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=152&amp;idIdioma=es" id="slick-slide15">Proveedores</a></div>
+                                <div aria-describedby="slick-slide16" aria-hidden="false" class="slick-slide" data-slick-index="16" role="option"><a href="http://cargo.aerolineas.com.ar/es-ar" id="slick-slide16">Cargas</a></div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="social-links">
+                            <ul class="nav-justified list-unstyled ">
+                                <li><a target="_blank" href="https://www.facebook.com/Aerolineas.argentinas"><i class="fa fa-facebook"></i><span class="sr-only">Facebook</span></a></li>
+                                <li><a target="_blank" href="http://twitter.com/Aerolineas_AR/"><i class="fa fa-twitter"></i><span class="sr-only">Twitter</span></a></li>
+                                <li><a target="_blank" href="https://www.instagram.com/aerolineas_argentinas/"><i class="fa fa-instagram"></i><span class="sr-only">Instagram</span></a></li>
+                                <li><a target="_blank" href="http://www.linkedin.com/company/aerolineas-argentinas"><i class="fa fa-linkedin"></i><span class="sr-only">Linkedin</span></a></li>
+                                <li><a target="_blank" href="https://plus.google.com/106198199507305429358/posts"><i class="fa fa-google-plus"></i><span class="sr-only">GooglePlus</span></a></li>
+                                <li><a target="_blank" href="http://www.youtube.com/user/AerolineasAR"><i class="fa fa-youtube"></i><span class="sr-only">Youtube</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="clearfix">
+                    <div class="row">
+                        <div class="col-sm-7 col-md-6">
+
+
+
+                            <ul class="list-unstyled list-inline pull-left">
+                                <li class="codigo-qr">
+                                    <a href="https://servicios1.afip.gov.ar/clavefiscal/qr/mobilePublicInfo.aspx?req=e1ttZXRob2Q9Z2V0UHVibGljSW5mb11bcGVyc29uYT0zMDY0MTQwNTU1NF1bdGlwb2RvbWljaWxpbz0wXVtzZWN1ZW5jaWE9MF1bdXJsPWh0dHA6Ly93d3cuYWVyb2xpbmVhcy5jb20uYXJdfQ==" target="_F960AFIPInfo">
+            <img src="/Content/themes/V3/img/common/qr_code.gif" alt="QR-Code" />
+        </a>
+                                </li>
+                                <li class="pie_texto">
+                                    <span>Sitio Oficial de Aerolineas Argentinas S.A. &#169; 1996 - 2017 <br>
+            <span class="number">
+                <span class="text"> Contactenos </span>
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+
+                                    <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=7&amp;idIdioma=es">0810-222-86527                                                                                                                                                                                          </a>
+
+                                    </span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-5 col-md-6">
+
+
+
+                            <script type="text/javascript">
+                                function abrirAustral() {
+                                    window.open('http://www.austral.com.ar/index.asp?idSitio=&idIdioma=', 'Austral', 'scrollbars=yes, resizable=1,width=1020,height=805');
+                                }
+
+                            </script>
+
+                            <ul class="list-unstyled list-inline pull-right logos-footer">
+
+                                <li class="hidden-xs"><a href="/es-ar/laempresa/empresasdelgrupo"><img src="http://d1jp0w2s0ejaji.cloudfront.net/Content/themes/V3/img/common/footer-aerohandling.jpg" alt="Logo Aerohandling"/></a></li>
+                                <li class="hidden-xs"><a href="http://www.jetpaq.com.ar/es-ar" target="_blank"><img src="http://d1jp0w2s0ejaji.cloudfront.net/Content/themes/V3/img/common/footer-jetpaq.jpg" alt="Logo JetPaq"/></a></li>
+                                <li class="hidden-xs"><img src="http://d1jp0w2s0ejaji.cloudfront.net/Content/themes/V3/img/common/footer-optar.jpg" alt="Logo Optar" /></li>
+                                <li><a href="http://www.austral.com.ar/index.asp" target="_blank"><img src="http://d1jp0w2s0ejaji.cloudfront.net/Content/themes/V3/img/common/footer-austral.jpg" alt="Logo Austral"/></a></li>
+                                <li style="padding: 0px;"><img src="http://d1jp0w2s0ejaji.cloudfront.net/Content/themes/V3/img/common/footer-aa.jpg" alt="Logo Aerol&#237;neas Argentinas" /></li>
+                                <li style="padding: 0px;"><a href="http://www.skyteam.com/" target="_blank"><img src="http://d1jp0w2s0ejaji.cloudfront.net/Content/themes/V3/img/common/footer-skyteam.jpg" alt="Logo Aerol&#237;neas Argentinas" /></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <div class="container">
+
+
+
+                    <ul class="list-unstyled list-inline pull-left">
+                        <script type="text/javascript">
+                            function popup_condiciones_transporte() {
+                                var winC = window.open('http://ww1.aerolineas.com.ar/arg/bodies/CondicionesGrales_contratoTransporte.asp?idSitio=AR&idIdioma=es', 'wContr', 'scrollbars=yes, resizable=1,width=800,height=600');
+                                winC.moveTo(0, 0);
+                            }
+
+                        </script>
+
+                        <li class="pie_texto" style="margin-left: 5px;">
+                            <span>
+            
+            <a class="pie" href="/es-ar/legales/terminoscondiciones">Legales y Condiciones Generales de Transporte</a> |
+            
+            <a class="pie" href="#" onclick="popup_condiciones_transporte();">   </a> |
+            
+            
+            
+            <a class="pie" href="/es-ar/legales/politicaprivacidad"> </a>
+        </span>
+                        </li>
+                    </ul>
+                    <a href="#" class="scrollToTop"><span class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span></a>
+                </div>
+            </div>
+        </footer>
+
+
+
+        <style>
+            .nav-module .btn-module:hover {
+                filter: brightness(92%);
+            }
+
+        </style>
+
+        <div class="nav-module visible-md-block visible-lg-block focus">
+            <ul class="module-container list-unstyled">
+
+            </ul>
+        </div>
+        <div class="footer-mobile hidden-md hidden-lg">
+            <ul class="nav nav-justified menu-carousel">
+
+            </ul>
+        </div>
+        <script type="text/javascript">
+            $(function() {
+                $('.nav-module .btn-module span').each(function() {
+                    if ($(this).text().length > 13) {
+                        $(this).parent().css('padding', '0');
+                        var id = $(this).parent().parent().parent().attr('id');
+                        id = id.substr(id.indexOf('_'));
+                        $('#iconoMobile' + id + ' .inner .text').css('padding-top', '0');
+                    }
+                });
+            });
+
+        </script>
+
+
+    </div>
+    <div id="sectionPager">
+        <nav>
+
+        </nav>
+    </div>
+
+    <script src="/Scripts/jquery.blockUI.min.js" type="text/javascript"></script>
+
+    <script>
+        $(function() {
+            $('[role="dialog"]').each(function() {
+                var $modal = $(this);
+                $modal.on('show.bs.modal', function() {
+                    $parent = $modal.parent();
+                    if ($parent.attr('role') == 'modal-container') {
+                        var loaded = $parent.attr('data-loaded') && $parent.data('loaded');
+                        if (!loaded) {
+                            $.get($parent.data('body-url'))
+                                .done(function(html) {
+                                    $modal.find('.modal-body').html(html);
+                                    $parent.data('loaded', true);
+                                });
+                        }
+                    }
+                });
+            });
+        });
+
+        $(function() {
+            $.validator.setDefaults({
+                highlight: function(element) {
+                    $(element).closest('.form-group').addClass('has-error');
+                },
+                unhighlight: function(element) {
+                    $(element).closest('.form-group').removeClass('has-error');
+                }
+            });
+        });
+
+    </script>
+
+
+
+    <script type="text/javascript">
+        <!--
+        $(document).ready(function() {
+            var inputs = document.getElementsByTagName('input');
+            for (var i = 0; i < inputs.length; i += 1) {
+                inputs[i].onchange = (function(onchange) {
+                    return function(evt) {
+                        // reference to event to pass argument properly
+                        evt = evt || event;
+
+                        // if an existing event already existed then execute it.
+                        if (onchange) {
+                            onchange(evt);
+                        }
+                        if (!$('.nobeforeunload').length)
+                            window.onbeforeunload = function() {
+                                return 'Se perderan todos los cambios';
+                            };
+                    }
+                })(inputs[i].onchange);
+            }
+
+            for (var i = 0; i < document.forms.length; i++) {
+                document.forms[i].onsubmit = function() {
+                    ResetWindowsUnload();
+                    return true;
+                };
+            }
+
+            var buttons = document.getElementsByTagName('button');
+            for (var i = 0; i < buttons.length; i += 1) {
+                if (buttons[i].type != null && buttons[i].type.toUpperCase() == 'submit'.toUpperCase()) {
+                    buttons[i].onclick = function() {
+                        ResetWindowsUnload();
+                        return true;
+                    };
+                }
+            }
+        });
+
+        function ResetWindowsUnload() {
+            window.onbeforeunload = null;
+        }
+        -->
+
+    </script>
+
+
+    <input id="hostId" type="hidden" value="I5345WBAMYIWACYDUKWLFVK73Y">
+    <script src="/bundles/polyfill?v=xjzNWg25ppcFPJLAxR5_8zBSnqvR1yynCkCCjhILLow1"></script>
+
+</body>
+
+</html>
+<script type="text/javascript">
+    $(document).ready(function() {
+        // Para que haga foco en el primer Input que encuentre en pantalla
+        var sel = $(".defaultfocus");
+        if (sel.length == 0) {
+            sel = $("input:not([readonly])");
+        }
+        if (sel.length > 0) {
+            // Marco el foco
+            sel.first().focus();
+        }
+    });
+
+</script>
+<script type="text/javascript">
+    //    $(document).ajaxComplete(function (event, request, settings) {
+    //        // Evento Ajax al completarse habilito botones
+
+    //        var btn = $('button[type=submit]');
+    //        //btn.button('loading');
+    //        $btn.button('reset')
+    //    });
+
+    $(document).ready(function() {
+
+        // A todos los botones de SUBMIT de un formulario les agrego el texto de espera
+        $('button[type=submit]').attr(
+            //ABMResource.btn_Loading*/
+            "data-loading-text", "Cargando"
+        );
+        $('button[type=submit]').click(function(e) {
+            var btn = $(this);
+            btn.button('loading');
+            //btn.button('reset');
+
+            // Si el boton SUBMIT esta fuera del formulario,
+            // debo agregar al boton el atributo form="idForm"
+            // Hago esto por compatibilidad CROSS BROWSER
+            var idForm = btn.attr("form");
+            if (idForm != null) {
+                // prevents default
+                e.preventDefault();
+
+                // Fuerzo el SUBMIT del formulario
+                document.getElementById(idForm).submit();
+
+                // also prevents default (i like to add both but just the e.preventDefault is required :) )
+                return false;
+            }
+        });
+
+
+        if ($.validator && $('form').length > 0) {
+            $('form').each(function() {
+                $(this).validate().settings.highlight = function(element) {
+                    $(element).closest('.control-group').addClass('error');
+                    $(element).closest('.form-group').addClass('has-error');
+                };
+            });
+            $('form').each(function() {
+                $(this).validate().settings.unhighlight = function(element) {
+                    $(element).closest('.control-group').removeClass('error');
+                    $(element).closest('.form-group').removeClass('has-error');
+                };
+            });
+        }
+
+    });
+
+    /*$('form').submit(function (e) {
+    if (!$(this).valid()) {
+    // Si el formulario NO es válido, habilito el boton
+    var btn = $('button[type=submit]');
+    btn.button('reset');
+
+    // prevents default
+    e.preventDefault();
+    }
+    });*/
+
+</script>
+<script type="text/javascript">
+    // Tooltips
+    //    $(function () {
+    //        $('[data-toggle="tooltip"]').tooltip();
+    //    })
+    $(document).ready(function() {
+        $(".tooltips").tooltip({
+            container: 'body'
+        });
+
+    });
+
+    // Select (combos) http://silviomoreto.github.io/bootstrap-select/
+    //$('.selectpicker').selectpicker('refresh');
+
+</script>

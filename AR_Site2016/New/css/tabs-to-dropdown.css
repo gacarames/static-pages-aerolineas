@@ -1,0 +1,74 @@
+
+
+/* cosmetics for the tabs/menu */
+.tabs-container nav {
+  background-color: #FFF;
+}
+.tabs-container nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.tabs-container nav ul li {
+  cursor: pointer;
+}
+
+
+/* the nitty gritty */
+.tabs-container {
+  position: relative;
+  //height: 4em;
+}
+.tabs-container nav {
+  //position: absolute;
+  width: 100%;
+}
+.tabs-container nav ul {
+  display: flex;
+  flex-direction: column;
+}
+.tabs-container nav ul li {
+  order: 1;
+}
+.tabs-container nav ul li.active {
+  order: 0;
+}
+.tabs-container nav ul li.active:after {
+  width: 1px;
+  height: 1px;
+  content: '\f0c9';
+  position: absolute;
+  color: #0075ca;
+  font-family: FontAwesome;
+  right: 22px;
+  top: 12px;
+  z-index: 9999;
+}
+.tabs-container nav ul li:not(.active) {
+  position: absolute;
+  top: -999em;
+}
+
+.tabs-container nav ul.expanded li:not(.active) {
+  position: relative;
+  top: auto;
+}
+
+@media all and (min-width: 667px) {
+  .tabs-container nav ul {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .tabs-container nav ul li {
+    display: inline-block;
+    margin: 0 .25em 0 0;
+  }
+  .tabs-container nav ul li:not(.active) {
+    position: relative;
+    top: auto;
+  }
+  .tabs-container nav ul li.active:after {
+    display: none;
+  }
+}

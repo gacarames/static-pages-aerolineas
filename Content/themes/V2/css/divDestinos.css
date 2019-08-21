@@ -1,0 +1,150 @@
+/* CSS Document */
+
+.divOrigen{
+	border:1px solid #A0A1A5;
+	position:relative;
+	background-color:#fff;
+	padding:10px;
+	margin-left:-19;
+	top:22px;
+	display:none;
+	width:357px;
+	height:235px;
+}
+
+.divOrigen ul{
+	padding:0 10px;
+	margin:0;
+	list-style-type:none;
+}
+
+.divOrigen li{
+	cursor:pointer;
+	background-color:#fff;
+}
+
+.divOrigen li:hover{
+	background-color:#ccc;
+	display:block;
+}
+
+html>body .divOrigen .divOrigenInt{padding-right:0px;}
+
+.divOrigen .divOrigenInt{
+	border-right:1px dashed #A0A1A5;
+	padding-right:5px;
+	width:215px;
+	padding-top: 10px;
+}
+
+.divOrigen .divOrigenCab, .divOrigenInt{
+	color:#000;
+	font-size:11px;
+	float: left;
+	margin-left:5px;
+	width:215px;
+	text-align: left;
+}
+
+.divOrigen .divOrigenBaires{
+	color:#000;
+	font-size:11px;
+	width:280px;
+	border-bottom-width:1px;
+	border-bottom-color:#000;
+	border-bottom-style: solid;
+	padding-bottom:2px;
+	margin-bottom:5px;
+}
+
+.cerrar{
+	color:#A0A1A5;
+	font-weight: bold;
+	font-size: 11px;
+	text-align:right;
+	float:right;
+	width:16px;
+	clear:none;
+	cursor:pointer;
+}
+
+.curva{
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+}
+
+.divOrigen .divOrigenBaires 
+{
+    width: 350px;
+    color:#0081c6;
+    border-color: #0081c6;
+    font-weight: bold;   
+}
+
+.ciudadDestino, div.ciudadDestino2
+{
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 153px;
+    width: 169px;
+}
+
+.divOrigen div.divOrigenInt
+{
+    height: 200px;
+    width: 166px;
+}
+
+.divOrigenCab div:first-child
+{
+    margin-left: 8px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.ciudadDestino ul, .ciudadDestino2 ul{color: #6b6b6b; width: 152px;}
+
+.ciudadDestino li:hover
+{
+    background-color:#3fa1d2;
+    color:#ffffff;
+    cursor:pointer;
+}
+
+.cerrar{
+    position: absolute;
+    top: 7px;
+    right: 16px;
+}
+
+.divOrigen .divOrigenCab{
+    width: 150px;
+}
+
+.box_top
+{
+	display:none;
+	width:350px;
+	border-top:1px solid #0081c6;
+	margin-top:2px;
+}
+
+.mpointer {cursor:pointer;}
+
+.box_origenViaje 
+{
+	border-right:1px dashed #A0A1A5;
+	width:150px;
+	height:200px;
+	float:left;
+	margin-top:10px;
+}
+
+.box_buscaPor 
+{
+	color:#0081c6;
+	margin-bottom:10px;
+}

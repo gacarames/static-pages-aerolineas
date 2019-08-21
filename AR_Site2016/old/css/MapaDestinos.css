@@ -1,0 +1,122 @@
+﻿div.wrap_ie {
+    text-align: center;
+    color: #007FC6;
+    font-size: 12px;
+    margin-top: 20px;
+}
+div.wrap {
+    margin: auto;
+    width: 1002px;
+    text-align: left;
+    background-color: #FFFFFF;
+    padding: 0px 0 20px 0;
+    position: relative;
+}
+#map {
+    width: 100%;
+    height: 600px;
+    margin-left: 0px;
+}
+
+/*** INFOWINDOW ***/
+.infoWindow,
+.infoWindow div {
+    float: left;
+}
+
+.infoWindow {
+    border: 0px solid black;
+    width: 320px;
+    height: 170px;
+    margin-top: 14px;
+}
+.gm-style img {
+    right: 7px!important;
+}
+
+/* Wrapper */
+.infoWindow .wrap1,
+.wrap1 div {
+    width: 215px;
+     width: 195px;
+}
+.infoWindow .wrap1 {
+    margin-left: 5px;
+}
+/*	HR */
+.infoWindow .hr {
+    width: 320px;
+    height: 1px;
+    color: #0081C5;
+    background-color: #0081C5;
+    font-size: 0;
+    margin: 5px 0 5px 0;
+}
+.infoWindow .hr:first-child {
+    display: none;
+}
+
+/* Buttons */
+.infoWindow .buttons {
+    width: 300px;
+    text-align: right;
+}
+.infoWindow .buttons a:hover {
+    color: #FFFFFF;
+}
+.buttons .img1 {
+    margin-right: 5px;
+}
+
+/* Texts */
+.wrap1 .address {
+    font-size: 18px;
+    font-weight: bold;
+}
+.wrap1 .fares {
+    font-size: 26px;
+    font-weight: bold;
+}
+.wrap1 .nofares {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 14px;
+}
+.wrap1 .text1 {
+    font-size: 10px;
+    height: 37px;
+    color: #848484;
+}
+.wrap1 .text1 br:first-child {
+    display: none;
+}
+
+.wrap1 .fares {
+    color: #007FC6;
+}
+.btnDestino,
+.btnComprar {
+    text-align: center;
+    padding-top: 3px;
+    float: right;
+    color: #FFFFFF;
+    display: block;
+}
+.btnDestino {
+    width: 116px;
+    height: 23px;
+    margin-left: 10px;
+    background: none;
+    background-color: #0077CB;
+}
+.btnComprar {
+    width: 63px;
+    height: 23px;
+    background: none;
+    background-color: #0077CB;
+}
+
+.infobubble {}
+
+
+/*** ENDINFOWINDOW ***/

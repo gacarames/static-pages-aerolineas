@@ -1,0 +1,295 @@
+#contenedor_home,
+#header {
+    width: inherit;
+}
+
+#hero-form .carousel {
+    background-image: none;
+}
+
+.hot-sale .ui-datepicker-multi .ui-datepicker-buttonpane {
+    display: none !important;
+}
+
+#ui-datepicker-div {
+    font-size: 70%;
+}
+
+button.ui-datepicker-current.ui-state-default.ui-priority-secondary.ui-corner-all {
+    display: none !important;
+}
+
+@media (max-width:800px) {
+    .container,
+    #contenedor_home,
+    #header {
+        width: 100%;
+        min-width: inherit;
+        max-width: inherit;
+    }
+
+    #header {
+        height: inherit;
+    }
+
+    #hero-form .form_home {
+        width: 90%;
+        top: 320px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    #header #header-top #logo-header {
+        margin: 19px auto 5px;
+        width: 100%;
+        text-align: center;
+    }
+    #header #header-top #logo-header a {
+        display: block;
+    }
+    #header #header-top #logo-header img {
+        width: 100%;
+    }
+
+    #header #header-top {
+        border: none;
+    }
+
+    #FAQ {
+        display: none;
+    }
+
+    #header #header-top #access-top {
+        margin: 0;
+        height: auto;
+    }
+    #header #header-top #access-top ul {
+        text-align: right;
+    }
+    #header #header-top #access-top ul li {
+        width: 100%
+    }
+    #header #header-top #access-top .INPUTBuscador {
+        width: 100%;
+    }
+    .promocod {
+        margin-bottom: 15px;
+        display: block;
+    }
+    #countdown_dashboard {
+        top: 10px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+    }
+    .hot-sale #hero-form .form_home {
+        top: 294px;
+    }
+    .featured .block .col-desc,
+    .featured .block .col-img {
+        height: inherit;
+    }
+    .hot-sale .featured .block .col-img {
+        width: 50%;
+    }
+    .hot-sale .featured .block .col-img img {
+        width: initial;
+    }
+    .hot-sale .featured .block .col-desc p {
+        display: none;
+    }
+    #hero-form .carousel.hot-sale {
+        background-size: auto 350px;
+        background-repeat: no-repeat;
+        background-position: top center;
+        height: 350px;
+    }
+    /*
+	.hot-sale #hero-form .carousel .item, 
+	#hero-form .carousel.hot-sale .item {
+	    background-size: auto 350px;
+	    background-repeat: no-repeat;
+	    background-position: top center;
+	    height: 350px;
+	}
+	*/
+    #hero-form .carousel {
+        height: inherit;
+    }
+    #hero-form .carousel-caption {
+        width: inherit;
+        padding: 0;
+        top: 100px;
+    }
+    .hot-sale .hero-form h1 {
+        font-size: 53px;
+        margin-bottom: 138px;
+        width: 90%;
+    }
+    .banner-form {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .banner-form img {
+        width: 100%;
+    }
+    #hero-form .banner-form {
+        display: none;
+    }
+    #hero-form {
+        height: 705px;
+    }
+    .hide-desk {
+        display: inherit;
+    }
+    .hide-mb {
+        display: none!important;
+    }
+    .pie_texto {
+        width: 85%;
+        text-align: left;
+    }
+    .codigo-qr {
+        text-align: right;
+        float: right;
+        margin-top: 10px;
+    }
+
+    #ui-datepicker-div {
+        width: 80%!important;
+    }
+    .ui-datepicker-multi-2 .ui-datepicker-group {
+        width: 100%;
+    }
+    .ui-datepicker .ui-datepicker-header {
+        padding: 0px;
+    }
+    .ui-datepicker .ui-datepicker-prev,
+    .ui-datepicker .ui-datepicker-next {
+        top: 0px;
+    }
+    .ui-datepicker .ui-datepicker-title {
+        font-size: 13px;
+    }
+    .ui-datepicker th {
+        padding: .3em .3em;
+        font-size: 11px;
+    }
+    .ui-datepicker td span,
+    .ui-datepicker td a {
+        padding: .1em;
+        font-size: 12px;
+    }
+    .ui-datepicker-buttonpane,
+    .ui-datepicker-current {
+        display: none;
+    }
+    .div_links li {
+        padding: 0;
+        text-align: right;
+        float: right;
+    }
+
+}
+
+
+
+@media (max-width:736px) and (orientation: portrait) {
+    .featured .block {
+        height: inherit;
+    }
+    .hot-sale .featured .block .col-desc,
+    .hot-sale .featured .block .col-img,
+    .featured.large .block .col-img.ribbon {
+        width: 100%;
+        width: 90%;
+        /* fallback if needed */
+        width: calc(100% + 10px);
+    }
+
+    #header #header-top #logo-header {
+        margin: 19px auto 5px;
+        width: 59%;
+    }
+}
+
+@media (max-width:736px) and (orientation: landscape) {
+    #header #header-top #logo-header {
+        margin: 19px auto 5px;
+        width: 39%;
+        text-align: left;
+    }
+    #header #header-top #access-top {
+        width: 50%;
+    }
+    .featured .block {
+        height: inherit;
+    }
+    .featured.large .block .col-img.ribbon {
+        margin-left: -10px;
+        width: 50%;
+    }
+    .featured.large .block .col-desc {
+
+        width: 50%;
+    }
+    .featured.large .block .col-img.ribbon img {}
+}
+
+/* Portrait */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .container {
+        padding: 0 20px;
+    }
+    #header #header-top #logo-header {
+        margin: 19px auto 5px;
+        width: 39%;
+        text-align: left;
+    }
+    #header #header-top #access-top {
+        width: 50%;
+    }
+    #hero-form {
+        height: 615px;
+    }
+    .featured .block {
+        height: inherit;
+    }
+    .featured.large .block .col-img.ribbon {
+        margin-left: -10px;
+        width: 50%;
+    }
+    .featured.large .block .col-desc {
+        width: 50%;
+    }
+    .hot-sale .featured .block .col-img {
+        width: 50%;
+    }
+    .featured .block .col-desc,
+    .featured .block .col-img {
+        float: left;
+        width: 50%;
+        overflow: hidden;
+    }
+    .banner-form img {
+        width: inherit;
+    }
+    .pie_legals ul {
+        width: 100%;
+    }
+}
+
+/* Landscape */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    #hero-form .container {}
+    #countdown_dashboard {
+        right: 25px;
+    }
+    #hero-form .carousel-caption {
+        padding-right: 10px;
+    }
+}

@@ -1,0 +1,370 @@
+@charset "utf-8";
+/* CSS Document */
+
+/** fontface - neo sans **/
+@font-face {  
+/* Para Internet Explorer */	
+	src: url('../font/NeoSan.eot');
+	src: url("font/neosanmed-webfont.eot") format("embedded-opentype"); 
+ /*  Para el resto de navegadores */
+    font-family: "Neo_san"; 
+    src: url('../font/NeoSan.ttf')  format("truetype");  
+}  
+@font-face {  
+/* Para Internet Explorer */
+	src: url('../font/neosanmed-webfont.eot');
+	src: url("font/neosanbol-webfont.eot") format("embedded-opentype"); 
+/*  Para el resto de navegadores */
+    font-family: "Neo_sans"; 
+    src: url('../font/Neo_Sans_Medium.ttf')  format("truetype");  
+}  
+@font-face {  
+/* Para Internet Explorer */
+	src: url('../font/neosanbol-webfont.eot');
+	src: url("fonts/Platform-Medium.eot?#iefix") format("embedded-opentype");	  
+    font-family: "Neo_sans_bold"; 
+    src: url('../font/neosanbol-webfont.ttf') format("truetype");
+	font-family: "NeoSanLig"; 
+    src: url('../font/NeoSanLig.ttf ') format("truetype");  
+} 	 
+/** fontface - neo sans **/
+
+/** GENERAL **/
+body  { margin: 0; padding: 0; font-family: arial, helvetica, sans-serif; background: #fff url(../img/bg/bg_general.jpg) repeat-x top center; }
+p, label { font-family: Tahoma, Geneva, sans-serif; font-size: 0.750em; color:#808084; font-weight: normal; }
+p.azul, span.azul, li.azul { color: #0082c8; }
+p.azulbold { color: #0082c8; font-weight: bold; font-size: 14px; }
+h2 { font-family:"NeoSanLig"; font-size:25px;  color: #0081c6; }
+h3 { font-family: "Neo_san"; font-size: 16px; color: #0082c8; }
+h3.bggris-detalle-tit { font-family: "Neo_san"; font-size: 15px; width: 100%; border-bottom: solid 1px #0082c8; padding-bottom: 4px; margin-bottom: 5px; }
+h4 {font-family: Tahoma, Geneva, sans-serif; font-size: 0.750em; color: #808084; margin-bottom: 15px; }
+h4.azul { color: #0082c8; margin-top: 25px; }
+h4.azul2 { color: #0082c8; }
+h5 { font-family: "Neo_san"; font-size: 15px; color: white; }
+h6 {font-family: normal "Neo_sans"; font-size: 0.875em; letter-spacing: 0px; color:#0081c6; margin-top:10px; margin-bottom:15px}
+ul { list-style-type: none; margin: 0; padding: 0; }
+a { text-decoration:none; color: #0082c8; }
+a:hover { text-decoration: underline; }
+.linea-doble { width: 100%; height: 2px; margin: 8px 0px; background: url(../img/bg/bg_linea-doble.jpg) repeat-x top left; float: left; }
+.clearing { clear: both; }
+.width690 { width: 690px !important; }
+/* iconos */
+.ico-avion, .ico-info, .ico-tick, ico-location {  background: url(../img/sprites/spr_iconos.png) no-repeat;  float: left; display: block; }
+.ico-avion { width: 25px; height: 15px; background-position: 0px 0px; margin-right:7px; }
+.ico-info { width: 18px; height: 19px; margin-left: 7px; background-position: -78px 0px; text-indent: -1000em; }
+.ico-tick { width: 34px; height: 26px; background-position: -25px 0; margin-right: 5px; }
+.ico-location { width: 19px; height: 30px; background-position: -59px 0px; margin-right: 5px; }
+/* iconos */
+/** GENERAL **/
+
+/** ESTRUCTURA **/
+#wrap { width: 100%; }
+#wrapper { width: 1002px; margin: 0px auto; min-height: 200px; }
+.content, #footer, #header { width: 100%; float: left; }
+/** ESTRUCTURA **/
+
+/** HEADER **/
+#header .main-head { width: 100%; height: 136px; }
+#header .main-head .borde-izq, #header .main-head .borde-der { height: 136px; width: 10px; background: url(../img/sprites/spr_bgs.png) no-repeat; float: left; }
+#header .main-head .borde-izq { background-position: top left; }
+#header .main-head .borde-der { background-position: -39px 0px; }
+#header .main-head .header-content { float: left; width: 982px; height: 136px; background: url(../img/bg/bg_header.jpg) repeat-x top left; }
+#header .header-content h1 { margin-top: 25px; max-width: 30%; float: left; }
+#header .header-content h1 a { width: 282px; height: 44px; background: url(../img/logos/aa_logo_gr.jpg) no-repeat top left; display: block; text-indent: -1000em; }
+#header .header-content .ul-content { width: 48%; float: right; }
+#header .header-content ul.ul-der-uno, .header-content ul.ul-der-dos { width: 100%; float: right; }
+#header .header-content ul.ul-der-uno { margin-top: 20px; }
+#header .header-content ul.ul-der-dos { margin-top: 5px; }
+#header .header-content ul.ul-der-uno li, .header-content ul.ul-der-dos li { width: auto; margin-left: 5px; float: right; }
+#header .header-content ul.ul-der-uno li select.select-pais { background: white; color: #808093; font-size: 0.688em; height: 25px; padding: 3px 4px; width: 140px; border: solid 1px #d9d9d9; }
+#header .header-content ul.ul-der-dos li, .header-content ul.ul-der-dos li a { color: #a0a1a5; font-size: 0.875em; }
+#header .header-content .main-nav { width: 981px; height: 30px; background: url(../img/sprites/spr_bgs.png) no-repeat 0 -161px; float: left; margin-top: 10px; }
+#header .header-content .main-nav ul { width: 95%; float: left; }
+#header .header-content .main-nav ul li { float: left; width: auto; font-family: "Neo_san"; font-size: 0.84em; background: url(../img/bg/linea-nav_bg.png) no-repeat top right; padding: 9px 15px; position: relative;  }
+#header .header-content .main-nav ul li a { color: white; display: block; text-decoration: none; }
+#header .header-content .main-nav ul li:hover { background: url(../img/sprites/spr_bgs.png) no-repeat -25px -191px; width: auto;  }
+#header .header-content .main-nav ul li ul.sec-nav { background: none repeat scroll 0 0 #124B6D; border-radius: 0 0 6px 6px; left: 0; overflow: visible; position: absolute; top: 30px; width: 100%; /*min-width: 150px;*/ z-index:2; }
+#header .header-content .main-nav ul li ul.sec-nav li { background: none; float: none; width: auto; border-bottom: solid 1px #45a8d8; margin: 0 10px; padding: 9px 0;  }
+#header .header-content .main-nav ul li ul.sec-nav li a:hover { color: #45a8d8; }
+#header .header-content .main-nav ul li ul.sec-nav li:last-child { border-bottom: none; }
+/** HEADER **/
+
+.sombra-gr-top, .sombra-gr-bottom { width: 100%; height: 15px; background: url(../img/sprites/spr_bgs.png) no-repeat; }
+.sombra-gr-top { background-position: -48px -134px; }
+.sombra-gr-bottom{ background-position: -48px -146px; }
+.sombra-md-bottom { width: 338px; height: 11px; background: url(../img/sprites/spr_bgs.png) no-repeat -49px -221px; }
+.sombra-ch-bottom { width: 240px; height: 11px; float: left; background: url(../img/sprites/spr_bgs.png) no-repeat -49px -232px; }
+
+/** FOOTER **/
+#footer .footer-content { width: 1002px; height: 133px; background: url(../img/sprites/spr_bgs.png) no-repeat -49px 0px; }
+#footer .footer-content ul.ul-izq-uno { float: left; margin: 17px 14px; width: 95%; }
+#footer .footer-content ul.ul-izq-uno li { float: left; width: auto; font-size: 0.75em; color: #0082c8; font-family: Tahoma, Geneva, sans-serif; margin: 0 5px 0 0;  }
+#footer .footer-content ul.ul-izq-uno li a { color: #0082c8; }
+#footer .footer-content ul.ul-der-dos { float: right; margin: 15px 0 8px; width: 16%; }
+#footer .footer-content ul.ul-der-dos li { float: left; width: auto; margin-right: 8px; }
+#footer .footer-content ul.ul-der-tres { float: left; width: 45%; clear: both; margin-left: 389px; }
+#footer .footer-content ul.ul-der-tres li { float: left; width: auto; margin-right: 10px;  }
+#footer .footer-content ul.legales{ float: left; color: #A0A1A5; font-size: 0.65em; clear:both; margin-left: 382px; width: 46%;}
+#footer .footer-content ul.legales li { float: left; width: auto; }
+#footer .footer-content ul.legales li text { clear: both; }
+#footer .footer-content ul.legales li a { color: #a0a1a5; text-decoration: underline; }
+/** FOOTER **/
+
+/** HOME **/
+#homepage .mod-tracking { width:339px; float: left; }
+#homepage .tracking, #homepage .webcargo  { width: 338px; /*background: url(../img/sprites/spr_bgs.png); padding: 8px 18px;*/ }
+#homepage .webcargo { height: 173px; *height: auto; background-position: -1051px -378px; }
+#homepage .tracking {  min-height: 195px; background-position: -1051px 0; }
+#homepage .tracking h2, #homepage .webcargo h2 { color: white; font-size: 0.875em; clear: both; }
+#homepage .tracking h2 { width: 338px; background: url(../img/sprites/spr_bgs.png) no-repeat -1051px 0px; display:block; height: 21px; padding-top: 8px; }
+#homepage .tracking h2 span { margin: 0 7px 0 105px; }
+#homepage .tracking .cont { width: 318px; background: url(../img/sprites/spr_bgs.png) repeat-y -1051px -30px; float: left; padding:10px; }
+/* DESCOMENTAR CUANDO VUELVA EL FORM -----   #homepage .webcargo .cont { width: 318px; background: url(../img/sprites/spr_bgs.png) repeat-y -1051px bottom; float: left; padding:10px; }*/
+
+/* mi web cargo sin form! */
+#homepage .webcargo .cont-sinform { width: 338px; background: url(../img/bg/miwebcargobg.png) no-repeat center bottom; float: left; padding:0px; height: 133px; }
+#homepage .webcargo .cont-sinform a { display: block; text-indent: -1000em; width: 338px; height: 133px; }
+/* /mi web cargo sin form!*/
+
+#homepage .webcargo h2 {  width: 338px; background: url(../img/sprites/spr_bgs.png) no-repeat -1051px -381px; display:block; height: 21px; padding-top: 8px; }
+#homepage .webcargo h2 span { margin: 0 7px 0 105px; }
+#homepage .tracking p { clear:both; padding-top: 10px;  }
+#homepage input { -webkit-border-radius: 3px; border-radius: 3px; border: solid 1px #b2b2b2; height: 23px; margin-top: 4px; }
+#homepage input.prefijo { width: 25%; margin-right: 7px; }
+#homepage input.awb { width: 69%; }
+input.btn-azul-uno, #homepage .webcargo input.btn-azul-uno { background: url(../img/sprites/spr_bgs.png) no-repeat -387px -221px; border: none !important; color: white; font-size: 0.875em; width: 88px; height: 23px; float: right; margin-right: 8px; margin-top: 10px; }
+#homepage form a { color: #1693d0; text-align: left; text-decoration: underline; font-size: 0.688em; float: left; margin-top: 15px; float: left; }
+#homepage form a.plus { font-size: 12px; font-weight: bold; margin-left: 7px; margin-top: 2px; text-decoration: none; padding-top: 8px; }
+#homepage input { float: left; }
+#homepage .webcargo form { margin-top: 5px; float: left; }
+#homepage .webcargo fieldset { margin: 3px 0px; }
+#homepage .webcargo form input { float: right; width: 195px;  }
+#homepage .webcargo form label { float: left; font-size: 0.785em; margin-right: 10px; margin-top: 11px; text-align: right; width: 104px; }
+#homepage .webcargo form .paddingtop5 { padding-top: 5px; }
+#homepage .mod-slider { float: left; width: 392px; margin: 0px 15px; }
+#homepage .mod-slider .sombra-md-bottom { *margin-top: -3px; }
+#homepage .mod-slider img { width: 392px; height: 372px; }
+#homepage .mod-estado-vuelo, #homepage .mod-aeropuertos  { height: 178px; width: 240px; float: left; background: url(../img/sprites/spr_bgs.png) no-repeat -475px -221px; }
+#homepage .mod-aeropuertos { margin-top: 6px; }
+#homepage .mod-estado-vuelo h2, #homepage .mod-aeropuertos h2 { color: white; font-size: 0.93em; padding-left: 9px; margin-top:10px; text-transform:uppercase;  }
+#homepage .mod-aeropuertos h2 span.una-linea { line-height: 28px; }
+#homepage .mod-estado-vuelo h2 strong { color: #c1c1c2; }
+#homepage .mod-estado-vuelo .detalle, #homepage .mod-aeropuertos .detalle, #homepage .mod-bottom .detalle  { float: left; width: 229px; }
+#homepage .mod-estado-vuelo .detalle { margin: 11px 0 0 6px;  }
+#homepage .mod-aeropuertos .detalle  { margin: 13px 0 0 6px; }
+#homepage .mod-bottom .detalle  { margin: 17px 0 5px 6px; }
+#homepage .mod-estado-vuelo .detalle p, #homepage .mod-aeropuertos .detalle p, #homepage .mod-bottom .detalle p { width: 130px; float: left; font-size: 0.73em; margin: 6px;  }
+#homepage .mod-estado-vuelo .detalle a, #homepage .mod-aeropuertos .detalle a, #homepage .mod-bottom .detalle a { color: #1693D0; float: left; font-size: 0.9em; font-weight: bold; margin-top: 7px; text-align: left; text-decoration: underline; }
+#homepage .mod-estado-vuelo .detalle .imagen-detalle, #homepage .mod-aeropuertos .detalle .imagen-detalle, #homepage .mod-bottom .detalle .imagen-detalle-bottom1, #homepage .mod-bottom .detalle .imagen-detalle-bottom2, #homepage .mod-bottom .detalle .imagen-detalle-bottom3, #homepage .mod-bottom .detalle .imagen-detalle-bottom4 { width: 80px; height: 123px; float: right; background: url(../img/sprites/spr_bgs.png) no-repeat;  }
+#homepage .mod-estado-vuelo .detalle .imagen-detalle  { background-position: -395px -244px;  }
+#homepage .mod-aeropuertos .detalle .imagen-detalle { background-position: -315px -244px;  }
+#homepage .mod-bottom .detalle .imagen-detalle-bottom1 { background-position: -956px -221px;  }
+#homepage .mod-bottom .detalle .imagen-detalle-bottom2 { background-position: -69px -246px;  }
+#homepage .mod-bottom .detalle .imagen-detalle-bottom3 { background-position: -153px -244px;  }
+#homepage .mod-bottom .detalle .imagen-detalle-bottom4 { background-position: -233px -244px;  }
+#homepage .mod-bottom { width: 241px; height: 175px; background: url(../img/sprites/spr_bgs.png) no-repeat -715px -221px; float: left; margin-bottom: 8px; }
+#homepage .mod-bottom h2 { color: #0082c8; font-size: 0.97em; padding-left: 9px; margin-top:15px; }
+#homepage .mod-margin-right { margin-right: 12px; }
+/** HOME **/
+
+/** INTERNAS **/
+#internas p { line-height: 16px; margin: 8px 0px; }
+.notas { width: 100%;  *width: 700px; }
+.notas h4, .notas p {font-size: 11px; }
+.notas h4 { color: #0082c8; text-transform: uppercase; margin-top: 20px; float: left; width: 100%; }
+/*contenedores*/
+#internas .content { background: white; padding: 10px; width: 982px; float: left; }
+#internas .content .cont-gde { width: 781px; height: auto; float: left; }
+#internas .content .cont-gde h3 { margin-bottom: 28px; }
+#internas .content-top, #internas .content-bottom { width: 1002px; height: 18px; background: url(../img/sprites/spr_bgs.png) no-repeat; float: left;  }
+#internas .content-top { background-position: 0px -399px; }
+#internas .content-bottom { background-position: 0px -417px;  }
+#internas .cont-prod-equation { width: 781px; height: 513px; background: url(../img/bg/bg_productos-equation.jpg) no-repeat 0 0; float: left; padding-top: 30px; }
+#internas .cont-conociendo { width: 781px; height: 513px; background: url(../img/bg/bg_conociendo.jpg) no-repeat 0 0; float: left; padding-top: 30px; }
+#internas .cont-prod-equation h3 { font-size: 22px;  margin-bottom: 28px;}
+#internas .cont-prod-equation .detalle-contenido, #internas .cont-conociendo .detalle-contenido { background: none; }
+#internas .cont-angosto { float: left; width: 420px; height: auto; }
+#internas .content .etracking { float: right !important; }
+#internas .content .etracking .bg-gris_c-header { width: 690px; }
+#internas .detalle-contenido { background: url(../img/bg/bg_detalle-contenido.jpg) repeat-y; float: left; padding: 5px 25px; width: 731px; position: relative; }
+#internas .borde-top, #internas .borde-bottom { width: 780px; height: 27px; float: left; background: url(../img/sprites/spr_bgs.png) no-repeat; }
+#internas .borde-top { background-position: 0 -435px; }
+#internas .borde-bottom { background-position: 0 -461px; }
+
+#internas .bg-gris { background: #f6f6f6; padding: 20px; float: left; width: 94%; }
+#internas .bg-gris_c-header { background: #f6f6f6 url(../img/bg/bg_bg-gris_c-header.jpg) no-repeat top left; padding: 20px; float: left; }
+#internas .bg-gris_c-header h5 { margin-bottom: 35px; }
+
+/*submenu*/
+#internas ul.submenu { width: 200px; float: left; }
+#internas ul.submenu li { font-family:"Neo_san",Tahoma; font-size: 0.750em; background: url(../img/bg/bg_submenu_li.jpg) no-repeat bottom left; padding: 7px 5px;  }
+#internas ul.submenu li a { color: #0081c6; }
+#internas ul.submenu li a:hover, #internas ul.submenu li.selected { color: #717171; }
+#internas ul.submenu li a:hover, #internas ul.submenu li.selected, #internas ul.submenu li.selected a { color: #717171!important; }
+
+/*subsubmenu*/
+#internas ul.subsubmenu li { background: none; font-size: 1em; margin-left: 20px; }
+
+/*tablas*/
+#internas table { border: 2px solid white; background: #cecece; width: 99.9%; }
+#internas table th { background: #0082c8; color: white; font-size: 0.875em; padding: 10px; text-align: left; }
+#internas table thead.thead-dividido th { border: solid 2px white; text-align:center; }
+#internas table td { font-size: 0.750em; border: solid 2px white; color: #838384; text-align: center; padding: 8px; vertical-align: middle;  }
+#internas table td.aclaracion, #internas table th.aclaracion { background: white; color: #aaa8a8; padding: 10px; text-align:left; }
+#internas table td.destaque { color: #0082c8; font-weight: bold; text-align: center; padding: 10px; }
+#internas table td.grisoscuro { color: white; font-weight: bold; text-align: center; padding: 10px; background: #a0a0a0; }
+
+/*formularios*/
+form.form-calculos, form.form-codos, form.form-cda, form.form-contacto, form.form-rutas { display: block; float: left; margin-bottom: 10px; width: 100%;  }
+form.form-calculos fieldset, form.form-codos fieldset { width: 95px; margin-right: 18px; float: left; }
+form.form-cda fieldset.large { width: 245px; margin-right: 18px; float: left; }
+form.form-contacto fieldset { width: 215px; margin-right: 14px; float: left; margin: 6px; } 
+form.form-rutas fieldset { width: 180px; margin-right: 14px; float: left; margin: 6px; margin-top: 12px; }
+form.form-rutas fieldset.boton { width: 50px; float: right; }
+form.form-rutas fieldset.boton input { float: right; height: 23px; margin-left: 7px; margin-right: 0; margin-top: 16px; width: 88px; }
+form.form-rutas label { display: block; margin-bottom: 3px; width: 180px; }
+form.form-rutas select, form.form-rutas input { width: 180px; border: 1px solid #D9D9D9; height: 24px; }
+form.form-rutas .datepickerdiv {  border: 1px solid #D9D9D9; height: 26px; margin: 0px 0px 3px; width: 180px; background: white; }
+form.form-rutas .datepickerdiv input { border: medium none; color: black; float: left; font-size: 13px; height: 20px; margin-left: 3px; width: 150px; }
+form.form-rutas .datepickerdiv input.dpb { background: url(../img/iconos/date-picker.jpg) no-repeat right center transparent; float: left; height: 17px; margin-top: 3px; width: 19px; }
+form.form-rutas select.smallone { width: 120px; float: left; margin-right: 10px; height: 24px; }
+form.form-rutas select.smalltwo { width: 50px; height: 24px; }
+form.form-rutas fieldset.boton { width: 88px; }
+form.form-rutas .datepickerdiv input.pfechaidavuelta {background: url("../img/buttons/datepicker_promo.jpg") no-repeat scroll 150px center transparent;background-color: white;width: 170px;}
+form.form-contacto fieldset.txtarea {  margin-top: 10px; width: 688px; }
+form.form-contacto fieldset.btn { float: right; width: 100px; }
+form.form-contacto fieldset.btn input { width: 88px;}
+form.form-contacto label { float: left; margin: 5px 6px; text-align: right; width: 55px; }
+form.form-contacto input { width: 140px;  }
+form.form-contacto input.datedate { background-image: url("../img/iconos/date-picker.jpg"); background-position: 123px 2px; background-repeat: no-repeat; border: 1px solid #CCCCCC; padding: 2px;  }
+form.form-contacto select { width: 146px; }
+form.form-contacto textarea { height: 100px; width: 598px; }
+form.form-calculos fieldset.last, form.form-cda fieldset.last { margin-right: 0px; padding-top:10px;}
+form.form-calculos fieldset.last label, form.form-cda fieldset.last label { height: 10px; }
+form.form-calculos input, form.form-calculos select, form.form-codos select { width: 95px; margin-top: 7px; height: 20px; border: solid 1px #d9d9d9; }
+form.form-cda input { border: 1px solid #D9D9D9; height: 23px; margin-top: 7px; width: 88px; }
+form.form-cda select { width: 200px; margin-top: 7px; height: 20px; border: solid 1px #d9d9d9; }
+form.form-calculos label { width: 95px; }
+form.form-cda label { float: left; margin-right: 10px; padding-top: 9px; text-align: right; width: 35px; }
+form.form-calculos input.btn-azul-uno { width: 88px; height: 23px; border: none; margin-top: 6px; }
+form.form-codos fieldset { width: 135px; }
+form.form-codos fieldset.short { width: 95px; }
+form.form-codos label { width: 130px; }
+form.form-codos select { width: 130px}
+form.form-codos select.kilos { width: 105px; }
+form.promos { width: 200px; }
+form.promos select, form.promos .datepickerdiv { width: 200px; margin: 3px 0px; border: 1px solid #B2B2B2; -webkit-border-radius: 4px; border-radius: 4px; height: 25px; margin-top: 4px; font-size: 12px; color: #868686; }
+form.promos .datepickerdiv { width: 197px; height: 23px; }
+form.promos .datepickerdiv input { border: medium none; height: 21px; margin-left: 3px; float: left; width: 168px;  font-size: 12px; color: #868686; }
+form.promos .datepickerdiv input.dpb { background: url(../img/iconos/date-picker.jpg) no-repeat right center; width: 19px; height: 17px; float: left; margin-top: 3px; }
+form.promos .datepickerdiv input.pfechaidavuelta {background: url("../img/common/datepicker_promo.jpg") no-repeat scroll 200px center transparent;background-color: white;width: 216px;}
+.datepickk { width: 19px; height: 17px; display: block; background: url(../img/iconos/date-picker.jpg) no-repeat; float: left; margin: 3px 0 0 6px; }
+/*listas*/
+ul.resultados-calculos, .resultados-codos, .resultados-codos ul { width: 100%; float: left; }
+ul.resultados-calculos li { float: left; width: 296px; height:17px; padding: 12px 10px; background: url(../img/bg/bg_resultados-azul.jpg) no-repeat top left; margin: 10px 14px; float: left;  font-family:"NeoSanLig"; color: white; font-size: 0.875em; }
+ul.resultados-calculos li span { font-weight: 700; float: left; display:block; text-align: right; width: 56px; }
+ul.resultados-calculos li span.uno { width: 240px; text-align: left; }
+.resultados-codos ul li { width: auto; float: left; font-family: Tahoma, Geneva, sans-serif; font-size: 0.750em; color:#808084; font-weight: normal; }
+.resultados-codos ul li.emisiones { float: right; font-weight: bold; line-height: 10px; *line-height: 22px; *padding-top: 0px; }
+.resultados-codos ul li span, .resultados-codos ul li.emisiones { color: #0082c8; font-size: 1.2em; font-weight: normal; }
+ul.listado-con-guion li { margin: 8px 0 8px 40px; font-size: 0.750em; color:#808084; font-weight: normal; line-height: 16px; }
+ul.listado-con-guion-dos { margin-bottom: 20px; }
+ul.listado-con-guion-dos li { margin: 8px 0 8px 5px; font-size: 0.750em; color:#808084; font-weight: normal; line-height: 16px; }
+ul.listado-con-guion-dos li ul.listado-con-guion-dos li  { margin: 8px 0 8px 10px; font-size: 1em; color:#808084; font-weight: normal; line-height: 16px; }
+#internas .bloque-clima { width: 210px; float: left; }
+#internas .marginright28 { margin-right: 28px; }
+#internas .bloque-clima select { border: 1px solid #D9D9D9; height: 20px; width: 170px; margin: 10px 20px 20px; }
+#internas .bloque-clima .clima-detalle { width: 174px; height: 284px; background: white; border: 1px solid #d9d9d9; float: left; padding: 18px; }
+#internas .clima-detalle ul { width: 100%; }
+#internas .clima-detalle ul li { width: 100%; text-align: center; margin-bottom: 10px; }
+#internas .clima-detalle ul li.hora .linea-doble { margin-top: 17px; }
+#internas .clima-detalle ul li h3 { margin-bottom: 5px !important; }
+#internas .clima-detalle ul li.hora span { background: url(../img/sprites/spr_bgs.png) no-repeat -780px -435px; color: white; display: block; font-size: 22px; font-weight: bold; height: 22px; margin: 0 auto; padding: 6px; width: 140px; }
+#internas .clima-detalle ul.clima-actual { float: left; width: 75px; }
+#internas .clima-detalle ul.clima-actual li { width: 75px; font-size: 21px; font-weight: bold;  text-align: right; }
+#internas .clima-detalle ul.clima-actual li.max, #internas .clima-detalle ul.clima-posterior li.max { color: #186796; }
+.margintop20 { margin-top:20px !important; }
+.margintop40 { margin-top:40px !important; }
+.marginbottom20 { margin-bottom: 20px; }
+#internas .clima-detalle ul.clima-actual li.min, #internas .clima-detalle ul.clima-posterior li.min { color: #7ab3e0; }
+/*#internas .linea-doble { *width: 170px; }*/
+#internas .clima-detalle ul.clima-posterior { float: left; height: 34px; *height: 20px; margin-bottom: 4px; width: 100%; }
+#internas .clima-detalle ul.clima-posterior li { float: left; }
+#internas .clima-detalle ul.clima-posterior li.fecha { color: #808096; font-size: 12px; margin-right: 10px; text-align: right; width: 63px; margin-top: 11px; }
+#internas .clima-detalle ul.clima-posterior li.max, #internas .clima-detalle ul.clima-posterior li.min { font-size: 16px; font-weight: bold; margin-top: 8px; width: 28px; }
+#internas .clima-detalle ul.clima-posterior li.img { width: 30px; float: left; margin-left: 5px; }
+
+#internas .slider-ulds { height: 58px; background: url(../img/sprites/spr_bgs.png) no-repeat 0px -489px; margin: 20px 0 20px -14px; width: 757px; }
+#internas .slider-ulds ul { padding: 8px 0px 0px 260px; width: auto; }
+#internas .slider-ulds ul li { float: left; width: 52px; height: 42px; margin: 0px 2px; }
+#internas  img.uld-big-img { float: left; width:221px;  }
+#internas .ulds-tabla-cont { width: 465px!important; float: left; margin-bottom: 20px; }
+#internas .ulds-tabla-cont table td.azul-bold { color: #0082c8; font-weight: bold; }
+#internas .ulds-tabla-cont table td { vertical-align: middle; }
+#internas ul.aviones-fg { margin-left: 0px; width: auto; }
+#internas ul.aviones-fg li { width: 162px; float: left; margin: 4px; text-align: center; font-family: "Neo_san"; font-size: 0.750em; color: #808084; }
+#internas ul.aviones-fg li img { margin-bottom: 10px; }
+
+/* contactenos - listado gerentes */
+ul.cont-width01 { width: 725px; float: left; font-size: 0.750em; color:#808084; font-weight: normal; line-height: 16px; border-bottom: solid 1px #0082C8; padding: 8px 0px; }
+ul.cont-width01 li { float: left; float: left; margin: 0 8px; width: 250px; }
+ul.cont-width01 li.azul { width: 170px; margin-left: 0px; }
+
+/* centros de atencion */
+.resultado-cda { float: left; margin: 10px 0px 20px; }
+.resultado-cda .detalle { width: 250px; height: 400px; float: left; margin-right: 20px;  }
+.resultado-cda .detalle .border { border-bottom: 1px solid #CCCCCC; padding-bottom: 5px; }
+.resultado-cda .mapa { width: 420px; height: 400px; float: left;  }
+
+/* productos */
+img.prod-logo { position: absolute; right: 30px; top: 0; }
+
+/* promociones */
+th.prom { text-align: center !important; border-right: solid 2px white; }
+.margin-top0 { margin-top: 0px !important;}
+.margin-bottom10 { margin-bottom: 10px !important;}
+
+/* mapa sitio */
+ul.mapa-sitio-dos, ul.mapa-sitio-dos li { width: 250px; float: left; margin: 0px 15px; }
+ul.mapa-sitio-uno, ul.mapa-sitio-uno li { width: 180px; float: left; margin: 0px 15px; }
+ul.mapa-sitio-uno li a.link-azul, ul.mapa-sitio-dos li a.link-azul { color: #0082C8; font-weight: bold; font-size: 13px; margin-top: 10px; float: left; }
+ul.mapa-sitio-uno li a.link-bold, ul.mapa-sitio-dos li a.link-bold { color: #808084; font-weight: bold; font-size: 12px; padding-left: 20px; }
+ul.mapa-sitio-uno li a.link, ul.mapa-sitio-dos li a.link { color: #808084; font-size: 12px; padding-left: 40px; }
+
+/** INTERNAS **/
+
+/**** SLIDER *****/
+ol#controls {
+    float: right;
+    font: 11px Tahoma,Geneva,sans-serif;
+    height: 30px;
+    margin: -25px 10px 0 0;
+    padding: 0;
+    position: relative;
+}
+ol#controls li {
+    float: right;
+    height: 28px;
+    line-height: 28px;
+    list-style: none outside none;
+    margin: 2px;
+    padding: 0;
+}
+ol#controls li a {
+    background: url("../img/buttons/boton_slider_off2.png") no-repeat scroll 0 0 transparent;
+    color: #DAF3F8;
+    float: left;
+    height: 17px;
+    line-height: 17px;
+    padding: 0;
+    text-decoration: none;
+    width: 17px;
+}
+/**** SLIDER *****/
+
+/* pop up contactenos */
+.bgpop { position: absolute; left: 0%; top: 0%; background-color: black; -moz-opacity: 0.7; opacity: .70; filter: alpha(opacity=70); width: 100%; height: 100%; z-index: 90; }
+#spv-pop { background: white; position: absolute; left: 25%; padding: 25px; position: absolute; top: 25%; width: 768px; z-index: 100; }
+#spv-pop .cont { height: 290px; overflow-y: scroll; padding-right: 16px; text-align: justify; width: 98%; }
+#spv-pop a { float: right; margin-bottom: 15px; }
+/* pop up contactenos */

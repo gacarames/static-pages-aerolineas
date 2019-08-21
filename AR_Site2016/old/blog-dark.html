@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<title>Aerolineas Argentinas</title>
+<meta http-equiv="title" content="Aerolineas Argentinas">
+<meta name="Description" content="Todo tu viaje en un s&#243;lo lugar aerolineas.com, vuelos baratos.">
+<link href="Images/condor_chico.gif" rel="shortcut icon" type="image/x-icon" />
+<link href="http://www.aerolineas.com.ar/es-ar" rel="canonical"></link>
+<link href="css/Institucional.css" rel="stylesheet"/>
+<link href="css/InstitucionalError.css" rel="stylesheet"/>
+<link href="css/InstitucionalJqueryUI.css" rel="stylesheet"/>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel='stylesheet' href='css/fonts.css'>
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+<![endif]-->
+
+<link rel="stylesheet" href="css/_validate_Helpers.css">
+<link rel="stylesheet" href="css/MapaDestinos.css">
+<!-- -->
+<link rel="stylesheet" href="cupertino/jquery-ui-1.9.1.custom.min.css">
+<link rel="stylesheet" href="css/selectize.css">
+<link rel="stylesheet" href="css/comboMapa.css">
+<!--[if IE 7]><link href="Content/themes/V2/css/comboMapa_ie7.css" rel="stylesheet"/>
+<![endif]-->
+
+<link href="Scripts/idangerous/custom.css" rel="stylesheet"/>
+
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/carousel.css" >
+
+<link rel="stylesheet" href="css/dark.css" >
+    
+
+    <style type="text/css">
+        .watermark
+        {
+            color: #999;
+        }
+        .watermarkRojo
+        {
+            color: #E80C4D;
+        }
+        #ui-datepicker-div {
+            font-size: 70%;
+        }
+        .ui-autocomplete.ui-widget {
+            font-family: Verdana,Arial,sans-serif;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <!-- CONTENEDOR -->
+    <div id="contenedor_home" class="fr dark">
+        <header>
+              <div id="header" class="clearfix">
+                <div class="container">
+                  <div id="header-top" class="header-top clearfix">
+                        <div id="logo-header" class="pull-left">
+                          <a href="" title="Logo Aerolineas Argentinas">
+                            <img alt="Logo Aerolineas Argentinas" src="img/dark/logo-ar-welcome.jpg"/>
+                            <span class="sr-only">Aerolineas.com</span></a>                    
+                        </div>
+                        <div id="access-top" class="pull-right">
+                          <ul class="list-unstyled list-inline">
+                            <li>
+                            <div id="CultureContainer">
+                              <!--select paises-->
+                               <!--Donut#3CE679E6D02D8561819C3455B98D1217DD599FAA3F610147AD85F4CECD0B2858240C5744D65BB89D5E918AE29D49884B8608A70C359C648189CD12499907AFFE73017B06ED68A5AF20707027AF40CB1E49D867E2DC89E2CBD5218E2DEC2501AABCED004546B5D65BEBD4D1B40D6A3854B3BE23494C805186AE025E8F0B91A3F90D31F897CB32830724F757A45F5100737C4F014DB059F5631CFA7F614FACCF87CB55BCA9D4BFB6C3942C19ABB2F0AA8775C2BE7074268AE44C5CAF83DBD11D4B95731AD8C593F434EF9FB442B887C48E0FED06A1312126088B91BC3AFCB862D4E281D4E923A6E055248C30EEB67B8BF8F6320A0FDE407411FD7BF2556D732ABE5B838FD2684CB815DFC7388811CB620BE707BF1A11C082575F8C7FFA224A2B85C4CB2D9373CE88294CD00A49DCA5EF4BE253096AE401E55EDBE17A23D04B3E56A316D455A5325F0C0D5C25EB2F9F76AEEA4071C9B5E3F3EAEBF103A44F4607B74367A3BAE827002A052B0B7606F7BA566E4E79107F4B342DA434B37B29706986F7DA0150260C70A7E653DF5E2749980F#-->
+                                <select class="INPUTBuscador" id="culture" name="culture" onChange="onCultureChanged()" title="Culture">
+                                  <option value="es-ar" selected="selected" >Argentina (Espa&#241;ol)</option>
+                                  <option value="en-ar">Argentina (Ingl&#233;s)</option>
+                                  <option value="en-au">Australia</option>
+                                  <option value="es-bo">Bolivia</option>
+                                  <option value="pt-br">Brasil</option>
+                                  <option value="en-ca">Canad&#225;</option>
+                                  <option value="es-co">Colombia</option>
+                                  <option value="es-cl">Chile</option>
+                                  <option value="es-eu">Espa&#241;a</option>
+                                  <option value="fr-fr">Francia</option>
+                                  <option value="it-eu">Italia</option>
+                                  <option value="es-mx">M&#233;xico</option>
+                                  <option value="en-nz">New Zealand</option>
+                                  <option value="es-pa">Paraguay</option>
+                                  <option value="es-pe">Per&#250; </option>
+                                  <option value="en-eu">Rest of Europe</option>
+                                  <option value="es-uy">Uruguay</option>
+                                  <option value="es-us">United States (Espa&#241;ol)</option>
+                                  <option value="en-us">United States (English)</option>
+                                  <option value="es-ve">Venezuela</option>
+                                  <option value="es-us">Otros pa&#237;ses (Espa&#241;ol)</option>
+                                  <option value="en-us">Other Countries (English)</option>
+                                </select>
+                              <!--/ select paises-->
+                            </div>
+                            </li>
+                          </ul>
+                          
+                        </div> 
+                  </div>
+                  <a name="startcontent" id="startcontent"></a>
+
+                 
+                </div>    
+              </div>
+        </header>
+
+        <!-- CONTENEDOR WRAPPER -->
+        <div id="wrapper">
+
+        <style type="text/css">
+        
+        </style>
+   
+      
+
+         <div id="newcont" class="blog">
+                    
+                   <h1>Aerolineas argentinas / Austral</h2>
+                <div class="post">
+                  <div class="date">28/10/215 08:30</div>
+                  <div class="mensaje">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur amet quos et perferendis, voluptatem nulla laborum dignissimos obcaecati, excepturi quibusdam accusantium odit pariatur assumenda cumque vitae, veniam est. At, itaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, facere excepturi quibusdam accusantium odit pariatur assumenda cumque vitae, veniam est. At, itaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, facere. </p>
+                  </div>
+                </div>
+                <div class="post">
+                    <div class="date">28/10/215 08:30</div>
+                    <div class="mensaje">
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur amet quos et perferendis, voluptatem nulla laborum dignissimos obcaecati, excepturi quibusdam accusantium odit pariatur assumenda cumque vitae, veniam est. At, itaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, facere excepturi quibusdam accusantium odit pariatur assumenda cumque vitae, veniam est. At, itaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, facere. </p>
+                    </div>
+                </div>
+
+           
+
+        </div>
+        <!-- /CONTENEDOR WRAPPER -->
+
+<footer id="footer">
+      <div class="container">
+        <div class="info">
+          <div class="arrows">
+            <a href=""><i class="fa fa-angle-left"></i> <span class="sr-only">Siguiente</span></a>
+             <a href=""><i class="fa fa-angle-right"></i> <span class="sr-only">Anterior</span></a>
+          </div>
+          <i class="fa fa-comment"></i> <a target='_blank' href="https://es.research.net/s/FXFMC8C">Danos tu opinión sobre el sitio</a>
+        </div>
+        
+        <div class="div_pie">
+          <nav class="nav-footer clearfix">
+            <ul class="list-unstyled list-inline pull-left">
+              <li><a href="#">Equipaje</a></li>
+              <li><a href="#">Aerolíneas Móvil</a></li>
+              <li><a href="#">Cargas</a></li>
+            </ul>
+            <ul class="list-unstyled list-inline pull-right social-links">
+              <li><a target="_blank" href="https://www.facebook.com/Aerolineas.argentinas"><i class="fa fa-facebook"></i><span class="sr-only">Facebook</span></a></li>
+              <li><a target="_blank" href="http://twitter.com/Aerolineas_AR/"><i class="fa fa-twitter"></i><span class="sr-only">Twitter</span></a></li>
+              <li><a target="_blank" href="http://www.linkedin.com/company/aerolineas-argentinas"><i class="fa fa-linkedin"></i><span class="sr-only">Linkedin</span></a></li>
+              <li><a target="_blank" href="https://plus.google.com/106198199507305429358/posts"><i class="fa fa-google-plus"></i><span class="sr-only">GooglePlus</span></a></li>
+              <li><a target="_blank" href="http://www.youtube.com/user/AerolineasAR"><i class="fa fa-youtube"></i><span class="sr-only">Youtube</span></a></li>
+            </ul>
+          </nav>
+            <div class="div_links clearfix">
+              <ul class="list-unstyled list-inline pull-left">
+                <li><a href="#"><img src="img/dark/common/logo_arg.jpg" alt="Logo Aerol&#237;neas Argentinas"/></a></li>
+              </ul>
+              <ul class="list-unstyled list-inline pull-right ">
+              <li><a href="/es-BO/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dbo%26idpagina%3D9%26ididioma%3Des" title=""><img alt="@MainFooterResource.Aerohandling_Logo" src="img/dark/common/footer-logoAerohandling.jpg" /></a></li>
+              <li><a href="http://www.jetpaq.com.ar" target="_blank"><img src="img/dark/common/footer-logoJetPaq.jpg" alt="Logo JetPaq"/></a></li>
+              <li><img src="img/dark/common/footer-logoOptar.jpg" alt="Logo Optar" /></li>
+              <li><img src="img/dark/common/footer-logoAustral.jpg" alt="Logo Austral" onclick="abrirAustral();" /></li>
+              <li><img src="img/dark/common/footer-logoAerolineas.jpg" alt="Logo Aerolíneas Argentinas" /></li>
+              </ul>
+            </div>
+            <div class="pie_legals clearfix">
+              <ul class="list-unstyled list-inline pull-right">
+                <li class="pie_texto">
+                  <span>aerolineas.com Sitio Oficial de Aerolineas Argentinas. &#169; 1996 - 2016 Aerol&#237;neas Argentinas S.A.<br />
+                      <a class="pie" href="/es-bo/legales/terminoscondiciones">Legales</a> |
+                      <a class="pie" href="#" onclick="popup_condiciones_transporte();"> Condiciones Generales de Transporte </a>|
+                      <a class="pie" href="/es-BO/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dbo%26idpagina%3D94%26ididioma%3Des">Mapa del Sitio</a> |
+                      <a class="pie" href="/es-BO/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dbo%26idpagina%3D84%26ididioma%3Des">Ud. est&#225; en un SITIO SEGURO</a> 
+                  </span>
+                </li>
+                <li class="codigo-qr">
+                    <a href="https://servicios1.afip.gov.ar/clavefiscal/qr/mobilePublicInfo.aspx?req=e1ttZXRob2Q9Z2V0UHVibGljSW5mb11bcGVyc29uYT0zMDY0MTQwNTU1NF1bdGlwb2RvbWljaWxpbz0wXVtzZWN1ZW5jaWE9MF1bdXJsPWh0dHA6Ly93d3cuYWVyb2xpbmVhcy5jb20uYXJdfQ==" target="_F960AFIPInfo"><img src="img/dark/common/qr_code.gif" alt="QR-Code" /></a>
+                </li>
+              </ul>
+            </div>                    
+        </div>
+      </div>
+  </footer>
+
+  </div><!-- /#contenedor_home -->
+
+  <!-- /<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+  <script src="js/jquery.js"></script>
+  <!--<script src="bundles/jquery.js"></script>-->
+  <script src="bundles/jqueryui.js"></script>
+  <script src="bundles/jqueryval.js"></script>
+  <!-- <script src="bundles/modernizr.js"></script> -->
+  
+  
+  <script src="bundles/watermark.js"></script>
+  <script src="bundles/underscore.js"></script>
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap-hover-dropdown.min.js"></script>
+<!-- <script src="Scripts/combobox.js"></script> -->
+  
+
+  <script src="bundles/funcionesVarias.js"></script>
+
+<!-- 
+
+<script type="text/javascript">    
+    var msgCombobox = { error1: 'error1', tooltip: 'tooltip' }
+</script>
+<script type="text/javascript">    
+    var msgCombobox = { error1: '', tooltip: '' }
+</script>
+-->
+
+
+    <script type="text/javascript">
+        function abrirAustral() {
+          window.open('http://www.austral.com.ar/index.asp?idSitio=AR&idIdioma=es','Austral', 'scrollbars=yes, resizable=1,width=1020,height=805');
+         }
+         
+          function popup_condiciones_transporte() {
+              var winC = window.open('http://ww1.aerolineas.com.ar/arg/bodies/CondicionesGrales_contratoTransporte.asp?idSitio=AR&idIdioma=es', 'wContr', 'scrollbars=yes, resizable=1,width=800,height=600');
+              winC.moveTo(0, 0);
+          }
+    </script> 
+
+ 
+    
+   
+  
+ 
+    
+
+
+   
+</body>
+</html>

@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Aerolineas Plus - Acreditación de vuelos realizados</title>
+    <meta http-equiv="title" content="Aerolineas Plus - Acreditación de vuelos realizados">
+    <meta name="Description" content="Acreditación de vuelos realizados">
+    <meta name="viewport" content="width=device-width" />
+    <link href="http://www.aerolineas.com.ar/es-ar/aerolineas_plus/ganar_millas" rel="canonical"></link>
+    <link href="Content/themes/V2/css/Institucional.css" rel="stylesheet" />
+    <link href="Content/themes/V2/css/InstitucionalError.css" rel="stylesheet" />
+    <link href="Content/themes/V2/css/InstitucionalJqueryUI.css" rel="stylesheet" />
+    <style>
+    .etabs {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .tab {
+        display: inline-block;
+        zoom: 1;
+        *display: inline;
+  border: solid 1px #E7E7E7;
+  border-bottom: none;
+  -moz-border-radius: 4px 4px 0 0;
+  -webkit-border-radius: 4px 4px 0 0;
+  box-shadow: 0 -2px 5px #E8E8E8;
+  background-color: #F4F4F4;
+  min-width: 28%;
+  text-align: center;
+    }
+    
+    .tab a {
+        font-size: 14px;
+        line-height: 2em;
+        display: block;
+        padding: 0 10px;
+        outline: none;
+    }
+    
+    .tab a:hover {
+        text-decoration: underline;
+    }
+    
+    .tab.active {
+        position: relative;
+        top: 1px;
+        background-color: #FFFFFF;
+    }
+    
+    .tab a.active {
+        font-weight: bold;
+    }
+    
+    .tab-container .panel-container {
+        background: #fff;
+        border: solid #666 1px;
+        padding: 10px;
+        -moz-border-radius: 0 4px 4px 4px;
+        -webkit-border-radius: 0 4px 4px 4px;
+    }
+    
+    .tab-container {
+        margin-left: 15px;
+    }
+    
+    .tab-content {
+        box-shadow: 0px 5px 8px #D2D2D2;
+  padding: 15px;
+  width: 730px;
+  overflow: hidden;
+    border: 1px solid #EAEAEA;
+    }
+    .tab-container p {
+        margin: 20px 0;
+        font: normal 12px Tahoma, Geneva, sans-serif;
+        color: #838384;
+    }
+    .tab-container ul {
+        font: normal 12px Tahoma, Geneva, sans-serif;
+  color: #838384;
+    }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--
+    <link rel="stylesheet" type="text/css" media="screen" href="/Scripts/browser-detection/browser-detection.css" />
+    <script type="text/javascript" src="/Scripts/browser-detection/browser-detection.js" />
+    -->
+</head>
+
+<body>
+    <!-- CONTENEDOR -->
+    <div id="contenedor_home">
+        <header>
+            <div id="fecha" align="right">
+                <table width="1002px">
+                    <tr>
+                        <td align="left">
+                            <!--Localizacion-->
+                            <div id="Country">
+                            </div>
+                            <!--fin de Localizacion-->
+                        </td>
+                        <td align="right">
+                            <!--fecha-->
+                            <div id="fecha2">
+                                <div class="counrty_today_partials">
+                                    viernes, 19 de junio de 2015
+                                </div>
+                            </div>
+                            <!--fin de fecha-->
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br clear="all" />
+            <!--HEADER-->
+            <div id="header" />
+            <div class=" header_borde">
+            </div>
+            <div id="header-left">
+                <a href="#" target="_self">
+                    <a href="/es-ar" title="Logo Aerolineas Argentinas"><img alt="Logo Aerolineas Argentinas" border="0" height="44px" hspace="0" src="Content/themes/V2/img/common/logo_Aerolineas.gif" vspace="0" width="252px" /></a>
+                </a><span class="screen-reader-text">Aerolineas.com</span>
+            </div>
+            <div class="fleft">
+                <a href="/es-ar/vuelos_baratos/tarifa_mas_baja_garantizada" title=""><img alt="" src="Content/themes/V2/img/buttons/Sello.png" /></a>
+            </div>
+            <div align="right" id="logo-header">
+                <div class=" width300   fleft  mleft100 mtop5">
+                    <a href="/es-ar" title="Logo Aerolineas Argentinas"><img alt="Logo Aerolineas Argentinas" border="0" height="42px" hspace="0" src="Content/themes/V2/img/common/aerolineas_argentinasST.jpg" vspace="0" width="100px" /></a>
+                    <a href="/es-ar/asppage/open?link=http%3A%2F%2Fwww.skyteam.com%2F%2Fes" target="blank" title=""><img alt="" src="Content/themes/V2/img/common/skyteam.jpg" /></a>
+                </div>
+                <div class=" fleft mtop10 ">
+                    <!--select paises-->
+                    <div id="CultureContainer">
+                        <select class="INPUTBuscador" id="culture" name="culture" onChange="onCultureChanged()" style="width: 150px; margin-left: 10px;">
+                            <option selected="selected" value="es-ar">Argentina (Espa&#241;ol)</option>
+                            <option value="en-ar">Argentina (Ingl&#233;s)</option>
+                            <option value="en-au">Australia</option>
+                            <option value="es-bo">Bolivia</option>
+                            <option value="pt-br">Brasil</option>
+                            <option value="en-ca">Canad&#225;</option>
+                            <option value="es-co">Colombia</option>
+                            <option value="es-cl">Chile</option>
+                            <option value="es-eu">Espa&#241;a</option>
+                            <option value="fr-fr">Francia</option>
+                            <option value="it-eu">Italia</option>
+                            <option value="es-mx">M&#233;xico</option>
+                            <option value="en-nz">New Zealand</option>
+                            <option value="es-pa">Paraguay</option>
+                            <option value="es-pe">Per&#250; </option>
+                            <option value="en-eu">Rest of Europe</option>
+                            <option value="es-uy">Uruguay</option>
+                            <option value="es-us">United States (Espa&#241;ol)</option>
+                            <option value="en-us">United States (English)</option>
+                            <option value="es-ve">Venezuela</option>
+                            <option value="es-us">Otros pa&#237;ses (Espa&#241;ol)</option>
+                            <option value="en-us">Other Countries (English)</option>
+                        </select>
+                        <script type="text/javascript">
+                        function onCultureChanged() {
+                            var cultureName = $("#culture").val();
+                            GlobalCultureName = cultureName;
+
+                            var ruta = '/es-ar/culture/changeculture';
+                            var redirectUrl = '/_culture_';
+
+                            $.ajax({
+                                url: ruta,
+                                type: "post",
+                                dataType: "json",
+                                traditional: true,
+                                async: false,
+                                data: {
+                                    'selectedCultureName': cultureName
+                                },
+                                success: function(result, responseText) {
+
+                                    // // translateUrlAndRedirect(GlobalCultureName);
+
+                                    //alert('Cultura cambiada exitosamente por: ' + result);
+
+                                    // Redirecciono
+                                    redirectUrl = redirectUrl.replace("_culture_", GlobalCultureName);
+                                    window.location.replace(redirectUrl);
+
+                                    //  // Recargo la página
+                                    //window.location.reload();
+                                },
+                                error: function() {
+                                    alert('Error al intentar cambiar la cultura');
+                                }
+                            });
+
+                        }
+                        </script>
+                    </div>
+                    <!--fin de select paises-->
+                </div>
+                <div class="width400 mtop25 clearing">
+                    <p>
+                        <a href="/es-ar/reservas-servicios/preguntas-frecuentes">Contacto y Preguntas frecuentes</a>
+                        <img src="Content/themes/V2/img/buttons/mail.gif" alt="Contacto y Preguntas frecuentes" border="0" class="imgCont" />
+                        <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=7&amp;idIdioma=es">0810-222-86527</a>
+                    </p>
+                </div>
+            </div>
+            <!-- /HEADER -->
+            <br clear="all" />
+            <a name="startcontent" id="startcontent"></a>
+            <!-- NAVBAR -->
+            <div id="navbar">
+                <div id="botonera">
+                    <div class="boton width_1"><a href="/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D164%26ididioma%3Des">La empresa</a>
+                        <div class="transparent">
+                            <ul>
+                                <li><a href="/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D2%26ididioma%3Des">Conocenos</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/es-ar/skyteam/acerca_de_skyteam">Alianza SkyTeam</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/es-ar/aerolineas_hoy">Aerol&#237;neas hoy</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/es-ar/la_empresa/recursos_humanos">Recursos humanos</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/es-ar/prensa/comunicado">Prensa</a></li>
+                                <li><a href="http://noticias.aerolineas.com.ar/" target="_blank">Noticias </a></li>
+                                <li><a href="http://www.aerolineas.com.ar/es-ar/cefepra/acercade">CEFEPRA</a></li>
+                                <li><a href="/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D152%26ididioma%3Des">Proveedores</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="boton"><img src="Content/themes/V2/img/backgrounds/line.jpg"></img>
+                    </div>
+                    <div class="boton width_1"><a href="http://www.aerolineas.com.ar/es-ar/reservas_servicios/vuelos">Reservas y servicios</a>
+                        <div class="transparent">
+                            <ul>
+                                <li><a href="http://www.aerolineas.com.ar/es-ar/reservas_servicios/vuelos">Compr&#225; tu pasaje</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/es-ar/reservas_servicios/horarios_de_vuelos">Horarios de vuelos programados</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/es-ar/reservas_servicios/estado_de_vuelo">Estado actual de tu vuelo</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/es-ar/reservas_servicios/chequea_tu_reserva">Cheque&#225; tu reserva</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/es-ar/reservas_servicios/web_checkin">Web Check-in</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/es-ar/reservas_servicios/web_checkin">Reimprimir el Web Check-in</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/es-ar/reservasservicios/checkinmovil">Check in M&#243;vil </a></li>
+                                <li><a href="http://www.aerolineas.com.ar/es-ar/cuponesdescuentos/detalles/ar/buenos-aires/2624_viaja-por-tu-pais-con-aerolineas-vacaciones">Paquetes Aerol&#237;neas Vacaciones</a></li>
+                                <li><a href="http://www.rentalcars.com/?affiliateCode=aeroargentina_rc&amp;preflang=es&amp;adplat=alquiler" target="_blank">Alquiler de auto</a></li>
+                                <li><a href="/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D144%26ididioma%3Des">Constancia de cr&#233;dito fiscal</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/es-ar/reservas_servicios/devolucion">Devoluci&#243;n de pasajes</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/es-ar/aerolineas_movil">Aerol&#237;neas M&#243;vil</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/es-ar/reservas_servicios/programa_membership_rewards" target="_blank">Membership Rewards</a></li>
+                                <li><a href="http://www.aseguratuviaje.com/aerolineasargentinas/">Asistencia al viajero</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="boton"><img src="Content/themes/V2/img/backgrounds/line.jpg"></img>
+                    </div>
+                    <div class="boton width_1"><a href="/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D43%26ididioma%3Des">Info para tu viaje</a>
+                        <div class="transparent">
+                            <ul>
+                                <li><a href="http://www.aerolineas.com.ar/es-ar/mapa_destinos/destinos">A donde viajar</a></li>
+                                <li><a href="/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D50%26ididioma%3Des">Equipaje</a></li>
+                                <li><a href="/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D43%26ididioma%3Des">Consejos para viajeros</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/es-ar/serviciosespeciales">Asistencia y servicios especiales</a></li>
+                                <li><a href="/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D4%26ididioma%3Des">Nuestros aviones y servicios a bordo</a></li>
+                                <li><a href="/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D27%26ididioma%3Des">Mapa y datos de aeropuertos</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/es-ar/reservas_servicios/salon_condor">Sal&#243;n C&#243;ndor</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/es-ar/sky_team/sky_priority">SkyPriority</a></li>
+                                <li><a href="/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D143%26ididioma%3Des">Clima</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/es-ar/sucursales">Sucursales</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="boton"><img src="Content/themes/V2/img/backgrounds/line.jpg"></img>
+                    </div>
+                    <div class="boton width_1"><a href="http://www.aerolineas.com.ar/es-ar/vuelos_baratos">Vuelos baratos</a>
+                        <div class="transparent">
+                            <ul>
+                                <li><a href="http://www.aerolineas.com.ar/es-ar/vuelos_baratos">Vuelos baratos</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/es-ar/mapa_destinos/destinos">Mapa de destinos</a></li>
+                                <li><a href="/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D228%26ididioma%3Des">Tarifa m&#225;s baja garantizada</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/es-ar/cupones_descuentos">Cupones de descuento</a></li>
+                                <li><a href="/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D169%26ididioma%3Des">Compr&#225; en aerolineas.com</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/es-ar/vuelos_baratos/visite_argentina">Visite Argentina</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/es-ar/vuelos_baratos/south_american_pass">South American Pass</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="boton"><img src="Content/themes/V2/img/backgrounds/line.jpg"></img>
+                    </div>
+                    <div class="boton width_1"><a href="http://www.aerolineas.com.ar/es-ar/aerolineas_plus/nuevo">Aerol&#237;neas Plus</a>
+                        <div class="transparent">
+                            <ul>
+                                <li><a href="http://www.aerolineas.com.ar/es-ar/aerolineas_plus/nuevo">Aerol&#237;neas Plus</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/es-ar/aerolineasplus/acercade">Conoc&#233; Aerol&#237;neas Plus</a></li>
+                                <li><a href="javascript:openFormInscripcionPlus();">Registrate</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/es-ar/aerolineas_plus/mi_cuenta_plus">Mi cuenta Plus</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/es-ar/aerolineas_plus/mi_cuenta_plus">Canjear millas</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/es-ar/cuponesdescuentos/detalles/ar/buenos-aires/3385_argentina-mas-cerca">Millas+Pesos &#161;Argentina+cerca!</a></li>
+                                <li><a href="/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D216%26ididioma%3Des">Tabla de millas</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/es-ar/aerolineas_plus/ganar_millas">Ganar millas</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/es-ar/aerolineas_plus/utilizar_millas">Utilizar millas</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/es-ar/cuponesdescuentos/detalles/ar/buenos-aires/3198_compra-de-millas-aerolineas-plus">Compra de millas </a></li>
+                                <li><a href="/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D234%26ididioma%3Des">Upgrade en canje de millas </a></li>
+                                <li><a href="http://www.aerolineas.com.ar/es-ar/aerolineas_plus/socios_elite">Socios Elite</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/es-ar/aerolineas_plus/informacion_de_interes">Informaci&#243;n de inter&#233;s</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/es-ar/aerolineas-plus/empresas-asociadas">Empresas asociadas</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/es-ar/reservas-servicios/preguntas-frecuentes#ancla-4">FAQs y videos explicativos</a></li>
+                                <li><a href="/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D14%26ididioma%3Des">Condiciones de uso </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="boton"><img src="Content/themes/V2/img/backgrounds/line.jpg"></img>
+                    </div>
+                    <div class="boton  width_6"><a href="/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D167%26ididioma%3Des">Corporativo</a>
+                        <div class="transparent">
+                            <ul>
+                                <li><a href="/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D33%26ididioma%3Des">Acuerdos corporativos</a></li>
+                                <li><a href="/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D36%26ididioma%3Des">Ferias y congresos</a></li>
+                                <li><a href="/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D60%26ididioma%3Des">Club Secretarias</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                    function openFormInscripcionPlus() {
+                        document.getElementById('ifrInscripcion').src = 'https://ftarplus.aerolineas.com.ar/plus/PlusRealNewDic/index.php?secc=11&idi=es&idSitio=AR';
+                        document.getElementById('pop2').style.display = 'block';
+                        document.getElementById('fondo-negro').style.display = 'block';
+                    }
+
+                    function closeFormInscripcionPlus() {
+                        document.getElementById('ifrInscripcion').src = '';
+                        document.getElementById('pop2').style.display = 'none';
+                        document.getElementById('fondo-negro').style.display = 'none';
+                    }
+                    </script>
+                    <div id="fondo-negro"></div>
+                    <div id="pop2" style="height:880px;">
+                        <p>
+                            <a href="javascript:closeFormInscripcionPlus()">
+                                <img src="Content/themes/V2/img/buttons/x_btn.jpg" class="fright mright5" alt="Cerrar" />
+                            </a>
+                        </p>
+                        <p class="tituloplus_linea" style="padding-bottom:10px;">INSCRIPCIÓN <span class="gris2">ONLINE</span></p>
+                        <p>Para inscribirte en el Programa de Pasajeros Frecuentes Aerol&iacute;neas Argentinas Plus, complet&aacute; el formulario a continuaci&oacute;n y conocé las Condiciones
+                            <br>Generales del Programa antes de hacer click en <strong>ACEPTAR</strong>.</p>
+                        <iframe width="800" id="ifrInscripcion" height="800" src="" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+            <!-- / NAVBAR -->
+            <div style="background-color: #FFF; height: 50px; position: relative;">
+                <div id="buscador_principal" style="text-align: center;">
+                    <div>
+                        <input class="buscador_plus" type="button" value="Ingres&#225; a tu cuenta Aerol&#237;neas Plus" onclick="mostrarElemento('loginPlus');return false;" style="cursor:pointer;" />
+                    </div>
+                </div>
+                <form action="/es-AR/loginarplus/submitted" id="frmLoginARPlus" method="post" name="frmLoginARPlus" onsubmit="return false;">
+                    <div id="loginPlus" class="pop-form-arplus" style="display: none; padding: 0; top: 20px;border: 0px solid black;">
+                        <div style="margin: 32px auto 0 auto; width: 375px; border: 0px solid black;">
+                            <p class="mleft10 azul" style="height: 16px;">
+                                <strong class="fleft">Ingresar a mi cuenta</strong>
+                                <img src="Content/themes/V2/img/common/ico_cerrar.png" onclick="mostrarElemento('loginPlus');" class="fright mright4" style="cursor:pointer;" />
+                            </p>
+                            <div class="mleft10">
+                                <input class="width170 redondeado" id="NroSocio" name="NroSocio" type="text" value="" />
+                                <input class="width160 redondeado mleft10" id="Clave" name="Clave" type="password" />
+                            </div>
+                            <div class="mleft10 fleft width170">
+                                <ul>
+                                    <li> <a class="gris11" href="/es-ar/aerolineas_plus/mi_cuenta_plus/olvidastetunrosocio" style="font-weight:bold;font-size:10px;">Olvidaste tu N&#186; de Socio?</a></li>
+                                </ul>
+                            </div>
+                            <div class="mleft17 fleft width128" style="border: 0px solid black; line-height: 10px;">
+                                <ul>
+                                    <li><a class="gris11" href="/es-ar/aerolineas_plus/mi_cuenta_plus/primeravez" style="font-weight:bold;font-size:10px;">Primera vez que ingreso</a></li>
+                                    <li><a class="gris11" href="/es-ar/aerolineas_plus/mi_cuenta_plus/olvidastetuclave1" style="font-weight:bold;font-size:10px;">Olvidaste tu Clave?</a></li>
+                                </ul>
+                            </div>
+                            <div class="fright mtop15">
+                                <input type="submit" value="OK" class="boton_ok redondeado btnLoginARPlus mright8" />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- / LOGIN AR PLUS -->
+                <div style="float: left; width: 700px; margin-left: 10px; margin-top: 10px; margin-bottom: 10px;">
+                    <div class="gris12"><a href='https://es.research.net/s/FXFMC8C' target='_blank' class='link'>Danos tu opini&#243;n sobre nuestro sitio</a></div>
+                </div>
+                <div style="margin-left: 5px; width: 700px">
+                    <p class="breadcrumb">
+                        <a href="/es-ar">aerolineas.com</a> >
+                        <a href="http://www.aerolineas.com.ar/es-ar/aerolineas_plus/nuevo">Aerol&#237;neas Plus</a> >
+                        <a href="http://www.aerolineas.com.ar/es-ar/aerolineas_plus/ganar_millas">Acreditación de vuelos realizados</a>
+                    </p>
+                </div>
+            </div>
+        </header>
+        <div>
+            <section>
+                <div class="salto"></div>
+                <!--contenedor-->
+                <div id="contenedor_arplus_fix" class="fleft" style="width: 806px;">
+                    <h1 class="tituloplus4 mleft15">Acreditación de vuelos realizados</h1>
+                    <div id="tab-container" class="tab-container">
+                        <ul class='etabs'>
+                            <li class='tab'><a href="#Vuelos-Aerolineas-Argentinas">Vuelos Aerolíneas Argentinas</a></li>
+                            <li class='tab'><a href="#Vuelos-SkyTeam">Vuelos SkyTeam</a></li>
+                            <li class='tab'><a href="#Vuelos-otras">Vuelos de otras compa&#241;&#237;as</a></li>
+                        </ul>
+                        <div id="Vuelos-Aerolineas-Argentinas" class="tab-content">
+                            <p class="gris12 mtop0" >
+                                Si no informaste tu número de socio Aerolíneas Plus, podés acreditar las millas del tramo volado tomando en cuenta lo siguiente:
+                                <br>
+                                <br> -que los vuelos deben ser realizados a partir de la fecha de inscripción al programa.
+                                <br> -que los vuelos deben ser acreditados a partir de los 30 días y hasta 180 días posteriores de realizados los mismos.
+                                <br>
+                                <br> Ingresá a "<a href="http://www.aerolineas.com.ar/es-ar/aerolineas_plus/mi_cuenta_plus" target="_blank">Mi cuenta Plus</a>"
+                            </p>
+                        </div>
+                        <div id="Vuelos-SkyTeam" class="tab-content">
+                            <h2 class="tituloplus">Cómo proceder si no se acreditaron millas de vuelos realizados con compañías SkyTeam</h2>
+                            <p>
+                                Si deseás acreditar las millas de vuelos realizados por alguna de las compañías de SkyTeam, te recordamos para un futuro viaje, que deberás informar tu número de Socio antes de viajar, al efectuar la reserva y al realizar el check in, si aún así no fueron acreditadas las millas, deberás primeramente verificar si la clase (tarifa abonada) acredita millas consultá aquí. de ser así, deberás enviar en un plazo no mayor a 6 meses de realizado el viaje, la siguiente documentación escaneada en formato .JPG ó .PDF a <a href="mailto:creditosSkyTeam@aerolineas.com.ar">creditosSkyTeam@aerolineas.com.ar</a>
+                            </p>
+                            <ul>
+                                <li>• Boarding Pass</li>
+                                <li>• Número de Socio</li>
+                                <li>• Copia del ticket electrónico (donde figuren detalladas las clases o tarifas abonadas)</li>
+                            </ul>
+                            <p style="color:#ff0000;">
+                                <strong>Importante: Podrás acreditar las millas dentro de los 6 meses de realizado el viaje con la documentación antes mencionada, transcurrido dicho período, o de no recibir la documentación requerida, las millas no podrán ser acreditadas.</strong>
+                            </p>
+                            <p>Si tenes el siguiente itinerario, en el cual no figura la clase, sino que solo se informa que el ticket pertenece a la cabina económica, no se realizará el crédito de millas:
+                            </p>
+                            <p><img alt="" src="http://www.aerolineas.com.ar/Images/E-commerce/Alitalia10.png" style="margin-left: 30px; margin-right: 30px; width: 618px; height: 245px;"></p>
+                            <p>El ticket o itinerario que debes enviar es el que tiene alguno de los siguientes formatos:</p>
+                            <p>En el momento de la compra del ticket podes recibir un mail en el que se adjunte el siguiente detalle donde figura la clase:</p>
+                            <p><img alt="" src="http://www.aerolineas.com.ar/Images/E-commerce/Alitalia11.png" style="width: 579px; height: 188px; margin-left: 30px; margin-right: 30px;"></p>
+                            <p><strong>En caso de requerir el comprobante del ticket en una oficina, el formato sería el siguiente:</strong></p>
+                            <p><img alt="" src="http://www.aerolineas.com.ar/Images/E-commerce/Alitalia .png" style="width: 575px; height: 127px; margin-left: 30px; margin-right: 30px;"></p>
+                            <p>Sin toda esta documentación no será posible acreditar las millas.
+                                <br> Si ya efectuaste la presentación o reclamo del crédito de millas y aún no las ves reflejadas en tu cuenta es probable que la documentación enviada&nbsp; no sea la correcta o no este completa. En el caso de una negativa por parte de la otra compañía te lo informaremos vía mail.</p>
+                        </div>
+                        <div id="Vuelos-otras" class="tab-content">
+                            <h2 class="tituloplus">Cómo proceder si no se acreditaron millas de vuelos realizados con Gol Líneas Aéreas</h2>
+                            <div class="fleft  mtop10 " style="width: 740px;">
+                                <p>Si deseás acreditar las millas de vuelos realizados por Gol Líneas Aéreas, te recordamos para un futuro viaje, que deberás informar tu número de Socio antes de viajar, al efectuar la reserva y al realizar el check in, si aún así no fueron acreditadas las millas, deberás primeramente verificar si la clase (tarifa abonada) acredita millas consultá aquí. de ser así, deberás enviar si se trata de un vuelo de Gol en un plazo no mayor a 6 meses de realizado el viaje, la siguiente documentación escaneada en formato .JPG ó .PDF a <a href="mailto:creditosSkyTeam@aerolineas.com.ar">creditosSkyTeam@aerolineas.com.ar</a>
+                                    <br>
+                                    <ul>
+                                        <li>• Boarding Pass</li>
+                                        <li>• Número de Socio</li>
+                                        <li>• Copia del ticket electrónico (donde figuren detalladas las clases o tarifas abonadas)</li>
+                                    </ul>
+                                    <p><strong style="color: rgb(255, 0, 0);">Importante: Podrás acreditar las millas dentro de los 6 meses de realizado el viaje con la documentación antes mencionada, transcurrido dicho período, o de no recibir la documentación requerida, las millas no podrán ser acreditadas.</strong></p>
+                                    <p>Si tenes el siguiente itinerario, en el cual no figura la clase, sino que solo se informa que el ticket pertenece a la cabina económica, no se realizará el crédito de millas:</p>
+                                    <p><img alt="" src="http://www.aerolineas.com.ar/Images/E-commerce/archivo-gol01.jpg" style="width: 624px; height: 256px; margin-left: 30px; margin-right: 30px;"></p>
+                                    <p>El ticket o itinerario que debes enviar es el que tiene alguno de los siguientes formatos:</p>
+                                    <p>En el momento de la compra del ticket podes recibir un mail en el que se adjunte el siguiente detalle donde figura la clase:</p>
+                                    <p><img alt="" src="http://www.aerolineas.com.ar/Images/E-commerce/archivo-gol04.jpg" style="width: 501px; height: 94px; margin-left: 30px; margin-right: 30px;"></p>
+                                    <p> <strong>En caso de requerir el comprobante del ticket en una oficina, el formato sería el siguiente:</strong></p>
+                                    <p><img alt="" src="http://www.aerolineas.com.ar/Images/E-commerce/archivo-gol03.jpg" style="width: 556px; height: 377px; margin-left: 30px; margin-right: 30px;"></p>
+                                    <p>Sin toda esta documentación no será posible acreditar las millas.
+                                        <br> Si ya efectuaste la presentación o reclamo del crédito de millas y aún no las ves reflejadas en tu cuenta es probable que la documentación enviada&nbsp; no sea la correcta o no este completa. En el caso de una negativa por parte de la otra compañía te lo informaremos vía mail.</p>
+                            </div>
+                        </div>
+                     
+                    </div>
+                    <!--segunda columna-->
+                </div>
+                <!--tercer columna-->
+                <div class="fleft col_derecha_sky ml10  mtop42"></div>
+                <!--
+                <div id="div_flotante">
+                    <div class="tituloplus2  mtop35 mleft65     ">Informes
+                        <p class="azul  mtop35  ">
+                            <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=7&amp;idIdioma=es">0810-222-86527                                                                                                                                                                                         </a>
+                        </p>
+                        <p class="azul  mtop26 "><a target="_blank" href="mailto:arplus@aerolineas.com.ar">arplus@aerolineas.com.ar</a> </p>
+                    </div>
+                </div>
+                -->
+                <!--CONTENEDOR-->
+            </section>
+            <div id="bannerRelacionadoFooter" style="margin-left: 8px !important">
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <footer>
+            <!--pie-->
+            <script type="text/javascript">
+            function abrirAustral() {
+                window.open('http://www.austral.com.ar/index.asp?idSitio=AR&idIdioma=es', 'Austral', 'scrollbars=yes, resizable=1,width=1020,height=805');
+            }
+
+            function popup_condiciones_transporte() {
+                var winC = window.open('http://ww1.aerolineas.com.ar/arg/bodies/CondicionesGrales_contratoTransporte.asp?idSitio=AR&idIdioma=es', 'wContr', 'scrollbars=yes, resizable=1,width=800,height=600');
+                winC.moveTo(0, 0);
+            }
+            </script>
+            <div id="pie">
+                <div class="ml10  mtop15">
+                    <div class="azul fleft mtop20">
+                        <a href='http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=152&amp;idIdioma=es                       ' target='' class='link'>Proveedores                                                                                         </a> <span> | </span>
+                        <a href='http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=111&amp;idIdioma=es                       ' target='' class='link'>Conoc&#233; el estado de tu vuelo                                                                        </a> <span> | </span>
+                        <a href='http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=50&amp;idIdioma=es                        ' target='' class='link'>Equipaje                                                                                            </a> <span> | </span>
+                        <a href='http://www.aerolineas.com.ar/es-AR/AerolineasMovil' target='' class='link'>Aerol&#237;neas M&#243;vil</a> <span> | </span>
+                        <a href='http://cargo.aerolineas.com.ar/es-ar' target='' class='link'>Cargas                                                                                              </a> <span> | </span>
+                    </div>
+                    <div class=" fright mright15 mtop15">
+                        <div class="fb-like mbot5" data-href="http://www.facebook.com/aerolineas.argentinas" data-send="false" data-layout="button_count" data-width="77" data-show-faces="false" data-font="arial"></div>
+                        <a href="https://www.facebook.com/Aerolineas.argentinas" target="_blank">
+                            <img src="Content/themes/V2/img/common/ic-facebook.gif" alt="Facebook" width="22" height="22" border="0" /></a>
+                        <a href="http://twitter.com/Aerolineas_AR/" target="_blank">
+                            <img src="Content/themes/V2/img/common/ic-Twitter.jpg" alt="Twitter" width="22" height="22" border="0" /></a>
+                        <a href="http://www.linkedin.com/company/aerolineas-argentinas" target="_blank">
+                            <img src="Content/themes/V2/img/common/ic-linkedin.jpg" alt="Linkedin" width="22" height="22" border="0" /></a>
+                        <a href="https://plus.google.com/106198199507305429358/posts" target="_blank">
+                            <img src="Content/themes/V2/img/common/ic-gplus.gif" alt="Facebook" width="22" height="22" border="0" /></a>
+                        <a href="http://www.youtube.com/user/AerolineasAR" target="_blank">
+                            <img src="Content/themes/V2/img/common/ic-YouTube.gif" alt="Youtube" width="22" height="22" border="0" /></a>
+                    </div>
+                    <br clear="all" />
+                </div>
+                <div class="div">
+                    <input type="hidden" id="hostId" value="RMOHF55EVHGVO5RD4XKIKFPRXY" />
+                </div>
+                <div class="div_pie">
+                    <div class="div_links">
+                        <div class="div_partner">
+                            <img src="Content/themes/V2/img/common/footer-logoAustral.gif" alt="Logo Austral" onclick="abrirAustral();" style="cursor:pointer;" />
+                        </div>
+                        <div class="div_partner">
+                            <a href="http://www.jetpaq.com.ar" target="_blank">
+                                <img src="Content/themes/V2/img/common/footer-logoJetPaq.gif" alt="Logo JetPaq" border="0" />
+                            </a>
+                        </div>
+                        <div class="div_partner">
+                            <a href="/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D9%26ididioma%3Des" title=""><img alt="@MainFooterResource.Aerohandling_Logo" src="Content/themes/V2/img/common/footer-logoAerohandling.gif" /></a>
+                        </div>
+                        <div class="div_partner">
+                            <img src="Content/themes/V2/img/common/footer-logoOptar.gif" alt="Logo Optar" border="0" />
+                        </div>
+                        <div class="div_partner mtop7 mleft20"><img src="Content/themes/V2/img/common/logo_arg.jpg" alt="Logo Aerol&#237;neas Argentinas" width="47" height="30" />
+                        </div>
+                        <div class="div_partner mtop14 mleft25"><img src="Content/themes/V2/img/common/argentina_tumundob.jpg" alt="Logo Aerol&#237;neas Argentinas - Un pa&#237;s con buena gente" />
+                        </div>
+                    </div>
+                    <br clear="all" />
+                    <div class="codigo-qr">
+                        <a href="https://servicios1.afip.gov.ar/clavefiscal/qr/mobilePublicInfo.aspx?req=e1ttZXRob2Q9Z2V0UHVibGljSW5mb11bcGVyc29uYT0zMDY0MTQwNTU1NF1bdGlwb2RvbWljaWxpbz0wXVtzZWN1ZW5jaWE9MF1bdXJsPWh0dHA6Ly93d3cuYWVyb2xpbmVhcy5jb20uYXJdfQ==" target="_F960AFIPInfo">
+                            <img src="Content/themes/V2/img/common/qr_code.gif" alt="QR-Code" />
+                        </a>
+                    </div>
+                    <div class="pie_texto">
+                        <span>aerolineas.com Sitio Oficial de Aerolineas Argentinas. &#169; 1996 - 2015 Aerol&#237;neas Argentinas S.A.<br />
+                            <a class="pie" href="/es-ar/legales/terminoscondiciones">Legales</a> |
+                            
+                            <a class="pie" href="#" onclick="popup_condiciones_transporte();"> Condiciones Generales de Transporte </a>|
+                            <a class="pie" href="/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D94%26ididioma%3Des">Mapa del Sitio</a> |
+                            <a class="pie" href="/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D84%26ididioma%3Des">Ud. est&#225; en un SITIO SEGURO</a> 
+                        </span>
+                    </div>
+                </div>
+                <div class="div_borde">
+                    <img src="Content/themes/V2/img/backgrounds/footer-right.gif" alt="" />
+                </div>
+            </div>
+            <!--fin de pie-->
+        </footer>
+    </div>
+    <!-- jQuery EasyTabs plugin -->
+    <script src="Content/js/jquery.hashchange.min.js" type="text/javascript"></script>
+    <script src="Content/js/jquery.easytabs.min.js" type="text/javascript"></script>
+    <script>
+    $(document).ready(function() {
+        $('#tab-container').easytabs();
+
+    });
+    </script>
+    <!-- /jQuery EasyTabs plugin -->
+</body>
+
+</html>

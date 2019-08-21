@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Web Check-in - aerolineas.com</title>
+    <meta http-equiv="title" content="SkyPriority en Aerol&#237;neas Argentinas - aerolineas.com">
+    <meta name="Description" content="SkyPriority conjunto de beneficios que le permitir&#225;n tener una experiencia en los aeropuertos m&#225;s &#225;gil y placentera">
+    <link href="Images/condor_chico.gif" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="Content/themes/V2/css/screen.css" rel="stylesheet" />
+    <link href="Content/themes/V2/css/estilo.css" rel="stylesheet" />
+    <link href="Content/themes/V2/css/form_argentina.css" rel="stylesheet" />
+    <link href="Content/themes/V2/css/form_argentina_home.css" rel="stylesheet" />
+    <link href="Content/themes/V2/css/Extras.css" rel="stylesheet" />
+    <link href="Content/themes/V2/Error.css" rel="stylesheet" />
+    <link href="Content/themes/V2/jquery-ui-timepicker-addon.css" rel="stylesheet" />
+    <link href="Content/themes/V2/jquery.ui.core.css" rel="stylesheet" />
+    <link href="Content/themes/V2/jquery.ui.resizable.css" rel="stylesheet" />
+    <link href="Content/themes/V2/jquery.ui.selectable.css" rel="stylesheet" />
+    <link href="Content/themes/V2/jquery.ui.accordion.css" rel="stylesheet" />
+    <link href="Content/themes/V2/jquery.ui.autocomplete.css" rel="stylesheet" />
+    <link href="Content/themes/V2/jquery.ui.button.css" rel="stylesheet" />
+    <link href="Content/themes/V2/jquery.ui.dialog.css" rel="stylesheet" />
+    <link href="Content/themes/V2/jquery.ui.slider.css" rel="stylesheet" />
+    <link href="Content/themes/V2/jquery.ui.tabs.css" rel="stylesheet" />
+    <link href="Content/themes/V2/jquery.ui.datepicker.css" rel="stylesheet" />
+    <link href="Content/themes/V2/jquery.ui.progressbar.css" rel="stylesheet" />
+    <link href="Content/themes/V2/jquery.ui.theme.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.8.3.js"></script>
+    <script src="Scripts/jquery-ui-1.9.2.js"></script>
+    <script src="Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script src="Scripts/jquery.validate.js"></script>
+    <script src="Scripts/modernizr-2.5.3.js"></script>
+    <script src="Scripts/funcionesVarias.js"></script>
+    <script src="Scripts/jquery.watermark.js"></script>
+
+    <style>
+    .pop-terminos {
+            right: 0;
+    left: 0;
+    margin: auto;
+    }
+    .pop-terminos h1{
+            font-family: Neo_san, Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    width: 99%;
+    border-bottom: solid 1px #0584c7;
+    color: #0584c7;
+    }
+    </style>
+   
+</head>
+
+<body>
+    <!-- CONTENEDOR -->
+
+    
+   
+    <div id="contenedor_home">
+    
+        <header>
+            <div id="fecha" align="right">
+                <table width="1002px">
+                    <tr>
+                        <td align="left">
+                            <!--Localizacion-->
+                            <div id="Country">
+                            </div>
+                            <!--fin de Localizacion-->
+                        </td>
+                        <td align="right">
+                            <!--fecha-->
+                            <div id="fecha2">
+                                <div class="counrty_today_partials">jueves, 18 de abril de 2013</div>
+                            </div>
+                            <!--fin de fecha-->
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br clear="all" />
+            <!--HEADER-->
+            <div id="header" />
+            <div class=" header_borde">
+            </div>
+            <div id="header-left">
+                <a href="#" target="_self">
+                    <a href="" title="Logo Aerolineas Argentinas"><img alt="Logo Aerolineas Argentinas" border="0" height="44px" hspace="0" src="Content/themes/V2/img/common/logo_Aerolineas.gif" vspace="0" width="252px" /></a>
+                </a>
+                <span class="screen-reader-text">
+                Aerolineas.com</span>
+            </div>
+            <div class="fleft">
+                <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=228%26idIdioma=es" title=""><img alt="" src="Content/themes/V2/img/buttons/Sello.png" /></a>
+            </div>
+            <div align="right" id="logo-header">
+                <div class=" width300   fleft  mleft100 mtop5">
+                    <a href="" title="Logo Aerolineas Argentinas"><img alt="Logo Aerolineas Argentinas" border="0" height="42px" hspace="0" src="Content/themes/V2/img/common/aerolineas_argentinasST.jpg" vspace="0" width="100px" /></a>
+                    <a href="http://www.skyteam.com//es" target="blank" title=""><img alt="" src="Content/themes/V2/img/common/skyteam.jpg" /></a>
+                </div>
+                <div class=" fleft mtop10 ">
+                    <!--select paises-->
+                    <div id="CultureContainer">
+                        <select class="INPUTBuscador" id="culture" name="culture" onChange="onCultureChanged()" style="width: 150px; margin-left: 10px;">
+                            <option selected="selected" value="es-AR">Argentina (Espa&#241;ol)</option>
+                            <option value="en-AR">Argentina (Ingl&#233;s)</option>
+                            <option value="en-AU">Australia</option>
+                            <option value="es-BO">Bolivia</option>
+                            <option value="pt-BR">Brasil</option>
+                            <option value="en-CA">Canad&#225;</option>
+                            <option value="es-CO">Colombia</option>
+                            <option value="es-CL">Chile</option>
+                            <option value="es-EU">Europa (Espa&#241;ol)</option>
+                            <option value="it-EU">Europa (Italiano)</option>
+                            <option value="en-EU">Europa (English)</option>
+                            <option value="es-MX">M&#233;xico</option>
+                            <option value="en-NZ">New Zeland</option>
+                            <option value="es-PA">Paraguay</option>
+                            <option value="es-PE">Per&#250; (Espa&#241;ol)</option>
+                            <option value="es-UY">Uruguay</option>
+                            <option value="es-US">United States (Espa&#241;ol)</option>
+                            <option value="en-US">United States (English)</option>
+                            <option value="es-VE">Venezuela</option>
+                            <option value="es-US">Otros pa&#237;ses (Espa&#241;ol)</option>
+                            <option value="en-US">Other Countries (English)</option>
+                        </select>
+                    </div>
+                    <!--fin de select paises-->
+                </div>
+                <div class="width400 mtop25 clearing">
+                    <p>
+                        <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=58%26idIdioma=es">Cont&#225;ctanos</a>
+                        <img src="Content/themes/V2/img/buttons/mail.gif" alt="Cont&#225;ctanos" border="0" class="imgCont" />
+                        <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=7&idIdioma=es">0800-000-0000</a>
+                    </p>
+                </div>
+            </div>
+            <!-- /HEADER -->
+            <br clear="all" />
+            <a name="startcontent" id="startcontent"></a>
+            <!-- NAVBAR -->
+            <div id="navbar">
+                <div id="botonera">
+                    <div class="boton  width_6">
+                        <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=164%26idIdioma=es">La Empresa</a>
+                        <div class="transparent">
+                            <ul>
+                                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=2%26idIdioma=es">Conocenos</a></li>
+                                <li><a href="SkyTeamAcercaDe.htm">Alianza SkyTeam</a></li>
+                                <li><a href="SkyTeamSkyPriority.htm">SkyPriority</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=239%26idIdioma=es">Aerol&#237;neas Hoy</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=82%26idIdioma=es">Recursos Humanos</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=68%26idIdioma=es">Prensa</a></li>
+                                <li><a href="http://blog.aerolineas.com.ar/blog/" target="_blank">Blog de Noticias</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=152%26idIdioma=es">Proveedores</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="boton">
+                        <img alt="" src="Content/themes/V2/img/backgrounds/line.jpg" />
+                    </div>
+                    <div class="boton width_1">
+                        <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=163%26idIdioma=es">Reservas y Servicios</a>
+                        <div class="transparent">
+                            <ul>
+                                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=110%26idIdioma=es">Compr&#225; tu pasaje</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=29%26idIdioma=es">Horario de vuelos programados</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=111%26idIdioma=es">Estado actual de tu vuelo</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=168%26idIdioma=es">Cheque&#225; tu reserva</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=113%26idIdioma=es">Hac&#233; tu Web Check-in</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=176%26idIdioma=es%26tipo=V">Paquetes Aerol&#237;neas Vacaciones</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/arg/bodies/reservas/htmls/autos.asp?idIdioma=es" target="_blank">Alquiler de Auto</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=163%26idIdioma=es">Alojamiento</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=144%26idIdioma=es">Constancia de cr&#233;dito fiscal</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/arg/bodies/popup_reembolsoBillete.asp?idSitio=AR%26idIdioma=es" target="_blank">Devoluci&#243;n de pasajes</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="boton">
+                        <img alt="" src="Content/themes/V2/img/backgrounds/line.jpg" />
+                    </div>
+                    <div class="boton width_1">
+                        <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=163%26idIdioma=es">Info para tu viaje</a>
+                        <div class="transparent">
+                            <ul>
+                                <li><a href="MapaDestinos.htm">A d&#243;nde viajar</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=50%26idIdioma=es">Equipaje</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=43%26idIdioma=es">Documentaci&#243;n para tu viaje</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=22%26idIdioma=es">Info de servicios especiales</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=44%26idIdioma=es">Embarque de Menores, Embarazadas y Mascotas</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=4%26idIdioma=es">Nuestros aviones y servicios a bordo</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=27%26idIdioma=es">Mapa y datos de Aeropuertos</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=7%26idIdioma=es">Sucursales</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="boton ">
+                        <img alt="" src="Content/themes/V2/img/backgrounds/line.jpg" />
+                    </div>
+                    <div class="boton width_2 ">
+                        <a href="VuelosBaratosModulos">Vuelos baratos</a>
+                        <div class="transparent">
+                            <ul>
+                                <li><a href="MapaDestinos.htm">Mapa de destinos</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=228%26idIdioma=es">Tarifa m&#225;s baja garantizada</a></li>
+                                <li><a href="CuponesDescuentosHome.htm">Cupones de descuento</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=169%26idIdioma=es">Compr&#225; en aerolineas.com</a></li>
+                                <li><a href="VisiteArgentina.htm">Visite Argentina</a></li>
+                                <li><a href="SouthAmericanPass.htm">South American Pass</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="boton">
+                        <img alt="" src="Content/themes/V2/img/backgrounds/line.jpg" />
+                    </div>
+                    <div class=" boton width_1">
+                        <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=15%26idIdioma=es">Aerol&#237;neas Plus</a>
+                        <div class="transparent">
+                            <ul>
+                                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=245%26idIdioma=es">Nuevo Aerol&#237;neas Plus</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=15%26idIdioma=es">Acerca de Aerol&#237;neas Plus</a></li>
+                                <li><a href="javascript:openFormInscripcionPlus()">Registrate</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=77%26idIdioma=es">Mi cuenta Plus</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=216%26idIdioma=es">Nueva tabla de millas</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=223%26idIdioma=es">Ganar millas</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=225%26idIdioma=es">Utilizar millas</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=227%26idIdioma=es">Compra de millas</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=234%26idIdioma=es">Upgrade en Canje de Millas</a></li>
+                                <li><a href="CuponesDescuentosHome.htm">Beneficios</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=192%26idIdioma=es">Socios Elite</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=18%26idIdioma=es">Informaci&#243;n de Inter&#233;s</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=56%26idIdioma=es">Empresas Asociadas</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=103%26idIdioma=es">Preguntas Frecuentes</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=14%26idIdioma=es">Condiciones de Uso</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="boton">
+                        <img alt="" src="Content/themes/V2/img/backgrounds/line.jpg" />
+                    </div>
+                    <div class="boton width_6">
+                        <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=167%26idIdioma=es">Corporativos</a>
+                        <div class="transparent">
+                            <ul>
+                                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=33%26idIdioma=es">Acuerdos Corporativos</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=36%26idIdioma=es">Ferias y Congresos</a></li>
+                                <li><a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=60%26idIdioma=es">Club Secretarias</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                    function openFormInscripcionPlus() {
+                        document.getElementById('ifrInscripcion').src = 'https://ftarplus.aerolineas.com.ar/plus/PlusRealNewDic/index.php?secc=11&idi=es&idSitio=AR';
+                        document.getElementById('pop2').style.display = 'block';
+                        document.getElementById('fondo-negro').style.display = 'block';
+                    }
+
+                    function closeFormInscripcionPlus() {
+                        document.getElementById('ifrInscripcion').src = '';
+                        document.getElementById('pop2').style.display = 'none';
+                        document.getElementById('fondo-negro').style.display = 'none';
+                    }
+                    </script>
+                    <div id="fondo-negro"></div>
+                    <div id="pop2" style="height:880px;">
+                        <p>
+                            <a href="javascript:closeFormInscripcionPlus()">
+                                <img src="Content/themes/V2/img/buttons/x_btn.jpg" class="fright mright5" alt="Cerrar" />
+                            </a>
+                        </p>
+                        <h3 class="tituloplus_linea" style="padding-bottom:10px;">INSCRIPCIÓN <span class="gris2">ONLINE</span></h3>
+                        <p>Para inscribirte en el Programa de Pasajeros Frecuentes Aerol&iacute;neas Argentinas Plus, complet&aacute; el formulario a continuaci&oacute;n y conocé las Condiciones
+                            <br>Generales del Programa antes de hacer click en <strong>ACEPTAR</strong>.</p>
+                        <iframe width="800" id="ifrInscripcion" height="800" src="" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+            <!-- / NAVBAR -->
+            <div style="background-color:#FFF;height:50px;position:relative;">
+                <!-- LOGIN AR PLUS -->
+                <script type="text/javascript">
+                var url_loginARPlus = 'https://ftarplus.aerolineas.com.ar/plus/PlusRealNewDic/aplicaciones/ajax/login_step1.php?callback=?';
+                var url_loginOk = '/es-AR/LoginARPlus/LoginOk?Nombre=_NOMBRE_&Socio=_SOCIO_';
+                $(function() {
+                    $('#frmLoginARPlus').validate({
+                        rules: {
+                            NroSocio: 'required',
+                            Clave: 'required'
+                        },
+                        messages: {
+                            NroSocio: 'Debe ingresar el campo "Número Socio"',
+                            Clave: 'Debe ingresar el campo "Clave"'
+                        },
+                        onkeyup: false,
+                        onfocusout: false,
+                        onclick: false,
+                        showErrors: function(errMap, errList) {
+                            if (errList.length) {
+                                alert(errList[0].message);
+                            }
+                        },
+                        submitHandler: function(form) {
+                            $.getJSON(url_loginARPlus, {
+                                nrosocio: $("#NroSocio").val(),
+                                clave: $("#Clave").val()
+                            }, function(data) {
+                                if (parseInt(data.isOk, 10)) {
+                                    url_loginOk = url_loginOk.replace("_NOMBRE_", data.nombre).replace("_SOCIO_", data.socio).replace("&", "&");
+                                    $.get(url_loginOk, null, function(response) {
+                                        window.location = 'http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=77&idIdioma=es';
+                                    });
+                                }
+                            });
+                        }
+                    });
+                });
+                </script>
+                <div id="buscador_principal" style="text-align:center;">
+                    <div>
+                        <input class="buscador_plus" type="button" value="Ingres&#225; a tu cuenta Aerol&#237;neas Plus" onclick="mostrarElemento('loginPlus');return false;" style="cursor:pointer;" />
+                    </div>
+                </div>
+                <form action="/es-AR/LoginARPlus/Submitted" id="frmLoginARPlus" method="post" name="frmLoginARPlus" onsubmit="return false;">
+                    <div id="loginPlus" class="pop-form-arplus" style="display:none;padding:0;top:20px;">
+                        <div style="margin:37px auto 0 auto;width:375px;">
+                            <p class="mleft10 azul" style="height:16px;">
+                                <strong class="fleft">Ingresar a mi cuenta</strong>
+                                <img src="Content/themes/V2/img/common/ico_cerrar.png" onclick="mostrarElemento('loginPlus');" class="fright mright4" style="cursor:pointer;" />
+                            </p>
+                            <div class="mleft10">
+                                <input class="width170 redondeado" id="NroSocio" name="NroSocio" type="text" value="" />
+                                <input class="width160 redondeado mleft10" id="Clave" name="Clave" type="password" />
+                            </div>
+                            <div class="mleft10 fleft width170">
+                                <ul>
+                                    <li><a class="gris11" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=77%26idIdioma=es%26olvidastetuclave=1">No puedo ingresar en mi cuenta</a></li>
+                                    <li><a class="gris11" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=77%26idIdioma=es%26olvidastetunrosocio=1">Olvidaste tu N&#186; de Socio?</a></li>
+                                </ul>
+                            </div>
+                            <div class="mleft17 fleft width170">
+                                <ul>
+                                    <li><a class="gris11" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=77%26idIdioma=es%26primeravez=1">Primera vez que ingreso</a></li>
+                                </ul>
+                            </div>
+                            <div class="fright">
+                                <input type="submit" value="OK" class="boton_ok redondeado btnLoginARPlus mright8" />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- / LOGIN AR PLUS -->
+                <div style="float: left; width: 700px; margin-left: 10px; margin-top: 10px">
+                    <span class="gris12"><a href='http://www.aerolineas.com.ar' target='' class='link'>Importante! Presentaci&#243;n en Aeropuertos: Vuelos Nacionales 2 hs antes. Vuelos Internacionales 3 hs antes</a></span>
+                </div>
+            </div>
+        </header>
+        <div>
+            <section>
+                <div class="salto"></div>
+                <div id="newcont" class="fleft">
+                <div id="terminosCondiciones" class="pop-terminos" style="display: none;">
+        <a class="close-btn" href="#" onclick="mostrarElemento('terminosCondiciones');return false;">X</a>
+        <h1>Términos y Condiciones</h1>
+        <div class="detalle" style="overflow: auto">
+           
+                            <p><strong>Las tarifas expresadas en pesos (ARS) para vuelos dentro de Argentina sólo son válidas para residentes en el país y para compras realizadas dentro del territorio argentino. Si no sos residente argentino por favor, hacé tu reserva ingresando a la página web de tu país de residencia.</strong>
+                            
+                            </p>
+                            <h4 class="TxtAzul11">Sistema de Reservas de Aerolíneas Argentinas y Austral</h4>
+                            <p>Antes de efectuar tu reserva o consultar nuestros horarios y tarifas, te sugerimos leer atentamente las siguientes condiciones generales de nuestro Sistema de Reservas y compras On-line.</p>
+                            <p><strong>1. Consultas</strong></p>
+                            <ul class="arrow">
+                                <li><p>Para consultar horarios, disponibilidad y tarifas de los vuelos de Aerolíneas Argentinas y Austral, no es necesario que dejes tus datos personales ni tu número de tarjeta de crédito.</p></li>
+                            </ul>
+                            <p><strong>2. Reservas</strong></p>
+                            <ul class="arrow">
+                                <li><p>Podés reservar pasajes en vuelos de Aerolíneas Argentinas y Austral hasta un máximo de 9 (nueve) pasajeros.</p></li>
+                                <li><p>Luego de realizada la reserva on-line, obtendrás automáticamente un <strong>código de reserva </strong> (con vencimiento para la emisión) y recibirás un mail con los datos de tu reserva.</p>
+                                </li>
+                                <li><p>Para asegurarte la obtención de los pasajes a la tarifa estimada, los mismos deben adquirirse en el país de origen.</p></li>
+                            </ul>
+                            <p><strong>3. Pagos y Emisión</strong></p>
+                            <p><strong>Pago y emisión on-line</strong></p>
+                            <ul class="arrow">
+                                <li><p><strong>Todos los pasajeros que compren su pasaje en aerolineas.com se ahorran el cargo de gestión. </strong>Sin perjuicio de ello, Aerolíneas Argentinas informa que ciertas promociones o fechas particulares pueden tener cargo de gestión. En dicho caso, al momento de abonar, el precio incluirá el mismo.</p></li>
+                                <li><p>Podrás abonar tus reservas realizadas en nuestra página web dentro de 1 hora de efectuada tu reserva y aquellas reservas efectuadas en nuestras bocas de venta habilitadas hasta 30 minutos antes del vencimiento con tarjetas de crédito American Express, Argencard, Cabal, Diners, MasterCard, Nativa Visa, Nativa MasterCard, Tarjeta Naranja o Visa y también a través de Pago Fácil y Pago Mis Cuentas y emitir tu ticket electrónico. Este servicio está habilitado para todas las rutas operadas por Aerolíneas Argentinas y Austral y el/los tramos con otras compañías con que Aerolíneas Argentinas tiene acuerdo.</p>
+                                </li>
+                                <li><p>En el caso que la reserva no sea abonada vía web, podrás pagar tu ticket en alguna de nuestras sucursales.</p></li>
+                                <li><p>El pago on-line desde / hacia Lima está habilitado únicamente para reservas cuyos vuelos sean posteriores a 7 días corridos de la fecha de creación de la reserva.</p></li>
+                            </ul>
+                            <p><strong>Devoluciones</strong></p>
+                            <ul class="arrow">
+                                <li><p>Si tu tarifa admite devolución, la misma debe solicitarse a través del <a href="http://www.aerolineas.com.ar/es-AR/ReservasServicios/Devolucion" target="_blank">formulario online</a> creado para tal fin. En caso de tratarse de un pago realizado con la modalidad Pago Fácil o Pago Mis Cuentas, ya que el reintegro se realizará en efectivo, recibirás por mail el número de voucher para presentar la devolución en la Oficina de Ventas más cercana. En caso de montos superiores a ARS 10.000 te contactaremos para coordinar el lugar y fecha en que te presentarás, de esta manera nos asegurarnos que la oficina cuente con el efectivo necesario</p></li>
+                               
+                            </ul>
+
+                            <p><strong>Cargos FEE aplicables por cambios</strong></p>
+                                <ul class="arrow">
+                                    <li><p>Consultá <a href="javascript:;" onclick="open('../images/condiciones/fee.png','','width=610, height=340, resizable=yes, scrollbars=yes');" class="TxtAzul11" style="text-decoration:underline;">aquí</a> los cargos (FEE) aplicables por cambios efectuados en el ámbito de la República Argentina que se realicen en tickets con rutas de cabotaje, regionales o internacionales independientemente del lugar de emisión. Los mismos aplican tanto para tarifas de residentes argentinos como de extranjeros.</p></li>
+                                </ul>
+
+                            <p><strong>Menores No Acompañados</strong></p>
+                            <p>Para efectuar una reserva para menores que deban viajar solos deberá comunicarse con nuestro Call Center al 0810-222-VOLAR (86527)</p>
+                            <p><strong>Vuelos Nacionales / Regionales / Internacionales</strong></p>
+                            <ul class="arrow">
+                                <li><p>Los menores de 2 a 5 años sin cumplir deberán viajar obligatoriamente acompañados por sus padres o responsables a cargo. No se podrá optar por el servicio de Menor no acompañado.</p></li>
+                                 <li><p>Los menores de 5 a 12 años sin cumplir:</p>
+                                 <ul>
+                                     <li><p>Viajando sin acompañante: deberán solicitar el servicio de menor no acompañado.</p></li>
+                                     <li><p>Viajando con acompañante mayor de 12 años: No requiere el servicio de menor no acompañado.</p></li>
+                                 </ul></li>
+                            </ul>
+
+                            <p><strong>Artículos restringidos</strong></p>
+                            <ul class="arrow">
+                                <li><p>Hace <a href="javascript:;" onclick="mostrarPopup_objetos()" class="TxtAzul11" style="text-decoration:underline;">click aquí</a> para conocer los objetos que no podrás embarcar ni despachar.</p></li>
+                            </ul>
+
+                            <p><strong>Aviso a pasajeros no residentes en la Argentina</strong></p>
+                            <ul class="arrow">
+                            <li><p>Las tarifas expresadas en pesos (ARS) para vuelos dentro del territorio argentino no se aplican para compras realizadas en el exterior. Sólo se aplican para los residentes en Argentina.</p></li>
+                                <li><p>Consulte <a href="http://www.aerolineas.com.ar/es-AR/ReservasServicios/CargosAdicionales" target="_blank" class="TxtAzul11" style="text-decoration:underline;">aqui</a> los cargos adicionales aplicables para emisiones en otros países.</p></li>
+                            </ul>
+
+                            <p><strong>Responsabilidades</strong></p>
+                            <ul class="arrow">
+                            <li><p>Si el viaje del pasajero incluye un destino o parada en un país que no sea el de salida, se puede aplicar el Convenio de Varsovia y sus modificaciones de los Protocolos de La Haya y Montreal, según corresponda, que en la mayoría de los casos limitan la responsabilidad de los transportadores por muerte o daño personal y con respecto al equipaje dañado o extraviado.</p></li>
+                                <li><p>Si el viaje del pasajero se inicia y termina dentro del territorio argentino, sin escalas previstas en el exterior, se aplica el Código Aeronáutico de la República Argentina que, en la mayoría de los casos, limita la responsabilidad de los transportadores por muerte o daño personal y con respecto al equipaje dañado o extraviado.</p></li>
+                                <li><p>En cuanto no se contrapongan con las normas antedichas, las Condiciones Generales del Contrato de Transporte Aéreo (Resolución 1532/98 MEyOySP) que forman parte de este Contrato y pueden ser consultadas en las oficinas de la empresa, regulan todo lo relativo a los derechos y obligaciones de las partes.</p></li>
+                                 <li><p>Se les recuerda a todos los pasajeros que para realizar su viaje, previo al mismo , deberán consultar la documentación necesaria para salir del país y para desembarcar en el punto de destino, y que se ha cumplido con las regulaciones, disposiciones y requisitos de viaje de los países desde y hacia los cuales se viajará como con las disposiciones del transportador; en caso de no presentar dicha documentación al momento de embarque la empresa podrá denegar el mismo , no haciéndose responsable por los daños que esto le ocasione al pasajero (conf. arts. 8 y 17 de las Condiciones Generales del Transporte Aèreo-Resolución 1532/98 -Anexo I- del ex MEyOySP).</p></li>
+                            </ul>
+                            
+                            <p><strong>Condiciones generales del contrato de transporte</strong></p>
+                            <ul class="arrow">
+                            <p><strong>Deber de información </strong></p>
+                            <p>El presente documento tiene por objeto tener informado al pasajero de sus derechos y obligaciones al momento de contratar los servicios de nuestras compañías haciendo un resumen de los aspectos más importantes de los mismos contemplados en las reglamentaciones vigentes y las regulaciones de las transportadoras Aerolíneas Argentinas S.A. y Austral Líneas Aéreas – Cielos del Sur S.A. </p>
+                            
+                            <p><strong>Autoridad de aplicación </strong></p>
+                            <p>La aeronáutica comercial se encuentra regida por la Autoridad Aeronáutica, que en la República Argentina es la Administración Nacional de Aviación Civil –ANAC- que garantiza la aplicación eficaz de los Derechos del Usuario del Transporte Aéreo de Pasajeros y regulaciones de los transportadores, ante la cual se pueden efectuar las correspondientes denuncias por incumplimientos de las obligaciones allí contenidas, en ANAC, mesa de entradas, calle Hipólito Yrigoyen 250, Piso 12, Tel. 4349-7160, ó en la www.anac.gov.ar.- </p>
+                            
+                            <p><strong>Concepto y alcance de los diferentes términos utilizados en el transporte aerocomercial </strong></p>
+                            <li><p>Documento de transporte: sustituye a la designación billete de pasaje, y constituye el título legal del contrato de transporte aéreo, que será emitido por cualquier medio escrito o electrónico y registrado en la base de datos del transportista . Habilita al pasajero a presentarse al embarque únicamente con su documentación personal en regla, evitando los problemas que se presentaban ante la pérdida, adulteración o rotura del billete de pasaje físico.</p></li>
+                            
+                            <li><p>Equipaje registrado: es el que recibe el transportador para su custodia y que debe transportar en bodega de la misma aeronave que el pasajero, salvo que existan razones técnicas, de estibaje, de horario u otras justificables que lo impidan. La cantidad de bultos y peso individual queda registrado en la base de datos utilizada para la aceptación del pasajero en el aeropuerto y se emite un talón de identificación de equipaje para cada bulto.</p></li>
+                            
+                            <li><p>Franquicia: El transportador puede determinar la existencia de una franquicia de equipaje, de acuerdo a la ruta y tarifa abonada.</p></li>
+                            
+                            <li><p>Compensación de peso: Cuando dos o más pasajeros viajen juntos bajo un mismo código de reserva, se permitirá la compensación del peso, o del número de piezas, de sus respectivos equipajes hasta el límite autorizado. En igual forma se procederá en el caso de denegaciones, en tanto la compensación sea solicitada al momento del despacho.</p></li>
+                            
+                            <li><p>Contenido del equipaje-Declaración de valor: está constituido por los artículos, efectos y otra propiedad personal del pasajero, necesarios o apropiados para vestimenta, uso, comodidad o conveniencia en relación con el viaje. Mediante una declaración especial de valor al momento de la entrega y acreditando el pago de un cargo si así lo exigieren las regulaciones del transportador, éste se obliga ante un siniestro a pagar el importe declarado a menos que éste sea superior al valor real del equipaje que debió entregar al pasajero en el lugar de destino.</p></li>
+                            
+                            <li><p>Contenido prohibido: El pasajero no incluirá en su equipaje registrado: dinero, joyas, títulos negociables, acciones u otros valores comerciales o bancarios, documentos de negocios, contratos; ni equipamientos electrónicos tales como: cámaras de video, máquinas fotográficas, notebooks, teléfonos celulares y sus accesorios, y todo otro tipo de aparato electrónico, que deben transportarse como equipaje de mano.</p></li>
+                            
+                            <li><p>Endoso: es la transferencia de un pasajero de un transportador aéreo a otro. El transportador endosante emitirá un documento denominado FIM “manifiesto de interrupción de vuelo” mediante el cual asume el costo de los servicios y es la base para la facturación de los mismos por el endosatario.</p></li>
+                            
+                            <li><p>Reserva: es el mantenimiento de la oferta del lugar físico en el avión en la clase tarifaria requerida por el pasajero y registrada conforme la disponibilidad hasta una fecha y hora fijada por el transportador. La emisión del documento de transporte hace invariables esas condiciones, las que se extienden a la clase de la tarifa reservada, pero no al precio, en tanto éste sufra variaciones antes de la emisión.</p></li>
+                            
+                            <li><p>Servicio incidental: comprende todo el proporcionado por el transportador en razón de contingencias imprevistas, que produzcan reencaminamiento del pasajero, cambio de ruta u horario o cualquier otra circunstancia cuyo cargo deba asumir el transportador.</p></li>
+                            
+                            <li><p>Conexión: es la continuación de un viaje en un punto de la ruta por el mismo u otro transportador, según figure registrado en el documento de transporte con indicación de vuelo, fecha y reserva confirmada.</p></li>
+                            
+                            <li><p>Tarifa: Es el precio del transporte aéreo para cubrir una determinada ruta. Comprende una franquicia de equipaje, y se ajusta a la naturaleza y condiciones del servicio prestado.</p></li>
+                            
+                            <li><p>Tarifa sin derecho a devolución -(No Refund): Es la condición especial de ciertas tarifas económicas, generalmente con esta restricción para el uso del ticket.</p></li>
+                            
+                            <li><p>Web Chek-In: Es el procedimiento informático de aceptación de pasajeros al embarque realizado por el pasajero sin intervención de personal del aeropuerto.</p></li>
+                            
+                            <p><strong>Presentación y aceptación del pasajero a embarcar </strong></p>
+                            <li><p>El pasajero deberá hacerse presente en los aeropuertos de partida, con la anticipación necesaria de acuerdo a lo indicado por el transportador y reglamentaciones aeroportuarias vigentes, para que pueda cumplirse con los trámites de aceptación y despacho y procedimientos de seguridad y en los vuelos internacionales, también con los que correspondan a migraciones y aduana. El pasajero que se presente en el mostrador de aceptación después del horario límite fijado para finalizar el despacho operativo del vuelo, se considerará como no presentado a embarcar sin perjuicio de la aplicación del régimen sobre "no show" establecido en el Reglamento y las Condiciones del Transportador.</p></li>
+                            
+                            <li><p>El transportador podrá habilitar la aceptación de pasajeros adultos mediante vía informática, web check-in, sólo con ticket electrónico, y de pasajeros que no requieran asistencia especial, tanto en condición con o sin equipaje registrado. En el primer caso, sólo deberá cumplir en el aeropuerto con el despacho del mismo. En caso que un pasajero luego de aceptado por este procedimiento no se presente a embarcar, el transportador podrá considerar perdido el derecho a reintegro del tramo.</p></li>
+                            
+                            <li><p>El transportador tendrá la facultad de verificar la identidad del pasajero en el momento de embarco, y consultar las bases de datos en donde se encuentran listadas las personas calificadas para la aerolínea, como peligrosas para la seguridad del transporte aéreo, quedando, en tal caso, facultado a denegar el transporte.</p></li>
+                            
+                            <li><p>El transportador podrá establecer listas de espera a través del sistema de reservas con el código HL y en los aeropuertos para atender a los pasajeros.</p></li>
+                            <p><strong>Negativa y limitación al transporte de pasajeros </strong></p>
+                            <li><p>El transportador puede negar el transporte de cualquier pasajero y/o de su equipaje por razones de seguridad o si: I) Esta acción es necesaria para cumplir con una norma legal aplicable, regulaciones u órdenes de cualquier Estado desde el cual, dentro del cual o hacia el cual se realizará el transporte o si el pasajero no posee la documentación debida o que no haya cumplido con las leyes, regulaciones, disposiciones, exigencias o requisitos aplicables, o cuyos documentos no estén en regla. II) La conducta, edad o estado mental o físico del pasajero es tal que: -requiera asistencia especial del transportador; u -origine peligro o riesgo para sí mismo o para otras personas o propiedades; o -ponga en peligro la seguridad de la aeronavegación; -no cumplan con las instrucciones impartidas por el transportador dentro de un marco de razonabilidad; o -se haya negado a cumplir con un control de seguridad.</p></li>
+                            
+                            <li><p>Las personas enfermas, intervenidas quirúrgicamente, o que por su grado de discapacidad requieran oxígeno a bordo o asistencia para movilizarse, deberán presentar el formulario de información médica (MEDIF) firmado y sellado por el médico actuante. Este informe deberá ser entregado 48 hs. hábiles previo a la salida del vuelo, en donde el pasajero tenga reserva, siendo el servicio médico de la transportadora, el que decidirá sobre la posibilidad del transporte y condiciones del mismo para su seguridad y la de los demás pasajeros, queda excluido de estas condiciones el transporte sanitario.</p></li>
+                            
+                            <li><p>El transportador permitirá el embarque a las mujeres embarazadas que no superen las 34 semanas de gestación en vuelos de hasta 3 horas de duración y 32 semanas de gestación para vuelos de mayor duración, sin completar certificado médico. No obstante, podrá requerir como requisito para su aceptación como pasajero, completar el formulario de “Transporte de pasajeras embarazadas”. En caso de duda la aceptación queda a criterio del Servicio Médico de la transportadora.</p></li>
+                            <p><strong>Cumplimiento de horarios e itinerarios. Circunstancias extraordinarias </strong></p>
+                            
+                            <li><p>El transportador, salvo caso de fuerza mayor, debe cumplir con los horarios y los itinerarios publicados e indicados en el documento de viaje. No tendrá responsabilidad por el incumplimiento del horario cuando mediare una circunstancia extraordinaria e inevitable que justificare la demora en la ejecución del vuelo.</p></li>
+                            
+                            <li><p>Se consideran “circunstancias extraordinarias” que limitan o excluyen la responsabilidad del transportador, aquellas que no hubieran podido evitarse incluso si se hubiesen tomado todas las medidas razonables. Dichas circunstancias pueden producirse en particular, en casos de inestabilidad política, condiciones meteorológicas incompatibles con la realización del vuelo, riesgos para la seguridad, deficiencias inesperadas en la seguridad del vuelo y huelgas ajenas a la empresa transportadora que afecten a las operaciones de un transportista aéreo encargado de efectuarlo. Sólo se considerará como eximente la huelga de empleados de la transportadora cuando la autoridad laboral haya dictado una normativa de alcance particular para asegurar la cobertura de vuelos mínimos de emergencia que obliga a reanudar el servicio y no es acatada.</p></li>
+                            
+                            <p><strong>Responsabilidad por daños a pasajeros y equipaje </strong></p>
+                            
+                            <li><p>El transportador es responsable sólo por los daños a sus pasajeros producidos a bordo de la aeronave y durante las operaciones de embarque y desembarque.</p></li>
+                            
+                            <li><p>En cuanto a contingencias del “equipaje registrado” del pasajero el transportador es responsable desde el momento de la aceptación del mismo en el mostrador del aeropuerto donde es registrado por cantidad y peso de cada uno de los bultos, hasta su entrega en el destino indicado en el documento de transporte. El equipaje no registrado, también denominado “de mano”, queda bajo custodia del pasajero, respondiendo excepcionalmente el transportador. Si el pasajero se presentare a la puerta de embarque con equipaje de mano que supere las dimensiones y peso permitido por el transportador o la autoridad aeroportuaria, le será remitido a bodega como equipaje registrado. Todas las reparaciones indemnizatorias se encuentran limitadas conforme la legislación nacional y tratados internacionales aprobados por la República.</p></li> 
+                            <p><strong>Reclamos directos al transportador </strong></p>
+                            <li><p>En el caso de faltante o daño al equipaje, el pasajero podrá presentarse, antes de retirarse del aeropuerto en la oficina de reclamos del transportador. Allí, éste le entregará un formulario en donde declarará el contenido y estimación del valor del daño o faltante. La recepción por el transportador de este formulario con la información declarada por pasajero y firmada por éste, cumplirá los efectos legales del protesto aeronáutico, quien instruirá un expediente de reclamo que deberá ser resuelto en un plazo de 30 (treinta) días. Esta reclamación es requisito para la admisión de una eventual acción judicial. </p></li>
+                            
+                            <p>Cualquier acción por daños derivados en la celebración y ejecución del contrato de transporte aéreo de pasajeros y equipaje, cualquiera sea su título, solamente podrá ejercitarse dentro de las condiciones de las reglamentaciones vigentes y límites del Código Aeronáutico, encontrándose expresamente excluida la aplicación de la Ley de Defensa del Consumidor conforme Decreto 565/08. </p>
+                            
+                             <p>El documento de transporte el válido por un año desde la fecha de emisión, a menos que se haya estipulado otra particular, de acuerdo a las condiciones de la tarifa abonada por el pasajero. </p>
+                                                    
+                            
+                            <p><strong>Reclamos directos al transportador </strong></p>
+                            <li><p>En el caso de faltante o daño al equipaje, el pasajero podrá presentarse, antes de retirarse del aeropuerto en la oficina de reclamos del transportador. Allí, éste le entregará un formulario en donde declarará el contenido y estimación del valor del daño o faltante. La recepción por el transportador de este formulario con la información declarada por pasajero y firmada por éste, cumplirá los efectos legales del protesto aeronáutico, quien instruirá un expediente de reclamo que deberá ser resuelto en un plazo de 30 (treinta) días. Esta reclamación es requisito para la admisión de una eventual acción judicial. </p></li>
+                            
+                            <p>En caso que dicho formulario no haya sido completado, el transportador deberá atender los reclamos por pérdida, destrucción, retardo, daño o faltante del equipaje en el acto de la entrega, en el transporte interno, como máximo dentro de los TRES (3) días desde la fecha de entrega para los casos de daños o faltante, y de DIEZ (10) días en que debieron ser puestas a su disposición, en el caso de equipaje no acompañado o mercancía en los supuestos de pérdida, destrucción o retardo.  </p>
+                            <p>Se aclara al pasajero que si el reclamo lo presentase luego de retirarse del aeropuerto, quedará a su cargo probar que los daños o faltantes se produjeron durante el transporte aéreo.  </p>
+                            
+                            <p><strong>Legislación aplicable </strong></p>
+                            
+                            <li><p>Para el contrato de transporte aéreo de cabotaje, y sus prestaciones incidentales, regirá las disposiciones del Código Aeronáutico de la República Argentina y su reglamentación referida a los Derechos del Usuario del Transporte Aéreo de Pasajeros. </p></li>
+                            
+                            <p>Cualquier acción por daños derivados en la celebración y ejecución del contrato de transporte aéreo de pasajeros y equipaje, cualquiera sea su título, solamente podrá ejercitarse dentro de las condiciones de las reglamentaciones vigentes y límites del Código Aeronáutico, encontrándose expresamente excluida la aplicación de la Ley de Defensa del Consumidor conforme Decreto 565/08.  </p>
+                            <p>El documento de transporte el válido por un año desde la fecha de emisión, a menos que se haya estipulado otra particular, de acuerdo a las condiciones de la tarifa abonada por el pasajero.  </p>
+                            
+                            <p><strong>Reconfirmación de reservas </strong></p>
+                            
+                            <li><p>Las reservas para continuación del viaje o de retorno pueden estar sujetas al requisito de reconfirmación, dentro de los plazos determinados en las regulaciones del transportador. De no cumplirse con este requisito, la reserva puede ser cancelada por el transportador, pasando a la condición de pasaje con “fecha abierta”. </p></li>
+                            
+                            <p><strong>Cancelación de reserva </strong></p>
+                            
+                            <li><p>El transportador puede cancelar una reserva si el pasajero no ha hecho emitir su documento de viaje previo al tiempo límite especificado en la reserva para su emisión. Si el documento de transporte estuviera emitido, el pasajero podrá cancelar su reserva asumiendo los cargos previstos en las condiciones de su tarifa. </p></li>
+                            <p><strong>Cancelación automática de reserva de continuación de viaje </strong></p>
+                            
+                            <li><p>Si un pasajero no utiliza una reserva correspondiente a un documento de transporte ya emitido y no avisa al transportador, los sistemas de reservas cancelarán todos los tramos subsiguientes no volados una vez cerrada la aceptación para el embarque de pasajeros para ese vuelo en el aeropuerto. Para la continuación del viaje o el retorno deberán efectuar una nueva reserva, caso contrario el documento de viaje quedará en la condición de fecha abierta. </p></li>
+
+                            <p><strong>Cargo al pasajero por su no presentación a la partida del vuelo (no show) </strong></p>
+                            
+                            <li><p>Cuando un pasajero no utilice el espacio con reserva confirmada, el transportador podrá aplicar un cargo, conforme las condiciones de la tarifa. Asimismo, este cargo será aplicable al pasajero que no se haya presentado al mostrador de aceptación después del horario límite fijado para finalizar el despacho operativo del vuelo. </p></li>
+                            
+                            <p><strong>Aviso a los pasajeros internacionales </strong></p>
+                            
+                            <li><p>Para estos pasajeros regirán las condiciones indicadas, la reglamentación vigente en cuanto a los Derechos del Usuario del Transporte Aéreo de Pasajeros y el Convenio para la Unificación de Ciertas Reglas para el Transporte Aéreo Internacional suscripto en la ciudad de Montreal y aprobado por Ley 26.451 que limita la responsabilidad del transportista aéreo. </p></li>
+                            <p>Los plazos para las reclamaciones serán de siete (7) días para el equipaje facturado a partir de su recibo y veintiún (21) días para el retraso desde que el equipaje ha sido puesto a disposición del pasajero.</p>
+                            
+                            <li><p>El transportista que emite documentos de transporte por las líneas de otro transportista, actúa sólo como agente de éste. </p></li>
+                            
+                            <li><p>Tasas e impuestos: El precio que figura en el documento de transporte incluye la tarifa y pueden incluir los impuestos que gravan el transporte aéreo. Se podrá requerir el pago de tasas e impuestos que no hayan sido recaudados al momento de la emisión.</p></li>
+                            <li><p>El pasajero deberá cumplir todos los requisitos gubernamentales del viaje y presentar los documentos de salida, entrada y demás exigidos, así como llegar al aeropuerto a la hora señalada por el transportista ó, si no se hubiera fijado ninguna, con la antelación suficiente que le permita cumplimentar los trámites de salida. Su incumplimiento implicará la inclusión del pasajero en el régimen para los pasajeros no presentados –no show-.</p></li>
+ 
+                            </ul>
+                            
+                            <p>Solicitamos leer atentamente las <a href="http://ww1.aerolineas.com.ar/arg/bodies/popup_reserva_condiciones_limitaciones.asp?pais=AR&amp;idi=es" target="_blank" class="TxtAzul11" style="text-decoration:underline;">Limitaciones a la Responsabilidad </a> y las <a href="http://ww1.aerolineas.com.ar/arg/bodies/popup_reserva_condiciones_seguridad.asp?pais=AR&amp;idi=es" target="_blank" class="TxtAzul11" style="text-decoration:underline;">Condiciones de Seguridad </a> que regulan los servicios que se brindan a través de la red. Ante cualquier consulta no dude en contactarse con nuestra oficina local.</p>
+        </div>
+    </div>
+                    <p class="breadcrumb">Reservas y Servicios > Web Check-in</p>
+                    <h1>Título</h1>
+                    <div class="col-izq">
+                        <img src="Content/themes/V2/img/backgrounds/colizq-wci-2.jpg" width="200" height="400">
+                    </div>
+                    <div class="col-der">
+                        <div class="cont-padding">
+                            <h2 class="tit">Subtítulo</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper ultricies augue, quis elementum nulla cursus non. Duis egestas ante vulputate gravida placerat. Nullam semper sed ligula et aliquam.
+                            </p>
+                            <p>
+                                <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper ultricies augue.</strong>
+                            </p>
+                            <div class="bg-form-corto ">
+                                <form action="/es-ar/reservas_servicios/web_checkin" class="nuevo-form" id="frmWebCheckIn" method="post" name="frmWebCheckIn" target="_blank" novalidate>
+                                    <input id="filtrarWebCheckIn" name="filtrarWebCheckIn" type="hidden" value="1132,1134,1133,1135,1160,1161,1387,1302,1303,1182,1183,1184,1185,1140,1141,1300,1301,1370,1371">
+                                    <div class="msj-error" style="display: none">
+                                    </div>
+                                    <fieldset class="tercio mright15">
+                                        <input data-val="true" data-val-required="Debe ingresar el campo 'Apellido'." id="Apellido" maxlength="29" name="Apellido" type="text" value="" placeholder="Apellido">
+                                    </fieldset>
+                                    <fieldset class="tercio mright15">
+                                        <input data-val="true" data-val-required="Debe ingresar el campo 'Nro de ticket'." id="Nrodeticket" maxlength="29" name="Nrodeticket" type="text" value="" placeholder="Nro de ticket">
+                                    </fieldset>
+                                    <fieldset class="tercio">
+                                        <input id="DireccionEmail1" name="DireccionEmail1 " type="text" value="" placeholder="Dirección de email 1">
+                                    </fieldset>
+                                  
+                                    <fieldset class="tercio mright15">
+                                    </fieldset>
+                                    <fieldset class="tercio mright15">
+                                    </fieldset>
+                                     <fieldset class="tercio">
+                                        <input id="DireccionEmail1" name="DireccionEmail1 " type="text" value="" placeholder="Dirección de email 1">
+                                    </fieldset>
+                                    <div class="separador"></div>
+                                    <fieldset class="tercio mright15">
+                                        <input name="Condiciones" type="hidden" value="false">
+                                        <label for="Condiciones" class="font_size2">
+                                            <a class="azul11" target="_blank" href="javascript:mostrarElemento('terminosCondiciones');">
+                                                <strong>Términos y condiciones</strong></a>
+                                        </label>
+                                    </fieldset>
+                                    <fieldset class="tercio mright15">
+                                    </fieldset>
+                                    <fieldset class="tercio">
+                                        <input type="submit" name="" value="Aceptar">
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="bottom-col"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <!--pie-->
+            <script type="text/javascript">
+            function abrirAustral() {
+                window.open('http://www.austral.com.ar/index.asp?idSitio=AR&idIdioma=es', 'Austral', 'scrollbars=yes, resizable=1,width=1020,height=805');
+            }
+
+            function popup_condiciones_transporte() {
+                var winC = window.open('http://www.aerolineas.com.ar/arg/bodies/CondicionesGrales_contratoTransporte.asp?idSitio=AR&idIdioma=es', 'wContr', 'scrollbars=yes, resizable=1,width=800,height=600');
+                winC.moveTo(0, 0);
+            }
+            </script>
+            <div id="pie">
+                <div class="ml10  mtop15">
+                    <div class="azul fleft mtop20">
+                        <a href='http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=143&idIdioma=es                       ' target='_blank' class='link'>Clima                                                                                               </a> <span> | </span>
+                        <a href='http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=111&idIdioma=es                       ' target='' class='link'>Conoc&#233; el estado de tu vuelo                                                                        </a> <span> | </span>
+                        <a href='http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=103&idIdioma=es                       ' target='' class='link'>Preguntas frecuentes                                                                                </a> <span> | </span>
+                        <a href='http://www.aerolineas.com.ar/Arg/bodies/popup_reembolsoBillete.asp?idSitio=AR&idIdioma=es           ' target='_blank' class='link'>Devoluci&#243;n de ticket                                                                                </a> <span> | </span>
+                    </div>
+                    <div class=" fright mright15 mtop15">
+                        <div id="fb-root"></div>
+                        <script language="javascript" type="text/javascript">
+                        (function(d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0];
+                            if (d.getElementById(id)) return;
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1";
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }(document, 'script', 'facebook-jssdk'));
+                        </script>
+                        <div class="fb-like mbot5" data-href="http://www.facebook.com/aerolineas.argentinas" data-send="false" data-layout="button_count" data-width="77" data-show-faces="false" data-font="arial"></div>
+                        <a href="https://www.facebook.com/Aerolineas.argentinas" target="_blank">
+                            <img src="Content/themes/V2/img/common/ic-facebook.gif" alt="Facebook" width="22" height="22" border="0" /></a>
+                        <a href="http://twitter.com/Aerolineas_AR/" target="_blank">
+                            <img src="Content/themes/V2/img/common/ic-Twitter.jpg" alt="Twitter" width="22" height="22" border="0" /></a>
+                        <a href="https://plus.google.com/106198199507305429358/posts" target="_blank">
+                            <img src="Content/themes/V2/img/common/ic-gplus.gif" alt="Facebook" width="22" height="22" border="0" /></a>
+                        <a href="http://www.youtube.com/user/AerolineasAR" target="_blank">
+                            <img src="Content/themes/V2/img/common/ic-YouTube.gif" alt="Youtube" width="22" height="22" border="0" /></a>
+                        <a href="http://www.Aerolineas.com.ar/arg/rss.asp?idSitio=AR&idIdioma=es" target="_blank">
+                            <img src="Content/themes/V2/img/common/ic-RSS.gif" alt="Rss" width="22" height="22" border="0" /></a>
+                    </div>
+                    <br clear="all" />
+                </div>
+                <div class="div">
+                </div>
+                <div class="div_pie">
+                    <div class="div_links">
+                        <div class="div_partner">
+                            <img src="Content/themes/V2/img/common/footer-logoAustral.gif" alt="Logo Austral" onclick="abrirAustral();" style="cursor:pointer;" />
+                        </div>
+                        <div class="div_partner">
+                            <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=81%26idIdioma=es" title=""><img alt="@MainFooterResource.JetPaq_Logo" src="Content/themes/V2/img/common/footer-logoJetPaq.gif" /></a>
+                        </div>
+                        <div class="div_partner">
+                            <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=9%26idIdioma=es" title=""><img alt="@MainFooterResource.Aerohandling_Logo" src="Content/themes/V2/img/common/footer-logoAerohandling.gif" /></a>
+                        </div>
+                        <div class="div_partner">
+                            <a href="http://www.optar.com/" target="_blank">
+                                <img src="Content/themes/V2/img/common/footer-logoOptar.gif" alt="Logo Optar" border="0" />
+                            </a>
+                        </div>
+                        <div class="div_partner mtop7 mleft20"><img src="Content/themes/V2/img/common/logo_arg.jpg" alt="Logo Aerol&#237;neas Argentinas" width="47" height="30" />
+                        </div>
+                        <div class="div_partner mtop14 mleft25"><img src="Content/themes/V2/img/common/argentina_paisbuenagente.gif" alt="Logo Aerol&#237;neas Argentinas - Un pa&#237;s con buena gente" />
+                        </div>
+                    </div>
+                    <br clear="all" />
+                    <div class="codigo-qr">
+                        <a href="https://servicios1.afip.gov.ar/clavefiscal/qr/mobilePublicInfo.aspx?req=e1ttZXRob2Q9Z2V0UHVibGljSW5mb11bcGVyc29uYT0zMDY0MTQwNTU1NF1bdGlwb2RvbWljaWxpbz0wXVtzZWN1ZW5jaWE9MF1bdXJsPWh0dHA6Ly93d3cuYWVyb2xpbmVhcy5jb20uYXJdfQ==" target="_F960AFIPInfo">
+                            <img src="Content/themes/V2/img/common/qr_code.gif" alt="QR-Code" />
+                        </a>
+                    </div>
+                    <div class="pie_texto">
+                        <span>aerolineas.com Sitio Oficial de Aerolineas Argentinas. &#169; 1996 - 2013 Aerol&#237;neas Argentinas S.A.<br />
+                      <a class="pie" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=72%26idIdioma=es">Legales</a> |
+                      <a class="pie" href="#" onclick="popup_condiciones_transporte();"> Condiciones Generales de Transporte </a>|
+                      <a class="pie" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=94%26idIdioma=es">Mapa del Sitio</a> |
+                      <a class="pie" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=84%26idIdioma=es">Ud. est&#225; en un SITIO SEGURO</a> 
+                  </span>
+                    </div>
+                </div>
+                <div class="div_borde">
+                    <img src="Content/themes/V2/img/backgrounds/footer-right.gif" alt="" />
+                </div>
+            </div>
+            <!--fin de pie-->
+        </footer>
+    </div>
+     
+
+    <script type="text/javascript">
+    function onCultureChanged() {
+        var cultureName = $("#culture").val();
+        GlobalCultureName = cultureName;
+
+        var ruta = '/es-AR/Culture/ChangeCulture';
+        ruta = '/es-AR/Culture/ChangeCulture';
+        //var redirectUrl = '/_culture_/SkyTeam/SkyPriority';
+        var redirectUrl = '/_culture_';
+
+        $.ajax({
+            url: ruta,
+            type: "post",
+            dataType: "json",
+            traditional: true,
+            async: false,
+            data: {
+                'selectedCultureName': cultureName
+            },
+            success: function(result, responseText) {
+
+                // // translateUrlAndRedirect(GlobalCultureName);
+
+                //alert('Cultura cambiada exitosamente por: ' + result);
+
+                // Redirecciono
+                redirectUrl = redirectUrl.replace("_culture_", GlobalCultureName);
+                window.location.replace(redirectUrl);
+
+                //  // Recargo la página
+                //window.location.reload();
+            },
+            error: function() {
+                alert('Error al intentar cambiar la cultura');
+            }
+        });
+
+    }
+    </script>
+
+
+    <!--************GOOGLE ANALYTICS*******************-->
+    <!--************GOOGLE ANALYTICS*******************-->
+</body>
+
+</html>

@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Ver itinerario Aerolíneas Argentinas in batch 32 (FlowType.SINGLE_PAGES)</title>
+    <script type="text/javascript" src="js/jquery-1.10.2.min-ver-628072E7212DB1E8CDACB22B21752CDA.js"></script>
+    <script type="text/javascript" src="js/wicket-event-jquery.min-ver-708C94775B2E1A1A39180619EFAE9145.js"></script>
+    <script type="text/javascript" src="js/wicket-ajax-jquery.min-ver-0D95C654A2A183A4FB6EAF9C6F22FE6F.js"></script>
+    <script type="text/javascript" src="js/modal.min-ver-35033EE4AE3F9C9CF951E390E49D8FB0.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/Common2-ver-F7CE317F3EB4782AFDE3CD31993510B1.css" />
+    <link rel="stylesheet" href="css/mpol-ver-23756BC2D8F3AA3EC861AA1704C52341.css" />
+    <link rel="stylesheet" href="css/acc.css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="js/iutil-mw-ver-646745B3C27426AE550533F0A1338D1D.js"></script>
+    <script type="text/javascript" src="js/fisheye-ver-A7EB9B4574E830071B85B2B0CD54027D.js"></script>
+    <script type="text/javascript" src="js/jquery.tooltipster.min-ver-FF2F685494B400EA2098C79332759A8F.js"></script>
+    <style>
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        /* display: none; <- Crashes Chrome on hover */
+        -webkit-appearance: none;
+        margin: 0;
+        /* <-- Apparently some margin are still there even though it's hidden */
+    }
+    </style>
+</head>
+
+<body>
+    <!-- /.modal -->
+    <div id="acceptConditions" class="modal fade wicket-modal" tabindex="-1" role="dialog" aria-labelledby="conditionsLabel" aria-hidden="true" aria-describedby="conditionsDesc">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h3 class="modal-title w_captionText" id="conditionsLabel">Change and refund conditions</h3>
+                </div>
+                <div class="modal-body" id="conditionsDesc">
+                    <h4>Conditions:</h4>
+                    <p>Minimum of 3 (three) and maximum of 12 (twelve) flight coupons.
+                        <br> Once issued the purchase of additional coupons is not allowed (even if maximum of 12 coupons has not been reached).
+                        <br> Maximum stay of 90 days from the date of the first Visit Argentina flight.
+                        <br> Booking and issuing must be done with a minimal anticipation of 21 days prior to the date of the first flight.
+                        <br> All taxes and additional charges will be collected at time of issue.</p>
+                    <h4>Ticketing deadlines:</h4>
+                    <p>Bookings made with more than 30 (thirty) days in advance can be issued up to 30 (thirty) days before departure of the first flight.
+                        <br> Bookings made within 30 (thirty) to 22 (twenty two) days before departure of the first flight must be issued between 24 hours after the reservation has been made.</p>
+                    <h4>Refunds:</h4>
+                    <p>Before departure of first flight booked original amount will be refund, less a cancellation fee of USD50.
+                        <br> After departure of first flight booked: Refund is not allowed.
+                        <br> Penalty for no-show: Charge of USD75 will apply.
+                        <br> Date changes: USD50 per transaction, any time, within allowed maximum stay.
+                        <br> Change of routing: USD50 per transaction, any time, subject to availability of seats in the same fare basis.
+                        <br> In case fare is higher, difference will be charged, in case fare is lower, difference will not be refunded.</p>
+                    <h4>AR PLUS</h4>
+                    <p>VARG flights will accrue miles at promotional class level.
+                        <br> Luggage allowance and excess charges
+                        <br> Luggage allowance for Visit Argentina flights is 1 (one) piece of baggage of 23kgs (50,7 pounds).
+                        <br> Standard baggage rates will apply to the exceeding weight of this allowance.</p>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <div class="wrapper reservas">
+        <div class="inner-wrapper">
+            <header class="header clearfix" role="banner">
+                <div class="pull-left logo-header">
+                    <a href="http://www.aerolineas.com.ar">
+                        <img alt="logo-aerolineas" src="img/common/logo-aerolineas.gif" /></a>
+                </div>
+                <div class="pull-right logo-header-right">
+                    <img alt="aerolineas argentinas skyteam" src="img/common/aerolineas_argentinas_skyteam.jpg" />
+                </div>
+                <ul class="pull-right list-unstyled list-inline phone-dates">
+                    <li><a href="http://www.aerolineas.com.ar/es-ar/reservasservicios/puntosdecontacto" id="contacto" target="blank">Contacto y Preguntas frecuentes</a></li>
+                    <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=7&amp;idIdioma=es" id="callcenter" target="blank">0810-222-86527</a></li>
+                </ul>
+            </header>
+            <section class="container" role="main" aria-labelledby="reservasLabel">
+                <article class="booking" role="article">
+                    <div class="booking-content">
+                        <h1 class="step-title" id="reservasLabel">Ingrese a su reserva</h1>
+                        <p>Revise sus vuelos, haga cambios y devoluciones.</p>
+                        <div class="module">
+                            <div class="item">
+                                <div class="form">
+                                    <div class="row">
+                                        <div class="col-md-3">&nbsp;</div>
+                                        <div class="col-md-6">
+                                            <div class="well">
+                                                <h2 class="title bg-blue2">Busque con código de reserva y apellido</h2>
+                                                <div class="form-group">
+                                                    <label for="" class="control-label">Código de reserva</label>
+                                                    <div class="form-group">
+                                                        <input id="" name="" type="text" value="" class="form-control" autocomplete="off">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="" class="control-label">Apellido</label>
+                                                    <div class="form-group">
+                                                        <input id="" name="" type="text" value="" class="form-control" autocomplete="off">
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <a href="" class="btn btn-default btn-block btnContinue">Buscar reserva</a>
+                                                <div class="TxtError clearfix" role="alert">
+                                                    <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>
+                                                    <p>Please verify the informed number has some invalid character on it.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">&nbsp;</div>
+
+                                        <!--
+                                        <div class="col-md-6">
+                                            <div class="well">
+                                                <h2 class="title bg-blue2">Busque con su perfil Aerolíneas Plus</h2>
+                                                <div class="form-group has-error">
+                                                    <label for="" class="control-label">Número de socio</label>
+                                                    <input id="" name="" type="text" value="" class="form-control" autocomplete="off">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="" class="control-label">Clave de mi cuenta Plus</label>
+                                                    <div class="form-group">
+                                                        <input id="" name="" type="text" value="" class="form-control" autocomplete="off">
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <a href="" class="btn btn-default btn-block btnContinue">Buscar reserva</a>
+                                                <div class="TxtError clearfix" role="alert">
+                                                    <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>
+                                                    <p>Please verify the informed number has some invalid character on it.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="well">
+                                                <h2 class="title bg-blue2">Busque con código de reserva y apellido</h2>
+                                                <div class="form-group">
+                                                    <label for="" class="control-label">Código de reserva</label>
+                                                    <div class="form-group">
+                                                        <input id="" name="" type="text" value="" class="form-control" autocomplete="off">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="" class="control-label">Apellido</label>
+                                                    <div class="form-group">
+                                                        <input id="" name="" type="text" value="" class="form-control" autocomplete="off">
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <a href="" class="btn btn-default btn-block btnContinue">Buscar reserva</a>
+                                                <div class="TxtError clearfix" role="alert">
+                                                    <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>
+                                                    <p>Please verify the informed number has some invalid character on it.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        -->
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!--CONFIRMACIÓN-->
+                <article class="booking" role="article">
+                    <div class="booking-content">
+                        <h1 class="step-title" id="reservasLabel">¡Su reserva está confirmada!</h1>
+                        <p>¡Lo esperamos a bordo! Gracias por comprar en aerolineas.com.</p>
+                        <div class="module">
+                            <div class="item">
+                                <div class="form">
+                                    <div class="table-amount table-codigo-reserva">
+                                        <div class="row">
+                                            <div class="col-sm-6 bg-blue">
+                                                <div class="text-center">
+                                                    Código de reserva <span class="code">QBBERZ</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 bg-blue2">
+                                                <span class="info">Autogestione sus reservas realizadas en aerolineas.com desde esta página.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="blue">
+                                <div class="group-bts">
+                                    <a href="#" class="btn btn-default btn-cambio btn-bluealt"><span class="icon"><img class="pull-left" src="img/common/ico-refresh.png" alt="Realice sus cambios" role="presentation"></span> <span class="text">Realice sus cambios</span> </a>
+                                </div>
+                                <div class="group-bts">
+                                    <a href="#" class="btn btn-default btn-cambio btn-bluealt"><span class="icon"><img class="pull-left" src="img/common/ico-refresh.png" alt="Realice sus cambios" role="presentation"></span> <span class="text">Realice sus cambios</span> </a>
+                                    <a href="#" class="btn btn-default btn-devo btn-bluealt"><span class="icon"><img class="pull-left" src="img/common/ico-devo.png" alt="Realice sus devoluciones" role="presentation"> </span><span class="text">Realice sus devoluciones</span></a>
+                                </div>
+                                <h2 class="title bg-blue">Vuelos</h2>
+                                <div class="detail-vuelos">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="itinerary-info-part flight-summary-2 bg-blue2 strong text-center">
+                                                    <span class="flight-number-label"><span class="translate wasTranslated" data-wl-translate="label.flightsdetails.flightlabel">Vuelo</span></span> <span class="flight-number"><span>AR 1782: </span></span> <span class="flight-origin"><span class="flight-location"><span class="translate" data-wl-translate="Airport.AEP">Buenos Aires (Aeroparque)</span> (AEP)</span></span> <span class="flight-seperator"><span class="flight-seperator-dt">&gt;</span></span> <span class="flight-destination"><span class="flight-location"><span class="translate" data-wl-translate="Airport.CNQ">Corrientes </span> (CNQ)</span></span>    
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="itinerary-info-part flight-particulars col"> 
+                                                    <div id="yui_3_1_2_1_14707574287791305">
+                                                        <div class="row">
+                                                            <div class="col-xs-6">
+                                                                <span class="flight-direction translate" data-wl-translate="label.flightsdetails.flightdirection.departing">Salida</span>
+                                                            <span class="flight-time txt-blue block">31-Oct | 07:50</span>
+                                                            </div>
+                                                            <div class="col-xs-6">
+                                                                <span class="flight-direction translate" data-wl-translate="label.flightsdetails.flightdirection.arriving">Llegada</span>
+                                                            <span class="flight-time txt-blue block">31-Oct | 09:19</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-xs-6">
+                                                                 <span class="translate  flightduration wasTranslated" data-wl-translate="label.flightsdetails.duration">Duración:</span>
+                                                                <span class="translate duration wasTranslated txt-blue block" id="0-itinerary-0-segment-duration" data-wl-translate="label.flightsdetails.durationFormat|01|29 ">01hr 29min</span>
+                                                            </div>
+                                                            <div class="col-xs-6">
+                                                                <span class="translate cabinclass wasTranslated" data-wl-translate="label.flightsdetails.cabinclass">Cabina</span>
+                                                            <span class="cabin-class-and-fare-family txt-blue block"><span class="translate" id="0-itinerary-0-segment-cabinClass" data-wl-translate="Cabin.ECONOMY">Economy</span></span>
+                                                            </div>
+                                                        </div> 
+                                                        <div class="row">
+                                                            <div class="col-xs-6">
+                                                                <span class="translate flightsdetails-aircraft wasTranslated" data-wl-translate="label.flightsdetails.aircraft">Equipo:</span> 
+                                                                <span id="0-itinerary-0-segment-aircraft" class="txt-blue"><span class="skip-server-translation aircraft-name translate" data-wl-translate="Aircraft.73W" data-wl-fallback-translate="Aircraft.default|73W" fallback-translate="73W">Boeing 737-700</span></span> 
+                                                            </div>
+                                                            <div class="col-xs-6">
+                                                               <span class="translate operatedby wasTranslated" data-wl-translate="label.flightsdetails.operatedby"><span>* Operado por</span></span>
+                                                            <span id="0-itinerary-0-segment-operator" class="txt-blue"><span class="translate" data-wl-translate="airline.AR">Aerolineas Argentinas</span></span> 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <div class="flight-paxList col">
+                                                    <div class="flight-pax-entry pax-0">
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <div class="flight-pax-name-section"> 
+                                                                    <span class="passenger-information"> Agustin Ecommerce </span> 
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="flight-pax-seat-section"> 
+                                                                <span class="translate seatlabel wasTranslated" data-wl-translate="label.flightsdetails.seatlabel">Asiento: </span> 
+
+                                                                <span class="seat strong"><span id="s1_p1_4B">4B <span class="seat-type translate wasTranslated" data-wl-translate="Ancillary.name.seat">&nbsp;</span></span>
+                                                                </span> 
+                                                                <span class="upgradeStatus"></span> 
+                                                            </div>
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                              <div class="flight-pax-extras-section"> 
+                                                                <span class="translate flightsdetails-bagslabel" data-wl-translate="label.flightsdetails.bagslabel">&nbsp;</span>
+                                                                <span class="flight-bags-quantity"><div class="bag-image"></div></span>
+                                                                <span class="flight-bags-details"><span class="translate wasTranslated" data-wl-translate="label.flightsdetails.bagsquantity.openbracket">(</span><a href="#" target="_blank"><span class="translate wasTranslated" data-wl-translate="label.flightsdetails.zerobag">0 piezas incluidas</span></a><span class="translate wasTranslated" data-wl-translate="label.flightsdetails.bagsquantity.closebracket">)</span></span>
+                                                            </div>  
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flight-pax-entry pax-1" id="yui_3_1_2_1_14707574287791303">
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <div class="flight-pax-name-section"> 
+                                                                <span class="passenger-information"> Pablo Ecommerce </span> 
+                                                            </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="flight-pax-seat-section"> 
+                                                                <span class="translate seatlabel wasTranslated" data-wl-translate="label.flightsdetails.seatlabel">Asiento: </span> 
+                                                                <span class="seat strong"><span class="translate seats-infant" data-wl-translate="label.flightsdetails.seats.infant">(bebé sin asiento)</span></span> 
+                                                                <span class="upgradeStatus"></span> 
+                                                                <div class="block">
+                                                                    <span class="translate ffNumber" data-wl-translate="label.flightsdetails.ffNumber">N° de viajero: </span>
+                                                                <span class="ffnumber strong"><span id="0-itinerary-0-segment-ffAirline"><span class="ffAirlineName">Aerolineas Argentinas</span><span class="translate ffSeperator" data-wl-translate="label.flightsdetails.ffSeperator">&nbsp;-&nbsp;</span></span><span id="0-itinerary-0-segment-ffnumber" class="ffId">28795037</span><span id="0-itinerary-0-segment-ffname"></span></span>
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                                <div class="flight-pax-extras-section"> 
+                                                                <span class="translate flightsdetails-bagslabel" data-wl-translate="label.flightsdetails.bagslabel">&nbsp;</span>
+                                                                <span class="flight-bags-quantity"><div class="bag-image"></div></span>
+                                                                <span class="flight-bags-details"><span class="translate wasTranslated" data-wl-translate="label.flightsdetails.bagsquantity.openbracket">(</span><a href="#" target="_blank"><span class="translate wasTranslated" data-wl-translate="label.flightsdetails.zerobag">0 piezas incluidas</span></a><span class="translate wasTranslated" data-wl-translate="label.flightsdetails.bagsquantity.closebracket">)</span></span>
+                                                            </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flight-pax-entry pax-2">
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                               <div class="flight-pax-name-section"> 
+                                                                <span class="passenger-information"> Carlota Ecommerce </span> 
+                                                            </div> 
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="flight-pax-seat-section"> 
+                                                                <span class="translate seatlabel wasTranslated" data-wl-translate="label.flightsdetails.seatlabel">Asiento: </span> 
+                                                                <span class="seat strong"><span id="s1_p3_4A">4A <span class="seat-type translate wasTranslated" data-wl-translate="Ancillary.name.seat">&nbsp;</span></span>
+                                                                </span> 
+                                                                <span class="upgradeStatus"></span> 
+                                                            </div>
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                                <div class="flight-pax-extras-section"> 
+                                                                <span class="translate flightsdetails-bagslabel" data-wl-translate="label.flightsdetails.bagslabel">&nbsp;</span>
+                                                                <span class="flight-bags-quantity"><div class="bag-image"></div></span>
+                                                                <span class="flight-bags-details"><span class="translate wasTranslated" data-wl-translate="label.flightsdetails.bagsquantity.openbracket">(</span><a href="#" target="_blank"><span class="translate wasTranslated" data-wl-translate="label.flightsdetails.zerobag">0 piezas incluidas</span></a><span class="translate wasTranslated" data-wl-translate="label.flightsdetails.bagsquantity.closebracket">)</span></span>
+                                                            </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flight-pax-entry pax-3">
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <div class="flight-pax-name-section"> 
+                                                                <span class="passenger-information"> Andrea  Ecommerce </span> 
+                                                            </div>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="flight-pax-seat-section"> 
+                                                                <span class="translate seatlabel wasTranslated" data-wl-translate="label.flightsdetails.seatlabel">Asiento: </span> 
+                                                                <span class="seat strong"><span id="s1_p4_5A">5A <span class="seat-type translate wasTranslated" data-wl-translate="Ancillary.name.seat">&nbsp;</span></span>
+                                                                </span> 
+                                                                <span class="upgradeStatus"></span> 
+                                                            </div>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="flight-pax-extras-section"> 
+                                                                <span class="translate flightsdetails-bagslabel" data-wl-translate="label.flightsdetails.bagslabel">&nbsp;</span>
+                                                                <span class="flight-bags-quantity"><div class="bag-image"></div></span>
+                                                                <span class="flight-bags-details"><span class="translate wasTranslated" data-wl-translate="label.flightsdetails.bagsquantity.openbracket">(</span><a href="#" target="_blank"><span class="translate wasTranslated" data-wl-translate="label.flightsdetails.zerobag">0 piezas incluidas</span></a><span class="translate wasTranslated" data-wl-translate="label.flightsdetails.bagsquantity.closebracket">)</span></span>
+                                                            </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+
+                                <div class="detail-vuelos">
+                                        <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="itinerary-info-part flight-summary-2 bg-blue2 strong text-center">
+                                                <span class="flight-number-label"><span class="translate wasTranslated" data-wl-translate="label.flightsdetails.flightlabel">Vuelo</span></span> <span class="flight-number"><span>AR 1782: </span></span> <span class="flight-origin"><span class="flight-location"><span class="translate" data-wl-translate="Airport.AEP">Buenos Aires (Aeroparque)</span> (AEP)</span></span> <span class="flight-seperator"><span class="flight-seperator-dt">&gt;</span></span> <span class="flight-destination"><span class="flight-location"><span class="translate" data-wl-translate="Airport.CNQ">Corrientes </span> (CNQ)</span></span>    
+                                            </div>
+                                        </div>
+                                            <div class="col-sm-4">
+                                                <div class="itinerary-info-part flight-particulars col"> 
+                                                    <div id="yui_3_1_2_1_14707574287791305">
+                                                        <div class="row">
+                                                            <div class="col-xs-6">
+                                                                <span class="flight-direction translate" data-wl-translate="label.flightsdetails.flightdirection.departing">Salida</span>
+                                                            <span class="flight-time txt-blue block">31-Oct | 07:50</span>
+                                                            </div>
+                                                            <div class="col-xs-6">
+                                                                <span class="flight-direction translate" data-wl-translate="label.flightsdetails.flightdirection.arriving">Llegada</span>
+                                                            <span class="flight-time txt-blue block">31-Oct | 09:19</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-xs-6">
+                                                                 <span class="translate  flightduration wasTranslated" data-wl-translate="label.flightsdetails.duration">Duración:</span>
+                                                                <span class="translate duration wasTranslated txt-blue block" id="0-itinerary-0-segment-duration" data-wl-translate="label.flightsdetails.durationFormat|01|29 ">01hr 29min</span>
+                                                            </div>
+                                                            <div class="col-xs-6">
+                                                                <span class="translate cabinclass wasTranslated" data-wl-translate="label.flightsdetails.cabinclass">Cabina</span>
+                                                            <span class="cabin-class-and-fare-family txt-blue block"><span class="translate" id="0-itinerary-0-segment-cabinClass" data-wl-translate="Cabin.ECONOMY">Economy</span></span>
+                                                            </div>
+                                                        </div> 
+                                                        <div class="row">
+                                                            <div class="col-xs-6">
+                                                                <span class="translate flightsdetails-aircraft wasTranslated" data-wl-translate="label.flightsdetails.aircraft">Equipo:</span> 
+                                                                <span id="0-itinerary-0-segment-aircraft" class="txt-blue"><span class="skip-server-translation aircraft-name translate" data-wl-translate="Aircraft.73W" data-wl-fallback-translate="Aircraft.default|73W" fallback-translate="73W">Boeing 737-700</span></span> 
+                                                            </div>
+                                                            <div class="col-xs-6">
+                                                               <span class="translate operatedby wasTranslated" data-wl-translate="label.flightsdetails.operatedby"><span>* Operado por</span></span>
+                                                            <span id="0-itinerary-0-segment-operator" class="txt-blue"><span class="translate" data-wl-translate="airline.AR">Aerolineas Argentinas</span></span> 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <div class="flight-paxList col">
+                                                    <div class="flight-pax-entry pax-0">
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <div class="flight-pax-name-section"> 
+                                                                    <span class="passenger-information"> Agustin Ecommerce </span> 
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="flight-pax-seat-section"> 
+                                                                <span class="translate seatlabel wasTranslated" data-wl-translate="label.flightsdetails.seatlabel">Asiento: </span> 
+
+                                                                <span class="seat strong"><span id="s1_p1_4B">4B <span class="seat-type translate wasTranslated" data-wl-translate="Ancillary.name.seat">&nbsp;</span></span>
+                                                                </span> 
+                                                                <span class="upgradeStatus"></span> 
+                                                            </div>
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                              <div class="flight-pax-extras-section"> 
+                                                                <span class="translate flightsdetails-bagslabel" data-wl-translate="label.flightsdetails.bagslabel">&nbsp;</span>
+                                                                <span class="flight-bags-quantity"><div class="bag-image"></div></span>
+                                                                <span class="flight-bags-details"><span class="translate wasTranslated" data-wl-translate="label.flightsdetails.bagsquantity.openbracket">(</span><a href="#" target="_blank"><span class="translate wasTranslated" data-wl-translate="label.flightsdetails.zerobag">0 piezas incluidas</span></a><span class="translate wasTranslated" data-wl-translate="label.flightsdetails.bagsquantity.closebracket">)</span></span>
+                                                            </div>  
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flight-pax-entry pax-1" id="yui_3_1_2_1_14707574287791303">
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <div class="flight-pax-name-section"> 
+                                                                <span class="passenger-information"> Pablo Ecommerce </span> 
+                                                            </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="flight-pax-seat-section"> 
+                                                                <span class="translate seatlabel wasTranslated" data-wl-translate="label.flightsdetails.seatlabel">Asiento: </span> 
+                                                                <span class="seat strong"><span class="translate seats-infant" data-wl-translate="label.flightsdetails.seats.infant">(bebé sin asiento)</span></span> 
+                                                                <span class="upgradeStatus"></span> 
+                                                                <div class="block">
+                                                                    <span class="translate ffNumber" data-wl-translate="label.flightsdetails.ffNumber">N° de viajero: </span>
+                                                                <span class="ffnumber strong"><span id="0-itinerary-0-segment-ffAirline"><span class="ffAirlineName">Aerolineas Argentinas</span><span class="translate ffSeperator" data-wl-translate="label.flightsdetails.ffSeperator">&nbsp;-&nbsp;</span></span><span id="0-itinerary-0-segment-ffnumber" class="ffId">28795037</span><span id="0-itinerary-0-segment-ffname"></span></span>
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                                <div class="flight-pax-extras-section"> 
+                                                                <span class="translate flightsdetails-bagslabel" data-wl-translate="label.flightsdetails.bagslabel">&nbsp;</span>
+                                                                <span class="flight-bags-quantity"><div class="bag-image"></div></span>
+                                                                <span class="flight-bags-details"><span class="translate wasTranslated" data-wl-translate="label.flightsdetails.bagsquantity.openbracket">(</span><a href="#" target="_blank"><span class="translate wasTranslated" data-wl-translate="label.flightsdetails.zerobag">0 piezas incluidas</span></a><span class="translate wasTranslated" data-wl-translate="label.flightsdetails.bagsquantity.closebracket">)</span></span>
+                                                            </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flight-pax-entry pax-2">
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                               <div class="flight-pax-name-section"> 
+                                                                <span class="passenger-information"> Carlota Ecommerce </span> 
+                                                            </div> 
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="flight-pax-seat-section"> 
+                                                                <span class="translate seatlabel wasTranslated" data-wl-translate="label.flightsdetails.seatlabel">Asiento: </span> 
+                                                                <span class="seat strong"><span id="s1_p3_4A">4A <span class="seat-type translate wasTranslated" data-wl-translate="Ancillary.name.seat">&nbsp;</span></span>
+                                                                </span> 
+                                                                <span class="upgradeStatus"></span> 
+                                                            </div>
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                                <div class="flight-pax-extras-section"> 
+                                                                <span class="translate flightsdetails-bagslabel" data-wl-translate="label.flightsdetails.bagslabel">&nbsp;</span>
+                                                                <span class="flight-bags-quantity"><div class="bag-image"></div></span>
+                                                                <span class="flight-bags-details"><span class="translate wasTranslated" data-wl-translate="label.flightsdetails.bagsquantity.openbracket">(</span><a href="#" target="_blank"><span class="translate wasTranslated" data-wl-translate="label.flightsdetails.zerobag">0 piezas incluidas</span></a><span class="translate wasTranslated" data-wl-translate="label.flightsdetails.bagsquantity.closebracket">)</span></span>
+                                                            </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flight-pax-entry pax-3">
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <div class="flight-pax-name-section"> 
+                                                                <span class="passenger-information"> Andrea  Ecommerce </span> 
+                                                            </div>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="flight-pax-seat-section"> 
+                                                                <span class="translate seatlabel wasTranslated" data-wl-translate="label.flightsdetails.seatlabel">Asiento: </span> 
+                                                                <span class="seat strong"><span id="s1_p4_5A">5A <span class="seat-type translate wasTranslated" data-wl-translate="Ancillary.name.seat">&nbsp;</span></span>
+                                                                </span> 
+                                                                <span class="upgradeStatus"></span> 
+                                                            </div>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <div class="flight-pax-extras-section"> 
+                                                                <span class="translate flightsdetails-bagslabel" data-wl-translate="label.flightsdetails.bagslabel">&nbsp;</span>
+                                                                <span class="flight-bags-quantity"><div class="bag-image"></div></span>
+                                                                <span class="flight-bags-details"><span class="translate wasTranslated" data-wl-translate="label.flightsdetails.bagsquantity.openbracket">(</span><a href="#" target="_blank"><span class="translate wasTranslated" data-wl-translate="label.flightsdetails.zerobag">0 piezas incluidas</span></a><span class="translate wasTranslated" data-wl-translate="label.flightsdetails.bagsquantity.closebracket">)</span></span>
+                                                            </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                               
+                                <hr>
+                                <div class="resumen-reserva">
+                                    <div class="header">
+                                        <a class="button-collapse" role="button" data-toggle="collapse" href="#collapseDiv" aria-expanded="false" aria-controls="collapseDiv"><span class="glyphicon-collapse glyphicon glyphicon-plus" aria-hidden="true"></span> <span class="sr-only">Ver más</span></a>
+                                        <h3 class="title bg-blue">Resumen de la reserva</h3>
+                                    </div>
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-xs-7 col-sm-8"><span class="txt-blue">Tarifa</span></div>
+                                            <div class="col-xs-5 col-sm-4"><span class="txt-blue">USD 236.00</span></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-7 col-sm-8"><span>1. Adulto Pasajero:</span> </div>
+                                            <div class="col-xs-5 col-sm-4"><span>USD 236.00</span></div>
+                                        </div>
+                                        <div class="row divider">
+                                            <div class="col-xs-7 col-sm-8"><span class="txt-blue">Tasas e impuestos</span> </div>
+                                            <div class="col-xs-5 col-sm-4"><span class="txt-blue">USD 625.50</span></div>
+                                        </div>
+                                        <div class="row ">
+                                            <div class="col-xs-7 col-sm-8"><span>1. Adulto Pasajero:</span> </div>
+                                            <div class="col-xs-5 col-sm-4"><span>USD 625.50</span></div>
+                                        </div>
+                                        <div class="collapse small divider" id="collapseDiv">
+                                            <div class="row">
+                                                <div class="col-xs-7 col-sm-8"><span>Ticket Tax Argentina</span> </div>
+                                                <div class="col-xs-5 col-sm-4"><span>USD 35.90</span></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-7 col-sm-8"><span>Security Tax Spain and Canary Islands</span> </div>
+                                                <div class="col-xs-5 col-sm-4"><span>USD 4.20</span></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-7 col-sm-8"><span>Tax.XR1</span> </div>
+                                                <div class="col-xs-5 col-sm-4"><span>USD 57.00 </span></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-7 col-sm-8"><span>Airport Tax</span> </div>
+                                                <div class="col-xs-5 col-sm-4"><span>USD 0.70 </span></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-7 col-sm-8"><span>Departure Charge Spain and Canary Islands</span> </div>
+                                                <div class="col-xs-5 col-sm-4"><span>USD 25.70 </span></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-7 col-sm-8"><span>Airport Tax</span> </div>
+                                                <div class="col-xs-5 col-sm-4"><span>USD 10.00</span></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-7 col-sm-8"><span>Airport Tax</span> </div>
+                                                <div class="col-xs-5 col-sm-4"><span>USD 10.00</span></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-7 col-sm-8"><span>Airport Tax</span> </div>
+                                                <div class="col-xs-5 col-sm-4"><span>USD 482.00</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="row divider strong txt-blue">
+                                            <div class="col-xs-7 col-sm-8"><span>Tarifa</span> </div>
+                                            <div class="col-xs-5 col-sm-4"><span>USD 236.00</span></div>
+                                        </div>
+                                        <div class="row strong txt-blue">
+                                            <div class="col-xs-7 col-sm-8"><span>Tasas e impuestos</span> </div>
+                                            <div class="col-xs-5 col-sm-4"><span>USD 625.50</span></div>
+                                        </div>
+                                        <div class="row divider strong txt-blue total">
+                                            <div class="col-xs-7 col-sm-8"><span>Total:</span> </div>
+                                            <div class="col-xs-5 col-sm-4"><span>USD 861.50</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <footer class="footer" id="footer">
+                <div class="content-footer">
+                    <hr>
+                    <input type="hidden" id="hostId" value="JE2RNCJXLAA3LIL3FEPY7J7SYA" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="copyright">
+                                <p class="txtGirsfoote">Website Oficial de Aerol&iacute;neas Argentinas. &copy; 1996 - 2016 Aerol&iacute;neas Argentinas S.A.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="links">
+                                <ul class="list-unstyled list-inline clearfix">
+                                    <li class="logoAerohandling"><img src="img/common/footer-aerohandling.jpg" alt="Aerohandling"></li>
+                                    <li class="logoJetPaq"><img src="img/common/footer-jetpaq.jpg" alt="JetPaq"></li>
+                                    <li class="logoOptar"><img src="img/common/footer-optar.jpg" alt="Optar"></li>
+                                    <li class="logoAustral"><img src="img/common/footer-austral.jpg" alt="Austral"></li>
+                                    <li class="logoAR"><img src="img/common/footer-aa.jpg" alt="Aerolíneas Argentinas"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/content-footer -->
+            </footer>
+        </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $('#collapseDiv').on('shown.bs.collapse', function() {
+            $(".glyphicon-collapse").removeClass("glyphicon-plus").addClass("glyphicon-minus");
+        });
+
+        $('#collapseDiv').on('hidden.bs.collapse', function() {
+            $(".glyphicon-collapse").removeClass("glyphicon-minus").addClass("glyphicon-plus");
+        });
+    </script>
+</body>
+
+</html>

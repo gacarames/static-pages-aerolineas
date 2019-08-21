@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Aerolineas Argentinas</title>
+    <meta http-equiv="title" content="Aerolineas Argentinas">
+    <meta name="Description" content="Todo tu viaje en un s&#243;lo lugar aerolineas.com, vuelos baratos.">
+    <link href="Images/condor_chico.gif" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="Content/themes/DarkSite/css/screen.css" rel="stylesheet" />
+    <link href="Content/themes/DarkSite/css/estilo.css" rel="stylesheet" />
+    <link href="Content/themes/DarkSite/css/form_argentina.css" rel="stylesheet" />
+    <link href="Content/themes/DarkSite/css/form_argentina_home.css" rel="stylesheet" />
+    <link href="Content/themes/DarkSite/css/Extras.css" rel="stylesheet" />
+    <link href="Content/themes/DarkSite/Error.css" rel="stylesheet" />
+    <link href="Content/themes/DarkSite/jquery-ui-timepicker-addon.css" rel="stylesheet" />
+    <link href="Content/themes/DarkSite/jquery.ui.core.css" rel="stylesheet" />
+    <link href="Content/themes/DarkSite/jquery.ui.resizable.css" rel="stylesheet" />
+    <link href="Content/themes/DarkSite/jquery.ui.selectable.css" rel="stylesheet" />
+    <link href="Content/themes/DarkSite/jquery.ui.accordion.css" rel="stylesheet" />
+    <link href="Content/themes/DarkSite/jquery.ui.autocomplete.css" rel="stylesheet" />
+    <link href="Content/themes/DarkSite/jquery.ui.button.css" rel="stylesheet" />
+    <link href="Content/themes/DarkSite/jquery.ui.dialog.css" rel="stylesheet" />
+    <link href="Content/themes/DarkSite/jquery.ui.slider.css" rel="stylesheet" />
+    <link href="Content/themes/DarkSite/jquery.ui.tabs.css" rel="stylesheet" />
+    <link href="Content/themes/DarkSite/jquery.ui.datepicker.css" rel="stylesheet" />
+    <link href="Content/themes/DarkSite/jquery.ui.progressbar.css" rel="stylesheet" />
+    <link href="Content/themes/DarkSite/jquery.ui.theme.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.8.3.js"></script>
+    <script src="Scripts/jquery-ui-1.9.2.js"></script>
+    <script src="Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script src="Scripts/jquery.validate.js"></script>
+    <script src="Scripts/modernizr-2.5.3.js"></script>
+    <script src="Scripts/funcionesVarias.js"></script>
+    <script src="Scripts/jquery.watermark.js"></script>
+
+    <style>
+        #newcont h1 {
+            font-family: Neo_san, Arial, Helvetica, sans-serif;
+            font-size: 21px;
+            width: 99%;
+            border-bottom: solid 1px #666666;
+            color: #666666;
+            padding-bottom: 8px;
+        }
+        #newcont p {
+            margin-bottom: 13px;
+            margin-left: 0px;
+        }
+        .date {
+                color: #838384;
+                    font-size: 12px;
+        }
+        .mensaje {
+                margin: 10px 0;
+        border-bottom: 1px dotted #ccc;
+        }
+        .mensaje p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- CONTENEDOR -->
+    <div id="contenedor_home">
+        <header>
+           
+            <!--HEADER-->
+            <div id="header" />
+            <div class=" header_borde">
+            </div>
+            <div id="header-left">
+                <a href="#" target="_self">
+                    <a href="/" title="Logo Aerolineas Argentinas"><img alt="Logo Aerolineas Argentinas" border="0" height="44px" hspace="0" src="Images/dark/logo_Aerolineas.gif" vspace="0" width="252px" /></a>
+                </a>
+                <span class="screen-reader-text">
+                    Aerolineas.com</span>
+            </div>
+           
+            <div align="right" id="logo-header">
+                <div class=" width300   fleft  mleft100 mtop5" style="padding-right: 15px;">
+                    <img src="Images/dark/label.jpg" alt="img" width="32">
+                </div>
+                <div class=" fleft mtop10 ">
+                    <!--select paises-->
+                    <div id="CultureContainer">
+                        <select class="INPUTBuscador" id="culture" name="culture" onChange="onCultureChanged()" style="width: 150px; margin-left: 10px;">
+                            <option selected="selected" value="es-AR">Argentina (Espa&#241;ol)</option>
+                            <option value="en-AR">Argentina (Ingl&#233;s)</option>
+                            <option value="en-AU">Australia</option>
+                            <option value="es-BO">Bolivia</option>
+                            <option value="pt-BR">Brasil</option>
+                            <option value="en-CA">Canad&#225;</option>
+                            <option value="es-CO">Colombia</option>
+                            <option value="es-CL">Chile</option>
+                            <option value="es-EU">Europa (Espa&#241;ol)</option>
+                            <option value="it-EU">Europa (Italiano)</option>
+                            <option value="en-EU">Europa (English)</option>
+                            <option value="es-MX">M&#233;xico</option>
+                            <option value="en-NZ">New Zeland</option>
+                            <option value="es-PA">Paraguay</option>
+                            <option value="es-PE">Per&#250; (Espa&#241;ol)</option>
+                            <option value="es-UY">Uruguay</option>
+                            <option value="es-US">United States (Espa&#241;ol)</option>
+                            <option value="en-US">United States (English)</option>
+                            <option value="es-VE">Venezuela</option>
+                            <option value="es-US">Otros pa&#237;ses (Espa&#241;ol)</option>
+                            <option value="en-US">Other Countries (English)</option>
+                        </select>
+                    </div>
+                    <!--fin de select paises-->
+                </div>
+                
+            </div>
+            <!-- /HEADER -->
+            <br clear="all" />
+            <a name="startcontent" id="startcontent"></a>
+            
+         
+        </header>
+        <div>
+            <div id="newcont" style="height:630px; width:982px; padding:0 10px 0 10px">
+
+            <h1>Aerolineas argentinas / Austral</h2>
+            <div class="post">
+                <div class="date">28/10/215 08:30</div>
+                <div class="mensaje">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur amet quos et perferendis, voluptatem nulla laborum dignissimos obcaecati, excepturi quibusdam accusantium odit pariatur assumenda cumque vitae, veniam est. At, itaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, facere excepturi quibusdam accusantium odit pariatur assumenda cumque vitae, veniam est. At, itaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, facere. </p>
+                    
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="date">28/10/215 08:30</div>
+                <div class="mensaje">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur amet quos et perferendis, voluptatem nulla laborum dignissimos obcaecati, excepturi quibusdam accusantium odit pariatur assumenda cumque vitae, veniam est. At, itaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, facere excepturi quibusdam accusantium odit pariatur assumenda cumque vitae, veniam est. At, itaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, facere. </p>
+                    
+                </div>
+            </div>
+
+            
+               
+              
+            </div>
+            
+        </div>
+        <footer>
+            <!--pie-->
+            <script type="text/javascript">
+            function abrirAustral() {
+                window.open('http://www.austral.com.ar/index.asp?idSitio=AR&idIdioma=es', 'Austral', 'scrollbars=yes, resizable=1,width=1020,height=805');
+            }
+
+            function popup_condiciones_transporte() {
+                var winC = window.open('http://www.aerolineas.com.ar/arg/bodies/CondicionesGrales_contratoTransporte.asp?idSitio=AR&idIdioma=es', 'wContr', 'scrollbars=yes, resizable=1,width=800,height=600');
+                winC.moveTo(0, 0);
+            }
+            </script>
+            <div id="pie">
+                <div class="ml10  mtop15">
+                    
+                    
+                    <br clear="all" />
+                </div>
+                <div class="div">
+                </div>
+                <div class="div_pie">
+                    <div class="div_links">
+                        <div class="div_partner">
+                            <img src="Images/dark/footer-logoAustral.gif" alt="Logo Austral" onclick="abrirAustral();" style="cursor:pointer;" />
+                        </div>
+                        <div class="div_partner">
+                            <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=81%26idIdioma=es" title=""><img alt="@MainFooterResource.JetPaq_Logo" src="Images/dark/footer-logoJetPaq.gif" /></a>
+                        </div>
+                        <div class="div_partner">
+                            <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=9%26idIdioma=es" title=""><img alt="@MainFooterResource.Aerohandling_Logo" src="Images/dark/footer-logoAerohandling.gif" /></a>
+                        </div>
+                        <div class="div_partner">
+                            <a href="http://www.optar.com/" target="_blank">
+                                <img src="Images/dark/footer-logoOptar.gif" alt="Logo Optar" border="0" />
+                            </a>
+                        </div>
+                        <div class="div_partner mtop7 mleft20"><img src="Images/dark/logo_arg.jpg" alt="Logo Aerol&#237;neas Argentinas" width="47" height="30" />
+                        </div>
+                        <div class="div_partner mtop14 mleft25"><img src="Images/dark/argentina_paisbuenagente.gif" alt="Logo Aerol&#237;neas Argentinas - Un pa&#237;s con buena gente" />
+                        </div>
+                    </div>
+                    <br clear="all" />
+                    <div class="codigo-qr">
+                        <a href="https://servicios1.afip.gov.ar/clavefiscal/qr/mobilePublicInfo.aspx?req=e1ttZXRob2Q9Z2V0UHVibGljSW5mb11bcGVyc29uYT0zMDY0MTQwNTU1NF1bdGlwb2RvbWljaWxpbz0wXVtzZWN1ZW5jaWE9MF1bdXJsPWh0dHA6Ly93d3cuYWVyb2xpbmVhcy5jb20uYXJdfQ==" target="_F960AFIPInfo">
+                            <img src="Images/dark/qr_code.gif" alt="QR-Code" />
+                        </a>
+                    </div>
+                    <div class="pie_texto">
+                        <span>aerolineas.com Sitio Oficial de Aerolineas Argentinas. &#169; 1996 - 2013 Aerol&#237;neas Argentinas S.A.<br />
+                            <a class="pie" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=72%26idIdioma=es">Legales</a> |
+                            <a class="pie" href="#" onclick="popup_condiciones_transporte();"> Condiciones Generales de Transporte </a>|
+                            <a class="pie" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=94%26idIdioma=es">Mapa del Sitio</a> |
+                            <a class="pie" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=84%26idIdioma=es">Ud. est&#225; en un SITIO SEGURO</a> 
+                        </span>
+                    </div>
+                </div>
+                <div class="div_borde">
+                    <img src="Images/dark/footer-right.gif" alt="" />
+                </div>
+            </div>
+            <!--fin de pie-->
+        </footer>
+    </div>
+    <!--sliders-->
+    <script type="text/javascript">
+    // Configuro SLIDERS
+
+    $(document).ready(function() {
+        if ($("#slider") != null) {
+            $("#slider").easySlider({
+                auto: true,
+                continuous: true,
+                numeric: true,
+                speed: 1500,
+                pause: 5000,
+                numericId: 'controls',
+                playstop: true,
+                playstopId: 'playstop',
+                playId: 'play',
+                stopId: 'stop'
+            });
+        }
+    });
+
+    $(document).ready(function() {
+        if ($("#slider2") != null) {
+            $("#slider2").easySlider({
+                auto: true,
+                continuous: true,
+                numeric: true,
+                speed: 800,
+                pause: 16000,
+                numericId: 'controls3',
+                playstop: true,
+                playstopId: 'playstop2',
+                playId: 'play2',
+                stopId: 'stop2'
+
+            });
+        }
+    });
+    </script>
+    <script type="text/javascript">
+    function onCultureChanged() {
+        var cultureName = $("#culture").val();
+        GlobalCultureName = cultureName;
+
+        var ruta = '/Culture/ChangeCulture';
+        ruta = '/Culture/ChangeCulture';
+        //var redirectUrl = '/_culture_';
+        var redirectUrl = '/_culture_';
+
+        $.ajax({
+            url: ruta,
+            type: "post",
+            dataType: "json",
+            traditional: true,
+            async: false,
+            data: {
+                'selectedCultureName': cultureName
+            },
+            success: function(result, responseText) {
+
+                // // translateUrlAndRedirect(GlobalCultureName);
+
+                //alert('Cultura cambiada exitosamente por: ' + result);
+
+                // Redirecciono
+                redirectUrl = redirectUrl.replace("_culture_", GlobalCultureName);
+                window.location.replace(redirectUrl);
+
+                //  // Recargo la página
+                //window.location.reload();
+            },
+            error: function() {
+                alert('Error al intentar cambiar la cultura');
+            }
+        });
+
+    }
+    </script>
+    <!--************GOOGLE ANALYTICS*******************-->
+    <!--************GOOGLE ANALYTICS*******************-->
+</body>
+
+</html>

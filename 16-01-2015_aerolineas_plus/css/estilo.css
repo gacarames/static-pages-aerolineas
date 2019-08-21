@@ -1,0 +1,1558 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*tipos*/
+
+ @font-face {  
+/* Para Internet Explorer */
+	src: url('font/NeoSan.eot');
+ 
+ /*  Para el resto de navegadores */
+
+    font-family: "Neo_san"; 
+    src: url('font/NeoSan.ttf')  format("truetype");  
+    }  
+
+
+ @font-face {  
+/* Para Internet Explorer */
+	src: url('font/neosanmed-webfont.eot');
+ 
+ /*  Para el resto de navegadores */
+
+    font-family: "Neo_sans"; 
+    src: url('font/Neo_Sans_Medium.ttf')  format("truetype");  
+    }  
+	
+	  @font-face {  
+	  /* Para Internet Explorer */
+	 src: url('font/neosanbol-webfont.eot');
+	  
+    font-family: "Neo_sans_bold"; 
+    src: url('font/neosanbol-webfont.ttf') format("truetype");  
+    }  
+	 
+/*general*/
+body  {
+	margin: 0;  
+	padding: 0; 
+	background: #A6AAAD; 
+	font-family: arial, helvetica, sans-serif;
+	}
+	
+	 .clearing{
+      clear:both;
+   }
+	
+.screen-reader-text {
+  position: absolute !important;
+  clip: rect(.01em, .01em, .01em, .01em);
+  padding: 0 !important;
+  border: 0 !important;
+  height: .01em !important; 
+  width: .01em !important; 
+  overflow: hidden;
+}	
+	
+ul
+{
+    list-style-type: none; margin: 0;
+padding: 0;
+}
+
+
+
+	
+a.pie { 
+  text-decoration:none; 
+  color:#838384
+  }
+  
+ p { font: normal 0.75em Tahoma, Geneva, sans-serif; 
+ color:#838384
+ }
+ 
+p.space {line-height: 150%} 
+ 
+h4 {font-family: "Neo_sans";  color:#0081c6}
+h6 {font-family: normal "Neo_sans"; font-size:10px; letter-spacing: 0px;   color:#0081c6; margin-top:10px; margin-bottom:15px}
+
+.mleft1 { margin-left:1px}
+.mleft2 { margin-left:2px}
+.mleft5 { margin-left:5px}
+.mtop0 { margin-top:0}
+.mtop5 { margin-top:5px}
+.mtop7 { margin-top:7px;}
+.mtop10 { margin-top:10px}
+.mtop14 { margin-top:14px}
+.mtop15 { margin-top:15px}
+.mtop16 { margin-top:16px}
+.mtop19 { margin-top:19px}
+.mtop20 { margin-top:20px}
+.mtop26 { margin-top:26px}
+.mtop30 { margin-top:30px}
+.mtop35 { margin-top:35px}
+.mtop39 { margin-top:39px}
+.mtop42 { margin-top:42px}
+.mtop61 { margin-top:61px}
+.mtop65 { margin-top:65px}
+.mtop70 { margin-top:70px}
+.mtop80 { margin-top:80px}
+.mtop100 { margin-top:100px}
+
+.mleft10 { margin-left:10px}
+.mleft15 { margin-left:15px}
+.mleft20 { margin-left:20px}
+.mleft35 { margin-left:35px}
+.mleft40 { margin-left:40px}
+.mleft45 { margin-left:45px}
+.mleft50 { margin-left:50px}
+.mleft55 { margin-left:55px}
+.mleft70 { margin-left:70px}
+.mleft90 { margin-left:90px}
+.mleft100 { margin-left:100px}
+.mleft110 { margin-left:110px}
+.mleft125 { margin-left:125px}
+.mleft130 { margin-left:130px}
+.mleft140 { margin-left:140px}
+.mleft145 { margin-left:145px}
+.mleft150 { margin-left:150px}
+.mleft160 { margin-left:160px}
+.mleft170 { margin-left:170px}
+.mleft175 { margin-left:175px}
+.mleft190 { margin-left:190px}
+.mleft225 { margin-left:225px}
+.mleft390 { margin-left:390px}
+.mright5 { margin-right:5px}
+.mright10 { margin-right:10px}
+.mright35 { margin-right:35px}
+.mbot5 { margin-bottom:5px}
+.mbot6 { margin-bottom:6px}
+.mbot10 { margin-bottom:10px}
+.mbot25 { margin-bottom:25px}
+.fleft { float:left}
+.fright { float:right}
+.padding5 { padding:5px}
+.pleft5 { padding-left:5px}
+.pleft15 { padding-left:15px}
+.pleft85 {padding-left:85px; }
+.pright25 { padding-right:25px}
+.ptop5 { padding-top:5px}
+.ptop10 {padding-top:10px}
+ a { color:#0081c6}
+ 
+.width35 { width:35px}
+.width45 { width:45px}
+.width55 { width:55px}
+.width72 { width:72px}
+.width80 { width:80px}
+.width90 { width:90px}
+.width94 { width:94px}
+.width99 { width:99px}
+.width108 { width:108px}
+.width120 { width:120px}
+.width130 { width:130px}
+.width136 { width:136px}
+.width150 { width:150px}
+.width160 { width:160px}
+.width170 { width:170px}
+.width180 { width:180px}
+.width190 { width:190px}
+.width196 { width:196px}
+.width200 { width:200px}
+.width210 { width:210px}
+.width220 { width:220px}
+.width230 { width:230px}
+.width240 { width:240px}
+.width250 { width:250px}
+.width260 { width:260px}
+.height9 { height:9px}
+.height15 { height:15px}
+.height25 { height:25px}
+.height139 { height:139px}
+.width300 { width:300px}
+.width350 { width:350px}
+.width400 { width:400px}
+.width766 { width:766px}
+.width1001 { width:1001px}
+ /*fecha*/
+
+#fecha {
+	 width:1002px; 
+	 height:8px; 
+	 font-size:11px; 
+	 padding:7px 0 7px 0; 
+	 background: #A6AAAD; float: right;
+	 
+	 }
+	 
+.contacto {
+	text-decoration:none; 
+	font:11px Tahoma, Geneva, sans-serif; 
+	color:#858585}
+
+	
+	/*tipos*/
+ .grey { color:#838384}
+ .gris { color:#555; font-size:12px;}
+ .gris9 {color:#555; font-size:9px;}
+ .gris10 { color:#555; font-size:10px;}
+ .gris11 { font: normal 11px Tahoma, Geneva, sans-serif; color:#838384}
+ .gris2 {font-family: "Neo_sans";  color:#969697;}
+ .gris3 {font: normal 10px "Neo_sans";  color:#969697;}
+ .negro10 {font: normal 10px Tahoma, Geneva, sans-serif; color:#000000}
+ .negro11 {font: normal 11px Tahoma, Geneva, sans-serif; color:#000000}
+ .negro12 {font: normal 12px Tahoma, Geneva, sans-serif; color:#000000}
+ .azul {font: normal 12px Tahoma, Geneva, sans-serif; color:#0081c6}
+ .azul11 { color:#0081c6; font-size:11px;}
+ .azul9 { color:#0081c6; font-size:9px;}
+ .azul10 { color:#0081c6; font-size:10px;}
+ .blanco {font-family: "Neo_sans";  color:#FFF;}
+ .blanco2 { color:#FFF; font-size:11px}
+ .font_neo1 {font-family: "Neo_san";}
+ .font_size4 { font-size:14px}
+ 
+ .skiplink {display:none}
+
+ /*contenedor*/
+	#contenedor {
+		width: 62.625em; /*1002px*/
+		height:auto;
+		margin:  auto; 
+		background: #fff;
+		}
+		
+	#contenido {
+		width:/*61.500em;*/ 984px;
+		height: auto ; 
+		padding-bottom:3px;
+		padding-left:7px; 
+		padding-right:7px; 
+		background-color: #fff;
+		
+		} 
+		
+		.contenedor {width: 62.625em; 
+		height:auto;
+		margin: 0 auto; 
+		background: #fff;
+		}
+
+/*header*/
+	#header {background: #fff;}
+.header_borde {width:1002px; height:9px; background-image: url(../img/backgrounds/top.gif)}
+	
+	#header-left { 
+		float: left; 
+		margin: 18px 0 13px 12px; 
+		width: 30%;
+		}
+	#logo-header {
+		float: right; 
+		margin-left:2px; 
+		margin-right:12px; 
+		margin-top:2px;
+		
+		}
+.no_border {border:0}	
+
+	#principal {
+		background: #fff; 
+		display: table;
+		}
+		
+	.logo_header { float:right; 
+	margin-left:12px; margin-bottom:4px;
+	}
+	
+	a img { border:none; }
+	.logo_social {padding: 5px 0 0 0}
+ 
+/*buscador*/  
+	.INPUTBuscador {
+		background-image: url("../img/backgrounds/fdo-buscador.jpg");
+		background-repeat: repeat-x;
+		border-color: #D9D9D9;
+		border-style: solid;
+		border-width: 1px;
+		color: #808084;
+		font-family: Arial,Helvetica,sans-serif;
+		font-size: 11px;
+		height: 18px;
+		line-height: normal;
+		width: 100px;
+	}
+
+.INPUTBuscador2 {
+background-image: url("../img/backgrounds/fdo-ingreso.gif");}
+
+
+/*DESARROLLO DEL MENU	*/
+	#navbar {
+		position: relative;
+		width: 981px;
+		margin: 0 auto;
+		z-index:2;
+		}
+	
+		#botonera {
+		font: normal 16px "Neo_san", Tahoma, Geneva, sans-serif;
+		width: 100%;
+		height: 30px;
+		margin: 0px 0;
+		background-image:url(../img/backgrounds/home_nav2.png); }
+		
+
+	.boton {
+		width: auto; 
+		height: 30px;
+		float: left;
+		text-align: center;
+		/*border-left:solid 1px #FFF;*/
+		font-weight: normal;
+		font-size: 72%;
+		line-height: 30px; color:#FFF; 
+		
+		}
+	
+	
+	.boton:hover  {background-color:#186796; }
+	
+	.select_boton  {background-color:#186796; }
+
+	.boton a {
+		color: white;
+		text-decoration: none;
+		display: block; 
+		}
+		
+	.boton  a:hover { color: white; }
+
+
+/*	Desarrollo de los menu desplegables	*/
+	
+	/* desplegable de dos columnas*/
+	#boton_2col_a {
+		float:left; 
+		height:170px; 
+		background:none; 
+		radius:0;-moz-border-radius: 0px; 
+		-webkit-border-radius : 0px;  
+		width: auto; 
+		border-right: dashed thin; 
+		color:#FFF; margin-right:20px; 
+		font: normal 12px "Neo_san", Tahoma, Geneva, sans-serif;
+		}
+	#boton_2col_b {
+		float:left; 
+	width:145px; 
+	background:none; 
+	font: normal 12px "Neo_san", Tahoma, Geneva, sans-serif;
+	}
+	
+	#div_2 {height:170px; width:350px;  }
+
+		.width_1 { width:150px}
+		.width_2 { width:200px}
+		.width_3 { width:300px}
+		.width_4 { width:180px}
+		
+.boton div {
+		position: relative ;
+		z-index:-1;
+		margin-top:-10px;
+		width: 125%;
+		background-color: #186796;
+		font-size: 100%;
+		visibility: hidden;
+		text-align: left;
+		padding: 10px 2px 10px 10px;
+		font: normal 100% arial; 
+		radius:7px;-moz-border-radius: 7px; 
+		-webkit-border-radius : 7px;
+		-ms-border-radius: 10px;
+		}
+		
+ 
+	.boton:hover div { 
+	visibility: visible; 
+	}
+ 
+ 
+	.boton ul {
+		font: normal 12px "Neo_san", Tahoma, Geneva, sans-serif;
+		margin: 0 10px;
+		padding: 0;
+		list-style: outside; 
+		color:#FFF }
+		
+	.boton li a {
+		color: white;
+		text-decoration: none;
+		padding: 3px; }
+		
+		.boton li a:hover { 
+		color: #fa6; 
+		}
+	
+
+.transparent {
+        zoom: 1;
+        filter: alpha(opacity=90);
+        opacity: 0.9;
+}
+
+
+.redondeado {
+	border-radius: 7px;
+	-moz-border-radius: 7px;
+	-ms-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-khtml-border-radius: 7px;
+}
+/*DIV Central*/
+
+#bloque {width: 100%;
+margin: 0 auto;
+}
+#caja1, #caja2, #caja3 {
+margin-left: 2px;
+float: left;
+}
+#caja1 {background-color: #fff; width: 30%;margin-top:3px; margin-bottom:10px;
+margin-left: 10px!important;
+margin-left: 1px;
+}
+#caja2 {background-color: #fff;width: 21%; margin-left:20px; margin-top:3px;}
+#caja3 {background-color: #fff;width: 18%; margin-left:60px; margin-top:2px;}
+.salto {clear: both;}
+
+
+
+ /*slider centro*/
+	 .titulo_slide_centro { 
+		 font:bold 16px Tahoma, Geneva, sans-serif; 
+		 margin:10px 0 0 10px; 
+		 color:#5c656a;
+		 }
+	 .itinerario_slide_centro {
+		 font:normal 24px Tahoma, Geneva, sans-serif; 
+		 margin:5px 0 0 13px; 
+		 color:#009fd6;
+		 }
+	 .precio_dolar {
+		 font:normal 26px Tahoma, Geneva, sans-serif; 
+		 margin: 0 0 0 10px; 
+		 color:#0081c5;
+		 }
+	 .precio_slide_centro {
+		 font:normal 46px Tahoma, Geneva, sans-serif; 
+		 color:#0081c5;
+		 }
+	 .precio_final {
+		 font:normal 11px Tahoma, Geneva, sans-serif; 
+		 color:#0081c5;
+		 }
+ 
+
+  /*slider medio*/
+  #slider_botonera { 
+	  border:none; 
+	  margin-left:5px; 
+	  margin-bottom:40px; 
+	  width:290px; 
+	  height:24px
+	  }
+  
+  #slider { 
+	  height:331px; 
+	  margin-left:0px; 
+	  width:272px; 
+	  background-color:#EDEEEE; }
+	  
+	
+	  
+	#menu_izquierdo { 
+		 padding:0px 5px 5px 5px; 
+		 margin:5px; 
+		 height:248px; 
+		 width:269px; 
+		 background-color:#EDEEEE; 
+		 border: solid 1px #0081c6
+		 }
+	  
+	  .boton_slider { float:left}
+	  
+	  .boton_slider_alojamiento { 
+	  	  font: normal  "Neo_san", Tahoma, Geneva, sans-serif;
+		  padding-top:3px; 
+		  width:143px; 
+		  height:20px; 
+		  float:left; 
+		  background-image:url(../img/reservas/alojamientos.gif)
+		  }
+	  
+	  .boton_slider_autos {
+		  padding-top:3px; 
+		  padding-right:20px; 
+		  width:118px; 
+		  height:20px; 
+		  float:left; 
+		  background-image:url(../img/reservas/autos.gif)
+		  }
+		  
+	  .boton_slider_check_in {
+		  padding-top:0.188em; 
+		  padding-left:2.188em; 
+		  width:6.688em; 
+		  height:1.313em; 
+		  float:left; 
+		  background-image:url(../img/reservas/check_in.gif)
+		  }
+		  
+	  .boton_slider_mis_viajes {
+		  padding-top:0.188em; 
+		  padding-left:2.125em; 
+		  width:6.563em; 
+		  height:1.313em; 
+		  float:left; 
+		  background-image:url(../img/reservas/mis_viajes.gif)
+		  }
+		  
+	  .boton_slider_vuelos {
+		  padding-top:4px; 
+		  padding-left:7.5em; 
+		  width:10.063em; 
+		  height:1.113em; 
+		  float:left; 
+		  background-image:url(../img/reservas/vuelos.gif)
+		  }
+		  .boton_slider_vuelos2 { margin-top:10px;
+			  
+			 
+		  padding-top:0.188em; 
+		  padding-left:7.5em; 
+		  width:10.063em; 
+		  height:1.313em; 
+		  float:left; 
+		  background-image:url(../img/reservas/vuelos2.gif)
+		  }
+	  .texto_botonera { 
+	  font: normal 12px  "Neo_san", Tahoma, Geneva, sans-serif;
+		  margin-right:1.000em; 
+		  text-decoration:none; 
+		  color:#666;
+		  }
+		  
+		    .texto_botonera_on { 
+	  font: normal 12px  "Neo_san", Tahoma, Geneva, sans-serif;
+		  margin-right:1.000em; 
+		  text-decoration:none; 
+		  color:#fff;
+		  }
+	  
+	  .text_slider {
+		  font: normal 11px Tahoma, Geneva, sans-serif; 
+		  color:#0081c6
+		  ;}
+		  
+		   .text_slider2 {
+		  font: normal 10px Tahoma, Geneva, sans-serif; 
+		  color:#0081c6
+		  ;}
+		  
+	
+   
+ /*pie*/
+	#pie  {
+		background: #fff; 
+		width:62.625em
+		;}
+		
+	.pie_texto { 
+		text-align:center; 
+		padding-top:0.313em; 
+		font: normal 10px Tahoma, Geneva, sans-serif; 
+		text-decoration:none; 
+		color:#838384;
+		}
+	
+	.div { 
+		float:left; 
+		width:20.813em; 
+		height:6.250em; 
+		background-image:url(../img/backgrounds/footer-left.jpg) 
+		}
+	
+	.div_borde { float:left;}
+	
+	.div_pie { 
+		background-color:#FFF; 
+		width:41.188em; height:6.188em; 
+		float:left; border-top: solid 1px #CCC;
+		}
+	
+	.div_links { 
+		margin-top:0.313em; 
+		border:none; 
+		padding:0 0 0 3.750em
+		}
+	.div_partner { float:left; padding: 0.313em 0.750em 0 0}
+	.div_fb { float:left; padding: 0.313em 0.250em 0 0}
+
+/*   columnas */
+	#primero {background: #fff; 
+		float: right; 
+		width: 15.125em; 
+		padding-left:0.625em ; 
+		display: block;
+		}
+	
+	#segundo {background: #fff; 
+		float: right; width: 27.188em; 
+		display: block;
+		}
+	
+	#tercero {background: #fff; 
+		float: right; 
+		width: 17.625em; 
+		display: block;
+		}
+
+/*texto ofertas columna derecha*/
+#oferta { 
+	background-image:url(../img/backgrounds/tarifa_1.gif); 
+	width:15.125em; 
+	height:5.813em; 
+
+	}
+
+#oferta2 { 
+	background-image:url(../img/backgrounds/tarifa_2.gif); 
+	width:15.125em; 
+	height:5.813em; 
+	margin-top:0.438em;
+	}
+
+#oferta3 { 
+	background-image:url(../img/backgrounds/tarifa_3.gif); 
+	width:15.125em; 
+	height:5.813em; 
+	margin-top:0.438em; 
+	margin-bottom:0.438em;
+	}
+
+.contenido {padding:0.088em 0 0 0.625em}
+
+.destino {
+	font: normal 14px "Neo_sans", Tahoma, Geneva, sans-serif; margin:0; 
+	color:#FFF
+	}
+	
+.desde {
+	font: normal 11px  "Neo_sans", Tahoma, Geneva, sans-serif; 
+	color:#FFF
+	}
+	
+.moneda {
+	font: bold 16px "Neo_sans", Tahoma, Geneva, sans-serif; 
+	color:#FFF
+	}
+	
+.precio { 
+	font: bold 26px "Neo_sans", Tahoma, Geneva, sans-serif;  
+	color:#FFF
+	}
+
+.cuotas {
+	font: normal 11px Tahoma, Geneva, sans-serif; 
+	color:#FFF
+	}
+	
+.plus { 
+	float:left; 
+	margin:0.5em 0.125em 0.188em 0.938em; 
+	font: normal 10px Tahoma, Geneva, sans-serif; 
+	color:#00669D; width:176px; height:20px;
+	}
+
+.plus_comprar {
+	float:left; 
+	width:2.500em; 
+	font: normal 10px Tahoma, Geneva, sans-serif; 
+	color:#0081c6; 
+	margin:6px 0.125em 0.188em 0.438em; 
+	text-decoration:none 
+	}
+	
+	.plus_comprar_derecha {
+	float:right; 
+	width:2.500em; 
+	font: normal 10px Tahoma, Geneva, sans-serif; 
+	color:#0081c6; 
+	margin:0em 2.985em 0.19em 0.438em; 
+	text-decoration:none 
+	}
+	
+/*texto ofertas columna central*/
+
+/*banner central*/
+	#banner_a_donde { 
+		width:27.188em; 
+		height:3.125em; 
+		margin:0.625em 0 0 0;  
+		background: #333 url(../img/banners/donde_viajar.gif)
+		}
+
+	.banner_a_donde {
+		margin:0.188em 0 0 0;  
+		font: normal 18px "Neo_sans", Tahoma, Geneva, sans-serif; 
+		color:#0081c6 
+		}
+		
+	.titulo_a_donde { 
+		margin:0.188em 2.813em 0 0; 
+		width:16.250em; 
+		font: italic 22px Tahoma, Geneva, sans-serif; 
+		color:#0081c6
+		}
+
+/*banner central cuadrado*/
+	#banner { 
+		margin:0.625em 0 0.313em 0; 
+		width:13.250em; 
+		height:11.063em; 
+		float:left; 
+		background: #333 url(../img/banners/paquetes_v2.gif);
+		}
+	
+	#banner2 { 
+		margin:0.625em 0.688em 0.313em 0; 
+		width:13.250em; 
+		height:11.063em; 
+		float:left; 
+		background-image:url(../img/banners/banner_cupondesc_02_V2.gif); 
+		}
+	
+	.destino2 { 
+		font: bold 16px Tahoma, Geneva, sans-serif; 
+		color:#FFF;
+		}
+	
+	.precio2 {
+		font: bold 26px Tahoma, Geneva, sans-serif; 
+		color:#0081c6;
+		}
+	
+	.hotel { 
+		font: normal  13px  Tahoma, Geneva, sans-serif; 
+		color:#FFF;
+		}
+	
+	.dias {
+		font: normal 10px Tahoma, Geneva, sans-serif; 
+		color:#5d656a;
+		}
+	.boton_paq { 
+		margin-top:0.7em; 
+		width:100px; 
+		height:0.938em; 
+		font: normal 10px Tahoma, Geneva, sans-serif; 
+		color:#0081c6;
+		}
+	
+	.link_cupones { 
+		margin:5.688em 10px 5px 10px;
+		text-decoration:none;
+		font: normal 10px Tahoma, Geneva, sans-serif; 
+		color:#0081c6;
+		}
+	
+	.titulo_banner2 { 
+		margin:-2px 45px 0 0; 
+		width:160px; 
+		font:  22px "Neo_sans", Tahoma, Geneva, sans-serif; 
+		color:#0081c6;
+		}
+	
+	.titulo_banner {
+		width:9.375em; 
+		margin-top:3.750em; 
+		margin-right:0.625em; 
+		}
+
+/*banner banco*/
+#banner_banco { 
+	width:27.188em; 
+	height:5.000em; 
+	padding-top:0.438em; 
+	background-image: url(../img/banners/banco.gif); 
+	background-repeat:no-repeat; 
+	border:solid 1px #999;
+	}
+
+.titulo_banner3 { 
+	margin-left:5.625em; 
+	font: normal 24px Tahoma, Geneva, sans-serif; 
+	color:#00a0d6
+	}
+
+.subtitulo_banner3 {
+	margin-left:11.875em; 
+	font: normal 18px Tahoma, Geneva, sans-serif; 
+	color:#00a0d6;
+	}
+
+/*banners columna izquierda*/
+.banner_izquierda {
+	margin:5px 0 5px 3px;
+	}
+	
+.boton_buscar { 
+	text-align:center; 
+	float:left;  
+	width:7.335em; 
+	height:1.750em; 
+	background-image:url(../img/buttons/buscar.gif); 
+	padding-top:0.188em;  
+	font: normal 12px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF;
+	border:0;
+	}
+	
+	.boton_buscar_it {text-align:center; 
+	float:right;  
+	width:7.335em; 
+	height:1.750em; 
+	background-image:url(../img/buttons/buscar.gif); 
+	padding-top:0.188em;  
+	font: normal 12px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF;
+	border:0; }
+	
+.align_btn1 {margin-top:1.8em; margin-bottom:0.25em; 
+	margin-left:1.875em;}
+	
+	
+#buscador_principal  {  
+	font: normal 16px "Neo_sans"; Tahoma, Geneva, sans-serif; 
+	float:right; 
+	width:11.500em;
+	border:none; 
+	background-color:#FFF;
+	-moz-border-radius:0.375em; 
+	background-image: url("../img/backgrounds/fdo-ingreso.gif");
+	-webkit-border-radius:0.625em; 
+	height:18px;margin:0.188em; 
+	padding:0.125em;  
+	}
+	
+	#searchField{
+    width: 210px;
+    height: 20px;
+    padding-right: 0px; /* puts padding on the right side, so text doesn't go under the button. NOTE: TOTAL WIDTH IS 240 + 25 = 265px */
+    float: left; /* some browsers display correctly without this, but better to leave it for cross browser compatibility */
+    border: 1px solid #999; /* sets new color for border of the field */
+	
+	
+}
+
+
+#searchSubmit{
+    background: transparent  url("../img/buttons/busc3.jpg") no-repeat;
+    width: 30px;
+    height: 22px;
+    border: none; /* removes default button borders */
+    cursor: pointer; /* when your mouse is over the button, cursor changes into a pointer */
+	margin-left: -31px; /* image is 20x20px, so leave little extra */
+    margin-top: 1px; /* leave some space from the top, so button looks in the middle */
+	-moz-border-radius:0 0.375em  0.375em  0 ; 
+}
+
+.buscador_general { margin-top:7px;  
+	width:13.438em;  
+	border: solid 1px #999; 
+	font: normal 11px Tahoma, Geneva, sans-serif; 
+	-moz-border-radius:0.300em;
+	-webkit-border-radius:0.325em; 
+		}
+
+#buscador {
+	width:16.063em;
+	border:none; 
+	background-color:#FFF;
+	-moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em; 
+	height:18px;margin:0.625em 0 0 0; 
+	padding:0.188em 0.188em 0.188em 0.313em; 
+	}
+	
+.buscador {  
+	width:12.500em;  
+	border:none; 
+	font: normal 11px Tahoma, Geneva, sans-serif; 
+		}
+		
+.buscador_plus {  
+	width:19.5em; 
+	margin-left:0.625em; margin-top:1px; 
+	border:none; 
+	font: normal 11px Tahoma, Geneva, sans-serif; 
+	background:none; 
+	color:#0081c6;
+	}
+	
+.div_buscador2 { 
+	float:left
+	}	
+
+#buscador2 {
+	width:7.750em;
+	border:none; 
+	background-color:#FFF;
+	-moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em; 
+	height:1.250em; margin:5px 0.313em 0.625em 0; 
+	padding:0.188em 0 0 0.313em; 
+	}
+	
+.buscador2 {  
+	width:90px;  
+	border:none; 
+	font: normal 11px Tahoma, Geneva, sans-serif; 
+		}
+
+#buscador3 {
+	float:left; 
+	text-align:center;
+	width:3.5em;
+	border:none; 
+	background-color:#FFF;
+	-moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em; 
+	height:1.850em;
+	margin:0.425em 0.563em 0.313em 0.313em; 
+	padding:0.000em; 
+	}
+	
+.buscador3 { 
+	float:left;  
+	width:1.2em;  
+	border:none; 
+	font: normal 11px Tahoma, Geneva, sans-serif; 
+		}
+		
+		
+	.div_buscador3 { 
+	padding:0.125em 0 0 0; 
+	margin:0.625em 0 0.313em 0; 
+	width:16.750em; 
+	height:7.838em; 
+	border-top:solid 1px #1693d0; 
+	border-bottom:solid 1px #1693d0;
+	}
+		
+		#buscador4 {
+	float:left;  
+	text-align:center;
+	width:88px
+	border:none; 
+	background-color:#FFF;
+	-moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em; 
+	height:19px;
+	margin:20px 0.563em 0.313em 0.313em; 
+	padding:2px 0 0 2px ; 
+	}
+	
+.buscador4 { 
+	float:left;  
+	width:1.2em;  
+	border:none; 
+	font: normal 11px Tahoma, Geneva, sans-serif; 
+		}
+		
+
+
+.buscador3_vuelos {
+	float:left; 
+	width:50px; 
+	margin:3px auto; 
+	text-align:center;
+	font: normal 11px Tahoma, Geneva, sans-serif; 
+	color:#0081c6;
+	}
+
+.div_buscador_pie {
+	margin:25px 0px 5px 0px; 
+	width:16.875em; 
+	height:32.750em;
+	}		
+
+/* Slider */
+
+
+	
+	#container{	
+		z-index:1;
+		position:relative;
+		text-align:left;
+		width:435px; height:286px;
+		margin-bottom:6px;
+			}	
+			
+
+	#slider ul, #slider li,
+	#slider2 ul, #slider2 li{
+		margin:0;
+		padding:0;
+		list-style:none;
+		}
+	#slider2{margin-top:1em; margin-left:0.3em}
+	#slider li, #slider2 li{ 
+		/* 
+			define width and height of list item (slide)
+			entire slider area will adjust according to the parameters provided here
+		*/ 
+		width:435px;
+		height:286px;
+		overflow:hidden; 
+		}	
+
+		
+	/* numeric controls */	
+
+	ol#controls{
+		margin:-2.3em 1em;
+		padding:0;
+		height:30px; font:normal 11px Tahoma, Geneva, sans-serif;	
+		
+		}
+	ol#controls li{
+		margin:0; 
+		padding:0;
+		float:right;
+		list-style:none;
+		height:28px;
+		line-height:28px;
+		}
+	ol#controls li a{
+		float:left;
+		height:17px;
+		line-height:15px;
+		background-image:url(../img/buttons/boton_slider_off.png);
+		background-repeat: no-repeat; 
+		color:#FFF;
+		padding:0 5px;
+		text-decoration:none;
+		}
+	ol#controls li.current a{
+		background-image:url(../img/buttons/boton_slider_on.png);
+		background-repeat: no-repeat; 
+		color:#3194D6;
+		}
+	ol#controls li a:focus, #prevBtn a:focus, #nextBtn a:focus{outline:none;}
+	
+/* //  Slider */
+
+/*slider banco*/
+/*.jcarousel-skin-tango .jcarousel-direction-rtl {
+	direction: rtl;
+}
+
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+    width: 245px;
+    padding: 0px 80px;
+}
+
+
+.jcarousel-skin-tango .jcarousel-clip {
+    overflow: hidden;
+}
+
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+    width:  345px;
+    height: 25px;
+}/**
+
+/*slider chico izquierdo*/
+
+#container2{	
+		z-index:1;
+		position:relative;
+		text-align:left;
+		width:282px;
+		padding-bottom:30px;
+			}	
+	
+#img_s1 { background-image:url(../img/banners/slide.plus_v2.gif)}
+#img_s2 { background-image:url(../img/banners/banner_arplus.gif)}
+/*#img3 { background-image:url(../img/banners/#)}*/
+
+	#slider ul, #slider li,
+	#slider2 ul, #slider2 li{
+		margin:0;
+		padding:0;
+		list-style:none;
+		}
+	#slider2{margin-top:0.5em;}
+	#slider2 li, #slider2 li{ 
+		/* 
+			define width and height of list item (slide)
+			entire slider area will adjust according to the parameters provided here
+		*/ 
+		width:282px;
+		height:177px;
+		overflow:hidden; 
+		}	
+
+/* numeric controls */	
+#prevBtn {
+		margin:-2.3em 1em;
+		padding:0;
+		height:30px; font:normal 11px Tahoma, Geneva, sans-serif;	
+		}
+		
+	
+
+#prevBtn li a{
+		float:left;
+		height:17px;
+		line-height:15px;
+		background-image:url(../img/buttons/boton_slider_off.png);
+		background-repeat: no-repeat; 
+		color:#FFF;
+		padding:0 5px;
+		text-decoration:none;
+		}
+		
+		#prevBtn li{
+		margin:0; 
+		padding:0;
+		float:right;
+		list-style:none;
+		height:28px;
+		line-height:28px;
+		}
+		
+	#prevBtn li.current a{
+		background-image:url(../img/buttons/boton_slider_on.png);
+		background-repeat: no-repeat; 
+		color:#3194D6;
+		}
+		
+		
+/*PAGINA A DONDE VIAJAR*/
+.columna_izquierda {float:left; background-color:#FFF; width:284px; height:880px; padding-left:10px}
+.columna_centro {float:left; background-color:#FFF; padding-right:4px; width:500px; padding-left:10px; height:880px }
+.columna_derecha {float:left; background-color:#FFF; width:187px; padding-right:0.438em; height:880px} /*962 total*/
+.fb-comments { height:40px}
+.comentarios { width:480px; height:210px; background-color:#ECEBEB; font:normal 11px Tahoma, Geneva, sans-serif; color:#000; padding:5px }
+.comentarios_box { width:300px; height:20px}
+.boton_buscar_donde { 
+	text-align:center; 
+	float:left;  
+	width:85px; 
+	height:18px; 
+	background-image:url(../img/buttons/buscar2.gif); 
+	padding-top:0.188em;  
+	font: normal 12px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF;
+	border:0;
+	}
+
+
+.btn_vuelos { width:277px; padding:5px 0 2px 5px; height:18px; background-color:#1793D1; }
+.menu_vuelos { width:279px; margin-top:13px;  height: 280px; background-color:#EDEEEE; border:solid 1px #1793D1;}
+#oferta_adonde {width:187px; height:105px; margin-bottom:6px }
+	.oferta_adonde1 {background-image:url(../img/backgrounds/tarifa_1_adonde.gif); }
+	.oferta_adonde2 {background-image:url(../img/backgrounds/tarifa_2_adonde.gif); }
+	.oferta_adonde3 {background-image:url(../img/backgrounds/tarifa_3_adonde.gif); }
+	
+#lista {font: normal 12px "Neo_sans";  text-decoration:none; margin:4px 0 4px 0   }
+a.lista { text-decoration:none;  }
+
+	#clima { border:solid 1px #CCC; padding:5px;  height:72px; width:272px; background-image:url(../img/backgrounds/a_donde_viajar_clima.jpg); background-repeat:  repeat: x; -moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em;   }
+	.clima { float:left; padding:3px 2px 3px 0;}
+	
+	
+
+#cupon { width:187px; margin-top:20px; border-top:dashed 1px #CCC;}
+.cupon_img { float:right; background-image:url(../img/common/cupon_tijera.gif); width:27px; height:13px; }
+.cupon {border-bottom:dashed 1px #CCC; padding:5px 0 5px 0}
+
+.titulo {	font:  15px "Neo_san", Tahoma, Geneva, sans-serif; color:#0081c6; line-height: 100%; margin:0px}
+.titulo2 {	font:  15px "Neo_sans", Tahoma, Geneva, sans-serif; color:#0081c6; line-height: 100%; margin:0px}
+.titulo-promo { 
+		margin:0px;
+		 
+		font:  13px "Neo_sans", Tahoma, Geneva, sans-serif; 
+		color:#0081c6;
+		}
+		
+		.descuento {font: 40px "Neo_sans", Tahoma, Geneva, sans-serif; 
+		color:#EA6B26; }
+		
+.descuento2 {font: 24px "Neo_sans", Tahoma, Geneva, sans-serif; 
+		color:#EA6B26; }
+		
+		
+		
+/*	Desarrollo de la galeria de imagenes	*/
+
+.galeria {width:500px; margin-top:25px;}
+#image{ float:left; padding-top:5px; margin-bottom:10px;
+height:222px;
+width:429px;}
+
+.thumb{
+float:left;
+margin-right:10px;
+margin-top:5px;}
+
+/*PAGINA ALOJAMIENTO*/
+
+.columna_izquierda_hotel{ border-right: solid 1px #8B8B8B; width:284px; padding-right:3px; float:left; background-color:#FFF;  height:900px; padding-left:10px}
+.columna_centro_hotel {float:left; background-color:#FFF; width:694px; padding-left:0.600em; height:900px }
+.columna_derecha_hotel {float:left; background-color:#FFF; width:290px; padding-right:0.438em; height:900px; }
+.btn_select { width:283px; height:24px; color:#FFF; padding-top:3px; padding-left:5px;  background-image:url(../img/backgrounds/a_donde_viajar_hoteles_select.gif)}
+#box_cupon { width:654px; height:72px; padding:5px 0 0 20px; margin-bottom:10px;  border:solid 1px #C6C6C7; background-image:url(../img/backgrounds/a_donde_viajar_hoteles_box.jpg); background-repeat:  repeat: x; -moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em;  }
+	
+
+
+
+.select { width:144px; float:left}
+
+.align_btn2 {margin-top:0.5em; 
+	margin-left:37.475em;}	
+
+#hoteles_1 { width:674px; border-top: solid 1px #8B8B8B }
+#hoteles2 { width:674px;}
+#hoteles { width:490px; height: auto;   }
+
+	.descuento_hotel {font: 30px "Neo_sans", Tahoma, Geneva, sans-serif; 
+		color:#EA6B26; }
+		.descuento_hotel2 {font: 18px "Neo_sans", Tahoma, Geneva, sans-serif; 
+		color:#EA6B26; }
+		
+.btn_voucher { background-image:url(../img/buttons/a_donde_viajar_hoteles_voucher.gif); margin-top:5px; width:106px; height: 20px; font: normal 12px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF; padding-left:39px; padding-top:4px}
+	
+	.btn_ubicacion { margin-left:10px; margin-top:4px;padding-left:39px;padding-top:5px;  background-image:url(../img/buttons/a_donde_viajar_hoteles_ubicacion.gif); width:83px; height:22px}
+	
+	.bgn_con { background-color:#F4F4F4; padding:5px; }
+	
+	.voucher { width:490px; height:190px; border-bottom:dashed 1px #CCC;}
+	.paginas { text-align:center; margin-top:20px;}
+		
+		a.paginas { text-decoration:none; color:#999}
+a.link {text-decoration:none;}	
+		
+/*PAGINA BENEFICIOS*/	
+.columna_centro_beneficios {float:left; background-color:#FFF; width:682px; padding-left:0.500em; height:900px }
+.bgn_a_donde { padding-top:0.188em; padding-left:0.5em; width:284px; height:33px;  float:left; background-image: url(../img/backgrounds/a_donde_viajar.jpg); }
+#conten_ben { width:1001px; height:360px; background-color:#FFF}
+.col_height	 {height: 350px;}
+#box_cupon_ben { width:284px; height:314px; padding:5px;   border:solid 1px #C6C6C7; background-image:url(../img/backgrounds/a_donde_viajar_beneficios.jpg); background-repeat:  repeat: x; -moz-border-radius:0.500em; -webkit-border-radius:0.625em;  }
+#box_cupon_2 { width:653px; height:111px; padding:5px 0 0 5px;  border:solid 1px #C6C6C7; background-image:url(../img/backgrounds/a_donde_viajar_ben_box.jpg); background-repeat:  repeat: x; -moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em;  }
+#cupon_ben { width:150px; margin-right:10px;  padding-top:5px; border-top:dashed 1px #CCC}
+.btn_info { background-color:#1693D0;  margin-top:10px; width:79px; height: 16px; font: normal 12px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF; padding-left:15px; padding-top:2px; margin-left:85px; -moz-border-radius:0.500em; -webkit-border-radius:0.625em; }
+	.align_btn3 {margin-top:2em; 
+	margin-left:35.9em;}	
+	
+	.img_tijera {  width:69px;   margin-top:10px;}
+	
+/*PAGINA GOOGLEMAP*/
+
+
+	
+	#pop{padding-left:5px; padding-bottom:20px;
+ border:solid 1px #CCC;
+ background:#FFF;
+ width:600px;
+ height:408px;
+ left:40%;
+ top:40%;
+ margin-left:-100px;
+ margin-top:-100px;
+ position:fixed;
+ display:none;
+ box-shadow: 2px 2px 2px #ffc;
+   -webkit-box-shadow: 2px 2px 2px #999;
+   -moz-box-shadow: 2px 2px 2px #999; z-index:3;
+}
+#fondo-negro{
+ background:#fff;
+ width:100%;
+ height:100%;
+ position:fixed;
+ top:0;
+ left:0;
+ opacity:0.6;
+ display:none; z-index:2;
+ 
+}
+
+/*PAGINA AEROLINEAS PLUS*/
+
+/*contenedores*/
+	#contenedor_arplus {
+		width: 62.625em; /*1002px*/
+		height:505px;
+		margin:  auto; 
+		background: #fff;
+		}
+		
+	#contenedor_arplus a:hover {
+		text-decoration: none;
+	}
+		
+	#contenedor_arplus2 {
+		width: 62.625em; /*1002px*/
+		height:565px;
+		margin:  auto; 
+		background: #fff;
+		}	
+		
+.columna_unica { position:relative;background-color:#FFF;  width:960px;  margin-left:35px; height:470px }
+#caja_plus { position:absolute;width:360px; left:57% ;  padding-top:8px; margin-top:0; }
+
+.fondo_plus { width:956px; height:419px;}
+
+/*columnas general*/
+.columna_izq {float:left; background-color:#FFF; width:178px; height:480px; }
+.columna_cent{float:left;  background-color:#FFF; background-image:url(..img/backgrounds/ar20plus_fondo.jpg);  width:558px;  height:455px; padding:45px 20px 0 20px }
+.columna_cent2{float:left;  background-color:#FFF; background-image:url(../img/backgrounds/ar20plus_fondo2.jpg);  width:558px;  height:520px; padding:45px 20px 0 20px }
+
+.columna_der{float:left; background-color:#FFF;  width:210px; height:500px; } /*962 total*/
+#ingreso_plus { 
+	font: normal 16px "Neo_sans"; Tahoma, Geneva, sans-serif; 
+	float:right; 
+	width:12.563em;
+	border:none; 
+	background-color:#FFF;
+	-moz-border-radius:0.375em; 
+	background-image: url("../img/backgrounds/fdo-ingreso.gif");
+	-webkit-border-radius:0.625em; 
+	height:18px;margin:0.188em; 
+	padding:0.125em;  
+	}
+.ingreso_plus {  
+	width:20.5em; 
+	margin-left:0.625em; margin-top:1px; 
+	border:none; 
+	font: normal 11px Tahoma, Geneva, sans-serif; 
+	background:none; 
+	color:#0081c6;
+	}
+
+
+.tituloplus {	font:  16px "Neo_san", Tahoma, Geneva, sans-serif; color:#0081c6; line-height: 100%; margin:0px}
+.tituloplus2 {	font:  14px "Neo_san", Tahoma, Geneva, sans-serif; color:#0081c6; line-height: 100%; padding:20px 0 0 16px}
+.listaplus {font: normal 12px "Neo_san";  text-decoration:none; margin:5px 0 5px 0; line-height:1}
+.listaplus_select {font: bold 11px "Neo_sans";  text-decoration:none; margin:5px 0 5px 0}
+.columna_plus { width:203px; height:245px; background-image:url(..img/backgrounds/arplus_columna.jpg)}
+#fecha_plus { font: normal 11px Tahoma, Geneva, sans-serif; color:#9c9ca0; float:right}
+.align_btn4 {margin-top:0.5em; 
+	margin-left:20.475em;}	
+
+.btn_inscribite { margin-left:280px;
+ margin-top:10px; 
+ position: relative;}
+	
+p input {
+  float: left; 
+  height: 1em;
+  margin: 0px 5px 55px 0;
+  padding-bottom:40px}
+  
+  .boton_aceptar { background-color:#1492CF;  
+  
+	text-align:center; 
+	float:left;  
+	width:7.335em; 
+	height:1.750em; 
+	padding-top:0.188em;  
+	font: normal 10px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF;
+	border:0;
+	-moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em; 
+	}
+	
+	 .boton_aceptar2 { background-color:#1492CF;  
+  
+	text-align:center; 
+	float:left;  
+	width:10.335em; 
+	height:1.750em; 
+	padding-top:0.188em;  
+	font: normal 10px Tahoma, Geneva, sans-serif; 
+	text-decoration:none; color:#FFF;
+	border:0;
+	-moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em; 
+	}
+	
+	.INPUT {
+		background-image: url(../img/backgrounds/fdo-buscador.jpg);
+		background-repeat: repeat-x;
+		border-color: #D9D9D9;
+		border-style: solid;
+		border-width: 1px;
+		color: #808084;
+		font-family: Arial,Helvetica,sans-serif;
+		font-size: 11px;
+		height: 16px;
+		line-height: normal;
+		
+	}
+	
+	#celda {  padding:2px; font:normal 10px Tahoma, Geneva, sans-serif; color:#000}
+	.celda1 {background-color:#76ccf7; height:21px }
+	.celda2 { background-color:#EDE9EA; margin-right:1px; padding:4px 2px 2px 2px; height:19px}
+	
+	/*po up*/
+
+/*hoverpopups type 1*/
+
+#popup { color: #000; width:20px;   }
+
+#popup a, #popup a:visited {
+	position: relative;
+	display: block;
+	text-align: right;
+	margin: 0;
+	border: none;
+	text-decoration: none;
+	font: normal 11px Arial, Helvetica, sans-serif;
+	
+}
+
+#popup a span {display: none;}
+
+#popup a:hover { background-color: #e9e9e2;  }
+
+/* the IE correction rule */
+#popup a:hover	{
+ background-color: #e9e9e2;
+text-indent: 0; /* added the default value */
+}
+
+#popup a:hover span{
+display: block;
+position: absolute;
+top: -100px;
+left: 10px;
+width: 465px;
+margin: 0px;
+padding: 10px 5px 10px 5px;
+color: #666;
+font-weight: normal;
+background: #fff;
+text-align: left;
+border: 1px solid #0081c6;
+border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; 
+
+}
+
+
+
+.callout {
+    position: relative;
+    margin: 18px 0;
+	width: 265px;
+    padding: 18px 20px;
+    background-color: #eef4f9;
+    /* easy rounded corners for modern browsers */
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+	font: normal 11px Arial, Helvetica, sans-serif;
+	
+}
+.callout .notch {
+    position: absolute;
+    bottom: -10px;
+    left: 105px;
+    margin: 0;
+    border-top: 10px solid #eef4f9;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+    /* ie6 height fix */
+    font-size: 0;
+    line-height: 0;
+     /* ie6 transparent fix */
+    _border-right-color: pink;
+    _border-left-color: pink;
+    _filter: chroma(color=pink);
+}
+
+.border-callout { border: 1px solid #0081c6; padding: 17px 19px; }
+.border-callout .border-notch { border-top-color: #0081c6; bottom: -11px; }
+
+.boton_ok {
+	background-color:#1492CF;
+	text-align:center; 
+	width:40px; 
+	height:20px; 
+	font: normal 10px Tahoma, Geneva, sans-serif; 
+	color:#FFF;
+	border:0;
+	cursor:pointer;
+	border-radius:0.625em; 
+	-moz-border-radius:0.500em;
+	-webkit-border-radius:0.625em; 
+	}
+
+/*UTILIZAR MILLAS*/
+#box_millas { 
+	width:660px;
+	height:42px;
+	padding:15px 0 0 10px;
+	margin-bottom:10px;
+	border:solid 1px #C6C6C7;
+	background-image:url(../img/backgrounds/a_donde_viajar_hoteles_box.jpg);
+	background-repeat:repeat: x;
+	border-radius: 0.625em;
+	-ms-border-radius: 0.625em;
+	-moz-border-radius: 0.625em;
+	-webkit-border-radius: 0.625em;
+	-khtml-border-radius: 0.625em;
+	}
+.select_millas { width:265px; float:left; }
+.tabla_millas_head { width:651px; height:34px; background-color:#6DC9F6; margin:10px 0 0 70px; padding:0px 0 0 15px; }
+.tabla_millas_body { width:652px; height:auto;  margin:0px 0 0 77px; background-color:#ECE9E9; }
+.div_gris { background-color:#EDE9EA; }
+.borde_blanco { border-right:solid 1px #FFF; border-bottom:solid 1px #FFF; height:44px; padding:5px}
+
+.INPUTBuscadorLupa {
+	font-size:10px;
+	color:#808084;
+	background-image: url(../images/common/fdo-buscador.jpg);
+	background-repeat: repeat-x;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 100px;
+	border:1px #D9D9D9 solid;
+	border-right-style: none;
+	}
+
+.col_gris{background-color:#EDE9EA}
+.col_gris2{  background-color:#D2D0D1}
+.col_cel { background-color: #6DC9F6}
+
+.bold { font-weight: bold; }
+.fsize12 { font-size: 12px; }
+.fsize10 { font-size: 10px; }
+.mauto { margin:auto; }
+.center { text-align:center; }
+.left { text-align:left; }
+.cazul1 { color:#0081C6; }

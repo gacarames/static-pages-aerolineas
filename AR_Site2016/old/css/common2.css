@@ -1,0 +1,934 @@
+/******HOME*****/
+h1, h2, h3, h4, h5 {
+	font-size:100%;
+	font-weight:normal;
+	margin:0px;
+	padding:0px;
+	border:0px;
+}
+.fondoWelcome {
+	background-image: url(../images/home/Fondo.jpg);
+	background-repeat: no-repeat;
+}
+.fondoWelcome2 {
+	background-image: url(../images/home/Fondo2.gif);
+	background-repeat: no-repeat;
+}
+.TxtGrisChico {
+	font-size: 11px;
+	font-weight: normal;
+	color: #ededef;
+	text-decoration: none;
+}
+.fondoWelcomeDark {
+	background-image: url(../images/home/Fondodark.jpg);
+	background-repeat: no-repeat;
+}
+.TxtDark {
+	font-size: 24px;
+	font-weight: bold;
+	color: #3d4689;
+	text-decoration: none;
+}
+/******HOME*****/
+/******MODULO DE RESERVA*****/
+.fondomotor {
+	background-image: url(../images/reservas/Fondomotor.jpg);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	background-color: #FBFBFB;
+}
+.Txtmotor {
+	font-size: 12px;
+	font-weight: normal;
+	color: #343434;
+	text-decoration: none;
+}
+.TxtmotorInput {
+	font-size: 12px;
+	font-weight: normal;
+	color: #666666;
+	text-decoration: none;
+	width:120px;
+}
+.TxtMotorAzul {
+	font-size: 11px;
+	font-weight: normal;
+	color: #158fa5;
+	text-decoration: none;
+}
+.TxtmotorSubra {
+	font-size: 12px;
+	font-weight: normal;
+	color: #666666;
+	text-decoration: underline;
+}
+.TxtAccerap {
+	font-size: 11px;
+	font-weight: normal;
+	color: #666666;
+	text-decoration: none;
+}
+.TxtOfertaTit {
+	font-size: 12px;
+	font-weight: bold;
+	color: #0d3362;
+	text-decoration: none;
+}
+.TxtOferBco {
+	
+	font-size: 13px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.TxtOferBco11 {
+	font-size: 11px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.TxtOferNaranja {
+	font-size: 13px;
+	font-weight: normal;
+	color: #f6bb7c;
+	text-decoration: none;
+}
+.TxtOferNaranja10 {
+	font-size: 10px;
+	font-weight: normal;
+	color: #f6bb7c;
+	text-decoration: none;
+}
+.TxtOferAzul {
+	font-size: 10px;
+	font-weight: normal;
+	color: #0d3362;
+	text-decoration: none;
+}
+.TxtNoticia {
+	font-size: 11px;
+	font-weight: normal;
+	color: #666666;
+	text-decoration: none;
+}
+.Fondoseccion {
+	background-image: url(../images/reservas/FondoSeccion.jpg);
+	background-repeat: no-repeat;
+}
+.TxtLegal {
+	font-size: 10px;
+	font-weight: normal;
+	color: #a2a2a2;
+}
+.FondoTop1 {
+	background-image: url(../images/reservas/Fondotop1.gif);
+	background-repeat: no-repeat;
+	font-size: 9px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.FondoTop2 {
+	background-image: url(../images/reservas/Fondotop2.gif);
+	background-repeat: no-repeat;
+}
+/******MODULO DE RESERVA*****/
+
+.TxtCelesteOscuro10 {
+	font-family:Tahoma, Verdana, Arial;
+	font-size:10px;
+	color:#459EEA;
+	text-decoration:none;
+}
+
+.TxtNaviAzul {
+	font-family:Tahoma, Verdana, Arial;
+	font-size:9px;
+	color:#233982;
+	text-decoration:none;
+}
+
+.TxtGris9 {
+	font-family:Tahoma, Verdana, Arial;
+	font-size:9px;
+	color:#4d4d4d;
+	text-decoration:none;
+}
+
+.TxtGris10 {
+	font-family:Tahoma, Verdana, Arial;
+	font-size:10px;
+	color:#4d4d4d;
+	text-decoration:none;
+}
+
+
+
+.TxtGris12 {
+	font-family:Tahoma, Verdana, Arial;
+	font-size:12px;
+	color:#4d4d4d;
+	text-decoration:none;
+}
+
+.TxtRojo11 {
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 11px;
+	color: #DC143C;
+	text-decoration: none;
+}
+
+
+.TxtGrisOscuro11 {
+	font-family:Tahoma, Verdana, Arial;
+	font-size:11px;
+	color:#4d5066;
+	text-decoration:none;
+}
+
+.TxtNegro11 {
+	font-family:Tahoma, Verdana, Arial;
+	font-size:11px;
+	color:#000000;
+	text-decoration:none;
+}
+.TxtNegro10{
+	font-family:Tahoma, Verdana, Arial;
+	font-size:10px;
+	color:#000000;
+	text-decoration:none;
+}
+
+.TxtGris11Activo {
+	font-family:Tahoma, Verdana, Arial;
+	font-size:11px;
+	color:#4d4d4d;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.TxtBlanco10 {
+	font-family:Tahoma, Verdana, Arial;
+	font-size:10px;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+.TxtBlanco11 {
+	font-family:Tahoma, Verdana, Arial;
+	font-size:11px;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+.TxtBlanco14{
+	font-family:Tahoma, Verdana, Arial;
+	font-size:14px;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+.TxtBlanco12 {
+	font-family:Tahoma, Verdana, Arial;
+	font-size:12px;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+
+
+
+.TxtAzul16 {
+	font-family:Tahoma, Verdana, Arial;
+	font-size:16px;
+	color:#1b6e9e;
+	text-decoration:none;
+}
+
+
+.TxtAzul12 {
+	font-family:Tahoma, Verdana, Arial;
+	font-size:12px;
+	color:#1b6e9e;
+	text-decoration:none;
+}
+
+.TxtAzul11Activo {
+	font-size:11px;
+	color:#1b6e9e;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.TxtNaranja10 {
+	font-family:Tahoma, Verdana, Arial;
+	font-size:10px;
+	color:#fd8900;
+	text-decoration:none;
+}
+
+.TxtNaranja11 {
+	font-family:Tahoma, Verdana, Arial;
+	font-size:11px;
+	color:#fd8900;
+	text-decoration:none;
+}
+
+.TxtNaranja12 {
+	font-family:Tahoma, Verdana, Arial;
+	font-size:12px;
+	color:#fd8900;
+	text-decoration:none;
+}
+
+.TxtNaranja13 {
+	font-family:Tahoma, Verdana, Arial;
+	font-size:13px;
+	color:#fd8900;
+	text-decoration:none;
+}
+
+.TxtNaranja15 {
+	font-family:Tahoma, Verdana, Arial;
+	font-size:15px;
+	color:#fd8900;
+	text-decoration:none;
+}
+
+.TxtFucsia10 {
+	font-family:Tahoma, Verdana, Arial;
+	font-size:10px;
+	color:#de536a;
+	text-decoration:none;
+}
+
+
+.TxtFucsia11 {
+	font-family:Tahoma, Verdana, Arial;
+	font-size:11px;
+	color:#de536a;
+	text-decoration:none;
+}
+
+.TxtFucsia9 {
+	font-family:Tahoma, Verdana, Arial;
+	font-size:9px;
+	color:#de536a;
+	text-decoration:none;
+}
+
+.TxtFucsia9Activo {
+	font-family:Tahoma, Verdana, Arial;
+	font-size:9px;
+	font-weight:bold;
+	color:#de536a;
+	text-decoration:none;
+}
+
+.TxtVerde11 {
+	font-family:Tahoma, Verdana, Arial;
+	font-size:11px;
+	color:#3DBF15;
+	text-decoration:none;
+}
+
+
+.TxtRojo10 {
+	font-family:Tahoma, Verdana, Arial;
+	font-size:10px;
+	color:#D82118;
+	text-decoration:none;
+}
+
+.TxtRojo11 {
+	font-family:Tahoma, Verdana, Arial;
+	font-size:11px;
+	color:#D82118;
+	text-decoration:none;
+}
+
+.TxtExecutive15 {
+	font-family:Tahoma, Verdana, Arial;
+	font-size:15px;
+	color:#77674d;
+}
+
+
+.TxtExecutive11 {
+	font-family:Tahoma, Verdana, Arial;
+	font-size:11px;
+	color:#77674d;
+}
+
+.TxtExecutive10 {
+	font-family:Tahoma, Verdana, Arial;
+	font-size:10px;
+	color:#77674d;
+}
+
+
+.TxtEmergenciaWelcome {
+	font-family:Tahoma, Verdana, Arial;
+	font-size:14px;
+	color:#1b6e9e;
+	text-decoration:none;
+}
+
+.TxtGrisOscuro_Central_14 {
+	font-family:Helvetica;
+	font-size:14px;
+	color:#77787C;
+	text-decoration:none;
+}
+
+.TxtGrisOscuro_Central_11 {
+	font-family:Helvetica;
+	font-size:11px;
+	color:#77787C;
+	text-decoration:none;
+}
+.TxtGris12E {
+	font-family:Tahoma, Verdana, Arial;
+	font-size:12px;
+	color:#5D5D5D;
+	text-decoration:none;
+}
+.BoxCuponera {
+	font-family:Tahoma, Verdana, Arial;
+	font-size:11px;
+	color:#666666;
+	text-decoration:none;
+	font-weight: normal;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: dotted;
+	border-left-style: none;
+	border-top-color: #666666;
+	border-right-color: #666666;
+	border-bottom-color: #666666;
+	border-left-color: #666666;
+}
+/* Fondos de Cuadros */
+
+.titulo1_BK {background-color:#004990;}
+.item1_BK {background-color:#cdd2e6;}
+.titulo2_BK {background-color:#f68938;}
+.item2_BK {background-color:#fed8b9;}
+.titulo3_BK {background-color:#55ABBD;}
+.item3_BK {background-color:#FFFFFF;}
+
+.Celda_BK {background-color:#D8D8D8;}
+
+/*////////////////////////////*/
+
+.TxtVerdeMusgo11 {
+	font-family:Tahoma, Verdana, Arial;
+	font-size:11px;
+	color:#909461;
+	text-decoration:none;
+}
+
+.TxtVerdeMusgo10 {
+	font-family:Tahoma, Verdana, Arial;
+	font-size:10px;
+	color:#909461;
+}
+
+.TxtFucsia13 {
+	font-family:Tahoma, Verdana, Arial;
+	font-size:13px;
+	color:#ED0034;
+	text-decoration:none;
+}
+
+.TxtFucsia12 {
+	font-family:Tahoma, Verdana, Arial;
+	font-size:12px;
+	color:#ED0034;
+	text-decoration:none;
+}
+
+.TxtFucsia11 {
+	font-family:Tahoma, Verdana, Arial;
+	font-size:11px;
+	color:#ED0034;
+	text-decoration:none;
+}
+
+.TxtVerde11 {
+	font-family:Tahoma, Verdana, Arial;
+	font-size:11px;
+	color:#3DBF15;
+	text-decoration:none;
+}
+
+.TxtTurquesa11 {
+	font-family:Tahoma, Verdana, Arial;
+	font-size:11px;
+	color:#3B8D8B;
+	text-decoration:none;
+}
+
+
+.TxtNaranja11 {
+	font-family:Tahoma, Verdana, Arial;
+	font-size:11px;
+	color:#fe7018;
+	text-decoration:none;
+}
+
+
+.Txtfecha {
+	font-size:10px;
+	color:#D0D0D0;
+	text-decoration:none;
+}
+
+.TxtGris13 {
+	font-size:13px;
+	color:#5D5D5D;
+	text-decoration:none;
+}
+
+.TxtGris12 {
+	font-size:12px;
+	color:#5D5D5D;
+	text-decoration:none;
+}
+
+.TxtGris11 {
+	font-size:11px;
+	color:#5D5D5D;
+	text-decoration:none;
+}
+
+.TxtGris10 {
+	font-size:10px;
+	color:#5D5D5D;
+	text-decoration:none;
+}
+
+.TxtGrisClaro10 {
+	font-size:10px;
+	color:#C6C6C6;
+	text-decoration:none;
+}
+
+.TxtGrisMedio10 {
+	font-size:10px;
+	color:#898B8F;
+	text-decoration:none;
+}
+
+.TxtBlanco10 {
+	font-size:10px;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+.TxtBlanco11 {
+	font-size:11px;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+.TxtAzul18 {
+	font-size:18px;
+	color:#0C2577;
+	text-decoration:none;
+}
+
+.TxtAzul13 {
+	font-size:13px;
+	color:#0C2577;
+	text-decoration:none;
+}
+
+.TxtAzul12 {
+	font-size:12px;
+	color:#0C2577;
+	text-decoration:none;
+}
+
+.TxtAzul11 {
+	font-size:11px;
+	color:#0C2577;
+	text-decoration:none;
+}
+
+.TxtAzul10 {
+	font-size:10px;
+	color:#0C2577;
+	text-decoration:none;
+}
+
+.TxtAzul14 {
+	font-size:10px;
+	color:#0C2577;
+	text-decoration:none;
+}
+
+.TxtCeleste10 {
+	font-size:10px;
+	color:#85C7FF;
+	text-decoration:none;
+}
+
+.TxtCeleste11 {
+	font-size:11px;
+	color:#85C7FF;
+	text-decoration:none;
+}
+
+.TxtCeleste14 {
+	font-size:11px;
+	color:#85C7FF;
+	text-decoration:none;
+}
+
+.TxtCelesteOscuro11 {
+	font-size:11px;
+	color:#459EEA;
+	text-decoration:none;
+}
+
+.TxtCelesteOscuro10 {
+	font-size:10px;
+	color:#459EEA;
+	text-decoration:none;
+}
+
+.TxtCelesteOscuro9 {
+	font-size:9px;
+	color:#459EEA;
+	text-decoration:none;
+}
+
+.TxtRojo10 {
+	font-size:10px;
+	color:#D82118;
+	text-decoration:none;
+}
+
+.TxtRojo11 {
+	font-size:11px;
+	color:#D82118;
+	text-decoration:none;
+}
+
+
+.TxtDorado11 {
+	font-size:11px;
+	color:#A2954F;
+	text-decoration:none;
+}
+
+.TxtBordo11 {
+	font-size:11px;
+	color:#BF3019;
+	text-decoration:none;
+}
+
+.TxtVerde210 {
+	font-size:10px;
+	color:#679640;
+	text-decoration:none;
+}
+
+.TxtVerde211 {
+	font-size:11px;
+	color:#679640;
+	text-decoration:none;
+}
+
+.TxtNaranjaClaro11 {
+	font-size:11px;
+	color:#ffaa00;
+}
+
+
+.TxtNegro11Bold {
+	font-size:11px;
+	color:#313131;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.TxtNegro11 {
+	font-size:11px;
+	color:#313131;
+	text-decoration:none;
+}
+.Caja {
+	border: 1px solid #B2D7F6;
+}
+
+.TxtGrisOscuro11 {
+	font-size:11px;
+	color:#4d5066;
+	text-decoration:none;
+}
+.TxtAzulNinos {
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: normal;
+	color: #0d006e;
+}
+.CampoChicos {
+	background-color: #add4db;
+	border: 1px solid #6B7EB8;
+	font-size: 11px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.TxtAzul10Copy {
+	font-size:12px;
+	color:#1b6e9e;
+	text-decoration:none;
+	line-height: normal;
+	font-variant: normal;
+}
+.TxtAzulNinos20Bld {
+	font-size: 20px;
+	font-weight: normal;
+	color: #0d006e;
+}
+.TextBlanco10Bold {
+	font-size: 10px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.TextAzulSucursales {
+	font-size: 10px;
+	color: #4a7ca5;
+}
+.TextAzulHorario {
+	font-size: 10px;
+	color: #285a84;
+}
+.borde-gris {
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #B8B8BA;
+	border-left-color: #B8B8BA;
+}
+
+
+/***************elementos peligrosos********************/
+.titrojo{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #ff003e;
+}
+.txtgris {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #5d5d5d;
+}
+.titverde {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #3dbf15;
+}
+.txtgrisbold {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #5d5d5d;
+}
+.titazul {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #005183;
+}
+.titazulgrande {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 22px;
+	font-weight: bold;
+	color: #005183;
+}
+.titazulgrandeItalic {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #005183;
+	font-style: italic;
+}
+.txtgrisboldgde {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #5d5d5d;
+}
+/***************elementos peligrosos********************/
+.degrade {
+	background-image: url(../files/GuiaViajeros/beneficiosNew/degrade.jpg);
+	background-repeat: repeat-x;
+	background-position: left center;
+}
+.BORDES {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-right-color: #D7E4F2;
+	border-left-color: #D7E4F2;
+}
+.txt {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+}
+.txt_AZ {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #137BC1;
+}
+.bullet {
+	font-size: 8px;
+	font-weight: normal;
+	color: #FC711E;
+}
+.txtNar {
+	font-size: 11px;
+	font-weight: bold;
+	color: #f76f0b;
+}
+.TxtGris11Bold {
+	font-size:11px;
+	font-weight:bold;
+	color:#000000;
+	text-decoration:none;
+}
+.fondovuelos {
+	background-image: url(../images/reservas/fondovuelos.jpg);
+	background-repeat: no-repeat;
+}
+.fondocheckin {
+	background-image: url(../images/reservas/fondocheckin.jpg);
+	background-repeat: no-repeat;
+}
+.fondohoteles {
+	background-image: url(../images/reservas/fondohoteles.jpg);
+	background-repeat: no-repeat;
+}
+.fondoviajes {
+	background-image: url(../images/reservas/fondoviajes.jpg);
+	background-repeat: no-repeat;
+}
+.txtAzulbld {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #224984;
+}
+.INPUTCombo {
+    border-right: #d2d2d2 1px solid;
+    border-top: #d2d2d2 1px solid;
+    border-left: #d2d2d2 1px solid;
+    border-bottom: #d2d2d2 1px solid;
+    background: #f3f3f3;
+    color: #4d4d4d;
+    font-family: tahoma, arial;
+    font-size: 11px;
+    height: 18px;
+    text-align: left;
+}
+.INPUTText {
+   border-right: #d2d2d2 1px solid;
+    border-top: #d2d2d2 1px solid;
+    border-left: #d2d2d2 1px solid;
+    border-bottom: #d2d2d2 1px solid;
+    font-size: 11px;
+    background: #f3f3f3;
+    color: #4d4d4d;
+    height: 18px;
+    text-align: left;
+}
+.Txt2Navi {
+	font-size:8px;
+	color:#0081C6;
+	text-decoration:none;
+}
+.Txt2NaviActivo {
+	font-size:10px;
+	font-weight:bold;
+	color:#fd8900;
+	text-decoration:none;
+}
+.txtAzulMenu10 {
+	font-size:10px;
+	color:#0081C6;
+	text-decoration:none;
+}
+.txtAzulMenu11 {
+	color:#0081C6;
+	text-decoration:none;
+}
+.txtAzulMenu13 {
+	font-size:13px;
+	color:#0081C6;
+	text-decoration:none;
+}
+.txtAzulNuevoImg {
+	font-size: 16px;
+	font-weight: bold;
+	color: #0081C6;
+	text-decoration: none;
+}
+.txtAzulNuevoImg14 {
+	font-size: 16px;
+	font-weight: normal;
+	color: #0081C6;
+	text-decoration: none;
+}
+.TablaTitulo {
+	font-size: 11px;
+	text-align: center;
+	font-style: normal;
+	font-weight: bold;
+}
+.TablaSubtitulo {
+	font-size: 10px;
+	color: #333;
+	font-weight: bold;
+	text-align: center;
+	font-family: Tahoma, Verdana, Arial;
+}
+.TablaContenido {
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 10px;
+	color: #000;
+	text-align: center;
+}
+.MenuIzqTabla {
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 10px;
+	text-align: left;
+}
+
+#backImage1 td img  {
+	display: block;
+}
+
+#backImage1 a.Txt2Navi {
+	display: block;
+}

@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Language" content="es-ar">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Aerolineas Argentinas - Datos del Titular</title>
+
+    <meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+    <meta name="ProgId" content="FrontPage.Editor.Document">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/mpol-common.css" />
+
+    <script type="text/javascript" src="/sps_ar/submit_3.js"></script>
+
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+    <div class="inner-wrapper">
+    <header class="header clearfix">
+                <div class="pull-left logo-header">
+                    <a href="http://www.aerolineas.com.ar">
+                        <img alt="logo-aerolineas" src="../img/common/logo-aerolineas.gif" /></a>
+                </div>
+                <div class="pull-right logo-header-right">
+                    <img alt="" src="../img/common/aerolineas_argentinas_skyteam.jpg" />
+                </div>
+            </header>
+        <div class="container">
+            <div class="cuadroPrincipal">
+                <div class="module">
+                    <div class="item">
+                        <h2 class="title bg-blue">Por favor, ingrese los siguientes datos del Titular:</h2>
+                        <form METHOD="POST" ACTION="Transaccion" id="DatosTitularForm" name="DatosTitularForm" onsubmit="return validardatosbanco();">
+                            <input type="hidden" name="NROTARJETA" value="000">
+                            <div class="row">
+
+                                <div class="form-group col-sm-6 col-lg-4">
+                                    <label for="">Titular de la Compra:</label>
+                                    <input class="form-control" name="NOMBREENTARJETA" size="30">
+                                </div>
+
+                                <div class="form-group col-sm-6 col-lg-4">
+                                    <label for="">Tipo de Documento:</label>
+                                    <select class="form-control" name="TIPODOC">
+                                        <option>Documento de Identidad</option>
+                                        <option value="1">DNI</option>
+                                        <option value="2">CI</option>
+                                        <option value="3">LE</option>
+                                        <option value="4">LC</option>
+                                        <option value="5">CUIT</option>
+                                        <option value="6">PAS</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group col-sm-6 col-lg-4">
+                                    <label for="">Nro. documento:</label>
+                                    <input class="form-control" name="NRODOC" size="20" maxlength="20">
+                                </div>
+
+                                <div class="form-group col-sm-6 col-lg-4">
+                                    <label for="">E-mail:</label>
+                                    <input class="form-control" name="EMAILCLIENTE" size="20">
+                                </div>
+
+                                <div class="form-group col-sm-6 col-lg-4">
+                                    <label for="">Banco:</label>
+                                    <select class="form-control" name="idbanco">
+                                        <option value="1">...</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-4 col-lg-3">
+                                    <a href="#" class="btn btn-block nuevoBotonGris"><span class="icon-r"><img src="../img/pagar/Flecha_gris.png" alt="Cancelar"></span> Cancelar</a>
+                                </div>
+
+                                <div class="col-sm-4 col-lg-6">&nbsp;</div>
+
+                                <div class="col-sm-4 col-lg-3">
+                                    <a href="#" class="btn btn-block btn-default">Continuar <span class="icon"><img src="../img/pagar/flecha-right.png" alt="Continuar"></span></a>
+                                </div>
+                            </div>
+                            <hr>
+                            
+                            <!-- 
+                              <div class="center">
+                                <a class="btn btn-default" href="https://sps.decidir.com/sps_ar/sps_compra.html" target="_blank">Comprar <span class="icon"><img src="../img/pagar/flecha-right.png" alt=""></span></a>
+                              </div>
+                              -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer" id="footer">
+                <div class="content-footer">
+                    <div class="row">
+                        <div class="col-md-8 pull-right">
+                            <div class="links">
+                                <ul class="list-unstyled list-inline clearfix">
+                                    <li class="logoAR"><img src="../img/common/footer-logoAA.gif" alt="Aerolineas Argentinas"></li>
+                                    <li class="logoAustral"><img src="../img/common/footer-logoAustral.gif" alt="Austral"></li>
+                                    <li class="logoJetPaq"><img src="../img/common/footer-logoJetPaq.gif" alt="JetPaq"></li>
+                                    <li class="logoAerohandling"><img src="../img/common/footer-logoAerohandling.gif" alt="Aerohandling"></li>
+                                    <li class="logoOptar"><img src="../img/common/footer-logoOptar.gif" alt="Optar"></li>
+                                </ul>
+                            </div>
+                            <div class="copyright">
+                                <p class="txtGirsfoote">Website Oficial de Aerolíneas Argentinas. © 1996 - 2016 Aerolíneas Argentinas S.A.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/content-footer -->
+            </footer>
+    </div>
+
+
+
+</body>
+
+</html>

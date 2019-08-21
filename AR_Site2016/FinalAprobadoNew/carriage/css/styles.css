@@ -1,0 +1,1195 @@
+@import url("fonts.css");
+
+
+body {
+background-color: #A6AAAD;
+}
+
+.main-content {
+	background-color: #FFFFFF;
+	color: #666666;
+	font-size: 13px;
+	font-family: Tahoma, Geneva, sans-serif;
+	border-radius: 10px;
+	max-width: 1000px;
+	margin: auto;
+	min-height: 900px;
+	margin-top: 35px;
+	position: relative;
+	padding: 12px;
+	margin-bottom: 15px;
+	background-image: url(../images/common/footer-left.jpg);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+}
+.logo-header {
+	margin: 18px 0 13px 0px;
+    width: 30%;
+}
+
+.logo-header h1 {
+	margin: 0px;
+}
+.logo-header a {
+	display: block;
+}
+
+.logo-header-right {
+	margin: 18px 10px 13px 12px;
+}
+.logos-right {
+    margin-right: 10px;
+}
+.CultureContainer {
+	    margin-top: 15px;
+}
+.fecha {
+	position: absolute;
+	top: -15px;
+	right: 0px;
+}
+.counrty_today_partials {
+    font: x-small Tahoma;
+    color: #FFFFFF;
+}
+.screen-reader-text {
+	position: absolute !important;
+    clip: rect(.01em, .01em, .01em, .01em);
+    padding: 0 !important;
+    border: 0 !important;
+    height: .01em !important;
+    width: .01em !important;
+    overflow: hidden;
+}
+#navbar {
+    position: relative;
+    margin: 0 auto;
+    z-index: 2;
+    clear: both;
+}
+#navbar .nav-menu {
+	font: normal 16px "Neo_san", Tahoma, Geneva, sans-serif;
+    width: 100%;
+    height: 30px;
+    margin: 0px 0;
+    background: #006DA7;
+    /**   
+background-image: url("../images/common/bg_nav.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+    **/
+    list-style: none;
+    text-align: right;
+    border-radius: 3px;
+    font-size: 0;
+    overflow: hidden;
+}
+#navbar .nav-menu .menu-item {
+    width: auto;
+    text-align: center;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 30px;
+    display: inline-block;
+    color: #FFF;
+}
+#navbar .nav-menu .menu-item .phone {padding: 0 35px;}
+#navbar .nav-menu .menu-item a {
+	color: #FFF;
+	padding: 0 35px;
+	height: 30px;
+	    display: block;
+	        border-right: 1px solid #4CB2E4;
+}
+#navbar .nav-menu .menu-item.active a {
+	background-color: #186796;
+	background-color: #005786;
+	cursor: default;
+}
+#navbar .nav-menu .menu-item a:hover {
+	background-color: #186796;
+	background-color: #005786;
+	text-decoration: none;
+}
+#navbar .nav-menu .menu-item a:focus {
+	background-color: rgba(0,0,0,0.3);
+}
+#navbar .nav-menu .menu-item:last-child a {
+	border-right: none;
+}
+.message {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.message a {
+	font: normal 12px Tahoma, Geneva, sans-serif;
+    color: #0081c6;
+}
+.hero-image {
+	margin-top: 8px;
+	    margin-bottom: 19px;
+}
+.hero-image img {
+	width: 100%;
+}
+.carousel-control {
+	bottom: 32px;
+	width: 6%;
+}
+.carousel-control.right,
+.carousel-control.left {
+background-image: none;
+}
+.carousel-caption {
+	font-family: "Neo_Sans";
+	background-color: rgba(1, 102, 154, 0.86);
+	background: #006DA7;
+	
+    text-shadow: none;
+    width: 100%;
+    left:0px;
+    	right:0px;
+        bottom: 0;
+            position: relative;
+    padding: 10px;
+}
+.carousel-caption .caption {
+	font-size: inherit;
+	margin: 0px;
+	font-family: inherit;
+	color: #FFF;
+}
+.carousel-caption a {
+	color: #FFFFFF;
+}
+.carousel-caption span {
+	font-family: "Neo_Sans_Medium";
+}
+
+@media screen and (min-width:768px){
+    .carousel-control .glyphicon-chevron-left,.carousel-control .glyphicon-chevron-right,.carousel-control .icon-prev,.carousel-control .icon-next{width:30px;height:30px;margin-top:-15px;font-size:30px}
+    .carousel-control .glyphicon-chevron-left,.carousel-control .icon-prev{margin-left:-15px}
+    .carousel-control .glyphicon-chevron-right,.carousel-control .icon-next{margin-right:-15px}
+    .carousel-caption{
+    	left:0px;
+    	right:0px;
+        bottom: 0;
+	    padding: 8px 20px;
+	    text-align: left;
+	    height: 34px;
+	    
+	}
+    .carousel-indicators{bottom:0px}
+}
+
+
+
+.nav-tabs {
+	background-color: #96c6ec;
+	padding: 0;
+	list-style: none;
+	    margin: 10px 0 0 0;
+	    clear: both;
+}
+.nav-tabs li {
+	display: block;
+	float: left;
+	width: 25%;
+    margin: 0;
+    font-size: 0;
+}
+.nav-tabs li a {
+	color: #384e5c;
+	display: block;
+	height: 38px;
+	line-height: 38px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    position: relative;
+    border-right: 1px solid #FFF;
+}
+.nav-tabs li:last-child a {
+	border:none;
+}
+
+.nav-tabs li:hover a,
+.nav-tabs li:focus a {
+	background-color: #006DA7;
+
+	color: #FFFFFF; 
+}
+.nav-tabs li.active a {
+	background-color: #006DA7;
+	
+	color: #FFFFFF; 
+}
+.nav-tabs .icon {
+	height: 24px;
+	overflow: hidden;
+	display: inline-block;
+	margin-top: 5px;
+	margin-right: 5px;
+	position: absolute;
+    left: 64px;
+    width:30px;
+}
+.icon:before {
+	margin-right: -10px;
+	content: url(../images/common/sprites.png);
+	position:relative;
+}
+.nav-tabs .icon-flights {
+	left:58px;
+	top:0px;
+}
+.nav-tabs li:hover .icon-flights:before  {
+	left:0px;
+	top: -26px;
+}
+.nav-tabs .icon-multi {
+	width: 24px;
+	left: 40px;
+}
+.nav-tabs .icon-multi:before {
+	left:-30px;
+	top:0px;
+}
+.nav-tabs li:hover .icon-multi:before{
+	top: -26px;
+}
+
+.nav-tabs li.active .icon:before  {
+top: -26px;
+}
+.nav-tabs .icon-status {
+	width: 24px;
+	left: 57px;
+}
+.nav-tabs .icon-status:before{
+	left: -52px;
+	top: 0;
+}
+.nav-tabs li:hover  .icon-status:before {
+	top: -26px;
+}
+.nav-tabs .icon-schedules {
+	left: 48px;
+}
+.nav-tabs .icon-schedules:before{
+	left: -76px;
+	top: 0;
+}
+.nav-tabs li:hover .icon-schedules:before {
+	top: -26px;
+}
+
+
+
+
+
+.content-tabs {
+	    border: 1px solid #006DA7;
+	    padding: 25px;
+	    position: relative;
+	    min-height: 420px;
+}
+.content-tabs .title {
+	color: #006DA7;
+	font-size: 18px;
+	font-family: "Neo_Sans_Medium";
+	text-transform: uppercase;
+	margin: 0 0 15px 0;
+}
+.content-tabs .description,
+.content-page .description{
+	color: #274d5c;
+	font-size: 14px;
+}
+.content-page {
+	padding: 25px;
+	padding-top: 0;
+	min-height: 350px;
+}
+.map {
+    
+}
+.map {
+        width: 300px;
+    height: 20px;
+    background-color: #CCC;
+      }
+#salesOfficesSearch {
+	color: #666666;
+}
+.content-map {
+	overflow:hidden;height:185px;width:325px;
+}
+#gmap_canvas {
+	height:185px;
+	width:325px;
+}
+ #gmap_canvas img {
+    max-width: none!important;
+    background: none!important
+}
+.box-result .detail {
+	background-color: #ebf7ff;
+	padding: 10px 15px;
+}
+.box-result .title {
+	font-size: 14px;margin-top: 10px;
+}
+.box-result .th {
+	color: #373737;
+	font-weight: bold;
+	padding: 5px 5px;
+}
+.modal-search {
+    font-size: 12px;
+    padding: 5px;
+    border: solid 1px #999;
+}
+
+.modal-search .box_title {
+	color: #0081c6;
+	font-weight: bold;
+    margin-left: 10px;
+    font-size: 12px;
+}
+.pricesSearch > div{
+	width: 50%;
+	float: left;
+}
+.pricesSearch > div label {
+font-size: 12px;
+    display: block;
+    font-weight: normal;
+}
+.pricesSearch select {
+	width: 100%;
+}
+
+.countryDestiny {
+	border-left: 1px dashed #A0A1A5;
+	padding-left: 10px;
+}
+.countryDestinyContent {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 153px;
+}
+.countryDestinyContent ul {
+	list-style: none;
+	padding: 0px;
+}
+.countryDestinyContent ul li:hover {
+    background-color:#0081c6;
+    color:#ffffff;
+    cursor:pointer;
+}
+.modal-title {
+    margin: 0;
+    line-height: 1.42857143;
+    color: #006DA7;
+    font-size: 13px;
+}
+.fb_iframe_widget {
+    display: inline-block;
+    position: relative;
+}
+.more_flights {
+    position: absolute;
+    right: 0;
+}
+.more_flights li {
+margin: 0 30px;
+}
+.more_flights li .glyphicon {
+	margin-right: 5px;
+	font-size: 10px;
+}
+
+.conditions {
+    font-size: 11px;
+    float: left;
+    clear: both;
+    margin-top: 5px;
+    text-align: left;
+    padding: 0;
+}
+.conditions a {
+	    font-size: 11px;
+	    color: #006DA7;
+}
+.conditions .glyphicon {
+color: #006DA7;
+}
+.conditions a {
+	text-decoration: underline;
+}
+
+.results {
+    padding: 0 5px;
+}
+.results .th {
+	background-color: #00ace6;
+	    background-color: #007DA7;
+	color: #FFF;
+	font-size: 15px;
+	font-family: "Neo_Sans_Medium";
+	padding: 10px;
+	text-align: center;
+}
+.results .th_flight_info {
+	background-color: #0584c7;
+	background-color: #046FA8;
+	    background-color: #006DA7;
+}
+.results .row-body,
+.results .row-results {
+	background-color: #e6f7ff;
+}
+
+.results .row-body{
+	padding: 15px 0;
+}
+
+.results p{
+	    padding: 15px;
+	        color: #006DA7;
+}
+.results .main-cols {
+	padding: 0;
+}
+.results .main-cols >.row {
+	margin: 0px;
+}
+.results .col-departure,
+.results .col-arrival {
+	padding: 0px ;
+
+}
+.results .col-departure{
+	border-left: 2px solid #FFF;
+	border-right: 2px solid #FFF;
+}
+.col-departure .row,
+.col-arrival .row  {
+	padding: 0 15px;
+	margin-bottom: 5px
+}
+
+.results-schedules .th{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 11px;
+font-weight: bold;
+text-align: center;
+    background-color: #006DA7;
+    color: #FFFFFF;
+}
+.results-schedules >.row{
+	    background-color: #e6f7ff;
+	    text-align: center;
+	        margin: 0px;
+}
+.results-schedules .th >div {
+padding: 6px 8px;
+}
+.results-schedules .td {
+
+}
+.results-schedules .th{
+	height: 42px;
+}
+.results-schedules .td >div {
+padding: 15px 5px;
+}
+.results-schedules .th-day {
+	background-color: #00ace6;
+	
+}
+.results-schedules .th-day > div,
+.results-schedules .td-plane > div{
+	width: 14.28%;
+	    height: 42px;
+}
+.results-schedules .th-day > div{
+	        padding-top: 13px;
+}
+.results-schedules .glyphicon {
+	-ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+        color: #237BA7;
+}
+.results-schedules .btnMoreInfo {
+	text-decoration: none;
+    background-color: #006DA7;
+    width: 16px;
+    display: inline-block;
+    height: 16px;
+    color: #FFF;
+    line-height: 16px;
+}
+.results-schedules .moreInfo {
+	margin-top: 3px;
+}
+.results-schedules .moreInfo .well {
+    background-color: #E6F7FF;
+    border: none;
+    color: #006DA7;
+}
+.row-info > div{ 
+	padding: 0px;
+	    border-left: 2px solid #fff;
+}
+.row-info .th {
+    padding: 6px 5px;
+}
+.row-info .td {
+    padding: 15px 5px;
+}
+.row-day > div{
+	width: 14.28%;
+	padding: 0px;
+	    border-left: 2px solid #fff;
+}
+.row-info > div:first-child {
+	border-left: none;
+}
+.row-day .th {
+	    padding-top: 13px;
+	        background-color: #00ACE6;
+	        background-color: #007DA7;
+}
+.row-day .td {
+	    padding: 15px 5px;
+}
+.active-day {
+	        border: 2px solid #006DA7 !important;
+}
+.active-day .th {
+	background-color: #006DA7;
+}
+
+.col-btn .btn-default {
+width: 100%;
+}
+
+.flight-status .col-btn .btn-default {
+	margin-top: 23px;
+}
+
+footer.footer {
+    overflow: hidden;
+}
+footer .content-footer {
+    
+    text-align: center;
+}
+
+footer .links,
+footer .copyright {
+    border: none;
+    padding: 0px;
+    float: right;
+    display: block;
+}
+footer .links ul {
+	    margin-bottom: 4px;
+}
+footer .copyright {
+	color: #838384;
+	font: normal 10px Tahoma, Geneva, sans-serif;
+	text-align: center;
+	width: 100%;
+
+	    width: 88%;
+}
+footer .copyright li a {
+    color: #838384;
+}
+footer .copyright p {
+	margin-bottom: 5px;
+}
+footer .partner {
+    float: left;
+    padding: 0.313em 0.750em 0 0;
+}
+footer .partner a,
+footer .partner span {
+	display: block;
+}
+footer .social-menu {
+	margin-top: 10px;
+    display: block;
+    width: 100%;
+        text-align: left;
+        padding-left: 5px;
+}
+footer .social-menu ul {
+margin-bottom: 0px;
+}
+footer .social-menu ul li {
+	padding: 0px;
+}
+footer .social-menu a img { 
+	height: 22px;
+	width: 22px;
+}
+footer .qrCode {
+    float: right;
+   margin: -41px 12px 0 0px;
+}
+footer .validation-logos {
+	clear: both;
+	text-align: right;
+    padding-top: 15px;
+}
+
+.contact .nav-tabs {
+	font-family: "Neo_Sans";
+}
+.contact .nav-tabs li {
+	   
+}
+.contact .nav-tabs li a {
+	    line-height: inherit;
+	     border-radius: inherit;
+	     padding: 10px 5px;
+	     border: none;
+	         border-right: 1px solid #FFF;
+	             margin-bottom: 0;
+}
+.contact .mobile-nav {
+	    background-color: #96c6ec;
+	    
+}
+.contact .mobile-nav ul a {
+	color: #384e5c;
+	padding: 9px;
+	text-align: center;
+	display: block;
+	    border-top: 1px solid #FFF;
+}
+.contact .mobile-nav .btn {
+	width: 100%;
+	padding: 8px;
+    height: 36px;
+}
+.contact .mobile-nav a:hover,
+.contact .mobile-nav a:active,
+.contact .mobile-nav a:focus {
+    background-color: #006DA7;
+    color: #FFFFFF; 
+    text-decoration: none;
+}
+
+.col-btn .btn-margin {
+    margin-top: 23px;
+}
+
+.not-allowed-items .sub-title {
+    color: #DE5858;
+    color: #D32B2B;
+    font-size: 14px;
+        margin-bottom: 30px;
+        font-size: 16px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.conditions-page {
+	font-size: 13px;
+}
+.conditions-page h2 {
+
+}
+.conditions-page h3 {
+text-transform: uppercase;
+    font-size: 15px;
+    border-bottom: 1px solid #006DA7;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+.conditions-page h4 {
+	font-size: 14px;
+	color: #2C5063;
+}
+
+.conditions-page p {
+	margin-bottom: 20px;
+}
+
+.conditions-page .conditions-contract h3,
+.conditions-page .conditions-contract h2 {
+	color: #666;
+	border-bottom: none;
+}
+.conditions-page .conditions-contract ol {
+	padding-left: 20px;
+}
+.conditions-page .conditions-contract ol li {
+	margin-bottom: 15px;
+}
+
+.conditions-page ul {
+	margin-bottom: 25px;
+}
+
+.more-claims {
+	margin-bottom: 15px;
+}
+.items-not-allowed li {
+	color: #006DAA;
+	padding: 8px 14px;
+    background-color: #F3F3F3;
+    margin-bottom: 5px;
+        font-size: 14px;
+
+}
+.items-not-allowed .glyphicon {
+color: #D32B2B;
+    margin-right: 5px;
+}
+.items-board li {     padding: 0 20px 20px 110px;
+    min-height: 100px;
+    margin-bottom: 10px;}
+.items-board li span {
+	position: absolute;
+	width: 100px;
+	left: 0px;
+}
+.items-board li span img {width: 100%;}
+.items-board li p {}
+
+/** Cambios 16/12/15 **/
+
+.south-american-pass .content-page,
+.visit-argentina .content-page {
+    padding-right: 0;
+}
+.south-american-pass .col-content,
+.visit-argentina .col-content {
+padding-right: 30px;
+}
+.south-american-pass .box-info,
+.visit-argentina .box-info {
+    background-color: #006DA7;
+    color: #FFF;
+    padding: 25px 15px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 14px;
+        line-height: 23px;
+}
+.south-american-pass .box-info .phone,
+.visit-argentina .box-info .phone {
+	    font-size: 19px;
+    font-weight: bold;
+        margin-top: 8px;
+    display: block;}
+.south-american-pass .box-info ul,
+.visit-argentina .box-info ul {
+	margin: 0px;
+}
+.south-american-pass .box-info li,
+.visit-argentina .box-info li {
+	margin-bottom: 15px;
+}
+.south-american-pass .box-info li:last-child,
+.visit-argentina .box-info li:last-child {
+	margin-bottom: 0px;
+}
+.south-american-pass .box-info .glyphicon,
+.visit-argentina .box-info .glyphicon {
+	display: block;margin-bottom: 20px; font-size: 40px;
+}
+
+.south-american-pass  .table,
+.visit-argentina .table {
+	background-color: #e6f7ff;
+    color: #4A4A4A;
+    text-align: center;
+        padding: 0 5px;
+}
+.south-american-pass .table ul,
+.visit-argentina .table ul  {
+	margin-bottom: 0px;
+}
+.south-american-pass .title-table,
+.visit-argentina .title-table {
+	    margin: 40px 0 14px 0;
+	        text-transform: uppercase;
+}
+.south-american-pass .title-table span,
+.visit-argentina .title-table span {
+	font-weight: normal;
+	font-family: "Neo_Sans";
+}
+@media (min-width: 1024px) {
+	.south-american-pass .table .col-left,
+	.visit-argentina .table .col-left {
+	    width: 21.666667%;
+	}
+	.south-american-pass .table .col-right,
+	.visit-argentina .table .col-right {
+	    width: 78.333333%;
+	}
+}
+.south-american-pass .table .row-head >div,
+.visit-argentina .table .row-head >div  {
+	    padding: 9px;
+    text-align: center;
+        font-weight: bold;
+}
+.south-american-pass .table .info,
+.visit-argentina .table .info {
+	padding: 8px 5px;border: none;font-size: 12px;
+}
+
+
+
+.content-page .table .amount,
+.content-page .table .price {
+width: 20%;
+}
+.content-page .table .from-to {
+	width: 80%;
+}
+.region {      
+	margin-top: 135px;
+    font-weight: bold;  
+}
+.price {font-weight: bold;}
+.price1 {margin-top: 50px;}
+.visit-argentina .price1 {margin-top: 132px;}
+.price2 {margin-top: 35px;}
+.borderbottom {border-bottom: 2px solid #FFF;}
+.borderright{border-right: 2px solid #FFF;}
+.conditions-box {
+	    font-size: 90%;
+}
+.conditions-box h2{
+	text-transform: uppercase;
+	color: #666;
+}
+.conditions-box h3 {
+	color: #404040;
+	    margin: 15px 0 4px 0;
+	    font-size: 12px;
+}
+.conditions-box p {
+	margin-bottom: 4px;
+}
+
+.visit-argentina .nav-tabs li {
+width: inherit;
+}
+.visit-argentina .nav-tabs li a {
+	line-height: inherit;
+}
+.visit-argentina .content-tabs {
+min-height: 220px;
+}
+.content-tabs .title {
+
+}
+.visit-argentina .table .region {
+    margin-top: 158px;
+}
+.visit-argentina .table2 .region {
+    margin-top: 105px;
+}
+.visit-argentina .table2 .price1 {
+	    margin-top: 78px;
+}
+.page-blank .main-content{
+background-image: inherit;
+    padding: 27px 42px;
+}
+.content-full {}
+.main-contact .content-tabs {border: none;     min-height: 270px;}
+
+
+
+@media (max-width:1023px) {
+	.nav-tabs .icon {
+		display: none;
+	}
+	.results .col-departure {
+		border:none;
+	}
+	.contact .nav-tabs li {
+		float: left;
+		width: 16.66%;
+	}
+
+	
+	
+}
+
+@media (max-width:800px) {
+	.contact .nav-tabs li a {
+		line-height: 14px;
+	}
+	.contact .nav-tabs li.contact-customer-service-center a,
+	.contact .nav-tabs li.contact-booking-and-purchase a {
+		padding:6px 5px;
+	}
+	.south-american-pass .col-content, 
+	.visit-argentina  .col-content {
+		padding-right: 5px;
+	}
+	.south-american-pass .region,
+	.visit-argentina .table .region {
+		margin: 10px auto; 
+	}
+	.south-american-pass .table .row-head >div, 
+	.visit-argentina .table .row-head >div {
+		padding: 5px 2px;
+	}
+	.south-american-pass .table .info, 
+	.visit-argentina .table .info {
+		padding: 4px 2px;
+		font-size: 11px;
+	}
+	.content-page .table .from-to {
+		width: 78%;
+	}
+	.content-page .table .amount, 
+	.content-page .table .price {
+		width: 22%;
+	}
+	.visit-argentina .nav-tabs li {
+		width: 100%;
+	}
+	
+}
+
+/** Fin Cambios 16/12/15 **/
+
+
+/** Cambios 220116 **/
+
+ .table .list-inline>li {
+    width: 100%;
+	padding: 0 2px }
+	
+		/*.content-page .table .from-to{
+		width:100%;}*/
+		
+		.visit-argentina .table .info {
+			font-size:11px;}
+			
+			.info.col-number {padding:0; width:4%; }
+
+        
+			.col-sm-3.info, .col-xs-3.info {
+				width:28%;
+				}
+				.visit-argentina .table .col-right {
+    width: 85%;
+}.visit-argentina .table .col-left {
+    width: 15%;
+}
+
+/** Fin Cambios 220116 **/
+
+
+
+
+@media (min-width:768px) {
+	.contact .mobile-nav {
+			display: none;
+		}
+}
+@media (max-width:767px) {
+	.desk-nav {
+			display: none;
+		}
+}
+@media (max-width:568px) {
+	#navbar .nav-menu .menu-item a {
+		padding: 0 7px;
+	}
+	.logo-header {
+    	margin: 0;
+        margin-bottom: 8px;
+	}
+	.logo-header >div {
+		width: 50%;
+	}
+	.logo-header .logos-right {
+		width: 44%;
+	}
+	.carousel-inner>.item  {
+		overflow: hidden
+	}
+	.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+		min-width: 200%;
+    	margin-left: -48%;
+	}
+	.content-tabs {
+		padding: 15px;
+	}
+	.nav-tabs li a {
+    	font-size: 12px;
+	}
+	.nav-tabs li:last-child a {
+		line-height: normal;
+	}
+	.nav-tabs li:last-child a span {
+		padding-top: 5px;
+    	display: block;
+	}
+	.nav-tabs .icon {
+		display: none !important;
+	}
+	footer .content-footer {
+		width: inherit;
+		    padding: 0 5px;
+	}
+	footer .validation-logos ul li {
+		width: 30%;
+	}
+	footer .validation-logos ul li img {
+		width: 100%;
+	}
+	footer .copyright p {
+	    margin-bottom: 5px;
+	    clear: both;
+	    padding: 0 11%;
+	}
+	footer .partner {
+		width: 16%;
+    padding: 0;
+	}
+	footer .links,
+	footer .links ul {
+		width: 100%;
+	}
+	footer .partner img {
+		width: auto;
+		height: 27px;
+	}
+	footer .social-menu {
+		padding-left: 0px;
+	}
+	.main-content {
+		background-image: none;
+	}
+	.more_flights {
+		    position: relative;
+		    float: none !important;
+		        margin-bottom: 15px;
+	}
+	.more_flights li {
+		    margin: 0;
+	}
+	.flight-status .col-btn {
+		float: right;
+	}
+	.flight-status .col-btn .btn-default {
+		margin-top: 0px;
+		width: inherit;
+	}
+	.flight-status .col-btn .btn-default {}
+	.flight-status .conditions {
+		margin-top: 10px;
+	}
+	.flight-schedules .row-info > div {
+		    width: 33.33%;
+	}
+	.flight-schedules .row-day > div {
+		width: 33.33%;
+	}
+	.flight-schedules .results-schedules .th {
+		font-size: 13px;
+    line-height: 16px;
+	}
+	.flight-schedules .results-schedules .td {
+		font-size: 15px;
+	}
+	.logo-header-right {
+		margin: 0;
+    margin-bottom: 15px;
+	}
+
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 667px) and (orientation: landscape) {
+
+	.logo-header img,
+	.logo-ar img {width: 100%;}
+	.logo-header {width: 35%;margin: 0px;}
+	.logo-header .logos-right {width: 35%;}
+
+	.logo-ar {
+		    width: 68%;
+    display: inline-block;
+	}
+	.logo-header >div.CultureContainer {    width: 61%;    margin-top: 8px;}
+	.logo-header >div.CultureContainer select {width: 100%;}
+	.nav-tabs li:last-child a {
+		    line-height: 38px;
+		        
+	}
+	.nav-tabs li:last-child a span {padding-top: 0px !important;}
+	.carousel-caption {
+		height: 56px;
+	}
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 667px) and (orientation: portrait) {
+	#navbar .nav-menu {
+		padding: 0;
+	}
+	#navbar .nav-menu .menu-item {
+		width: 31.33%;
+		float: left;
+		text-align: center;
+	}
+	#navbar .nav-menu .menu-item:last-child {
+		width: 37%;
+	}
+	.contact .nav-tabs li {
+		width: 50%;
+	}
+	.content-page {
+		    padding: 0;
+	}
+
+}
+
+.fb_reset {
+text-align: right !important;
+}
+.fb_reset > div {
+	position: absolute;
+    top: -10000px;
+    height: 0px;
+    width: 0px;
+}
+
+.glyphicon-calendar {
+pointer-events: none;
+}
+
+.number-cftna {
+	font-size: 500%;
+    letter-spacing: -2px;
+    color: #CCCCCC;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+
+.number-cftna .small {
+font-size: 14px;
+letter-spacing: normal;
+}
+

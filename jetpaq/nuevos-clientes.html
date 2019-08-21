@@ -1,0 +1,344 @@
+<html lang="es" class=" js no-flexbox flexbox-legacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" hola_ext_inject="disabled">
+
+<head>
+    <meta charset="utf-8">
+    <title>Nuevos Clientes - JetPaq</title>
+    <meta http-equiv="title" content="Paqueter&iacute;a y Documentaci&oacute;n (de 100gr. a 20kg.) - Productos - JetPaq">
+    <meta name="Description" content="Ni un minuto que perder. Express es la soluci&oacute;n de JetPaq para los env&iacute;os urgentes. Con Express, sus env&iacute;os urgentes despegan r&aacute;pidamente, hacia m&aacute;s de 545 destinos en 127 pa&iacute;ses.">
+    <link href="img/buttons/condor_chico.gif" rel="shortcut icon" type="image/x-icon">
+    <meta name="viewport" content="width=device-width">
+     <link href="css/reset.css" rel="stylesheet">
+     <link href="css/CssEstilo.css" rel="stylesheet">
+    <link href="css/estilo-jp.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/new.css" />
+   
+    <script type="text/javascript" async src="http://stats.g.doubleclick.net/dc.js"></script>
+    <script src="bundles/jquery.js"></script>
+    <script src="bundles/jqueryui.js"></script>
+    <script src="bundles/jqueryval.js"></script>
+    <script src="bundles/modernizr.js"></script>
+    <script src="bundles/funcionesVarias.js"></script>
+    <script src="bundles/watermark.js"></script>
+</head>
+
+<body id="internas" cz-shortcut-listen="true">
+    <div id="wrap">
+        <div id="wrapper">
+            <!-- HEADER -->
+            <div id="header">
+                <div class="sombra-gr-top">
+                </div>
+                <div class="main-head">
+                    <div class="borde-izq">
+                    </div>
+                    <div class="header-content">
+                        <h1><a class="logo-aerolineas" href="/es-ar">JetPaq</a></h1>
+                        <div class="ul-content">
+                            <ul class="ul-der-uno">
+                                <li>
+                                    <select class="select-pais" id="culture" name="culture" onChange="onCultureChanged();">
+                                        <option selected="selected" value="es-ar">Argentina (Español)</option>
+                                    </select>
+                                </li>
+                            </ul>
+                            <script type="text/javascript">
+                            function onCultureChanged() {
+                                var cultureName = $("#culture").val();
+                                GlobalCultureName = cultureName;
+
+                                var ruta = '/es-ar/culture/changeculture';
+                                var redirectUrl = '/_culture_';
+
+                                $.ajax({
+                                    url: ruta,
+                                    type: "post",
+                                    dataType: "json",
+                                    traditional: true,
+                                    async: false,
+                                    data: {
+                                        'selectedCultureName': cultureName
+                                    },
+                                    success: function(result, responseText) {
+
+                                        // // translateUrlAndRedirect(GlobalCultureName);
+
+                                        //alert('Cultura cambiada exitosamente por: ' + result);
+
+                                        // Redirecciono
+                                        redirectUrl = redirectUrl.replace("_culture_", GlobalCultureName);
+                                        window.location.replace(redirectUrl);
+
+                                        //  // Recargo la p&aacute;gina
+                                        //window.location.reload();
+                                    },
+                                    error: function() {
+                                        alert('Error al intentar cambiar la cultura');
+                                    }
+                                });
+
+                            }
+                            </script>
+                            <ul class="ul-der-dos">
+                                <li>
+                                    <span> | </span>
+                                    <a href="http://www.jetpaq.com.ar/es-ar/newsletter" target="" class="link">Newsletter</a>
+                                </li>
+                                <li>
+                                    <span> | </span>
+                                    <a href="http://www.jetpaq.com.ar/es-ar/contactenos/" target="" class="link">Cont&aacute;ctenos 0810-222-86527</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.jetpaq.com.ar/es-ar/preguntas_frecuentes/" target="" class="link">Preguntas Frecuentes</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- menu -->
+                        <div class="main-nav">
+                            <ul>
+                                <li><a href="/es-ar/centro_de_atencion">Centros de Atenci&oacute;n</a></li>
+                                <li><a href="/es-AR/productos/paqueteria">Productos</a>
+                                    <ul class="sec-nav">
+                                        <li><a href="/es-AR/productos/paqueteria">Paqueter&iacute;a y Documentaci&oacute;n (de 100gr. a 20kg.)</a></li>
+                                        <li><a href="/es-AR/productos/Envios-de-Carga">Envios de Carga (mayores de 20kg.)</a></li>
+                                        <li><a href="/es-AR/productos/Ventajas-de-JetPaq">Ventajas de los productos JETPAQ</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/es-ar/promociones">Tarifas y Promociones</a></li>
+                                <li><a href="/es-ar/rutas_y_horarios">Rutas y Horarios</a></li>
+                                <li><a href="/es-AR/envios_personales/Mascotas">Env&iacute;os Personales</a>
+                                    <ul class="sec-nav">
+                                        <li><a href="/es-AR/envios_personales/mascotas">Mascotas</a></li>
+                                        <li><a href="/es-AR/envios_personales/efectospersonales">Transporte de efectos personales</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/es-AR/informacion/CierreVuelo">Informaci&oacute;n</a>
+                                    <ul class="sec-nav">
+                                        <li><a href="/es-AR/informacion/cierrevuelo">Cierre de vuelo</a></li>
+                                        <li><a href="/es-AR/informacion/medidasmaximas">Medidas m&aacute;ximas de bultos por equipo</a></li>
+                                        <li><a href="/es-AR/informacion/calculoscargueros">C&aacute;lculos cargueros</a></li>
+                                        <li><a href="/es-AR/informacion/hora_y_clima">Hora y Clima</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/es-AR/envios_especiales">Env&iacute;os Especiales</a>
+                                    <ul class="sec-nav">
+                                        <li><a href="/es-AR/envios_especiales/CenizasHumanas">Cenizas Humanas</a></li>
+                                        <li><a href="/es-AR/envios_especiales/feretros">F&eacute;retros</a></li>
+                                        <li><a href="/es-AR/envios_especiales/bateria-litio">Bater&iacute;as de Litio</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/es-ar/nuevos-clientes">Nuevos Clientes</a></li>
+                            </ul>
+                        </div>
+                        <!-- /menu -->
+                    </div>
+                    <div class="borde-der">
+                    </div>
+                </div>
+                <div class="sombra-gr-bottom">
+                </div>
+            </div>
+            <!-- HEADER -->
+            <!-- CONTENT -->
+            <div class="content-top"></div>
+            <div class="content">
+                <ul class="submenu">
+                    <li class="selected"><a href="/es-AR/productos/Paqueteria">Nuevos Clientes</a></li>
+                </ul>
+                <div class="cont-gde">
+                    <div class="borde-top">
+                    </div>
+                    <div class="detalle-contenido" id="detalle-contenido">
+                        <h3 style="margin-bottom: 13px;">REQUISITOS PARA LA APERTURA DE CUENTA CORRIENTE </h3>
+                        <p><strong>A continuaci&oacute;n usted encontrar&aacute; una gu&iacute;a r&aacute;pida y sencilla acerca de toda la documentaci&oacute;n necesaria para que pueda realizar la apertura de una cuenta corriente y comenzar a operar con nosotros:</strong></p>
+                        
+                        
+                        <div class="bg-gris" style="margin-bottom:15px;">
+                            
+                        <h3 class="h3subtitulo">Sociedades:</h3>  
+                           
+
+                            <ul class="listado-con-guion-dos" style="list-style-type:none; padding-left:0px;">
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Fotocopia legalizada del Estatuto o Contrato Social.</li>
+    
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> &Uacute;ltimo Balance, certificado por Consejo de Profesionales.</li>
+    
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Constancia de inscripci&oacute;n en A.F.I.P.</li>
+    
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Formulario de inscripci&oacute;n actualizado de Ingresos Brutos, CM01, todos los CM02 presentados</li>
+    
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Contribuyentes de Convenio Multilateral: &Uacute;ltimo CM05 presentado. De no contar con el mismo se aplicar&aacute; la percepci&oacute;n y no se podr&aacute; solicitar la devoluci&oacute;n una vez practicada.</li>
+    
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Contribuyente local: Inscripci&oacute;n en impuestos sobre los ingresos brutos de la respectiva jurisdicci&oacute;n.</li>
+    
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Certificado de excepci&oacute;n o exclusi&oacute;n vigente correspondiente al r&eacute;gimen de retenci&oacute;n del impuesto sobre los ingresos brutos emitido oportunamente por la direcci&oacute;n general de Rentas que corresponda.</li>
+    
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Referencia a Res 3337(IVA Percepci&oacute;n) de encontrarse encuadrados dentro de las -normas RG 17, 18 y anexos, adjuntar dicha constancia.</li>
+      
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Formulario: Solicitud de Cuenta Corriente para Transporte de Cargas, firmado, estando la misma certificada (Link formulario + Link Anexo 1).</li>
+      
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> El solicitante deber&aacute; figurar en el Estatuto o en el Contrato Social, de ser apoderado, adjuntar fotocopia autenticada de Poder General y Amplio.</li>
+      
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Certificaci&oacute;n bancaria de la firma del solicitante, s&oacute;lo en el original.</li>
+      
+     <li>
+      <span style="font-size:14px;"><strong>* Nota</strong></span> en papel con membrete de la Empresa, solicitando la apertura de la cuenta corriente y detallando: rubro, referencias bancarias (con n&uacute;mero de cuenta) y comerciales (direcci&oacute;n de correo electr&oacute;nico para env&iacute;o de factura electr&oacute;nica, direcci&oacute;n de correo de la oficina responsable de pagos), cantidad de env&iacute;os a realizar (unidades y Kg. mensuales) y destinos.</li>
+     
+						</ul>
+						</div>
+                        
+                        <div class="bg-gris" style="margin-bottom:15px;">
+                            
+                        <h3 class="h3subtitulo">Empresas Unipersonales o Sociedades de Hecho:</h3>  
+                           
+
+                            <ul class="listado-con-guion-dos" style="list-style-type:none; padding-left:0px;">
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Manifestaci&oacute;n de bienes.</li>
+    
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Certificado de ingresos por Contador y certificaci&oacute;n de firma del contador por Consejo Profesional de Ciencias Econ&oacute;micas.</li>
+    
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Fotocopia de los tres &uacute;ltimos pagos de aut&oacute;nomos.</li>
+    
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> &Uacute;ltima declaraci&oacute;n jurada de impuesto a las ganancias e impuestos personales.</li>
+    
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Certificado de domicilio o fotocopia de factura de servicios.</li>
+    
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Constancia de inscripci&oacute;n en A.F.I.P.</li>
+    
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Formulario de inscripci&oacute;n actualizado de Ingresos Brutos, CM01, todos los CM02 presentados</li>
+    
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Contribuyentes de Convenio Multilateral: &Uacute;ltimo CM05 presentado. De no contar con el mismo se aplicar&aacute; la percepci&oacute;n y no se podr&aacute; solicitar la devoluci&oacute;n una vez practicada.</li>
+      
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Contribuyente local: Inscripci&oacute;n en impuestos sobre los ingresos brutos de la respectiva jurisdicci&oacute;n.</li>
+      
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Certificado de excepci&oacute;n o exclusi&oacute;n vigente correspondiente al r&eacute;gimen de retenci&oacute;n del impuesto sobre los ingresos brutos emitido oportunamente por la direcci&oacute;n general de Rentas que corresponda.</li>
+      
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Referencia a Res 3337(IVA Percepci&oacute;n) de encontrarse encuadrados dentro de las normas RG 17, 18 y anexos, adjuntar dicha constancia.</li>
+      
+      <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Formulario: Solicitud de Cuenta Corriente para Transporte de Cargas, firmado, estando la misma certificada. (Link formulario+ Link anexo 1).</li>
+      
+      <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Certificaci&oacute;n bancaria de la firma del solicitante (S&oacute;lo en el original).</li>
+      
+     <li>
+      <span style="font-size:14px;"><strong>* Nota</strong></span> en papel con membrete de la Empresa, solicitando la apertura de la cuenta corriente y detallando: rubro, referencias bancarias (con n&uacute;mero de cuenta) y comerciales (direcci&oacute;n de correo electr&oacute;nico para env&iacute;o de factura electr&oacute;nica, direcci&oacute;n de correo de la oficina responsable de pagos), cantidad de env&iacute;os a realizar (unidades y Kg. mensuales) y destinos.</li>
+     
+						</ul>
+						</div>
+                        
+                        
+                        
+                        <div class="bg-gris" style="margin-bottom:15px;">
+                            
+                        <h3 class="h3subtitulo">Entes Oficiales:</h3>  
+                           
+
+                            <ul class="listado-con-guion-dos" style="list-style-type:none; padding-left:0px;">
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Formulario: Solicitud de Cuenta Corriente para Transporte de Cargas, firmado, estando la misma certificada (Link formulario + Link anexo 1).</li>
+    
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Presentar Poder habilitante para apertura de Cuentas Corrientes o bien Poder General, en nombre de la Entidad.</li>
+    
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Certificaci&oacute;n bancaria de la firma del solicitante, s&oacute;lo en el original.</li>
+    
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Constancia de inscripci&oacute;n en A.F.I.P.</li>
+    
+    <li>
+      <span style="font-size:14px;"><strong>*</strong></span> Referencia a Res 3337(IVA Percepci&oacute;n) de encontrarse encuadrados dentro de las normas RG 17, 18 y anexos, adjuntar dicha constancia.</li>
+    
+     <li>
+      <span style="font-size:14px;"><strong>* Nota</strong></span> en papel con membrete de la Empresa, solicitando la apertura de la cuenta corriente y detallando: rubro, referencias bancarias (con n&uacute;mero de cuenta) y comerciales (direcci&oacute;n de correo electr&oacute;nico para env&iacute;o de factura electr&oacute;nica, direcci&oacute;n de correo de la oficina responsable de pagos), cantidad de env&iacute;os a realizar (unidades y Kg. mensuales) y destinos.</li>
+     
+						</ul>
+						</div>
+                        
+                        <p class="llamado">***Ante cualquier consulta no dude en ponerse en contacto con su centro de atenci&oacute;n m&aacute;s cercano***</p>
+                        
+                    </div>
+                    <div class="borde-bottom">
+                    </div>
+                </div>
+            </div>
+            <div class="content-bottom"></div>
+            <!-- CONTENT -->
+            <!-- FOOTER -->
+            <div id="footer">
+                <div class="sombra-gr-top">
+                </div>
+                <div class="footer-content">
+                    <ul class="ul-izq-uno">
+                        <li>
+                            <a href="http://www.aerolineas.com.ar" target="_blank" class="link">Web Aerol&iacute;neas Argentinas</a>
+                            <span> | </span>
+                        </li>
+                        <li>
+                            <a href="http://www.skyteamcargo.com/" target="_blank" class="link">Skyteam Cargo</a>
+                            <span> | </span>
+                        </li>
+                        <li>
+                            <a href="http://cargo.aerolineas.com.ar" target="_blank" class="link">Aerol&iacute;neas Argentinas Cargo</a>
+                        </li>
+                    </ul>
+                    <ul class="ul-der-tres">
+                        <li>
+                            <img alt="Logo Austral" border="0" src="img/iconos/footer-logoAustral.gif" style="cursor:pointer;">
+                        </li>
+                        <li>
+                            <a href="/es-AR/asppage/open?link=http%3A%2F%2Fjetpaqnet%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D81%26ididioma%3Des" title="Logo JetPaq"><img alt="Logo JetPaq" border="0" src="img/iconos/footer-logoJetPaq.gif"></a>
+                        </li>
+                        <li>
+                            <a href="/es-AR/asppage/open?link=http%3A%2F%2Fjetpaqnet%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D9%26ididioma%3Des" title="Logo Aerohandling"><img alt="Logo Aerohandling" border="0" src="img/iconos/footer-logoAerohandling.gif"></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.optar.com/">
+                                <img border="0" alt="Logo Optar" src="img/iconos/footer-logoOptar.gif">
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.aerolineas.com.ar/">
+                                <img border="0" alt="Logo Aerol&iacute;neas Argentinas" src="img/iconos/footer-logoAASkyTeam.gif">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="legales">
+                        <li class="text">Sitio Oficial de Aerolineas Argentinas, © 1996 - 2014 Aerol&iacute;neas Argentinas S.A.</li>
+                        <br>
+                        <li><a href="/es-ar/legales/terminos_condiciones">Legales</a> | </li>
+                        <li><a href="/es-ar/legales/condiciones_transporte">Condiciones Generales de Transporte</a> | </li>
+                        <li><a href="/es-ar/legales/mapa_del_sitio">Mapa del Sitio</a> | </li>
+                        <li><a href="/es-ar/legales/politicas_privacidad">Ud. est&aacute; en un SITIO SEGURO</a> | </li>
+                    </ul>
+                </div>
+                <div class="sombra-gr-bottom"></div>
+            </div>
+            <!-- FOOTER -->
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Aerolineas Argentinas</title>
+    <meta http-equiv="title" content="Aerolineas Argentinas">
+    <meta name="Description" content="Todo tu viaje en un solo lugar aerolineas.com, vuelos baratos.">
+    <link href="Images/condor_chico.gif" rel="shortcut icon" type="image/x-icon" />
+    <link href="http://www.aerolineas.com.ar/es-ar" rel="canonical"></link>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.touchSwipe.min.js"></script>
+    <script src="js/carousel-hero.js"></script>
+    <script src="js/slick.min.js"></script>
+    <!-- Script footer menu carousel -->
+    <script src="js/jquery.matchHeight-min.js"></script>
+    <!--  Match Height Cols -->
+    <script>
+    // matchHeight blocks content
+    $(document).ready(function() {
+        $('.col-desc').matchHeight();
+        $('.col-desc .title').matchHeight();
+    });
+    </script>
+    <script src="js/locales/es-AR.min.js"></script>
+    <!-- //datapicker form -->
+    <script src="js/datepicker.min.js"></script>
+    <!-- //datapicker form -->
+    <script src="js/form-home.js"></script>
+    <!-- //datapicker form home -->
+    <script src="js/form-arplus-login.js"></script>
+    <!-- //LOGIN ARPLUS -->
+    <link rel="stylesheet" href="css/selectize.css" />
+    <!-- //selects form CSS -->
+    <script src="js/selectize.js"></script>
+    <!-- //selects form -->
+    <script>
+    //selectize
+    $(document).ready(function() {
+        $('.selectSearch').selectize({
+            sortField: 'text'
+        });
+    });
+    </script>
+    <script src="js/chat.js"></script>
+    <!-- //chat -->
+    <script src="js/form-search.js"></script>
+    <!-- //datapicker form search -->
+    <!-- <msdropdown> -->
+    <link rel="stylesheet" href="css/msdropdown/dd.css" />
+    <script src="js/msdropdown/jquery.dd.min.js"></script>
+    <link rel="stylesheet" href="css/msdropdown/skin2.css" />
+    <link rel="stylesheet" href="css/msdropdown/flags.css" />
+    <!-- </msdropdown> -->
+    <script src="js/jquery.lwtCountdown-1.0.js"></script>
+    <!-- COUNTDOWN -->
+    <script src="js/scripts.js"></script>
+    <!-- general scripts -->
+    <script src="js/jquery.validate-1.14.0.min.js"></script>
+    <!-- //validate form -->
+    <script src="js/jquery-validate.bootstrap-tooltip.js"></script>
+    <!-- //validate form -->
+    <script>
+    $(document).ready(function() {
+        $("#reservationFlightSearchForm").validate({
+            rules: {
+                typeOfCabin: {
+                    required: true
+                },
+                Adults: {
+                    required: true
+                },
+                Menores: {
+                    required: true
+                }
+            },
+            messages: {
+                typeOfCabin: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quam deleniti aspernatur, ipsum aliquam commodi accusantium. Quibusdam quas animi quod."
+            }
+        });
+
+
+
+    });
+    </script>
+    <style>
+    .bs-example {
+        border: 1px solid #ddd;
+        padding: 45px 15px 15px;
+        position: relative;
+    }
+    
+    .bs-example:after {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        font-size: 12px;
+        font-weight: 700;
+        color: #959595;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        content: "Ejemplo";
+    }
+    </style>
+
+    <link rel="stylesheet" href="css/colorful.css" />
+</head>
+
+<body>
+    <!-- CONTENEDOR -->
+    <div id="main-content" class="manual">
+        <header role="banner">
+            <div id="header" class="clearfix">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div id="header-top" class="header-top clearfix">
+                        <div id="logo-header" class="pull-left">
+                            <a href="index.html" accesskey="h"><img alt="Aerolineas.com" src="img/common/logo_Aerolineas.gif" /></a>
+                        </div>
+                        <a class="btn btn-primary pull-right" href="manual/manual.jpg" target="_blank" style="margin-top: 15px; color: #FFFFFF;">Ver manual de estilos</a>
+                    </div>
+                </div>
+                <!-- /.container -->
+            </div>
+        </header>
+        <!-- CONTENEDOR WRAPPER -->
+        <div id="wrapper" role="main">
+            <div class="container">
+                <div class="h1">Tipografía <small>Encabezados, párrafos, listas, y otro tipo de elementos en linea.</small></div>
+                <div class="h1">Encabezados & body</div>
+                <div class="bs-example">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h1>h1. Heading 1</h1></td>
+                                <td class="type-info">Regular-Semibold | 28px | #0079ca</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h2>h2. Heading 2</h2></td>
+                                <td class="type-info">Regular-Medium | 22px | #0079ca</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h3>h3. Heading 3</h3></td>
+                                <td class="type-info">Regular-Medium | 20px | #0079ca</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4>h4. Heading 4</h4></td>
+                                <td class="type-info">Regular-Medium | 18px | #656566</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h5>h5. Heading 5</h5></td>
+                                <td class="type-info">Regular-Medium | 14px | #656566</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <br>
+                <div class="h2">Texto secundario en cualquier título con una etiqueta genérica <code class="language-html" data-lang="html">&lt;small&gt;</code> o la clase <code class="language-html" data-lang="html">.small</code></div>
+
+                <div class="bs-example">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h1>h1. Heading 1 <small>Secondary text</small></h1></td>
+                                <td class="type-info"><code class="language-html" data-lang="html">&lt;h1&gt;h1. Heading 1 &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h1&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h2>h2. Heading 2 <small>Secondary text</small></h2></td>
+                                <td class="type-info"><code class="language-html" data-lang="html">&lt;h2&gt;h2. Heading 2 &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h2&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h3>h3. Heading 3 <small>Secondary text</small></h3></td>
+                                <td class="type-info"><code class="language-html" data-lang="html">&lt;h3&gt;h3. Heading 3 &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h3&gt;</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="h1">Ejemplo de texto en el BODY</div>
+                <div class="h2">Cuerpo del texto principal</div>
+                <p class="small">La escala tipográfica se basa en dos variables de LESS <code>@ font-size-base</code> (14px) y <code>@ line-height-base</code>.</p>
+                <p class="lead"> Párrafo <code class="language-html" data-lang="html">&lt;p class="lead"&gt;...&lt;/p&gt;</code>. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas tenetur dicta corrupti accusantium sunt fugiat ad, impedit dolores quod error, blanditiis provident illo dolore consectetur possimus. Id debitis facere atque.</p>
+                <p> Párrafo <code class="language-html" data-lang="html">&lt;p&gt;...&lt;/p&gt;</code>. Lorem ipsum dolor sit amet, consectetur adipisicing elit. <strong>(strong) Quas tenetur dicta corrupti accusantium sunt fugiat ad (strong)</strong>, impedit dolores quod error, blanditiis provident illo dolore consectetur possimus. Id debitis facere atque.</p>
+                <p class="text-blue"> Párrafo <code class="language-html" data-lang="html">&lt;p class="text-blue"&gt;...&lt;/p&gt;</code>. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae debitis quod, doloribus numquam deleniti sint consequatur nobis rem sequi pariatur? Beatae facilis ex cupiditate voluptatibus, alias voluptate, rem officia asperiores.</p>
+
+                <h2>Texto importante</h2>
+
+                <div class="info-box">
+                    <p><strong>IMPORTANTE:</strong> Podrás acreditar las millas dentro de los 6 meses de realizado el viaje con la documentación antes mencionada, transcurrido dicho período, o de no recibir la documentación requerida, las millas no podrán ser acreditadas.</p>
+                </div>
+
+
+                <div class="h2">Elementos de texto Inline</div>
+                <div class="h3">Small</div>
+                <p>Para quitar el énfasis a un elemento de texto inline o bloque de texto, utilizar la etiqueta <code>&lt;small&gt;...&lt;/small&gt;</code> o la clase <code>.small</code> para ajustar el texto correspondiente al 85% del tamaño del elemento padre. </p>
+                <div class="h3">Bold</div>
+                <p>Enfatizar un fragmento de texto: <code>&lt;strong&gt;...&lt;/strong&gt;</code>. </p>
+                <div class="h3">Itálica</div>
+                <p>Enfatizar una fragmento de texto con itálica. <code>&lt;em&gt;...&lt;/em&gt;</code>. </p>
+                <div class="h2">Alineación</div>
+                <div class="bs-example" data-example-id="text-alignment">
+                    <p class="text-left">Left aligned text. <code>&lt;p class="text-left"&gt;...&lt;/p&gt;</code></p>
+                    <p class="text-center">Center aligned text. <code>&lt;p class="text-center"&gt;...&lt;/p&gt;</code></p>
+                    <p class="text-right">Right aligned text. <code>&lt;p class="text-right"&gt;...&lt;/p&gt;</code></p>
+                    <p class="text-justify">Justified text. <code>&lt;p class="text-justify"&gt;...&lt;/p&gt;</code></p>
+                    <p class="text-nowrap">No wrap text. <code>&lt;p class="text-nowrap"&gt;...&lt;/p&gt;</code></p>
+                </div>
+                <div class="h2">Capitalización</div>
+                <div class="bs-example">
+                    <p class="text-lowercase">Lowercased text. <code>&lt;p class="text-lowercase"&gt;...&lt;/p&gt;</code></p>
+                    <p><span class="text-uppercase">Uppercased text. </span><code>&lt;p class="text-uppercase"&gt;...&lt;/p&gt;</code></p>
+                    <p class="text-capitalize">Capitalized text. <code>&lt;p class="text-capitalize"&gt;...&lt;/p&gt;</code></p>
+                </div>
+                <div class="h2">Listas</div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="h3">Ordenada</div>
+                        <div class="bs-example" data-example-id="simple-ol">
+                            <ol>
+                                <li>Lorem ipsum dolor sit amet</li>
+                                <li>Consectetur adipiscing elit</li>
+                                <li>Integer molestie lorem at massa</li>
+                                <li>Facilisis in pretium nisl aliquet</li>
+                                <li>Nulla volutpat aliquam velit</li>
+                                <li>Faucibus porta lacus fringilla vel</li>
+                                <li>Aenean sit amet erat nunc</li>
+                                <li>Eget porttitor lorem</li>
+                                <li>Lorem ipsum dolor sit amet</li>
+                                <li>Aenean sit amet erat nunc</li>
+                                <li>Nulla volutpat aliquam velit</li>
+                                <li>Eget porttitor lorem</li>
+                                <li>Lorem ipsum dolor sit amet</li>
+                            </ol>
+                            <code>&lt;ol&gt;<br>
+                                    &lt;li&gt;...&lt;/li&gt; <br>
+                                    &lt;/ol&gt;</code>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="h3">Sin Orden</div>
+                        <div class="bs-example">
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet</li>
+                                <li>Consectetur adipiscing elit</li>
+                                <li>Integer molestie lorem at massa</li>
+                                <li>Facilisis in pretium nisl aliquet</li>
+                                <li>Nulla volutpat aliquam velit
+                                    <ul>
+                                        <li>Phasellus iaculis neque</li>
+                                        <li>Purus sodales ultricies</li>
+                                        <li>Vestibulum laoreet porttitor sem</li>
+                                        <li>Ac tristique libero volutpat at</li>
+                                    </ul>
+                                </li>
+                                <li>Faucibus porta lacus fringilla vel</li>
+                                <li>Aenean sit amet erat nunc</li>
+                                <li>Eget porttitor lorem</li>
+                            </ul>
+                            <code>&lt;ul&gt;<br>
+                                    &lt;li&gt;...&lt;/li&gt; <br>
+                                    &lt;/ul&gt;</code>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="h3">Sin estilo</div>
+                        <div class="bs-example">
+                            <ul class="list-unstyled">
+                                <li>Lorem ipsum dolor sit amet</li>
+                                <li>Consectetur adipiscing elit</li>
+                                <li>Integer molestie lorem at massa</li>
+                                <li>Facilisis in pretium nisl aliquet</li>
+                                <li>Nulla volutpat aliquam velit
+                                    <ul>
+                                        <li>Phasellus iaculis neque</li>
+                                        <li>Purus sodales ultricies</li>
+                                        <li>Vestibulum laoreet porttitor sem</li>
+                                        <li>Ac tristique libero volutpat at</li>
+                                    </ul>
+                                </li>
+                                <li>Faucibus porta lacus fringilla vel</li>
+                                <li>Aenean sit amet erat nunc</li>
+                                <li>Eget porttitor lorem</li>
+                            </ul>
+                            <code>&lt;ul class="list-unstyled"&gt;<br>
+                                    &lt;li&gt;...&lt;/li&gt; <br>
+                                    &lt;/ul&gt;</code>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="h3">Inline</div>
+                        <div class="bs-example" data-example-id="list-inline">
+                            <ul class="list-inline">
+                                <li>Lorem ipsum</li>
+                                <li>Phasellus iaculis</li>
+                                <li>Nulla volutpat</li>
+                            </ul>
+                            <code>&lt;ul class="list-inline"&gt;<br>
+                                    &lt;li&gt;...&lt;/li&gt; <br>
+                                    &lt;/ul&gt;</code>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="h3">Descripción</div>
+                        <div class="bs-example">
+                            <dl>
+                                <dt>Description lists</dt>
+                                <dd>A description list is perfect for defining terms.</dd>
+                                <dt>Euismod</dt>
+                                <dd>Vestibulum id ligula porta.</dd>
+                                <dd>Donec id elit non mi porta gravida.</dd>
+                                <dt>Malesuada porta</dt>
+                                <dd>Etiam porta sem malesuada magna mollis.</dd>
+                            </dl>
+                            <code>&lt;dl&gt;<br>
+                                    &lt;dt&gt;...&lt;/dt&gt; <br>
+                                    &lt;dt&gt;...&lt;/dt&gt; <br>
+                                    &lt;/dl&gt;</code>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="h3">Descripción horizontal</div>
+                        <div class="bs-example">
+                            <dl class="dl-horizontal">
+                                <dt>Description lists</dt>
+                                <dd>A description list is perfect for defining terms.</dd>
+                                <dt>Euismod</dt>
+                                <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+                                <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+                                <dt>Malesuada porta</dt>
+                                <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+                                <dt>Felis euismod semper eget lacinia</dt>
+                                <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</dd>
+                            </dl>
+                            <code>&lt;dl class="dl-horizontal"&gt;<br>
+                                    &lt;dt&gt;...&lt;/dt&gt; <br>
+                                    &lt;dt&gt;...&lt;/dt&gt; <br>
+                                    &lt;/dl&gt;</code>
+                        </div>
+                    </div>
+                </div>
+                <div class="h2">Tablas</div>
+                
+                <div class="row">
+                    <div class="col-md-9">
+                        <table class="table table-bordered table-striped">
+                            <colgroup>
+                                <col class="span1">
+                                <col class="span7">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>Etiqueta</th>
+                                    <th>Descripción</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <code>&lt;table&gt;</code>
+                                    </td>
+                                    <td>
+                                        Elemento de envoltorio para mostrar datos en formato tabular
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <code>&lt;thead&gt;</code>
+                                    </td>
+                                    <td>
+                                        Elemento contenedor para filas de encabezamiento de tabla (<code>&lt;tr&gt;</code>) ara etiquetar columnas de la tabla
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <code>&lt;tbody&gt;</code>
+                                    </td>
+                                    <td>
+                                        Elemento contenedor para filas de tabla (<code>&lt;tr&gt;</code>) en el cuerpo de la tabla
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <code>&lt;tr&gt;</code>
+                                    </td>
+                                    <td>
+                                        Elemento contenedor de un conjunto de celdas de tabla (<code>&lt;td&gt;</code> o <code>&lt;th&gt;</code>) que aparece en una sola fila
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <code>&lt;td&gt;</code>
+                                    </td>
+                                    <td>
+                                        Celda de tabla por defecto
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <code>&lt;th&gt;</code>
+                                    </td>
+                                    <td>
+                                        Celdas de tabla especial para etiquetas (o filas, dependiendo del campo o el lugar) de grid. Se debe usar dentro un <code>&lt;thead&gt;</code>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <code>&lt;caption&gt;</code>
+                                    </td>
+                                    <td>
+                                        Descripción o resumen de lo que mantiene la tabla, especialmente útil para lectores de pantalla.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-3"><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;table&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;thead&gt;</span></li><li class="L2"><span class="pln">    </span><span class="tag">&lt;tr&gt;</span></li><li class="L3"><span class="pln">      </span><span class="tag">&lt;th&gt;</span><span class="pln">…</span><span class="tag">&lt;/th&gt;</span></li><li class="L4"><span class="pln">      </span><span class="tag">&lt;th&gt;</span><span class="pln">…</span><span class="tag">&lt;/th&gt;</span></li><li class="L5"><span class="pln">    </span><span class="tag">&lt;/tr&gt;</span></li><li class="L6"><span class="pln">  </span><span class="tag">&lt;/thead&gt;</span></li><li class="L7"><span class="pln">  </span><span class="tag">&lt;tbody&gt;</span></li><li class="L8"><span class="pln">    </span><span class="tag">&lt;tr&gt;</span></li><li class="L9"><span class="pln">      </span><span class="tag">&lt;td&gt;</span><span class="pln">…</span><span class="tag">&lt;/td&gt;</span></li><li class="L0"><span class="pln">      </span><span class="tag">&lt;td&gt;</span><span class="pln">…</span><span class="tag">&lt;/td&gt;</span></li><li class="L1"><span class="pln">    </span><span class="tag">&lt;/tr&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;/tbody&gt;</span></li><li class="L3"><span class="tag">&lt;/table&gt;</span></li></ol></pre></div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-9">
+                    <div class="h3">Opciones</div>
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Clase</th>
+                                    <th>Descrición</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Basica</td>
+                                    <td>
+                                        <code>.table</code>
+                                    </td>
+                                    <td>Sólo líneas horizontales entre filas</td>
+                                </tr>
+                                <tr>
+                                    <td>Con bordes</td>
+                                    <td>
+                                        <code>.table-bordered</code>
+                                    </td>
+                                    <td>Esquinas redondeadas y añade un borde exterior </td>
+                                </tr>
+                                <tr>
+                                    <td>Rayas de cebra</td>
+                                    <td>
+                                        <code>.table-striped</code>
+                                    </td>
+                                    <td>Añade un fondo gris claro a las filas impares (1, 3, 5, etc)</td>
+                                </tr>
+                                <tr>
+                                    <td>Condensado</td>
+                                    <td>
+                                        <code>.table-condensed</code>
+                                    </td>
+                                    <td>Corta el relleno veritcal a la mitad, desde 8px a 4px, dentro de todos los elementos <code>td</code> y <code>th</code></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="h3">Tablas responsive</div>
+                            <code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"table-responsive"</span><span class="nt">&gt;</span><br>
+                              <span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table"</span><span class="nt">&gt;</span>
+                                ...
+                              <span class="nt">&lt;/table&gt;</span><br>
+                            <span class="nt">&lt;/div&gt;</span></code>
+                    </div>
+                </div>
+                
+
+                <div class="h3">Ejemplos</div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="h4">Por defecto</div>
+                        <p><code>&lt;table class="table"&gt;...&lt;/table&gt;</code></p>
+                        <div class="bs-example"> <table class="table"> <caption>Optional table caption.</caption> <thead> <tr> <th>#</th> <th>First Name</th> <th>Last Name</th> <th>Username</th> </tr> </thead> <tbody> <tr> <th scope="row">1</th> <td>Mark</td> <td>Otto</td> <td>@mdo</td> </tr> <tr> <th scope="row">2</th> <td>Jacob</td> <td>Thornton</td> <td>@fat</td> </tr> <tr> <th scope="row">3</th> <td>Larry</td> <td>the Bird</td> <td>@twitter</td> </tr> </tbody> </table> </div>
+                    </div>
+
+                     <div class="col-md-6">
+                        <div class="h4">Tabla con bordes</div>
+                        <p><code>&lt;table class="table table-bordered"&gt;...&lt;/table&gt;</code></p>
+                        <div class="bs-example"> <table class="table table-bordered"> <caption>Optional table caption.</caption><thead> <tr> <th>#</th> <th>First Name</th> <th>Last Name</th> <th>Username</th> </tr> </thead> <tbody> <tr> <th scope="row">1</th> <td>Mark</td> <td>Otto</td> <td>@mdo</td> </tr> <tr> <th scope="row">2</th> <td>Jacob</td> <td>Thornton</td> <td>@fat</td> </tr> <tr> <th scope="row">3</th> <td>Larry</td> <td>the Bird</td> <td>@twitter</td> </tr> </tbody> </table> </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="h4">Striped rows</div>
+                        <p><code>&lt;table class="table table-striped"&gt;...&lt;/table&gt;</code></p>
+                        <div class="bs-example" data-example-id="striped-table"> <table class="table table-striped"> <caption>Optional table caption.</caption><thead> <tr> <th>#</th> <th>First Name</th> <th>Last Name</th> <th>Username</th> </tr> </thead> <tbody> <tr> <th scope="row">1</th> <td>Mark</td> <td>Otto</td> <td>@mdo</td> </tr> <tr> <th scope="row">2</th> <td>Jacob</td> <td>Thornton</td> <td>@fat</td> </tr> <tr> <th scope="row">3</th> <td>Larry</td> <td>the Bird</td> <td>@twitter</td> </tr> </tbody> </table> </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="h4">Hover rows</div>
+                         <p><code>&lt;table class="table table-hover"&gt;...&lt;/table&gt;</code></p>
+                        <div class="bs-example"> <table class="table table-hover"> <caption>Optional table caption.</caption><thead> <tr> <th>#</th> <th>First Name</th> <th>Last Name</th> <th>Username</th> </tr> </thead> <tbody> <tr> <th scope="row">1</th> <td>Mark</td> <td>Otto</td> <td>@mdo</td> </tr> <tr> <th scope="row">2</th> <td>Jacob</td> <td>Thornton</td> <td>@fat</td> </tr> <tr> <th scope="row">3</th> <td>Larry</td> <td>the Bird</td> <td>@twitter</td> </tr> </tbody> </table> </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="h4">Tabla condensada</div>
+                        <p><code>&lt;table class="table table-condensed"&gt;...&lt;/table&gt;</code></p>
+                        <div class="bs-example" data-example-id="condensed-table"> <table class="table table-condensed"> <thead> <tr> <th>#</th> <th>First Name</th> <th>Last Name</th> <th>Username</th> </tr> </thead> <tbody> <tr> <th scope="row">1</th> <td>Mark</td> <td>Otto</td> <td>@mdo</td> </tr> <tr> <th scope="row">2</th> <td>Jacob</td> <td>Thornton</td> <td>@fat</td> </tr> <tr> <th scope="row">3</th> <td colspan="2">Larry the Bird</td> <td>@twitter</td> </tr> </tbody> </table> </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="h4">Estilos customizados</div>
+                        <p><code>&lt;table class="table table-blue text-center"&gt;...&lt;/table&gt;</code></p>
+
+                <div class="bs-example"> <table class="table table-blue"> <thead> <tr> <th>#</th> <th>First Name</th> <th>Last Name</th> <th>Username</th> </tr> </thead> <tbody> <tr> <th scope="row">1</th> <td>Mark</td> <td>Otto</td> <td>@mdo</td> </tr> <tr> <th scope="row">2</th> <td>Jacob</td> <td>Thornton</td> <td>@fat</td> </tr> <tr> <th scope="row">3</th> <td>Larry</td> <td>the Bird</td> <td>@twitter</td> </tr> </tbody> </table> </div>
+                    </div>
+                </div>
+
+                <div class="h3">Tablas Ar Plus</div>
+
+                <div class="info-table">
+                                        <div class="row row-small">
+                                            <div class="col-sm-7">
+                                                <div class="box bg-lightblue">Saldo Anterior / Previous Balance</div>
+                                            </div>
+                                            <div class="col-sm-5">
+                                                <div class="box bg-grey">Millas / Miles 158861</div>
+                                            </div>
+                                        </div>
+                                        <div class="row row-small">
+                                            <div class="col-sm-12">
+                                                <div class="box bg-lightblue">Créditos / Credits</div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="box bg-grey">10/09/16</div>
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <div class="box bg-grey">DL 101 ATLANTA (GA), US - BUENOS AIRES (EZE) CLASE V</div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="box bg-grey text-center">1.250</div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="box bg-grey">10/09/16</div>
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <div class="box bg-grey">DL 847 NEW YORK / LA GUARDIA (NY), US - ATLANTA (GA), US CLASE V</div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="box bg-grey text-center">190</div>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <div class="box bg-lightblue">Subtotal Créditos / Subtotal Credits</div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="box bg-lightblue text-center">1.440</div>
+                                            </div>
+                                        </div>
+                </div>
+
+                <div class="h3">Tablas Ar Plus - Modelo 2</div>
+
+                <h4>Estado actual</h4>
+
+                <div class="info-table">
+                    <div class="row row-small">
+                        <div class="col-sm-3">
+                            <div class="box bg-grey text-center">Categoría: <br> Oro</div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="box bg-grey text-center">Vencimiento: <br> 31/12/2016</div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="box bg-grey text-center">Millas obtenidas: <br>0</div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="box bg-grey text-center">Tramos obtenidos: <br>0</div>
+                        </div>
+                    </div>
+              
+                </div>
+
+
+                <div class="h3">Elementos de formulario</div>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="h4">Formulario básico</div>
+                        <div class="bs-example" data-example-id="basic-forms"> <form>
+                            <div class="form-group">
+                                <label for="exampleInput">Nombre de etiqueta</label>
+                                <input type="email" class="form-control" id="exampleInput" placeholder="Type something…"> </div>
+                            <div class="form-group">
+                                <label for="exampleInputTextarea">Message</label>
+                                <textarea class="form-control" id="exampleInputTextarea" name="exampleInputTextarea" rows="3" placeholder="Message"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputFile">File input</label>
+                                <input type="file" id="exampleInputFile">
+                                <p class="help-block">Example block-level help text here.</p>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Check me out </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+
+                 
+
+                        
+                    </div>
+                </div>
+
+                <div class="h3">Acordeón</div>
+                <div class="content">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                          <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Collapsible Group Item #1
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                          <div class="panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+                    <div class="panel-group subpanel" id="`subaccordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingNuevoBeneficiario">
+                              <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#subaccordion" href="#collapseSubPanel" aria-expanded="false" aria-controls="collapseSubPanel">
+                                  Subpanel
+                                </a>
+                              </h4>
+                            </div>
+                            <div id="collapseSubPanel" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNuevoBeneficiario">
+                              <div class="panel-body">
+                                    <p>Ingresa los datos del beneficiario, tal cual figuren en su documento.</p>
+                                    <form>
+                                        <div class="row row-small">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="nombre" class="sr-only">Nombre</label>
+                                                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" name="nombre">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="apellido" class="sr-only">Apellido</label>
+                                                    <input type="text" class="form-control" id="apellido" placeholder="Apellido" name="apellido">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="tipodoc" class="sr-only">Tipo de Documento</label>
+                                                    <select name="tipodoc" id="tipodoc" class="form-control">
+                                                        <option value="">Tipo de Documento*</option>
+                                                        <option value="CI">Cedula</option>
+                                                        <option value="DNI">DNI</option>
+                                                        <option value="LC">Libreta Cívica</option>
+                                                        <option value="PAS">Pasaporte</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="TxtError">
+                                            <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>
+                                            <h4 class="title">Error: Consulte la siguiente descripción</h4>
+                                            <p><span>Error</span>: Campo obligatorio</p>
+                                        </div>
+                                    </form>
+                              </div>
+                            </div>
+                        </div>                                        
+                    </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                          <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Collapsible Group Item #2
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                          <div class="panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                          <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Collapsible Group Item #3
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                          <div class="panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    
+                </div>
+
+                <div class="h3">Tabs</div>
+                    <div class="wrapper-tabs">
+                        <div class="tabs-container">
+                        <h1 class="title hidden-md hidden-lg h2">Tab 1</h1>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-tabs" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <nav role="navigation" class="tabs navbar-tabs">
+                            <div class="collapse navbar-collapse" id="collapse-tabs" aria-expanded="false">
+                                <ul class="nav nav-tabs nav-justified nav-tabs-inner">
+                                    <li id="Tab1" role="presentation" class="active"><a href="#">Tab 1</a></li>
+                                    <li id="Tab2" role="presentation"><a href="#">Tab 2</a></li>
+                                    <li id="Tab3" role="presentation"><a href="#">Tab 3</a></li>
+                                    <li id="Tab4" role="presentation"><a href="#">Tab 4</a></li>
+                                    <li id="Tab5" role="presentation"><a href="#">Tab 5</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    </div>
+
+                
+
+                
+                
+
+
+
+
+
+                <h2>Ventanas Modal</h2>
+                <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#modalImage">Abrir modal imagen</a> |
+                <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#modalText">Abrir modal texto </a>
+               
+            </div>
+        </div>
+        <!-- /CONTENEDOR WRAPPER -->
+    </div>
+    <!-- Modal Image -->
+    <div id="modalImage" class="modal fade modal-image" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <a href="http://www.aerolineas.com.ar/es-ar/corporativo/ingreso/1_una-alianza-que-llega-para-expandir-su-negocio"><img class="img-responsive" src="img/modal/image.jpg" alt="..."></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- / Modal Image -->
+    <!-- Modal Text -->
+    <div id="modalText" class="modal fade modal-text" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Lorem ipsum dolor sit amet</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, assumenda earum officiis quisquam voluptas nobis tempore blanditiis, sunt explicabo eveniet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, assumenda earum officiis quisquam voluptas nobis tempore blanditiis, sunt explicabo eveniet.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- / Modal Text -->
+</body>
+
+</html>

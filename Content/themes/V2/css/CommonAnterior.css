@@ -1,0 +1,405 @@
+/* Fondos de Cuadros */
+
+.titulo1_BK {background-color:#004990;}
+.item1_BK {background-color:#cdd2e6;}
+.titulo2_BK {background-color:#f68938;}
+.item2_BK {background-color:#fed8b9;}
+
+/*////////////////////////////*/
+
+
+.style4 {color: #898B8F}
+
+.TxtGrisMedio10 {
+ font-family:Tahoma, Verdana;
+ font-size:10px;
+ color:#898B8F;
+ text-decoration:none;
+}
+
+.TxtVerdePodrido11, TxtVerdeMusgo11 {
+	font-family:Tahoma, Verdana;
+	font-size:11px;
+	color:#909461;
+	text-decoration:none;
+}
+
+.TxtVerdePodrido10, TxtVerdeMusgo10 {
+	font-family:Tahoma, Verdana;
+	font-size:10px;
+	color:#909461;
+}
+
+.TxtFucsia11 {
+ font-family:Tahoma, Verdana;
+ font-size:11px;
+ color:#ED0034;
+ text-decoration:none;
+}
+
+
+.TxtVerde11 {
+ font-family:Tahoma, Verdana;
+ font-size:11px;
+ color:#3DBF15;
+ text-decoration:none;
+}
+ 
+.TxtTurquesa11 {
+	font-family:Tahoma, Verdana;
+	font-size:11px;
+	color:#3B8D8B;
+	text-decoration:none;
+}
+ 
+.TxtNaranja11 {
+	font-family:Tahoma, Verdana;
+	font-size:11px;
+	color:#fe7018;
+	text-decoration:none;
+}
+
+.TxtNaranjaClaro11 {
+ font-family:Tahoma, Verdana;
+ font-size:11px;
+ color:#ffaa00;
+}
+
+.TxtNaranjaClaro10 {
+ font-family:Tahoma, Verdana;
+ font-size:10px;
+ color:#ffaa00;
+}
+
+
+.Txtfecha {
+	font-family:Tahoma, Verdana;
+	font-size:10px;
+	color:#D0D0D0;
+	text-decoration:none;
+}
+
+.TxtGris11 {
+	font-family:Tahoma, Verdana;
+	font-size:11px;
+	color:#5D5D5D;
+	text-decoration:none;
+}
+
+.TxtGrisLink11 {
+	font-family:Tahoma, Verdana;
+	font-size:11px;
+	color:#5D5D5D;
+	text-decoration:underline;
+}
+
+.TxtGris12 {
+	font-family:Tahoma, Verdana;
+	font-size:12px;
+	color:#5D5D5D;
+	text-decoration:none;
+}
+
+.TxtGris10 {
+	font-family:Tahoma, Verdana;
+	font-size:10px;
+	color:#5D5D5D;
+	text-decoration:none;
+}
+
+.TxtGrisClaro10 {
+	font-family:Tahoma, Verdana;
+	font-size:10px;
+	color:#C7C7C7;
+	text-decoration:none;
+}
+
+.TxtGrisOscuro11 {
+	font-family:Tahoma, Verdana;
+	font-size:11px;
+	color:#77787C;
+	text-decoration:none;
+}
+
+.TxtGrisOscuro12 {
+	font-family:Tahoma, Verdana;
+	font-size:12px;
+	color:#77787C;
+	text-decoration:none;
+}
+
+.TxtGrisOscuro_Central_11 {
+	font-family:Helvetica;
+	font-size:11px;
+	color:#77787C;
+	text-decoration:none;
+}
+
+
+
+.TxtGrisOscuro_Central_14 {
+	font-family:Helvetica;
+	font-size:14px;
+	color:#77787C;
+	text-decoration:none;
+}
+
+
+.TxtGris8 {
+	font-family:Tahoma, Verdana;
+	font-size:8px;
+	color:#5D5D5D;
+	text-decoration:none;
+}
+
+.TxtGris6 {
+	font-family:Tahoma, Verdana;
+	font-size:6px;
+	color:#5D5D5D;
+	text-decoration:none;
+}
+
+.TxtBlanco10 {
+	font-family:Tahoma, Verdana;
+	font-size:10px;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+.TxtBlaS {
+	font-family:Tahoma, Verdana;
+	font-size:10px;
+	color:#0C2577;
+	text-decoration:underline;
+}
+
+.TxtBlanco11 {
+	font-family:Tahoma, Verdana;
+	font-size:11px;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+.TxtBlanco12 {
+	font-family:Tahoma, Verdana;
+	font-size:12px;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+
+.txtColorParo12 {
+	font-family:Tahoma, Verdana;
+	font-size:12px;
+	color:#082473;
+	text-decoration:none;
+}
+
+.txtColorParo18 {
+	font-family:Tahoma, Verdana;
+	font-size:18px;
+	color:#082473;
+	text-decoration:none;
+}
+
+.txtColorParo14 {
+	font-family:Tahoma, Verdana;
+	font-size:14px;
+	color:#082473;
+	text-decoration:none;
+}
+
+
+.TxtBlanco14 {
+	font-family:Tahoma, Verdana;
+	font-size:14px;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+
+.TxtBlanco16 {
+	font-family:Tahoma, Verdana;
+	font-size:16px;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+.TxtBlanco18 {
+	font-family:Tahoma, Verdana;
+	font-size:18px;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+.TxtNegro18
+{
+	color: #000000;
+	font-size: 18px;
+	font-family: Arial,Helvetica,Sans-Serif;
+	font-weight: bold;
+}
+
+.TxtAzul18 {
+	font-family:Tahoma, Verdana;
+	font-size:18px;
+	color:#0C2577;
+	text-decoration:none;
+}
+
+.TxtAzul16 {
+	font-family:Tahoma, Verdana;
+	font-size:16px;
+	color:#0C2577;
+	text-decoration:none;
+}
+
+.TxtAzul12 {
+	font-family:Tahoma, Verdana;
+	font-size:12px;
+	color:#0C2577;
+	text-decoration:none;
+}
+
+.TxtAzul11 {
+	font-family:Tahoma, Verdana;
+	font-size:11px;
+	color:#0C2577;
+	text-decoration:none;
+}
+
+.TxtAzul10 {
+	font-family:Tahoma, Verdana;
+	font-size:10px;
+	color:#0C2577;
+	text-decoration:none;
+}
+
+.TxtAzul10_Over {
+	font-family:Tahoma, Verdana;
+	font-size:10px;
+	color:#0C2577;
+    text-decoration:underline;
+}
+
+.TxtCeleste14 {
+	font-family:Tahoma, Verdana;
+	font-size:14px;
+	color:#85C7FF;
+	text-decoration:none;
+}
+
+.TxtCeleste12 {
+	font-family:Tahoma, Verdana;
+	font-size:12px;
+	color:#85C7FF;
+	text-decoration:none;
+}
+
+.TxtCeleste11 {
+	font-family:Tahoma, Verdana;
+	font-size:11px;
+	color:#85C7FF;
+	text-decoration:none;
+}
+
+.TxtCeleste10 {
+	font-family:Tahoma, Verdana;
+	font-size:10px;
+	color:#85C7FF;
+	text-decoration:none;
+}
+
+
+.TxtCelesteOscuro11 {
+	font-family:Tahoma, Verdana;
+	font-size:11px;
+	color:#459EEA;
+	text-decoration:none;
+}
+
+.TxtCelesteOscuro11Sub {
+	font-family:Tahoma, Verdana;
+	font-size:11px;
+	color:#459EEA;
+	text-decoration:underline;
+}
+
+.TxtCelesteOscuro10 {
+	font-family:Tahoma, Verdana;
+	font-size:10px;
+	color:#459EEA;
+	text-decoration:none;
+}
+
+.TxtCelesteOscuro9 {
+	font-family:Tahoma, Verdana;
+	font-size:9px;
+	color:#459EEA;
+	text-decoration:none;
+}
+
+.TxtCelesteOscuro8 {
+	font-family:Tahoma, Verdana;
+	font-size:8px;
+	color:#459EEA;
+	text-decoration:none;
+}
+
+
+.titulo4,.titulo4azul
+{
+    COLOR: #000000;
+    FONT-FAMILY: Tahoma, Arial, Helvetica;
+    FONT-SIZE: 12px;
+    FONT-WEIGHT: bold;
+}
+.titulo4azul
+{
+COLOR: #0a4b8a;
+}
+
+.textonegro,.textoneg
+{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration : none;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;    
+}
+.textonegro
+{
+	TEXT-ALIGN: justify;
+}
+
+
+
+.TxtRojo10 {
+	font-family:Tahoma, Verdana;
+	font-size:10px;
+	color:#D82118;
+	text-decoration:none;
+}
+
+.TxtRojo11 {
+	font-family:Tahoma, Verdana;
+	font-size:11px;
+	color:#D82118;
+	text-decoration:none;
+}
+
+.TxtRojo12 {
+	font-family:Tahoma, Verdana;
+	font-size:12px;
+	color:#D82118;
+	text-decoration:none;
+}
+
+
+.TxtDorado11 {
+	font-family:Tahoma, Verdana;
+	font-size:11px;
+	color:#A2954F;
+	text-decoration:none;
+}

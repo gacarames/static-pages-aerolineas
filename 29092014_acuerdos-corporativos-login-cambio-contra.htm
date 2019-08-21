@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>aerolineas.com</title>
+	<meta http-equiv="title" content="SkyPriority en Aerol&#237;neas Argentinas - aerolineas.com">
+	<meta name="Description" content="SkyPriority conjunto de beneficios que le permitir&#225;n tener una experiencia en los aeropuertos m&#225;s &#225;gil y placentera">
+    <link href="Images/condor_chico.gif" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />    
+    <link href="Content/themes/V2/css/screen.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/css/estilo.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/css/form_argentina.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/css/form_argentina_home.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/css/Extras.css" rel="stylesheet"/>
+    <link href="Content/themes/V2/Error.css" rel="stylesheet"/>
+    <link href="Content/themes/V2/jquery-ui-timepicker-addon.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.core.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.resizable.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.selectable.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.accordion.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.autocomplete.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.button.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.dialog.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.slider.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.tabs.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.datepicker.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.progressbar.css" rel="stylesheet"/>
+	<link href="Content/themes/V2/jquery.ui.theme.css" rel="stylesheet"/>
+    
+    <script src="Scripts/jquery-1.8.3.js"></script>
+    <script src="Scripts/jquery-ui-1.9.2.js"></script>
+    <script src="Scripts/jquery.unobtrusive-ajax.js"></script>
+	<script src="Scripts/jquery.validate.js"></script>
+    <script src="Scripts/modernizr-2.5.3.js"></script>
+    <script src="Scripts/funcionesVarias.js"></script>
+    <script src="Scripts/jquery.watermark.js"></script>
+</head>
+<body>
+    <!-- CONTENEDOR -->
+    <div id="contenedor_home">
+        <header>
+            <div id="fecha" align="right">
+                <table width="1002px">
+                    <tbody><tr>
+                        <td align="left">
+                            <!--Localizacion-->
+                            <div id="Country">
+                                 
+                            </div>
+                            <!--fin de Localizacion-->
+                        </td>
+                        <td align="right">
+                            <!--fecha-->
+                            <div id="fecha2">
+                                 
+                                <div class="counrty_today_partials">
+    martes, 02 de septiembre de 2014
+</div>
+                            </div>
+                            <!--fin de fecha-->
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+            <br clear="all">
+            
+            
+            <!--HEADER-->
+            <div id="header">
+            <div class=" header_borde">
+            </div>
+            <div id="header-left">
+                <a href="http://www.aerolineas.com.ar/es-ar/reservas-y-servicios/alojamiento#" target="_self">
+                    </a><a href="" title="Logo Aerolineas Argentinas"><img alt="Logo Aerolineas Argentinas" border="0" height="44px" hspace="0" src="Content/themes/V2/img/common/logo_aerolineas.gif" vspace="0" width="252px" /></a>
+                <span class="screen-reader-text">Aerolineas.com</span>
+            </div>
+                <div class="fleft">
+                    
+                    <a href="http://www.aerolineas.com.ar/es-ar/vuelos_baratos/tarifa_mas_baja_garantizada" title=""><img alt="" src="Content/themes/V2/img/buttons/Sello.png"></a>
+                </div>
+            <div align="right" id="logo-header">
+                <div class=" width300   fleft  mleft100 mtop5">
+                    <a href="http://www.aerolineas.com.ar/es-ar" title="Logo Aerolineas Argentinas"><img alt="Logo Aerolineas Argentinas" border="0" height="42px" hspace="0" src="Content/themes/V2/img/common/aerolineas_argentinasST.jpg" vspace="0" width="100px"></a>
+                    <a href="http://www.aerolineas.com.ar/es-ar/asppage/open?link=http%3A%2F%2Fwww.skyteam.com%2F%2Fes" target="blank" title=""><img alt="" src="Content/themes/V2/img/common/skyteam.jpg"></a>
+                </div>
+                <div class=" fleft mtop10 ">
+                    <!--select paises-->
+                    <div id="CultureContainer">
+                        
+                        
+<select class="INPUTBuscador" id="culture" name="culture" onchange="onCultureChanged()" style="width: 150px; margin-left: 10px;"><option selected="selected" value="es-ar">Argentina (Español)</option>
+<option value="en-ar">Argentina (Inglés)</option>
+<option value="en-au">Australia</option>
+<option value="es-bo">Bolivia</option>
+<option value="pt-br">Brasil</option>
+<option value="en-ca">Canadá</option>
+<option value="es-co">Colombia</option>
+<option value="es-cl">Chile</option>
+<option value="es-eu">Europa (Español)</option>
+<option value="it-eu">Europa (Italiano)</option>
+<option value="en-eu">Europa (English)</option>
+<option value="es-mx">México</option>
+<option value="en-nz">New Zealand</option>
+<option value="es-pa">Paraguay</option>
+<option value="es-pe">Perú </option>
+<option value="es-uy">Uruguay</option>
+<option value="es-us">United States (Español)</option>
+<option value="en-us">United States (English)</option>
+<option value="es-ve">Venezuela</option>
+<option value="es-us">Otros países (Español)</option>
+<option value="en-us">Other Countries (English)</option>
+</select>
+
+<script type="text/javascript">
+    function onCultureChanged() {
+        var cultureName = $("#culture").val();
+        GlobalCultureName = cultureName;
+
+        var ruta = '/es-ar/culture/changeculture';
+        var redirectUrl = '/_culture_';
+
+        $.ajax({
+            url: ruta,
+            type: "post",
+            dataType: "json",
+            traditional: true,
+            async: false,
+            data: { 'selectedCultureName': cultureName },
+            success: function (result, responseText) {
+
+                // // translateUrlAndRedirect(GlobalCultureName);
+
+                //alert('Cultura cambiada exitosamente por: ' + result);
+
+                // Redirecciono
+                redirectUrl = redirectUrl.replace("_culture_", GlobalCultureName);
+                window.location.replace(redirectUrl);
+
+                //  // Recargo la página
+                //window.location.reload();
+            },
+            error: function () {
+                alert('Error al intentar cambiar la cultura');
+            }
+        });
+
+    }
+        
+</script>
+                    </div>
+                    <!--fin de select paises-->
+                </div>
+                <div class="width400 mtop25 clearing">
+                    <p>
+                        
+                        
+                        <a href="http://www.aerolineas.com.ar/es-ar/reservas-servicios/preguntas-frecuentes">Contacto y Preguntas frecuentes</a>
+                        <img src="Content/themes/V2/img/buttons/mail.gif" alt="Contacto y Preguntas frecuentes" border="0" class="imgCont">
+                        
+        <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&idPagina=7&idIdioma=es">0810-222-86527                                                                                                                                                                                          </a>
+
+
+                    </p>
+                </div>
+            </div>
+            <!-- /HEADER -->
+            <br clear="all">
+            <a name="startcontent" id="startcontent"></a>
+            <!-- NAVBAR -->
+            <div id="navbar">
+                <div id="botonera">
+                    
+                    
+<div class="boton width_1"><a href="http://www.aerolineas.com.ar/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D164%26ididioma%3Des">La empresa</a><div class="transparent"><ul><li><a href="http://www.aerolineas.com.ar/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D2%26ididioma%3Des">Conocenos</a></li><li><a href="http://www.aerolineas.com.ar/es-ar/skyteam/acerca_de_skyteam">Alianza SkyTeam</a></li><li><a href="http://www.aerolineas.com.ar/es-ar/aerolineas_hoy">Aerolíneas hoy</a></li><li><a href="http://www.aerolineas.com.ar/es-ar/la_empresa/recursos_humanos">Recursos humanos</a></li><li><a href="http://www.aerolineas.com.ar/es-ar/prensa/comunicado">Prensa</a></li><li><a href="http://blog.aerolineas.com.ar/blog/" target="_blank">Blog de noticias </a></li><li><a href="http://www.aerolineas.com.ar/es-ar/cefepra/acercade">CEFEPRA</a></li><li><a href="http://www.aerolineas.com.ar/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D152%26ididioma%3Des">Proveedores</a></li></ul></div></div><div class="boton"><img src="Content/themes/V2/img/backgrounds/line.jpg"></div><div class="boton width_1"><a href="http://www.aerolineas.com.ar/es-ar/reservas_servicios/vuelos">Reservas y servicios</a><div class="transparent"><ul><li><a href="http://www.aerolineas.com.ar/es-ar/reservas_servicios/vuelos">Comprá tu pasaje</a></li><li><a href="http://www.aerolineas.com.ar/es-ar/reservas_servicios/horarios_de_vuelos">Horarios de vuelos programados</a></li><li><a href="http://www.aerolineas.com.ar/es-ar/reservas_servicios/estado_de_vuelo">Estado actual de tu vuelo</a></li><li><a href="http://www.aerolineas.com.ar/es-ar/reservas_servicios/chequea_tu_reserva">Chequeá tu reserva</a></li><li><a href="http://www.aerolineas.com.ar/es-ar/reservas_servicios/web_checkin">Web Check-in</a></li><li><a href="http://www.aerolineas.com.ar/es-ar/cuponesdescuentos/detalles/ar/buenos-aires/2624_viaja-por-tu-pais-con-aerolineas-vacaciones?utm_source=argentina&utm_medium=banner_grupo_4_central&utm_campaign=aerolineas_vacaciones">Paquetes Aerolíneas Vacaciones</a></li><li><a href="http://www.rentalcars.com/?affiliateCode=aeroargentina_rc&preflang=es" target="_blank">Alquiler de auto</a></li><li><a href="./Hoteles_files/Hoteles.htm">Alojamiento</a></li><li><a href="http://www.aerolineas.com.ar/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D144%26ididioma%3Des">Constancia de crédito fiscal</a></li><li><a href="http://www.aerolineas.com.ar/es-ar/reservas_servicios/devolucion">Devolución de pasajes</a></li><li><a href="http://www.aerolineas.com.ar/es-ar/aerolineas_movil">Aerolíneas Móvil</a></li><li><a href="http://www.aerolineas.com.ar/es-AR/ReservasServicios/ProgramaMembershipRewards">Membership Rewards</a></li><li><a href="http://www.aseguratuviaje.com/aerolineasargentinas/">Asistencia al viajero</a></li></ul></div></div><div class="boton"><img src="Content/themes/V2/img/backgrounds/line.jpg"></div><div class="boton width_1"><a href="http://www.aerolineas.com.ar/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D43%26ididioma%3Des">Info para tu viaje</a><div class="transparent"><ul><li><a href="http://www.aerolineas.com.ar/es-ar/mapa_destinos/destinos">A donde viajar</a></li><li><a href="http://www.aerolineas.com.ar/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D50%26ididioma%3Des">Equipaje</a></li><li><a href="http://www.aerolineas.com.ar/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D43%26ididioma%3Des">Consejos para viajeros</a></li><li><a href="http://www.aerolineas.com.ar/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D22%26ididioma%3Des">Info de servicios especiales</a></li><li><a href="http://www.aerolineas.com.ar/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D44%26ididioma%3Des">Embarque de menores, embarazadas y  mascotas</a></li><li><a href="http://www.aerolineas.com.ar/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D4%26ididioma%3Des">Nuestros aviones y servicios a bordo</a></li><li><a href="http://www.aerolineas.com.ar/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D27%26ididioma%3Des">Mapa y datos de aeropuertos</a></li><li><a href="http://www.aerolineas.com.ar/es-ar/reservas_servicios/salon_condor">Salón Cóndor</a></li><li><a href="http://www.aerolineas.com.ar/es-ar/sky_team/sky_priority">SkyPriority</a></li><li><a href="http://www.aerolineas.com.ar/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D143%26ididioma%3Des">Clima</a></li><li><a href="http://www.aerolineas.com.ar/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D7%26ididioma%3Des">Sucursales</a></li></ul></div></div><div class="boton"><img src="Content/themes/V2/img/backgrounds/line.jpg"></div><div class="boton width_1"><a href="http://www.aerolineas.com.ar/es-ar/vuelos_baratos">Vuelos baratos</a><div class="transparent"><ul><li><a href="http://www.aerolineas.com.ar/es-ar/vuelos_baratos">Vuelos baratos</a></li><li><a href="http://www.aerolineas.com.ar/es-ar/mapa_destinos/destinos">Mapa de destinos</a></li><li><a href="http://www.aerolineas.com.ar/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D228%26ididioma%3Des">Tarifa más baja garantizada</a></li><li><a href="http://www.aerolineas.com.ar/es-ar/cupones_descuentos">Cupones de descuento</a></li><li><a href="http://www.aerolineas.com.ar/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D169%26ididioma%3Des">Comprá en aerolineas.com</a></li><li><a href="http://www.aerolineas.com.ar/es-ar/vuelos_baratos/visite_argentina">Visite Argentina</a></li><li><a href="http://www.aerolineas.com.ar/es-ar/vuelos_baratos/south_american_pass">South American Pass</a></li></ul></div></div><div class="boton"><img src="Content/themes/V2/img/backgrounds/line.jpg"></div><div class="boton width_1"><a href="http://www.aerolineas.com.ar/es-ar/aerolineas_plus/nuevo">Aerolíneas Plus</a><div class="transparent"><ul><li><a href="http://www.aerolineas.com.ar/es-ar/aerolineas_plus/nuevo">Aerolíneas Plus</a></li><li><a href="http://www.aerolineas.com.ar/es-ar/aerolineasplus/acercade">Conocé Aerolíneas Plus</a></li><li><a href="javascript:openFormInscripcionPlus();">Registrate</a></li><li><a href="http://www.aerolineas.com.ar/es-ar/aerolineas_plus/mi_cuenta_plus">Mi cuenta Plus</a></li><li><a href="http://www.aerolineas.com.ar/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D216%26ididioma%3Des">Tabla de millas</a></li><li><a href="http://www.aerolineas.com.ar/es-ar/aerolineas_plus/ganar_millas">Ganar millas</a></li><li><a href="http://www.aerolineas.com.ar/es-ar/aerolineas_plus/utilizar_millas">Utilizar millas</a></li><li><a href="http://www.aerolineas.com.ar/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D227%26ididioma%3Des">Compra de millas </a></li><li><a href="http://www.aerolineas.com.ar/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D234%26ididioma%3Des">Upgrade en canje de millas </a></li><li><a href="http://www.aerolineas.com.ar/es-ar/aerolineas_plus/socios_elite">Socios Elite</a></li><li><a href="http://www.aerolineas.com.ar/es-ar/aerolineas_plus/informacion_de_interes">Información de interés</a></li><li><a href="http://www.aerolineas.com.ar/es-ar/aerolineas-plus/empresas-asociadas">Empresas asociadas</a></li><li><a href="http://www.aerolineas.com.ar/es-ar/reservas-servicios/preguntas-frecuentes#ancla-4">FAQs y videos explicativos</a></li><li><a href="http://www.aerolineas.com.ar/es-ar/cuponesdescuentos/detalles/ar/buenos-aires/871_nuevo-millas--pesos-en-argentina">Millas+Pesos Argentina</a></li><li><a href="http://www.aerolineas.com.ar/es-ar/cuponesdescuentos/detalles/ar/buenos-aires/3127_super-promo-millas--pesos-en-argentina">¡Super promo Millas+Pesos Argentina!</a></li><li><a href="http://www.aerolineas.com.ar/es-ar/cuponesdescuentos/detalles/ar/buenos-aires/3124_super-promo-millas--pesos-internacional">¡Super promo Millas+Pesos internacional!</a></li><li><a href="http://www.aerolineas.com.ar/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D14%26ididioma%3Des">Condiciones de uso </a></li></ul></div></div><div class="boton"><img src="Content/themes/V2/img/backgrounds/line.jpg"></div><div class="boton  width_6"><a href="http://www.aerolineas.com.ar/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D167%26ididioma%3Des">Corporativo</a><div class="transparent"><ul><li><a href="http://www.aerolineas.com.ar/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D33%26ididioma%3Des">Acuerdos corporativos</a></li><li><a href="http://www.aerolineas.com.ar/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D36%26ididioma%3Des">Ferias y congresos</a></li><li><a href="http://www.aerolineas.com.ar/es-AR/asppage/open?link=http%3A%2F%2Fww1.aerolineas.com.ar%2Farg%2Fmain.asp%3Fidsitio%3Dar%26idpagina%3D60%26ididioma%3Des">Club Secretarias</a></li></ul></div></div>
+
+
+
+
+    <script type="text/javascript">
+
+        function openFormInscripcionPlus() {
+            document.getElementById('ifrInscripcion').src = 'https://ftarplus.aerolineas.com.ar/plus/PlusRealNewDic/index.php?secc=11&idi=es&idSitio=AR';
+            document.getElementById('pop2').style.display = 'block';
+            document.getElementById('fondo-negro').style.display = 'block';
+        }
+        function closeFormInscripcionPlus() {
+            document.getElementById('ifrInscripcion').src = '';
+            document.getElementById('pop2').style.display = 'none';
+            document.getElementById('fondo-negro').style.display = 'none';
+        }
+
+
+    </script> 
+
+     
+    <div id="fondo-negro"></div>
+    <div id="pop2" style="height:880px;">
+	        <p>
+                <a href="javascript:closeFormInscripcionPlus()">
+                    <img src="./Hoteles_files/x_btn.jpg" class="fright mright5" alt="Cerrar">
+                </a>
+            </p> 
+	<p class="tituloplus_linea" style="padding-bottom:10px;">INSCRIPCIÓN <span class="gris2">ONLINE</span></p>
+	<p>Para inscribirte en el Programa de Pasajeros Frecuentes Aerolíneas Argentinas Plus, completá el formulario a continuación y conocé las Condiciones<br>Generales del Programa antes de hacer click en  <strong>ACEPTAR</strong>.</p>
+	<iframe width="800" id="ifrInscripcion" height="800" src="" frameborder="0"></iframe>
+    </div>
+
+
+   
+
+                </div>
+            </div>
+            <!-- / NAVBAR -->
+            <div style="background-color: #FFF; height: 50px; position: relative;">
+                <!-- LOGIN AR PLUS -->
+                <script type="text/javascript">
+    var url_loginARPlus = 'https://ftarplus.aerolineas.com.ar/plus/PlusRealNewDic/aplicaciones/ajax/login_step1.php?callback=?';
+    var url_loginOk = '/es-AR/loginarplus/loginok?Nombre=_nombre_&amp;Socio=_socio_';
+
+    $(function () {
+        $('#frmLoginARPlus').validate({
+            rules: {
+                NroSocio: 'required',
+                Clave: 'required'
+            },
+            messages: {
+                NroSocio: 'Debe ingresar el campo "Número Socio"',
+                Clave: 'Debe ingresar el campo "Clave"'
+            },
+            onkeyup: false,
+            onfocusout: false,
+            onclick: false,
+            showErrors: function (errMap, errList) {
+                if (errList.length) { alert(errList[0].message); }
+            },
+            submitHandler: function (form) {
+                $.getJSON(url_loginARPlus, { nrosocio: $("#NroSocio").val(), clave: $("#Clave").val() }, function (data) {
+                    if (parseInt(data.isOk, 10)) {
+                        url_loginOk = url_loginOk.replace("_NOMBRE_", data.nombre).replace("_SOCIO_", data.socio).replace("&amp;", "&");
+                        $.get(url_loginOk, null, function (response) {
+
+                            window.location = '/es-ar/aerolineas_plus/mi_cuenta_plus';
+                        });
+                    }
+                });
+            }
+        });
+    });
+</script>
+
+<div id="buscador_principal" style="text-align: center;">
+    <div>
+        <input class="buscador_plus" type="button" value="Ingresá a tu cuenta Aerolíneas Plus" onclick="mostrarElemento(&#39;loginPlus&#39;);return false;" style="cursor:pointer;">
+    </div>
+</div>
+
+<form action="http://www.aerolineas.com.ar/es-AR/loginarplus/submitted" id="frmLoginARPlus" method="post" name="frmLoginARPlus" onsubmit="return false;" novalidate>    <div id="loginPlus" class="pop-form-arplus" style="display: none; padding: 0; top: 20px;
+        border: 0px solid black;">
+        <div style="margin: 32px auto 0 auto; width: 375px; border: 0px solid black;">
+            <p class="mleft10 azul" style="height: 16px;">
+                <strong class="fleft">Ingresar a mi cuenta</strong>
+                <img src="./Hoteles_files/ico_cerrar.png" onclick="mostrarElemento(&#39;loginPlus&#39;);" class="fright mright4" style="cursor:pointer;">
+            </p>
+            <div class="mleft10">
+                <input class="width170 redondeado" id="NroSocio" name="NroSocio" type="text" value="" placeholder="Número de socio">
+                <input class="width160 redondeado mleft10" id="Clave" name="Clave" type="password" placeholder="Clave">
+            </div>
+            <div class="mleft10 fleft width170">
+                <ul>
+                    <li> <a class="gris11" href="http://www.aerolineas.com.ar/es-ar/aerolineas_plus/mi_cuenta_plus/olvidastetunrosocio" style="font-weight:bold;font-size:10px;">Olvidaste tu Nº de Socio?</a></li>                    
+                </ul>
+            </div>
+            <div class="mleft17 fleft width128" style="border: 0px solid black; line-height: 10px;">
+                <ul>
+                    <li><a class="gris11" href="http://www.aerolineas.com.ar/es-ar/aerolineas_plus/mi_cuenta_plus/primeravez" style="font-weight:bold;font-size:10px;">Primera vez que ingreso</a></li>
+                    <li><a class="gris11" href="http://www.aerolineas.com.ar/es-ar/aerolineas_plus/mi_cuenta_plus/olvidastetuclave1" style="font-weight:bold;font-size:10px;">No puedo ingresar en mi cuenta</a></li>                    
+                </ul>
+            </div>
+            <div class="fright mtop15">
+                <input type="submit" value="OK" class="boton_ok redondeado btnLoginARPlus mright8">
+            </div>
+        </div>
+    </div>
+</form><script type="text/javascript">
+    $(function () {
+        $('#NroSocio').watermark('Número de socio');
+        $('#Clave').watermark('Clave');
+    });
+</script>
+
+                <!-- / LOGIN AR PLUS -->
+                
+                
+        <div style="float: left; width: 700px; margin-left: 10px; margin-top: 10px">
+                    <span class="gris12"><a href="" target="_blank" class="link">Importante! Presentación en Aeropuertos: Vuelos Nacionales 2 hs antes. Vuelos Internacionales 3 hs antes</a></span>
+        </div>
+
+
+
+
+
+
+                
+                    <div style="margin-left: 5px; width: 700px">
+                        <p class="breadcrumb">
+                            <a href="http://www.aerolineas.com.ar/es-ar">aerolineas.com</a>
+ &gt; 
+<a href="">Corporativos</a>
+
+ &gt; 
+<a href="">Acuerdos Corporativos</a>
+
+                        </p>
+                    </div>
+            </div>
+        </div></header>
+        <div>
+            
+            
+            <section>
+                
+<link href="http://www.aerolineas.com.ar/Content/V2/_validate_Helpers?v=Ybj9mjJVfZVw_5qnJqHUIYqYhvKC2ZOOLXLCABdAYK41" rel="stylesheet">
+
+<style type="text/css">
+    #ui-datepicker-div
+    {
+        font-size: 70%;
+    }
+</style>
+<script type="text/javascript">
+
+    function capitalize(text) {
+        return text.charAt(0).toUpperCase() + text.slice(1).toLowerCase();
+    }
+
+    formatoFecha = "dd/mm/yy";
+    dia = "domingo,lunes,martes,miércoles,jueves,viernes,sábado".split(",");
+    nomDia = "dom,lun,mar,mié,jue,vie,sáb".split(",");
+    mesCorto = "ene,feb,mar,abr,may,jun,jul,ago,sep,oct,nov,dic,".split(",");
+    nomMes = "enero,febrero,marzo,abril,mayo,junio,julio,agosto,septiembre,octubre,noviembre,diciembre,".split(",");
+    todayText = "Hoy";
+    for (var i = 0; i < dia.length; i++) {
+        dia[i] = capitalize(dia[i]);
+    }
+    for (var i = 0; i < nomDia.length; i++) {
+        nomDia[i] = capitalize(nomDia[i]);
+    }
+    for (var i = 0; i < mesCorto.length; i++) {
+        mesCorto[i] = capitalize(mesCorto[i]);
+    }
+    for (var i = 0; i < nomMes.length; i++) {
+        nomMes[i] = capitalize(nomMes[i]);
+    }
+    $(function () {
+
+        $("#fecha_llegada").datepicker({
+            closeText: "X",
+            currentText: todayText,
+            showButtonPanel: true,
+            buttonImageOnly: true,
+            showAnim: "clip", 		//animacion de como aparece y desaparece
+            dateFormat: formatoFecha, //formato fecha
+            minDate: 0, 				//muestra fechas desde hoy
+            maxDate: "+11M", 		//muestra fechas hasta 11 meses
+            showOtherMonths: true,      //muestra los dias del mes anterior
+            selectOtherMonths: true, //muestra los dias del mes posterior
+            //changeMonth: true,		//muestra el combo con los meses
+            //changeYear: true,			//muestra el combo con los años
+            numberOfMonths: 2, 		//muestra dos meses
+            dayNames: dia, 			//nombre de los dias        
+            dayNamesMin: nomDia, 	//nombre de los dias
+            monthNamesShort: mesCorto, //nombre de los meses
+            autoSize: true, //
+            monthNames: nomMes			//nombre de los meses
+
+        });
+
+        $("#fecha_partida").datepicker({
+            closeText: "X",
+            currentText: todayText,
+            showButtonPanel: true,
+            showAnim: "clip", 		//animacion de como aparece y desaparece
+            dateFormat: formatoFecha, //formato fecha
+            minDate: 0, 				//muestra fechas desde hoy
+            maxDate: "+11M", 		//muestra fechas hasta 11 meses
+            showOtherMonths: true,      //muestra los dias del mes anterior
+            selectOtherMonths: true, //muestra los dias del mes posterior
+            //changeMonth: true,		//muestra el combo con los meses
+            //changeYear: true,			//muestra el combo con los años
+            numberOfMonths: 2, 		//muestra dos meses
+            dayNames: dia, 			//nombre de los dias
+            dayNamesMin: nomDia, 	//nombre de los dias        
+            monthNamesShort: mesCorto, //nombre de los meses
+            monthNames: nomMes			//nombre de los meses
+        });
+
+        $('#fecha_llegada').watermark('Fecha de Partida');
+        $('#fecha_partida').watermark('Fecha de llegada');
+
+        $.validator.addMethod('IsNotEqualTo', function (val, el, comparador) {
+            return val != comparador;
+        });
+        $("#frmHoteles").validate({
+            rules: {
+                cmbPais2: {
+                    required: true,
+                    IsNotEqualTo: 0
+                },
+                provincia: {
+                    required: true,
+                    IsNotEqualTo: 0
+                },
+                fecha_partida: {
+                    required: true
+                },
+                fecha_llegada: {
+                    required: true
+                },
+                cantidadCuartos: {
+                    required: true
+                }
+            },
+            messages: {
+                cmbPais2: {
+                    required: 'Debe ingresar el "Pais"',
+                    IsNotEqualTo: 'Debe ingresar el "Pais"'
+                },
+                provincia: {
+                    required: 'Debe ingresar la "provincia/estado"',
+                    IsNotEqualTo: 'Debe ingresar la "provincia/estado"'
+                },
+                fecha_partida: {
+                    required: 'Debe ingresar la fecha de "Partida".'
+                },
+                fecha_llegada: {
+                    required: 'Debe ingresar la fecha de "LLegada".'
+                },
+                cantidadCuartos: {
+                    required: 'Debe ingresar la cantidad de "Cuartos"'
+                }
+            },
+            onkeyup: false,
+            onfocusout: false,
+            onclick: false,
+            showErrors: function (errMap, errList) {
+                $(".msj-error p").remove();
+                $(".rojo-error").removeClass("rojo-error");
+                if (errList.length > 0)
+                    $(".msj-error").show();
+                else
+                    $(".msj-error").hide();
+
+                $(errList).each(function (i, e) {
+                    $(".msj-error").append($("<p>").text(e.message));
+                    $(e.element).addClass("rojo-error");
+                });
+                $('#fecha_llegada').watermark('Fecha de Partida');
+                $('#fecha_partida').watermark('Fecha de llegada');
+
+            }
+        });
+    });
+</script>
+<link href="http://www.aerolineas.com.ar/Content/themes/V2/cupertino/jquery-ui-1.9.1.custom.min.css" rel="stylesheet">
+
+<div id="newcont" class="fleft">
+    
+    <h1>
+        Acuerdos Corporativos
+        <a href="#" class="preguntas"><span>Preguntas Frecuentes</span></a>
+    </h1>
+    <div class="col-izq">
+        <div id="bannerRelacionadoLateral"><img src="Content/themes/V2/img/backgrounds/hotel_20140203063010.jpg"></div>
+        
+    </div>
+    <div class="col-der">
+        <div class="cont-padding">
+            <h2 class="tit">
+                Acuerdo Corporativo Web
+            </h2>
+            <p>
+                Texto de ejemplo : Si necesita rastrear su equipaje o si el mismo se encuentra demorado, Aerolíneas Argentinas le ofrece, sin costo 
+alguno, un servicio  para su mayor tranquilidad. Simplemente deberá hacer click en el icono que figura a continuación e ingresar los 
+datos solicitados para asegurarnos poder realizar la entrega de la manera más rápida y segura posible. 
+
+            </p>
+            <div class="bg-form-ac-login">
+<form action="./Hoteles_files/Hoteles.htm" class="nuevo-form" id="frmHoteles" method="post" target="_blank" novalidate>                    <div class="msj-error" style="display: none">
+                    </div>
+                    <fieldset>
+                        <input value="Usuario" class="large"></input>
+            			
+                    </fieldset>
+                    <fieldset>
+                        <input value="Contraseña" class="large"></input>
+                    </fieldset>
+                    <fieldset>
+                        <input value="Nueva Clave" class="large"></input>
+                    </fieldset>
+                    <fieldset>
+                        <input value="Reingresar Nueva Clave" class="large"></input>
+                    </fieldset>
+                    <fieldset>
+                        <input type="button" name="" value="Aceptar" class="large">
+                    </fieldset>                   
+</form>
+            </div>
+        </div>
+        <div class="bottom-col">
+        </div>
+    </div>
+</div>
+
+<div id="relacionados">
+              <div class="mod1rel">
+                  <a href="#"><img src="Content/themes/V2/img/relacionados/mod1_conoce.jpg" width="985" height="70"></a>
+                  
+              </div>
+          </div>
+
+            </section>
+
+            
+        <footer>
+            <!--pie-->
+            
+
+
+
+     <script type="text/javascript">
+
+        function abrirAustral() {
+          window.open('http://www.austral.com.ar/index.asp?idSitio=AR&idIdioma=es','Austral', 'scrollbars=yes, resizable=1,width=1020,height=805');
+        }
+     
+      function popup_condiciones_transporte() {
+          var winC = window.open('http://ww1.aerolineas.com.ar/arg/bodies/CondicionesGrales_contratoTransporte.asp?idSitio=AR&idIdioma=es', 'wContr', 'scrollbars=yes, resizable=1,width=800,height=600');
+          winC.moveTo(0, 0);
+      }
+
+
+     </script> 
+               <div id="pie">
+          <div class="ml10  mtop15">
+              
+              
+  <div class="azul fleft mtop20">
+                    <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=152&amp;idIdioma=es                       " target="" class="link">Proveedores                                                                                         </a> <span> | </span>
+                    <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=111&amp;idIdioma=es                       " target="" class="link">Conocé el estado de tu vuelo                                                                        </a> <span> | </span>
+                    <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=50&amp;idIdioma=es                        " target="" class="link">Equipaje                                                                                            </a> <span> | </span>
+                    <a href="http://www.aerolineas.com.ar/es-AR/AerolineasMovil" target="" class="link">Aerolíneas Móvil</a> <span> | </span>
+                    <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=165&amp;idIdioma=es                       " target="" class="link">Cargas                                                                                              </a> <span> | </span>
+        </div>
+              <div class=" fright mright15 mtop15">
+                  <div id="fb-root"></div>
+                  <script language="javascript" type="text/javascript">
+                      (function (d, s, id) {
+                          var js, fjs = d.getElementsByTagName(s)[0];
+                          if (d.getElementById(id)) return;
+                          js = d.createElement(s); js.id = id;
+                          js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1";
+                          fjs.parentNode.insertBefore(js, fjs);
+                      } (document, 'script', 'facebook-jssdk'));
+                  </script>
+                  <div class="fb-like mbot5" data-href="http://www.facebook.com/aerolineas.argentinas" data-send="false" data-layout="button_count" data-width="77" data-show-faces="false" data-font="arial"></div>
+                  <a href="https://www.facebook.com/Aerolineas.argentinas" target="_blank">
+                      <img src="Content/themes/V2/img/common/ic-facebook.gif" alt="Facebook" width="22" height="22" border="0" /></a>
+                  <a href="http://twitter.com/Aerolineas_AR/" target="_blank">
+                      <img src="Content/themes/V2/img/common/ic-Twitter.jpg" alt="Twitter" width="22" height="22" border="0" /></a>
+                  <a href="https://plus.google.com/106198199507305429358/posts" target="_blank">
+                      <img src="Content/themes/V2/img/common/ic-gplus.gif" alt="Facebook" width="22" height="22" border="0" /></a>
+                  
+                  <a href="http://www.youtube.com/user/AerolineasAR" target="_blank">
+                      <img src="Content/themes/V2/img/common/ic-YouTube.gif" alt="Youtube" width="22" height="22" border="0" /></a>
+                  <a href="http://www.Aerolineas.com.ar/arg/rss.asp?idSitio=AR&idIdioma=es" target="_blank">
+                      <img src="Content/themes/V2/img/common/ic-RSS.gif" alt="Rss" width="22" height="22" border="0" /></a></div>
+              <br clear="all" />
+          </div>
+          <div class="div">
+          </div>
+          <div class="div_pie">
+              <div class="div_links">
+  
+              
+  
+                  <div class="div_partner">
+                      <img src="Content/themes/V2/img/common/footer-logoAustral.gif" alt="Logo Austral" onclick="abrirAustral();" style="cursor:pointer;" />
+                  </div>
+                  <div class="div_partner">
+                      <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=81%26idIdioma=es" title=""><img alt="@MainFooterResource.JetPaq_Logo" src="Content/themes/V2/img/common/footer-logoJetPaq.gif" /></a>
+                  </div>
+                  <div class="div_partner">
+                      <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=9%26idIdioma=es" title=""><img alt="@MainFooterResource.Aerohandling_Logo" src="Content/themes/V2/img/common/footer-logoAerohandling.gif" /></a>
+                  </div>
+                  <div class="div_partner">
+                      <a href="http://www.optar.com/" target="_blank">
+                          <img src="Content/themes/V2/img/common/footer-logoOptar.gif" alt="Logo Optar" border="0"/>
+                      </a>
+                  </div>
+                 <div class="div_partner mtop7 mleft20"><img src="Content/themes/V2/img/common/logo_arg.jpg" alt="Logo Aerol&#237;neas Argentinas" width="47" height="30" />
+                 </div>
+                 <div class="div_partner mtop14 mleft25"><img src="Content/themes/V2/img/common/argentina_paisbuenagente.gif" alt="Logo Aerol&#237;neas Argentinas - Un pa&#237;s con buena gente" />
+                 </div>
+            </div>
+              <br clear="all" />
+              <div class="codigo-qr">
+                  <a href="https://servicios1.afip.gov.ar/clavefiscal/qr/mobilePublicInfo.aspx?req=e1ttZXRob2Q9Z2V0UHVibGljSW5mb11bcGVyc29uYT0zMDY0MTQwNTU1NF1bdGlwb2RvbWljaWxpbz0wXVtzZWN1ZW5jaWE9MF1bdXJsPWh0dHA6Ly93d3cuYWVyb2xpbmVhcy5jb20uYXJdfQ==" target="_F960AFIPInfo">
+                      <img src="Content/themes/V2/img/common/qr_code.gif" alt="QR-Code" />
+                  </a>
+              </div>
+              <div class="pie_texto">
+                  <span>aerolineas.com Sitio Oficial de Aerolineas Argentinas. &#169; 1996 - 2013 Aerol&#237;neas Argentinas S.A.<br />
+                      <a class="pie" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=72%26idIdioma=es">Legales</a> |
+                      <a class="pie" href="#" onclick="popup_condiciones_transporte();"> Condiciones Generales de Transporte </a>|
+                      <a class="pie" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=94%26idIdioma=es">Mapa del Sitio</a> |
+                      <a class="pie" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=84%26idIdioma=es">Ud. est&#225; en un SITIO SEGURO</a> 
+                  </span>
+              </div>
+          </div>
+          <div class="div_borde">
+              <img src="Content/themes/V2/img/backgrounds/footer-right.gif" alt="" />
+          </div>
+      </div>
+
+
+            <!--fin de pie-->
+        </footer>
+    </div>
+    
+    
+
+    <!--************GOOGLE ANALYTICS*******************-->
+    <script type="text/javascript">var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-7304952-1']);
+_gaq.push(['_setDomainName', 'aerolineas.com.ar']);
+_gaq.push(['_setAllowLinker', 'true']);
+_gaq.push(['_setAllowHash', 'false']);
+_gaq.push(['_trackPageview']);
+
+	            (function() {
+		            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+		            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	            })();
+            </script>
+    <!--************GOOGLE ANALYTICS*******************-->
+
+    <!--************CREO COOKIE PNR*******************-->
+
+    <!--************CREO COOKIE PNR*******************-->
+
+
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div></body></html>

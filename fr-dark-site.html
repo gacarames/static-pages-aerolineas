@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Aerolineas Argentinas</title>
+    <meta http-equiv="title" content="Aerolineas Argentinas">
+    <meta name="Description" content="Todo tu viaje en un s&#243;lo lugar aerolineas.com, vuelos baratos.">
+    <link href="Images/condor_chico.gif" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="Content/themes/DarkSite/css/screen.css" rel="stylesheet" />
+    <link href="Content/themes/DarkSite/css/estilo.css" rel="stylesheet" />
+    <link href="Content/themes/DarkSite/css/form_argentina.css" rel="stylesheet" />
+    <link href="Content/themes/DarkSite/css/form_argentina_home.css" rel="stylesheet" />
+    <link href="Content/themes/DarkSite/css/Extras.css" rel="stylesheet" />
+    <link href="Content/themes/DarkSite/Error.css" rel="stylesheet" />
+    <link href="Content/themes/DarkSite/jquery-ui-timepicker-addon.css" rel="stylesheet" />
+    <link href="Content/themes/DarkSite/jquery.ui.core.css" rel="stylesheet" />
+    <link href="Content/themes/DarkSite/jquery.ui.resizable.css" rel="stylesheet" />
+    <link href="Content/themes/DarkSite/jquery.ui.selectable.css" rel="stylesheet" />
+    <link href="Content/themes/DarkSite/jquery.ui.accordion.css" rel="stylesheet" />
+    <link href="Content/themes/DarkSite/jquery.ui.autocomplete.css" rel="stylesheet" />
+    <link href="Content/themes/DarkSite/jquery.ui.button.css" rel="stylesheet" />
+    <link href="Content/themes/DarkSite/jquery.ui.dialog.css" rel="stylesheet" />
+    <link href="Content/themes/DarkSite/jquery.ui.slider.css" rel="stylesheet" />
+    <link href="Content/themes/DarkSite/jquery.ui.tabs.css" rel="stylesheet" />
+    <link href="Content/themes/DarkSite/jquery.ui.datepicker.css" rel="stylesheet" />
+    <link href="Content/themes/DarkSite/jquery.ui.progressbar.css" rel="stylesheet" />
+    <link href="Content/themes/DarkSite/jquery.ui.theme.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.8.3.js"></script>
+    <script src="Scripts/jquery-ui-1.9.2.js"></script>
+    <script src="Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script src="Scripts/jquery.validate.js"></script>
+    <script src="Scripts/modernizr-2.5.3.js"></script>
+    <script src="Scripts/funcionesVarias.js"></script>
+    <script src="Scripts/jquery.watermark.js"></script>
+
+    <style>
+    #newcont h1 {
+        font-family: Neo_san, Arial, Helvetica, sans-serif;
+        font-size: 21px;
+        width: 99%;
+        border-bottom: solid 1px #666666;
+        color: #666666;
+        padding-bottom: 8px;
+    }
+    #newcont p {
+        margin-bottom: 13px;
+        margin-left: 0px;
+    }
+    .date {
+            color: #838384;
+                font-size: 12px;
+    }
+    .mensaje {
+            margin: 10px 0;
+    border-bottom: 1px dotted #ccc;
+    }
+    .mensaje p {
+        font-weight: bold;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- CONTENEDOR -->
+    <div id="contenedor_home">
+    <header>
+           
+            <!--HEADER-->
+            <div id="header" />
+            <div class=" header_borde">
+            </div>
+            <div id="header-left">
+                <a href="#" target="_self">
+                    <a href="/" title="Logo Aerolineas Argentinas"><img alt="Logo Aerolineas Argentinas" border="0" height="44px" hspace="0" src="Images/dark/logo_Aerolineas.gif" vspace="0" width="252px" /></a>
+                </a>
+                <span class="screen-reader-text">
+                    Aerolineas.com</span>
+            </div>
+           
+            <div align="right" id="logo-header">
+                <div class=" width300   fleft  mleft100 mtop5" style="padding-right: 15px;">
+                    <img src="Images/dark/label.jpg" alt="img" width="32">
+                </div>
+                <div class=" fleft mtop10 ">
+                    <!--select paises-->
+                    <div id="CultureContainer">
+                        <select class="INPUTBuscador" id="culture" name="culture" onChange="onCultureChanged()" style="width: 150px; margin-left: 10px;">
+                            <option value="es-ar">Argentina (Espa&#241;ol)</option>
+                            <option value="en-ar">Argentina (Ingl&#233;s)</option>
+                            <option value="en-au">Australia</option>
+                            <option value="es-bo">Bolivia</option>
+                            <option value="pt-br">Brasil</option>
+                            <option value="en-ca">Canad&#225;</option>
+                            <option value="es-co">Colombia</option>
+                            <option value="es-cl">Chile</option>
+                            <option value="es-eu">Espa&#241;a</option>
+                            <option selected="selected" value="fr-fr">Francia</option>
+                            <option value="it-eu">Italia</option>
+                            <option value="es-mx">M&#233;xico</option>
+                            <option value="en-nz">New Zealand</option>
+                            <option value="es-pa">Paraguay</option>
+                            <option value="es-pe">Per&#250; </option>
+                            <option value="en-eu">Rest of Europe</option>
+                            <option value="es-uy">Uruguay</option>
+                            <option value="es-us">United States (Espa&#241;ol)</option>
+                            <option value="en-us">United States (English)</option>
+                            <option value="es-ve">Venezuela</option>
+                            <option value="es-us">Otros pa&#237;ses (Espa&#241;ol)</option>
+                            <option value="en-us">Other Countries (English)</option>
+                        </select>
+                    </div>
+                    <!--fin de select paises-->
+                </div>
+                
+            </div>
+            <!-- /HEADER -->
+            <br clear="all" />
+            <a name="startcontent" id="startcontent"></a>
+            
+         
+        </header>
+
+
+        <div>
+            <section>
+                <link href="Content/themes/V2/css/MapaDestinos.css" rel="stylesheet" />
+                <link href="Content/themes/V2/cupertino/jquery-ui-1.9.1.custom.min.css" rel="stylesheet" />
+                <link href="Content/themes/V2/css/comboMapa.css" rel="stylesheet" />
+                <link href="Content/themes/DarkSite/css/selectize.css" rel="stylesheet" />
+                <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+                <!--[if IE 7]><link href="/Content/themes/V2/css/comboMapa_ie7.css" rel="stylesheet"/>
+<![endif]-->
+                <script type="text/javascript">
+                    var msgCombobox = {
+                        error1: 'error1',
+                        tooltip: 'tooltip'
+                    }
+                </script>
+                <script type="text/javascript" src="Scripts/combobox.js"></script>
+                <style type="text/css">
+                    input[type=submit] {
+                        cursor: pointer;
+                    }
+                    
+                    #ui-datepicker-div {
+                        font-size: 69%;
+                        width: 39em!important;
+                        display: none;
+                    }
+                </style>
+                <script>
+                    var dfd = $.Deferred();
+                    var data;
+                    var url;
+                    var groups;
+
+                    function FillOrigenes(elementToFill) {
+                        url = '/fr-fr/botonera/getdestinos';
+                        $.ajax({
+                            url: url,
+                            data: {},
+                            success: function(resultado) {
+                                groups = _.uniq(resultado, function(x) {
+                                    return x.country;
+                                });
+                                var datos = _.groupBy(_.sortBy(resultado, 'country'), 'country');
+                                $.each(datos, function(key, value) {
+                                    var optGroup = $('<optgroup label=' + key + '>' + key + '</optgroup>');
+                                    $.each(value, function(i, e) {
+                                        var option = '<option value=' + e.Id_Destino + '>' + e.address + ' (' + e.cod_dest + ')</option>';
+                                        optGroup.append(option);
+                                    });
+                                    $(elementToFill).append(optGroup);
+                                });
+                                dfd.resolve();
+                            }
+                        });
+                        return dfd.promise();
+                    }
+
+                    function FillDestinos(idOrigen, elementToFill) {
+                        url = '/fr-fr/botonera/getdestinos';
+                        var urlById = '/fr-fr/botonera/getdestinosbyid';
+                        if (idDestino != 0) {
+                            data = {
+                                id: idDestino
+                            };
+                            url = urlById;
+                        } else {
+                            data = {};
+                            url = url;
+                        }
+                        $.ajax({
+                            url: url,
+                            data: data,
+                            success: function(resultado) {
+                                var datos = _.groupBy(_.sortBy(resultado, 'country'), 'country');
+                                $.each(datos, function(key, value) {
+                                    var optGroup = $('<optgroup label=' + key + '>' + key + '</optgroup>');
+                                    $.each(value, function(i, e) {
+                                        var option = '<option value=' + e.Id_Destino + '>' + e.address + ' (' + e.cod_dest + ')</option>';
+                                        optGroup.append(option);
+                                    });
+                                    $(elementToFill).append(optGroup);
+                                });
+                                dfd.resolve();
+                            }
+                        });
+                        return dfd.promise();
+                    }
+                    $(function() {
+                        var xhr;
+                        var $select_origen = $('#Id_Origen');
+
+                        $.when(FillOrigenes($select_origen)).then(function() {
+                            var $select_destino = $('#Id_Destino').selectize({
+                                valueField: 'Id_Destino',
+                                labelField: 'address',
+                                searchField: ['address'],
+                                optgroupField: 'country',
+                                optgroupLabelField: 'country',
+                                optgroupValueField: 'country',
+                                optgroups: groups,
+                                render: {
+                                    item: function(item, escape) {
+                                        return '<div class="option">' + escape(item.address) + ' (' + escape(item.cod_dest) + ')</div>';
+                                    },
+                                    option: function(item, escape) {
+                                        return '<div class="option">' + escape(item.address) + ' (' + escape(item.cod_dest) + ')</div>';
+                                    }
+                                }
+
+                            });
+                            $select_origen.selectize({
+                                onChange: function(value) {
+                                        if (!value.length) {
+                                            $select_destino[0].selectize.clearOptions();
+                                            return;
+                                        }
+                                        $select_destino[0].selectize.disable();
+                                        $select_destino[0].selectize.clearOptions();
+                                        $select_destino[0].selectize.load(function(callback) {
+                                            xhr && xhr.abort();
+                                            xhr = $.ajax({
+                                                //Comentado para  poder pasar a prod
+                                                //url: '/fr-fr/botonera/getdestinosbyid',
+                                                //data:{id:value},
+                                                url: '/fr-fr/botonera/getdestinos',
+                                                success: function(results) {
+                                                    $select_destino[0].selectize.enable();
+                                                    callback(results);
+                                                },
+                                                error: function() {
+                                                    callback();
+                                                }
+                                            })
+                                        });
+                                    } //finOnChange
+                            });
+                        });
+
+                    });
+                </script>
+                <script type="text/javascript">
+                    function getCookie(cname) {
+                        var name = cname + "=";
+                        var ca = document.cookie.split(';');
+                        for (var i = 0; i < ca.length; i++) {
+                            var c = ca[i];
+                            while (c.charAt(0) == ' ') c = c.substring(1);
+                            if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+                        }
+                        return "";
+                    }
+                    //Solo los objetos son pasados por referencia
+                    function callIsOK(url, objetReference) {
+                        var prom = $.Deferred();
+                        $(document).ajaxComplete(function(event, xhr, settings) {
+                            if (settings.url.indexOf(url) > -1) {
+                                objetReference.Datos = $.parseJSON(xhr.responseText);
+                                return prom.resolve();
+                            }
+                        });
+
+                        return prom.promise();
+
+                    }
+
+                    function cambiarCombos() {
+                        var selectizeOrigen = $("#Id_Origen")[0].selectize;
+                        selectizeOrigen.setValue(getCookie("_strOrg_"));
+                        var selectizDestino = $("#Id_Destino")[0].selectize;
+                        var datos = new Object();
+                        $.when(callIsOK('getdestinosbyid', datos)).then(function() {
+                            selectizDestino.setValue(getCookie("_strDest_"));
+                        });
+
+                    }
+
+                    function UltimaBusqueda() {
+                        //Solo los objetos son pasados por referencia
+                        var datos = new Object();
+                        $.when(callIsOK("getdestinos", datos)).then(function() {
+                            var _d = _.where(datos.Datos, {
+                                Id_Destino: parseInt(getCookie("_strDest_"))
+                            })[0];
+                            var _o = _.where(datos.Datos, {
+                                Id_Destino: parseInt(getCookie("_strOrg_"))
+                            })[0];
+                            if (_d && _o)
+                                $("#UltimaBusqueda").text(_o.address + " (" + _o.cod_dest + ") - " + _d.address + " (" + _d.cod_dest + ")");
+                        });
+                    }
+                    var lastId_Origen = '19';
+                    var lastId_Destino = '8';
+                    var strDestino = "";
+                    var strOrigen = "";
+
+                    function LoadWatermarks() {
+                        $('#Destino').watermark('Destino');
+                        $('#Origen').watermark('Origen');
+                        $('#Cupon').watermark('Cupón de Descuento');
+                        $('#fechaIda').watermark('Fecha de Inicio');
+                        $('#fechaVuelta').watermark('Fecha de Regreso');
+                    }
+
+                    function SuccessFormVuelos(data) {
+                        $("#frmVuelos .msj-error").find("p").remove();
+                        $("#frmVuelos .msj-error").hide();
+                        $(".rojo-error").removeClass("rojo-error");
+                        if (_.isEmpty(data.UrlToRedirect)) {
+                            var mensaje = "";
+                            $.each(data.Errors, function(i, e) {
+                                var ptext = e.Value;
+                                $("#" + e.Key).addClass("rojo-error");
+                                $("#frmVuelos .msj-error").append("<p>" + ptext + "</p>");
+                            });
+                            if ($("#Id_Origen").hasClass("rojo-error"))
+                                $("#Id_Origen").next().find('.selectize-input').addClass("rojo-error");
+
+                            if ($("#Id_Destino").hasClass("rojo-error"))
+                                $("#Id_Destino").next().find('.selectize-input').addClass("rojo-error");
+                            LoadWatermarks();
+                            $("#frmVuelos .msj-error").show();
+                        } else {
+                            var mensaje = "";
+                            $.each(data.Errors, function(i, e) {
+                                mensaje += !$.trim(e.Value) ? "" : "*" + e.Value + "\n";
+                            });
+                            LoadWatermarks();
+                            if ($.trim(mensaje))
+                                alert(mensaje);
+                            window.location = data.UrlToRedirect;
+                        }
+                    }
+                    $(function() {
+                        LoadWatermarks();
+                        UltimaBusqueda();
+                        $("#fechaIda").datepicker({
+                            closeText: "X",
+                            showButtonPanel: true,
+                            buttonImageOnly: true,
+                            showAnim: "clip", //animacion de como aparece y desaparece
+                            dateFormat: 'dd/mm/yy', //formato fecha
+                            minDate: '14/03/2016', //muestra fechas desde hoy
+                            maxDate: '16/02/2017', //muestra fechas hasta 11 meses
+                            showOtherMonths: true, //muestra los dias del mes anterior
+                            selectOtherMonths: true, //muestra los dias del mes posterior
+                            //changeMonth: true,        //muestra el combo con los meses
+                            //changeYear: true,         //muestra el combo con los años
+                            numberOfMonths: 2, //muestra dos meses
+                            dayNames: 'Dimanche,Lundi,Mardi,Mercredi,Jeudi,Vendredi,Samedi'.split(","), //nombre de los dias        
+                            dayNamesMin: 'Dim.,Lun.,Mar.,Mer.,Jeu.,Ven.,Sam.'.split(","), //nombre de los dias
+                            monthNamesShort: 'Janv.,F&#233;vr.,Mars,Avr.,Mai,Juin,Juil.,Ao&#251;t,Sept.,Oct.,Nov.,D&#233;c.,'.split(","), //nombre de los meses
+                            autoSize: true, //
+                            monthNames: 'Janvier,F&#233;vrier,Mars,Avril,Mai,Juin,Juillet,Ao&#251;t,Septembre,Octobre,Novembre,D&#233;cembre,'.split(","), //nombre de los meses
+                            onSelect: function(selectedDate) {
+                                $("#fechaVuelta").datepicker("option", "minDate", selectedDate);
+                            }
+                        });
+                        $("#fechaVuelta").datepicker({
+                            closeText: "X",
+                            showButtonPanel: true,
+                            buttonImageOnly: true,
+                            showAnim: "clip", //animacion de como aparece y desaparece
+                            dateFormat: 'dd/mm/yy', //formato fecha
+                            minDate: '14/03/2016', //muestra fechas desde hoy
+                            maxDate: '16/02/2017', //muestra fechas hasta 11 meses
+                            showOtherMonths: true, //muestra los dias del mes anterior
+                            selectOtherMonths: true, //muestra los dias del mes posterior
+                            //changeMonth: true,        //muestra el combo con los meses
+                            //changeYear: true,         //muestra el combo con los años
+                            numberOfMonths: 2, //muestra dos meses
+                            dayNames: 'Dimanche,Lundi,Mardi,Mercredi,Jeudi,Vendredi,Samedi'.split(","), //nombre de los dias        
+                            dayNamesMin: 'Dim.,Lun.,Mar.,Mer.,Jeu.,Ven.,Sam.'.split(","), //nombre de los dias
+                            monthNamesShort: 'Janv.,F&#233;vr.,Mars,Avr.,Mai,Juin,Juil.,Ao&#251;t,Sept.,Oct.,Nov.,D&#233;c.,'.split(","), //nombre de los meses
+                            autoSize: true, //
+                            monthNames: 'Janvier,F&#233;vrier,Mars,Avril,Mai,Juin,Juillet,Ao&#251;t,Septembre,Octobre,Novembre,D&#233;cembre,'.split(",") //nombre de los meses
+                        });
+                        $('#fechaIda').datepicker("setDate", '14/03/2016');
+                        $('#fechaVuelta').datepicker("setDate", '14/03/2016');
+
+
+                        $("#Adultos option[value='0']").prop('selected', true);
+                        $("#Menores option[value='0']").prop('selected', true);
+                        $("#Bebes option[value='0']").prop('selected', true);
+
+                    });
+                </script>
+                <script type="text/javascript">
+                    function GetTrimvalue(value) {
+                        var exp = /\([A-Z]{3}\)/g;
+                        var arrayMatch = exp.exec(value);
+                        if (arrayMatch) {
+                            var result = arrayMatch[0].replace('(', '').replace(')', '');
+                            return $.trim(result);
+                        } else {
+                            return $.trim(value);
+                        }
+                    }
+
+                    $(function() {
+                        function ArrayContains(array, value) {
+                            var codigo = GetTrimvalue(value);
+                            i = 0;
+                            $.each(array['Todos'], function(cod) {
+                                if (cod == codigo)
+                                    i = i + 1;
+                            });
+                            return i > 0;
+                        }
+
+                        function IsDateBetween(fechaCompare, startDateCompare, endDateCompare) {
+                            var ok = Number(fechaCompare) >= Number(startDateCompare) && Number(fechaCompare) <= Number(endDateCompare);
+                            return ok;
+                        }
+                        $.validator.addMethod('ValidarPaisDeResidencia', function(value) {
+                            if ($("select[name='PaiseDeResidencia']").length) {
+                                if ($("#PaiseDeResidencia").val() == '' || $("#PaiseDeResidencia").val() == undefined)
+                                    return false;
+                                else
+                                    return true;
+                            } else {
+                                return true;
+                            }
+                        });
+
+                        var isValid = true;
+
+                        $('#frmVuelos').validate({
+                            rules: {
+                                Origen: {
+                                    required: true
+                                },
+                                Destino: {
+                                    required: true
+                                },
+                                Fecha_Ida_string: {
+                                    required: true
+                                },
+                                PaiseDeResidencia: {
+                                    ValidarPaisDeResidencia: true
+                                }
+                            },
+                            messages: {
+                                Origen: {
+                                    required: 'Primero debe especificar el Origen de partida del vuelo'
+                                },
+                                Destino: {
+                                    required: 'Primero debe especificar el Destino de arribo del vuelo'
+                                },
+                                Fecha_Ida_string: {
+                                    required: 'Debe ingresar la fecha de "Ida".'
+                                },
+                                PaiseDeResidencia: {
+                                    ValidarPaisDeResidencia: 'Debe seleccionar su país de residencia.'
+                                }
+                            },
+                            onkeyup: false,
+                            onfocusout: false,
+                            onclick: false,
+                            showErrors: function(errMap, errList) {
+                                if ($(".msj-error").length > 1)
+                                    $(".msj-error").eq(0).remove();
+                                $(".msj-error p").remove();
+                                $(".rojo-error").removeClass("rojo-error");
+                                if (errList.length > 0)
+                                    $(".msj-error").show();
+                                else
+                                    $(".msj-error").hide();
+
+                                $(errList).each(function(i, e) {
+                                    $(".msj-error").append($("<p>").text(e.message));
+                                    if ($(e.element).attr("id") == "Destino" || $(e.element).attr("id") == "Origen")
+                                        e.element = $(e.element).parent();
+                                    $(e.element).addClass("rojo-error");
+                                });
+                                $('#Destino').watermark('Destino');
+                                $('#Origen').watermark('Origen');
+                                $('#Cupon').watermark('Cupón de Descuento');
+                                $('#fechaVuelta').watermark('Fecha de Regreso');
+                                $('#fechaIda').watermark('Fecha de Inicio');
+                            }
+                        });
+                        //END VALIDATE HANDLER
+
+                    });
+
+                    function abrir_pdf_br() {
+                        var cc = 'fr-fr'.split('-');
+                        if (cc[0].toLowerCase() == "pt") {
+                            window.open('http://www.aerolineas.com.ar/OfficeFile/E-commerce/menoresbrasil.pdf');
+                        }
+                    }
+                </script>
+                <div id="newcont" class="fleft">
+                  
+                    <h1>Achetez votre billet</h1>
+                    <div class="col-izq">
+                        <div id="bannerRelacionadoLateral">
+                        <div class="caption-mensaje">
+                            <img src="Content/themes/DarkSite/images/label.jpg" alt="img">
+                              <p>Para obtener información de los sucesos <br> de público conocimiento comuníquese <br>  al 0-800-3331515</p>
+                              <p>Desde el exterior +54 11 4646 9380</p>
+                              <a href="#">Más información</a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-der">
+                        <div class="cont-padding">
+                            <h2 class="tit">Achetez votre billet sans frais de gestion.</h2>
+                            <p>
+                                <span style="font-family: arial, helvetica, sans-serif;">Profitez du meilleur moyen de Aerolineas Argentinas et Rencontrez destination nationale et internationale que vous voulez.&nbsp;</span><span style="font-family: arial, helvetica, sans-serif; font-size: 12px;">Je ai d&eacute;couvert certaines destinations &eacute;tonnantes Argetnina comme Bariloche, C&oacute;rdoba, El Calafate, Mendoza, Iguazu, Ushuaia, Mar del Plata et certains de nos destinations internationales telles que Barcelone, Rome, Rio de Janeiro, Santiago du Chili, Miami, New York. Eleg&iacute;tu destination, votre vol Aerolineas Argentinas vous emm&egrave;ne!</span></p>
+                            <p>
+                                <strong style="font-family: arial, helvetica, sans-serif;">Achetez votre billet sans frais de gestion</strong><span style="font-size: 12px;">!</span></p>
+                            <div class="bg-form-corto ">
+                                <form action="/fr-fr/reservasservicios/vuelos?Length=17" class="nuevo-form" data-ajax="true" data-ajax-success="SuccessFormVuelos" id="frmVuelos" method="post">
+                                    <input id="zabbix_origen" name="zabbix_origen" type="hidden" value="BUE" />
+                                    <input id="zabbix_destino" name="zabbix_destino" type="hidden" value="COR" />
+                                    <input id="zabbix_fecha" name="zabbix_fecha" type="hidden" value="15/03/2016" />
+                                    <div class="msj-error" style="display: none">
+                                    </div>
+                                    <fieldset class="unico">
+                                        <p class="font_size2">
+                                            Derni&#232;re recherche :
+                                            <a id="UltimaBusqueda" class="azul11" href="javascript:cambiarCombos();">
+                                            </a>
+                                        </p>
+                                    </fieldset>
+                                    <div class="separador">
+                                    </div>
+                                    <fieldset class="tercio mright15" style="height: 12px;">
+                                    </fieldset>
+                                    <fieldset class="tercio mright15" style="height: 12px;">
+                                    </fieldset>
+                                    <fieldset class="tercio mright15">
+                                        <select id="Tramo" name="Tramo">
+                                            <option value="returntravel">Aller et retour</option>
+                                            <option value="onewaytravel">Ida</option>
+                                        </select>
+                                    </fieldset>
+                                    <fieldset class="tercio mright15">
+                                        <select data-val="true" data-val-number="The field Id_Origen must be a number." id="Id_Origen" name="Id_Origen" title="Origen">
+                                            <option value="">Seleccione</option>
+                                        </select>
+                                    </fieldset>
+                                    <fieldset class="tercio">
+                                        <select data-val="true" data-val-number="The field Id_Destino must be a number." id="Id_Destino" name="Id_Destino" title="Destino">
+                                            <option value="">Seleccione</option>
+                                        </select>
+                                    </fieldset>
+                                    <fieldset class="tercio mright15">
+                                        <select id="Clase" name="Clase">
+                                            <option value="ECONOMY">Economy</option>
+                                            <option value="FIRST">Club Economy</option>
+                                            <option value="BUSINESS">Club C&#243;ndor</option>
+                                        </select>
+                                    </fieldset>
+                                    <fieldset class="tercio mright15">
+                                        <input class="inpfecha" data-val="true" data-val-date="The field Fecha_Ida must be a date." id="fechaIda" name="Fecha_Ida" readonly="readonly" type="text" value="" />
+                                    </fieldset>
+                                    <fieldset class="tercio">
+                                        <input class="inpfecha" data-val="true" data-val-date="The field Fecha_Vuelta must be a date." id="fechaVuelta" name="Fecha_Vuelta" readonly="readonly" type="text" value="" />
+                                    </fieldset>
+                                    <fieldset class="tercio mright15">
+                                        <select id="Adultos" name="Adultos">
+                                            <option value='1'>1 Adultes </option>
+                                            <option value='2'>2 Adultes </option>
+                                            <option value='3'>3 Adultes </option>
+                                            <option value='4'>4 Adultes </option>
+                                            <option value='5'>5 Adultes </option>
+                                            <option value='6'>6 Adultes </option>
+                                            <option value='7'>7 Adultes </option>
+                                            <option value='8'>8 Adultes </option>
+                                            <option value='9'>9 Adultes </option>
+                                        </select>
+                                    </fieldset>
+                                    <fieldset class="tercio mright15">
+                                        <select id="Menores" name="Menores" onchange="javascript:abrir_pdf_br();">
+                                            <option value='0'>Enfants</option>
+                                            <option value='1'>1 Enfants</option>
+                                            <option value='2'>2 Enfants</option>
+                                            <option value='3'>3 Enfants</option>
+                                            <option value='4'>4 Enfants</option>
+                                            <option value='5'>5 Enfants</option>
+                                            <option value='6'>6 Enfants</option>
+                                            <option value='7'>7 Enfants</option>
+                                            <option value='8'>8 Enfants</option>
+                                            <option value='9'>9 Enfants</option>
+                                        </select>
+                                    </fieldset>
+                                    <fieldset class="tercio">
+                                        <select id="Bebes" name="Bebes" onchange="javascript:abrir_pdf_br();">
+                                            <option value='0'>B&#233;b&#233;s</option>
+                                            <option value='1'>1 B&#233;b&#233;s </option>
+                                            <option value='2'>2 B&#233;b&#233;s </option>
+                                            <option value='3'>3 B&#233;b&#233;s </option>
+                                            <option value='4'>4 B&#233;b&#233;s </option>
+                                            <option value='5'>5 B&#233;b&#233;s </option>
+                                            <option value='6'>6 B&#233;b&#233;s </option>
+                                            <option value='7'>7 B&#233;b&#233;s </option>
+                                            <option value='8'>8 B&#233;b&#233;s </option>
+                                            <option value='9'>9 B&#233;b&#233;s </option>
+                                        </select>
+                                    </fieldset>
+                                    <div class="separador">
+                                    </div>
+                                    <fieldset class="tercio links mright15">
+                                    </fieldset>
+                                    <fieldset class="tercio mright15">
+                                    </fieldset>
+                                    <fieldset class="tercio">
+                                        <input type="submit" name="" value="Valider" />
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+        <footer>
+            <!--pie-->
+            <script type="text/javascript">
+            function abrirAustral() {
+                window.open('http://www.austral.com.ar/index.asp?idSitio=AR&idIdioma=es', 'Austral', 'scrollbars=yes, resizable=1,width=1020,height=805');
+            }
+
+            function popup_condiciones_transporte() {
+                var winC = window.open('http://www.aerolineas.com.ar/arg/bodies/CondicionesGrales_contratoTransporte.asp?idSitio=AR&idIdioma=es', 'wContr', 'scrollbars=yes, resizable=1,width=800,height=600');
+                winC.moveTo(0, 0);
+            }
+            </script>
+            <div id="pie">
+                <div class="ml10  mtop15">
+                    
+                    
+                    <br clear="all" />
+                </div>
+                <div class="div">
+                </div>
+                <div class="div_pie">
+                    <div class="div_links">
+                        <div class="div_partner">
+                            <img src="Images/dark/footer-logoAustral.gif" alt="Logo Austral" onclick="abrirAustral();" style="cursor:pointer;" />
+                        </div>
+                        <div class="div_partner">
+                            <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=81%26idIdioma=es" title=""><img alt="@MainFooterResource.JetPaq_Logo" src="Images/dark/footer-logoJetPaq.gif" /></a>
+                        </div>
+                        <div class="div_partner">
+                            <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=9%26idIdioma=es" title=""><img alt="@MainFooterResource.Aerohandling_Logo" src="Images/dark/footer-logoAerohandling.gif" /></a>
+                        </div>
+                        <div class="div_partner">
+                            <a href="http://www.optar.com/" target="_blank">
+                                <img src="Images/dark/footer-logoOptar.gif" alt="Logo Optar" border="0" />
+                            </a>
+                        </div>
+                        <div class="div_partner mtop7 mleft20"><img src="Images/dark/logo_arg.jpg" alt="Logo Aerol&#237;neas Argentinas" width="47" height="30" />
+                        </div>
+                        <div class="div_partner mtop14 mleft25"><img src="Images/dark/argentina_paisbuenagente.gif" alt="Logo Aerol&#237;neas Argentinas - Un pa&#237;s con buena gente" />
+                        </div>
+                    </div>
+                    <br clear="all" />
+                    <div class="codigo-qr">
+                        <a href="https://servicios1.afip.gov.ar/clavefiscal/qr/mobilePublicInfo.aspx?req=e1ttZXRob2Q9Z2V0UHVibGljSW5mb11bcGVyc29uYT0zMDY0MTQwNTU1NF1bdGlwb2RvbWljaWxpbz0wXVtzZWN1ZW5jaWE9MF1bdXJsPWh0dHA6Ly93d3cuYWVyb2xpbmVhcy5jb20uYXJdfQ==" target="_F960AFIPInfo">
+                            <img src="Images/dark/qr_code.gif" alt="QR-Code" />
+                        </a>
+                    </div>
+                    <div class="pie_texto">
+                        <span>aerolineas.com Sitio Oficial de Aerolineas Argentinas. &#169; 1996 - 2013 Aerol&#237;neas Argentinas S.A.<br />
+                            <a class="pie" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=72%26idIdioma=es">Legales</a> |
+                            <a class="pie" href="#" onclick="popup_condiciones_transporte();"> Condiciones Generales de Transporte </a>|
+                            <a class="pie" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=94%26idIdioma=es">Mapa del Sitio</a> |
+                            <a class="pie" href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR%26idPagina=84%26idIdioma=es">Ud. est&#225; en un SITIO SEGURO</a> 
+                        </span>
+                    </div>
+                </div>
+                <div class="div_borde">
+                    <img src="Images/dark/footer-right.gif" alt="" />
+                </div>
+            </div>
+            <!--fin de pie-->
+        </footer>
+    </div>
+   
+</body>
+
+</html>

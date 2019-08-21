@@ -1,0 +1,87 @@
+
+a,
+legend {
+    color: #007cbf;
+}
+.flight-options-results .row-flights .availability
+ {
+    color: #0075b4;
+}
+.blue,
+.row-flights .hour {
+	color: #0075b4;
+}
+.btnFlightDetails {
+	color: #0075b4;
+}
+.conoce-mas .info a,
+.phone-dates,
+.phone-dates a,
+.txtGirsfoote {
+	color: #767676;
+}
+
+.group-rows,
+.row-results .label,
+p {
+	color: #717172;
+}
+.row-results .label {
+	color: #717172;
+}
+.row-results .detail {
+	color: #0077b8;
+}
+.row-results .bg-blue2 .detail {
+	color: #0067a1;
+}
+
+.booking-nav .h1,
+.bg-blue2 {
+    color: #0065af;
+}
+.bg-blue2,
+.espera_recibos {
+	background-color: #c3e2ff;
+}
+
+.booking-nav {
+	background-color: #c3e2ff;
+}
+
+.btnFlightDetails:hover,
+.btnFlightDetails:active,
+.btnFlightDetails:focus {
+    color: #0077b8;
+    background-color: #f0f8ff;
+}
+
+.required{
+	color: #ee0000;
+}
+.TxtError p {
+	color: #d90000;
+}
+
+.booking-nav li span {
+	color: #626262;
+}
+
+.booking-nav li.active span {
+	color:#0065ae;
+	font-weight: 600;
+}
+
+.nuevoBotonGris {
+	color: #636363;
+}
+
+.socio-arplus .blue,
+.socio-arplus .blue a {
+ color: #0071ad;
+}
+
+.encuesta .info,
+.encuesta .info a {
+	color: #0072b0;
+}

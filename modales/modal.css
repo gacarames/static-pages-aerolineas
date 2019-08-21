@@ -1,0 +1,166 @@
+.modal-content {
+  background-color: rgba(0,0,0,0.5); 
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.main-modal {  
+	position: absolute;
+  top: 0;
+  left: 0;
+  right:0;
+  bottom:0;
+  margin:auto;
+  padding: 20px;
+  z-index: 1101;
+  outline: none;
+   width: 655px;
+   height: auto;
+  }
+
+.modal {
+  margin-top: 15%; 
+	  border-width: 10px;
+    font-family: Arial, Tahoma, Geneva, sans-serif;
+    font-size: 14px;
+    background-color: #e6e6e6;
+    border: 2px solid #007cc2;
+    color: #007cc2;
+}
+.modal .modal-body {
+  padding: 5px 15px;
+}
+.modal *, 
+.modal *:before, 
+.modal *:after {
+  box-sizing: border-box;
+}
+.clear:before,
+.clear:after {
+    content: " ";
+    display: table;
+}
+
+.clear:after {
+    clear: both;
+}
+.modal .col-4 {
+  width: 33.33%; 
+  float: left;
+  padding-right: 5px;
+}
+.modal .icon-alert { 
+  float: left;
+}
+.modal .alert {
+  background-color: #fdd8d8;
+  border: 1px solid red;
+    padding: 15px 15px 0px;
+  margin-bottom: 15px;
+}
+.modal .alert .title-alert {
+  color: red;
+  float: left;
+    margin: 0;
+  padding-left: 10px;
+}
+.modal .alert .content {
+  color: #797979;
+}
+.modal .alert .content::after, .modal .alert .content::before {
+  clear: both;
+}
+.modal label {
+  margin-bottom: 5px;
+  display: block;
+}
+.modal input, .modal select {
+    color: #808084;
+    font-size: 12px;
+    width: 100%;
+    border: 1px solid #007cc2;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 10px;
+}
+.modal p {
+  clear: both;
+  margin: 10px 0 20px;
+}
+.modal form {
+  clear: both;
+  overflow: hidden;
+}
+.visibility-hidden {visibility: hidden;}
+.modal-header {
+  padding: 5px;
+}
+.modal .icon-close {
+  float: right;
+}
+.modal-header .title-modal {
+  font-size: 16px;
+  color: #FFFFFF;
+  font-family: Arial, Tahoma, Geneva, sans-serif;
+  margin: 0 0 0 10px;
+}
+.modal .boton_aceptar {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 30px 5px 20px;
+  text-decoration: none;
+  color: #FFF;
+  border: 0;
+  background: #1492CF url("img/arrow-right.png") no-repeat 95%;
+  display: block;
+}
+
+.bg_gradient_blue {
+  background: rgb(0,129,197); /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iIzAwODFjNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxNDZlOTQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(left,  rgba(0,129,197,1) 1%, rgba(20,110,148,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(1%,rgba(0,129,197,1)), color-stop(100%,rgba(20,110,148,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  rgba(0,129,197,1) 1%,rgba(20,110,148,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  rgba(0,129,197,1) 1%,rgba(20,110,148,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  rgba(0,129,197,1) 1%,rgba(20,110,148,1) 100%); /* IE10+ */
+  background: linear-gradient(to right,  rgba(0,129,197,1) 1%,rgba(20,110,148,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0081c5', endColorstr='#146e94',GradientType=1 ); /* IE6-8 */
+}
+
+.modal .nro-socio {
+ padding: 10px;
+ background-color: #c6ddf3;
+ font-size: 20px;
+ overflow: hidden;
+   padding-right: 20px;
+   position: relative;
+}
+.modal .nro-socio .ast{
+  position: absolute; 
+  right:8px; 
+  top: 5px;
+}
+.font-small {
+  font-size: 12px !important;
+  margin-top: 20px !important; 
+}
+.modal .nro-socio label,
+.modal .nro-socio input {
+  float: left;
+}
+.modal .nro-socio label {
+  width: 60%; 
+  text-align: center; 
+  font-weight: bold;
+}
+.modal .nro-socio input {
+  width: 40%;
+  font-size: 20px;
+  font-weight: bold;
+  color: #007cc2;
+}

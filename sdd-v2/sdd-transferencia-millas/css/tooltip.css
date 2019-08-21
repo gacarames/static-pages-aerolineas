@@ -1,0 +1,54 @@
+div#ToolTip table#BPagTTInternTable {
+	border:1px solid #ddd /* tooltip border */}
+div#ToolTip table#BPagTTInternTable tr td#BPagTTTit {
+	background-color:#ddd; /* tooltip title bar background */
+	padding:2px 5px;
+	color:#fff; /* tooltip title bar text */
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	font-style:normal}
+div#ToolTip table#BPagTTInternTable tr td#BPagTTDesc {
+	background-color:#fff; /* tooltip middle background */
+	padding:2px 5px;
+	color:#333; /* tooltip middle text */
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	font-style:normal}
+
+	/* BPAG - TOOLTIP */
+    
+    #ToolTip {
+        position: absolute;
+        width: 200px;
+        top: 0px;
+        left: 0px;
+        z-index: 4;
+        display: none;
+    }
+    
+    div#ToolTip table#BPagTTInternTable {
+        border: 1px solid #069;
+    }
+    
+    div#ToolTip table#BPagTTInternTable tr td#BPagTTTit {
+        background-color: #069;
+        padding: 2px 5px;
+        color: #fff;
+        font-family: Tahoma, Verdana, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        font-style: normal;
+    }
+    
+    div#ToolTip table#BPagTTInternTable tr td#BPagTTDesc {
+        background-color: #eee;
+        padding: 2px 5px;
+        color: #222;
+        font-family: Tahoma, Verdana, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+    }
+    /* /BPAG - TOOLTIP */

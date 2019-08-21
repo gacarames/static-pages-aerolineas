@@ -1,0 +1,36 @@
+.table-millas {
+    color: #717172;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid #0079ca;
+}
+
+.table-millas td,
+.table-millas th {
+    padding: .5rem;
+    border-top: none !important;
+}
+
+.table-millas thead th {
+    border-bottom: none !important;
+}
+
+.table-millas thead th {
+    background-color: #0079ca;
+    color: #ffffff;
+    text-align: center;
+}
+
+.table-millas tbody th {
+    color: #0079ca;
+    text-align: left;
+    font-weight: 500;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table-millas tbody td {
+    text-align: center;
+}

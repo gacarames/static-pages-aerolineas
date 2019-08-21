@@ -1,0 +1,1824 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Visite Argentina</title>
+    <script type="text/javascript" src="js/jquery-1.10.2.min-ver-628072E7212DB1E8CDACB22B21752CDA.js"></script>
+    <script type="text/javascript" src="js/wicket-event-jquery.min-ver-708C94775B2E1A1A39180619EFAE9145.js"></script>
+    <script type="text/javascript" src="js/wicket-ajax-jquery.min-ver-0D95C654A2A183A4FB6EAF9C6F22FE6F.js"></script>
+    <script type="text/javascript" src="js/modal.min-ver-35033EE4AE3F9C9CF951E390E49D8FB0.js"></script>
+    <script type="text/javascript" id="wicket-ajax-base-url">
+   
+    </script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/Common2-ver-F7CE317F3EB4782AFDE3CD31993510B1.css" />
+    <link rel="stylesheet" href="css/mpol-ver-23756BC2D8F3AA3EC861AA1704C52341.css" />
+
+    <link rel="stylesheet" href="css/acc.css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="js/iutil-mw-ver-646745B3C27426AE550533F0A1338D1D.js"></script>
+    <script type="text/javascript" src="js/fisheye-ver-A7EB9B4574E830071B85B2B0CD54027D.js"></script>
+    <script type="text/javascript" src="js/jquery.tooltipster.min-ver-FF2F685494B400EA2098C79332759A8F.js"></script>
+    <style>
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        /* display: none; <- Crashes Chrome on hover */
+        -webkit-appearance: none;
+        margin: 0;
+        /* <-- Apparently some margin are still there even though it's hidden */
+    }
+    </style>
+</head>
+
+<body>
+    <div id="flightDetails" class="modal fade wicket-modal" tabindex="-1" role="dialog" aria-labelledby="flightDetailsLabel" aria-hidden="true" aria-describedby="flightDetailsDesc">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h3 class="modal-title w_captionText" id="flightDetailsLabel">Flight Details</h3>
+                </div>
+                <div class="modal-body" id="flightDetailsDesc">
+                    <div class="content-group-rows">
+                        <div class="group-rows">
+                            <div class="row">
+                                <div class="col-xs-4"><span class="strong">Date</span></div>
+                                <div class="col-xs-8 detail">Friday, 01 July 2016</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4"><span class="strong">Departure</span></div>
+                                <div class="col-xs-8 detail">12:45 Aeroparque Jorge Newbery- Buenos Aires, Argentina</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4"><span class="strong">Arrival</span></div>
+                                <div class="col-xs-8 detail">15:05 Bariloche, RN, Argentina</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4"><span class="strong">Flight Number</span></div>
+                                <div class="col-xs-8 detail">Aerolíneas Argentinas AR1678</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4"><span class="strong">Class</span></div>
+                                <div class="col-xs-8 detail">G</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4"><span class="strong">Flying time</span></div>
+                                <div class="col-xs-8 detail">2h 20m - 0Stops</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4"><span class="strong">Aircraft</span></div>
+                                <div class="col-xs-8 detail">BOEIGN 737-800</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4"><span class="strong">Meals</span></div>
+                                <div class="col-xs-8 detail">Snacks</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <div id="resumenDatos" class="modal fade wicket-modal" tabindex="-1" role="dialog" aria-labelledby="dataSummaryLabel" aria-hidden="true" aria-describedby="dataSummaryDesc">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title w_captionText" id="dataSummaryLabel">Data Summary</h3>
+                </div>
+                <div class="modal-body" id="dataSummaryDesc">
+                    <div id="_wicket_window_16" class="w_content_container">
+                        <h4 class="title">Passenger's Data </h4>
+                        <ul class="row list-unstyled row-results">
+                            <li class="col-sm-4">
+                                <div class="label">Ticket Number</div>
+                                <div class="detail">1. 0449610545939</div>
+                            </li>
+                            <li class="col-sm-5">
+                                <div class="label">Name and Surname</div>
+                                <div class="detail">BEJARANO, MARIA MAGDALENA</div>
+                            </li>
+                            <li class="col-sm-3">
+                                <div class="label">Date of Birth</div>
+                                <div class="detail">04/01/1930</div>
+                            </li>
+                        </ul>
+                        <hr>
+                        <div class="form">
+                            <div class="row">
+                                <legend>Passport</legend>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="" class="control-label"><span class="required">*</span>Nationality</label>
+                                        <select id="" class="form-control" size="1" name="">
+                                            <option selected="selected" value="0">Country</option>
+                                            <option value="1">...</option>
+                                            <option value="2">...</option>
+                                            <option value="3">...</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="" class="control-label"><span class="required">*</span>Number</label>
+                                        <input id="" name="" type="text" value="" class="form-control" autocomplete="off">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <legend>Frequent Flyer #</legend>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="" class="control-label"><span class="required">*</span>Company</label>
+                                        <select id="" class="form-control" size="1" name="">
+                                            <option selected="selected" value="0">Airline</option>
+                                            <option value="1">...</option>
+                                            <option value="2">...</option>
+                                            <option value="3">...</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="" class="control-label">Number</label>
+                                        <input id="" name="" type="text" value="" placeholder="Number" class="form-control" autocomplete="off">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <legend>Preferences</legend>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="" class="control-label">Meal preference</label>
+                                        <select id="" class="form-control" size="1" name="">
+                                            <option selected="selected" value="0">No request</option>
+                                            <option value="1">...</option>
+                                            <option value="2">...</option>
+                                            <option value="3">...</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="" class="control-label">Special requests</label>
+                                        <select id="" class="form-control" size="1" name="">
+                                            <option selected="selected" value="0">No request</option>
+                                            <option value="1">...</option>
+                                            <option value="2">...</option>
+                                            <option value="3">...</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <legend>Contact</legend>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="" class="control-label">Phone number <span class="required">*</span></label>
+                                        <input id="" name="" type="text" value="" class="form-control" autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="" class="control-label">Alternative phone number</label>
+                                        <input id="" name="" type="text" value="" class="form-control" autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="" class="control-label">E-mail<span class="required">*</span></label>
+                                        <input id="" name="" type="text" value="" class="form-control" autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="" class="control-label">Rewrite E-mail <span class="required">*</span></label>
+                                        <input id="" name="" type="text" value="" class="form-control" autocomplete="off">
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <span>Special food and service's requests will be considered only if informed 24 hours in advance.</span>
+                                    <div><span class="small"><span class="required">*</span> Mandatory data</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-btn">
+                                    <a href="" class="btn btn-default pull-right btn-block btnContinue">Continue <span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <div id="acceptConditions" class="modal fade wicket-modal" tabindex="-1" role="dialog" aria-labelledby="conditionsLabel" aria-hidden="true" aria-describedby="conditionsDesc">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h3 class="modal-title w_captionText" id="conditionsLabel">Change and refund conditions</h3>
+                </div>
+                <div class="modal-body" id="conditionsDesc">
+                    <h4>Conditions:</h4>
+                    <p>Minimum of 3 (three) and maximum of 12 (twelve) flight coupons.
+                        <br> Once issued the purchase of additional coupons is not allowed (even if maximum of 12 coupons has not been reached).
+                        <br> Maximum stay of 90 days from the date of the first Visit Argentina flight.
+                        <br> Booking and issuing must be done with a minimal anticipation of 21 days prior to the date of the first flight.
+                        <br> All taxes and additional charges will be collected at time of issue.</p>
+                    <h4>Ticketing deadlines:</h4>
+                    <p>Bookings made with more than 30 (thirty) days in advance can be issued up to 30 (thirty) days before departure of the first flight.
+                        <br> Bookings made within 30 (thirty) to 22 (twenty two) days before departure of the first flight must be issued between 24 hours after the reservation has been made.</p>
+                    <h4>Refunds:</h4>
+                    <p>Before departure of first flight booked original amount will be refund, less a cancellation fee of USD50.
+                        <br> After departure of first flight booked: Refund is not allowed.
+                        <br> Penalty for no-show: Charge of USD75 will apply.
+                        <br> Date changes: USD50 per transaction, any time, within allowed maximum stay.
+                        <br> Change of routing: USD50 per transaction, any time, subject to availability of seats in the same fare basis.
+                        <br> In case fare is higher, difference will be charged, in case fare is lower, difference will not be refunded.</p>
+                    <h4>AR PLUS</h4>
+                    <p>VARG flights will accrue miles at promotional class level.
+                        <br> Luggage allowance and excess charges
+                        <br> Luggage allowance for Visit Argentina flights is 1 (one) piece of baggage of 23kgs (50,7 pounds).
+                        <br> Standard baggage rates will apply to the exceeding weight of this allowance.</p>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <div class="wrapper visit-argentina">
+        <div class="inner-wrapper">
+            <header class="header clearfix" role="banner">
+                <div class="pull-left logo-header">
+                    <a href="http://www.aerolineas.com.ar">
+                        <img alt="logo-aerolineas" src="img/common/logo-aerolineas.gif" /></a>
+                </div>
+                <div class="pull-right logo-header-right">
+                    <img alt="aerolineas argentinas skyteam" src="img/common/aerolineas_argentinas_skyteam.jpg" />
+                </div>
+                <ul class="pull-right list-unstyled list-inline phone-dates">
+                    <li><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>  <span class="link">Home</span></a></li>
+                    <li>07/03/2016</li>
+                    <li>Call Center: 1-800-333-0276</li>
+                </ul>
+            </header>  
+
+            <section class="container" role="main" aria-labelledby="visitArgentinaLabel">
+                <article class="booking" role="article">
+                    <ul class="booking-nav list-inline">
+                        <li class="pull-left"><span class="h1">Book your Visit Argentina</span></li>
+                        <li class="active datos"><span>Data</span></li>
+                        <li class="vuelos"><span>Flights</span></li>
+                        <li class="confirmacion"><span>Confirmation</span></li>
+                        <li class="pago"><span>Payment</span></li>
+                    </ul>
+                    <div class="booking-content">
+                        <h1 class="sr-only title-mob" id="visitArgentinaLabel">Book your Visit Argentina</h1>
+                        <div class="module">
+                            <div class="item">
+                                <h2 class="title bg-blue">Book your Visit Argentina Pass</h2>
+                                <div class="form">
+                                    <div class="row">
+                                        <div class="col-xs-9 col-sm-4 col-md-3">
+                                            <span for="id1" class="control-label"><span class="required">*</span> Enter the number of passengers</span>
+                                        </div>
+                                        <div class="col-xs-3 col-sm-1 col-md-1">
+                                            <div class="form-inline">
+                                                <div class="form-group">
+                                                    <label for="id1" class="sr-only">Enter the number of passengers</label>
+                                                    <select id="id1" class="form-control nPassengers" size="1" name="">
+                                                        <option selected="selected" value="0">1</option>
+                                                        <option value="1">2</option>
+                                                        <option value="2">3</option>
+                                                        <option value="3">4</option>
+                                                        <option value="4">5</option>
+                                                        <option value="5">6</option>
+                                                        <option value="6">7</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>      
+                                    <hr>                    
+                                    
+                                   <div class="list-passenger">
+                                       <div class="row-passenger">
+                                          <span class="number">1.</span> 
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <label for="" class="control-label"><span class="required">*</span> Ticket Number</label>
+                                                        <div class="form-group">
+                                                            <input id="" name="" type="search" value="0441728776736" class="form-control" autocomplete="off">
+                                                        </div>
+                                                        <span class="small">Enter the first 13 digits of the ticket number</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <label for="" class="control-label">Surname </label>
+                                                        <div class="form-group">
+                                                            <input id="" name="" type="search" value="CLARK" class="form-control" autocomplete="off">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <label for="" class="control-label">Name </label>
+                                                        <div class="form-group">
+                                                            <input id="" name="" type="search" value="JOEL" class="form-control" autocomplete="off">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <label class="control-label" for=""><span class="required">*</span> Date of Birth </label>
+
+                                                        <!-- 
+                                                        <div class="form-group-icon">
+                                                            <div class="row">
+                                                                <div class="col-xs-4">
+                                                                    <select class="day form-control " title="Day" tabindex="0">
+                                                                        <option value="">Day</option>
+                                                                        <option value="1">01</option>
+                                                                        <option value="2">02</option>
+                                                                        <option value="3">03</option>
+                                                                        <option value="4">04</option>
+                                                                        <option value="5">05</option>
+                                                                        <option value="6">06</option>
+                                                                        <option value="7">07</option>
+                                                                        <option value="8">08</option>
+                                                                        <option value="9">09</option>
+                                                                        <option value="10">10</option>
+                                                                        <option value="11">11</option>
+                                                                        <option value="12">12</option>
+                                                                        <option value="13">13</option>
+                                                                        <option value="14">14</option>
+                                                                        <option value="15">15</option>
+                                                                        <option value="16">16</option>
+                                                                        <option value="17">17</option>
+                                                                        <option value="18">18</option>
+                                                                        <option value="19">19</option>
+                                                                        <option value="20">20</option>
+                                                                        <option value="21">21</option>
+                                                                        <option value="22">22</option>
+                                                                        <option value="23">23</option>
+                                                                        <option value="24">24</option>
+                                                                        <option value="25">25</option>
+                                                                        <option value="26">26</option>
+                                                                        <option value="27">27</option>
+                                                                        <option value="28">28</option>
+                                                                        <option value="29">29</option>
+                                                                        <option value="30">30</option>
+                                                                        <option value="31">31</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-xs-4">
+                                                                    <select class="month form-control " title="Month" tabindex="0">
+                                                                        <option value="">Month</option>
+                                                                        <option value="1">01</option>
+                                                                        <option value="2">02</option>
+                                                                        <option value="3">03</option>
+                                                                        <option value="4">04</option>
+                                                                        <option value="5">05</option>
+                                                                        <option value="6">06</option>
+                                                                        <option value="7">07</option>
+                                                                        <option value="8">08</option>
+                                                                        <option value="9">09</option>
+                                                                        <option value="10">10</option>
+                                                                        <option value="11">11</option>
+                                                                        <option value="12">12</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-xs-4">
+                                                                    <select class="year form-control col-xs-6" title="Year" tabindex="0">
+                                                                        <option selected="selected" value="0">Year</option>
+                                                                        <option value="1">1906</option>
+                                                                        <option value="2">1907</option>
+                                                                        <option value="3">1908</option>
+                                                                        <option value="4">1909</option>
+                                                                        <option value="5">1910</option>
+                                                                        <option value="6">1911</option>
+                                                                        <option value="7">1912</option>
+                                                                        <option value="8">1913</option>
+                                                                        <option value="9">1914</option>
+                                                                        <option value="10">1915</option>
+                                                                        <option value="11">1916</option>
+                                                                        <option value="12">1917</option>
+                                                                        <option value="13">1918</option>
+                                                                        <option value="14">1919</option>
+                                                                        <option value="15">1920</option>
+                                                                        <option value="16">1921</option>
+                                                                        <option value="17">1922</option>
+                                                                        <option value="18">1923</option>
+                                                                        <option value="19">1924</option>
+                                                                        <option value="20">1925</option>
+                                                                        <option value="21">1926</option>
+                                                                        <option value="22">1927</option>
+                                                                        <option value="23">1928</option>
+                                                                        <option value="24">1929</option>
+                                                                        <option value="25">1930</option>
+                                                                        <option value="26">1931</option>
+                                                                        <option value="27">1932</option>
+                                                                        <option value="28">1933</option>
+                                                                        <option value="29">1934</option>
+                                                                        <option value="30">1935</option>
+                                                                        <option value="31">1936</option>
+                                                                        <option value="32">1937</option>
+                                                                        <option value="33">1938</option>
+                                                                        <option value="34">1939</option>
+                                                                        <option value="35">1940</option>
+                                                                        <option value="36">1941</option>
+                                                                        <option value="37">1942</option>
+                                                                        <option value="38">1943</option>
+                                                                        <option value="39">1944</option>
+                                                                        <option value="40">1945</option>
+                                                                        <option value="41">1946</option>
+                                                                        <option value="42">1947</option>
+                                                                        <option value="43">1948</option>
+                                                                        <option value="44">1949</option>
+                                                                        <option value="45">1950</option>
+                                                                        <option value="46">1951</option>
+                                                                        <option value="47">1952</option>
+                                                                        <option value="48">1953</option>
+                                                                        <option value="49">1954</option>
+                                                                        <option value="50">1955</option>
+                                                                        <option value="51">1956</option>
+                                                                        <option value="52">1957</option>
+                                                                        <option value="53">1958</option>
+                                                                        <option value="54">1959</option>
+                                                                        <option value="55">1960</option>
+                                                                        <option value="56">1961</option>
+                                                                        <option value="57">1962</option>
+                                                                        <option value="58">1963</option>
+                                                                        <option value="59">1964</option>
+                                                                        <option value="60">1965</option>
+                                                                        <option value="61">1966</option>
+                                                                        <option value="62">1967</option>
+                                                                        <option value="63">1968</option>
+                                                                        <option value="64">1969</option>
+                                                                        <option value="65">1970</option>
+                                                                        <option value="66">1971</option>
+                                                                        <option value="67">1972</option>
+                                                                        <option value="68">1973</option>
+                                                                        <option value="69">1974</option>
+                                                                        <option value="70">1975</option>
+                                                                        <option value="71">1976</option>
+                                                                        <option value="72">1977</option>
+                                                                        <option value="73">1978</option>
+                                                                        <option value="74">1979</option>
+                                                                        <option value="75">1980</option>
+                                                                        <option value="76">1981</option>
+                                                                        <option value="77">1982</option>
+                                                                        <option value="78">1983</option>
+                                                                        <option value="79">1984</option>
+                                                                        <option value="80">1985</option>
+                                                                        <option value="81">1986</option>
+                                                                        <option value="82">1987</option>
+                                                                        <option value="83">1988</option>
+                                                                        <option value="84">1989</option>
+                                                                        <option value="85">1990</option>
+                                                                        <option value="86">1991</option>
+                                                                        <option value="87">1992</option>
+                                                                        <option value="88">1993</option>
+                                                                        <option value="89">1994</option>
+                                                                        <option value="90">1995</option>
+                                                                        <option value="91">1996</option>
+                                                                        <option value="92">1997</option>
+                                                                        <option value="93">1998</option>
+                                                                        <option value="94">1999</option>
+                                                                        <option value="95">2000</option>
+                                                                        <option value="96">2001</option>
+                                                                        <option value="97">2002</option>
+                                                                        <option value="98">2003</option>
+                                                                        <option value="99">2004</option>
+                                                                        <option value="100">2005</option>
+                                                                        <option value="101">2006</option>
+                                                                        <option value="102">2007</option>
+                                                                        <option value="103">2008</option>
+                                                                        <option value="104">2009</option>
+                                                                        <option value="105">2010</option>
+                                                                        <option value="106">2011</option>
+                                                                        <option value="107">2012</option>
+                                                                        <option value="108">2013</option>
+                                                                        <option value="109">2014</option>
+                                                                        <option value="110">2015</option>
+                                                                        <option value="111">2016</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        -->                                           
+                                                        <div id="" class="row">
+                                                        <input type="text" data-template="D MM YYYY" data-format="DD/MM/YYYY" id="" name="" value="" style="display: none;">
+                                                            <div class="combodate">
+                                                                <select class="day form-control">
+                                                                    <option value="">day</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="31">31</option>
+                                                                </select>&nbsp;
+                                                                <select class="month form-control">
+                                                                    <option value="">month</option>
+                                                                    <option value="0">01</option>
+                                                                    <option value="11">12</option>
+                                                                </select>&nbsp;
+                                                                <select class="year form-control">
+                                                                    <option value="">year</option>
+                                                                    <option value="2016">2016</option>
+                                                                    <option value="1906">1906</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                       </div>
+                                       <div class="row-passenger">
+                                          <span class="number">2.</span> 
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <label for="" class="control-label"><span class="required">*</span> Ticket Number</label>
+                                                        <div class="form-group">
+                                                            <input id="" name="" type="search" value="0441728776736" class="form-control" autocomplete="off">
+                                                        </div>
+                                                        <span class="small">Enter the first 13 digits of the ticket number</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <label for="" class="control-label">Surname </label>
+                                                        <div class="form-group">
+                                                            <input id="" name="" type="search" value="CLARK" class="form-control" autocomplete="off">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <label for="" class="control-label">Name </label>
+                                                        <div class="form-group">
+                                                            <input id="" name="" type="search" value="JOEL" class="form-control" autocomplete="off">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <div class="form-group">
+                                                        <label class="control-label" for=""><span class="required">*</span> Date of Birth </label>
+                                                        <!-- 
+                                                        <div class="form-group-icon">
+                                                            <div class="row">
+                                                                <div class="col-xs-4">
+                                                                    <select class="day form-control " title="Day" tabindex="0">
+                                                                        <option value="">Day</option>
+                                                                        <option value="1">01</option>
+                                                                        <option value="2">02</option>
+                                                                        <option value="3">03</option>
+                                                                        <option value="4">04</option>
+                                                                        <option value="5">05</option>
+                                                                        <option value="6">06</option>
+                                                                        <option value="7">07</option>
+                                                                        <option value="8">08</option>
+                                                                        <option value="9">09</option>
+                                                                        <option value="10">10</option>
+                                                                        <option value="11">11</option>
+                                                                        <option value="12">12</option>
+                                                                        <option value="13">13</option>
+                                                                        <option value="14">14</option>
+                                                                        <option value="15">15</option>
+                                                                        <option value="16">16</option>
+                                                                        <option value="17">17</option>
+                                                                        <option value="18">18</option>
+                                                                        <option value="19">19</option>
+                                                                        <option value="20">20</option>
+                                                                        <option value="21">21</option>
+                                                                        <option value="22">22</option>
+                                                                        <option value="23">23</option>
+                                                                        <option value="24">24</option>
+                                                                        <option value="25">25</option>
+                                                                        <option value="26">26</option>
+                                                                        <option value="27">27</option>
+                                                                        <option value="28">28</option>
+                                                                        <option value="29">29</option>
+                                                                        <option value="30">30</option>
+                                                                        <option value="31">31</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-xs-4">
+                                                                    <select class="month form-control " title="Month" tabindex="0">
+                                                                        <option value="">Month</option>
+                                                                        <option value="1">01</option>
+                                                                        <option value="2">02</option>
+                                                                        <option value="3">03</option>
+                                                                        <option value="4">04</option>
+                                                                        <option value="5">05</option>
+                                                                        <option value="6">06</option>
+                                                                        <option value="7">07</option>
+                                                                        <option value="8">08</option>
+                                                                        <option value="9">09</option>
+                                                                        <option value="10">10</option>
+                                                                        <option value="11">11</option>
+                                                                        <option value="12">12</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-xs-4">
+                                                                    <select class="year form-control col-xs-6" title="Year" tabindex="0">
+                                                                        <option selected="selected" value="0">Year</option>
+                                                                        <option value="1">1906</option>
+                                                                        <option value="2">1907</option>
+                                                                        <option value="3">1908</option>
+                                                                        <option value="4">1909</option>
+                                                                        <option value="5">1910</option>
+                                                                        <option value="6">1911</option>
+                                                                        <option value="7">1912</option>
+                                                                        <option value="8">1913</option>
+                                                                        <option value="9">1914</option>
+                                                                        <option value="10">1915</option>
+                                                                        <option value="11">1916</option>
+                                                                        <option value="12">1917</option>
+                                                                        <option value="13">1918</option>
+                                                                        <option value="14">1919</option>
+                                                                        <option value="15">1920</option>
+                                                                        <option value="16">1921</option>
+                                                                        <option value="17">1922</option>
+                                                                        <option value="18">1923</option>
+                                                                        <option value="19">1924</option>
+                                                                        <option value="20">1925</option>
+                                                                        <option value="21">1926</option>
+                                                                        <option value="22">1927</option>
+                                                                        <option value="23">1928</option>
+                                                                        <option value="24">1929</option>
+                                                                        <option value="25">1930</option>
+                                                                        <option value="26">1931</option>
+                                                                        <option value="27">1932</option>
+                                                                        <option value="28">1933</option>
+                                                                        <option value="29">1934</option>
+                                                                        <option value="30">1935</option>
+                                                                        <option value="31">1936</option>
+                                                                        <option value="32">1937</option>
+                                                                        <option value="33">1938</option>
+                                                                        <option value="34">1939</option>
+                                                                        <option value="35">1940</option>
+                                                                        <option value="36">1941</option>
+                                                                        <option value="37">1942</option>
+                                                                        <option value="38">1943</option>
+                                                                        <option value="39">1944</option>
+                                                                        <option value="40">1945</option>
+                                                                        <option value="41">1946</option>
+                                                                        <option value="42">1947</option>
+                                                                        <option value="43">1948</option>
+                                                                        <option value="44">1949</option>
+                                                                        <option value="45">1950</option>
+                                                                        <option value="46">1951</option>
+                                                                        <option value="47">1952</option>
+                                                                        <option value="48">1953</option>
+                                                                        <option value="49">1954</option>
+                                                                        <option value="50">1955</option>
+                                                                        <option value="51">1956</option>
+                                                                        <option value="52">1957</option>
+                                                                        <option value="53">1958</option>
+                                                                        <option value="54">1959</option>
+                                                                        <option value="55">1960</option>
+                                                                        <option value="56">1961</option>
+                                                                        <option value="57">1962</option>
+                                                                        <option value="58">1963</option>
+                                                                        <option value="59">1964</option>
+                                                                        <option value="60">1965</option>
+                                                                        <option value="61">1966</option>
+                                                                        <option value="62">1967</option>
+                                                                        <option value="63">1968</option>
+                                                                        <option value="64">1969</option>
+                                                                        <option value="65">1970</option>
+                                                                        <option value="66">1971</option>
+                                                                        <option value="67">1972</option>
+                                                                        <option value="68">1973</option>
+                                                                        <option value="69">1974</option>
+                                                                        <option value="70">1975</option>
+                                                                        <option value="71">1976</option>
+                                                                        <option value="72">1977</option>
+                                                                        <option value="73">1978</option>
+                                                                        <option value="74">1979</option>
+                                                                        <option value="75">1980</option>
+                                                                        <option value="76">1981</option>
+                                                                        <option value="77">1982</option>
+                                                                        <option value="78">1983</option>
+                                                                        <option value="79">1984</option>
+                                                                        <option value="80">1985</option>
+                                                                        <option value="81">1986</option>
+                                                                        <option value="82">1987</option>
+                                                                        <option value="83">1988</option>
+                                                                        <option value="84">1989</option>
+                                                                        <option value="85">1990</option>
+                                                                        <option value="86">1991</option>
+                                                                        <option value="87">1992</option>
+                                                                        <option value="88">1993</option>
+                                                                        <option value="89">1994</option>
+                                                                        <option value="90">1995</option>
+                                                                        <option value="91">1996</option>
+                                                                        <option value="92">1997</option>
+                                                                        <option value="93">1998</option>
+                                                                        <option value="94">1999</option>
+                                                                        <option value="95">2000</option>
+                                                                        <option value="96">2001</option>
+                                                                        <option value="97">2002</option>
+                                                                        <option value="98">2003</option>
+                                                                        <option value="99">2004</option>
+                                                                        <option value="100">2005</option>
+                                                                        <option value="101">2006</option>
+                                                                        <option value="102">2007</option>
+                                                                        <option value="103">2008</option>
+                                                                        <option value="104">2009</option>
+                                                                        <option value="105">2010</option>
+                                                                        <option value="106">2011</option>
+                                                                        <option value="107">2012</option>
+                                                                        <option value="108">2013</option>
+                                                                        <option value="109">2014</option>
+                                                                        <option value="110">2015</option>
+                                                                        <option value="111">2016</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        -->                                           
+                                                        <div id="" class="row">
+                                                        <input type="text" data-template="D MM YYYY" data-format="DD/MM/YYYY" id="" name="" value="" style="display: none;">
+                                                            <div class="combodate">
+                                                                <select class="day form-control">
+                                                                    <option value="">day</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="31">31</option>
+                                                                </select>&nbsp;
+                                                                <select class="month form-control">
+                                                                    <option value="">month</option>
+                                                                    <option value="0">01</option>
+                                                                    <option value="11">12</option>
+                                                                </select>&nbsp;
+                                                                <select class="year form-control">
+                                                                    <option value="">year</option>
+                                                                    <option value="2016">2016</option>
+                                                                    <option value="1906">1906</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                       </div>
+                                   </div>
+                                    
+                                    <div class="TxtError clearfix" role="alert">
+                                        <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>
+                                        <p>Please verify the informed number has some invalid character on it.</p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-9">
+                                            <span class="small"><span class="required">*</span> Mandatory data.</span>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-3 pull-right col-btn">
+                                            <a href="" class="btn btn-default btn-block btnContinue">Continue <span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="container" role="main" aria-labelledby="selectFlightsLabel">
+                <article class="booking" role="article">
+                    <ul class="booking-nav list-inline">
+                        <li class="pull-left"><span class="h1">Select your flights</span></li>
+                        <li class="datos"><span>Data</span></li>
+                        <li class="active vuelos"><span>Flights</span></li>
+                        <li class="confirmacion"><span>Confirmation</span></li>
+                        <li class="pago"><span>Payment</span></li>
+                    </ul>
+                    <div class="booking-content">
+                        <h1 class="sr-only title-mob" id="selectFlightsLabel">Select your flights</h1>
+                        <div class="module">
+                            <div class="item">
+                                <h2 class="title bg-blue">Passenger(s)</h2>
+                                <ul class="row list-unstyled row-results">
+                                    <li class="col-sm-3">
+                                        <div class="label">Ticket Number</div>
+                                        <div class="detail">1. 0449610545939</div>
+                                    </li>
+                                    <li class="col-sm-6">
+                                        <div class="label">Name and Surname</div>
+                                        <div class="detail">BEJARANO, MARIA MAGDALENA</div>
+                                    </li>
+                                    <li class="col-sm-3">
+                                        <div class="label">Date of Birth</div>
+                                        <div class="detail">04/01/1930</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="module">
+                            <div class="item">
+                                <h2 class="title bg-blue">Itinerary</h2>
+                                <div class="form">
+                                    <div class="flight-options-results">
+                                        <div class="row row-flights row-itinerary">
+                                            <div class="col-xs-2 col-sm-1 text-center icon-condor">
+                                                <div class="flightNumber">
+                                                    <span>1</span>
+                                                </div>
+                                                <img role="presentation" class="condor" src="images/booking/condor.png" alt="Aerolineas Argentinas">
+                                            </div>
+                                            <div class="col-xs-10 col-sm-4 col-md-4">
+                                                <div class="row">
+                                                    <div class="col-xs-4 text-center">
+                                                        <span class="day blue">07/23/2016</span>
+                                                        <span class="hour strong">06:25</span>
+                                                    </div>
+                                                    <div class="col-xs-8">Ministro Pistarini - Buenos Aires, Buenos Aires, Argentina(EZE)</div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-4 text-center">
+                                                        <span class="day blue">07/23/2016</span>
+                                                        <span class="hour strong">08:45</span>
+                                                    </div>
+                                                    <div class="col-xs-8">Bariloche, Argentina (BRC)</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-3 col-md-3">
+                                                <span class="airline">Aerolíneas Argentinas / AR1690 / 0 Stopover/s</span>
+                                            </div>
+                                            <div class="col-xs-4 col-sm-2 col-md-2">
+                                                <a class="btnFlightDetails" href="#" data-toggle="modal" data-target="#flightDetails">Flight details</a>
+                                            </div>
+                                            <div class="col-xs-4 col-sm-1 col-md-1 col-btn">
+                                                <a href="#" class="btn btn-default btn-block btn-small btnFlightChange"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> <span class="text">Change</span></a>
+                                            </div>
+                                            <div class="col-xs-4 col-sm-1 col-md-1 col-btn">
+                                                <a href="#" class="btn btn-default btn-block btn-small btnFlightDelete"><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span><span class="text">Delete</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="module">
+                            <div class="item">
+                                <h2 class="title bg-blue">Flight options</h2>
+                                <div class="form">
+                                    <div class="row row-flights">
+                                        <div class="col-sm-3">
+                                            <div class="form-group">
+                                                <label for="" class="control-label">Date</label>
+                                                <!-- 
+                                                <div class="row">
+                                                    <div class="col-xs-4">
+                                                        <select class="day form-control " title="Day" tabindex="0">
+                                                            <option value="">Día</option>
+                                                            <option value="1">01</option>
+                                                            <option value="2">02</option>
+                                                            <option value="3">03</option>
+                                                            <option value="4">04</option>
+                                                            <option value="5">05</option>
+                                                            <option value="6">06</option>
+                                                            <option value="7">07</option>
+                                                            <option value="8">08</option>
+                                                            <option value="9">09</option>
+                                                            <option value="10">10</option>
+                                                            <option value="11">11</option>
+                                                            <option value="12">12</option>
+                                                            <option value="13">13</option>
+                                                            <option value="14">14</option>
+                                                            <option value="15">15</option>
+                                                            <option value="16">16</option>
+                                                            <option value="17">17</option>
+                                                            <option value="18">18</option>
+                                                            <option value="19">19</option>
+                                                            <option value="20">20</option>
+                                                            <option value="21">21</option>
+                                                            <option value="22">22</option>
+                                                            <option value="23">23</option>
+                                                            <option value="24">24</option>
+                                                            <option value="25">25</option>
+                                                            <option value="26">26</option>
+                                                            <option value="27">27</option>
+                                                            <option value="28">28</option>
+                                                            <option value="29">29</option>
+                                                            <option value="30">30</option>
+                                                            <option value="31">31</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-xs-4">
+                                                        <select class="month form-control " title="Month" tabindex="0">
+                                                            <option value="">Month</option>
+                                                            <option value="1">01</option>
+                                                            <option value="2">02</option>
+                                                            <option value="3">03</option>
+                                                            <option value="4">04</option>
+                                                            <option value="5">05</option>
+                                                            <option value="6">06</option>
+                                                            <option value="7">07</option>
+                                                            <option value="8">08</option>
+                                                            <option value="9">09</option>
+                                                            <option value="10">10</option>
+                                                            <option value="11">11</option>
+                                                            <option value="12">12</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-xs-4">
+                                                        <select class="year form-control col-xs-6" title="Year" tabindex="0">
+                                                            <option value="">Year</option>
+                                                            <option value="2007">2007</option>
+                                                            <option value="2008">2008</option>
+                                                            <option value="2009">2009</option>
+                                                            <option value="2010">2010</option>
+                                                            <option value="2011">2011</option>
+                                                            <option value="2012">2012</option>
+                                                            <option value="2013">2013</option>
+                                                            <option value="2014">2014</option>
+                                                            <option value="2015">2015</option>
+                                                            <option value="2016">2016</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                -->
+                                                <div id="" class="row">
+                                                <input type="text" data-template="D MM YYYY" data-format="DD/MM/YYYY" id="" name="" value="" style="display: none;">
+
+                                                            <div class="combodate">
+                                                                <select class="day form-control">
+                                                                    <option value="">day</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="31">31</option>
+                                                                </select>&nbsp;
+                                                                <select class="month form-control">
+                                                                    <option value="">month</option>
+                                                                    <option value="0">01</option>
+                                                                    <option value="11">12</option>
+                                                                </select>&nbsp;
+                                                                <select class="year form-control">
+                                                                    <option value="">year</option>
+                                                                    <option value="2016">2016</option>
+                                                                    <option value="1906">1906</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="form-group">
+                                                <label for="" class="control-label">Origin</label>
+                                                <div class="form-group">
+                                                    <select class="imputDestinoOrigen form-control" name="" id="">
+                                                        <option value="0">Select</option>
+                                                        <option value="1">Bahía Blanca, Argentina (BHI)</option>
+                                                        <option value="2">Bariloche, Argentina (BRC)</option>
+                                                        <option selected="selected" value="3">Buenos Aires, Argentina (BUE)</option>
+                                                        <option value="4">Catamarca, Argentina (CTC)</option>
+                                                        <option value="5">Comodoro Rivadavia, Argentina (CRD)</option>
+                                                        <option value="6">Corrientes, Argentina (CNQ)</option>
+                                                        <option value="7">Córdoba, Argentina (COR)</option>
+                                                        <option value="8">El Calafate, Argentina (FTE)</option>
+                                                        <option value="9">Esquel, Argentina (EQS)</option>
+                                                        <option value="10">Formosa, Argentina (FMA)</option>
+                                                        <option value="11">Iguazú, Argentina (IGR)</option>
+                                                        <option value="12">Jujuy, Argentina (JUJ)</option>
+                                                        <option value="13">La Rioja, Argentina (IRJ)</option>
+                                                        <option value="14">Mar del Plata, Argentina (MDQ)</option>
+                                                        <option value="15">Mendoza, Argentina (MDZ)</option>
+                                                        <option value="16">Neuquén, Argentina (NQN)</option>
+                                                        <option value="17">Parana, Argentina (PRA)</option>
+                                                        <option value="18">Posadas, Argentina (PSS)</option>
+                                                        <option value="19">Resistencia, Argentina (RES)</option>
+                                                        <option value="20">Rio Cuarto, Argentina (RCU)</option>
+                                                        <option value="21">Rio Hondo, Argentina (RHD)</option>
+                                                        <option value="22">Rosario, Argentina (ROS)</option>
+                                                        <option value="23">Río Gallegos, Argentina (RGL)</option>
+                                                        <option value="24">Río Grande, Argentina (RGA)</option>
+                                                        <option value="25">Salta, Argentina (SLA)</option>
+                                                        <option value="26">San Juan, Argentina (UAQ)</option>
+                                                        <option value="27">San Luis, Argentina (LUQ)</option>
+                                                        <option value="28">San Martín De Los An, Argentina (CPC)</option>
+                                                        <option value="29">San Rafael, Argentina (AFA)</option>
+                                                        <option value="30">Santa Fe, Argentina (SFN)</option>
+                                                        <option value="31">Santa Rosa, Argentina (RSA)</option>
+                                                        <option value="32">Santiago Del Estero, Argentina (SDE)</option>
+                                                        <option value="33">Trelew, Argentina (REL)</option>
+                                                        <option value="34">Tucumán, Argentina (TUC)</option>
+                                                        <option value="35">Ushuaia, Argentina (USH)</option>
+                                                        <option value="36">Viedma, Argentina (VDM)</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="form-group">
+                                                <label for="" class="control-label">Destination</label>
+                                                <div class="form-group">
+                                                    <select size="1" class="imputDestinoOrigen form-control" name="" id="">
+                                                        <option selected="selected" value="0">Select</option>
+                                                        <option value="1">Bahía Blanca, Argentina (BHI)</option>
+                                                        <option value="2">Bariloche, Argentina (BRC)</option>
+                                                        <option value="3">Catamarca, Argentina (CTC)</option>
+                                                        <option value="4">Comodoro Rivadavia, Argentina (CRD)</option>
+                                                        <option value="5">Corrientes, Argentina (CNQ)</option>
+                                                        <option value="6">Córdoba, Argentina (COR)</option>
+                                                        <option value="7">El Calafate, Argentina (FTE)</option>
+                                                        <option value="8">Esquel, Argentina (EQS)</option>
+                                                        <option value="9">Formosa, Argentina (FMA)</option>
+                                                        <option value="10">Iguazú, Argentina (IGR)</option>
+                                                        <option value="11">Jujuy, Argentina (JUJ)</option>
+                                                        <option value="12">La Rioja, Argentina (IRJ)</option>
+                                                        <option value="13">Mar del Plata, Argentina (MDQ)</option>
+                                                        <option value="14">Mendoza, Argentina (MDZ)</option>
+                                                        <option value="15">Neuquén, Argentina (NQN)</option>
+                                                        <option value="16">Parana, Argentina (PRA)</option>
+                                                        <option value="17">Posadas, Argentina (PSS)</option>
+                                                        <option value="18">Resistencia, Argentina (RES)</option>
+                                                        <option value="19">Rio Cuarto, Argentina (RCU)</option>
+                                                        <option value="20">Rio Hondo, Argentina (RHD)</option>
+                                                        <option value="21">Rosario, Argentina (ROS)</option>
+                                                        <option value="22">Río Gallegos, Argentina (RGL)</option>
+                                                        <option value="23">Río Grande, Argentina (RGA)</option>
+                                                        <option value="24">Salta, Argentina (SLA)</option>
+                                                        <option value="25">San Juan, Argentina (UAQ)</option>
+                                                        <option value="26">San Luis, Argentina (LUQ)</option>
+                                                        <option value="27">San Martín De Los An, Argentina (CPC)</option>
+                                                        <option value="28">San Rafael, Argentina (AFA)</option>
+                                                        <option value="29">Santa Fe, Argentina (SFN)</option>
+                                                        <option value="30">Santa Rosa, Argentina (RSA)</option>
+                                                        <option value="31">Santiago Del Estero, Argentina (SDE)</option>
+                                                        <option value="32">Trelew, Argentina (REL)</option>
+                                                        <option value="33">Tucumán, Argentina (TUC)</option>
+                                                        <option value="34">Ushuaia, Argentina (USH)</option>
+                                                        <option value="35">Viedma, Argentina (VDM)</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3 col-btn col-btn2">
+                                            <a id="btnSearch" class="btn btn-default btn-margin" href=""><span class="glyphicon glyphicon-search" aria-hidden="true" tabindex="0"></span> Search</a>
+                                            <a id="btnCancel" class="nuevoBotonGris btn btn-margin" href=""><span class="glyphicon glyphicon-remove-circle" aria-hidden="true" tabindex="0"></span> Cancel</a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="flight-options-results">
+                                        <div class="row row-flights">
+                                            <div class="col-xs-2 col-sm-1 text-center icon-condor">
+                                                <img role="presentation" class="condor" src="images/booking/condor.png" alt="Aerolineas Argentinas">
+                                            </div>
+                                            <div class="col-xs-10 col-sm-4 col-md-4 ">
+                                                <div class="row">
+                                                    <div class="col-xs-2 text-center"><span class="hour strong">06:25</span></div>
+                                                    <div class="col-xs-10">Ministro Pistarini - Buenos Aires, Buenos Aires, Argentina(EZE)</div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-2 text-center"><span class="hour strong">08:45</span> </div>
+                                                    <div class="col-xs-10">Bariloche, Argentina (BRC)</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-3 col-md-4">
+                                                <span class="airline">Aerolíneas Argentinas / AR1690 / 0 Stopover/s <br>
+                                                <span class="operatedBy">Operated by AUSTRAL LINEAS AEREAS</span></span>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-2 col-md-2">
+                                                <a class="btnFlightDetails" href="#" data-toggle="modal" data-target="#flightDetails">Flight details</a>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-1 col-md-1 col-btn">
+                                                <a href="#" class="btn btn-default btn-block btn-small btnFlightSelect">Select</a>
+                                            </div>
+                                        </div>
+                                        <div class="row row-flights">
+                                            <div class="col-xs-2 col-sm-1 text-center icon-condor">
+                                                <img role="presentation" class="condor" src="images/booking/condor.png" alt="Aerolineas Argentinas">
+                                            </div>
+                                            <div class="col-xs-10 col-sm-4 col-md-4">
+                                                <div class="row">
+                                                    <div class="col-xs-2 text-center"><span class="hour strong">06:25</span></div>
+                                                    <div class="col-xs-10">Ministro Pistarini - Buenos Aires, Buenos Aires, Argentina(EZE)</div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-2 text-center"><span class="hour strong">08:45</span> </div>
+                                                    <div class="col-xs-10">Bariloche, Argentina (BRC)</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-3 col-md-4">
+                                                <span class="airline">Aerolíneas Argentinas / AR1690 / 0 Stopover/s</span>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-2 col-md-2">
+                                                <a class="btnFlightDetails" href="#" data-toggle="modal" data-target="#flightDetails">Flight details</a>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-1 col-md-1 col-btn">
+                                                <span class="availability">No availability</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-amount">
+                                        <div class="row row-results row-amount">
+                                            <div class="col-sm-12 bg-blue">
+                                                Amount to be charged
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="content-col">
+                                                    <span class="label">Number of passenger/s</span>
+                                                    <span class="detail">1 passenger/s</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="content-col">
+                                                    <span class="label">Amount per passenger</span>
+                                                    <span class="detail">USD  0.00</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 bg-blue2">
+                                                <span class="detail">Total: USD  0.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input id="" type="checkbox" name="">
+                                                    <a data-toggle="modal" data-target="#acceptConditions">
+                                                        <span id="">I have read and accept the conditions of the fare booked</span></a>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-back nuevoBotonGris"><span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span> Back</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="container" role="main" aria-labelledby="confirmReservationLabel">
+                <article class="booking" role="article">
+                    <ul class="booking-nav list-inline">
+                        <li class="pull-left"><span class="h1">Confirm your reservation</span></li>
+                        <li class="datos"><span>Data</span></li>
+                        <li class="vuelos"><span>Flights</span></li>
+                        <li class="active confirmacion"><span>Confirmation</span></li>
+                        <li class="pago"><span>Payment</span></li>
+                    </ul>
+                    <div class="booking-content">
+                        <h1 class="sr-only title-mob" id="confirmReservationLabel">Confirm your reservation</h1>
+                        <div class="module">
+                            <div class="item">
+                                <h2 class="title bg-blue">Passenger(s)</h2>
+                                <div class="form">
+                                    <ul class="row list-unstyled row-results">
+                                        <li class="col-sm-6 col-md-3">
+                                            <div class="label">Name and Surname</div>
+                                            <div class="detail">BEJARANO, MARIA MAGDALENA</div>
+                                        </li>
+                                        <li class="col-sm-6 col-md-2">
+                                            <div class="label">Passport</div>
+                                            <div class="detail">AO12565412F</div>
+                                        </li>
+                                        <li class="col-sm-3 col-md-2">
+                                            <div class="label">Meal preference</div>
+                                            <div class="detail">No request</div>
+                                        </li>
+                                        <li class="col-sm-3 col-md-2">
+                                            <div class="label">Special requests</div>
+                                            <div class="detail">No request</div>
+                                        </li>
+                                        <li class="col-sm-6 col-md-3">
+                                            <div class="label">E-mail</div>
+                                            <div class="detail">manuela.aguirre@aerolineas.co 1.1 - bejarano/mariam.ar</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <span class="socio-arplus"><span class="blue">
+                            Not yet an Aerolíneas Plus Member? <a title="Aerolíneas Plus Member" href="#">Sign up to our Frequent Flyer Program by clicking Here</a> and start getting miles each time you fly!</span></span>
+                            </div>
+                        </div>
+                        <div class="module">
+                            <div class="item">
+                                <h2 class="title bg-blue">Billing Summary</h2>
+                                <div class="form">
+                                    <div class="table-amount">
+                                        <div class="row row-results row-summary">
+                                            <div class="col-sm-6">
+                                                <span class="label">Reference code</span>
+                                                <span class="detail">Aerolíneas Argentinas DEJGSI</span>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <span class="label">Payment deadline</span>
+                                                <span class="detail">06/04/2016 23:59 <br> <span class="small">Local time at your country of residence.</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="flight-options-results">
+                                        <div class="row row-flights row-itinerary">
+                                            <div class="col-xs-2 col-sm-1 text-center icon-condor">
+                                                <div class="flightNumber">
+                                                    <span>1</span>
+                                                </div>
+                                                <img role="presentation" class="condor" src="images/booking/condor.png" alt="Aerolineas Argentinas">
+                                            </div>
+                                            <div class="col-xs-10 col-sm-4 col-md-4">
+                                                <div class="row">
+                                                    <div class="col-xs-4 text-center">
+                                                        <span class="day blue">07/23/2016</span>
+                                                        <span class="hour strong">06:25</span>
+                                                    </div>
+                                                    <div class="col-xs-8">Ministro Pistarini - Buenos Aires, Buenos Aires, Argentina(EZE)</div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-4 text-center">
+                                                        <span class="day blue">07/23/2016</span>
+                                                        <span class="hour strong">08:45</span>
+                                                    </div>
+                                                    <div class="col-xs-8">Bariloche, Argentina (BRC)</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-3 col-md-3">
+                                                <span class="airline">Aerolíneas Argentinas / AR1690 / 0 Stopover/s</span>
+                                            </div>
+                                            <div class="col-xs-4 col-sm-2 col-md-2">
+                                                <a class="btnFlightDetails" href="#" data-toggle="modal" data-target="#flightDetails">Flight details</a>
+                                            </div>
+                                            <div class="col-xs-4 col-sm-1 col-md-1 col-btn">
+                                                <a href="#" class="btn btn-default btn-block btn-small btnFlightChange"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> <span class="text">Change</span></a>
+                                            </div>
+                                            <div class="col-xs-4 col-sm-1 col-md-1 col-btn">
+                                                <a href="#" class="btn btn-default btn-block btn-small btnFlightDelete"><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span><span class="text">Delete</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="row row-flights">
+                                            <div class="col-xs-2 col-sm-1 text-center icon-condor">
+                                                <div class="flightNumber">
+                                                    <span>2</span>
+                                                </div>
+                                                <img role="presentation" class="condor" src="images/booking/condor.png" alt="Aerolineas Argentinas">
+                                            </div>
+                                            <div class="col-xs-10 col-sm-4 col-md-4">
+                                                <div class="row">
+                                                    <div class="col-xs-4 text-center">
+                                                        <span class="day blue">07/23/2016</span>
+                                                        <span class="hour strong">06:25</span>
+                                                    </div>
+                                                    <div class="col-xs-8">Ministro Pistarini - Buenos Aires, Buenos Aires, Argentina(EZE)</div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-4 text-center">
+                                                        <span class="day blue">07/23/2016</span>
+                                                        <span class="hour strong">08:45</span>
+                                                    </div>
+                                                    <div class="col-xs-8">Bariloche, Argentina (BRC)</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-3 col-md-3">
+                                                <span class="airline">Aerolíneas Argentinas / AR1690 / 0 Stopover/s</span>
+                                            </div>
+                                            <div class="col-xs-4 col-sm-2 col-md-2">
+                                                <a class="btnFlightDetails" href="#" data-toggle="modal" data-target="#flightDetails">Flight details</a>
+                                            </div>
+                                            <div class="col-xs-4 col-sm-1 col-md-1 col-btn">
+                                                <a href="#" class="btn btn-default btn-block btn-small btnFlightChange"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> <span class="text">Change</span></a>
+                                            </div>
+                                            <div class="col-xs-4 col-sm-1 col-md-1 col-btn">
+                                                <a href="#" class="btn btn-default btn-block btn-small btnFlightDelete"><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span><span class="text">Delete</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="row row-flights">
+                                            <div class="col-xs-2 col-sm-1 text-center icon-condor">
+                                                <div class="flightNumber">
+                                                    <span>3</span>
+                                                </div>
+                                                <img role="presentation" class="condor" src="images/booking/condor.png" alt="Aerolineas Argentinas">
+                                            </div>
+                                            <div class="col-xs-10 col-sm-4 col-md-4">
+                                                <div class="row">
+                                                    <div class="col-xs-4 text-center">
+                                                        <span class="day blue">07/23/2016</span>
+                                                        <span class="hour strong">06:25</span>
+                                                    </div>
+                                                    <div class="col-xs-8">Ministro Pistarini - Buenos Aires, Buenos Aires, Argentina(EZE)</div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-4 text-center">
+                                                        <span class="day blue">07/23/2016</span>
+                                                        <span class="hour strong">08:45</span>
+                                                    </div>
+                                                    <div class="col-xs-8">Bariloche, Argentina (BRC)</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-3 col-md-3">
+                                                <span class="airline">Aerolíneas Argentinas / AR1690 / 0 Stopover/s</span>
+                                            </div>
+                                            <div class="col-xs-4 col-sm-2 col-md-2">
+                                                <a class="btnFlightDetails" href="#" data-toggle="modal" data-target="#flightDetails">Flight details</a>
+                                            </div>
+                                            <div class="col-xs-4 col-sm-1 col-md-1 col-btn">
+                                                <a href="#" class="btn btn-default btn-block btn-small btnFlightChange"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> <span class="text">Change</span></a>
+                                            </div>
+                                            <div class="col-xs-4 col-sm-1 col-md-1 col-btn">
+                                                <a href="#" class="btn btn-default btn-block btn-small btnFlightDelete"><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span><span class="text">Delete</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-amount">
+                                        <div class="row row-results row-amount">
+                                            <div class="col-sm-12 bg-blue">
+                                                Amount to be charged
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="content-col">
+                                                    <span class="label">Number of passenger/s</span>
+                                                    <span class="detail">1 passenger/s</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="content-col">
+                                                    <span class="label">Amount per passenger</span>
+                                                    <span class="detail">USD  0.00</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 bg-blue2">
+                                                <span class="detail">Total: USD  0.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input id="" type="checkbox" name="">
+                                                    <a data-toggle="modal" data-target="#acceptConditions">
+                                                        <span id="">I have read and accept the conditions of the fare booked</span></a>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a data-toggle="modal" data-target="#resumenDatos"><span id="">Data Summary</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="module">
+                            <div class="item">
+                                <h2 class="title bg-blue">Itinerary</h2>
+                                <div class="form">
+                                    <div class="flight-options-results">
+                                        <div class="row row-flights row-itinerary">
+                                            <div class="col-xs-2 col-sm-1 text-center icon-condor">
+                                                <div class="flightNumber">
+                                                    <span>1</span>
+                                                </div>
+                                                <img role="presentation" class="condor" src="images/booking/condor.png" alt="Aerolineas Argentinas">
+                                            </div>
+                                            <div class="col-xs-10 col-sm-4 col-md-4">
+                                                <div class="row">
+                                                    <div class="col-xs-4 text-center">
+                                                        <span class="day blue">07/23/2016</span>
+                                                        <span class="hour strong">06:25</span>
+                                                    </div>
+                                                    <div class="col-xs-8">Ministro Pistarini - Buenos Aires, Buenos Aires, Argentina(EZE)</div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-4 text-center">
+                                                        <span class="day blue">07/23/2016</span>
+                                                        <span class="hour strong">08:45</span>
+                                                    </div>
+                                                    <div class="col-xs-8">Bariloche, Argentina (BRC)</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-3 col-md-3">
+                                                <span class="airline">Aerolíneas Argentinas / AR1690 / 0 Stopover/s</span>
+                                            </div>
+                                            <div class="col-xs-4 col-sm-2 col-md-2">
+                                                <a class="btnFlightDetails" href="#" data-toggle="modal" data-target="#flightDetails">Flight details</a>
+                                            </div>
+                                            <div class="col-xs-4 col-sm-1 col-md-1 col-btn">
+                                                <a href="#" class="btn btn-default btn-block btn-small btnFlightChange"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> <span class="text">Change</span></a>
+                                            </div>
+                                            <div class="col-xs-4 col-sm-1 col-md-1 col-btn">
+                                                <a href="#" class="btn btn-default btn-block btn-small btnFlightDelete"><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span><span class="text">Delete</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="row row-flights">
+                                            <div class="col-xs-2 col-sm-1 text-center icon-condor">
+                                                <div class="flightNumber">
+                                                    <span>2</span>
+                                                </div>
+                                                <img role="presentation" class="condor" src="images/booking/condor.png" alt="Aerolineas Argentinas">
+                                            </div>
+                                            <div class="col-xs-10 col-sm-4 col-md-4">
+                                                <div class="row">
+                                                    <div class="col-xs-4 text-center">
+                                                        <span class="day blue">07/23/2016</span>
+                                                        <span class="hour strong">06:25</span>
+                                                    </div>
+                                                    <div class="col-xs-8">Ministro Pistarini - Buenos Aires, Buenos Aires, Argentina(EZE)</div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-4 text-center">
+                                                        <span class="day blue">07/23/2016</span>
+                                                        <span class="hour strong">08:45</span>
+                                                    </div>
+                                                    <div class="col-xs-8">Bariloche, Argentina (BRC)</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-3 col-md-3">
+                                                <span class="airline">Aerolíneas Argentinas / AR1690 / 0 Stopover/s</span>
+                                            </div>
+                                            <div class="col-xs-4 col-sm-2 col-md-2">
+                                                <a class="btnFlightDetails" href="#" data-toggle="modal" data-target="#flightDetails">Flight details</a>
+                                            </div>
+                                            <div class="col-xs-4 col-sm-1 col-md-1 col-btn">
+                                                <a href="#" class="btn btn-default btn-block btn-small btnFlightChange"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> <span class="text">Change</span></a>
+                                            </div>
+                                            <div class="col-xs-4 col-sm-1 col-md-1 col-btn">
+                                                <a href="#" class="btn btn-default btn-block btn-small btnFlightDelete"><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span><span class="text">Delete</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="row row-flights">
+                                            <div class="col-xs-2 col-sm-1 text-center icon-condor">
+                                                <div class="flightNumber">
+                                                    <span>3</span>
+                                                </div>
+                                                <img role="presentation" class="condor" src="images/booking/condor.png" alt="Aerolineas Argentinas">
+                                            </div>
+                                            <div class="col-xs-10 col-sm-4 col-md-4">
+                                                <div class="row">
+                                                    <div class="col-xs-4 text-center">
+                                                        <span class="day blue">07/23/2016</span>
+                                                        <span class="hour strong">06:25</span>
+                                                    </div>
+                                                    <div class="col-xs-8">Ministro Pistarini - Buenos Aires, Buenos Aires, Argentina(EZE)</div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-4 text-center">
+                                                        <span class="day blue">07/23/2016</span>
+                                                        <span class="hour strong">08:45</span>
+                                                    </div>
+                                                    <div class="col-xs-8">Bariloche, Argentina (BRC)</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-3 col-md-3">
+                                                <span class="airline">Aerolíneas Argentinas / AR1690 / 0 Stopover/s</span>
+                                            </div>
+                                            <div class="col-xs-4 col-sm-2 col-md-2">
+                                                <a class="btnFlightDetails" href="#" data-toggle="modal" data-target="#flightDetails">Flight details</a>
+                                            </div>
+                                            <div class="col-xs-4 col-sm-1 col-md-1 col-btn">
+                                                <a href="#" class="btn btn-default btn-block btn-small btnFlightChange"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> <span class="text">Change</span></a>
+                                            </div>
+                                            <div class="col-xs-4 col-sm-1 col-md-1 col-btn">
+                                                <a href="#" class="btn btn-default btn-block btn-small btnFlightDelete"><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span><span class="text">Delete</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="module">
+                            <div class="item">
+                                <h2 class="title bg-blue">Select your payment method</h2>
+                                <ul class="list-unstyled list-inline payment">
+                                    <li>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                                                <img role="presentation" src="images/booking/amex.jpg" alt="Amex"><span class="sr-only">Amex</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                                <img role="presentation" src="images/booking/master.jpg" alt="Master"><span class="sr-only">Master</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                                                <img role="presentation" src="images/booking/visa.jpg" alt="Visa"><span class="sr-only">Visa</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
+                                                <img role="presentation" src="images/booking/bbva.jpg" alt="bbva"><span class="sr-only">bbva</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="container" role="main" aria-labelledby="paymentInformationLabel">
+                <article class="booking" role="article">
+                    <ul class="booking-nav list-inline">
+                        <li class="pull-left"><span class="h1">Payment</span></li>
+                        <li class="datos"><span>Data</span></li>
+                        <li class="vuelos"><span>Flights</span></li>
+                        <li class="confirmacion"><span>Confirmation</span></li>
+                        <li class="active pago"><span>Payment</span></li>
+                    </ul>
+                    <div class="booking-content">
+                        <h1 class="sr-only title-mob" id="paymentInformationLabel">Payment</h1>
+
+                        <div class="module">
+                            <div class="item">
+                                <div class="details">
+                                    <div class="container">
+                                        <div class="row espera_recibos">
+                                            <div class="col-sm-6 bg-blue">
+                                                <span class="cuotas">Tus tickets están siendo emitidos</span>
+                                            </div>
+                                            <div class="col-sm-6 bg-blue2">
+                                                <img role="presentation" src="img/espera_recibos-ver2.gif" class="img-responsive img-recibos">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="module">
+                            <div class="item">
+                                <h2 class="title bg-blue">Enter payment information</h2>
+                                <div class="form">
+                                    <div class="row payment-information">
+                                        <div class="col-sm-5">
+                                            <div class="form-group">
+                                                <label for="" class="control-label">Name and Surname</label>
+                                                <input type="text" class="form-control" name="" id="" size="8" maxlength="10" value="BEJARANO, MARIA MAGDALENA" placeholder="BEJARANO, MARIA MAGDALENA" disabled="disabled">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group">
+                                                <label for="" class="control-label">Passport</label>
+                                                <input type="text" class="form-control" name="" id="" size="8" maxlength="10" value="AO12565412F" placeholder="AO12565412F" disabled="disabled">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <div class="form-group">
+                                                <label for="" class="control-label">Country</label>
+                                                <input type="text" class="form-control" name="" id="" size="8" maxlength="10" value="United States" placeholder="United States">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="form-group">
+                                                <label for="" class="control-label">Reference #</label>
+                                                <input type="text" class="form-control" name="" id="" size="8" maxlength="10" value="210076993" placeholder="210076993">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <div class="form-group">
+                                                <label for="" class="control-label">Type of payment</label>
+                                                <input type="text" class="form-control" name="" id="" size="8" maxlength="10" value="Credit" placeholder="Credit">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="module">
+                            <div class="item">
+                                <h2 class="title bg-blue">Data Confirmation</h2>
+                                <div class="form">
+                                    <ul class="row list-unstyled row-results summary">
+                                        <li class="col-sm-3">
+                                            <div class="label">Name and Surname</div>
+                                            <div class="detail">BEJARANO, MARIA MAGDALENA</div>
+                                        </li>
+                                        <li class="col-sm-2">
+                                            <div class="label">Passport</div>
+                                            <div class="detail">AO12565412F</div>
+                                        </li>
+                                        <li class="col-sm-2">
+                                            <div class="label">Country</div>
+                                            <div class="detail">United States</div>
+                                        </li>
+                                        <li class="col-sm-2">
+                                            <div class="label">Order number</div>
+                                            <div class="detail">210076993</div>
+                                        </li>
+                                        <li class="col-sm-2">
+                                            <div class="label">Type of payment</div>
+                                            <div class="detail">Credit</div>
+                                        </li>
+                                        <li class="col-sm-1">
+                                            <div class="label">Currency</div>
+                                            <div class="detail">US Dollar</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="clearfix">
+                                    <span class="total">Total amount to pay: USD 599.50</span>
+                                </div>
+                                <p>IMPORTANT: Transactions are handled and processed through our operator in Uruguay. In some cases, adittional charges may be included for international transactions by your bank / credit card issuer. Please verify them before purchasing.</p>
+                            </div>
+                        </div>
+                        <div class="module">
+                            <div class="item">
+                                <h2 class="title bg-blue">Purchase Information</h2>
+                                <p class="txt-blue"><strong>Operation number 6790186</strong></p>
+                            
+                                <div class="cupones">
+                                    <img src="img/recibos/mpol.jpg" class="img-responsive" alt="Recibo">
+                                </div>
+                                <div class="center hide-mob">
+                                    <a class="btn btn-default btn-large" onclick="javascript:print();">Imprimir <span class="icon"><img src="img/pagar/flecha-right.png" alt="icon" role="presentation"></span></a>
+                                </div>
+                                <hr>
+                                <div class="form">
+                                            <div class="form-group center">
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <label for="">Send by e-mail</label>
+                                                    </div>
+                                                    <div class="col-lg-5">
+                                                        <input class="form-control" type="text" value="" name="" size="30" id="">
+                                                    </div>
+                                                    <div class="col-lg-3"> <a class="btn btn-default btn-block">Submit <span class="icon"><img src="img/pagar/flecha-right.png" alt="icon" role="presentation"></span></a></div>
+                                                </div>
+                                            </div>
+                                </div>
+                                <hr>
+                                <h2 class="title bg-blue2">Beneficios en tu viaje:</h2>
+                                <ul>
+                                    <li><span>Disfrutá de las mejores tarifas en alquileres de <a href="http://www.rentalcars.com/?affiliateCode=aeroargentina_rc&amp;preflang=es&amp;adplat=confemail" target="_blank">auto</a>. Además si sos socio Aerolíneas Plus sumás millas en tu alquiler.</span></li>
+                                    <li><span>Trasladate desde y hacia Aeroparque con la mejor tarifa. <a href="http://arbus.plataforma10.com/Servicios?utm_source=arbus&amp;utm_medium=link&amp;utm_campaign=ow#buscar/7107/4761/_/1" target="_blank">Comprá tu pasaje ahora. </a></span></li>
+                                    <li><span>También podés reservar tu <a href="http://www.aseguratuviaje.com/aerolineasargentinas/" target="_blank">asistencia al viajero.</a></span></li>
+                                </ul>
+                                <h2 class="title bg-blue2">Recordá:</h2>
+                                <ul>
+                                    <li><strong><span>Verificá el <a href="http://www.aerolineas.com.ar/arg/main.asp?idsitio=ar&amp;idpagina=43&amp;ididioma=es" target="_blank">horario de presentación</a> para tu vuelo.</span></strong></li>
+                                    <li><span>Verificá la <a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=43&amp;idIdioma=es" target="_blank">documentación</a> necesaria para tu viaje. En el caso de viajes a USA, es posible que se te requiera el pasaporte visado y en viajes hacia Cuba, la tarjeta o visa de turista que deberás adquirir previo a la presentación al embarque, en el consulado de Cuba u operadores turísticos.</span></li>
+                                    <li><span>Si viajás hacia o desde el interior del país conectando inmediatamente un vuelo internacional de Aerolíneas Argentinas, podés solicitar el <a href="http://www.aerolineas.com.ar/es-ar/cuponesdescuentos/detalles/ar/buenos-aires/940_transporte-gratis-entre-ezeiza-y-aeroparque" target="_blank">transfer entre Ezeiza y Aeroparque sin cargo</a> en el aeropuerto o la sucursal más cercana. Transporte solo valido para conexiones entre vuelos de Aerolíneas Argentinas, no valido para conexiones con otras compañías.</span></li>
+                                    <li><span>Si&nbsp;aún no sos socio de nuestro programa Aerolíneas Plus, podés&nbsp;<a href="http://www.aerolineas.com.ar/es-AR/AerolineasPlus/AcercaDe?Inscripcion_Plus=si" target="_blank">asociarte ahora mismo</a>&nbsp;ingresando tus datos personales.&nbsp;</span></li>
+                                    <li><span>Hacé&nbsp;tu <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=113&amp;idIdioma=es" target="_blank">Web Check In</a>&nbsp;en 3 simples pasos y ahorrá tiempo.</span></li>
+                                    <li><span>Conocé las novedades y promociones de&nbsp;Aerolíneas Argentinas&nbsp;suscribiéndote&nbsp;a nuestro <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=80&amp;idIdioma=es" target="_blank"><span>Newsletter</span></a>. </span>
+                                    </li>
+                                    <li><span><span>Seguinos en <a href="http://www.facebook.com/aerolineas.argentinas" target="_blank">Facebook</a> y <a href="http://twitter.com/Aerolineas_AR" target="_blank">Twitter</a>.</span></span>
+                                    </li>
+                                </ul>
+                                <div class="conoce-mas">
+                                            <div class="row">
+                                                <div class="col-sm-6 col-md-3">
+                                                    <div class="info">
+                                                        <div class="row">
+                                                            <div class="col-xs-4 col-md-12">
+                                                                <img src="img/pagar/img-plus.jpg" alt="Aerolíneas Plus" role="presentation">
+                                                            </div>
+                                                            <div class="col-xs-8 col-md-12">
+                                                                <h3>Aerolíneas Plus</h3>
+                                                                <p>Si áun no sos socio de nuestro programa Aerolíneas Plus, podés asociarte ahora mismo ingresando tus datos personales.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-3">
+                                                    <div class="info">
+                                                        <div class="row">
+                                                            <div class="col-xs-4 col-md-12">
+                                                                <img src="img/pagar/img-mob.jpg" alt="Check-In Movil" role="presentation">
+                                                            </div>
+                                                            <div class="col-xs-8 col-md-12">
+                                                                <h3>Check-In Movil</h3>
+                                                                <p>Hacé tu Web Check-in en 3 simples pasos y ahorrá tiempo.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-3">
+                                                    <div class="info">
+                                                        <div class="row">
+                                                            <div class="col-xs-4 col-md-12">
+                                                                <img src="img/pagar/img-checkin.jpg" alt="Web Check-In" role="presentation">
+                                                            </div>
+                                                            <div class="col-xs-8 col-md-12">
+                                                                <h3>Web Check-In</h3>
+                                                                <p>Hacé tu Web Check-in en 3 simples pasos y ahorrá tiempo. </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-3">
+                                                    <div class="info">
+                                                        <div class="row">
+                                                            <div class="col-xs-4 col-md-12">
+                                                                <img src="img/pagar/img-equip.jpg" alt="Web Check-In" role="presentation">
+                                                            </div>
+                                                            <div class="col-xs-8 col-md-12">
+                                                                <h3>Equipaje</h3>
+                                                                <p> <span>La <a href="http://ww1.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=52&amp;idIdioma=es">franquicia de equipaje</a>, <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=50&amp;idIdioma=es">el equipaje de mano y restricciones de artículos a bordo</a>.</span></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                </div>
+                                <h2 class="title bg-blue2">Te sugerimos conocer:</h2>
+                                <ul>
+                                            <li><span>Si sos Responsable Inscripto en el IVA, podés solicitar la <a href="http://www.aerolineas.com.ar/arg/main.asp?idSitio=AR&amp;idPagina=144&amp;idIdioma=es">Constancia de Crédito Fiscal</a>.</span></li>
+                                            <li><span>Las <a href="http://www.aerolineas.com.ar/arg/bodies/CondicionesGrales_contratoTransporte.asp?idSitio=AR&amp;idIdioma=es">Condiciones Generales del Contrato de Transporte</a>.</span></li>
+                                        </ul>
+                                <div class="row row-encuesta-contacto">
+                                            <div class="col-sm-6">
+                                                <div class="encuesta">
+                                                    <div class="row">
+                                                        <div class="col-xs-4 col-md-3">
+                                                            <img src="img/pagar/img-equip.jpg" alt="Web Check-In" role="presentation">
+                                                        </div>
+                                                        <div class="col-xs-8 col-md-9">
+                                                            <div class="info">
+                                                                <h4><strong>Encuesta</strong></h4>
+                                                                <strong>Tu opinión es muy importante para nosotros, por eso queremos invitarte a evaluar tu experiencia de compra mediante una</strong> <a href="https://es.research.net/s/MS6KRBN" target="_blank"><strong>encuesta</strong></a> <strong>que no te llevará más de 1 minuto</strong>.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="contacto">
+                                                    <h4><strong>Seguinos en:</strong></h4>
+                                                    <ul class="rsociales list-inline list-unstyled">
+                                                        <li>
+                                                            <a target="_blank" href="https://www.facebook.com/Aerolineas.argentinas"><img src="img/pagar/ico-cont_01.jpg" width="46" height="46" alt="facebook" role="presentation"><span class="sr-only">Facebook</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a target="_blank" href="http://twitter.com/Aerolineas_AR/"><img src="img/pagar/ico-cont_02.jpg" width="46" height="46" alt="twitter" role="presentation"><span class="sr-only">Twitter</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a target="_blank" href="http://www.linkedin.com/company/aerolineas-argentinas"><img src="img/pagar/ico-cont_03.jpg" width="46" height="46" alt="linkedin" role="presentation"><span class="sr-only">Linkedin</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a target="_blank" href="https://plus.google.com/106198199507305429358/posts"><img src="img/pagar/ico-cont_04.jpg" width="46" height="46" alt="google plus" role="presentation"><span class="sr-only">Google Plus</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a target="_blank" href="http://www.youtube.com/user/AerolineasAR"><img src="img/pagar/ico-cont_05.jpg" width="46" height="46" alt="youtube" role="presentation"><span class="sr-only">youtube</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <a href="#" class="btn btn-back nuevoBotonGris"><span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span> Back</a>
+                        <a href="" class="btn btn-default btnContinue pull-right">Continue<span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span></a>
+                    </div>
+                </article>
+            </section>
+
+            <footer class="footer" id="footer">
+                <div class="content-footer">
+                <hr>
+                    
+                    <input type="hidden" id="hostId" value="JE2RNCJXLAA3LIL3FEPY7J7SYA" tabindex="0">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="copyright">
+                                    <p class="txtGirsfoote">Website Oficial de Aerol&iacute;neas Argentinas. &copy; 1996 - 2016 Aerol&iacute;neas Argentinas S.A.</p>
+                                </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="links">
+                                <ul class="list-unstyled list-inline clearfix">
+                                    <li class="logoAerohandling"><img src="img/common/footer-aerohandling.jpg" alt="Aerohandling"></li>
+                                    <li class="logoJetPaq"><img src="img/common/footer-jetpaq.jpg" alt="JetPaq"></li>
+                                    <li class="logoOptar"><img src="img/common/footer-optar.jpg" alt="Optar"></li>
+                                    <li class="logoAustral"><img src="img/common/footer-austral.jpg" alt="Austral"></li>
+                                    <li class="logoAR"><img src="img/common/footer-aa.jpg" alt="Aerolíneas Argentinas"></li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!--/content-footer -->
+            </footer>
+        </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

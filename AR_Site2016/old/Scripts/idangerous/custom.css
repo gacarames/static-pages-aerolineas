@@ -1,0 +1,46 @@
+﻿.swiper-container {
+  height: 374px;
+  width: 390px;
+}
+.content-slide {
+  padding: 20px;
+  color: #fff;
+}
+.title {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.pagination {
+position: absolute;
+z-index: 20;
+right: 10px;
+bottom: 6px;
+}
+
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background: #999;
+  margin: 0 3px;
+  cursor: pointer;
+  background: url("../../images/idangerous/boton_slider_off2.png") no-repeat 0 0;
+  text-decoration: none;
+}
+.swiper-active-switch {
+  background: url("../../images/idangerous/boton_slider_on_2.png") no-repeat 0 0;  
+}
+
+.swiper-container2 {
+width: 325px;
+height: 177px;
+overflow: hidden;
+}
+
+.pagination2 {
+position: relative;
+z-index: 20;
+left: 0px;
+bottom: 21px;
+float: right;
+}

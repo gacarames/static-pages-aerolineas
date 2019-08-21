@@ -1,0 +1,13 @@
+.results-vuelo .nro-vuelo2 .primary-title {
+    color: #0079ca;
+    font-family: Regular-Semibold, 'Open Sans', sans-serif;
+    font-size: 26px;
+    display: block;
+    text-align: center;
+    margin: 10px 20px;
+}
+
+.results-vuelo .nro-vuelo2 .text-status {
+    text-align: left;
+    font-family: Regular-Semibold, 'Open Sans', sans-serif;
+}

@@ -1,0 +1,85 @@
+<html>
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="Content-Language" content="es-ar">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>SPS DECIDIR</title>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../css/mpol-common.css" />
+<Script>
+       function respuestaTardia() {
+              if (document.estado.terminoTodo.value=='true') {               
+                     if (document.getElementById){ //se obtiene el id
+                            var el = document.getElementById('enproceso'); //se define la variable "el" igual a nuestro div
+                            el.style.display = 'none'; //damos un atributo display:none que oculta el div
+                     }      
+              }
+       }
+</SCRIPT>   
+</head>
+<body onload="respuestaTardia();">
+    <div class="inner-wrapper">
+        <header class="header clearfix">
+            <div class="pull-left logo-header">
+                <a href="http://www.aerolineas.com.ar"><img alt="logo-aerolineas" src="../../img/common/logo-aerolineas.gif" /></a>
+            </div>
+            <div class="pull-right logo-header-right">
+                <img alt="" src="../../img/common/aerolineas_argentinas_skyteam.jpg" />
+            </div>
+        </header>
+        <div class="container">
+            <div class="cuadroPrincipal"> 
+            <!--enproceso -->           
+                <div id="enproceso" class="module">
+	                <form name="estado">
+		                <input type=hidden name='terminoTodo' value='false'>
+		            </form>
+                    <div class="item">
+                        <div class="details">
+                            <div class="container">
+                                <div class="espera_recibos clearfix">
+                                    <div class="col-sm-6 bg-blue">
+                                        <h2 class="h3 center">Procesando sus datos</h2>
+                                    </div>
+                                    <div class="col-sm-6 bg-blue2">
+                                        <img src="../../img/espera_recibos-ver.gif" class="img-responsive img-recibos">
+                                    </div>
+                                </div>
+                                <div class="center">
+                                    <p>Esta operación puede tardar varios minutos. Aguarde un momento por favor...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!--/enproceso -->
+            </div>
+        </div>
+        <footer class="footer" id="footer">
+            <div class="content-footer">
+                <div class="row">
+                    <div class="col-md-8 pull-right">
+                        <div class="links">
+                            <ul class="list-unstyled list-inline clearfix">
+                                <li class="logoAR"><img src="../../img/common/footer-logoAA.gif" alt="Aerolineas Argentinas"></li>
+                                <li class="logoAustral"><img src="../../img/common/footer-logoAustral.gif" alt="Austral"></li>
+                                <li class="logoJetPaq"><img src="../../img/common/footer-logoJetPaq.gif" alt="JetPaq"></li>
+                                <li class="logoAerohandling"><img src="../../img/common/footer-logoAerohandling.gif" alt="Aerohandling"></li>
+                                <li class="logoOptar"><img src="../../img/common/footer-logoOptar.gif" alt="Optar"></li>
+                            </ul>
+                        </div>
+                        <div class="copyright">
+                            <p class="txtGirsfoote">Website Oficial de Aerolíneas Argentinas. © 1996 - 2016 Aerolíneas Argentinas S.A.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/content-footer -->
+        </footer>
+    </div>
+</body>
+</html>
+
